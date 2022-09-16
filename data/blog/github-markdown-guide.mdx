@@ -8,15 +8,17 @@ summary: 'Markdown cheatsheet for all your blogging needs - headers, lists, imag
 
 # Introduction
 
+This is live.
+
 Markdown and Mdx parsing is supported via `unified`, and other remark and rehype packages. `next-mdx-remote` allows us to parse `.mdx` and `.md` files in a more flexible manner without touching webpack.
 
 GitHub flavored markdown is used. `mdx-prism` provides syntax highlighting capabilities for code blocks. Here's a demo of how everything looks.
 
 The following markdown cheatsheet is adapted from: https://guides.github.com/features/mastering-markdown/
 
-https://www.youtube.com/watch?v=LH7LPMXv8Lg
+A normal link: https://www.youtube.com/watch?v=LH7LPMXv8Lg
 
-[link to YouTube](https://www.youtube.com/watch?v=LH7LPMXv8Lg)
+[This is a clickable link to YouTube](https://www.youtube.com/watch?v=LH7LPMXv8Lg)
 
 <div className="relative mt-3" style={{ paddingTop: '56.25%' }}>
   <iframe
@@ -30,7 +32,30 @@ https://www.youtube.com/watch?v=LH7LPMXv8Lg
 
 You can insert html that follows react rules:
 
-<div className="bg-red-500">foo</div>
+<div className="bg-red-500">Arbitrary htmlx </div>
+
+# Images
+
+without a bang:
+[Maple](/static/images/canada/maple.jpg)
+
+with a bang:
+![Lake](/static/images/canada/lake.jpg)
+
+<div className="flex flex-wrap -mx-2 overflow-hidden xl:-mx-2">
+  <div className="my-1 px-2 w-full overflow-hidden xl:my-1 xl:px-2 xl:w-1/2">
+    ![Maple](/static/images/canada/maple.jpg)
+  </div>
+  <div className="my-1 px-2 w-full overflow-hidden xl:my-1 xl:px-2 xl:w-1/2">
+    ![Lake](/static/images/canada/lake.jpg)
+  </div>
+  <div className="my-1 px-2 w-full overflow-hidden xl:my-1 xl:px-2 xl:w-1/2">
+    ![Mountains](/static/images/canada/mountains.jpg)
+  </div>
+  <div className="my-1 px-2 w-full overflow-hidden xl:my-1 xl:px-2 xl:w-1/2">
+    ![Toronto](/static/images/canada/toronto.jpg)
+  </div>
+</div>
 
 # What is Markdown?
 
