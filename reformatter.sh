@@ -14,15 +14,13 @@ for f in $(ls ./old_blog/content/articles/*.md | head -109999 ) ; do
   (echo "---" && cat "./old_blog/content/articles/$base") > "./old_blog/new_content/articles/$slug.md"
 
   # add --- to end of frontmatter
-  n=$( sed -n '/^$/=' $f | sed -n 1p )
-  echo $n
+  end_of_frontmatter=$( sed -n '/^$/=' $f | sed -n 1p )
+  (gsed -e "$(($end_of_frontmatter+1)) i \---" ./old_blog/new_content/articles/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/$slug.md
+
+  # get the line number containing the tags
   tag_line=$( sed -n '/^Tags:/=' $f | sed -n 1p )
   echo $tag_line
-  (gsed -e "$((n+1)) i \---" ./old_blog/new_content/articles/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/$slug.md
 
-  # remove colons from within title
-  colon=$( gsed -n '/^Title:.*:.*$/=' $f | sed -n 1p )
-  (gsed -e "$((colon+1)) s/:/: >\n    /" ./old_blog/new_content/articles/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/$slug.md
 
   # front-matter keys should be lowercase
   (gsed -e " s/^Title:/title:/" ./old_blog/new_content/articles/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/$slug.md
@@ -33,15 +31,43 @@ for f in $(ls ./old_blog/content/articles/*.md | head -109999 ) ; do
   (gsed -e " s/^Status:/status:/" ./old_blog/new_content/articles/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/$slug.md
   (gsed -e " s/^Image:/image:/" ./old_blog/new_content/articles/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/$slug.md
   (gsed -e " s/^Summary:/summary:/" ./old_blog/new_content/articles/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/$slug.md
+  (gsed -e " s/^Tweet:/tweet: /" ./old_blog/new_content/articles/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/$slug.md
 
   # wrap all datetimes in quotes so that they are treated a json serializable strings
   (gsed -e " s/^date: \(.*\)/date: '\1'/" ./old_blog/new_content/articles/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/$slug.md
 
   # tags should be an array, not a list
-  # get the line number containing the tags
   # add braces to start and end of tags list
-  (gsed -e "s/^tags: \(.*\)/tags: ['\1']/g" ./old_blog/new_content/articles/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/$slug.md
+  (gsed -e "$((tag_line+1)) s/^tags: \(.*\)$/tags: \['\L\1'\]/" ./old_blog/new_content/articles/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/$slug.md
   # add quotes
-  (gsed -e "$((tag_line+1)) s/, /', '/g" ./old_blog/new_content/articles/$slug.md ) > /tmp/$slug2.md && mv /tmp/$slug2.md ./old_blog/new_content/articles/$slug.md
+  (gsed -e "$((tag_line+1)) s/, /', '/g" ./old_blog/new_content/articles/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/$slug.md
+
+  # remove python image-process markdown stuff
+  (gsed -e " s/{: .image.*}//g" ./old_blog/new_content/articles/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/$slug.md
+
+  # update links to internal content 
+  (gsed -e " s/({filename}\/articles\/\(.*\).md)/(\L\1)/g" ./old_blog/new_content/articles/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/$slug.md
+
+  # if tags key doesnt exist, create it
+  if ! grep -q "Tags:" $f; then
+    echo "Tags key does not exist!!"
+    echo $end_of_frontmatter
+    (gsed -e "$(($end_of_frontmatter+1)) i tags: \[\]" ./old_blog/new_content/articles/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/$slug.md
+  fi
+
+  # remove colons from within title
+  colon_in_title=$( gsed -n '/^Title:.*:.*$/=' $f | sed -n 1p )
+  (gsed -e "$((colon_in_title+1)) s/:/: >\n    /" ./old_blog/new_content/articles/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/$slug.md
+
+  # remove colons from within summary
+  colon_in_summary=$( gsed -n '/^Summary:.*:.*$/=' $f | sed -n 1p )
+  (gsed -e "$((colon_in_summary+1)) s/:/: >\n    /" ./old_blog/new_content/articles/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/$slug.md
+
+  # replace <br> with <br></br>
+  (gsed -e " s/<br>/<br><\/br>/g" ./old_blog/new_content/articles/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/$slug.md
+  (gsed -e " s/<\/br>/<br><\/br>/g" ./old_blog/new_content/articles/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/$slug.md
+
+  # use mdx table of contents plugin
+  (gsed -e " s/\[toc\]/<TOCInline toc={props.toc} exclude=\"Overview\" toHeading={2} \/>/g" ./old_blog/new_content/articles/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/$slug.md
 
 done
