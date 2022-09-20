@@ -1,7 +1,8 @@
 #! /bin/sh
 
+echo "Processing file...";
 for f in $(ls ./old_blog/content/articles/*.md | head -109999 ) ; do 
-  echo "Processing $f file...";
+  echo "    $f";
 
   # get filename
   base="$(basename $f)"
@@ -84,10 +85,5 @@ echo "\ncopying files:"
 for i in "${posts[@]}"
 do
   cp "./old_blog/new_content/articles/$i.md" "./data/blog/$i.md"
-  echo "$i.. done"
+  echo "    $i.. done"
 done
-
-# cp ./old_blog/new_content/articles/spaarndam-photographs.md ./data/blog/spaarndam-photographs.md
-# cp ./old_blog/new_content/articles/flee.md ./data/blog/flee.md
-# cp ./old_blog/new_content/articles/lis17.md ./data/blog/lis17.md
-# cp ./old_blog/new_content/articles/lis17.md ./data/blog/learning-april-2021.md
