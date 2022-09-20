@@ -6,7 +6,8 @@ category: Non-technical/Journal, Technical/Other
 tags: ["reading"]
 ---
 
-[TOC]
+Contents:
+<TOCInline toc={props.toc} exclude="Overview" toHeading={2} />
 
 Articles and blog posts I saved to read later:
 
