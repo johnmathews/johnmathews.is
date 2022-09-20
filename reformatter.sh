@@ -76,14 +76,20 @@ for f in $(ls ./old_blog/content/articles/*.md | head -109999 ) ; do
   # change markdown image formatting
   (gsed -e " s/({static}\.\.\/images\//(\/static\/images\//g" ./old_blog/new_content/articles/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/$slug.md
 
+  # make documents hosted on blog downloadable
+  # (gsed -e " s/\[\(.*\)\]({attach}\/documents\//\[\1\](\/documents\//g" ./old_blog/new_content/articles/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/$slug.md
+  (gsed -e " s/({attach}\/documents\//(\/documents\//g" ./old_blog/new_content/articles/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/$slug.md
+
+
+
 done
 
 
 # copy selected articles to new blog data folder
-declare -a posts=( "spaarndam-photographs" "flee" "lis17" "learning-april-2021" "reading-april-2021" )
+declare -a posts=( "beach-photographs" "becoming-a-better-python-developer" "spaarndam-photographs" "flee" "lis17" "learning-april-2021" "reading-april-2021" "rys-git-tutorial" )
 echo "\ncopying files:"
 for i in "${posts[@]}"
 do
-  cp "./old_blog/new_content/articles/$i.md" "./data/blog/$i.md"
+  cp "./old_blog/new_content/articles/$i.md" "./data/blog/$i.md" 
   echo "    $i.. done"
 done
