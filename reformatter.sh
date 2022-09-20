@@ -19,7 +19,7 @@ for f in $(ls ./old_blog/content/articles/*.md | head -109999 ) ; do
 
   # get the line number containing the tags
   tag_line=$( sed -n '/^Tags:/=' $f | sed -n 1p )
-  echo $tag_line
+  # echo $tag_line
 
 
   # front-matter keys should be lowercase
@@ -50,8 +50,8 @@ for f in $(ls ./old_blog/content/articles/*.md | head -109999 ) ; do
 
   # if tags key doesnt exist, create it
   if ! grep -q "Tags:" $f; then
-    echo "Tags key does not exist!!"
-    echo $end_of_frontmatter
+    # echo "Tags key does not exist!!"
+    # echo $end_of_frontmatter
     (gsed -e "$(($end_of_frontmatter+1)) i tags: \[\]" ./old_blog/new_content/articles/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/$slug.md
   fi
 
@@ -64,10 +64,30 @@ for f in $(ls ./old_blog/content/articles/*.md | head -109999 ) ; do
   (gsed -e "$((colon_in_summary+1)) s/:/: >\n    /" ./old_blog/new_content/articles/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/$slug.md
 
   # replace <br> with <br></br>
-  (gsed -e " s/<br>/<br><\/br>/g" ./old_blog/new_content/articles/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/$slug.md
-  (gsed -e " s/<\/br>/<br><\/br>/g" ./old_blog/new_content/articles/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/$slug.md
+  (gsed -e " s/<\/\{0,1\}br>/<br><\/br>/g" ./old_blog/new_content/articles/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/$slug.md
 
   # use mdx table of contents plugin
-  (gsed -e " s/\[toc\]/<TOCInline toc={props.toc} exclude=\"Overview\" toHeading={2} \/>/g" ./old_blog/new_content/articles/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/$slug.md
+  (gsed -e " s/\[TOC\]/Contents:\n<TOCInline toc={props.toc} exclude=\"Overview\" toHeading={2} \/>\n/g" ./old_blog/new_content/articles/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/$slug.md
+
+  # ensure there is at least 1 blank row above and below each image
+  (gsed -e " s/\!\[\(.*\)\]({static}\.\.\(.*\))/\n\!\[\1\]({static}\.\.\2)/g" ./old_blog/new_content/articles/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/$slug.md
+
+  # change markdown image formatting
+  (gsed -e " s/({static}\.\.\/images\//(\/static\/images\//g" ./old_blog/new_content/articles/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/$slug.md
 
 done
+
+
+# copy selected articles to new blog data folder
+declare -a posts=( "spaarndam-photographs" "flee" "lis17" "learning-april-2021" "reading-april-2021" )
+echo "\ncopying files:"
+for i in "${posts[@]}"
+do
+  cp "./old_blog/new_content/articles/$i.md" "./data/blog/$i.md"
+  echo "$i.. done"
+done
+
+# cp ./old_blog/new_content/articles/spaarndam-photographs.md ./data/blog/spaarndam-photographs.md
+# cp ./old_blog/new_content/articles/flee.md ./data/blog/flee.md
+# cp ./old_blog/new_content/articles/lis17.md ./data/blog/lis17.md
+# cp ./old_blog/new_content/articles/lis17.md ./data/blog/learning-april-2021.md
