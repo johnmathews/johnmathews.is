@@ -2,6 +2,8 @@
 
 Session.vim
 
+old_blog/*
+
 # dependencies
 /node_modules
 /.pnp
