@@ -1,32 +1,44 @@
-import { getAllFilesFrontMatter } from "@/lib/mdx"
+import { SnippetSEO } from "@/components/SEO"
 import siteMetadata from "@/data/siteMetadata"
-import ListLayout from "@/layouts/ListLayout"
 import SnippetLayout from "@/layouts/SnippetLayout"
-import { PageSEO } from "@/components/SEO"
+import generateRss from "@/lib/generate-rss"
+import { getAllSnippets } from "@/lib/mdx"
+import { getFileBySlug } from "@/lib/mdx"
+import fs from "fs"
+import path from "path"
 
-export const POSTS_PER_PAGE = 25
+const root = process.cwd()
 
 export async function getStaticProps() {
-  const posts = await getAllFilesFrontMatter("blog")
-  const snippets = posts.filter((post) => post.frontmatter.category === "snippet")
-  const initialDisplayPosts = posts.slice(0, POSTS_PER_PAGE)
-  const pagination = {
-    currentPage: 1,
-    totalPages: Math.ceil(posts.length / POSTS_PER_PAGE),
+  const snippetFrontmatter = await getAllSnippets("blog").then((token) => {
+    return token
+  })
+
+  const snippetCode = snippetFrontmatter.map((snip) => getFileBySlug("blog", snip.slug))
+  const snippetContent = await Promise.all(snippetCode) //.then((snippetCode) => { return snippetCode })
+
+  if (snippetFrontmatter.length > 0) {
+    const rss = generateRss(snippetFrontmatter, `snippets/feed.xml`)
+    const rssPath = path.join(root, "public", "snippets")
+    fs.mkdirSync(rssPath, { recursive: true })
+    fs.writeFileSync(path.join(rssPath, "feed.xml"), rss)
   }
 
-  return { props: { initialDisplayPosts, snippets, pagination } }
+  return { props: { snippetContent, snippetFrontmatter } }
 }
 
-export default function Blog({ snippets, initialDisplayPosts, pagination }) {
+export default function Snippets(props) {
+  const title = "Snippets Page Title"
   return (
     <>
-      <PageSEO title={`Blog - ${siteMetadata.author}`} description={siteMetadata.description} />
+      <SnippetSEO
+        title={`Snippets - ${siteMetadata.author}`}
+        description={`Snippets - ${siteMetadata.author}`}
+      />
       <SnippetLayout
-        posts={snippets}
-        initialDisplayPosts={initialDisplayPosts}
-        pagination={pagination}
-        title="Blog Posts"
+        content={props.snippetContent}
+        frontmatter={props.snippetFrontmatter}
+        title={title}
       />
     </>
   )
