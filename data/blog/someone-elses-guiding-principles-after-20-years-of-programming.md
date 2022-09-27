@@ -1,9 +1,9 @@
 ---
 title: Someone else's guiding principles after 20 years of programming
-slug: title-someone-elses-guiding-principles-after-20-years-of-programming
+slug: someone-elses-guiding-principles-after-20-years-of-programming
 date: "2022-03-22 13:14:35"
 category: Technical/Developer Tools
-tags: ["advice", ""]
+tags: ["advice"]
 ---
 
 This is a copy of a great article on [medium](https://alexewerlof.medium.com/my-guiding-principles-after-20-years-of-programming-a087dc55596c) by Alex Ewerloef.

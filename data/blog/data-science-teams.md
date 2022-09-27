@@ -3,7 +3,7 @@ title: Data Science Teams
 slug: data-science-teams
 date: "2022-04-15 13:58:52"
 category: Technical/Engineering
-tags: ["management", ""]
+tags: ["management"]
 ---
 
 I was recently asked what I thought made for an effective data science team.

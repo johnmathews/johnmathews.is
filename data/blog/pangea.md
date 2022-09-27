@@ -3,7 +3,7 @@ title: Pangea
 slug: pangea
 date: "2017-11-22 16:49"
 category: Technical/Cryptocurrencies
-tags: ["bitnation", "pangea", ""]
+tags: ["bitnation", "pangea"]
 image: src="/images/pangea.jpg" alt="Pangea app"
 tweet: Decentralised, Borderless and Voluntary - #Pangea will empower citizens to self govern
 summary: Communities will always need to create reliable and enforceable agreements with each other.
