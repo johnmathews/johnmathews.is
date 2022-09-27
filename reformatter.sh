@@ -59,26 +59,35 @@ for f in $(ls ./old_blog/content/articles/*.md | head -109999 ) ; do
   # remove colons from within title
   colon_in_title=$( gsed -n '/^Title:.*:.*$/=' $f | sed -n 1p )
   (gsed -e "$((colon_in_title+1)) s/:/: >\n    /" ./old_blog/new_content/articles/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/$slug.md
+  # remove backticks from within title
+  backtick_in_title=$( gsed -n '/^Title:.*`.*$/=' $f | sed -n 1p )
+  (gsed -e "$((colon_in_title+1)) s/:/: >\n    /" ./old_blog/new_content/articles/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/$slug.md
 
   # remove colons from within summary
   colon_in_summary=$( gsed -n '/^Summary:.*:.*$/=' $f | sed -n 1p )
   (gsed -e "$((colon_in_summary+1)) s/:/: >\n    /" ./old_blog/new_content/articles/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/$slug.md
 
   # replace <br> with <br></br>
-  (gsed -e " s/<\/\{0,1\}br>/<br><\/br>/g" ./old_blog/new_content/articles/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/$slug.md
+  (gsed -e "s/<\/\{0,1\}br>/<br><\/br>/g" ./old_blog/new_content/articles/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/$slug.md
 
   # use mdx table of contents plugin
-  (gsed -e " s/\[TOC\]/Contents:\n<TOCInline toc={props.toc} exclude=\"Overview\" toHeading={2} \/>\n/g" ./old_blog/new_content/articles/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/$slug.md
+  (gsed -e "s/\[TOC\]/Contents:\n<TOCInline toc={props.toc} exclude=\"Overview\" toHeading={2} \/>\n/g" ./old_blog/new_content/articles/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/$slug.md
+
+  # replace html comment strings with mdx comment strings
+  (gsed -e "s/<--\(.*\)-->/{\/*\[\1\]*\/}/g" ./old_blog/new_content/articles/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/$slug.md
+
+
+  # replace html style tag with jsx style
+  (gsed -e "s/style=\"\(.*\)\"/style={{\[\1\]}}/g" ./old_blog/new_content/articles/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/$slug.md
 
   # ensure there is at least 1 blank row above and below each image
-  (gsed -e " s/\!\[\(.*\)\]({static}\.\.\(.*\))/\n\!\[\1\]({static}\.\.\2)/g" ./old_blog/new_content/articles/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/$slug.md
+  (gsed -e "s/\!\[\(.*\)\]({static}\.\.\(.*\))/\n\!\[\1\]({static}\.\.\2)/g" ./old_blog/new_content/articles/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/$slug.md
 
   # change markdown image formatting
-  (gsed -e " s/({static}\.\.\/images\//(\/static\/images\//g" ./old_blog/new_content/articles/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/$slug.md
+  (gsed -e "s/({static}\.\.\/images\//(\/static\/images\//g" ./old_blog/new_content/articles/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/$slug.md
 
   # make documents hosted on blog downloadable
-  # (gsed -e " s/\[\(.*\)\]({attach}\/documents\//\[\1\](\/documents\//g" ./old_blog/new_content/articles/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/$slug.md
-  (gsed -e " s/({attach}\/documents\//(\/documents\//g" ./old_blog/new_content/articles/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/$slug.md
+  (gsed -e "s/({attach}\/documents\//(\/documents\//g" ./old_blog/new_content/articles/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/$slug.md
 
 
 

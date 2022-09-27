@@ -1,0 +1,15 @@
+---
+title: Multi-tenant Django webapps
+slug: multi-tenant-django-webapps
+date: "2021-11-25 13:43:34"
+category: snippet
+tags: ["python", "django", "webapp"]
+---
+
+An [article](https://www.viget.com/articles/multi-tenancy-in-django/) explaining
+how a web-dev shop built a multi-tenant web application using Django and python.
+
+Also:
+
+- a [book](https://books.agiliq.com/projects/django-multi-tenant/en/latest/)
+- a [repo](https://github.com/citusdata/django-multitenant)

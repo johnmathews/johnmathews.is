@@ -14,6 +14,11 @@ module.exports = {
   ],
   darkMode: "class",
   theme: {
+    aspectRatio: {
+      none: 0,
+      square: [1, 1],
+      "16/9": [16, 9],
+    },
     extend: {
       spacing: {
         "9/16": "56.25%",
@@ -164,5 +169,14 @@ module.exports = {
       }),
     },
   },
-  plugins: [require("@tailwindcss/forms"), require("@tailwindcss/typography")],
+  variants: {
+    aspectRatio: ["responsive"],
+    extend: {},
+  },
+  plugins: [
+    require("@tailwindcss/forms"),
+    require("@tailwindcss/typography"),
+    require("tailwindcss-aspect-ratio"),
+    require("tailwindcss-responsive-embed"),
+  ],
 }

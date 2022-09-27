@@ -64,6 +64,10 @@ for f in $(ls ./old_blog/content/articles/snippets/*.md | head -109999 ) ; do
   colon_in_summary=$( gsed -n '/^Summary:.*:.*$/=' $f | sed -n 1p )
   (gsed -e "$((colon_in_summary+1)) s/:/: >\n    /" ./old_blog/new_content/articles/snippets/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/snippets/$slug.md
 
+  # remove backticks from within title
+  backtick_in_title=$( gsed -n '/^Title:.*`.*$/=' $f | sed -n 1p )
+  (gsed -e "$((colon_in_title+1)) s/:/: >\n    /" ./old_blog/new_content/articles/snippets/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/snippets/$slug.md
+
   # replace <br> with <br></br>
   (gsed -e " s/<\/\{0,1\}br>/<br><\/br>/g" ./old_blog/new_content/articles/snippets/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/snippets/$slug.md
 
@@ -81,12 +85,33 @@ for f in $(ls ./old_blog/content/articles/snippets/*.md | head -109999 ) ; do
   (gsed -e " s/({attach}\/documents\//(\/documents\//g" ./old_blog/new_content/articles/snippets/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/snippets/$slug.md
 
 
+  # replace html comment strings with mdx comment strings
+  (gsed -e "s/<--\(.*\)-->/{\/*\[\1\]*\/}/g" ./old_blog/new_content/articles/snippets/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/snippets/$slug.md
+
+
+  # replace html style tag with jsx style
+  # (gsed -e 's/style="\(.*\)"/style={{\1}}/g' ./old_blog/new_content/articles/snippets/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/snippets/$slug.md
+  # (gsed -e 's/padding-top: 56.25%//g' ./old_blog/new_content/articles/snippets/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/snippets/$slug.md
+
+  # links with spaces in the hyperlink should be replaced with hyphens. kebab case.
+  (gsed  -e ':a' -e 's/\(\[[^][]*]([^()[:space:]]*\)[[:space:]]\{1,\}\([^()]*)\)/\1-\2/' -e 'ta' ./old_blog/new_content/articles/snippets/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/snippets/$slug.md
+
+  # replace youtube embeds with call to react component
+  (gsed -e 's/<div class[.*]<iframe.*src="\(.*\)"[.*]<iframe>\n<\/div>/<IframeEmbed src=\"\[\1\]\"\>/g' ./old_blog/new_content/articles/snippets/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/snippets/$slug.md
+
+
+  # invalid DOM element names in youtube embeddings
+  (gsed -e " s/allowfullscreen/allowFullScreen/g" ./old_blog/new_content/articles/snippets/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/snippets/$slug.md
+  (gsed -e " s/frameborder/frameBorder/g" ./old_blog/new_content/articles/snippets/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/snippets/$slug.md
+  (gsed -e " s/class=\"/className=\"/g" ./old_blog/new_content/articles/snippets/$slug.md ) > /tmp/$slug.md && mv /tmp/$slug.md ./old_blog/new_content/articles/snippets/$slug.md
+
+
 
 done
 
 
 # copy selected snippets to new blog data folder
-declare -a posts=( "globbing" "nmap" "nohup" "practice" )
+declare -a posts=( "globbing" "nmap" "nohup" "practice" "alfie-solomons" )
 echo "\ncopying files:"
 for i in "${posts[@]}"
 do

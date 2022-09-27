@@ -40,6 +40,7 @@
     "remark-math": "^5.1.1",
     "sharp": "^0.30.5",
     "tailwindcss": "^3.0.23",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
     "unist-util-visit": "^4.0.0"
   },
   "devDependencies": {
@@ -60,7 +61,8 @@
     "prettier": "^2.5.1",
     "prettier-plugin-tailwindcss": "^0.1.4",
     "socket.io": "^4.4.0",
-    "socket.io-client": "^4.4.0"
+    "socket.io-client": "^4.4.0",
+    "tailwindcss-responsive-embed": "^1.0.0"
   },
   "lint-staged": {
     "*.+(js|jsx|ts|tsx)": [
