@@ -60,12 +60,12 @@ the secrets management capabilities.
 
 ## Adding files and directories
 
-1.  You add a file to cm with `cm add <file>`. This copies the file
+1.  You add a file to cm with `cm add &lt;file&gt;`. This copies the file
     into the source state but changes the name. If the file you want to track is
     `~/.zshrc` then cm will create a file in the source state called
     `dot_zshrc`.
 
-1.  You can `cm add <dir>` just like you can `cm add <file>`. If you copy a
+1.  You can `cm add <dir>` just like you can `cm add &lt;file&gt;`. If you copy a
     directory into the source state, the name of the source state copy will be
     prepended with `dot_`, too. The names of the files and dirs inside the
     directory are not changed.

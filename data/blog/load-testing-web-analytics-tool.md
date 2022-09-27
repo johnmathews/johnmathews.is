@@ -55,15 +55,21 @@ scaling up and down well within its preset limits, as expected.
 
 ## API traffic for the tool
 
-[![API traffic]({static}/images/analytics-tool/api-traffic.png)/images/analytics-tool/api-traffic.png)
+[
+
+![API traffic](/static/images/analytics-tool/api-traffic.png)/images/analytics-tool/api-traffic.png)
 
 ## Dashboard for the `get-analytics` cloud function
 
-[![dashboard for get-analytics function]({static}/images/analytics-tool/get-analytics-dashboard.png)/images/analytics-tool/get-analytics-dashboard.png)
+[
+
+![dashboard for get-analytics function](/static/images/analytics-tool/get-analytics-dashboard.png)/images/analytics-tool/get-analytics-dashboard.png)
 
 ## Dashboard for the `page-view-logger` function
 
-[![dashboard for page-view-logger function]({static}/images/analytics-tool/page-view-logger-dashboard.png)/images/analytics-tool/page-view-logger-dashboard.png)
+[
+
+![dashboard for page-view-logger function](/static/images/analytics-tool/page-view-logger-dashboard.png)/images/analytics-tool/page-view-logger-dashboard.png)
 
 # The Solution
 

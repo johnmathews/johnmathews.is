@@ -78,7 +78,7 @@ what they need to win.
 
 A **Hero** → has a **Problem** → and meets a **Guide** → who gives them a **Plan** → and calls them to **Action** → that ends in **Success** → and helps them avoid **Failure**.
 
-![story stages]({static}/images/building-a-story-brand/7storystages.png)
+![story stages](/static/images/building-a-story-brand/7storystages.png)
 
 # Hero
 
@@ -595,7 +595,7 @@ and meaning.
 5. Create a system that generates _referrals_. If word of mouth is so powerful,
    incentivize it.
 
-## 1. One-liner {#markdown data-toc-label='One-liner'}
+## 1. One-liner
 
 The one-liner is a statement. It could be more than 1 sentence, but its supposed
 to be super short. It's the equivalent of a logline for a movie. Keep editing it
@@ -625,7 +625,7 @@ second mortgage while still enjoying the warm beautiful weather of Florida
 during the winter" vs "I got involved in real estate a few years ago and when we
 had out second kid we moved to Florida and then...."
 
-## 2. Create a lead generator {#markdown data-toc-label='Create a lead generator'}
+## 2. Create a lead generator
 
 - A guide to download.
 - A free webinar or online course.
@@ -643,7 +643,7 @@ Downloadable guides etc should be about 3 pages in length.
 
 Be generous, explain the "why" and give away as much of the "how" as possible.
 
-## 3. An automated email campaign {#markdown data-toc-label='An automated email campaign'}
+## 3. An automated email campaign
 
 Even if customers don't click the links in the email, they keep seeing your
 brand and they become familiar with it. When they need your services you will be
@@ -667,7 +667,7 @@ a solution, but in the direct email the solution is a product you sell and there
 is a strong call to action. A lot of the content can be taken from the
 StoryBrand script.
 
-## 4. Collect and tell stories of transformation {#markdown data-toc-label='Collect and tell stories of transformation'}
+## 4. Collect and tell stories of transformation
 
 A great testimonial gives customers the gift of going second, and lowering the
 riskiness of purchasing.
@@ -694,7 +694,7 @@ Questions to get a good testimonial:
    solve your problem?
 5. Tell us what life looks like now that your problem is solved or being solved?
 
-## 5. Create a system to incentivise referrals {#markdown data-toc-label='Create a system to incentivise referrals'}
+## 5. Create a system to incentivise referrals
 
 1. Identify your existing ideal customers
 2. Give them a reason to talk about you - create a video or a PDF that a

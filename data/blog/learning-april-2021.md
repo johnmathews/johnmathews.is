@@ -12,9 +12,11 @@ tags:
     "vagrant",
     "google-cloud-platform",
     "service-accounts",
-    "iam,",
+    "iam",
   ]
 ---
+
+import IframeEmbed from '../components/IframeEmbed'
 
 Contents:
 <TOCInline toc={props.toc} exclude="Overview" toHeading={2} />
@@ -36,25 +38,25 @@ flexible permissions that their own.
 These short videos are good, but they're not a complete solution. I'm not sure
 where to look next.
 
-<br></br><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xXk1YlkKW_k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<IframeEmbed src='https://www.youtube-nocookie.com/embed/xXk1YlkKW_k' />
 
 # [Ansible](https://www.youtube.com/playlist?list=PL2_OBreMn7FplshFCWYlaN2uS8et9RjNG)
 
 Based on Jeff Geerlings book. There are 15 episodes. Jeff seems like a great
 guy. I'm going to try listen to one of these each day.
 
-<br></br><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/goclfp6a2IQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<IframeEmbed src='https://www.youtube-nocookie.com/embed/goclfp6a2IQ' />
 
 # [SSH](https://www.youtube.com/watch?v=hQWRp-FdTpc&list=PLQGMHRkCCyDw5arrPInZT_T8TbDdzmeBp&index=4)
 
-<br></br><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/hQWRp-FdTpc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<IframeEmbed src='https://www.youtube-nocookie.com/embed/hQWRp-FdTpc' />
 
 [This](https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys)
 is also a very useful article. I made notes from it in another [post]({filename}../articles/ssh.md).
 
 # [Vagrant](https://www.youtube.com/watch?v=vBrezgo&list=PLQGMHRkCCyDw5arrPInZT_T8TbDdzmeBp&index=2X)
 
-<br></br><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/vBreXjkizgo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<IframeEmbed src='https://www.youtube-nocookie.com/embed/vBreXjkizgo' />
 
 - Good for local development. (Especially when on aeroplanes?)
 - Not as good for cloud providers as Terraform.

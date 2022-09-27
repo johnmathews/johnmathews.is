@@ -6,6 +6,8 @@ category: Technical/Engineering
 tags: ["abstractions", "meta", "software-engineering"]
 ---
 
+import IframeEmbed from '../components/IframeEmbed'
+
 Design patterns are generalized abstractions that solve common problems and help
 engineers create complex code reliably and quickly. I first heard about design
 patterns from Aaron Maxwell in his [Powerful
@@ -17,14 +19,7 @@ the rabbit hole I went.
 
 Take a look at the Borg design pattern.
 
-<div class="relative mt-3" style={{[padding-top: 56.25%]}}>
-  <iframe
-    class="absolute inset-0 w-full h-full"
-    src="https://youtube.com/embed/bsyjSW46TDg"
-    frameborder="0"
-    allow="autoplay; encrypted-media" allowfullscreen >
-  </iframe>
-</div>
+<IframeEmbed src='https://youtube.com/embed/bsyjSW46TDg' />
 
 These are some additional resources:
 

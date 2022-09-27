@@ -22,4 +22,4 @@ practice.
 Also, I'd like to find a code visualization tool that can show the flow of classes and
 methods as they are instantiated.
 
-![103-attempts]({static}/images/103-airflow.png)
+![103-attempts](/static/images/103-airflow.png)

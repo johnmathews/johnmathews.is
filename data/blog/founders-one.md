@@ -10,6 +10,8 @@ tweet: Follow the progress of a solo founder jumping from data science to web de
 summary: I'm building a money mangement tool because a good one isn't already available.
 ---
 
+import IframeEmbed from '../components/IframeEmbed'
+
 Last summer, I made dashboard using python to visualise my personal finances. I
 could see my expenses agregated by category and I could see how much I was
 saving each month. I set some targets and tracked my spending against them. It
@@ -22,6 +24,4 @@ There's going to be a lot to learn because I'm not a web-developer, yet. I'm
 starting my journey by learning javaScript. Which feels very basic compared to
 my ambitions.
 
-<div class="embed-responsive embed-responsive-16by9">
-<iframe width="560" height="315" class="embed-responsive-item" src="https://www.youtube.com/embed/79Uh3quC4PA" frameborder="0" allowfullscreen></iframe>
- </div>
+<IframeEmbed src='https://www.youtube.com/embed/79Uh3quC4PA' />

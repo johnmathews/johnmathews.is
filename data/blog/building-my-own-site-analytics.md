@@ -145,7 +145,9 @@ for the current day perhaps. I've made a couple of widgets before
 [[1](http://tracesof.net/uebersicht-widgets/#time_since),
 [2](http://tracesof.net/uebersicht-widgets/#time_until)] which were written in
 CoffeeScript, but the newer widgets are written in React, so I guess this is an
-opportunity to learn[ref]Done! My desktop now looks like this: ![Dekstop widgets]({static}/images/widgets.png)[/ref] .
+opportunity to learn[ref]Done! My desktop now looks like this:
+
+![Dekstop widgets](/static/images/widgets.png)[/ref] .
 
 Writing the "Time Since" (my daughters birth) and "Time Until" (my next
 accounting exam[ref]I failed the exam because I'd been working on

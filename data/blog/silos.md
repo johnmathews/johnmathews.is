@@ -33,8 +33,9 @@ acting on granular materials as they poured out of a silo. My [thesis](/document
 [presentation](/documents/Mathews_J_2013_Defence_presentation.pdf) I
 used to defend it are available.
 
-![4 silos]({static}/images/silos1/4_silos.jpeg)
-![granular materials]({static}/images/silos1/granular_materials.jpeg)
+![4 silos](/static/images/silos1/4_silos.jpeg)
+
+![granular materials](/static/images/silos1/granular_materials.jpeg)
 
 Granular materials are a broad class of materials that are
 encountered everyday - salt, pills, breakfast cereal, sand, rice, soil,
@@ -111,10 +112,16 @@ to render, and Adobe Reader Desktop must be used in order to view them.
 4.  [Centrifugal modelling of granular flows (Eurofuge conference proceedings)](/documents/Cabrera-et-al.pdf)
 5.  [Overview of research (PhD defence, 2013)](/documents/Mathews_J_2013_Defence_presentation.pdf)
 
-![Model silo and camera]({static}/images/silos2/model_silo_camera.jpeg)
-![Model silo inside centrifuge]({static}/images/silos2/model_silo_in_centrifuge.jpeg)
-![Silo opening mechanism]({static}/images/silos2/silo_open_mechanism.jpeg)
-![Centrifuge]({static}/images/silos2/centrifuge.jpeg)
-![Silo Model]({static}/images/silos2/silo_render.jpeg)
-![Silo wall pressure mesasurements]({static}/images/silos2/silo_pressure_pads.jpeg)
-![Particle Image Velocimetry result showing average flow velocities]({static}/images/silos2/silo_piv.jpeg)
+![Model silo and camera](/static/images/silos2/model_silo_camera.jpeg)
+
+![Model silo inside centrifuge](/static/images/silos2/model_silo_in_centrifuge.jpeg)
+
+![Silo opening mechanism](/static/images/silos2/silo_open_mechanism.jpeg)
+
+![Centrifuge](/static/images/silos2/centrifuge.jpeg)
+
+![Silo Model](/static/images/silos2/silo_render.jpeg)
+
+![Silo wall pressure mesasurements](/static/images/silos2/silo_pressure_pads.jpeg)
+
+![Particle Image Velocimetry result showing average flow velocities](/static/images/silos2/silo_piv.jpeg)

@@ -6,7 +6,9 @@ category: snippet
 tags: ["python", "console", "shell"]
 ---
 
-[![rich module]({static}/images/rich-python.png)/images/rich-python.png)
+[
+
+![rich module](/static/images/rich-python.png)/images/rich-python.png)
 `python -m rich` for a demo
 
 Cool Python module to handle terminal output with debugging and logging features. It can even record stack trace errors to html.

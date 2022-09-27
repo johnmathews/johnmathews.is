@@ -6,15 +6,9 @@ category: Technical/Developer Tools
 tags: ["search"]
 ---
 
-<div className="relative mt-3" style="padding-top: 56.25%">
-   <iframe
-    loading="lazy"
-    className="absolute inset-0 w-full h-full"
-    src="https://youtube.com/embed/cEBkvm0-rg0"
-    frameBorder="0"
-    allow="autoplay; encrypted-media" allowFullScreen >
-  </iframe>
-</div>
+import IframeEmbed from '../components/IframeEmbed'
+
+<IframeEmbed src='https://youtube.com/embed/cEBkvm0-rg0' />
 
 ## Meta
 

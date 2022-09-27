@@ -48,7 +48,7 @@ confident it'll be "my" tool for the next few decades. I'm happy to invest a
 couple of hours to learn a few new habits and iron out a few
 wrinkles[ref]Happily, it seems like the amount of time required to learn or
 become familiar with a new tool is decreasing. I guess this is to be expected
-as experience increases but nonetheless it's gratifying to realise.<br class="mb-3">Dotfiles
+as experience increases but nonetheless it's gratifying to realise.<br></br>Dotfiles
 management was a fairly new and interesting concept when I first began
 symlinking into my home directory. It still feels amazing to bootstrap a fresh
 machine and have it feel like home in just a few minutes, but the
@@ -76,15 +76,15 @@ Update - the notes in my [follow-up](more-chezmoi) are likely much more useful.
 
 1.  List of unmanaged files → **cm unmanaged**
 
-1.  Start tracking a file → **cm add <dir/file>**
+1.  Start tracking a file → **cm add &gt;path&#47;to&#47;file&lt;**
 
 1.  Update a file, add the file again → **cm add ..**
 
-1.  Edit tracked version of file → **cm edit <file>** - don't think I'm going to
+1.  Edit tracked version of file → **cm edit &lt;file&gt;** - don't think I'm going to
     use this, I'd rather edit the source file, test it, and then update using
     **cm add ..**
 
-1.  Differences between local version tracked versions → **cm diff <file>** -
+1.  Differences between local version tracked versions → **cm diff &lt;file&gt;** -
     this tells me which files I need to **cm add** again. This feels clunky and I
     suspect there is a better workflow. Parsing git style diff files is
     horrible.

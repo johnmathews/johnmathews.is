@@ -7,6 +7,8 @@ image: src="/images/starship-first-stacking.png" alt="super heavy booster stacki
 tags: ["uncategorized"]
 ---
 
+import IframeEmbed from '../components/IframeEmbed'
+
 Whilst giving Tim Dodd a tour of a SpaceX facility, Musk described an interesting five-step engineering process:
 
 1.  **Make the requirements less dumb**. The requirements are definitely dumb; it
@@ -34,15 +36,6 @@ Whilst giving Tim Dodd a tour of a SpaceX facility, Musk described an interestin
     production line with a high acceptance rate, there is no need for in-process
     testing.
 
-<br></br>
-
-<div class="relative mt-3" style={{[padding-top: 56.25%]}}>
-  <iframe
-    class="absolute inset-0 w-full h-full"
-    src="https://youtube.com/embed/t705r8ICkRw"
-    frameborder="0"
-    allow="autoplay; encrypted-media" allowfullscreen >
-  </iframe>
-</div>
+<IframeEmbed src='https://youtube.com/embed/t705r8ICkRw' />
 
 [archive](https://storage.googleapis.com/assets.johnmathews.is/movies/Starbase-Factory-Tour-with-Elon-Musk-Part-1.mp4)

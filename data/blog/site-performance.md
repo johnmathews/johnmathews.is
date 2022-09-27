@@ -23,5 +23,6 @@ resources, they could be read by anyone anywhere in the world. It's amazing.
 
 Below are the lighthouse results for the blog's index page and for a recent post.
 
-![lighthouse score for index page]({static}/images/lighthouse_index_page.png)
-![lighthouse score for a blog article]({static}/images/lighthouse_article_page.png)
+![lighthouse score for index page](/static/images/lighthouse_index_page.png)
+
+![lighthouse score for a blog article](/static/images/lighthouse_article_page.png)

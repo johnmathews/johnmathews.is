@@ -11,7 +11,7 @@ import IframeEmbed from '../components/IframeEmbed'
 Jack Daniels' book about
 [running](https://www.amazon.com/Daniels-Running-Formula-Jack-Tupper/dp/1450431836) has a training plan that seems to be highly regarded.
 
-![training]({static}/images/training-graph.png)
+![training](/static/images/training-graph.png)
 
 - LT1 - 75% of maximum heart rate. ~145BPM maybe (for running).
 - LT2 - Average heart rate for a maximum sustained effort for 1 hour.

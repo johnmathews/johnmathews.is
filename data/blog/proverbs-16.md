@@ -143,4 +143,4 @@ $^{32}$<mark>Whoever is slow to anger is better than the mighty, and he who
 rules his spirit than he who takes a city.</mark> Wow. This is high praise for
 self control.
 
-![domino meme]({static}/images/proverbs/domino-meme.jpg)
+![domino meme](/static/images/proverbs/domino-meme.jpg)

@@ -9,6 +9,8 @@ tags: ["book"]
 summary: My notes on "The Mom Test" by Rob Fitzpatrick. It's called the Mom Test because it leads to questions that even your mom couldn't lie to you about.
 ---
 
+import IframeEmbed from '../components/IframeEmbed'
+
 Contents:
 <TOCInline toc={props.toc} exclude="Overview" toHeading={2} />
 
@@ -26,14 +28,7 @@ Contents:
 
 Doing Mom-test and customer development remotely:
 
-<div class="relative mt-3" style={{[padding-top: 56.25%]}}>
-  <iframe
-    class="absolute inset-0 w-full h-full"
-    src="https://youtube.com/embed/bcWqxq2fJgY"
-    frameborder="0"
-    allow="autoplay; encrypted-media" allowfullscreen >
-  </iframe>
-</div>
+<IframeEmbed src='https://youtube.com/embed/bcWqxq2fJgY' />
 
 ## Update 1
 

@@ -10,13 +10,12 @@ tweet: The last two weeks building a web-app - I've built the backend using djan
 summary: The last two weeks have been great - I've built the backend using Django.
 ---
 
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/MbfNIS0z3cY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
- </div>
+import IframeEmbed from '../components/IframeEmbed'
 
-<div><br/></div>
+<IframeEmbed src='https://www.youtube.com/embed/MbfNIS0z3cY' />
+
 - Built the backend!
-- Decided to stick with what I knew, and build using Django. 
+- Decided to stick with what I knew, and build using Django.
 - Decisions look obvious in retrospect
 
 - User authentication is functional

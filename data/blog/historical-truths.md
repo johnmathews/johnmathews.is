@@ -87,4 +87,6 @@ an algorithm or by someone else?
 - Was the influence of government on social freedoms in America 100 years ago dissimilar to China today?
 - Racial and ethnic discrimination was normal 100 years ago - it appears to have been so universally accepted that I'm led to question the presuppositions of modern attitudes about human nature and morality.
 
-[![cartoon by tom gauld]({static}/images/tom-gauld-cartoon.jpg)/images/tom-gauld-cartoon.jpg)
+[
+
+![cartoon by tom gauld](/static/images/tom-gauld-cartoon.jpg)/images/tom-gauld-cartoon.jpg)

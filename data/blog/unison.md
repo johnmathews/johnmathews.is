@@ -18,7 +18,7 @@ unison -batch -color true <dir-a> ssh://<user>@a<host>/<dir-b>
 ## Setup
 
 1.  Download the binary file with `wget`
-1.  `chmod +x <file>`
+1.  `chmod +x &lt;file&gt;`
 1.  copy the executable somewhere on your path like `/usr/local/bin`
 1.  `unison -doc tutorial` > `remote method` > `remote shell method`
 1.  use a filewatcher to sync on change, or use cron to sync every n minutes

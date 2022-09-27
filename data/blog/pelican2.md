@@ -119,7 +119,11 @@ I also needed to use some blocks more than once, because a description tag was a
 <meta name="description" content="{% block description %}{% endblock description %}">
 ```
 
-But If you call "{% block description %}{% endblock description %}" again Jinja will throw you an error. The documentation (and SO) reveal that the solution is to use:
+```jinja2
+{% block description %}{% endblock description %}
+```
+
+If you call the above more than once Jinja will throw you an error. The documentation (and SO) reveal that the solution is to use:
 
 ```jinja2
 <meta property="og:description" content="{{ self.description() }}">

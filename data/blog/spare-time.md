@@ -8,6 +8,8 @@ slug: spare-time
 status: published
 ---
 
+import IframeEmbed from '../components/IframeEmbed'
+
 This is a list of interests I want to consider pursuing. I wrote it when I began to study for my last set of exams and my mind filled with things I'd rather be doing instead. Some of these interests are just me reacting to having no spare time for a few months, but others are decent goals and projects. Temporarily losing my spare time made me value it more.
 
 ![free-time](/images/spare_time.jpg)
@@ -97,10 +99,7 @@ I wrote this post so that I could compare what I thought was important when I w
     fiction would be essential for exploring these. But for now, I'll prioritise
     point 3.
 
-    <iframe class="my-5" style={{[max-width: 100%; float:middle]}}
-    src="https://read.amazon.co.uk/kp/card?asin=B00796LLLK&amp;asin=B00796LLLK&amp;preview=inline&amp;linkCode=kpe&amp;ref_=cm_sw_r_kb_dp_GP2Rxb3Q8MYC4"
-    width="336" height="550" frameborder="0"
-    allowfullscreen="allowfullscreen"></iframe>
+    <IframeEmbed src='https://read.amazon.co.uk/kp/card?asin=B00796LLLK&amp;asin=B00796LLLK&amp;preview=inline&amp;linkCode=kpe&amp;ref_=cm_sw_r_kb_dp_GP2Rxb3Q8MYC4' />
 
 10. "Do a photography project" - This I would love to do, but probably won't.
     It would be a luxury, and the opportunity cost would be too great right
@@ -128,15 +127,7 @@ I wrote this post so that I could compare what I thought was important when I w
     St-Pierre](https://youtu.be/LybrzdG96_8) made me want to train
     for MMA. For now though, I'll do P90x. I can reconsider in 90 days.
 
-
-    <div class="relative" style={{[padding-top: 56.25%]}}>
-      <iframe
-        class="absolute inset-0 w-full h-full"
-        src="https://www.youtube.com/embed/u0_8dzaNxhg"
-        frameborder="0"
-        allow="autoplay; encrypted-media" allowfullscreen >
-      </iframe>
-    </div>
+    <IframeEmbed src='https://www.youtube.com/embed/u0_8dzaNxhg' />
 
 15. "Get out of London" - My contract ends in April 2017, next summer
     will be a crossroads. I hate the commute, I hate being constantly

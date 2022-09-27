@@ -66,12 +66,18 @@ ideas!
 
 ## CloudFlare Analytics
 
-[![cloudflare analytics tab]({static}/images/cloudflare/cloudflare analytics tab.png)/images/cloudflare/cloudflare analytics tab.png)
+[
+
+![cloudflare analytics tab](/static/images/cloudflare/cloudflare analytics tab.png)/images/cloudflare/cloudflare analytics tab.png)
 
 ## CloudFlare Web Analytics
 
-[![cloudflare analytics beta]({static}/images/cloudflare/cloudflare analytics beta.png)/images/cloudflare/cloudflare analytics beta.png)
+[
+
+![cloudflare analytics beta](/static/images/cloudflare/cloudflare analytics beta.png)/images/cloudflare/cloudflare analytics beta.png)
 
 ## My own analytics tool
 
-[![homebrew analytics]({static}/images/cloudflare/homebrew_analytics_visitors.png)/images/cloudflare/homebrew_analytics_visitors.png)
+[
+
+![homebrew analytics](/static/images/cloudflare/homebrew_analytics_visitors.png)/images/cloudflare/homebrew_analytics_visitors.png)

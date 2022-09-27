@@ -23,7 +23,7 @@ To measure the startup speed of your shell, do:
 for i in $(seq 1 10); do /usr/bin/time $SHELL -i -c exit; done
 ```
 
-![zsh profile]({static}/images/zsh_startup_speed.jpg)
+![zsh profile](/static/images/zsh_startup_speed.jpg)
 
 This shows that it takes 0.84 seconds to start `zsh` - not terrible, but not
 great:
@@ -33,7 +33,8 @@ You can compare the performance of different shells by replacing `$SHELL` with
 
 Here are the results if I used `BASH` instead of `zsh` - 9.3x faster! (but
 without useful tools and plugins):
-![bash profile]({static}/images/bash_startup_speed.jpg)
+
+![bash profile](/static/images/bash_startup_speed.jpg)
 
 Now that I can measure how long it takes to start, it would be useful to know
 which proccesses are causing the greatest delays. This could be done with
@@ -44,7 +45,7 @@ a summary of how much time each subproccess required to run, i.e. an order blind
 Add `zmodload zsh/zprof` at the start of `.zshrc` and `zprof` at the very end.
 Now when I start `zsh` I see the following:
 
-![zsh startup components]({static}/images/zsh_order_blind_profiling.jpg)
+![zsh startup components](/static/images/zsh_order_blind_profiling.jpg)
 
 Next steps - make virtualenvwrapper run faster, or asyncronously, or
 not at all...
@@ -53,4 +54,4 @@ Update:
 `virtualenvwrapper` is the biggest cause of slow loading. Using the [lazy
 loading](https://virtualenvwrapper.readthedocs.io/en/latest/install.html) option decreased loading time by 0.3s
 
-![zsh profile]({static}/images/zsh_startup_speed_lazy_load.jpg)
+![zsh profile](/static/images/zsh_startup_speed_lazy_load.jpg)
