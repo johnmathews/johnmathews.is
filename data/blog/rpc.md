@@ -3,7 +3,7 @@ title: Remote Procedure Calls
 slug: rpc
 date: "2021-04-29 17:37:38"
 category: snippet
-tags: ["rpc", "linux,"]
+tags: ["rpc", "linux"]
 ---
 
 A RPC is when an executable causes a procedure (subroutine) to execute on

@@ -3,7 +3,7 @@ title: Performance Optimizations for the shell prompt
 slug: performance-targets
 date: "2021-05-28 13:48:59"
 category: snippet
-tags: ["shell,"]
+tags: ["shell"]
 ---
 
 Something should happen within 100ms of the users input in order to maintain a

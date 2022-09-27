@@ -3,7 +3,7 @@ title: Bash Strict Mode
 slug: bash-strict-mode
 date: "2021-05-04 17:56:34"
 category: snippet
-tags: ["bash", "linux,"]
+tags: ["bash", "linux"]
 ---
 
 How to write robust bash scripts:

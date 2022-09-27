@@ -4,7 +4,7 @@ status: Published
 slug: How-I-learnt-to-code
 date: "2020-12-1 13:51"
 category: Non-technical/Learning
-tags: ["learning", "code,"]
+tags: ["learning", "code"]
 ---
 
 4 years ago I started learning how to code, and it was difficult! It still is

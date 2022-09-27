@@ -3,7 +3,7 @@ title: Running through adversity
 slug: running-through-adversity
 date: "2021-08-06 10:38:29"
 category: snippet
-tags: ["hard-rock", "running", "sport,"]
+tags: ["hard-rock", "running", "sport"]
 ---
 
 import IframeEmbed from '../components/IframeEmbed'

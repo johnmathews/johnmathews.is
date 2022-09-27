@@ -3,7 +3,7 @@ title: First five minutes on a server
 slug: first-five-minutes-on-a-server
 date: "2021-12-08 13:07:40"
 category: snippet
-tags: ["security", "linux,"]
+tags: ["security", "linux"]
 ---
 
 An

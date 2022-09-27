@@ -3,7 +3,7 @@ title: Dan Lebrero book notes
 slug: dan-lebrero-book-notes
 date: "2022-03-24 10:33:26"
 category: snippet
-tags: ["reading", "books,"]
+tags: ["reading", "books"]
 ---
 
 A personal [blog](https://danlebrero.com/) with some notes on books that look

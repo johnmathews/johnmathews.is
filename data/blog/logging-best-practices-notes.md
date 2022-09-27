@@ -3,7 +3,7 @@ title: Logging Best Practices
 slug: logging-best-practices-notes
 date: "2021-10-07 11:24:48"
 category: Technical/Engineering
-tags: ["programming", "back-end,"]
+tags: ["programming", "back-end"]
 ---
 
 Contents:

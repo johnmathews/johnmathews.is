@@ -3,7 +3,7 @@ title: Remote Working
 slug: remote-working
 date: "2021-08-02 13:53:49"
 category: snippet
-tags: ["remote", "engineering,"]
+tags: ["remote", "engineering"]
 ---
 
 - I live and work near Amsterdam

@@ -3,7 +3,7 @@ title: Bakke-Rij
 slug: bakkerij
 date: "2018-6-11 13:09"
 category: Non-technical/Entrepreneurship
-tags: ["coworking", "netherlands", "haarlem,"]
+tags: ["coworking", "netherlands", "haarlem"]
 image: src="/images/bakkerij3.jpg" alt="Bakke-Rij"
 tweet: This is a great example of repurposing an industrial space for the next stage of the industrial revolution - knowledge work.
 summary: This is a great example of a creative and innovative coworking space.

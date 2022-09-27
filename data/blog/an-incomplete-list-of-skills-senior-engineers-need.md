@@ -3,7 +3,7 @@ title: An incomplete list of skills senior engineers need
 slug: an-incomplete-list-of-skills-senior-engineers-need
 date: "2021-06-07 12:12:07"
 category: Technical/Engineering
-tags: ["advice", "management,"]
+tags: ["advice", "management"]
 ---
 
 This is copied from [Camille Fournier](https://skamille.medium.com/)'s article

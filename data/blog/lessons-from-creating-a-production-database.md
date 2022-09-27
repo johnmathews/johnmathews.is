@@ -3,7 +3,7 @@ title: Lessons from creating a production database
 slug: lessons-from-creating-a-production-database
 date: "2021-11-24 12:21:10"
 category: snippet
-tags: ["facebook", "management,"]
+tags: ["facebook", "management"]
 ---
 
 wip

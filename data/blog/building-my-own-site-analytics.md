@@ -3,7 +3,7 @@ title: Building my own web analytics
 slug: building-my-own-site-analytics
 date: "2021-06-22 14:30:07"
 category: Technical/Web,
-tags: ["cloud-functions", "data,"]
+tags: ["cloud-functions", "data"]
 ---
 
 I've built a simple client-side website analytics tool for this site, you can

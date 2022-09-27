@@ -3,7 +3,7 @@ title: Linux Filesystem Hierarchy Standard
 slug: linux-etsy-dir
 date: "2021-05-02 17:43:08"
 category: snippet
-tags: [" linux", "filesystem,"]
+tags: [" linux", "filesystem"]
 ---
 
 `/etc` (etsy) → "etcetera" or "editable text config" → a place to put config files.

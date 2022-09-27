@@ -3,7 +3,7 @@ title: How doctors die
 slug: how-doctors-die
 date: "2021-09-09 10:24:08"
 category: snippet
-tags: ["humanity", "death,"]
+tags: ["humanity", "death"]
 ---
 
 An [article](https://archive.cancerworld.net/featured/how-doctors-die/) about

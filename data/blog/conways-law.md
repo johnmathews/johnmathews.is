@@ -3,7 +3,7 @@ title: Conway's Law
 slug: conways-law
 date: "2021-08-16 11:57:58"
 category: snippet
-tags: ["organisations,"]
+tags: ["organisations"]
 ---
 
 Organizations which design systems … are constrained to produce designs which

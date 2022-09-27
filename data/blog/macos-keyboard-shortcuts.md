@@ -3,7 +3,7 @@ title: MacOS Keyboard Shortcuts
 slug: macos-keyboard-shortcuts
 date: "2022-04-05 14:31:09"
 category: snippet
-tags: ["macos", "keyboard,"]
+tags: ["macos", "keyboard"]
 ---
 
 A [blog post](https://www.jamieonkeys.dev/posts/keyboard-shortcuts/) explaining

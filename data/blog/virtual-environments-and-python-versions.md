@@ -3,7 +3,7 @@ title: Virtual environments and python versions
 slug: virtual-environments-and-python-versions
 date: "2021-11-01 16:09:14"
 category: Technical/Developer Tools
-tags: ["python", "pyenv", "virtualenv", "virtual-environment,"]
+tags: ["python", "pyenv", "virtualenv", "virtual-environment"]
 ---
 
 Contents:

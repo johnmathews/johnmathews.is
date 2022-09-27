@@ -3,7 +3,7 @@ title: Vimscript functions
 slug: create-custom-functions-in-vim
 date: "2021-05-05 18:06:15"
 category: snippet
-tags: ["vim,"]
+tags: ["vim"]
 ---
 
 Create a custom command and function to create a new file in vim.

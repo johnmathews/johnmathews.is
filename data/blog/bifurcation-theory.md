@@ -3,7 +3,7 @@ title: Bifurcation Theory
 slug: bifurcation-theory
 date: "2021-06-17 11:19:12"
 category: snippet
-tags: ["math", "chaos,"]
+tags: ["math", "chaos"]
 ---
 
 import IframeEmbed from '../components/IframeEmbed'

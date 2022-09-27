@@ -3,7 +3,7 @@ title: HTML Templates
 slug: html-templates
 date: "2021-04-30 17:34:17"
 category: snippet
-tags: ["html", "jam,"]
+tags: ["html", "jam"]
 ---
 
 - [wickedtemplates.com](wickedtemplates.com)

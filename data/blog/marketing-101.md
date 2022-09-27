@@ -4,7 +4,7 @@ status: Published
 slug: marketing-101
 date: "2020-11-19 12:40"
 category: Non-technical/Entrepreneurship
-tags: ["marketing", "growth,"]
+tags: ["marketing", "growth"]
 tweet: After 7 months becoming a better web developer, I'm deep-diving on marketing and growth. See which books I'm reading and let me know what else I should read?!
 summary: I've learnt many things this year by being a solo technical founder, but so far marketing isn't one of them. I'm trying to change that.
 ---

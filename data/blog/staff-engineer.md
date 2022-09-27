@@ -3,7 +3,7 @@ title: Staff Engineer
 slug: staff-engineer
 date: "2022-03-13 13:32:20"
 category: snippet
-tags: ["tech", "career", "todo,"]
+tags: ["tech", "career", "todo"]
 ---
 
 A [site](https://staffeng.com/) about career paths after reaching "Senior

@@ -3,7 +3,7 @@ title: Vim Sneak
 slug: vim-sneak
 date: "2021-06-15 14:52:28"
 category: snippet
-tags: ["vim", "plugin,"]
+tags: ["vim", "plugin"]
 ---
 
 - Invoked with `s` followed by 2 chars.

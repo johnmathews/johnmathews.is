@@ -3,7 +3,7 @@ title: Git LFS
 slug: git-lfs-2
 date: "2021-06-11 11:52:59"
 category: snippet
-tags: ["git", "lfs", "github-pages,"]
+tags: ["git", "lfs", "github-pages"]
 ---
 
 Key commands

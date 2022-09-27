@@ -3,7 +3,7 @@ title: Reactance
 slug: reactance
 date: "2022-02-10 22:28:51"
 category: snippet
-tags: ["psychology,"]
+tags: ["psychology"]
 ---
 
 [Reactance](<https://en.wikipedia.org/wiki/Reactance_(psychology)>) would be a

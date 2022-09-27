@@ -3,7 +3,7 @@ title: Adding JSON output to a CLI app
 slug: adding-json-output-to-cli-app
 date: "2021-12-06 10:27:51"
 category: snippet
-tags: ["cli,"]
+tags: ["cli"]
 ---
 
 An
