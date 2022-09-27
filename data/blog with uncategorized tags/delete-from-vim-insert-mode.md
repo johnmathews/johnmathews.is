@@ -1,11 +1,9 @@
 ---
-title: >
-  >
-  Delete stuff in Vim without leaving insert mode:
+title: Delete stuff in Vim without leaving insert mode
 slug: delete-from-vim-insert-mode
 date: "2021-05-05 18:03:07"
 category: snippet
-tags: ["vim", ""]
+tags: ["vim"]
 ---
 
 - `<C-h>` - same as backspace
