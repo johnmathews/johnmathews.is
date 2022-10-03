@@ -66,6 +66,7 @@ module.exports = withBundleAnalyzer({
       },
     ]
   },
+  images: { domains: ["picsum.photos"], formats: ["image/avif", "image/webp"] },
   webpack: (config, { dev, isServer }) => {
     config.module.rules.push({
       test: /\.svg$/,
