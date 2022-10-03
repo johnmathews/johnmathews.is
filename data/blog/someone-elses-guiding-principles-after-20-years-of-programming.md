@@ -9,13 +9,9 @@ tags: ["advice"]
 This is a copy of a great article on [medium](https://alexewerlof.medium.com/my-guiding-principles-after-20-years-of-programming-a087dc55596c) by Alex Ewerloef.
 
 I've copied it here because an article on Medium could disappear at any moment,
-and its too good to lose.
-
-<br></br>
+and its too good to lose:
 
 ---
-
-<br></br>
 
 I’ve been programming since 1999 and this year I’ve officially coded for 20+
 years. I started with Basic but soon jumped into Pascal and C and then learned
