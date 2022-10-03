@@ -5,6 +5,8 @@ import siteMetadata from "@/data/siteMetadata"
 import { getAllFilesFrontMatter } from "@/lib/mdx"
 import formatDate from "@/lib/utils/formatDate"
 
+import MobileNav from "@/components/MobileNav"
+
 import ThemeSwitch from "@/components/ThemeSwitch"
 import NewsletterForm from "@/components/NewsletterForm"
 import Image from "next/image"
@@ -23,7 +25,15 @@ export default function Home() {
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
 
       <div className="max-w-7/8 my-auto mx-auto grid grid-cols-1 content-center md:mr-10 md:min-h-screen md:grid-cols-3 lg:gap-4 xl:mr-5 ">
-        <div id="primaryList" className="m-auto mx-3 w-full content-center ">
+        <div className="mx-auto mt-32 mb-12 flex content-center md:hidden ">
+          <div className="">
+            <MobileNav />
+          </div>
+          <div className="mt-1">
+            <ThemeSwitch />
+          </div>
+        </div>
+        <div className="m-auto mx-3 hidden w-full content-center md:block ">
           <ul className="my-3 text-center">
             <li className="my-5">Posts</li>
             <li className="my-5">Snippets</li>
@@ -43,7 +53,7 @@ export default function Home() {
           />
         </div>
 
-        <div className="mt-20 hidden w-full">
+        <div className="mt-20 w-full md:hidden">
           <a
             id="fuseSearch"
             className=" mx-auto -mt-10 block px-3 text-center font-serif font-semibold text-gray-700 hover:underline dark:text-gray-200 lg:ml-12 xl:ml-40 "
