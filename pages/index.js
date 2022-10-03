@@ -22,7 +22,7 @@ export default function Home() {
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
 
-      <div className="max-w-7/8 my-auto mx-auto grid min-h-screen grid-cols-1 content-center md:mr-10 md:grid-cols-3 lg:gap-4 xl:mr-5 ">
+      <div className="max-w-7/8 my-auto mx-auto grid grid-cols-1 content-center md:mr-10 md:min-h-screen md:grid-cols-3 lg:gap-4 xl:mr-5 ">
         <div id="primaryList" className="m-auto mx-3 w-full content-center ">
           <ul className="my-3 text-center">
             <li className="my-5">Posts</li>
@@ -34,7 +34,7 @@ export default function Home() {
             </li>
           </ul>
         </div>
-        <div id="imageColumn" className="col-span-2 ">
+        <div id="imageColumn" className="col-span-2 mx-5 lg:mx-0 ">
           <Image
             src="https://picsum.photos/seed/123/1000/800"
             alt="placeholder"
