@@ -28,7 +28,7 @@ export async function getStaticProps() {
 }
 
 export default function Snippets(props) {
-  const title = "Snippets Page Title"
+  const title = "Snippets"
   return (
     <>
       <SnippetSEO

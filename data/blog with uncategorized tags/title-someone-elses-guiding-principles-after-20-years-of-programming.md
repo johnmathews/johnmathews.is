@@ -3,32 +3,26 @@ title: Someone else's guiding principles after 20 years of programming
 slug: title-someone-elses-guiding-principles-after-20-years-of-programming
 date: "2022-03-22 13:14:35"
 category: Technical/Developer Tools
-tags: ["advice", ""]
+tags: ["advice"]
 ---
 
 This is a copy of a great article on [medium](https://alexewerlof.medium.com/my-guiding-principles-after-20-years-of-programming-a087dc55596c) by Alex Ewerloef.
 
 I've copied it here because an article on Medium could disappear at any moment,
-and its too good to lose.
+and its too good to lose:
 
-<br></br>
-
----
-
-<br></br>
-
-I’ve been programming since 1999 and this year I’ve officially coded for 20+
+I've been programming since 1999 and this year I've officially coded for 20+
 years. I started with Basic but soon jumped into Pascal and C and then learned
 object oriented programming (OOP) with Delphi and C++. In 2006 I started with
-Java and in 2011 I started with JavaScript. I’ve worked with a wide range of
+Java and in 2011 I started with JavaScript. I've worked with a wide range of
 businesses from robotics, fin tech, med tech to media and telecom. Sometimes I
 had a different hat as a researcher, CTO, TPM (technical product manager),
-teacher, system architect or TL (technical leader) but I’ve always been coding.
-I’ve worked on some products that served millions of people, and some that
+teacher, system architect or TL (technical leader) but I've always been coding.
+I've worked on some products that served millions of people, and some that
 failed before being released. I worked as a consultant and I even had my own
 startup. I have spent lots of time on open source projects, closed source
 projects and internally open source projects (proprietary code that is developed
-by a community inside the company). I’ve worked with tiny microcontrollers all
+by a community inside the company). I've worked with tiny microcontrollers all
 the way to mobile and desktop apps to cloud servers and lately serverless.
 
 For my 20 years programming anniversary, I tried to list the top principles that

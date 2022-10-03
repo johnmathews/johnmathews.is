@@ -66,11 +66,14 @@ export default function SnippetLayout({
             return (
               <article
                 key={slug}
-                className="snippet flex flex-col rounded-lg border-2 border-red-800 bg-gray-300 shadow-lg dark:border-gray-800 dark:bg-gray-800 "
+                className="snippet flex flex-col rounded-lg border-2 border-gray-300 bg-gray-100 shadow-lg dark:border-gray-200 dark:bg-gray-800 "
               >
                 <div className="flex-grow">
                   <div className="mt-1 px-4 pt-2">
-                    <Link href={`/blog/${slug}`} className="text-gray-900 dark:text-gray-100">
+                    <Link
+                      href={`/blog/${slug}`}
+                      className="text-lg font-semibold text-gray-900 dark:text-gray-100"
+                    >
                       {title}
                     </Link>
                   </div>
@@ -81,15 +84,12 @@ export default function SnippetLayout({
                   </div>
                 </div>
                 <div className="border-t-2 border-gray-200 dark:border-gray-700">
-                  <div className="markdown mx-5  mb-1 mt-2">
-                    <div className="font-mono text-sm">
-                      <dl>
-                        <dt className="sr-only">Published on</dt>
-                        <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                          <time dateTime={date}>{formatDate(date)}</time>
-                        </dd>
-                      </dl>
-                    </div>
+                  <div className="markdown mx-3  mb-1 mt-2">
+                    <dl>
+                      <dd className="font-mono text-sm text-gray-500 dark:text-gray-400">
+                        <time dateTime={date}>{formatDate(date)}</time>
+                      </dd>
+                    </dl>
                   </div>
                   <div className="mt-1 mb-2 flex flex-wrap px-3">
                     {tags.map((tag) => (
