@@ -5,6 +5,7 @@ import siteMetadata from "@/data/siteMetadata"
 import { getAllFilesFrontMatter } from "@/lib/mdx"
 import formatDate from "@/lib/utils/formatDate"
 
+import ThemeSwitch from "@/components/ThemeSwitch"
 import NewsletterForm from "@/components/NewsletterForm"
 import Image from "next/image"
 
@@ -16,13 +17,24 @@ export async function getStaticProps() {
   return { props: { posts } }
 }
 
-export default function Home({ posts }) {
+export default function Home() {
   return (
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
 
-      <div className="divide-y divide-gray-200 dark:divide-gray-700">
-        <div className="space-y-2 pt-6 pb-8 md:space-y-5">
+      <div className="max-w-7/8 my-auto mx-auto grid min-h-screen grid-cols-1 content-center md:mr-10 md:grid-cols-3 lg:gap-4 xl:mr-5 ">
+        <div id="primaryList" className="m-auto mx-3 w-full content-center ">
+          <ul className="my-3 text-center">
+            <li className="my-5">Posts</li>
+            <li className="my-5">Snippets</li>
+            <li className="my-5">Projects</li>
+            <li className="my-5">About</li>
+            <li className="my-5">
+              <ThemeSwitch />
+            </li>
+          </ul>
+        </div>
+        <div id="imageColumn" className="col-span-2 ">
           <Image
             src="https://picsum.photos/seed/123/1000/800"
             alt="placeholder"
@@ -31,61 +43,16 @@ export default function Home({ posts }) {
           />
         </div>
 
-        <ul className="">
-          {!posts.length && "No posts found."}
-
-          {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
-            const { slug, date, title, summary, tags } = frontMatter
-
-            return (
-              <li key={slug} className="">
-                <article>
-                  <div className="border-none xl:grid xl:grid-cols-4 xl:items-baseline">
-                    <div className="space-y-5 xl:col-span-3">
-                      <div className="space-y-6">
-                        <div>
-                          <h2 className="text-2xl font-normal leading-8 tracking-tight">
-                            <Link
-                              href={`/blog/${slug}`}
-                              className="text-gray-900 dark:text-gray-100"
-                            >
-                              {title}
-                            </Link>
-                          </h2>
-                        </div>
-                      </div>
-                      <div className="text-base font-medium leading-6">
-                        <Link
-                          href={`/blog/${slug}`}
-                          className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                          aria-label={`Read "${title}"`}
-                        ></Link>
-                      </div>
-                    </div>
-                    <dl>
-                      <dt className="sr-only">Published on</dt>
-                      <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                        <time dateTime={date}>{formatDate(date)}</time>
-                      </dd>
-                    </dl>
-                  </div>
-                </article>
-              </li>
-            )
-          })}
-        </ul>
-      </div>
-      {posts.length > MAX_DISPLAY && (
-        <div className="flex justify-end text-base font-medium leading-6">
-          <Link
-            href="/blog"
-            className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-            aria-label="all posts"
+        <div className="mt-20 hidden w-full">
+          <a
+            id="fuseSearch"
+            className=" mx-auto -mt-10 block px-3 text-center font-serif font-semibold text-gray-700 hover:underline dark:text-gray-200 lg:ml-12 xl:ml-40 "
+            href="javaScript:;"
           >
-            All Posts &rarr;
-          </Link>
+            Search
+          </a>
         </div>
-      )}
+      </div>
     </>
   )
 }
