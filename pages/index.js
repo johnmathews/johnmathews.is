@@ -1,17 +1,14 @@
 import Link from "@/components/Link"
 import { PageSEO } from "@/components/SEO"
-import Tag from "@/components/Tag"
 import siteMetadata from "@/data/siteMetadata"
 import { getAllFilesFrontMatter } from "@/lib/mdx"
-import formatDate from "@/lib/utils/formatDate"
+
+import headerNavLinks from "@/data/headerNavLinks"
 
 import MobileNav from "@/components/MobileNav"
 
 import ThemeSwitch from "@/components/ThemeSwitch"
-import NewsletterForm from "@/components/NewsletterForm"
 import Image from "next/image"
-
-const MAX_DISPLAY = 5
 
 export async function getStaticProps() {
   const posts = await getAllFilesFrontMatter("blog")
@@ -35,13 +32,14 @@ export default function Home() {
         </div>
         <div className="m-auto mx-3 hidden w-full content-center md:block ">
           <ul className="my-3 text-center">
-            <li className="my-5">Posts</li>
-            <li className="my-5">Snippets</li>
-            <li className="my-5">Projects</li>
-            <li className="my-5">About</li>
-            <li className="my-5">
-              <ThemeSwitch />
-            </li>
+            {headerNavLinks.map((link) => (
+              <li key={link.title} className="my-5">
+                <Link href={link.href} className="">
+                  {link.title}
+                </Link>
+              </li>
+            ))}
+            <ThemeSwitch />
           </ul>
         </div>
         <div id="imageColumn" className="col-span-2 mx-5 lg:mx-0 ">

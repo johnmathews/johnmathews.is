@@ -10,16 +10,17 @@ import Head from "next/head"
 import siteMetadata from "@/data/siteMetadata"
 import Analytics from "@/components/analytics"
 import LayoutWrapper from "@/components/LayoutWrapper"
+import KeyboardShortcusts from "@/components/KeyboardShortcuts"
 import { ClientReload } from "@/components/ClientReload"
 
 import { useRouter } from "next/router"
+import KeyboardShortcuts from "@/components/KeyboardShortcuts"
 
 const isDevelopment = process.env.NODE_ENV === "development"
 const isSocket = process.env.SOCKET
 
 export default function App({ Component, pageProps }) {
   const router = useRouter()
-  console.log("--- debug Component,: ", Component)
   if (router.asPath == "/") {
     return (
       <ThemeProvider attribute="class" defaultTheme={siteMetadata.theme}>
@@ -29,6 +30,7 @@ export default function App({ Component, pageProps }) {
         {isDevelopment && isSocket && <ClientReload />}
         <Analytics />
         <Component {...pageProps} />
+        <KeyboardShortcuts />
       </ThemeProvider>
     )
   } else {
@@ -42,6 +44,7 @@ export default function App({ Component, pageProps }) {
         <LayoutWrapper>
           <Component {...pageProps} />
         </LayoutWrapper>
+        <KeyboardShortcuts />
       </ThemeProvider>
     )
   }
