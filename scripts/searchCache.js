@@ -37,12 +37,12 @@ try {
 fs.writeFile("cache/searchData.js", searchableContent, (err) => {
   if (err) console.log(err)
   else {
-    console.log("Posts cached.")
+    console.log("Posts cached to cache/searchData.js")
   }
 })
 fs.writeFile("cache/searchData.json", JSONData, (err) => {
   if (err) console.log(err)
   else {
-    console.log("Posts cached.")
+    console.log("Posts cached to cache/searchData.json")
   }
 })
