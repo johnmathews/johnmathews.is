@@ -17,7 +17,7 @@ function getAllPosts() {
     return {
       id,
       title: matterResult.data.title,
-      tags: matterResult.data.tags,
+      tags: String(matterResult.data.tags),
       category: matterResult.data.category,
       content: markdownContent,
     }
@@ -26,6 +26,7 @@ function getAllPosts() {
 }
 
 const searchableContent = `export const posts = ${getAllPosts()}`
+const JSONData = `${getAllPosts()}`
 
 try {
   fs.readdirSync("cache")
@@ -33,7 +34,13 @@ try {
   fs.mkdirSync("cache")
 }
 
-fs.writeFile("cache/data.js", searchableContent, (err) => {
+fs.writeFile("cache/searchData.js", searchableContent, (err) => {
+  if (err) console.log(err)
+  else {
+    console.log("Posts cached.")
+  }
+})
+fs.writeFile("cache/searchData.json", JSONData, (err) => {
   if (err) console.log(err)
   else {
     console.log("Posts cached.")
