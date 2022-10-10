@@ -3,10 +3,10 @@
 
 const fs = require("fs")
 const path = require("path")
-const matter = require("grey-matter")
+const matter = require("gray-matter")
 
 function getAllPosts() {
-  const postsDirectory = path.join(process.cwd(), "posts")
+  const postsDirectory = path.join(process.cwd(), "data/blog")
   const fileNames = fs.readdirSync(postsDirectory)
   const posts = fileNames.map((fileName) => {
     const id = fileName.replace(/\.md$/, "")
@@ -22,7 +22,7 @@ function getAllPosts() {
       content: markdownContent,
     }
   })
-  return JSON.stringify(posts)
+  return JSON.stringify(posts, null, 2)
 }
 
 const searchableContent = `export const posts = ${getAllPosts()}`
