@@ -27,3 +27,9 @@ input:-webkit-autofill:focus {
 .snippetCard ul {
   @apply mx-0 px-0;
 }
+
+/* Algolia Search */
+
+:root {
+  --aa-icon-size: 94px;
+}
