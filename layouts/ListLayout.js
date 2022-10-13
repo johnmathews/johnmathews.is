@@ -6,22 +6,6 @@ import { useState } from "react"
 import Pagination from "@/components/Pagination"
 import formatDate from "@/lib/utils/formatDate"
 
-import { getAlgoliaResults } from "@algolia/autocomplete-js"
-import algoliasearch from "algoliasearch"
-import Autocomplete from "@/components/AutoComplete"
-import SearchItem from "@/components/SearchItem"
-import Search from "@/components/Search"
-
-import "@algolia/autocomplete-theme-classic"
-
-// const appId = 'latency';
-// const apiKey = '6be0576ff61c053d5f9a3225e2a90f76';
-
-const appId = "56G1FXZV4K"
-const apiKey = "c9a76549bd2473401cb96c00b503698e"
-
-const searchClient = algoliasearch(appId, apiKey)
-
 export default function ListLayout({ posts, title, initialDisplayPosts = [], pagination }) {
   const [searchValue, setSearchValue] = useState("")
   const filteredBlogPosts = posts.filter((frontMatter) => {
@@ -41,34 +25,6 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             {title}
           </h1>
-
-          <button></button>
-          <div className="max-w-sm pt-2">
-            <Autocomplete
-              openOnFocus={true}
-              getSources={({ query }) => [
-                {
-                  sourceId: "id",
-                  getItems() {
-                    return getAlgoliaResults({
-                      searchClient,
-                      queries: [
-                        {
-                          indexName: "blogArticles",
-                          query,
-                        },
-                      ],
-                    })
-                  },
-                  templates: {
-                    item({ item, components }) {
-                      return <SearchItem hit={item} components={components} />
-                    },
-                  },
-                },
-              ]}
-            />
-          </div>
         </div>
         <ul>
           {!filteredBlogPosts.length && "No posts found."}

@@ -2,6 +2,18 @@ import { useState } from "react"
 import Link from "./Link"
 import headerNavLinks from "@/data/headerNavLinks"
 
+import { getAlgoliaResults } from "@algolia/autocomplete-js"
+import algoliasearch from "algoliasearch"
+import Autocomplete from "@/components/AutoComplete"
+import SearchItem from "@/components/SearchItem"
+import Search from "@/components/Search"
+
+import "@algolia/autocomplete-theme-classic"
+
+const appId = "56G1FXZV4K"
+const apiKey = "c9a76549bd2473401cb96c00b503698e"
+const searchClient = algoliasearch(appId, apiKey)
+
 const MobileNav = () => {
   const [navShow, setNavShow] = useState(false)
 
@@ -76,6 +88,34 @@ const MobileNav = () => {
               </Link>
             </div>
           ))}
+
+          <div className="-ml-10">
+            <Autocomplete
+              openOnFocus={true}
+              getSources={({ query }) => [
+                {
+                  sourceId: "id",
+                  getItems() {
+                    return getAlgoliaResults({
+                      searchClient,
+                      classNames: {},
+                      queries: [
+                        {
+                          indexName: "blogArticles",
+                          query,
+                        },
+                      ],
+                    })
+                  },
+                  templates: {
+                    item({ item, components }) {
+                      return <SearchItem hit={item} components={components} />
+                    },
+                  },
+                },
+              ]}
+            />
+          </div>
         </nav>
       </div>
     </div>

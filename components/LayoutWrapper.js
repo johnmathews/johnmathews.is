@@ -7,6 +7,18 @@ import Footer from "./Footer"
 import MobileNav from "./MobileNav"
 import ThemeSwitch from "./ThemeSwitch"
 
+import { getAlgoliaResults } from "@algolia/autocomplete-js"
+import algoliasearch from "algoliasearch"
+import Autocomplete from "@/components/AutoComplete"
+import SearchItem from "@/components/SearchItem"
+import Search from "@/components/Search"
+
+import "@algolia/autocomplete-theme-classic"
+
+const appId = "56G1FXZV4K"
+const apiKey = "c9a76549bd2473401cb96c00b503698e"
+
+const searchClient = algoliasearch(appId, apiKey)
 const LayoutWrapper = ({ children }) => {
   return (
     <SectionContainer>
@@ -27,6 +39,34 @@ const LayoutWrapper = ({ children }) => {
                 )}
               </div>
             </Link>
+          </div>
+
+          <div className="hidden lg:inline">
+            <Autocomplete
+              openOnFocus={true}
+              getSources={({ query }) => [
+                {
+                  sourceId: "id",
+                  getItems() {
+                    return getAlgoliaResults({
+                      searchClient,
+                      classNames: {},
+                      queries: [
+                        {
+                          indexName: "blogArticles",
+                          query,
+                        },
+                      ],
+                    })
+                  },
+                  templates: {
+                    item({ item, components }) {
+                      return <SearchItem hit={item} components={components} />
+                    },
+                  },
+                },
+              ]}
+            />
           </div>
           <div className="flex items-center text-base leading-5">
             <div className="hidden sm:block">

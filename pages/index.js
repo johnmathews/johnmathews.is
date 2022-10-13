@@ -10,6 +10,18 @@ import MobileNav from "@/components/MobileNav"
 import ThemeSwitch from "@/components/ThemeSwitch"
 import Image from "next/image"
 
+import { getAlgoliaResults } from "@algolia/autocomplete-js"
+import algoliasearch from "algoliasearch"
+import Autocomplete from "@/components/AutoComplete"
+import SearchItem from "@/components/SearchItem"
+import Search from "@/components/Search"
+
+import "@algolia/autocomplete-theme-classic"
+
+const appId = "56G1FXZV4K"
+const apiKey = "c9a76549bd2473401cb96c00b503698e"
+const searchClient = algoliasearch(appId, apiKey)
+
 export async function getStaticProps() {
   const posts = await getAllFilesFrontMatter("blog")
 
@@ -39,7 +51,35 @@ export default function Home() {
                 </Link>
               </li>
             ))}
+
             <ThemeSwitch />
+            <div className="lg:mt-10">
+              <Autocomplete
+                openOnFocus={true}
+                getSources={({ query }) => [
+                  {
+                    sourceId: "id",
+                    getItems() {
+                      return getAlgoliaResults({
+                        searchClient,
+                        classNames: {},
+                        queries: [
+                          {
+                            indexName: "blogArticles",
+                            query,
+                          },
+                        ],
+                      })
+                    },
+                    templates: {
+                      item({ item, components }) {
+                        return <SearchItem hit={item} components={components} />
+                      },
+                    },
+                  },
+                ]}
+              />
+            </div>
           </ul>
         </div>
         <div id="imageColumn" className="col-span-2 mx-5 lg:mx-0 ">
