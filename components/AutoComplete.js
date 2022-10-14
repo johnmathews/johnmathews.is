@@ -9,6 +9,7 @@ const appId = "56G1FXZV4K"
 const apiKey = "c9a76549bd2473401cb96c00b503698e"
 const searchClient = algoliasearch(appId, apiKey)
 
+// https://www.algolia.com/doc/ui-libraries/autocomplete/introduction/getting-started/
 export default function Autocomplete(props) {
   const containerRef = useRef(null)
 
