@@ -4,6 +4,8 @@ Session.vim
 
 old_blog/*
 
+cache/
+
 # dependencies
 /node_modules
 /.pnp
