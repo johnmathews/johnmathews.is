@@ -2,8 +2,8 @@ import React, { createElement } from "react"
 
 export default function SearchItem({ hit, components }) {
   return (
-    <a href={`/blog/${hit.objectID}`}>
-      <div className="flex">
+    <a className="bg-green-300" href={`/blog/${hit.objectID}`}>
+      <div className="flex ">
         <div className="flex-1">
           <components.Highlight hit={hit} attribute="title" />
         </div>

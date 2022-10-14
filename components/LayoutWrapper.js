@@ -42,7 +42,8 @@ const LayoutWrapper = ({ children }) => {
           </div>
 
           <div className="hidden lg:inline">
-            <Autocomplete />
+            {" "}
+            <Autocomplete />{" "}
           </div>
           <div className="flex items-center text-base leading-5">
             <div className="hidden sm:block">

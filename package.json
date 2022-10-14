@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "@algolia/autocomplete-js": "^1.7.1",
+    "@algolia/autocomplete-plugin-recent-searches": "^1.7.1",
     "@algolia/autocomplete-theme-classic": "^1.7.1",
     "@fontsource/inter": "4.5.2",
     "@mailchimp/mailchimp_marketing": "^3.0.58",
