@@ -90,31 +90,7 @@ const MobileNav = () => {
           ))}
 
           <div className="-ml-10">
-            <Autocomplete
-              openOnFocus={true}
-              getSources={({ query }) => [
-                {
-                  sourceId: "id",
-                  getItems() {
-                    return getAlgoliaResults({
-                      searchClient,
-                      classNames: {},
-                      queries: [
-                        {
-                          indexName: "blogArticles",
-                          query,
-                        },
-                      ],
-                    })
-                  },
-                  templates: {
-                    item({ item, components }) {
-                      return <SearchItem hit={item} components={components} />
-                    },
-                  },
-                },
-              ]}
-            />
+            <Autocomplete />
           </div>
         </nav>
       </div>

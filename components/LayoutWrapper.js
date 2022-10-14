@@ -42,31 +42,7 @@ const LayoutWrapper = ({ children }) => {
           </div>
 
           <div className="hidden lg:inline">
-            <Autocomplete
-              openOnFocus={true}
-              getSources={({ query }) => [
-                {
-                  sourceId: "id",
-                  getItems() {
-                    return getAlgoliaResults({
-                      searchClient,
-                      classNames: {},
-                      queries: [
-                        {
-                          indexName: "blogArticles",
-                          query,
-                        },
-                      ],
-                    })
-                  },
-                  templates: {
-                    item({ item, components }) {
-                      return <SearchItem hit={item} components={components} />
-                    },
-                  },
-                },
-              ]}
-            />
+            <Autocomplete />
           </div>
           <div className="flex items-center text-base leading-5">
             <div className="hidden sm:block">
