@@ -21,8 +21,11 @@ function getAllPosts() {
     const fileContents = fs.readFileSync(fullPath, "utf8")
     const matterResult = matter(fileContents)
     const markdownContent = fileContents.replace(/---(.|\n)*?---/, "")
+    const post_url = process.env.ROOT_URL + "/blog/" + id
+    console.log("--- debug post_url: ", post_url)
     return {
       id,
+      url: post_url,
       objectID: id,
       title: matterResult.data.title,
       tags: String(matterResult.data.tags),
@@ -45,22 +48,19 @@ try {
 fs.writeFile("cache/searchData.js", searchableContent, (err) => {
   if (err) console.log(err)
   else {
-    console.log("Posts cached to cache/searchData.js")
+    console.log("Updated local index: cache/searchData.js")
   }
 })
 fs.writeFile("cache/searchData.json", JSONData, (err) => {
   if (err) console.log(err)
   else {
-    console.log("Posts cached to cache/searchData.json")
+    console.log("Updated local index: cache/searchData.json")
   }
 })
 
-// obj = JSON.parse(JSONData)
-// console.log('--- debug obj: ', obj);
-
 index
   .saveObjects(getAllPosts(), { autoGenerateObjectIDIfNotExist: false })
-  .then(({ objectIDs }) => {
-    // console.log(objectIDs)
+  .then(() => {
+    console.log("Algolia index updated!")
   })
   .catch((e) => console.log(e))

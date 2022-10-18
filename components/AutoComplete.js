@@ -1,4 +1,5 @@
 import { autocomplete } from "@algolia/autocomplete-js"
+import { getAlgoliaFacets } from "@algolia/autocomplete-preset-algolia"
 import React, { createElement, Fragment, useEffect, useRef } from "react"
 import { render } from "react-dom"
 
@@ -9,79 +10,67 @@ const appId = "56G1FXZV4K"
 const apiKey = "c9a76549bd2473401cb96c00b503698e"
 const searchClient = algoliasearch(appId, apiKey)
 
-// import { createLocalStorageRecentSearchesPlugin } from "@algolia/autocomplete-plugin-recent-searches"
+import { createLocalStorageRecentSearchesPlugin } from "@algolia/autocomplete-plugin-recent-searches"
 
 // https://www.algolia.com/doc/ui-libraries/autocomplete/introduction/getting-started/
 export default function Autocomplete(props) {
   const containerRef = useRef(null)
 
-  // const plugins = React.useMemo(() => {
-  //   const recentSearchesPlugin = createLocalStorageRecentSearchesPlugin({
-  //     key: "id",
-  //     limit: 3,
-  //     transformSource({ source }) {
-  //       return {
-  //         ...source,
-  //         onSelect({ item }) {
-  //           setSearchState((searchState) => ({
-  //             ...searchState,
-  //             query: item.label,
-  //           }))
-  //         },
-  //       }
-  //     },
-  //   })
+  const plugins = React.useMemo(() => {
+    const recentSearchesPlugin = createLocalStorageRecentSearchesPlugin({
+      key: "id",
+      limit: 3,
+      transformSource({ source }) {
+        return {
+          ...source,
+          onSelect({ item }) {
+            setSearchState((searchState) => ({
+              // eslint-disable-line no-use-before-define
+              ...searchState,
+              query: item.label,
+            }))
+          },
+        }
+      },
+    })
 
-  //   return [recentSearchesPlugin]
-  // }, [])
+    return [recentSearchesPlugin]
+  }, [])
 
   useEffect(() => {
     if (!containerRef.current) {
       return undefined
     }
-    // https://www.algolia.com/doc/api-reference/widgets/instantsearch/js/
     const search = autocomplete({
       container: containerRef.current,
       openOnFocus: true,
       placeholder: "Search",
       detachedMediaQuery: "",
-      // plugins: plugins,
+      defaultActiveItemId: 0,
+      debug: true,
+      plugins: plugins,
       routing: true,
-      // initialState: {},
-      // initialUiState: {
-      //   indexName: {
-      //     query: "",
-      //     page: 5,
-      //   },
-      // },
 
-      searchFunction: function (helper) {
-        if (helper.state.query.length === 0) {
-          console.log("smoooookejhk ")
-          return // do not trigger search
-        }
-        console.log("smoooookejhk ")
-        helper.search() // trigger search
-      },
-      // keyboard nav: https://www.algolia.com/doc/ui-libraries/autocomplete/core-concepts/keyboard-navigation/
       // classNames: { item: "border border-gray-200 hover:bg-gray-200 bg-gray-100 my-3", list: "" },
       renderer: { createElement, Fragment, render },
+
       getSources() {
         return [
           {
             sourceId: "id",
+            getItemUrl({ item }) {
+              return item.url
+            },
             getItems({ query }) {
               return getAlgoliaResults({
                 searchClient,
-                classNames: {},
+                // classNames: {},
                 queries: [
                   {
                     indexName: "blogArticles",
                     query,
                     params: {
                       hitsPerPage: 9,
-                      attributesToSnippet: ["name:10", "description:35"],
-                      snippetEllipsisText: "…",
                     },
                   },
                 ],
@@ -95,6 +84,25 @@ export default function Autocomplete(props) {
           },
         ]
       },
+
+      // Default Navigator API implementation
+      // keyboard nav: https://www.algolia.com/doc/ui-libraries/autocomplete/core-concepts/keyboard-navigation/
+      navigator: {
+        navigate({ itemUrl }) {
+          window.location.assign(itemUrl)
+        },
+        navigateNewTab({ itemUrl }) {
+          const windowReference = window.open(itemUrl, "_blank", "noopener")
+
+          if (windowReference) {
+            windowReference.focus()
+          }
+        },
+        navigateNewWindow({ itemUrl }) {
+          window.open(itemUrl, "_blank", "noopener")
+        },
+      },
+
       ...props,
     })
 
