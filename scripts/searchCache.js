@@ -22,7 +22,6 @@ function getAllPosts() {
     const matterResult = matter(fileContents)
     const markdownContent = fileContents.replace(/---(.|\n)*?---/, "")
     const post_url = process.env.ROOT_URL + "/blog/" + id
-    console.log("--- debug post_url: ", post_url)
     return {
       id,
       url: post_url,

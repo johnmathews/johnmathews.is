@@ -68,7 +68,6 @@ export default function Autocomplete(props) {
           {
             sourceId: "id",
             getItemUrl({ item }) {
-              console.log("--- debug item.url: ", item.url)
               return item.url
             },
             getItems({ query }) {
