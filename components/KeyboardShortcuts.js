@@ -16,6 +16,9 @@ function simulateMouseClick(element) {
   )
 }
 
+// https://www.google.com/search?client=firefox-b-d&q=react+map+key+to+arrow+up
+// https://stackoverflow.com/questions/42036865/react-how-to-navigate-through-list-by-arrow-keys
+
 const KeyboardShortcuts = () => {
   const router = useRouter()
 
@@ -33,6 +36,14 @@ const KeyboardShortcuts = () => {
 
   useMousetrap("k", () => {
     window.scrollBy({ top: -200, left: 0, behavior: "smooth" })
+  })
+
+  useMousetrap("g g", () => {
+    window.scrollTo(0, 0)
+  })
+
+  useMousetrap("G", () => {
+    window.scrollTo(0, 9999)
   })
 
   useMousetrap("g f", () => {
