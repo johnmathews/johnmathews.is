@@ -43,7 +43,7 @@ const KeyboardShortcuts = () => {
   })
 
   useMousetrap("G", () => {
-    window.scrollTo(0, 9999)
+    window.scrollTo(0, 999999)
   })
 
   useMousetrap("g f", () => {
@@ -52,13 +52,6 @@ const KeyboardShortcuts = () => {
   useMousetrap("g b", () => {
     window.history.back()
   })
-
-  // useMousetrap('g g', () => {
-  //   $('html, body').animate({ scrollTop: 0 }, 500)
-  // })
-  // useMousetrap('G', () => {
-  //   $('html, body').animate({ scrollBottom: 0 }, 500)
-  // })
 
   useMousetrap("g s", () => {
     router.push("/snippets")
