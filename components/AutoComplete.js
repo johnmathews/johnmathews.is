@@ -2,6 +2,7 @@ import { autocomplete } from "@algolia/autocomplete-js"
 import { getAlgoliaFacets } from "@algolia/autocomplete-preset-algolia"
 import React, { createElement, Fragment, useEffect, useRef } from "react"
 import { render } from "react-dom"
+import { useRouter } from "next/router"
 
 import SearchItem from "@/components/SearchItem"
 import algoliasearch from "algoliasearch"
@@ -15,6 +16,7 @@ import { createLocalStorageRecentSearchesPlugin } from "@algolia/autocomplete-pl
 // https://www.algolia.com/doc/ui-libraries/autocomplete/introduction/getting-started/
 export default function Autocomplete(props) {
   const containerRef = useRef(null)
+  const router = useRouter()
 
   const plugins = React.useMemo(() => {
     const recentSearchesPlugin = createLocalStorageRecentSearchesPlugin({
@@ -96,17 +98,8 @@ export default function Autocomplete(props) {
       // keyboard nav: https://www.algolia.com/doc/ui-libraries/autocomplete/core-concepts/keyboard-navigation/
       navigator: {
         navigate({ itemUrl }) {
-          window.location.assign(itemUrl)
-        },
-        navigateNewTab({ itemUrl }) {
-          const windowReference = window.open(itemUrl, "_blank", "noopener")
-
-          if (windowReference) {
-            windowReference.focus()
-          }
-        },
-        navigateNewWindow({ itemUrl }) {
-          window.open(itemUrl, "_blank", "noopener")
+          const url = new URL(itemUrl)
+          router.push(url.pathname)
         },
       },
 
