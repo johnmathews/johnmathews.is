@@ -47,11 +47,18 @@ export default function Autocomplete(props) {
       placeholder: "Search",
       detachedMediaQuery: "",
       defaultActiveItemId: 0,
-      debug: true,
+      // debug: true,
       plugins: plugins,
       routing: true,
 
-      // classNames: { item: "border border-gray-200 hover:bg-gray-200 bg-gray-100 my-3", list: "" },
+      // this is the search results
+      // https://www.algolia.com/doc/ui-libraries/autocomplete/api-reference/autocomplete-js/autocomplete/#param-classnames
+      classNames: {
+        item: "text-lg font-semibold border-4 border-blue-400 bg-red-400 py-3 px-1 my-2 ", // each item in the search results
+        // list: "",
+        // panel: "bg-green-500",
+        // root: "bg-gray-900", // this is the box you click on, maybe
+      },
       renderer: { createElement, Fragment, render },
 
       getSources() {
@@ -59,12 +66,12 @@ export default function Autocomplete(props) {
           {
             sourceId: "id",
             getItemUrl({ item }) {
+              console.log("--- debug item.url: ", item.url)
               return item.url
             },
             getItems({ query }) {
               return getAlgoliaResults({
                 searchClient,
-                // classNames: {},
                 queries: [
                   {
                     indexName: "blogArticles",

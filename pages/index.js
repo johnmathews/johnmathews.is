@@ -45,16 +45,7 @@ export default function Home() {
 
               <ThemeSwitch />
               <div className="lg:mt-10">
-                <Autocomplete
-                  initialUiState={{
-                    indexName: {
-                      query: "",
-                      page: 5,
-                    },
-                  }}
-                >
-                  {" "}
-                </Autocomplete>
+                <Autocomplete />
               </div>
             </ul>
           </div>

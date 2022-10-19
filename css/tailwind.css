@@ -33,3 +33,11 @@ input:-webkit-autofill:focus {
 :root {
   --aa-icon-size: 94px;
 }
+
+.aa-DetachedSearchButton {
+  @apply border-0 bg-gray-100 dark:border-gray-900 dark:bg-gray-900 !important;
+}
+
+.aa-DetachedSearchButtonPlaceholder {
+  @apply text-gray-900 dark:text-gray-100;
+}
