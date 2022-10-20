@@ -10,7 +10,7 @@ import ThemeSwitch from "./ThemeSwitch"
 const LayoutWrapper = ({ children }) => {
   return (
     <SectionContainer>
-      <div id="layoutWrapper" className="h-screen">
+      <div id="layoutWrapper" className="flex h-screen flex-col justify-between">
         <div className="  mx-auto flex w-screen flex-row justify-between lg:mt-24 lg:w-5/6 ">
           <header id="header" className="w-1/5 items-center justify-between py-10">
             <div>

@@ -14,6 +14,27 @@ module.exports = {
   ],
   darkMode: "class",
   theme: {
+    maxHeight: {
+      snippet: "24rem;",
+    },
+    fontFamily: {
+      sans: [
+        "helvetica\\ neue",
+        "helvetica",
+        "arial",
+        "geneva",
+        "sans-serif",
+        "ui-sans-serif",
+        "system-ui",
+      ],
+      serif: ["cardo", "georgia", "serif", "ui-serif"],
+      mono: ["anonymous\\ pro", "andale mono", "ubuntu mono", "monospace"],
+    },
+    lineClamp: {
+      1: 1,
+      2: 2,
+      3: 3,
+    },
     aspectRatio: {
       none: 0,
       square: [1, 1],
@@ -28,9 +49,6 @@ module.exports = {
         12: "3rem",
         13: "3.25rem",
         14: "3.5rem",
-      },
-      fontFamily: {
-        sans: ["InterVariable", ...defaultTheme.fontFamily.sans],
       },
       colors: {
         primary: colors.teal,
