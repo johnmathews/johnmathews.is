@@ -53,7 +53,8 @@ export default function Autocomplete(props) {
       plugins: plugins,
       routing: true,
 
-      // this is the search results
+      // this is the search results only
+      // check the tailwind.css for other overrides for the serach box
       // https://www.algolia.com/doc/ui-libraries/autocomplete/api-reference/autocomplete-js/autocomplete/#param-classnames
       classNames: {
         item: "text-lg font-semibold border-4 border-blue-400 bg-red-400 py-3 px-1 my-2 ", // each item in the search results

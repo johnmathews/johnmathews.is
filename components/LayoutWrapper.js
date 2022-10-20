@@ -7,18 +7,6 @@ import Footer from "./Footer"
 import MobileNav from "./MobileNav"
 import ThemeSwitch from "./ThemeSwitch"
 
-import { getAlgoliaResults } from "@algolia/autocomplete-js"
-import algoliasearch from "algoliasearch"
-import Autocomplete from "@/components/AutoComplete"
-import SearchItem from "@/components/SearchItem"
-import Search from "@/components/Search"
-
-import "@algolia/autocomplete-theme-classic"
-
-const appId = "56G1FXZV4K"
-const apiKey = "c9a76549bd2473401cb96c00b503698e"
-
-const searchClient = algoliasearch(appId, apiKey)
 const LayoutWrapper = ({ children }) => {
   return (
     <SectionContainer>
@@ -41,10 +29,6 @@ const LayoutWrapper = ({ children }) => {
             </Link>
           </div>
 
-          <div className="hidden lg:inline">
-            {" "}
-            <Autocomplete />{" "}
-          </div>
           <div className="flex items-center text-base leading-5">
             <div className="hidden sm:block">
               {headerNavLinks.map((link) => (
@@ -61,7 +45,7 @@ const LayoutWrapper = ({ children }) => {
             <MobileNav />
           </div>
         </header>
-        <main className="mb-auto">{children}</main>
+        <main className="mb-auto ">{children}</main>
         <Footer />
       </div>
     </SectionContainer>

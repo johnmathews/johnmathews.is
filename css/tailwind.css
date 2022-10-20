@@ -34,8 +34,12 @@ input:-webkit-autofill:focus {
   --aa-icon-size: 94px;
 }
 
+.aa-SubmitIcon {
+  fill: white;
+}
+
 .aa-DetachedSearchButton {
-  @apply border-0 bg-gray-100 dark:border-gray-900 dark:bg-gray-900 !important;
+  @apply border-0 bg-gray-100 text-xl dark:border-gray-900 dark:bg-slate-900 !important;
 }
 
 .aa-DetachedSearchButtonPlaceholder {

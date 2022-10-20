@@ -19,6 +19,17 @@ function simulateMouseClick(element) {
 // https://www.google.com/search?client=firefox-b-d&q=react+map+key+to+arrow+up
 // https://stackoverflow.com/questions/42036865/react-how-to-navigate-through-list-by-arrow-keys
 
+function downArrow() {
+  const event = new KeyboardEvent("keypress", {
+    key: "ArrowDown",
+  })
+  console.log(event) // KeyboardEvent {isTrusted: false, key: "enter", code: "", location: 0, ctrlKey: false, …}
+
+  console.log("--- debug ArrowDown: ", "ArrowDown")
+  new KeyboardEvent("keydown", { key: "ArrowDown", charCode: 0, keyCode: 40, bubbles: true })
+  return new KeyboardEvent("keydown", { key: "ArrowDown", charCode: 0, keyCode: 40, bubbles: true })
+}
+
 const KeyboardShortcuts = () => {
   const router = useRouter()
 
@@ -44,6 +55,28 @@ const KeyboardShortcuts = () => {
 
   useMousetrap("G", () => {
     window.scrollTo(0, 999999)
+  })
+
+  // var keyboardEvent = document.createEvent("KeyboardEvent")
+  // var initMethod =
+  //   typeof keyboardEvent.initKeyboardEvent !== "undefined" ? "initKeyboardEvent" : "initKeyEvent"
+
+  // keyboardEvent[initMethod](
+  //   "keydown", // event type: keydown, keyup, keypress
+  //   true, // bubbles
+  //   true, // cancelable
+  //   window, // view: should be window
+  //   false, // ctrlKey
+  //   false, // altKey
+  //   false, // shiftKey
+  //   false, // metaKey
+  //   40, // keyCode: unsigned long - the virtual key code, else 0
+  //   0 // charCode: unsigned long - the Unicode character associated with the depressed key, else 0
+  // )
+  // document.dispatchEvent(keyboardEvent)
+
+  useMousetrap("ctrl+j", () => {
+    downArrow()
   })
 
   useMousetrap("g f", () => {
