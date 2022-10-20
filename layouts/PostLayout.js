@@ -38,7 +38,8 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
             </div>
           </header>
           <div
-            className="divide-y divide-gray-200 pb-8 dark:divide-gray-700 xl:grid xl:grid-cols-4 xl:gap-x-6 xl:divide-y-0"
+            id="contentContainer"
+            className="divide-y divide-gray-200 pb-8 dark:divide-gray-700 xl:divide-y-0"
             style={{ gridTemplateRows: "auto 1fr" }}
           >
             <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
@@ -46,8 +47,8 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                 {children}
               </div>
             </div>
-            <footer>
-              <div className="mt-10 divide-gray-200 text-sm font-medium leading-5 dark:divide-gray-700 xl:col-start-1 xl:row-start-2 xl:divide-y">
+            <footer className="">
+              <div className="mt-10 divide-gray-200 text-sm font-medium leading-5 dark:divide-gray-700">
                 <div className="mb-5">
                   <dt className="text-xs font-medium uppercase leading-6 text-gray-500 dark:text-gray-400">
                     Published:
