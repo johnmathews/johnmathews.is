@@ -58,6 +58,7 @@ export default function Autocomplete(props) {
       // https://www.algolia.com/doc/ui-libraries/autocomplete/api-reference/autocomplete-js/autocomplete/#param-classnames
       classNames: {
         item: "text-lg font-semibold border-4 border-blue-400 bg-red-400 py-3 px-1 my-2 ", // each item in the search results
+        // detachedSearchButtonIcon: "hidden"
         // list: "",
         // panel: "bg-green-500",
         // root: "bg-gray-900", // this is the box you click on, maybe

@@ -14,6 +14,8 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
     return searchContent.toLowerCase().includes(searchValue.toLowerCase())
   })
 
+  // https://whereisthemouse.com/create-a-list-component-with-keyboard-navigation-in-react
+
   // If initialDisplayPosts exist, display it if no searchValue is specified
   const displayPosts =
     initialDisplayPosts.length > 0 && !searchValue ? initialDisplayPosts : filteredBlogPosts
