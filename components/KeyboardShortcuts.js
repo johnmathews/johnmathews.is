@@ -41,6 +41,11 @@ const KeyboardShortcuts = () => {
     e.preventDefault()
   })
 
+  useMousetrap("t t", () => {
+    let themeButton = document.querySelector("#themeSwitcher")
+    simulateMouseClick(themeButton)
+  })
+
   useMousetrap("j", () => {
     window.scrollBy({ top: 200, left: 0, behavior: "smooth" })
   })
