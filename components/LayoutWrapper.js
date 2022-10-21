@@ -14,7 +14,7 @@ const LayoutWrapper = ({ children }) => {
   return (
     <SectionContainer>
       <div id="layoutWrapper" className="h-screen justify-between md:flex md:flex-col">
-        <div className="mx-auto w-screen justify-between md:flex md:flex-row lg:mt-24 lg:w-5/6 ">
+        <div className="mx-auto justify-between md:flex md:flex-row lg:mt-24 lg:w-5/6 ">
           <header
             id="header"
             className="mb-10 mr-5 md:w-1/5 md:items-center md:justify-between md:py-10 lg:mr-32"

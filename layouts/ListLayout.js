@@ -46,7 +46,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
                             {title}
                           </Link>
                         </h3>
-                        <div className="flex flex-wrap">
+                        <div className="mt-2 flex flex-wrap">
                           <Category key={category} text={category} />
                         </div>
                       </div>
@@ -57,7 +57,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
 
                     <dl>
                       <dt className="sr-only">Published on</dt>
-                      <dd className="font-serif text-2xl font-semibold leading-6 text-gray-900 dark:text-gray-200">
+                      <dd className="text-right font-serif font-semibold leading-6 text-gray-900 dark:text-gray-200 lg:text-left lg:text-2xl">
                         <time dateTime={date}>{formatDate(date)}</time>
                       </dd>
                     </dl>
