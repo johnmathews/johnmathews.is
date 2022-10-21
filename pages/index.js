@@ -36,7 +36,7 @@ export default function Home() {
           </div>
         </div>
         <div
-          id="listColumn"
+          id="landingListColumn"
           className="m-auto mx-auto hidden w-full content-center font-serif text-3xl leading-relaxed dark:text-gray-200 md:block md:leading-normal  "
         >
           <ul id="primaryList" className="my-3 text-center">
@@ -44,7 +44,7 @@ export default function Home() {
               <li key={link.title} className="my-5">
                 <Link
                   href={link.href}
-                  className=" font-normal text-gray-700 hover:underline dark:text-gray-200 "
+                  className="font-normal text-gray-700 hover:underline dark:text-gray-200 "
                 >
                   {link.title}
                 </Link>
@@ -55,7 +55,7 @@ export default function Home() {
               <ThemeSwitch />
             </div>
 
-            <div className="lg:mt-10">
+            <div>
               <Autocomplete />
             </div>
           </ul>

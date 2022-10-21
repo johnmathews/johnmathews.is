@@ -54,7 +54,10 @@ const LayoutWrapper = ({ children }) => {
                   <ThemeSwitch />
                 </div>
 
-                <div className="mt-5 dark:-ml-5">
+                <div
+                  id="autoCompleteComponentWrapper"
+                  className="mx-auto mt-3 w-32 font-serif dark:pl-7"
+                >
                   <Autocomplete />
                 </div>
               </div>
