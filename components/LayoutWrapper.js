@@ -17,7 +17,7 @@ const LayoutWrapper = ({ children }) => {
         <div className="mx-auto w-screen justify-between md:flex md:flex-row lg:mt-24 lg:w-5/6 ">
           <header
             id="header"
-            className="object-right py-10 md:w-1/5 md:items-center md:justify-between lg:mr-32"
+            className="mb-10 mr-5 md:w-1/5 md:items-center md:justify-between md:py-10 lg:mr-32"
           >
             <div className="hidden">
               <Link href="/" aria-label={siteMetadata.headerTitle}>
@@ -62,7 +62,7 @@ const LayoutWrapper = ({ children }) => {
 
             <MobileNav />
           </header>
-          <main id="main" className="mb-auto w-4/5 ">
+          <main id="main" className="mb-auto md:w-4/5 ">
             {children}
           </main>
         </div>

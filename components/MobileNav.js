@@ -30,7 +30,7 @@ const MobileNav = () => {
   }
 
   return (
-    <div id="MobileNav" className="sm:hidden">
+    <div id="MobileNav" className="absolute top-16 right-6 sm:hidden">
       <button
         type="button"
         className="ml-1 mr-1 h-8 w-8 rounded py-1"
@@ -51,7 +51,7 @@ const MobileNav = () => {
         </svg>
       </button>
       <div
-        className={`fixed top-0 left-0 z-10 h-full w-full transform bg-gray-200 opacity-95 duration-300 ease-in-out dark:bg-gray-800 ${
+        className={`fixed top-0 left-0 z-10 h-full w-full transform bg-gray-200 opacity-95 duration-300 ease-in-out dark:bg-slate-900 ${
           navShow ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -88,8 +88,7 @@ const MobileNav = () => {
               </Link>
             </div>
           ))}
-
-          <div className="-ml-10">
+          <div className="-mr-8 mt-5">
             <Autocomplete />
           </div>
         </nav>
