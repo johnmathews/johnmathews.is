@@ -7,13 +7,19 @@ import Footer from "./Footer"
 import MobileNav from "./MobileNav"
 import ThemeSwitch from "./ThemeSwitch"
 
+import Autocomplete from "@/components/AutoComplete"
+import "@algolia/autocomplete-theme-classic"
+
 const LayoutWrapper = ({ children }) => {
   return (
     <SectionContainer>
-      <div id="layoutWrapper" className="flex h-screen flex-col justify-between">
-        <div className="  mx-auto flex w-screen flex-row justify-between lg:mt-24 lg:w-5/6 ">
-          <header id="header" className="w-1/5 items-center justify-between py-10">
-            <div>
+      <div id="layoutWrapper" className="h-screen justify-between md:flex md:flex-col">
+        <div className="mx-auto w-screen justify-between md:flex md:flex-row lg:mt-24 lg:w-5/6 ">
+          <header
+            id="header"
+            className="object-right py-10 md:w-1/5 md:items-center md:justify-between lg:mr-32"
+          >
+            <div className="hidden">
               <Link href="/" aria-label={siteMetadata.headerTitle}>
                 <div className="items-center justify-between">
                   <div className="mb-12">
@@ -30,21 +36,31 @@ const LayoutWrapper = ({ children }) => {
               </Link>
             </div>
 
-            <div className="items-center text-base leading-5">
-              <div className="mb-10 hidden sm:block">
+            <div
+              id="sidebarTopSection"
+              className="hiddden items-center text-base leading-5 md:block"
+            >
+              <div className="hidden md:block lg:mt-16">
                 {headerNavLinks.map((link) => (
                   <Link
                     key={link.title}
                     href={link.href}
-                    className="flex flex-col p-1 font-medium text-gray-900 dark:text-gray-100 sm:p-4"
+                    className="my-3 flex py-1 text-center font-serif text-2xl text-gray-900 hover:underline dark:text-gray-100 md:flex-col"
                   >
                     {link.title}
                   </Link>
                 ))}
+                <div className="mt-10 -ml-2 text-center">
+                  <ThemeSwitch />
+                </div>
+
+                <div className="mt-5 dark:-ml-5">
+                  <Autocomplete />
+                </div>
               </div>
-              <ThemeSwitch />
-              <MobileNav />
             </div>
+
+            <MobileNav />
           </header>
           <main id="main" className="mb-auto w-4/5 ">
             {children}
