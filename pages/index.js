@@ -51,7 +51,10 @@ export default function Home() {
               </li>
             ))}
 
-            <ThemeSwitch />
+            <div className="-ml-1">
+              <ThemeSwitch />
+            </div>
+
             <div className="lg:mt-10">
               <Autocomplete />
             </div>
