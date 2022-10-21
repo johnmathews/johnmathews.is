@@ -23,8 +23,19 @@ class MyDocument extends Document {
           <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fff" />
           <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000" />
           <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
+
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Cardo&display=swap"
+            rel="stylesheet"
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap"
+            rel="stylesheet"
+          />
         </Head>
-        <body className="bg-white text-black antialiased dark:bg-slate-900 dark:text-white">
+        <body className="w-full bg-white text-black antialiased dark:bg-slate-900 dark:text-white">
           <Main />
           <NextScript />
         </body>

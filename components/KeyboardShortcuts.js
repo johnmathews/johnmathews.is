@@ -106,6 +106,9 @@ const KeyboardShortcuts = () => {
   useMousetrap("g s", () => {
     router.push("/snippets")
   })
+  useMousetrap("g l", () => {
+    router.push("/")
+  })
   useMousetrap("g i", () => {
     router.push("/posts")
   })

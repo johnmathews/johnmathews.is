@@ -26,9 +26,16 @@ module.exports = {
         "sans-serif",
         "ui-sans-serif",
         "system-ui",
+        ...defaultTheme.fontFamily.sans,
       ],
-      serif: ["cardo", "georgia", "serif", "ui-serif"],
-      mono: ["anonymous\\ pro", "andale mono", "ubuntu mono", "monospace"],
+      serif: ["cardo", "georgia", "serif", "ui-serif", ...defaultTheme.fontFamily.serif],
+      mono: [
+        "anonymous\\ pro",
+        "andale mono",
+        "ubuntu mono",
+        "monospace",
+        ...defaultTheme.fontFamily.mono,
+      ],
     },
     lineClamp: {
       1: 1,

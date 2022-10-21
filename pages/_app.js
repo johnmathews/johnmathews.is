@@ -19,8 +19,6 @@ import KeyboardShortcuts from "@/components/KeyboardShortcuts"
 const isDevelopment = process.env.NODE_ENV === "development"
 const isSocket = process.env.SOCKET
 
-// https://stackoverflow.com/questions/40769551/how-to-use-google-fonts-in-react-js
-//
 export default function App({ Component, pageProps }) {
   const router = useRouter()
   if (router.asPath == "/") {
@@ -40,20 +38,7 @@ export default function App({ Component, pageProps }) {
       <ThemeProvider attribute="class" defaultTheme={siteMetadata.theme}>
         <Head>
           <meta content="width=device-width, initial-scale=1" name="viewport" />
-
-          <link rel="preconnect" href="https://fonts.gstatic.com" />
-          <link
-            async
-            href="https://fonts.googleapis.com/css2?family=Cardo&display=swap"
-            rel="stylesheet"
-          />
-          <link
-            async
-            href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap"
-            rel="stylesheet"
-          />
         </Head>
-
         {isDevelopment && isSocket && <ClientReload />}
         <Analytics />
         <LayoutWrapper>
