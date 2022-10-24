@@ -20,6 +20,9 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
   const displayPosts =
     initialDisplayPosts.length > 0 && !searchValue ? initialDisplayPosts : filteredBlogPosts
 
+  // <div className="mt-2 flex flex-wrap">
+  //   <Category key={category} text={category} />
+  // </div>
   return (
     <>
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
@@ -32,7 +35,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
           {!filteredBlogPosts.length && "No posts found."}
           {displayPosts.map((frontMatter) => {
             const { slug, date, title, summary, tags, category } = frontMatter
-            if (category.toLowerCase() !== "snippet") {
+            if (category[0].toLowerCase() !== "snippet") {
               return (
                 <li key={slug} className="mt-5 py-4">
                   <article className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
@@ -46,9 +49,6 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
                             {title}
                           </Link>
                         </h3>
-                        <div className="mt-2 flex flex-wrap">
-                          <Category key={category} text={category} />
-                        </div>
                       </div>
                       <div className="prose max-w-none text-gray-500 dark:text-gray-400">
                         {summary}

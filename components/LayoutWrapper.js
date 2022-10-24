@@ -10,7 +10,10 @@ import ThemeSwitch from "./ThemeSwitch"
 import Autocomplete from "@/components/AutoComplete"
 import "@algolia/autocomplete-theme-classic"
 
+import { useRef } from "react"
+
 const LayoutWrapper = ({ children }) => {
+  const ref = useRef("sidebarBottomSection")
   return (
     <SectionContainer>
       <div id="layoutWrapper" className="h-screen justify-between md:flex md:flex-col">
@@ -62,7 +65,7 @@ const LayoutWrapper = ({ children }) => {
                 </div>
               </div>
             </div>
-
+            <div ref={ref} id="sidebarBottomSection" />
             <MobileNav />
           </header>
           <main id="main" className="mb-auto md:w-4/5 ">
