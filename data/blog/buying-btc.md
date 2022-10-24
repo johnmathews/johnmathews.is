@@ -2,7 +2,7 @@
 title: How to buy Bitcoin
 slug: buying-btc
 date: "2017-12-7 9:56"
-category: Technical/Cryptocurrencies
+category: Technical>Cryptocurrencies
 tags: ["bitcoin"]
 image: src="/images/btc_hype.png" alt="bitcoin hype"
 tweet: What to consider before buying Bitcoin

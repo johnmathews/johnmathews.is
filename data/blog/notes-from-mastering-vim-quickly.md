@@ -2,7 +2,7 @@
 title: Notes From "Mastering Vim Quickly"
 slug: notes-from-mastering-vim-quickly
 date: "2021-1-21 16:22"
-category: Technical/Developer Tools
+category: Technical>Developer-Tools
 tags: ["uncategorized"]
 ---
 

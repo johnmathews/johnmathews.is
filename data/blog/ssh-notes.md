@@ -2,7 +2,7 @@
 title: SSH-Notes
 slug: ssh-notes
 date: "2021-04-21 10:21:15"
-category: Technical/Developer Tools
+category: Technical>Developer-Tools
 tags: ["ssh", "linux", "security"]
 ---
 

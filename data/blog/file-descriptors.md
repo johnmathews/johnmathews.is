@@ -2,7 +2,7 @@
 title: File Descriptors and /dev/null
 slug: file-descriptors
 date: "2021-3-2 11:36"
-category: Technical/Developer Tools
+category: Technical>Developer-Tools
 tags: ["uncategorized"]
 ---
 

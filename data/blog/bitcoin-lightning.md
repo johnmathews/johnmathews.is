@@ -3,7 +3,7 @@ title: Bitcoin Lightning
 status: Published
 slug: bitcoin-lightning
 date: "2019-1-24 12:57"
-category: Technical/Cryptocurrencies
+category: Technical>Cryptocurrencies
 tags: ["bitcoin", "lightning", "crypto"]
 image: src="/images/lightning_sticker.jpg" alt="I got lightning working but all i got was this sticker"
 tweet: Bitcoin Lightning, on a Raspberry Pi...

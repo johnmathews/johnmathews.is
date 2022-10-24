@@ -2,7 +2,7 @@
 title: Regrets Of The Dying
 slug: regrets-of-the-dying
 date: "2021-2-1 22:52"
-category: Non-technical/Journal
+category: Non-technical>Journal
 tags: ["uncategorized"]
 ---
 

@@ -2,7 +2,7 @@
 title: Unison helper
 slug: unison-helper
 date: "2021-11-23 15:09:46"
-category: Technical/Developer Tools
+category: Technical>Developer-Tools
 tags: ["linux", "syncronization"]
 ---
 

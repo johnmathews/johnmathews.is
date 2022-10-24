@@ -2,7 +2,7 @@
 title: A tool to automatically contact people
 slug: how-to-stay-in-touch-with-people
 date: "2022-02-14 12:24:43"
-category: Non-technical/Social
+category: Non-technical>Social
 tags: ["uncategorized"]
 ---
 

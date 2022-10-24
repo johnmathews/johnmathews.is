@@ -2,7 +2,7 @@
 title: Autumn, BIN and $PATH
 date: "2016-12-01 21:53"
 Author: John Mathews
-category: Technical/Developer Tools
+category: Technical>Developer-Tools
 tags: ["unix"]
 slug: autumn-bin-and-path
 status: published

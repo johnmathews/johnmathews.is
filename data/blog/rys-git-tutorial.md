@@ -2,7 +2,7 @@
 title: Ry's Git Tutorial
 slug: rys-git-tutorial
 date: "2018-6-1 17:11"
-category: Technical/Developer Tools
+category: Technical>Developer-Tools
 tags: ["git", "rys", "tutorial", "ryan hodson"]
 image: src="/images/rys-git-tutorial.jpg" alt="book front cover"
 tweet: Ry's Git Tutorial is the best #git #tutorial - learn by doing.

@@ -2,7 +2,7 @@
 title: Optimizing The Performance Of This Blog
 slug: site-performance
 date: "2021-1-4 16:05"
-category: Technical/Web
+category: Technical>Web
 tags: ["uncategorized"]
 ---
 

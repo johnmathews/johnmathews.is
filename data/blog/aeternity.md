@@ -2,7 +2,7 @@
 title: Introduction to the Æternity blockchain project
 slug: aeternity
 date: "2017-5-5 21:04"
-category: Technical/Cryptocurrencies
+category: Technical>Cryptocurrencies
 tags: ["æternity", "dlt", "digital currencies", "finance", "blockchains"]
 status: Published
 summary: Æternity is a new blockchain project aiming to facilitate large volumes of smart-contracts which can interface with external data sources. This is accomplished using a decentralised oracle based on prediction markets.

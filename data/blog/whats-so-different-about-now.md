@@ -2,7 +2,7 @@
 title: What's So Different About Now
 slug: whats-so-different-about-now
 date: "2021-1-20 14:44"
-category: Non-technical/Social
+category: Non-technical>Social
 tags: ["uncategorized"]
 ---
 

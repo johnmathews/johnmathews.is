@@ -2,7 +2,7 @@
 title: Debugging the more_categories plugin for Pelican
 slug: debugging-more-categories-pelican-plugin
 date: "2021-1-19 12:00"
-category: Technical/Developer Tools
+category: Technical>Developer-Tools
 tags: ["uncategorized"]
 ---
 

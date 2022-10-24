@@ -2,7 +2,7 @@
 title: Questions for good references
 slug: questions-for-good-references
 date: "2021-05-27 15:28:49"
-category: Non-technical/Entrepreneurship
+category: Non-technical>Entrepreneurship
 tags: ["marketing"]
 ---
 

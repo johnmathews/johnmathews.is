@@ -2,7 +2,7 @@
 title: Blogging with Pelican
 slug: pelican
 date: "2017-4-28 1:21"
-category: Technical/Web
+category: Technical>Web
 tags: ["pelican", "blog", "python", "static site"]
 status: published
 image: src="/images/get_pelican.png" alt="Pelican"

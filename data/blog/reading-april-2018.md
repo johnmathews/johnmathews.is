@@ -4,7 +4,7 @@ title: >
   Reading: April 2018
 slug: reading-april-2018
 date: "2018-6-4 15:52"
-category: Non-technical/Learning
+category: Non-technical>Learning
 tags: ["reading", "learning"]
 summary: A list of interesting things. June 2018
 ---

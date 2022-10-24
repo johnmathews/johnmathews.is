@@ -2,7 +2,7 @@
 title: Notes From "Powerful Python"
 slug: python-notes
 date: "2021-1-21 14:55"
-category: Technical/Developer Tools
+category: Technical>Developer-Tools
 tags: ["uncategorized"]
 ---
 

@@ -2,7 +2,7 @@
 title: Tweets - April 2021
 slug: tweets-april-2021
 date: "2021-04-21 10:39:48"
-category: Non-technical/Journal, Technical/Other
+category: Non-technical/Journal, Technical>Other
 tags: ["twitter"]
 ---
 

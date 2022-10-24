@@ -2,7 +2,7 @@
 title: 1 Peter 1 vs 1
 slug: 1-peter-1-1
 date: "2021-08-25 15:26:07"
-category: Non-technical/Journal
+category: Non-technical>Journal
 tags: ["bible"]
 ---
 

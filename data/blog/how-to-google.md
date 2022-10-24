@@ -2,7 +2,7 @@
 title: Advanced googling
 slug: how-to-google
 date: "2022-04-05 12:01:55"
-category: Technical/Developer Tools
+category: Technical>Developer-Tools
 tags: ["search"]
 ---
 

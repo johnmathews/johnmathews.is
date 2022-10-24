@@ -2,7 +2,7 @@
 title: >
   Unix: Utilities To Analyse And Update Multiple Text Files
 slug: using-unix-utilities-to-analyse-and-update-multiple-files
-category: Technical/Developer Tools
+category: Technical>Developer-Tools
 date: "2021-1-4 13:02"
 tags: ["uncategorized"]
 ---

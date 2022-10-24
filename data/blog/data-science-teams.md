@@ -2,7 +2,7 @@
 title: Data Science Teams
 slug: data-science-teams
 date: "2022-04-15 13:58:52"
-category: Technical/Engineering
+category: Technical>Engineering
 tags: ["management"]
 ---
 

@@ -2,7 +2,7 @@
 title: Vim!
 date: "2016-12-01 22:32"
 Author: John Mathews
-category: Technical/Developer Tools
+category: Technical>Developer-Tools
 tags: ["vim "]
 slug: vim
 ---

@@ -2,7 +2,7 @@
 title: The Psychology of Computer Programming
 slug: psychology-of-computer-programming
 date: "2022-01-17 21:26:14"
-category: Technical/Engineering
+category: Technical>Engineering
 tags: ["programming", "engineering"]
 ---
 

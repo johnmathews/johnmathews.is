@@ -2,7 +2,7 @@
 title: A New Blog Design
 slug: a-new-blog-design
 date: "2020-12-18 14:37"
-category: Technical/Web
+category: Technical>Web
 summary:
 tags: ["uncategorized"]
 ---

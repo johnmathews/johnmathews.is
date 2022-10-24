@@ -2,7 +2,7 @@
 title: Gell-Mann amnesia effect
 slug: gell-mann-amnesia-effect
 date: "2021-12-14 17:58:56"
-category: Non-technical/Social
+category: Non-technical>Social
 tags: ["culture", "media", "psychology"]
 ---
 

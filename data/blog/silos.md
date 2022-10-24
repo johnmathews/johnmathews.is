@@ -2,7 +2,7 @@
 title: Introduction to my doctorate research - Silos
 date: "2016-10-02 00:06"
 Author: John Mathews
-category: Technical/Other
+category: Technical>Other
 tags:
   [
     "doctorate",

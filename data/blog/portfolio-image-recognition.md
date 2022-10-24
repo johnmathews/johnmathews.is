@@ -5,7 +5,7 @@ title: >
 slug: portfolio-image-recognition
 date: "2021-01-26 14:34:10"
 image: src="/images/traffic_lights/header.png" alt="traffic lights"
-category: Technical/Data
+category: Technical>Data
 Redirect: traffic.html
 tags: ["uncategorized"]
 ---

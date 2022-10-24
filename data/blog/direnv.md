@@ -2,7 +2,7 @@
 title: Managing environment variables with Direnv
 slug: direnv
 date: "2022-01-28 17:23:51"
-category: Technical/Developer Tools
+category: Technical>Developer-Tools
 tags:
   ["cli", "environment-variables", "project-management", "direnv", "pyenv", "virtual-environments"]
 ---

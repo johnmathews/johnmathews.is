@@ -2,7 +2,7 @@
 title: Proverbs 11
 slug: proverbs-chapter-11
 date: "2021-06-01 10:16:41"
-category: Non-technical/Journal
+category: Non-technical>Journal
 tags: ["books", "bible", "proverbs", "wisdom"]
 ---
 

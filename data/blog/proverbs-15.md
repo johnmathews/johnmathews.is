@@ -2,7 +2,7 @@
 title: Proverbs 15
 slug: proverbs-15
 date: "2021-06-24 15:36:13"
-category: Non-technical/Journal
+category: Non-technical>Journal
 tags: ["books", "bible", "wisdom"]
 ---
 

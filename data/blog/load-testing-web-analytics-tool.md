@@ -2,7 +2,7 @@
 title: Load-testing my Web Analytics Tool
 slug: load-testing-web-analytics-tool
 date: "2021-07-02 15:39:45"
-category: Technical/Web
+category: Technical>Web
 tags: ["google-cloud-platform", "cloud-functions", "api"]
 ---
 

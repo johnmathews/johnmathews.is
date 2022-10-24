@@ -2,7 +2,7 @@
 title: Two Years Of Vim
 slug: two-years-of-vim
 date: "2021-3-4 10:44"
-category: Technical/Developer Tools
+category: Technical>Developer-Tools
 tags: ["uncategorized"]
 ---
 

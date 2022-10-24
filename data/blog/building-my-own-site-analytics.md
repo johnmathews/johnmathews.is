@@ -2,7 +2,7 @@
 title: Building my own web analytics
 slug: building-my-own-site-analytics
 date: "2021-06-22 14:30:07"
-category: Technical/Web,
+category: Technical>Web,
 tags: ["cloud-functions", "data"]
 ---
 

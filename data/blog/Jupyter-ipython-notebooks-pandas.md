@@ -2,7 +2,7 @@
 title: Jupyter (iPython) notebooks + Pandas
 date: "2016-08-03 13:04"
 Author: John Mathews
-category: Technical/Developer Tools
+category: Technical>Developer-Tools
 tags: ["data", "jupyter notebook", "pandas", "python"]
 slug: Jupyter-ipython-notebooks-pandas
 status: published

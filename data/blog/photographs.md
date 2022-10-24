@@ -3,7 +3,7 @@ title: Spaarndam
 slug: photographs
 date: "2021-1-22 11:42"
 Template: article-photo
-category: Non-technical/Photographs
+category: Non-technical>Photographs
 tags: ["uncategorized"]
 ---
 

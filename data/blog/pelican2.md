@@ -3,7 +3,7 @@ title: >
   Blogging with Pelican: Design, Plugins, Sharing
 slug: pelican2
 date: "2017-6-1 18:00"
-category: Technical/Web
+category: Technical>Web
 tags: ["pelican", "jinja", "python", "twitter", "facebook", "blog", "static site"]
 tweet: Building a blog without compromising
 image: src="/images/get_pelican.png" alt="Pelican blogging platform"

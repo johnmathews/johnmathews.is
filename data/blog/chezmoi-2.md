@@ -3,7 +3,7 @@ title: >
   Chezmoi: Part 2
 slug: chezmoi-2
 date: "2021-12-02 10:57:42"
-category: Technical/Developer Tools
+category: Technical>Developer-Tools
 tags: ["automation", "dotfiles"]
 ---
 

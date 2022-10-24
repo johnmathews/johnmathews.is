@@ -2,7 +2,7 @@
 title: API Design Principles
 slug: api-design
 date: "2021-1-4 16:59"
-category: Technical/Developer Tools
+category: Technical>Developer-Tools
 tags: ["uncategorized"]
 ---
 

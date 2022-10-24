@@ -2,7 +2,7 @@
 title: Ansible
 slug: ansible
 date: "2021-04-12 11:40:41"
-category: Technical/Developer Tools
+category: Technical>Developer-Tools
 tags: ["ansible", "servers", "ssh", "automation"]
 ---
 

@@ -3,7 +3,7 @@ title: Counter intuitive facts
 slug: counter-intuitive-facts
 date: "2021-10-06 12:30:08"
 draft: true
-category: Technical/Other
+category: Technical>Other
 tags: ["math", "science"]
 ---
 

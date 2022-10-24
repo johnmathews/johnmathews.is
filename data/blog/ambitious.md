@@ -2,7 +2,7 @@
 title: How to be an ambitious founder in Europe
 slug: ambitious
 date: "2017-6-9 21:55"
-category: Non-technical/Entrepreneurship
+category: Non-technical>Entrepreneurship
 tags: ["lis", "startup", "fintech", "europe"]
 image:
 tweet: #lis17 #Lisbon #Portugal #startup #entrepreneur

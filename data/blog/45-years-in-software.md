@@ -2,7 +2,7 @@
 title: Lessons from 45 years in the software industry
 slug: 45-years-in-software
 date: "2021-05-27 10:37:18"
-category: Technical/Engineering
+category: Technical>Engineering
 tags: ["advice"]
 ---
 

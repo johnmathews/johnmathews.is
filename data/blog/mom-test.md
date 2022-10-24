@@ -3,7 +3,7 @@ title: The Mom Test
 status: Published
 slug: mom-test
 date: "2020-12-04 16:07"
-category: Non-technical/Entrepreneurship
+category: Non-technical>Entrepreneurship
 image: src="/images/mom-test.jpg" alt="The Mom Test book"
 tags: ["book"]
 summary: My notes on "The Mom Test" by Rob Fitzpatrick. It's called the Mom Test because it leads to questions that even your mom couldn't lie to you about.

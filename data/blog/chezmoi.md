@@ -2,7 +2,7 @@
 title: Chezmoi
 slug: chezmoi
 date: "2021-04-20 11:46:46"
-category: Technical/Developer Tools
+category: Technical>Developer-Tools
 tags: ["automation", "dotfiles"]
 ---
 

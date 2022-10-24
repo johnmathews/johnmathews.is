@@ -2,7 +2,7 @@
 title: Principles Of Object Orientated Programming
 slug: principles-of-oop
 date: "2021-1-4 16:27"
-category: Technical/Developer Tools
+category: Technical>Developer-Tools
 tags: ["uncategorized"]
 ---
 

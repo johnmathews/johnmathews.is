@@ -3,7 +3,7 @@ title: >
   Vim: GoTo Tag Definition
 slug: vim-notes-goto-tag-definition
 date: "2021-3-31 15:57"
-category: Technical/Developer Tools
+category: Technical>Developer-Tools
 tags: ["uncategorized"]
 ---
 

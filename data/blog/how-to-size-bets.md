@@ -2,7 +2,7 @@
 title: How to size bets
 slug: how-to-size-bets
 date: "2022-02-09 12:34:36"
-category: Technical/Other
+category: Technical>Other
 tags: ["statistics", "investing", "gambling", "math"]
 ---
 

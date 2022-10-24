@@ -2,7 +2,7 @@
 title: Live near the ocean
 slug: ocean
 date: "2017-11-23 18:48"
-category: Non-technical/Journal
+category: Non-technical>Journal
 tags: ["water"]
 image: src="/images/california2.jpg" alt="Californian beach"
 summary: Being near water is better.

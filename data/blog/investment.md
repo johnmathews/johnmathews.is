@@ -2,7 +2,7 @@
 title: Understanding VC Investment
 slug: investment
 date: "2017-6-9 23:03"
-category: Non-technical/Entrepreneurship
+category: Non-technical>Entrepreneurship
 tags: ["lis", "fintech", "startup", "founder"]
 image:
 tweet: How to pitch #lis17 #Lisbon #Portugal #startup #entrepreneur

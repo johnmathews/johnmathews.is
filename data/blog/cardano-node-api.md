@@ -3,7 +3,7 @@ title: >
   Cardano: Running a full node
 slug: cardano-node-api
 date: "2021-3-1 18:01"
-category: Technical/Cryptocurrencies
+category: Technical>Cryptocurrencies
 tags: ["uncategorized"]
 ---
 

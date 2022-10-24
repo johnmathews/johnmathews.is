@@ -2,7 +2,7 @@
 title: Prediction Markets
 slug: prediction
 date: "2018-6-7 12:29"
-category: Technical/Cryptocurrencies
+category: Technical>Cryptocurrencies
 image: src="/images/dover.jpg" alt="Port of Dover"
 tags: ["gnosis", "prediction", "markets", "brexit", "betting"]
 tweet: Prediction markets - more reliable than surveys, experts and many statistical methods, and they're getting easier and cheaper! #Gnosis

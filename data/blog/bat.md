@@ -2,7 +2,7 @@
 title: Bat
 slug: bat
 date: "2021-12-03 12:00:34"
-category: Technical/Developer Tools
+category: Technical>Developer-Tools
 tags: ["cli"]
 ---
 

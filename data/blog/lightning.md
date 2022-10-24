@@ -2,7 +2,7 @@
 title: The Bitcoin Lightning Network
 slug: lightning
 date: "2018-4-12 15:53"
-category: Technical/Cryptocurrencies
+category: Technical>Cryptocurrencies
 tags: ["bitcoin"]
 image: src="/images/lightningTestnet.jpg" alt="lightning network on bitcoin testate"
 tweet: Bitcoin lightning network

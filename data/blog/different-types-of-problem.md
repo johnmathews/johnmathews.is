@@ -2,7 +2,7 @@
 title: 3 Different Types Of Programming Problems
 slug: different-types-of-problem
 date: "2021-1-18 13:00"
-category: Technical/Web
+category: Technical>Web
 tags: ["uncategorized"]
 ---
 

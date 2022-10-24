@@ -2,7 +2,7 @@
 title: Corporate London
 slug: corporate
 date: "2017-7-10 21:37"
-category: Non-technical/Journal
+category: Non-technical>Journal
 tags: ["career", "corporate", "london"]
 image: src="/images/canary_wharf_escalator.jpg" alt="canary wharf escalator"
 tweet: Experiences of a grad scheme in #corporate #London

@@ -2,7 +2,7 @@
 title: Microservices, Docker, Azure
 slug: microservices_events_docker
 date: "2021-2-2 13:31"
-category: Technical/Developer Tools
+category: Technical>Developer-Tools
 tags: ["uncategorized"]
 ---
 

@@ -2,7 +2,7 @@
 title: Neighbours
 slug: neighbours
 date: "2021-5-31 22:30"
-category: Non-technical/Journal
+category: Non-technical>Journal
 tags: ["politics", "equality"]
 draft: true
 image:

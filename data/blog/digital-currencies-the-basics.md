@@ -4,7 +4,7 @@ title: >
   Digital currencies: the basics
 date: "2016-08-19 21:02"
 Author: John Mathews
-category: Technical/Cryptocurrencies
+category: Technical>Cryptocurrencies
 tags: ["bitcoin", "cryptocurrencies", "cryptography", "digital currencies", "finance", "fintech"]
 slug: digital-currencies-the-basics
 status: published

@@ -2,7 +2,7 @@
 title: Hardware Wallets
 slug: wallet
 date: "2017-11-8 16:09"
-category: Technical/Cryptocurrencies
+category: Technical>Cryptocurrencies
 tags: ["wallet", "crypto", "blockchain", "bitcoin"]
 image: src="/images/hwWallets.jpg" alt="hardware wallets"
 tweet: Someone should make a hardware wallet that solves these problems #crypto #trezor #ledger

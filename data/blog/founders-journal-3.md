@@ -3,7 +3,7 @@ title: Founders Journal 3
 slug: founders-journal-3
 draft: true
 date: "2020-5-6 16:39"
-category: Non-technical/Entrepreneurship
+category: Non-technical>Entrepreneurship
 tags: ["startups", "web", "django"]
 image: src="/images/three.jpg" alt="3"
 tweet: The last two weeks building a web-app - I've built the backend using django.

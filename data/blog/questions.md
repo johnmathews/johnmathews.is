@@ -2,7 +2,7 @@
 title: Questions For Interesting Conversations
 slug: questions
 date: "2021-2-1 22:05"
-category: Non-technical/Journal
+category: Non-technical>Journal
 tags: ["uncategorized"]
 ---
 

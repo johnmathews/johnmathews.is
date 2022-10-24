@@ -4,7 +4,7 @@ title: >
   Cardano: Generating Addresses
 slug: cardano-generating-addresses
 date: "2021-3-5 16:14"
-category: Technical / Cryptocurrencies
+category: Technical > Cryptocurrencies
 tags: ["uncategorized"]
 ---
 

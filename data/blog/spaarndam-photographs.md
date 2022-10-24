@@ -3,7 +3,7 @@ title: Mist
 slug: spaarndam-photographs
 date: "2021-1-22 11:43"
 Template: article-photo
-category: Non-technical/Photographs
+category: Non-technical>Photographs
 tags: ["uncategorized"]
 ---
 

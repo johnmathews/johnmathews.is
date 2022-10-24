@@ -2,7 +2,7 @@
 title: Encryption
 date: "2016-08-30 23:04"
 Author: John Mathews
-category: Technical/Cryptocurrencies
+category: Technical>Cryptocurrencies
 tags:
   [
     "encryption",

@@ -2,7 +2,7 @@
 title: How to get rich without getting lucky
 slug: how-to-get-rich-without-getting-lucky
 date: "2021-10-05 12:32:16"
-category: Non-technical/Entrepreneurship, Technical/Other
+category: Non-technical/Entrepreneurship, Technical>Other
 tags: ["naval-ravikant", "mental-models", "business"]
 ---
 

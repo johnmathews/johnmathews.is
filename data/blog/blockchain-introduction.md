@@ -4,7 +4,7 @@ title: >
   Blockchains from the ground up: Part 1
 slug: blockchain-introduction
 date: "2017-5-25 20:38"
-category: Technical/Cryptocurrencies
+category: Technical>Cryptocurrencies
 tags:
   ["blockchains", "digital currencies", "distributed ledger technology", "public key cryptography"]
 tweet:

@@ -2,7 +2,7 @@
 title: Why I Want To Write Regularly
 slug: why-i-want-to-write-regularly
 date: "2021-1-18 11:51"
-category: Non-technical/Learning
+category: Non-technical>Learning
 tags: ["uncategorized"]
 ---
 

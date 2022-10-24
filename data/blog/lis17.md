@@ -2,7 +2,7 @@
 title: The Lisbon Investment Summit
 slug: lis17
 date: "2017-6-9 17:53"
-category: Non-technical/Entrepreneurship
+category: Non-technical>Entrepreneurship
 tags: ["fintech", "startup", "europe", "lis"]
 image: src="/images/lis17.jpeg" alt="Lisbon Investment Summit 2017"
 tweet: #lis17 #Lisbon #Portugal #startup #entrepreneur

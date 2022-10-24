@@ -2,7 +2,7 @@
 title: Predicting the Future using Human Nature and Technology
 slug: what-happens-next
 date: "2021-1-20 14:05"
-category: Non-technical/Social
+category: Non-technical>Social
 tags: ["uncategorized"]
 ---
 

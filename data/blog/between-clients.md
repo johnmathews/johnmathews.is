@@ -3,7 +3,7 @@ title: Between Clients
 status: Published
 slug: between-clients
 date: "2019-10-8 16:05"
-category: Non-technical/Social
+category: Non-technical>Social
 tags: ["freelance"]
 image: src="/images/freelance-ds.png" alt="what my setup doesn't look like"
 tweet:

@@ -3,7 +3,7 @@ title: Founders Journal 2
 slug: founders-journal-2
 date: "2020-04-20 11:35"
 draft: true
-category: Non-technical/Entrepreneurship
+category: Non-technical>Entrepreneurship
 tags: ["startups", "web", "productivity", "founders"]
 image: src="/images/orange-2.jpg" alt="2"
 tweet: Talking about the last 2 weeks of work building a web-app

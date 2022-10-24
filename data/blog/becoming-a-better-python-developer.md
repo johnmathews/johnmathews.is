@@ -4,7 +4,7 @@ title: >
   Python: Becoming A Better Python Developer
 slug: becoming-a-better-python-developer
 date: "2021-1-18 11:25"
-category: Technical/Developer Tools
+category: Technical>Developer-Tools
 tags: ["uncategorized"]
 ---
 

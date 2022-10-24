@@ -4,7 +4,7 @@ title: >
   The Æternity ICO: My experience
 slug: aeternity-ico
 date: "2017-4-30 23:37"
-category: Technical/Cryptocurrencies
+category: Technical>Cryptocurrencies
 tags: ["fintech", "finance", "digital currencies", "blockchains", "dlt", "æternity", "ico"]
 status: Published
 image: src="/images/AEternity_logo.png" alt="Æternity blockchain"

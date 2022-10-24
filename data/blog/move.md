@@ -2,7 +2,7 @@
 title: Move
 slug: move
 date: "2017-7-8 12:26"
-category: Non-technical/Journal
+category: Non-technical>Journal
 tags: ["lifestyle"]
 image: src="/images/square_mile.jpg" alt="London's Square Mile"
 tweet:

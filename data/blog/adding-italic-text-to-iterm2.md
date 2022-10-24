@@ -2,7 +2,7 @@
 title: Adding italic text to iTerm2
 slug: adding-italic-text-to-iterm2
 date: "2022-01-28 10:32:08"
-category: Technical/Developer Tools
+category: Technical>Developer-Tools
 tags: ["terminals"]
 ---
 

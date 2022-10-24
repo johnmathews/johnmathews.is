@@ -2,7 +2,7 @@
 title: Elon Musk's Engineering Philosophy
 slug: elon-musk-s-engineering-philosophy
 date: "2021-08-08 16:41:00"
-category: Technical/Engineering
+category: Technical>Engineering
 image: src="/images/starship-first-stacking.png" alt="super heavy booster stacking"
 tags: ["uncategorized"]
 ---

@@ -2,7 +2,7 @@
 title: Proverbs 16
 slug: proverbs-16
 date: "2021-06-25 12:00:29"
-category: Non-technical/Journal
+category: Non-technical>Journal
 tags: ["books", "bible", "wisdom"]
 ---
 

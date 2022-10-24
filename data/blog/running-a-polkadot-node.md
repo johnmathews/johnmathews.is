@@ -4,7 +4,7 @@ title: >
   Polkadot: Running and interacting with a full node
 slug: running-a-polkadot-node
 date: "2021-3-1 17:40"
-category: Technical/Cryptocurrencies
+category: Technical>Cryptocurrencies
 tags: ["uncategorized"]
 ---
 

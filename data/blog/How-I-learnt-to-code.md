@@ -3,7 +3,7 @@ title: How I learnt to code
 status: Published
 slug: How-I-learnt-to-code
 date: "2020-12-1 13:51"
-category: Non-technical/Learning
+category: Non-technical>Learning
 tags: ["learning", "code"]
 ---
 

@@ -2,7 +2,7 @@
 title: Proverbs 12
 slug: proverbs-12
 date: "2021-06-02 12:24:40"
-category: Non-technical/Journal
+category: Non-technical>Journal
 tags: ["bible", "proverbs", "wisdom"]
 ---
 

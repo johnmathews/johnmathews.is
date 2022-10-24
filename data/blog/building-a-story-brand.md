@@ -2,7 +2,7 @@
 title: Building A Story Brand
 slug: building-a-story-brand
 date: "2021-05-17 13:15:07"
-category: Non-technical/Learning
+category: Non-technical>Learning
 tags: ["reading", "marketing", "communication", "book"]
 image: src="/images/building-a-story-brand/cover.jpg" alt="book cover"
 ---

@@ -2,7 +2,7 @@
 title: Mental Models I Used To Use
 slug: mental-models-i-used-to-use
 date: "2021-1-20 16:48"
-category: Non-technical/Learning
+category: Non-technical>Learning
 tags: ["uncategorized"]
 ---
 

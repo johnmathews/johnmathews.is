@@ -3,7 +3,7 @@ title: >
   Übersicht widget: Time Until
 date: "2016-08-07 11:40"
 Author: John Mathews
-category: Technical/Web
+category: Technical>Web
 tags: ["applescript", "coffeescript", "javascript", "time until", "übersicht", "widgets"]
 slug: time-until
 status: published

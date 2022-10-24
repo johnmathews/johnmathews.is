@@ -2,7 +2,7 @@
 title: I'm a chartered accountant
 slug: chartered
 date: "2017-10-19 21:56"
-category: Non-technical/Learning
+category: Non-technical>Learning
 tags: ["icaew", "aca", "accounting"]
 image: src="/images/icaew_banner.JPEG" alt="ICAEW"
 tweet: #ICAEW #accountant
