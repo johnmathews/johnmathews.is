@@ -14,6 +14,8 @@ import LayoutWrapper from "@/components/LayoutWrapper"
 import KeyboardShortcusts from "@/components/KeyboardShortcuts"
 import { ClientReload } from "@/components/ClientReload"
 
+// import { getFileBySlug } from "@/lib/mdx"
+
 import { useRouter } from "next/router"
 import KeyboardShortcuts from "@/components/KeyboardShortcuts"
 
@@ -37,6 +39,8 @@ export default function App({ Component, pageProps }) {
   } else {
     if (router.query.slug !== undefined) {
       console.log("--- debug router.query.slug: ", router.query.slug)
+      // const post = getFileBySlug("blog", router.query.slug.join("/"))
+      // console.log('--- debug post: ', post);
     }
     return (
       <ThemeProvider attribute="class" defaultTheme={siteMetadata.theme}>
