@@ -1,6 +1,7 @@
 import "@/css/tailwind.css"
 import "@/css/prism.css"
 import "katex/dist/katex.css"
+import { createContext, useContext } from "react"
 
 import "@fontsource/inter/variable-full.css"
 
@@ -34,6 +35,9 @@ export default function App({ Component, pageProps }) {
       </ThemeProvider>
     )
   } else {
+    if (router.query.slug !== undefined) {
+      console.log("--- debug router.query.slug: ", router.query.slug)
+    }
     return (
       <ThemeProvider attribute="class" defaultTheme={siteMetadata.theme}>
         <Head>
