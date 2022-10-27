@@ -32,6 +32,17 @@ input:-webkit-autofill:focus {
   @apply mx-0 px-0;
 }
 
+/* Blog text */
+#contentContainer {
+  @apply font-serif;
+}
+#contentContainer ol {
+  @apply list-decimal dark:marker:text-gray-100;
+}
+#contentContainer ul {
+  @apply list-disc  dark:marker:text-gray-100;
+}
+
 /* Algolia AutoComplete Search */
 :root {
   --aa-icon-size: 94px;
@@ -51,7 +62,7 @@ input:-webkit-autofill:focus {
 
 /* SIDEBAR OF LIST PAGES AND BLOG PAGES */
 #sidebarTopSection .aa-DetachedSearchButtonPlaceholder {
-  @apply my-3 mt-10 py-1 text-center font-serif text-2xl text-gray-900 hover:underline dark:text-gray-100;
+  @apply text-center text-lg text-gray-900 hover:underline dark:text-gray-100;
 }
 #sidebarTopSection .aa-DetachedSearchButtonIcon {
   @apply invisible -ml-2 dark:ml-0;

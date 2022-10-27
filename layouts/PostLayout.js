@@ -14,8 +14,6 @@ const discussUrl = (slug) =>
     `${siteMetadata.siteUrl}/blog/${slug}`
   )}`
 
-const postDateTemplate = { weekday: "long", year: "numeric", month: "long", day: "numeric" }
-
 export default function PostLayout({ frontMatter, authorDetails, next, prev, children }) {
   const { slug, fileName, date, title, images, tags, category } = frontMatter
   const categoryString = category.replace("/", " > ")
@@ -29,8 +27,8 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
       />
       <ScrollTop />
       <article>
-        <div className="xl:divide-y xl:divide-gray-200 xl:dark:divide-gray-700">
-          <header className="pt-6 xl:pb-6">
+        <div className="">
+          <header className="pt-6 xl:mb-24">
             <div className="space-y-1 text-center">
               <div className="">
                 <PageTitle>{title}</PageTitle>
@@ -39,11 +37,14 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
           </header>
           <div
             id="contentContainer"
-            className="divide-y divide-gray-200 pb-8 dark:divide-gray-700 xl:divide-y-0"
+            className="divide-y divide-gray-200 pb-8 dark:divide-gray-700 xl:max-w-5xl xl:divide-y-0"
             style={{ gridTemplateRows: "auto 1fr" }}
           >
             <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
-              <div id="content" className="prose max-w-none pt-10 pb-8 dark:prose-dark">
+              <div
+                id="content"
+                className="prose-xl max-w-none pt-10 pb-8 dark:prose-dark dark:text-gray-100"
+              >
                 {children}
               </div>
             </div>

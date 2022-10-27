@@ -5,9 +5,7 @@ const Category = ({ text }) => {
   const categoryString = text.replace("/", " > ")
   return (
     <Link href={`/category/${kebabCase(text)}`}>
-      <a className="mr-3 text-sm font-medium uppercase text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">
-        {categoryString}
-      </a>
+      <a className="">{categoryString.split(">")[categoryString.split(">").length - 1]}</a>
     </Link>
   )
 }
