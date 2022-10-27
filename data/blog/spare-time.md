@@ -10,11 +10,17 @@ status: published
 
 import IframeEmbed from '../components/IframeEmbed'
 
-This is a list of interests I want to consider pursuing. I wrote it when I began to study for my last set of exams and my mind filled with things I'd rather be doing instead. Some of these interests are just me reacting to having no spare time for a few months, but others are decent goals and projects. Temporarily losing my spare time made me value it more.
+This is a list of interests I want to consider pursuing. I wrote it when I began
+to study for my last set of exams and my mind filled with things I'd rather be
+doing instead. Some of these interests are just me reacting to having no spare
+time for a few months, but others are decent goals and projects. Temporarily
+losing my spare time made me value it more.
 
 ![free-time](/static/images/spare_time.jpg)
 
-I wrote this post so that I could compare what I thought was important when I was busy to when I wasn't. Writing the list allowed me to move on without forgetting. Here's a break down of each item:
+I wrote this post so that I could compare what I thought was important when I
+was busy to when I wasn't. Writing the list allowed me to move on without
+forgetting. Here's a break down of each item:
 
 1.  "Run 10k in 50 minutes" - This is easier than I imagined. When I wrote the
     list I could barely run 2k without stopping, but intended to go for a
@@ -26,7 +32,8 @@ I wrote this post so that I could compare what I thought was important when I w
     minimal running, I could run 5k easily. If I kept at it, 10k in 50 mins
     would be easy. But point 2...
 
-2.  "Be Insanity strong" - As in, do the Insanity workout programme. Again. I thought about it and decided to do P90x instead. Week 1 is going great.
+2.  "Be Insanity strong" - As in, do the Insanity workout programme. Again. I
+    thought about it and decided to do P90x instead. Week 1 is going great.
 
 3.  "Read the bible habitually" - When I was 17 I found out about Jesus and
     became a Christian. In the months and years after that I'd regularly read my
