@@ -5,7 +5,7 @@ const Category = ({ text }) => {
   const categoryString = text.replace("/", " > ")
   return (
     <Link href={`/category/${kebabCase(text)}`}>
-      <a className="">{categoryString.split(">")[categoryString.split(">").length - 1]}</a>
+      <a className="">{categoryString}</a>
     </Link>
   )
 }

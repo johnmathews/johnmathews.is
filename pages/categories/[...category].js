@@ -12,16 +12,33 @@ const root = process.cwd()
 
 export async function getStaticPaths() {
   const categories = await getAllCategories("blog")
+  console.log("--- debug categories: ", categories)
+
+  const paths = Object.keys(categories).map((category) => ({
+    params: {
+      category: category.split(" "),
+    },
+  }))
+  console.log("--- debug paths: ", paths)
 
   return {
-    paths: Object.keys(categories).map((category) => ({
-      params: {
-        category,
-      },
-    })),
+    paths,
     fallback: false,
   }
 }
+
+// example from ...slug.js
+// export async function getStaticPaths() {
+//   const posts = getFiles("blog")
+//   return {
+//     paths: posts.map((p) => ({
+//       params: {
+//         slug: formatSlug(p).split("/"),
+//       },
+//     })),
+//     fallback: false,
+//   }
+// }
 
 export async function getStaticProps({ params }) {
   const allPosts = await getAllFilesFrontMatter("blog")
@@ -43,7 +60,7 @@ export async function getStaticProps({ params }) {
 
 export default function Category({ posts, category }) {
   // Capitalize first letter and convert space to dash
-  const title = category[0].toUpperCase() + category.split(" ").join("-").slice(1)
+  const title = category //[0].toUpperCase() + category.split(" ").join("-").slice(1)
   return (
     <>
       <CategorySEO
