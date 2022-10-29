@@ -67,12 +67,12 @@ export default function Blog({ post, authorDetails, prev, next }) {
   const categoryString = category.replace("/", " > ")
   return (
     <SectionContainer>
-      <div id="layoutWrapper" className="h-screen xl:mt-40">
-        <div id="bigContainer" className="mx-3 lg:mx-auto lg:mt-10 lg:w-5/6 lg:pt-5 xl:mt-28">
+      <div id="layoutWrapper" className="h-screen xl:mt-12 2xl:mt-40">
+        <div id="bigContainer" className="mx-3 lg:mx-auto lg:mt-10 lg:w-5/6 lg:pt-5 2xl:mt-28">
           <div id="mx-auto w-full">
             <div id="flex">
               <div id="header" className="hidden flex-none xl:inline xl:w-32">
-                <div className="fixed w-32">
+                <div className="fixed w-32 xl:w-40">
                   <div className="hidden">
                     <Link href="/" aria-label={siteMetadata.headerTitle}>
                       <div className="items-center ">

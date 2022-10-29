@@ -14,15 +14,9 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
     return searchContent.toLowerCase().includes(searchValue.toLowerCase())
   })
 
-  // https://whereisthemouse.com/create-a-list-component-with-keyboard-navigation-in-react
-
-  // If initialDisplayPosts exist, display it if no searchValue is specified
   const displayPosts =
     initialDisplayPosts.length > 0 && !searchValue ? initialDisplayPosts : filteredBlogPosts
 
-  // <div className="mt-2 flex flex-wrap">
-  //   <Category key={category} text={category} />
-  // </div>
   return (
     <>
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
@@ -34,14 +28,14 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
         <ul>
           {!filteredBlogPosts.length && "No posts found."}
           {displayPosts.map((frontMatter) => {
-            const { slug, date, title, summary, tags, category } = frontMatter
+            const { slug, date, title, summary, category } = frontMatter
             if (category[0].toLowerCase() !== "snippet") {
               return (
                 <li key={slug} className="my-3">
                   <article className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
                     <div className="space-y-3 xl:col-span-3">
                       <div>
-                        <h3 className="font-serif text-3xl font-bold">
+                        <h3 className="font-serif text-2xl font-bold 2xl:text-3xl">
                           <Link
                             href={`/blog/${slug}`}
                             className="capitalize text-gray-900 hover:underline dark:text-gray-100"
@@ -57,7 +51,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
 
                     <dl>
                       <dt className="sr-only">Published on</dt>
-                      <dd className="text-right font-serif font-semibold leading-6 text-gray-900 dark:text-gray-200 lg:text-left lg:text-2xl">
+                      <dd className="text-right font-serif text-xl font-semibold leading-6 text-gray-900 dark:text-gray-200 lg:text-left 2xl:text-2xl ">
                         <time dateTime={date}>{formatDate(date)}</time>
                       </dd>
                     </dl>
