@@ -27,7 +27,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
     <>
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="space-y-2 pt-6 pb-8 md:space-y-5">
-          <h1 className="font-serif text-5xl font-extrabold leading-9 tracking-normal text-gray-900 dark:text-gray-100 sm:text-4xl md:text-6xl lg:text-9xl">
+          <h1 className="font-serif text-5xl font-extrabold capitalize leading-9 tracking-normal text-gray-900 dark:text-gray-100 sm:text-4xl md:text-6xl lg:text-9xl">
             {title}
           </h1>
         </div>
@@ -37,14 +37,14 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
             const { slug, date, title, summary, tags, category } = frontMatter
             if (category[0].toLowerCase() !== "snippet") {
               return (
-                <li key={slug} className="mt-5 py-4">
+                <li key={slug} className="my-3">
                   <article className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
                     <div className="space-y-3 xl:col-span-3">
                       <div>
                         <h3 className="font-serif text-3xl font-bold">
                           <Link
                             href={`/blog/${slug}`}
-                            className="text-gray-900 hover:underline dark:text-gray-100"
+                            className="capitalize text-gray-900 hover:underline dark:text-gray-100"
                           >
                             {title}
                           </Link>

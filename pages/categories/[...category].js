@@ -12,14 +12,12 @@ const root = process.cwd()
 
 export async function getStaticPaths() {
   const categories = await getAllCategories("blog")
-  console.log("--- debug categories: ", categories)
 
   const paths = Object.keys(categories).map((category) => ({
     params: {
-      category: category.split(" "),
+      category: category.split("."),
     },
   }))
-  console.log("--- debug paths: ", paths)
 
   return {
     paths,
@@ -27,30 +25,19 @@ export async function getStaticPaths() {
   }
 }
 
-// example from ...slug.js
-// export async function getStaticPaths() {
-//   const posts = getFiles("blog")
-//   return {
-//     paths: posts.map((p) => ({
-//       params: {
-//         slug: formatSlug(p).split("/"),
-//       },
-//     })),
-//     fallback: false,
-//   }
-// }
-
 export async function getStaticProps({ params }) {
   const allPosts = await getAllFilesFrontMatter("blog")
+  const strCategory = params.category.join(".")
+  console.log("--- debug strCategory: ", strCategory)
   const filteredPosts = allPosts.filter(
-    (post) =>
-      post.draft !== true && post.category.map((c) => kebabCase(c)).includes(params.category)
+    (post) => post.draft !== true && post.category.map((c) => c).includes(strCategory)
   )
+  console.log("--- debug filteredPosts: ", filteredPosts)
 
   // rss
   if (filteredPosts.length > 0) {
     const rss = generateRss(filteredPosts, `categories/${params.category}/feed.xml`)
-    const rssPath = path.join(root, "public", "categories", params.category)
+    const rssPath = path.join(root, "public", "categories", kebabCase(params.category))
     fs.mkdirSync(rssPath, { recursive: true })
     fs.writeFileSync(path.join(rssPath, "feed.xml"), rss)
   }
@@ -60,12 +47,12 @@ export async function getStaticProps({ params }) {
 
 export default function Category({ posts, category }) {
   // Capitalize first letter and convert space to dash
-  const title = category //[0].toUpperCase() + category.split(" ").join("-").slice(1)
+  const title = category[1]
   return (
     <>
       <CategorySEO
-        title={`${category} - ${siteMetadata.author}`}
-        description={`${category} category - ${siteMetadata.author}`}
+        title={`${title} - ${siteMetadata.author}`}
+        description={`${title} category - ${siteMetadata.author}`}
       />
       <ListLayout posts={posts} title={title} />
     </>
