@@ -1,6 +1,6 @@
 import Link from "@/components/Link"
 import { PageSEO } from "@/components/SEO"
-import Category from "@/components/Category"
+import ParentCategory from "@/components/ParentCategory"
 import siteMetadata from "@/data/siteMetadata"
 import { getAllCategories } from "@/lib/categories"
 import kebabCase from "@/lib/utils/kebabCase"
@@ -12,6 +12,7 @@ export async function getStaticProps() {
 }
 
 export default function Categories({ categories }) {
+  // built structuredCategories object
   const structuredCategories = {}
   Object.keys(categories).forEach((category) => {
     const categoryParts = category.split(".")
@@ -25,25 +26,7 @@ export default function Categories({ categories }) {
       structuredCategories[categoryParent] = [categoryChild]
     }
   })
-  console.log("--- debug structuredCategories: ", structuredCategories)
 
-  // const sortedCategories = Object.keys(categories).sort((a, b) => categories[b] - categories[a])
-
-  //         <ul>
-  //           {sortedCategories.map((t) => {
-  //             return (
-  //               <li key={t} className="mt-2 mb-2 mr-5 text-lg">
-  //                 <Category text={t} />
-  //                 <Link
-  //                   href={`/categories/${kebabCase(t)}`}
-  //                   className="ml-2 font-semibold uppercase text-gray-600 dark:text-gray-300"
-  //                 >
-  //                   {` (${categories[t].length})`}
-  //                 </Link>
-  //               </li>
-  //             )
-  //           })}
-  //         </ul>
   return (
     <>
       <PageSEO title={`Categories - ${siteMetadata.author}`} description="Things I blog about" />
@@ -56,35 +39,7 @@ export default function Categories({ categories }) {
             Categories
           </div>
         </div>
-        <div id="categories" className="flex max-w-lg flex-col">
-          {Object.keys(structuredCategories).map((category) => {
-            return (
-              <div
-                key={category}
-                className="my-3 text-2xl font-bold capitalize text-gray-900 dark:text-gray-100 "
-              >
-                {category}
-
-                {structuredCategories[category].forEach((subCat) => {
-                  console.log("--- debug subCat: ", subCat)
-                  Object.keys(subCat).map((subCatKey) => {
-                    console.log("--- debug subCat key: ", subCatKey)
-                    console.log("--- debug subCat posts: ", subCat[subCatKey])
-                    return (
-                      <div
-                        id="subCat"
-                        key={subCatKey}
-                        className="my-3 text-lg font-bold capitalize text-gray-900 dark:text-gray-100 "
-                      >
-                        {subCatKey}
-                      </div>
-                    )
-                  })
-                })}
-              </div>
-            )
-          })}
-        </div>
+        <div id="categories" className="flex max-w-lg flex-col"></div>
       </div>
     </>
   )
