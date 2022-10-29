@@ -17,6 +17,16 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
   const displayPosts =
     initialDisplayPosts.length > 0 && !searchValue ? initialDisplayPosts : filteredBlogPosts
 
+  // const yearlyDisplayPosts = {}
+  // displayPosts.map(frontMatter) => {
+  //   year = frontMatter.date.year
+  //   if (year in yearlyDisplayPosts) {
+  //     yearlyDisplayPosts[year].push(frontMatter)
+  //   } else {
+  //     year[year] = [frontMatter]
+  //   }
+  // }
+
   return (
     <>
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
