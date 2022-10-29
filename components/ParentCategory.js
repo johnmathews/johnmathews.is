@@ -12,9 +12,15 @@ const ParentCategory = ({ catName, structuredCategories }) => {
 
         <div>
           {structuredCategories.map((category) => {
+            const onlyKey = Object.keys(category)[0]
+            const numPosts = category[onlyKey].length
+            console.log("--- debug numPosts: ", numPosts)
+            console.log("--- debug onlyKey: ", onlyKey)
+            console.log("--- debug category: ", category)
             return (
-              <div key={Object.keys(category)[0]} className="text-lg capitalize">
-                {Object.keys(category)[0]}
+              <div key={onlyKey} className="flex">
+                <div className="text-lg capitalize">{onlyKey}</div>
+                <div className="ml-1 text-lg capitalize">({numPosts})</div>
               </div>
             )
           })}
