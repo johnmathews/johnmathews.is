@@ -40,8 +40,6 @@ export async function getStaticProps({ params }) {
   const thisCategory = thisPost.category // an array
 
   const allPostsInCategory = allPosts.filter(function (post) {
-    // the long replaceAll chain takes care of posts with multiple categories,
-    // where the category might use > or . and might have nefarious spaces
     for (const category of thisCategory) {
       for (const postCategory of post.category) {
         if (category.toLowerCase() == postCategory.toLowerCase()) {
@@ -75,15 +73,8 @@ export async function getStaticProps({ params }) {
 
 export default function Blog({ post, authorDetails, prev, next }) {
   const { mdxSource, toc, frontMatter } = post
-  const { slug, fileName, date, title, images, tags, category } = frontMatter
+  const { slug, fileName, date, title, images, category } = frontMatter
   const postDateTemplate = { year: "numeric", month: "long" }
-  const categoryArray = category
-    .replaceAll("/", ">")
-    .replaceAll(" >", ">")
-    .replaceAll("> ", ">")
-    .replaceAll(">", ".")
-    .split(" ")
-  const childCatArray = categoryArray.map((cat) => cat.split(".").pop())
   return (
     <SectionContainer>
       <div id="layoutWrapper" className="h-screen xl:mt-12 2xl:mt-40">
@@ -145,7 +136,7 @@ export default function Blog({ post, authorDetails, prev, next }) {
                             Category:
                           </dt>
                           <dd className="my-1 flex text-left text-gray-900 hover:underline dark:text-gray-200 md:flex-col">
-                            {categoryArray.map((cat) => {
+                            {category.map((cat) => {
                               return <Category key={cat} text={cat} />
                             })}
                           </dd>

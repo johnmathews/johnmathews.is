@@ -16,7 +16,6 @@ const discussUrl = (slug) =>
 
 export default function PostLayout({ frontMatter, authorDetails, next, prev, children }) {
   const { slug, fileName, date, title, images, tags, category } = frontMatter
-  const categoryString = category.replace("/", " > ")
 
   return (
     <SectionContainer>
