@@ -11,7 +11,7 @@ export default function PostLayout({ children }) {
           <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
             <div
               id="content"
-              className="prose max-h-96 max-w-none overflow-y-auto pt-10 pb-8 dark:prose-dark"
+              className="max-h-96 prose  max-w-none overflow-y-auto pt-10 pb-8 dark:prose-dark"
             >
               {children}
             </div>

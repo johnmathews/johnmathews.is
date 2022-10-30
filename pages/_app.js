@@ -23,6 +23,7 @@ const isSocket = process.env.SOCKET
 export default function App({ Component, pageProps }) {
   const router = useRouter()
   if (router.asPath == "/") {
+    // landing page only
     return (
       <ThemeProvider attribute="class" defaultTheme={siteMetadata.theme}>
         <Head>
@@ -36,7 +37,6 @@ export default function App({ Component, pageProps }) {
     )
   } else if (router.query.slug !== undefined) {
     // blog posts only
-    console.log("--- debug router.query.slug: ", router.query.slug)
     return (
       <ThemeProvider attribute="class" defaultTheme={siteMetadata.theme}>
         <Head>

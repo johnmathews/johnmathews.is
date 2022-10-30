@@ -23,9 +23,7 @@ function downArrow() {
   const event = new KeyboardEvent("keypress", {
     key: "ArrowDown",
   })
-  console.log(event) // KeyboardEvent {isTrusted: false, key: "enter", code: "", location: 0, ctrlKey: false, …}
 
-  console.log("--- debug ArrowDown: ", "ArrowDown")
   new KeyboardEvent("keydown", { key: "ArrowDown", charCode: 0, keyCode: 40, bubbles: true })
   return new KeyboardEvent("keydown", { key: "ArrowDown", charCode: 0, keyCode: 40, bubbles: true })
 }

@@ -7,8 +7,10 @@ export const POSTS_PER_PAGE = 55
 
 export async function getStaticProps() {
   const allPosts = await getAllFilesFrontMatter("blog")
-  const posts = allPosts.filter((post) => post.category.toLowerCase() != "snippet")
-  console.log("--- debug posts: ", posts)
+  const posts = allPosts.filter(function (post) {
+    // snippet posts only ever have 1 category (which is snippet)
+    return post.category[0].toLowerCase() != "snippet"
+  })
   const initialDisplayPosts = posts.slice(0, POSTS_PER_PAGE)
 
   const pagination = {

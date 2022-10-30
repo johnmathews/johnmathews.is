@@ -28,11 +28,12 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   const allPosts = await getAllFilesFrontMatter("blog")
   const strCategory = params.category.join(".")
-  console.log("--- debug strCategory: ", strCategory)
-  const filteredPosts = allPosts.filter(
-    (post) => post.draft !== true && post.category.map((c) => c).includes(strCategory)
-  )
-  console.log("--- debug filteredPosts: ", filteredPosts)
+  const filteredPosts = allPosts.filter(function (post) {
+    if (typeof post.category == "string") {
+      post.category = post.category.split(" ")
+    }
+    return post.draft !== true && post.category.map((c) => c.includes(strCategory))
+  })
 
   // rss
   if (filteredPosts.length > 0) {

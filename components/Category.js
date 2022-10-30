@@ -1,11 +1,11 @@
 import Link from "next/link"
-import kebabCase from "@/lib/utils/kebabCase"
 
 const Category = ({ text }) => {
-  const categoryString = text.replace("/", " > ")
+  const categoryString = text.replace(".", "/").toLowerCase()
+  const childCat = text.split(".").pop()
   return (
-    <Link href={`/category/${kebabCase(text)}`}>
-      <a className="">{categoryString}</a>
+    <Link href={`/categories/${categoryString}`}>
+      <a className="">{childCat}</a>
     </Link>
   )
 }
