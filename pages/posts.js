@@ -6,8 +6,11 @@ import { PageSEO } from "@/components/SEO"
 export const POSTS_PER_PAGE = 55
 
 export async function getStaticProps() {
-  const posts = await getAllFilesFrontMatter("blog")
+  const allPosts = await getAllFilesFrontMatter("blog")
+  const posts = allPosts.filter((post) => post.category.toLowerCase() != "snippet")
+  console.log("--- debug posts: ", posts)
   const initialDisplayPosts = posts.slice(0, POSTS_PER_PAGE)
+
   const pagination = {
     currentPage: 1,
     totalPages: Math.ceil(posts.length / POSTS_PER_PAGE),

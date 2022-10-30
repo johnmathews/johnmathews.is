@@ -36,9 +36,34 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const allPosts = await getAllFilesFrontMatter("blog")
-  const postIndex = allPosts.findIndex((post) => formatSlug(post.slug) === params.slug.join("/"))
-  const prev = allPosts[postIndex + 1] || null
-  const next = allPosts[postIndex - 1] || null
+  const thisPost = allPosts.filter((post) => formatSlug(post.slug) === params.slug.join("/"))[0]
+  const thisCategory = thisPost.category // an array
+
+  const allPostsInCategory = allPosts.filter(function (post) {
+    // the long replaceAll chain takes care of posts with multiple categories,
+    // where the category might use > or . and might have nefarious spaces
+    for (const category of thisCategory
+      .replaceAll(" >", ">")
+      .replaceAll("> ", ">")
+      .replaceAll(">", ".")
+      .split(" ")) {
+      for (const postCategory of post.category
+        .replaceAll(" >", ">")
+        .replaceAll("> ", ">")
+        .replaceAll(">", ".")
+        .split(" ")) {
+        if (category.toLowerCase() == postCategory.toLowerCase()) {
+          return true
+        }
+      }
+    }
+  })
+
+  const postIndex = allPostsInCategory.findIndex(
+    (post) => formatSlug(post.slug) === params.slug.join("/")
+  )
+  const prev = allPostsInCategory[postIndex + 1] || null
+  const next = allPostsInCategory[postIndex - 1] || null
   const post = await getFileBySlug("blog", params.slug.join("/"))
   const authorList = post.frontMatter.authors || ["default"]
   const authorPromise = authorList.map(async (author) => {
@@ -56,15 +81,17 @@ export async function getStaticProps({ params }) {
   return { props: { post, authorDetails, prev, next } }
 }
 
-// mx-auto md:flex md:flex-row md:inline lg:mt-24 lg:w-5/6
-
-// fixed mb-10 mr-5 md:w-1/5 md:items-center md:py-10 lg:mr-32
-
 export default function Blog({ post, authorDetails, prev, next }) {
   const { mdxSource, toc, frontMatter } = post
   const { slug, fileName, date, title, images, tags, category } = frontMatter
   const postDateTemplate = { year: "numeric", month: "long" }
-  const categoryString = category.replace("/", " > ")
+  const categoryArray = category
+    .replaceAll("/", ">")
+    .replaceAll(" >", ">")
+    .replaceAll("> ", ">")
+    .replaceAll(">", ".")
+    .split(" ")
+  const childCatArray = categoryArray.map((cat) => cat.split(".").pop())
   return (
     <SectionContainer>
       <div id="layoutWrapper" className="h-screen xl:mt-12 2xl:mt-40">
@@ -99,7 +126,7 @@ export default function Blog({ post, authorDetails, prev, next }) {
                         <Link
                           key={link.title}
                           href={link.href}
-                          className="my-3 flex py-1 text-left text-lg text-gray-900 hover:underline dark:text-gray-100 md:flex-col"
+                          className="my-1 flex py-1 text-left text-lg text-gray-900 hover:underline dark:text-gray-100 md:flex-col 2xl:my-3"
                         >
                           {link.title}
                         </Link>
@@ -114,16 +141,19 @@ export default function Blog({ post, authorDetails, prev, next }) {
                     id="sidebarBottomSection"
                     className="hiddden items-center text-base leading-5 md:block"
                   >
-                    <div className="-mr-10 mt-10 border-t-4 border-double border-gray-800 dark:border-gray-100" />
+                    <div
+                      id="sideBarDivider"
+                      className="my-5 -mr-10 border-t-4 border-double border-gray-800 dark:border-gray-100 2xl:my-10"
+                    />
 
-                    <div className="hidden md:block lg:mt-10">
+                    <div className="hidden md:block">
                       <div className="flex flex-col">
-                        <div className="mb-5">
+                        <div className="mb-2 2xl:mb-5">
                           <dt className="my-1 flex text-left text-gray-900 dark:text-gray-200 md:flex-col">
                             Category:
                           </dt>
                           <dd className="my-1 flex text-left text-gray-900 hover:underline dark:text-gray-200 md:flex-col">
-                            <Category key={categoryString} text={categoryString} />
+                            <Category key={childCatArray} text={childCatArray} />
                           </dd>
                         </div>
 
@@ -141,18 +171,18 @@ export default function Blog({ post, authorDetails, prev, next }) {
                           </dd>
                         </div>
                         {(next || prev) && (
-                          <div className="flex justify-between py-4 text-gray-900 dark:text-gray-200 xl:block xl:space-y-8 xl:py-8">
+                          <div className="xl:space-y- flex justify-between py-3 text-gray-900 dark:text-gray-200 xl:block 2xl:py-8">
                             {prev && (
-                              <div className="my-1">
-                                <div className="mb-2"> Previous: </div>
+                              <div className="my-3 2xl:my-5">
+                                <div className="mb-1 2xl:mb-2"> Previous: </div>
                                 <div className="hover:underline ">
                                   <Link href={`/blog/${prev.slug}`}>{prev.title}</Link>
                                 </div>
                               </div>
                             )}
                             {next && (
-                              <div className="my-1">
-                                <div className="mb-2"> Next: </div>
+                              <div className="my-3 2xl:my-5">
+                                <div className="mb-1 2xl:mb-2"> Next: </div>
                                 <div className="hover:underline ">
                                   <Link href={`/blog/${next.slug}`}>{next.title}</Link>
                                 </div>
@@ -166,6 +196,7 @@ export default function Blog({ post, authorDetails, prev, next }) {
                   <MobileNav />
                 </div>
               </div>
+
               <div id="main" className="min-h-screen w-full flex-auto xl:ml-72 xl:w-5/6 ">
                 {frontMatter.draft !== true ? (
                   <MDXLayoutRenderer
