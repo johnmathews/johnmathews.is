@@ -29,10 +29,14 @@ function getAllPosts() {
       title: matterResult.data.title,
       tags: String(matterResult.data.tags),
       category: matterResult.data.category,
+      draft: matterResult.data.draft,
       content: markdownContent.replaceAll('"', "'").replaceAll("\n", " "),
     }
   })
-  return posts
+  const publishedPosts = posts.filter((post) => {
+    post.draft !== true
+  })
+  return publishedPosts
 }
 
 const searchableContent = `export const posts = ${JSON.stringify(getAllPosts(), null, 2)}`
@@ -50,6 +54,7 @@ fs.writeFile("cache/searchData.js", searchableContent, (err) => {
     console.log("Updated local index: cache/searchData.js")
   }
 })
+
 fs.writeFile("cache/searchData.json", JSONData, (err) => {
   if (err) console.log(err)
   else {

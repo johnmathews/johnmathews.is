@@ -101,18 +101,26 @@ const KeyboardShortcuts = () => {
     window.history.back()
   })
 
+  useMousetrap("g c", () => {
+    router.push("/categories")
+  })
+
   useMousetrap("g s", () => {
     router.push("/snippets")
   })
+
   useMousetrap("g l", () => {
     router.push("/")
   })
+
   useMousetrap("g i", () => {
     router.push("/posts")
   })
+
   useMousetrap("g p", () => {
     router.push("/projects")
   })
+
   useMousetrap("g a", () => {
     router.push("/about")
   })

@@ -37,6 +37,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   const allPosts = await getAllFilesFrontMatter("blog")
   const thisPost = allPosts.filter((post) => formatSlug(post.slug) === params.slug.join("/"))[0]
+
   const thisCategory = thisPost.category // an array
 
   const allPostsInCategory = allPosts.filter(function (post) {
@@ -73,7 +74,7 @@ export async function getStaticProps({ params }) {
 
 export default function Blog({ post, authorDetails, prev, next }) {
   const { mdxSource, toc, frontMatter } = post
-  const { slug, fileName, date, title, images, category } = frontMatter
+  const { date, category } = frontMatter
   const postDateTemplate = { year: "numeric", month: "long" }
   return (
     <SectionContainer>
