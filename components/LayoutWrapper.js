@@ -20,7 +20,7 @@ const LayoutWrapper = ({ children }) => {
         <div className="mx-auto justify-between md:flex md:flex-row lg:mt-24 lg:w-5/6 ">
           <header
             id="header"
-            className="mb-10 mr-5 md:w-1/5 md:items-center md:justify-between md:py-10 lg:mr-32"
+            className="mb-10 mr-5 md:items-center md:justify-between md:py-10 2xl:mr-32 2xl:w-1/5"
           >
             <div className="hidden">
               <Link href="/" aria-label={siteMetadata.headerTitle}>
@@ -39,28 +39,22 @@ const LayoutWrapper = ({ children }) => {
               </Link>
             </div>
 
-            <div
-              id="sidebarTopSection"
-              className="hiddden items-center text-base leading-5 md:block"
-            >
+            <div id="sidebarTopSection" className="hiddden text-base leading-5 md:block">
               <div className="hidden md:block lg:mt-16">
                 {headerNavLinks.map((link) => (
                   <Link
                     key={link.title}
                     href={link.href}
-                    className="my-3 flex py-1 text-center font-serif text-2xl text-gray-900 hover:underline dark:text-gray-100 md:flex-col"
+                    className="my-3 flex py-1 font-serif text-2xl text-gray-900 hover:underline dark:text-gray-100 md:flex-col"
                   >
                     {link.title}
                   </Link>
                 ))}
-                <div className="mt-10 -ml-2 text-center">
+                <div className="mt-10 -ml-2">
                   <ThemeSwitch />
                 </div>
 
-                <div
-                  id="autoCompleteComponentWrapper"
-                  className="mx-auto mt-3 w-32 font-serif dark:pl-7"
-                >
+                <div id="autoCompleteComponentWrapper" className="mt-8 font-serif">
                   <Autocomplete />
                 </div>
               </div>
@@ -68,7 +62,7 @@ const LayoutWrapper = ({ children }) => {
             <div ref={ref} id="sidebarBottomSection" />
             <MobileNav />
           </header>
-          <main id="main" className="mb-auto md:w-4/5 ">
+          <main id="main" className="mb-auto md:ml-16 ">
             {children}
           </main>
         </div>

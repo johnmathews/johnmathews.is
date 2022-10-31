@@ -49,11 +49,11 @@ input:-webkit-autofill:focus {
 }
 
 .aa-SubmitIcon {
-  fill: black;
+  @apply hidden;
 }
 
 .aa-DetachedSearchButtonIcon {
-  @apply dark:hidden;
+  @apply hidden !important;
 }
 
 .aa-DetachedSearchButton {
@@ -61,8 +61,11 @@ input:-webkit-autofill:focus {
 }
 
 /* SIDEBAR OF LIST PAGES AND BLOG PAGES */
-#sidebarTopSection .aa-DetachedSearchButtonPlaceholder {
-  @apply text-center text-lg text-gray-900 hover:underline dark:text-gray-100;
+#layoutWrapper #sidebarTopSection .aa-DetachedSearchButtonPlaceholder {
+  @apply text-2xl text-gray-900 hover:underline dark:text-gray-100;
+}
+#blogPostWrapper #sidebarTopSection .aa-DetachedSearchButtonPlaceholder {
+  @apply -ml-1 text-center text-lg text-gray-900 hover:underline dark:text-gray-100;
 }
 #sidebarTopSection .aa-DetachedSearchButtonIcon {
   @apply invisible -ml-2 dark:ml-0;
@@ -70,7 +73,8 @@ input:-webkit-autofill:focus {
 
 /* MOBILE NAV */
 #mobileNavLinks .aa-DetachedSearchButtonPlaceholder {
-  @apply ml-10 text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100;
+  @apply text-2xl;
+  @apply ml-10 font-bold tracking-widest text-gray-900 dark:text-gray-100;
 }
 #mobileNavLinks .aa-DetachedSearchButtonIcon {
   @apply hidden;

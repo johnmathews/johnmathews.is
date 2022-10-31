@@ -57,7 +57,7 @@ export default function SnippetLayout({
         </div>
         <div
           id="snippetsSection"
-          className="grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-3 md:gap-3 lg:grid-cols-3 lg:gap-5 2xl:grid-cols-3"
+          className="grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-3 md:gap-3 lg:grid-cols-3 lg:gap-8 2xl:grid-cols-3"
         >
           {!filteredSnippets.length && "No posts found."}
           {displayPosts.map((post) => {

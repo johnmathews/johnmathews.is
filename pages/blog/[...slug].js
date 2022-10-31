@@ -87,7 +87,7 @@ export default function Blog({ post, authorDetails, prev, next }) {
   const postDateTemplate = { year: "numeric", month: "long" }
   return (
     <SectionContainer>
-      <div id="layoutWrapper" className="h-screen xl:mt-12 2xl:mt-40">
+      <div id="blogPostWrapper" className="h-screen xl:mt-12 2xl:mt-40">
         <div id="bigContainer" className="mx-3 lg:mx-auto lg:mt-10 lg:w-5/6 lg:pt-5 2xl:mt-28">
           <div id="mx-auto w-full">
             <div id="flex">
@@ -111,7 +111,7 @@ export default function Blog({ post, authorDetails, prev, next }) {
                   </div>
                   <div id="sidebarTopSection" className="hiddden text-base leading-5 md:block ">
                     <div className="hidden md:block">
-                      <div className="-ml-5 text-left">
+                      <div className="-ml-3 mb-5 text-left">
                         <ThemeSwitch />
                       </div>
 
@@ -125,7 +125,7 @@ export default function Blog({ post, authorDetails, prev, next }) {
                         </Link>
                       ))}
 
-                      <div id="autoCompleteComponentWrapper" className="-ml-8 dark:-ml-1">
+                      <div id="autoCompleteComponentWrapper" className="mt-3">
                         <Autocomplete />
                       </div>
                     </div>
@@ -136,7 +136,7 @@ export default function Blog({ post, authorDetails, prev, next }) {
                   >
                     <div
                       id="sideBarDivider"
-                      className="my-5 -mr-10 border-t-4 border-double border-gray-800 dark:border-gray-100 2xl:my-10"
+                      className="my-8 -mr-10 border-t-4 border-double border-gray-800 dark:border-gray-100 2xl:my-10"
                     />
 
                     <div className="hidden md:block">
@@ -192,7 +192,10 @@ export default function Blog({ post, authorDetails, prev, next }) {
                 </div>
               </div>
 
-              <div id="main" className="min-h-screen w-full flex-auto xl:ml-72 xl:w-5/6 ">
+              <div
+                id="main"
+                className="min-h-screen w-full flex-auto lg:pr-32 xl:ml-72 xl:w-5/6 2xl:pr-0"
+              >
                 {frontMatter.draft !== true ? (
                   <MDXLayoutRenderer
                     layout={frontMatter.layout || DEFAULT_LAYOUT}

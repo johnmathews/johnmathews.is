@@ -60,8 +60,10 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
                     </div>
 
                     <dl>
-                      <dt className="sr-only">Published on</dt>
-                      <dd className="text-right font-serif text-xl font-semibold leading-6 text-gray-900 dark:text-gray-200 lg:text-left 2xl:text-2xl ">
+                      <dd
+                        id="dateBox"
+                        className="text-right font-serif text-xl font-semibold leading-6 text-gray-900 dark:text-gray-200 2xl:text-2xl "
+                      >
                         <time dateTime={date}>{formatDate(date)}</time>
                       </dd>
                     </dl>
