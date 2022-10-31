@@ -23,13 +23,22 @@ import siteMetadata from "@/data/siteMetadata"
 const DEFAULT_LAYOUT = "PostLayout"
 
 export async function getStaticPaths() {
-  const posts = getFiles("blog")
+  const posts = getFiles("blog") // list of filenames
+  // need to get the file using the slug, and then filter the slugs/files based on draft status
+
+  const notDrafts = posts.filter(async (p) => {
+    const post = await getFileBySlug("blog", formatSlug(p))
+    return !post.draft
+  })
+
+  const paths = notDrafts.map((p) => ({
+    params: {
+      slug: formatSlug(p).split("/"),
+    },
+  }))
+
   return {
-    paths: posts.map((p) => ({
-      params: {
-        slug: formatSlug(p).split("/"),
-      },
-    })),
+    paths: paths,
     fallback: false,
   }
 }
@@ -43,7 +52,7 @@ export async function getStaticProps({ params }) {
   const allPostsInCategory = allPosts.filter(function (post) {
     for (const category of thisCategory) {
       for (const postCategory of post.category) {
-        if (category.toLowerCase() == postCategory.toLowerCase()) {
+        if (category.toLowerCase() == postCategory.toLowerCase() && post.draft !== true) {
           return true
         }
       }
