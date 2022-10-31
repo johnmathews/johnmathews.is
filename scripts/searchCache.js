@@ -34,8 +34,9 @@ function getAllPosts() {
     }
   })
   const publishedPosts = posts.filter((post) => {
-    post.draft !== true
+    return post.draft !== true
   })
+
   return publishedPosts
 }
 
