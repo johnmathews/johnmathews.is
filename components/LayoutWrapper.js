@@ -16,12 +16,15 @@ const LayoutWrapper = ({ children }) => {
   const ref = useRef("sidebarBottomSection")
   return (
     <SectionContainer>
-      <div id="layoutWrapper" className="h-screen justify-between md:flex md:flex-col">
-        <div className="mx-auto justify-between md:flex md:flex-row lg:mt-24 lg:w-5/6 ">
-          <header
-            id="header"
-            className="mb-10 mr-5 md:items-center md:justify-between md:py-10 2xl:mr-32 2xl:w-1/5"
-          >
+      <div
+        id="layoutWrapper"
+        className="min-h-screen justify-between md:flex md:flex-col xl:mt-12 2xl:mx-auto "
+      >
+        <div
+          id="subLayoutWrapper"
+          className="mx-auto justify-between md:flex md:flex-row lg:mx-auto lg:mt-24 lg:w-5/6 lg:pt-5"
+        >
+          <header id="header" className="mb-10 mr-5 md:items-center md:justify-between md:py-10">
             <div className="hidden">
               <Link href="/" aria-label={siteMetadata.headerTitle}>
                 <div className="items-center justify-between">
@@ -39,22 +42,23 @@ const LayoutWrapper = ({ children }) => {
               </Link>
             </div>
 
-            <div id="sidebarTopSection" className="hiddden text-base leading-5 md:block">
-              <div className="hidden md:block lg:mt-16">
+            <div id="sidebarTopSection" className="hiddden text-base leading-5 md:block ">
+              <div className="hidden md:block">
+                <div className="-ml-3 mb-5 text-left">
+                  <ThemeSwitch />
+                </div>
+
                 {headerNavLinks.map((link) => (
                   <Link
                     key={link.title}
                     href={link.href}
-                    className="my-3 flex py-1 font-serif text-2xl text-gray-900 hover:underline dark:text-gray-100 md:flex-col"
+                    className="my-1 flex py-1 text-left text-lg text-gray-900 hover:underline dark:text-gray-100 md:flex-col 2xl:my-3"
                   >
                     {link.title}
                   </Link>
                 ))}
-                <div className="mt-10 -ml-2">
-                  <ThemeSwitch />
-                </div>
 
-                <div id="autoCompleteComponentWrapper" className="mt-8 font-serif">
+                <div id="autoCompleteComponentWrapper" className="mt-3">
                   <Autocomplete />
                 </div>
               </div>
@@ -62,7 +66,7 @@ const LayoutWrapper = ({ children }) => {
             <div ref={ref} id="sidebarBottomSection" />
             <MobileNav />
           </header>
-          <main id="main" className="mb-auto md:ml-16 ">
+          <main id="main" className="mb-auto md:ml-16 2xl:w-5/6">
             {children}
           </main>
         </div>
