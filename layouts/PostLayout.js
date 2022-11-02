@@ -27,7 +27,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
       <ScrollTop />
       <article>
         <div className="">
-          <header className="pt-6 xl:mb-24">
+          <header className="pt-0 xl:mb-24">
             <div className="space-y-1 text-center">
               <div className="">
                 <PageTitle>{title}</PageTitle>

@@ -87,134 +87,110 @@ export default function Blog({ post, authorDetails, prev, next }) {
   const postDateTemplate = { year: "numeric", month: "long" }
   return (
     <SectionContainer>
-      <div id="blogPostWrapper" className="min-h-screen xl:mt-12 2xl:mx-auto 2xl:mt-40 ">
-        <div id="bigContainer" className="mx-3 lg:mx-auto lg:mt-10 lg:w-5/6 lg:pt-5 2xl:mt-28">
-          <div id="header" className="hidden flex-none xl:inline xl:w-32">
-            <div className="fixed w-32 xl:w-40">
-              <div className="hidden">
-                <Link href="/" aria-label={siteMetadata.headerTitle}>
-                  <div className="items-center ">
-                    <div className="mb-12">
-                      <Logo />
-                    </div>
-                    {typeof siteMetadata.headerTitle === "string" ? (
-                      <div className="mb-12 hidden h-6 text-2xl font-semibold sm:block">
-                        {siteMetadata.headerTitle}
-                      </div>
-                    ) : (
-                      siteMetadata.headerTitle
-                    )}
-                  </div>
+      <div id="header" className="hidden flex-none xl:inline xl:w-32">
+        <div className="fixed w-32 xl:w-40">
+          <div id="sidebarTopSection" className="hiddden text-base leading-5 md:block ">
+            <div className="hidden md:block">
+              <div className="-ml-3 mb-5 text-left">
+                <ThemeSwitch />
+              </div>
+
+              {headerNavLinks.map((link) => (
+                <Link
+                  key={link.title}
+                  href={link.href}
+                  className="my-1 flex py-1 text-left text-lg text-gray-900 hover:underline dark:text-gray-100 md:flex-col 2xl:my-3"
+                >
+                  {link.title}
                 </Link>
+              ))}
+
+              <div id="autoCompleteComponentWrapper" className="mt-3">
+                <Autocomplete />
               </div>
-              <div id="sidebarTopSection" className="hiddden text-base leading-5 md:block ">
-                <div className="hidden md:block">
-                  <div className="-ml-3 mb-5 text-left">
-                    <ThemeSwitch />
-                  </div>
-
-                  {headerNavLinks.map((link) => (
-                    <Link
-                      key={link.title}
-                      href={link.href}
-                      className="my-1 flex py-1 text-left text-lg text-gray-900 hover:underline dark:text-gray-100 md:flex-col 2xl:my-3"
-                    >
-                      {link.title}
-                    </Link>
-                  ))}
-
-                  <div id="autoCompleteComponentWrapper" className="mt-3">
-                    <Autocomplete />
-                  </div>
-                </div>
-              </div>
-              <div
-                id="sidebarBottomSection"
-                className="hiddden items-center text-base leading-5 md:block"
-              >
-                <div
-                  id="sideBarDivider"
-                  className="my-8 -mr-10 border-t-4 border-double border-gray-800 dark:border-gray-100 2xl:my-10"
-                />
-
-                <div className="hidden md:block">
-                  <div className="flex flex-col">
-                    <div className="mb-2 2xl:mb-5">
-                      <dt className="my-1 flex text-left text-gray-900 dark:text-gray-200 md:flex-col">
-                        Category:
-                      </dt>
-                      <dd className="my-1 flex text-left text-gray-900 hover:underline dark:text-gray-200 md:flex-col">
-                        {category.map((cat) => {
-                          return <Category key={cat} text={cat} />
-                        })}
-                      </dd>
-                    </div>
-
-                    <div>
-                      <dt className="my-1 flex text-left text-gray-900 dark:text-gray-200 md:flex-col">
-                        Published:
-                      </dt>
-                      <dd className="text-gray-900 dark:text-gray-200">
-                        <time dateTime={date}>
-                          {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
-                        </time>
-                      </dd>
-                    </div>
-                    {(next || prev) && (
-                      <div className="xl:space-y- flex justify-between py-3 text-gray-900 dark:text-gray-200 xl:block 2xl:py-8">
-                        {prev && (
-                          <div className="my-3 2xl:my-5">
-                            <div className="mb-1 2xl:mb-2"> Previous: </div>
-                            <div className="hover:underline ">
-                              <Link href={`/blog/${prev.slug}`}>{prev.title}</Link>
-                            </div>
-                          </div>
-                        )}
-                        {next && (
-                          <div className="my-3 2xl:my-5">
-                            <div className="mb-1 2xl:mb-2"> Next: </div>
-                            <div className="hover:underline ">
-                              <Link href={`/blog/${next.slug}`}>{next.title}</Link>
-                            </div>
-                          </div>
-                        )}
-                      </div>
-                    )}
-                  </div>
-                </div>
-              </div>
-              <MobileNav />
             </div>
           </div>
-
           <div
-            id="main"
-            className="min-h-screen w-full flex-auto lg:pr-32 xl:ml-72 xl:w-5/6 2xl:pr-0"
+            id="sidebarBottomSection"
+            className="hiddden items-center text-base leading-5 md:block"
           >
-            {frontMatter.draft !== true ? (
-              <MDXLayoutRenderer
-                layout={frontMatter.layout || DEFAULT_LAYOUT}
-                toc={toc}
-                mdxSource={mdxSource}
-                frontMatter={frontMatter}
-                authorDetails={authorDetails}
-                prev={prev}
-                next={next}
-              />
-            ) : (
-              <div className="mt-24 text-center">
-                <PageTitle>
-                  Under Construction{" "}
-                  <span role="img" aria-label="roadwork sign">
-                    🚧
-                  </span>
-                </PageTitle>
+            <div
+              id="sideBarDivider"
+              className="my-8 -mr-10 border-t-4 border-double border-gray-800 dark:border-gray-100 2xl:my-10"
+            />
+
+            <div className="hidden md:block">
+              <div className="flex flex-col">
+                <div className="mb-2 2xl:mb-5">
+                  <dt className="my-1 flex text-left text-gray-900 dark:text-gray-200 md:flex-col">
+                    Category:
+                  </dt>
+                  <dd className="my-1 flex text-left text-gray-900 hover:underline dark:text-gray-200 md:flex-col">
+                    {category.map((cat) => {
+                      return <Category key={cat} text={cat} />
+                    })}
+                  </dd>
+                </div>
+
+                <div>
+                  <dt className="my-1 flex text-left text-gray-900 dark:text-gray-200 md:flex-col">
+                    Published:
+                  </dt>
+                  <dd className="text-gray-900 dark:text-gray-200">
+                    <time dateTime={date}>
+                      {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
+                    </time>
+                  </dd>
+                </div>
+                {(next || prev) && (
+                  <div className="flex justify-between py-3 text-gray-900 dark:text-gray-200 xl:block 2xl:py-8">
+                    {prev && (
+                      <div className="my-3 2xl:my-5">
+                        <div className="mb-1 2xl:mb-2"> Previous: </div>
+                        <div className="hover:underline ">
+                          <Link href={`/blog/${prev.slug}`}>{prev.title}</Link>
+                        </div>
+                      </div>
+                    )}
+                    {next && (
+                      <div className="my-3 2xl:my-5">
+                        <div className="mb-1 2xl:mb-2"> Next: </div>
+                        <div className="hover:underline ">
+                          <Link href={`/blog/${next.slug}`}>{next.title}</Link>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                )}
               </div>
-            )}
+            </div>
           </div>
+          <MobileNav />
         </div>
       </div>
-      <Footer />
+
+      <div id="main" className="w-full flex-auto lg:pr-32 xl:ml-72 xl:w-5/6 2xl:pr-0">
+        {frontMatter.draft !== true ? (
+          <MDXLayoutRenderer
+            layout={frontMatter.layout || DEFAULT_LAYOUT}
+            toc={toc}
+            mdxSource={mdxSource}
+            frontMatter={frontMatter}
+            authorDetails={authorDetails}
+            prev={prev}
+            next={next}
+          />
+        ) : (
+          <div className="mt-24 text-center">
+            <PageTitle>
+              Under Construction{" "}
+              <span role="img" aria-label="roadwork sign">
+                🚧
+              </span>
+            </PageTitle>
+          </div>
+        )}
+      </div>
     </SectionContainer>
   )
 }
