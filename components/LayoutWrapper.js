@@ -12,10 +12,10 @@ const LayoutWrapper = ({ children }) => {
     <SectionContainer className="mb-10 mr-5 md:items-center md:justify-between">
       <div
         id="sidebarTopSection-LayoutWrapper"
-        className="hiddden text-base leading-5 md:block 2xl:mt-20"
+        className="hiddden text-base leading-5 md:block 2xl:mt-5"
       >
         <div className="hidden md:block">
-          <div className="-ml-3 mb-5 text-left">
+          <div className="-ml-3 mb-2 text-left">
             <ThemeSwitch />
           </div>
 
@@ -23,7 +23,7 @@ const LayoutWrapper = ({ children }) => {
             <Link
               key={link.title}
               href={link.href}
-              className="my-1 flex py-1 text-left text-lg text-gray-900 hover:underline dark:text-gray-100 md:flex-col 2xl:my-3"
+              className="my-1 flex py-1 text-left text-lg text-gray-900 hover:underline dark:text-gray-100 md:flex-col 2xl:my-2"
             >
               {link.title}
             </Link>
@@ -36,7 +36,7 @@ const LayoutWrapper = ({ children }) => {
       </div>
 
       <MobileNav />
-      <main id="main-layoutwrapper" className="mx-auto ml-60">
+      <main id="main-layoutwrapper" className="mx-auto xl:ml-32 2xl:ml-48">
         {children}
       </main>
     </SectionContainer>

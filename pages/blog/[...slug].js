@@ -87,11 +87,11 @@ export default function Blog({ post, authorDetails, prev, next }) {
   const postDateTemplate = { year: "numeric", month: "long" }
   return (
     <SectionContainer>
-      <div id="header" className="hidden flex-none xl:inline xl:w-32 2xl:mt-20">
+      <div id="header" className="hidden flex-none xl:inline xl:w-32 2xl:mt-5">
         <div className="fixed w-32 xl:w-40">
           <div id="sidebarTopSection" className="hiddden text-base leading-5 md:block ">
             <div className="hidden md:block">
-              <div className="-ml-3 mb-5 text-left">
+              <div className="-ml-3 text-left">
                 <ThemeSwitch />
               </div>
 
@@ -99,7 +99,7 @@ export default function Blog({ post, authorDetails, prev, next }) {
                 <Link
                   key={link.title}
                   href={link.href}
-                  className="my-1 flex py-1 text-left text-lg text-gray-900 hover:underline dark:text-gray-100 md:flex-col 2xl:my-3"
+                  className="my-4 flex text-left text-lg text-gray-900 hover:underline dark:text-gray-100 md:flex-col"
                 >
                   {link.title}
                 </Link>
@@ -120,8 +120,19 @@ export default function Blog({ post, authorDetails, prev, next }) {
             ></div>
 
             <div className="hidden md:block">
-              <div className="flex flex-col">
-                <div className="mb-2 2xl:mb-5">
+              <div className="flex flex-col  ">
+                <div className="my-3  text-lg">
+                  <dt className="my-1 flex text-left text-gray-900 dark:text-gray-200 md:flex-col">
+                    Published:
+                  </dt>
+                  <dd className="text-gray-900 dark:text-gray-200">
+                    <time dateTime={date}>
+                      {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
+                    </time>
+                  </dd>
+                </div>
+
+                <div className="my-3  text-lg">
                   <dt className="my-1 flex text-left text-gray-900 dark:text-gray-200 md:flex-col">
                     Category:
                   </dt>
@@ -132,16 +143,6 @@ export default function Blog({ post, authorDetails, prev, next }) {
                   </dd>
                 </div>
 
-                <div>
-                  <dt className="my-1 flex text-left text-gray-900 dark:text-gray-200 md:flex-col">
-                    Published:
-                  </dt>
-                  <dd className="text-gray-900 dark:text-gray-200">
-                    <time dateTime={date}>
-                      {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
-                    </time>
-                  </dd>
-                </div>
                 {(next || prev) && (
                   <div className="flex justify-between py-3 text-gray-900 dark:text-gray-200 xl:block 2xl:py-8">
                     {prev && (
@@ -169,7 +170,7 @@ export default function Blog({ post, authorDetails, prev, next }) {
         </div>
       </div>
 
-      <div id="main" className="w-full flex-auto lg:pr-32 2xl:pr-0">
+      <div id="main" className="w-full lg:pr-32 2xl:-mt-32 2xl:pr-0">
         {frontMatter.draft !== true ? (
           <MDXLayoutRenderer
             layout={frontMatter.layout || DEFAULT_LAYOUT}

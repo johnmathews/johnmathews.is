@@ -29,11 +29,17 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
 
   return (
     <>
-      <div className="divide-y divide-gray-200 dark:divide-gray-700 2xl:mt-16">
-        <div className="space-y-2 pt-6 pb-8 md:space-y-5">
-          <h1 className="font-serif text-5xl font-extrabold capitalize leading-9 tracking-normal text-gray-900 dark:text-gray-100 sm:text-4xl md:text-6xl lg:text-9xl">
+      <div id="listLayoutWrapper" className=" 2xl:mt-10">
+        <div
+          id="titleWrapper"
+          className="space-y-2 border-b-8 border-double border-gray-600 dark:border-gray-200 md:space-y-5 2xl:mb-20 2xl:pb-24"
+        >
+          <div
+            id="title"
+            className="ml-2 font-serif text-6xl dark:text-gray-50 md:ml-0 lg:text-8xl 2xl:text-9xl"
+          >
             {title}
-          </h1>
+          </div>
         </div>
         <ul>
           {!filteredBlogPosts.length && "No posts found."}
