@@ -29,7 +29,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
 
   return (
     <>
-      <div id="listLayoutWrapper" className=" 2xl:mt-10">
+      <div id="listLayoutWrapper" className=" 2xl:mt-10 ">
         <div
           id="titleWrapper"
           className="space-y-2 border-b-8 border-double border-gray-600 dark:border-gray-200 md:space-y-5 2xl:mb-20 2xl:pb-24"
@@ -41,7 +41,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
             {title}
           </div>
         </div>
-        <ul>
+        <ul className="">
           {!filteredBlogPosts.length && "No posts found."}
           {displayPosts.map((frontMatter) => {
             const { slug, date, title, summary, category } = frontMatter
