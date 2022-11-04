@@ -87,7 +87,7 @@ export default function Blog({ post, authorDetails, prev, next }) {
   const postDateTemplate = { year: "numeric", month: "long" }
   return (
     <SectionContainer>
-      <div id="header" className="hidden flex-none xl:inline xl:w-32">
+      <div id="header" className="hidden flex-none xl:inline xl:w-32 2xl:mt-20">
         <div className="fixed w-32 xl:w-40">
           <div id="sidebarTopSection" className="hiddden text-base leading-5 md:block ">
             <div className="hidden md:block">
@@ -117,7 +117,7 @@ export default function Blog({ post, authorDetails, prev, next }) {
             <div
               id="sideBarDivider"
               className="my-8 -mr-10 border-t-4 border-double border-gray-800 dark:border-gray-100 2xl:my-10"
-            />
+            ></div>
 
             <div className="hidden md:block">
               <div className="flex flex-col">
@@ -169,7 +169,7 @@ export default function Blog({ post, authorDetails, prev, next }) {
         </div>
       </div>
 
-      <div id="main" className="w-full flex-auto lg:pr-32 xl:ml-72 xl:w-5/6 2xl:pr-0">
+      <div id="main" className="w-full flex-auto lg:pr-32 2xl:pr-0">
         {frontMatter.draft !== true ? (
           <MDXLayoutRenderer
             layout={frontMatter.layout || DEFAULT_LAYOUT}
