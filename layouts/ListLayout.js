@@ -32,7 +32,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
       <div id="listLayoutWrapper" className=" 2xl:mt-10 ">
         <div
           id="titleWrapper"
-          className="space-y-2 border-b-8 border-double border-gray-600 dark:border-gray-200 md:space-y-5 2xl:mb-20 2xl:pb-24"
+          className="mb-10 space-y-2 border-b-8 border-double border-gray-600 pb-10 dark:border-gray-200 md:space-y-5  lg:mb-20 lg:pb-20 2xl:mb-20 2xl:pb-24"
         >
           <div
             id="title"
@@ -47,7 +47,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
             const { slug, date, title, summary, category } = frontMatter
             if (category[0].toLowerCase() !== "snippet") {
               return (
-                <li key={slug} className="my-3">
+                <li key={slug} className="text-normal my-12 lg:my-3">
                   <article className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
                     <div className="space-y-3 xl:col-span-3">
                       <div>
@@ -68,7 +68,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
                     <dl>
                       <dd
                         id="dateBox"
-                        className="text-right font-serif text-xl font-semibold leading-6 text-gray-900 dark:text-gray-200 2xl:text-2xl "
+                        className="hidden text-right font-serif text-xl font-semibold leading-6 text-gray-900 dark:text-gray-200 md:block 2xl:text-2xl "
                       >
                         <time dateTime={date}>{formatDate(date)}</time>
                       </dd>

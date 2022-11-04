@@ -30,7 +30,7 @@ const MobileNav = () => {
   }
 
   return (
-    <div id="MobileNav" className="absolute top-16 right-6 sm:hidden">
+    <div id="MobileNav" className="top-16 mt-3 mb-1 text-right sm:hidden">
       <button
         type="button"
         className="ml-1 mr-1 h-8 w-8 rounded py-1"
@@ -89,7 +89,10 @@ const MobileNav = () => {
             </div>
           ))}
 
-          <div className=" text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100 ">
+          <div
+            id="AutoCompleteWrapper"
+            className=" text-right text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100 "
+          >
             <Autocomplete />
           </div>
         </nav>

@@ -72,15 +72,19 @@ input:-webkit-autofill:focus {
 }
 
 /* MOBILE NAV */
+
+#mobileNavLinks .aa-DetachedSearchButton {
+  @apply mx-12 bg-gray-200;
+}
 #mobileNavLinks .aa-DetachedSearchButtonPlaceholder {
   @apply text-2xl;
-  @apply ml-10 font-bold tracking-widest text-gray-900 dark:text-gray-100;
+  @apply ml-10 pl-12 font-bold tracking-widest text-gray-900 dark:text-gray-100;
 }
 #mobileNavLinks .aa-DetachedSearchButtonIcon {
   @apply hidden;
 }
 #mobileNavLinks #componentWrapperDiv {
-  @apply mt-10;
+  @apply block;
 }
 
 /* LANDING PAGE SEARCH TEXT */
@@ -89,8 +93,8 @@ input:-webkit-autofill:focus {
   @apply text-3xl hover:underline dark:text-gray-100;
 }
 #landingListColumn .aa-DetachedSearchButton {
-  @apply mx-auto w-32 dark:w-24 dark:pl-3 lg:mt-10;
+  @apply mx-auto w-32 dark:w-24 2xl:mt-10;
 }
 #landingListColumn .aa-DetachedSearchButtonPlaceholder {
-  @apply text-center text-3xl text-gray-900 hover:underline  dark:text-gray-100;
+  @apply mx-auto text-center text-3xl text-gray-900 hover:underline  dark:text-gray-100;
 }

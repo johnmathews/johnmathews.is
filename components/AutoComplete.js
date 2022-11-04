@@ -112,5 +112,5 @@ export default function Autocomplete(props) {
     }
   }, [props])
 
-  return <div id="componentWrapperDiv" ref={containerRef} />
+  return <div id="componentWrapperDiv" className="mt-2" ref={containerRef} />
 }

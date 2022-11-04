@@ -9,10 +9,10 @@ import "@algolia/autocomplete-theme-classic"
 
 const LayoutWrapper = ({ children }) => {
   return (
-    <SectionContainer className="mb-10 mr-5 md:items-center md:justify-between">
+    <SectionContainer className="relative mb-10 mr-5 md:items-center md:justify-between">
       <div
         id="sidebarTopSection-LayoutWrapper"
-        className="hiddden text-base leading-5 md:block 2xl:mt-5"
+        className="hidden text-base leading-5 md:fixed md:-ml-24 md:block lg:-ml-12 2xl:mt-5"
       >
         <div className="hidden md:block">
           <div className="-ml-3 mb-3 text-left">
@@ -36,7 +36,7 @@ const LayoutWrapper = ({ children }) => {
       </div>
 
       <MobileNav />
-      <main id="main-layoutwrapper" className="mx-auto xl:ml-32 2xl:ml-48">
+      <main id="main-layoutwrapper" className="mx-auto md:ml-12 xl:ml-32 2xl:ml-48">
         {children}
       </main>
     </SectionContainer>

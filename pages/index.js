@@ -25,7 +25,7 @@ export default function Home() {
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
       <div
         id="centerer"
-        className="my-auto mx-auto grid w-4/5 grid-cols-1 content-center md:min-h-screen md:grid-cols-3 lg:gap-72 xl:pl-60"
+        className="mx-auto grid w-4/5 grid-cols-1 content-center md:min-h-screen md:grid-cols-3 lg:gap-72 xl:pl-60"
       >
         <div className="mx-auto mt-32 mb-12 flex content-center md:hidden ">
           <div className="">
@@ -37,9 +37,12 @@ export default function Home() {
         </div>
         <div
           id="landingListColumn"
-          className="m-auto mx-auto hidden w-full content-center font-serif text-3xl leading-relaxed dark:text-gray-200 md:block md:leading-normal  "
+          className="my-auto mx-auto hidden w-full content-center font-serif text-3xl leading-relaxed dark:text-gray-200 md:block md:leading-normal  "
         >
           <ul id="primaryList" className="my-3 text-center">
+            <li className="my-3 font-normal text-gray-700 hover:underline dark:text-gray-200 ">
+              <ThemeSwitch />
+            </li>
             {headerNavLinks.map((link) => (
               <li key={link.title} className="my-5">
                 <Link
@@ -51,16 +54,12 @@ export default function Home() {
               </li>
             ))}
 
-            <div className="-ml-1">
-              <ThemeSwitch />
-            </div>
-
-            <div>
+            <li className="">
               <Autocomplete />
-            </div>
+            </li>
           </ul>
         </div>
-        <div id="imageColumn" className="col-span-2 lg:mx-0 ">
+        <div id="imageColumn" className="col-span-2 my-auto lg:mx-0 ">
           <Image
             src="https://picsum.photos/seed/123/1000/800"
             alt="placeholder"

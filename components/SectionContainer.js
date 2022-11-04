@@ -4,7 +4,7 @@ export default function SectionContainer({ children }) {
   return (
     <div
       id="sectionContainerWrapsFooter"
-      className="mx-auto px-4 sm:px-6 xl:px-0 2xl:mt-32 2xl:w-5/6"
+      className="mt-5 px-4 md:mx-auto lg:mx-32 lg:mt-16 xl:px-0 2xl:mt-32 2xl:w-5/6"
     >
       <div
         id="layoutWrapperDoesntWrapFooter"
