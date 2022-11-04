@@ -57,7 +57,7 @@ input:-webkit-autofill:focus {
 }
 
 .aa-DetachedSearchButton {
-  @apply border-0 text-xl dark:border-gray-900 dark:bg-slate-900 !important;
+  @apply border-0 px-0 text-lg text-gray-800 dark:border-gray-900 dark:bg-slate-900 dark:text-gray-100 !important;
 }
 
 /* SIDEBAR OF LIST PAGES AND BLOG PAGES */

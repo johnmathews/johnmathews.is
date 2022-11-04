@@ -105,7 +105,7 @@ export default function Blog({ post, authorDetails, prev, next }) {
                 </Link>
               ))}
 
-              <div id="autoCompleteComponentWrapper" className="mt-3">
+              <div id="autoCompleteComponentWrapper" className="-mt-2">
                 <Autocomplete />
               </div>
             </div>

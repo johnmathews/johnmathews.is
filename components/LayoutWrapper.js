@@ -15,7 +15,7 @@ const LayoutWrapper = ({ children }) => {
         className="hiddden text-base leading-5 md:block 2xl:mt-5"
       >
         <div className="hidden md:block">
-          <div className="-ml-3 mb-2 text-left">
+          <div className="-ml-3 mb-3 text-left">
             <ThemeSwitch />
           </div>
 
@@ -29,7 +29,7 @@ const LayoutWrapper = ({ children }) => {
             </Link>
           ))}
 
-          <div id="autoCompleteComponentWrapper" className="mt-3">
+          <div id="autoCompleteComponentWrapper" className="-mt-1">
             <Autocomplete />
           </div>
         </div>
