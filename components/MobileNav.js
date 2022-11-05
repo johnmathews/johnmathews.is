@@ -30,7 +30,7 @@ const MobileNav = () => {
   }
 
   return (
-    <div id="MobileNav" className="top-16 mt-3 mb-1 text-right sm:hidden">
+    <div id="MobileNav" className="top-16 mt-5 mb-1 text-right ">
       <button
         type="button"
         className="ml-1 mr-1 h-8 w-8 rounded py-1"

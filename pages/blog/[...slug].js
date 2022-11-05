@@ -87,7 +87,9 @@ export default function Blog({ post, authorDetails, prev, next }) {
   const postDateTemplate = { year: "numeric", month: "long" }
   return (
     <div className="mx-auto max-w-6xl">
-      <MobileNav />
+      <div className="mr-4">
+        <MobileNav />
+      </div>
       <div id="header" className="hidden xl:inline xl:w-32 2xl:mt-5">
         <div className="fixed w-32 xl:w-40">
           <div id="sidebarTopSection" className="hiddden  text-base leading-5 md:block ">
@@ -170,7 +172,7 @@ export default function Blog({ post, authorDetails, prev, next }) {
         </div>
       </div>
 
-      <div id="main" className="w-full md:ml-32 lg:pr-32 2xl:-mt-32 2xl:pr-0">
+      <div id="main" className="w-full lg:pr-32 2xl:-mt-32 2xl:pr-0">
         {frontMatter.draft !== true ? (
           <MDXLayoutRenderer
             layout={frontMatter.layout || DEFAULT_LAYOUT}

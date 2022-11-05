@@ -10,7 +10,7 @@ export default function SectionContainer({ children }) {
         id="layoutWrapperDoesntWrapFooter"
         className="min-h-screen justify-between md:flex md:flex-col 2xl:mx-auto"
       >
-        <div id="LayoutWrapperForFlex" className="justify-between md:flex md:flex-row">
+        <div id="LayoutWrapperForFlex" className="justify-between lg:flex lg:flex-row">
           {children}
         </div>
         <Footer />

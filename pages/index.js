@@ -28,10 +28,10 @@ export default function Home() {
         className="mx-auto grid w-4/5 grid-cols-1 content-center md:min-h-screen md:grid-cols-3 lg:gap-72 xl:pl-60"
       >
         <div className="mx-auto mt-32 mb-12 flex content-center md:hidden ">
-          <div className="">
+          <div className="md:hidden">
             <MobileNav />
           </div>
-          <div className="mt-1">
+          <div className="mt-5 pt-1">
             <ThemeSwitch />
           </div>
         </div>

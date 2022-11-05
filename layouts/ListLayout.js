@@ -47,7 +47,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
             const { slug, date, title, summary, category } = frontMatter
             if (category[0].toLowerCase() !== "snippet") {
               return (
-                <li key={slug} className="text-normal my-12 lg:my-3">
+                <li key={slug} className="text-normal my-5 lg:my-3">
                   <article className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
                     <div className="space-y-3 xl:col-span-3">
                       <div>
