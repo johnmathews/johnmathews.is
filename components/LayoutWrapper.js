@@ -10,41 +10,42 @@ import "@algolia/autocomplete-theme-classic"
 const LayoutWrapper = ({ children }) => {
   return (
     <div
-      id="sectionContainerWrapsFooter"
+      id="LayoutWrapper"
       className="mt-5 px-4 md:mx-auto lg:mx-32 lg:mt-16 xl:px-0 2xl:mt-32 2xl:w-5/6"
     >
-      <div id="layoutWrapperDoesntWrapFooter" className="min-h-screen md:flex md:flex-col">
-        <div id="LayoutWrapper" className="justify-between lg:flex lg:flex-row">
-          <div className="lg:hidden">
+      <div id="layoutwrapperInclFooter" className="min-h-screen">
+        <div
+          id="LayoutWrapperExcFooter"
+          className="mx-auto flex flex-col justify-between lg:flex-row"
+        >
+          <div id="mobileNavWrapper" className="lg:hidden">
             <MobileNav />
           </div>
-          <div className="relative mr-5 md:items-center md:justify-between">
-            <div
-              id="sidebar-LayoutWrapper"
-              className="hidden text-base leading-5 lg:fixed lg:-ml-12 lg:block 2xl:mt-5"
-            >
-              <div className="">
-                <div className="-ml-3 mb-3 text-left">
-                  <ThemeSwitch />
-                </div>
+          <div
+            id="sidebarOuterWrapper"
+            className="mr-12 hidden w-1/6 flex-none lg:block xl:mr-0 2xl:mt-5"
+          >
+            <div id="sidebarInnerWrapper" className="text-base leading-5 lg:fixed ">
+              <div className="-ml-3 mb-3 text-left">
+                <ThemeSwitch />
+              </div>
 
-                {headerNavLinks.map((link) => (
-                  <Link
-                    key={link.title}
-                    href={link.href}
-                    className="my-1 flex py-1 text-left text-lg text-gray-900 hover:underline dark:text-gray-100 md:flex-col 2xl:my-2"
-                  >
-                    {link.title}
-                  </Link>
-                ))}
+              {headerNavLinks.map((link) => (
+                <Link
+                  key={link.title}
+                  href={link.href}
+                  className="my-1 flex py-1 text-left text-lg text-gray-900 hover:underline dark:text-gray-100 md:flex-col 2xl:my-2"
+                >
+                  {link.title}
+                </Link>
+              ))}
 
-                <div id="autoCompleteComponentWrapper" className="-mt-1">
-                  <Autocomplete />
-                </div>
+              <div id="autoCompleteComponentWrapper" className="-mt-1">
+                <Autocomplete />
               </div>
             </div>
           </div>
-          <main id="main-layoutwrapper" className="mx-auto lg:ml-32 2xl:ml-48">
+          <main id="mainWrapper" className="flex-auto">
             {children}
           </main>
         </div>
