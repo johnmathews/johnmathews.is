@@ -5,6 +5,8 @@ import headerNavLinks from "@/data/headerNavLinks"
 import { getAlgoliaResults } from "@algolia/autocomplete-js"
 import algoliasearch from "algoliasearch"
 import Autocomplete from "@/components/AutoComplete"
+
+import ThemeSwitch from "@/components/ThemeSwitch"
 import SearchItem from "@/components/SearchItem"
 import Search from "@/components/Search"
 
@@ -77,6 +79,10 @@ const MobileNav = () => {
           </button>
         </div>
         <nav id="mobileNavLinks" className="fixed mt-8 h-full">
+          <div className="px-12 py-4">
+            <ThemeSwitch />
+          </div>
+
           {headerNavLinks.map((link) => (
             <div key={link.title} className="px-12 py-4">
               <Link
@@ -91,7 +97,7 @@ const MobileNav = () => {
 
           <div
             id="AutoCompleteWrapper"
-            className=" text-right text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100 "
+            className="text-right text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100 "
           >
             <Autocomplete />
           </div>

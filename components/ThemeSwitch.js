@@ -10,10 +10,10 @@ const ThemeSwitch = () => {
 
   return (
     <button
-      aria-label="Toggle Dark Mode"
+      id="themeSwitcher"
       type="button"
       className="ml-2 h-8 w-8 rounded"
-      id="themeSwitcher"
+      aria-label="Toggle Dark Mode"
       onClick={() => setTheme(theme === "dark" || resolvedTheme === "dark" ? "light" : "dark")}
     >
       <svg
