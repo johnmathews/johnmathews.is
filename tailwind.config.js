@@ -22,7 +22,7 @@ module.exports = {
       "2xl": "1536px",
     },
     maxHeight: {
-      snippet: "24rem;",
+      snippet: "32rem;",
     },
     fontFamily: {
       sans: [

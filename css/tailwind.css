@@ -58,6 +58,13 @@ input:-webkit-autofill:focus {
 .aa-SubmitIcon {
   @apply hidden;
 }
+.aa-SubmitButton {
+  @apply hidden;
+}
+
+.aa-InputWrapper input {
+  padding: 0 10px 0 10px;
+}
 
 .aa-DetachedSearchButtonIcon {
   @apply hidden !important;
