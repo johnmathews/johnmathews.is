@@ -13,17 +13,14 @@ const LayoutWrapper = ({ children }) => {
       id="sectionContainerWrapsFooter"
       className="mt-5 px-4 md:mx-auto lg:mx-32 lg:mt-16 xl:px-0 2xl:mt-32 2xl:w-5/6"
     >
-      <div
-        id="layoutWrapperDoesntWrapFooter"
-        className="min-h-screen justify-between md:flex md:flex-col 2xl:mx-auto"
-      >
-        <div id="LayoutWrapperForFlex" className="justify-between lg:flex lg:flex-row">
+      <div id="layoutWrapperDoesntWrapFooter" className="min-h-screen md:flex md:flex-col">
+        <div id="LayoutWrapper" className="justify-between lg:flex lg:flex-row">
           <div className="lg:hidden">
             <MobileNav />
           </div>
           <div className="relative mr-5 md:items-center md:justify-between">
             <div
-              id="sidebarTopSection-LayoutWrapper"
+              id="sidebar-LayoutWrapper"
               className="hidden text-base leading-5 lg:fixed lg:-ml-12 lg:block 2xl:mt-5"
             >
               <div className="">
