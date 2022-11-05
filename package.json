@@ -60,6 +60,7 @@
   "devDependencies": {
     "@next/bundle-analyzer": "12.1.4",
     "@svgr/webpack": "^6.1.2",
+    "@tailwindcss/line-clamp": "^0.4.2",
     "@types/node": "^18.11.0",
     "@types/react": "^18.0.1",
     "cross-env": "^7.0.3",

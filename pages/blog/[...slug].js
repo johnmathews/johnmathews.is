@@ -6,7 +6,6 @@ import { formatSlug, getAllFilesFrontMatter, getFileBySlug, getFiles } from "@/l
 
 import Tag from "@/components/Tag"
 import Category from "@/components/Category"
-import SectionContainer from "@/components/SectionContainer"
 import Link from "@/components/Link"
 import MobileNav from "@/components/MobileNav"
 import ThemeSwitch from "@/components/ThemeSwitch"
@@ -87,12 +86,12 @@ export default function Blog({ post, authorDetails, prev, next }) {
   const postDateTemplate = { year: "numeric", month: "long" }
   return (
     <div className="mx-auto max-w-6xl">
-      <div className="mr-4">
+      <div className="mr-4 lg:hidden">
         <MobileNav />
       </div>
-      <div id="header" className="hidden xl:inline xl:w-32 2xl:mt-5">
-        <div className="fixed w-32 xl:w-40">
-          <div id="sidebarTopSection" className="hiddden  text-base leading-5 md:block ">
+      <div id="header" className="hidden lg:-mt-10 lg:block lg:w-32 xl:mt-0 2xl:mt-5">
+        <div id="navbarWrapper" className="fixed ml-10 w-32 xl:w-40">
+          <div id="sidebarTopSection" className="hiddden text-base leading-5 md:block ">
             <div className="">
               <div className="-ml-3 text-left">
                 <ThemeSwitch />
@@ -119,7 +118,7 @@ export default function Blog({ post, authorDetails, prev, next }) {
           >
             <div
               id="sideBarDivider"
-              className="my-8 -mr-10 border-t-4 border-double border-gray-800 dark:border-gray-100 2xl:my-10"
+              className="my-8 border-t-4 border-double border-gray-800 dark:border-gray-100 lg:-mx-3 2xl:my-10 2xl:-mr-10"
             ></div>
 
             <div className="hidden md:block">
@@ -147,19 +146,19 @@ export default function Blog({ post, authorDetails, prev, next }) {
                 </div>
 
                 {(next || prev) && (
-                  <div className="flex justify-between py-3 text-gray-900 dark:text-gray-200 xl:block 2xl:py-8">
+                  <div className="flex justify-between py-3 text-gray-900 dark:text-gray-200 lg:block 2xl:py-8">
                     {prev && (
-                      <div className="my-3 2xl:my-5">
+                      <div id="previousPost" className="my-3 2xl:my-5 ">
                         <div className="mb-1 2xl:mb-2"> Previous: </div>
-                        <div className="hover:underline ">
+                        <div className="line-clamp-2 hover:underline">
                           <Link href={`/blog/${prev.slug}`}>{prev.title}</Link>
                         </div>
                       </div>
                     )}
                     {next && (
-                      <div className="my-3 2xl:my-5">
+                      <div id="nextPost" className="my-3 2xl:my-5">
                         <div className="mb-1 2xl:mb-2"> Next: </div>
-                        <div className="hover:underline ">
+                        <div className="line-clamp-2 hover:underline">
                           <Link href={`/blog/${next.slug}`}>{next.title}</Link>
                         </div>
                       </div>
@@ -172,7 +171,7 @@ export default function Blog({ post, authorDetails, prev, next }) {
         </div>
       </div>
 
-      <div id="main" className="w-full lg:pr-32 2xl:-mt-32 2xl:pr-0">
+      <div id="main" className="w-full lg:ml-32 lg:pr-32 2xl:-mt-32 2xl:pr-0">
         {frontMatter.draft !== true ? (
           <MDXLayoutRenderer
             layout={frontMatter.layout || DEFAULT_LAYOUT}

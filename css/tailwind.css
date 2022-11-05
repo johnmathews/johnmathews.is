@@ -43,6 +43,13 @@ input:-webkit-autofill:focus {
   @apply list-disc  dark:marker:text-gray-100;
 }
 
+#content h1 {
+  @apply text-4xl;
+}
+#content h2 {
+  @apply text-3xl;
+}
+
 /* Algolia AutoComplete Search */
 :root {
   --aa-icon-size: 94px;

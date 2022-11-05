@@ -48,32 +48,27 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
             if (category[0].toLowerCase() !== "snippet") {
               return (
                 <li key={slug} className="text-normal my-5 lg:my-3">
-                  <article className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
-                    <div className="space-y-3 xl:col-span-3">
+                  <div className="flex">
+                    <div className="flex-auto">
                       <div>
-                        <h3 className="font-serif text-2xl font-bold">
+                        <div className="font-serif text-2xl font-bold">
                           <Link
                             href={`/blog/${slug}`}
                             className="capitalize text-gray-900 hover:underline dark:text-gray-100"
                           >
                             {title}
                           </Link>
-                        </h3>
-                      </div>
-                      <div className="prose max-w-none text-gray-500 dark:text-gray-400">
-                        {summary}
+                        </div>
                       </div>
                     </div>
 
-                    <dl>
-                      <dd
-                        id="dateBox"
-                        className="hidden text-right font-serif text-xl font-semibold leading-6 text-gray-900 dark:text-gray-200 md:block 2xl:text-2xl "
-                      >
-                        <time dateTime={date}>{formatDate(date)}</time>
-                      </dd>
-                    </dl>
-                  </article>
+                    <div
+                      id="dateBox"
+                      className="hidden flex-none text-right font-serif text-xl font-semibold leading-6 text-gray-900 dark:text-gray-200 md:block 2xl:text-2xl "
+                    >
+                      <time dateTime={date}>{formatDate(date)}</time>
+                    </div>
+                  </div>
                 </li>
               )
             }

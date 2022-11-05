@@ -1,7 +1,8 @@
 import Link from "@/components/Link"
 import PageTitle from "@/components/PageTitle"
-import SectionContainer from "@/components/SectionContainer"
 import { BlogSEO } from "@/components/SEO"
+
+import Footer from "@/components/Footer"
 import Image from "@/components/Image"
 import Tag from "@/components/Tag"
 import siteMetadata from "@/data/siteMetadata"
@@ -18,48 +19,61 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
   const { slug, fileName, date, title, images, tags, category } = frontMatter
 
   return (
-    <SectionContainer>
-      <BlogSEO
-        url={`${siteMetadata.siteUrl}/blog/${slug}`}
-        authorDetails={authorDetails}
-        {...frontMatter}
-      />
-      <ScrollTop />
-      <article>
-        <div className="">
-          <header className="pt-0 xl:mb-24">
-            <div className="space-y-1 text-center">
+    <>
+      <div
+        id="sectionContainerWrapsFooter"
+        className="mt-5 px-4 md:mx-auto lg:mt-16 xl:px-0 2xl:mt-32 2xl:w-5/6"
+      >
+        <div
+          id="layoutWrapperDoesntWrapFooter"
+          className="min-h-screen justify-between md:flex md:flex-col lg:ml-32"
+        >
+          <div id="LayoutWrapperForFlex" className="justify-between lg:flex lg:flex-row">
+            <BlogSEO
+              url={`${siteMetadata.siteUrl}/blog/${slug}`}
+              authorDetails={authorDetails}
+              {...frontMatter}
+            />
+            <ScrollTop />
+            <article id="article" className="md:mx-5 lg:mx-0">
               <div className="">
-                <PageTitle>{title}</PageTitle>
-              </div>
-            </div>
-          </header>
-          <div
-            id="contentContainer"
-            className="divide-y divide-gray-200 pb-8 dark:divide-gray-700 xl:max-w-5xl xl:divide-y-0"
-            style={{ gridTemplateRows: "auto 1fr" }}
-          >
-            <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
-              <div
-                id="content"
-                className="prose-xl max-w-none pt-10 pb-8 dark:prose-dark dark:text-gray-100"
-              >
-                {children}
-              </div>
-            </div>
-            <footer className="">
-              <div className="pt-4 xl:pt-8">
-                <Link
-                  href="/posts"
-                  className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                <header className="pt-0 2xl:mb-24">
+                  <div className="space-y-1 text-center">
+                    <div className="">
+                      <PageTitle>{title}</PageTitle>
+                    </div>
+                  </div>
+                </header>
+                <div
+                  id="contentContainer"
+                  className="divide-y divide-gray-200 pb-8 dark:divide-gray-700 xl:max-w-5xl xl:divide-y-0"
+                  style={{ gridTemplateRows: "auto 1fr" }}
                 >
-                  &larr; Back to the blog
-                </Link>
+                  <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
+                    <div
+                      id="content"
+                      className="prose-xl max-w-none pt-10 pb-8 dark:prose-dark dark:text-gray-100"
+                    >
+                      {children}
+                    </div>
+                  </div>
+                  <footer className="">
+                    <div className="pt-4 xl:pt-8">
+                      <Link
+                        href="/posts"
+                        className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                      >
+                        &larr; Back to the blog
+                      </Link>
+                    </div>
+                  </footer>
+                </div>
               </div>
-            </footer>
+            </article>
           </div>
+          <Footer />
         </div>
-      </article>
-    </SectionContainer>
+      </div>
+    </>
   )
 }
