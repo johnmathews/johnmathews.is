@@ -17,15 +17,17 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
   const displayPosts =
     initialDisplayPosts.length > 0 && !searchValue ? initialDisplayPosts : filteredBlogPosts
 
-  // const yearlyDisplayPosts = {}
-  // displayPosts.map(frontMatter) => {
-  //   year = frontMatter.date.year
-  //   if (year in yearlyDisplayPosts) {
-  //     yearlyDisplayPosts[year].push(frontMatter)
-  //   } else {
-  //     year[year] = [frontMatter]
-  //   }
-  // }
+  const yearlyDisplayPosts = {}
+  displayPosts.map((frontMatter) => {
+    const dt = new Date(frontMatter.date)
+    const year = dt.getFullYear()
+    if (year in yearlyDisplayPosts) {
+      yearlyDisplayPosts[year].push(frontMatter)
+    } else {
+      yearlyDisplayPosts[year] = [frontMatter]
+    }
+  })
+  console.log("--- debug yearlyDisplayPosts: ", yearlyDisplayPosts)
 
   return (
     <>
@@ -41,10 +43,17 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
             {title}
           </div>
         </div>
+        {Object.keys(yearlyDisplayPosts).map((year) => {
+          return (
+            <div key="year" className="text-3xl font-semibold">
+              {year}
+            </div>
+          )
+        })}
         <ul className="">
           {!filteredBlogPosts.length && "No posts found."}
           {displayPosts.map((frontMatter) => {
-            const { slug, date, title, summary, category } = frontMatter
+            const { slug, date, title, category } = frontMatter
             if (category[0].toLowerCase() !== "snippet") {
               return (
                 <li key={slug} className="text-normal my-5 lg:my-3">
