@@ -89,8 +89,8 @@ export default function Blog({ post, authorDetails, prev, next }) {
       <div className="mr-4 lg:hidden">
         <MobileNav />
       </div>
-      <div id="header" className="hidden lg:-mt-10 lg:block lg:w-32 xl:mt-10 2xl:mt-5">
-        <div id="navbarWrapper" className="fixed ml-10 w-32 xl:mt-24 xl:w-40">
+      <div id="header" className="hidden lg:-mt-10 lg:block lg:w-32 xl:mt-5 2xl:mt-5">
+        <div id="navbarWrapper" className="fixed ml-10 w-32 xl:w-40">
           <div id="sidebarTopSection" className="hiddden text-base leading-5 md:block ">
             <div className="">
               <div className="-ml-3 text-left">
@@ -124,7 +124,7 @@ export default function Blog({ post, authorDetails, prev, next }) {
             <div className="hidden md:block">
               <div className="flex flex-col  ">
                 <div className="my-3  text-lg">
-                  <dt className="my-1 flex text-left text-gray-900 dark:text-gray-200 md:flex-col">
+                  <dt className="flex text-left text-gray-900 dark:text-gray-200 md:flex-col">
                     Published:
                   </dt>
                   <dd className="text-gray-900 dark:text-gray-200">
@@ -134,11 +134,11 @@ export default function Blog({ post, authorDetails, prev, next }) {
                   </dd>
                 </div>
 
-                <div className="my-3  text-lg">
-                  <dt className="my-1 flex text-left text-gray-900 dark:text-gray-200 md:flex-col">
+                <div className="my-1 text-lg">
+                  <dt className="my-0 flex text-left text-gray-900 dark:text-gray-200 md:flex-col">
                     Category:
                   </dt>
-                  <dd className="my-1 flex text-left text-gray-900 hover:underline dark:text-gray-200 md:flex-col">
+                  <dd className="my-0 flex text-left text-gray-900 hover:underline dark:text-gray-200 md:flex-col">
                     {category.map((cat) => {
                       return <Category key={cat} text={cat} />
                     })}
