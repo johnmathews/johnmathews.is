@@ -104,11 +104,11 @@ input:-webkit-autofill:focus {
 /* LANDING PAGE SEARCH TEXT */
 /* the icon disapears in dark mode */
 #landingListColumn .aa-AutoComplete {
-  @apply text-3xl hover:underline dark:text-gray-100;
+  @apply text-xl hover:underline dark:text-gray-100 lg:text-3xl;
 }
 #landingListColumn .aa-DetachedSearchButton {
   @apply mx-auto w-32 dark:w-24 2xl:mt-10;
 }
 #landingListColumn .aa-DetachedSearchButtonPlaceholder {
-  @apply mx-auto text-center text-3xl text-gray-900 hover:underline  dark:text-gray-100;
+  @apply mx-auto text-center text-xl text-gray-900 hover:underline dark:text-gray-100  lg:text-3xl;
 }

@@ -23,10 +23,7 @@ export default function Home() {
   return (
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
-      <div
-        id="centerer"
-        className="mx-auto grid w-4/5 grid-cols-1 content-center md:min-h-screen md:grid-cols-3 lg:gap-72 xl:pl-60"
-      >
+      <div id="centerer" className="mx-auto flex h-screen w-4/5 flex-col md:flex-row">
         <div className="mx-auto mt-32 mb-12 flex content-center md:hidden ">
           <div className="md:hidden">
             <MobileNav />
@@ -35,9 +32,10 @@ export default function Home() {
             <ThemeSwitch />
           </div>
         </div>
+
         <div
           id="landingListColumn"
-          className="my-auto mx-auto hidden w-full content-center font-serif text-3xl leading-relaxed dark:text-gray-200 md:block md:leading-normal  "
+          className="my-auto mx-auto hidden content-center font-serif text-xl leading-relaxed dark:text-gray-200 md:block md:leading-normal lg:text-3xl "
         >
           <ul id="primaryList" className="my-3 text-center">
             <li className="my-3 font-normal text-gray-700 hover:underline dark:text-gray-200 ">
@@ -53,13 +51,12 @@ export default function Home() {
                 </Link>
               </li>
             ))}
-
             <li className="">
               <Autocomplete />
             </li>
           </ul>
         </div>
-        <div id="imageColumn" className="col-span-2 my-auto lg:mx-0 ">
+        <div id="imageColumn" className="-mt-5 md:my-auto md:px-10 lg:ml-32 lg:-mr-32 ">
           <Image
             src="https://picsum.photos/seed/123/1000/800"
             alt="placeholder"
