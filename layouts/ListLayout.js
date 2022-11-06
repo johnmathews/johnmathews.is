@@ -27,7 +27,6 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
       yearlyDisplayPosts[year] = [frontMatter]
     }
   })
-  console.log("--- debug yearlyDisplayPosts: ", yearlyDisplayPosts)
 
   return (
     <>
