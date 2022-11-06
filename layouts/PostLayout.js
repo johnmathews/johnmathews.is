@@ -35,7 +35,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
               {...frontMatter}
             />
             <ScrollTop />
-            <article id="article" className="md:mx-5 lg:mx-0">
+            <article id="article" className="md:mx-5 lg:mx-0 xl:mt-20">
               <div className="">
                 <header className="pt-0 2xl:mb-24">
                   <div className="space-y-1 text-center">

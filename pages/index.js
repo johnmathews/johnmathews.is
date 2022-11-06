@@ -19,6 +19,19 @@ export async function getStaticProps() {
   return { props: { posts } }
 }
 
+function getRandomImage() {
+  var images = [
+    "bike.jpeg",
+    "square.jpeg",
+    "roofs.jpeg",
+    "roof-tower.jpeg",
+    "starship-first-stacking.png",
+  ]
+  var imageName = images[Math.floor(Math.random() * images.length)]
+  var imageSource = "/static/images/landing/" + imageName
+  return imageSource
+}
+
 export default function Home() {
   return (
     <>
@@ -54,12 +67,7 @@ export default function Home() {
           </ul>
         </div>
         <div id="imageColumn" className="-mt-5 md:my-auto md:w-96 md:pl-10 lg:ml-32 lg:w-auto ">
-          <Image
-            src="https://picsum.photos/seed/123/1000/800"
-            alt="placeholder"
-            width="1000"
-            height="800"
-          />
+          <Image src={getRandomImage()} alt="placeholder" width="1000" height="800" />
         </div>
       </div>
     </>
