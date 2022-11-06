@@ -1,6 +1,7 @@
 import Link from "@/components/Link"
 import Tag from "@/components/Tag"
 import Category from "@/components/Category"
+import PostsGroupedByYear from "@/components/PostsGroupedByYear"
 import siteMetadata from "@/data/siteMetadata"
 import { useState } from "react"
 import Pagination from "@/components/Pagination"
@@ -42,13 +43,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
             {title}
           </div>
         </div>
-        {Object.keys(yearlyDisplayPosts).map((year) => {
-          return (
-            <div key="year" className="text-3xl font-semibold">
-              {year}
-            </div>
-          )
-        })}
+        <PostsGroupedByYear posts={yearlyDisplayPosts} />
         <ul className="">
           {!filteredBlogPosts.length && "No posts found."}
           {displayPosts.map((frontMatter) => {
