@@ -41,7 +41,7 @@ other python tools, and tools for other languages
 You need to create a `.envrc` file in the project root which you want to trigger
 the virtualenv activation. E.g.:
 
-```bash
+```bash {1,3-4} showLineNumbers
 pyversion=3.10.0
 pvenv=blog
 

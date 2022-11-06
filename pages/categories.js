@@ -30,8 +30,8 @@ export default function Categories({ categories }) {
   return (
     <>
       <PageSEO title={`Categories - ${siteMetadata.author}`} description="Things I blog about" />
-      <div className="md:mt-24">
-        <div id="titleWrapper" className="space-x-2 pt-6 pb-8 md:space-y-5">
+      <div className="">
+        <div id="titleWrapper" className="space-x-2 pb-8 md:space-y-5">
           <div
             id="title"
             className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14"
