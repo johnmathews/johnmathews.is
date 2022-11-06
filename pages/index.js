@@ -28,9 +28,6 @@ export default function Home() {
           <div className="md:hidden">
             <MobileNav />
           </div>
-          <div className="mt-5">
-            <ThemeSwitch />
-          </div>
         </div>
 
         <div
@@ -56,7 +53,7 @@ export default function Home() {
             </li>
           </ul>
         </div>
-        <div id="imageColumn" className="-mt-5 md:my-auto md:px-10 lg:ml-32 lg:-mr-32 ">
+        <div id="imageColumn" className="-mt-5 md:my-auto md:w-96 md:pl-10 lg:ml-32 lg:w-auto ">
           <Image
             src="https://picsum.photos/seed/123/1000/800"
             alt="placeholder"
