@@ -44,39 +44,6 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
           </div>
         </div>
         <PostsGroupedByYear posts={yearlyDisplayPosts} />
-        <ul className="">
-          {!filteredBlogPosts.length && "No posts found."}
-          {displayPosts.map((frontMatter) => {
-            const { slug, date, title, category } = frontMatter
-            if (category[0].toLowerCase() !== "snippet") {
-              return (
-                <li key={slug} className="text-normal my-5 lg:my-3">
-                  <div className="flex">
-                    <div className="flex-auto">
-                      <div>
-                        <div className="font-serif text-2xl font-bold">
-                          <Link
-                            href={`/blog/${slug}`}
-                            className="capitalize text-gray-900 hover:underline dark:text-gray-100"
-                          >
-                            {title}
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div
-                      id="dateBox"
-                      className="hidden flex-none text-right font-serif text-xl font-semibold leading-6 text-gray-900 dark:text-gray-200 md:block 2xl:text-2xl "
-                    >
-                      <time dateTime={date}>{formatDate(date)}</time>
-                    </div>
-                  </div>
-                </li>
-              )
-            }
-          })}
-        </ul>
       </div>
       {pagination && pagination.totalPages > 1 && !searchValue && (
         <Pagination currentPage={pagination.currentPage} totalPages={pagination.totalPages} />
