@@ -1,7 +1,6 @@
 import Link from "next/link"
 
 import formatDate from "@/lib/utils/formatDate"
-import BlogListItem from "@/components/BlogListItem"
 
 const PostsInYear = ({ year, posts }) =>
   posts[year].map((post) => {
@@ -18,7 +17,6 @@ const PostsInYear = ({ year, posts }) =>
         catType.push("other")
       }
     })
-
     const categoryTypes = [...new Set(catType)]
 
     if (category[0].toLowerCase() !== "snippet") {
