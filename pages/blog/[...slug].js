@@ -84,6 +84,7 @@ export default function Blog({ post, authorDetails, prev, next }) {
   const { mdxSource, toc, frontMatter } = post
   const { date, category } = frontMatter
   const postDateTemplate = { year: "numeric", month: "long" }
+
   return (
     <div className="mx-auto max-w-6xl">
       <div className="mr-4 lg:hidden">

@@ -1,22 +1,14 @@
-import Link from "@/components/Link"
-import Tag from "@/components/Tag"
-import Category from "@/components/Category"
 import PostsGroupedByYear from "@/components/PostsGroupedByYear"
-import siteMetadata from "@/data/siteMetadata"
-import { useState } from "react"
+import { useState, useEffect } from "react"
+
 import Pagination from "@/components/Pagination"
-import formatDate from "@/lib/utils/formatDate"
 
-export default function ListLayout({ posts, title, initialDisplayPosts = [], pagination }) {
-  const [searchValue, setSearchValue] = useState("")
-  const filteredBlogPosts = posts.filter((frontMatter) => {
-    const searchContent =
-      frontMatter.title + frontMatter.summary + frontMatter.tags.join(" ") + frontMatter.category
-    return searchContent.toLowerCase().includes(searchValue.toLowerCase())
-  })
+export default function ListLayout({ title, initialDisplayPosts = [], pagination }) {
+  const [technicalPosts, setTechnicalPosts] = useState("")
+  const [nontechnicalPosts, setNontechnicalPosts] = useState("")
+  const [alllPosts, setallPosts] = useState("")
 
-  const displayPosts =
-    initialDisplayPosts.length > 0 && !searchValue ? initialDisplayPosts : filteredBlogPosts
+  const displayPosts = initialDisplayPosts
 
   const yearlyDisplayPosts = {}
   displayPosts.map((frontMatter) => {
@@ -28,6 +20,29 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
       yearlyDisplayPosts[year] = [frontMatter]
     }
   })
+
+  // useEffect(() => {
+  //   const allTechnical = Array.from(
+  //     document.getElementsByClassName('technical')
+  //   );
+  //   const allNonTechnical = Array.from(
+  //     document.getElementsByClassName('nonTechnical')
+  //   );
+  // }, []);
+
+  // const handleClick = (event) => {
+  //   // 👇️ toggle class on click
+  //   // event.currentTarget.classList.toggle("hidden")
+  //   allTechnical.forEach((el) => {
+  //     el.classList.toggle("hidden")
+  //   })
+
+  //   // 👇️ add class on click
+  //   // event.currentTarget.classList.add('bg-salmon');
+
+  //   // 👇️ remove class on click
+  //   // event.currentTarget.classList.remove('bg-salmon');
+  // }
 
   return (
     <>
@@ -45,7 +60,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
         </div>
         <PostsGroupedByYear posts={yearlyDisplayPosts} />
       </div>
-      {pagination && pagination.totalPages > 1 && !searchValue && (
+      {pagination && pagination.totalPages > 1 && (
         <Pagination currentPage={pagination.currentPage} totalPages={pagination.totalPages} />
       )}
     </>

@@ -5,7 +5,6 @@ import formatDate from "@/lib/utils/formatDate"
 const PostsInYear = ({ year, posts }) =>
   posts[year].map((post) => {
     const { slug, date, title, category } = post
-    console.log("--- debug category: ", category)
 
     const catType = []
     category.forEach((cat) => {
@@ -21,7 +20,10 @@ const PostsInYear = ({ year, posts }) =>
 
     if (category[0].toLowerCase() !== "snippet") {
       return (
-        <li key={slug} className={`text-normal my-5 lg:my-3  ${categoryTypes.toString()}`}>
+        <li
+          key={slug}
+          className={`text-normal my-5 hover:underline lg:my-3  ${categoryTypes.toString()}`}
+        >
           <div className="flex">
             <div className="flex-auto">
               <div>
