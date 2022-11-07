@@ -1,4 +1,6 @@
 import headerNavLinks from "@/data/headerNavLinks"
+
+import { useState } from "react"
 import Link from "./Link"
 import Footer from "./Footer"
 import MobileNav from "./MobileNav"
@@ -7,7 +9,30 @@ import ThemeSwitch from "./ThemeSwitch"
 import Autocomplete from "@/components/AutoComplete"
 import "@algolia/autocomplete-theme-classic"
 
+import { useEffect } from "react"
+
 const LayoutWrapper = ({ children }) => {
+  const [technicalPosts, setTechnicalPosts] = useState("")
+  const [nontechnicalPosts, setNontechnicalPosts] = useState("")
+  const [alllPosts, setallPosts] = useState("")
+
+  // useEffect(() => {
+  //   const allTechnical = Array.from(
+  //     document.getElementsByClassName('technical')
+  //   );
+  //   const allNonTechnical = Array.from(
+  //     document.getElementsByClassName('nonTechnical')
+  //   );
+  // }, []);
+
+  // const handleClick = (event) => {
+  //   // 👇️ toggle class on click
+  //   // event.currentTarget.classList.toggle("hidden")
+  //   allTechnical.forEach((el) => {
+  //     el.classList.toggle("hidden")
+  //   })
+  // }
+
   return (
     <div
       id="LayoutWrapper"
@@ -42,6 +67,15 @@ const LayoutWrapper = ({ children }) => {
 
               <div id="autoCompleteComponentWrapper" className="-mt-1">
                 <Autocomplete />
+              </div>
+              <div>
+                <button
+                  onClick={() => {
+                    setTechnicalPosts(!technicalPosts)
+                  }}
+                >
+                  Click
+                </button>
               </div>
             </div>
           </div>

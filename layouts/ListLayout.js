@@ -4,10 +4,6 @@ import { useState, useEffect } from "react"
 import Pagination from "@/components/Pagination"
 
 export default function ListLayout({ title, initialDisplayPosts = [], pagination }) {
-  const [technicalPosts, setTechnicalPosts] = useState("")
-  const [nontechnicalPosts, setNontechnicalPosts] = useState("")
-  const [alllPosts, setallPosts] = useState("")
-
   const displayPosts = initialDisplayPosts
 
   const yearlyDisplayPosts = {}
@@ -20,29 +16,6 @@ export default function ListLayout({ title, initialDisplayPosts = [], pagination
       yearlyDisplayPosts[year] = [frontMatter]
     }
   })
-
-  // useEffect(() => {
-  //   const allTechnical = Array.from(
-  //     document.getElementsByClassName('technical')
-  //   );
-  //   const allNonTechnical = Array.from(
-  //     document.getElementsByClassName('nonTechnical')
-  //   );
-  // }, []);
-
-  // const handleClick = (event) => {
-  //   // 👇️ toggle class on click
-  //   // event.currentTarget.classList.toggle("hidden")
-  //   allTechnical.forEach((el) => {
-  //     el.classList.toggle("hidden")
-  //   })
-
-  //   // 👇️ add class on click
-  //   // event.currentTarget.classList.add('bg-salmon');
-
-  //   // 👇️ remove class on click
-  //   // event.currentTarget.classList.remove('bg-salmon');
-  // }
 
   return (
     <>
