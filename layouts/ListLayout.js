@@ -1,5 +1,4 @@
 import PostsGroupedByYear from "@/components/PostsGroupedByYear"
-import { useState, useEffect } from "react"
 
 import Pagination from "@/components/Pagination"
 
