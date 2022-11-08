@@ -1,10 +1,20 @@
 import Link from "next/link"
 
+import { useContext } from "react"
+import { AppContext } from "@/components/ContextProvider"
+
 import formatDate from "@/lib/utils/formatDate"
 
 // className={`text-normal my-5 hover:underline lg:my-3  ${categoryTypes.toString()} ${isTechnical? 'hidden' : null}`}
+//
 
-const PostsInYear = ({ year, posts }) =>
+function useCustomUseContext() {
+  const [state, dispatch] = useContext(AppContext)
+  return [state, dispatch]
+}
+
+const PostsInYear = ({ year, posts }) => {
+  const [state, _] = useCustomUseContext(AppContext)
   posts[year].map((post) => {
     const { slug, date, title, category } = post
 
@@ -12,19 +22,30 @@ const PostsInYear = ({ year, posts }) =>
     category.forEach((cat) => {
       if (cat.toLowerCase().split(".")[0] === "technical") {
         catType.push("technical")
-      } else if (cat.toLowerCase().split(".")[0] === "personal") {
-        catType.push("personal")
+      } else if (cat.toLowerCase().split(".")[0] === "non-technical") {
+        catType.push("nonTechnical")
       } else {
         catType.push("other")
       }
     })
     const categoryTypes = [...new Set(catType)]
 
+    var showPost
+    if (state.technical && state.nonTechnical) {
+      showPost = true
+    } else if (state.technical && categoryTypes.includes("technical")) {
+      showPost = true
+    } else if (state.nonTechnical && categoryTypes.includes("nonTechnical")) {
+      showPost = true
+    } else {
+      showPost = false
+    }
+
     if (category[0].toLowerCase() !== "snippet") {
       return (
         <li
           key={slug}
-          className={`text-normal my-5 hover:underline lg:my-3 ${categoryTypes.toString()} `}
+          className={`text-normal my-5 hover:underline lg:my-3 ${showPost ? null : "hidden"}`}
         >
           <div className="flex">
             <div className="flex-auto">
@@ -51,5 +72,6 @@ const PostsInYear = ({ year, posts }) =>
       )
     }
   })
+}
 
 export default PostsInYear

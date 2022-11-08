@@ -11,7 +11,7 @@ const PostsGroupedByYear = ({ posts }) => {
               <div key={year} className="text-3xl font-medium 2xl:my-10 2xl:text-4xl">
                 {year}
               </div>
-              <ul>
+              <ul key={`${year}_list`}>
                 <PostsInYear year={year} posts={posts} />
               </ul>
             </>
