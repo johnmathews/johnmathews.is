@@ -1,5 +1,5 @@
 import PostsGroupedByYear from "@/components/PostsGroupedByYear"
-
+import { useContext } from "react"
 import Pagination from "@/components/Pagination"
 
 export default function ListLayout({ title, initialDisplayPosts = [], pagination }) {

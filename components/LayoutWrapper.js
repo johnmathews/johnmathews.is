@@ -1,37 +1,31 @@
 import headerNavLinks from "@/data/headerNavLinks"
-
-import { useState } from "react"
+import { useContext } from "react"
 import Link from "./Link"
 import Footer from "./Footer"
 import MobileNav from "./MobileNav"
 import ThemeSwitch from "./ThemeSwitch"
 
+import { MyContext } from "./Provider"
 import Autocomplete from "@/components/AutoComplete"
 import "@algolia/autocomplete-theme-classic"
 
-import { useEffect } from "react"
-
 const LayoutWrapper = ({ children }) => {
-  const [technicalPosts, setTechnicalPosts] = useState("")
-  const [nontechnicalPosts, setNontechnicalPosts] = useState("")
-  const [alllPosts, setallPosts] = useState("")
+  // const value = useContext(MyContext);
+  const [state, dispatch] = useContext(MyContext)
 
-  // useEffect(() => {
-  //   const allTechnical = Array.from(
-  //     document.getElementsByClassName('technical')
-  //   );
-  //   const allNonTechnical = Array.from(
-  //     document.getElementsByClassName('nonTechnical')
-  //   );
-  // }, []);
+  function increment() {
+    dispatch({
+      type: "INCREMENT",
+      payload: 1,
+    })
+  }
 
-  // const handleClick = (event) => {
-  //   // 👇️ toggle class on click
-  //   // event.currentTarget.classList.toggle("hidden")
-  //   allTechnical.forEach((el) => {
-  //     el.classList.toggle("hidden")
-  //   })
-  // }
+  function decrement() {
+    dispatch({
+      type: "DECREMENT",
+      payload: 1,
+    })
+  }
 
   return (
     <div
@@ -54,7 +48,6 @@ const LayoutWrapper = ({ children }) => {
               <div className="-ml-3 mb-3 text-left">
                 <ThemeSwitch />
               </div>
-
               {headerNavLinks.map((link) => (
                 <Link
                   key={link.title}
@@ -64,19 +57,12 @@ const LayoutWrapper = ({ children }) => {
                   {link.title}
                 </Link>
               ))}
-
               <div id="autoCompleteComponentWrapper" className="-mt-1">
                 <Autocomplete />
               </div>
-              <div>
-                <button
-                  onClick={() => {
-                    setTechnicalPosts(!technicalPosts)
-                  }}
-                >
-                  Click
-                </button>
-              </div>
+              <p>{state.count}</p>
+              <button onClick={increment}>+</button>&nbsp;
+              <button onClick={decrement}>-</button>
             </div>
           </div>
           <main id="mainWrapper" className="flex-auto ">

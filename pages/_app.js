@@ -1,7 +1,9 @@
 import "@/css/tailwind.css"
 import "@/css/prism.css"
 import "katex/dist/katex.css"
-import { createContext, useContext } from "react"
+
+// state management in React and Next.js
+// https://www.smashingmagazine.com/2021/08/state-management-nextjs/
 
 import "@fontsource/inter/variable-full.css"
 
@@ -12,6 +14,7 @@ import siteMetadata from "@/data/siteMetadata"
 // import Analytics from "@/components/analytics"
 import { Analytics } from "@vercel/analytics/react"
 import LayoutWrapper from "@/components/LayoutWrapper"
+import Provider from "@/components/Provider"
 import KeyboardShortcusts from "@/components/KeyboardShortcuts"
 import { ClientReload } from "@/components/ClientReload"
 
@@ -57,9 +60,11 @@ export default function App({ Component, pageProps }) {
         </Head>
         {isDevelopment && isSocket && <ClientReload />}
         <Analytics />
-        <LayoutWrapper>
-          <Component {...pageProps} />
-        </LayoutWrapper>
+        <Provider>
+          <LayoutWrapper>
+            <Component {...pageProps} />
+          </LayoutWrapper>
+        </Provider>
         <KeyboardShortcuts />
       </ThemeProvider>
     )
