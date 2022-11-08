@@ -18,7 +18,7 @@ export default function ListLayout({ title, initialDisplayPosts = [], pagination
     }
   })
 
-  function useDescribeState() {
+  function useContextToDescribeState() {
     const [state, _] = useContext(AppContext)
     if (state.technical && state.nonTechnical) {
       return "All posts"
@@ -44,7 +44,7 @@ export default function ListLayout({ title, initialDisplayPosts = [], pagination
           >
             {title}
           </div>
-          <p>{useDescribeState()}</p>
+          <p>{useContextToDescribeState()}</p>
         </div>
 
         <PostsGroupedByYear posts={yearlyDisplayPosts} />
