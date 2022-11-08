@@ -65,7 +65,7 @@ const PostsInYear = ({ year, posts }) => {
         </li>
       )
     } else {
-      return <div> </div>
+      return null
     }
   })
 }
