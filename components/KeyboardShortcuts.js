@@ -48,6 +48,19 @@ const KeyboardShortcuts = () => {
     }
   })
 
+  useMousetrap("v a", () => {
+    let allPostsButton = document.querySelector("#selectAllPosts")
+    simulateMouseClick(allPostsButton)
+  })
+  useMousetrap("v n", () => {
+    let nonTechnicalButton = document.querySelector("#selectNonTechnical")
+    simulateMouseClick(nonTechnicalButton)
+  })
+  useMousetrap("v t", () => {
+    let technicalButton = document.querySelector("#selectTechnical")
+    simulateMouseClick(technicalButton)
+  })
+
   useMousetrap("t t", () => {
     let themeButton = document.querySelector("#themeSwitcher")
     simulateMouseClick(themeButton)

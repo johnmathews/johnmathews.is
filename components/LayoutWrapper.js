@@ -15,6 +15,7 @@ import "@algolia/autocomplete-theme-classic"
 const LayoutWrapper = ({ children }) => {
   const router = useRouter()
   const [state, dispatch] = useContext(AppContext)
+  console.log("--- debug state: ", state)
 
   function ONLY_TECHNICAL() {
     dispatch({
@@ -38,22 +39,49 @@ const LayoutWrapper = ({ children }) => {
       <>
         <div className="mt-10 mb-10 border-b-4 border-double"></div>
         <div className="mt-5 text-xl">
-          <div className="my-1 dark:text-green-200">
-            <button className="font-bold" onClick={ONLY_TECHNICAL}>
-              {" "}
-              Technical{" "}
+          <div
+            className={`my-1 ${
+              state.technical && !state.nonTechnical
+                ? "text-green-800 dark:text-green-200"
+                : "text-blue-500 dark:text-blue-400"
+            } `}
+          >
+            <button
+              id="selectTechnical"
+              className={`${state.technical && !state.nonTechnical ? "font-bold" : "font-normal"}`}
+              onClick={ONLY_TECHNICAL}
+            >
+              Technical
             </button>
           </div>
-          <div className="my-1 dark:text-blue-200">
-            <button className="font-bold" onClick={ONLY_NONTECHNICAL}>
-              {" "}
-              Non-Technical{" "}
+          <div
+            className={`my-1 ${
+              !state.technical && state.nonTechnical
+                ? "text-green-800 dark:text-green-200"
+                : "text-blue-500 dark:text-blue-400"
+            } `}
+          >
+            <button
+              id="selectNonTechnical"
+              className={`${!state.technical && state.nonTechnical ? "font-bold" : "font-normal"}`}
+              onClick={ONLY_NONTECHNICAL}
+            >
+              Non-Technical
             </button>
           </div>
-          <div className="my-1 dark:text-pink-200">
-            <button className="font-bold" onClick={ALL_POSTS}>
-              {" "}
-              All{" "}
+          <div
+            className={`my-1 ${
+              state.technical && state.nonTechnical
+                ? "text-green-800 dark:text-green-200"
+                : "text-blue-500 dark:text-blue-400"
+            } `}
+          >
+            <button
+              id="selectAllPosts"
+              className={`${state.technical && state.nonTechnical ? "font-bold" : "font-normal"}`}
+              onClick={ALL_POSTS}
+            >
+              All
             </button>
           </div>
         </div>
