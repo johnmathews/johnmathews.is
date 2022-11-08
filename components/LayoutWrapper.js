@@ -1,17 +1,17 @@
 import headerNavLinks from "@/data/headerNavLinks"
-import { useContext } from "react"
 import Link from "./Link"
 import Footer from "./Footer"
 import MobileNav from "./MobileNav"
 import ThemeSwitch from "./ThemeSwitch"
 
+import { useContext } from "react"
 import { MyContext } from "./Provider"
+
 import Autocomplete from "@/components/AutoComplete"
 import "@algolia/autocomplete-theme-classic"
 
 const LayoutWrapper = ({ children }) => {
-  // const value = useContext(MyContext);
-  const [state, dispatch] = useContext(MyContext)
+  const [dispatch] = useContext(MyContext)
 
   function increment() {
     dispatch({
@@ -60,9 +60,8 @@ const LayoutWrapper = ({ children }) => {
               <div id="autoCompleteComponentWrapper" className="-mt-1">
                 <Autocomplete />
               </div>
-              <p>{state.count}</p>
-              <button onClick={increment}>+</button>&nbsp;
-              <button onClick={decrement}>-</button>
+              <button onClick={increment}> + </button>
+              <button onClick={decrement}> - </button>
             </div>
           </div>
           <main id="mainWrapper" className="flex-auto ">
