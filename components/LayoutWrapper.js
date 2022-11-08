@@ -11,7 +11,7 @@ import Autocomplete from "@/components/AutoComplete"
 import "@algolia/autocomplete-theme-classic"
 
 const LayoutWrapper = ({ children }) => {
-  const [dispatch] = useContext(MyContext)
+  const [_, dispatch] = useContext(MyContext)
 
   function increment() {
     dispatch({
