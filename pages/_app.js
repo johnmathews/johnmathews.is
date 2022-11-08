@@ -14,8 +14,8 @@ import siteMetadata from "@/data/siteMetadata"
 // import Analytics from "@/components/analytics"
 import { Analytics } from "@vercel/analytics/react"
 import LayoutWrapper from "@/components/LayoutWrapper"
-import Provider from "@/components/Provider"
-import KeyboardShortcusts from "@/components/KeyboardShortcuts"
+import ContextProvider from "@/components/ContextProvider"
+// import KeyboardShortcusts from "@/components/KeyboardShortcuts"
 import { ClientReload } from "@/components/ClientReload"
 
 import { useRouter } from "next/router"
@@ -60,11 +60,11 @@ export default function App({ Component, pageProps }) {
         </Head>
         {isDevelopment && isSocket && <ClientReload />}
         <Analytics />
-        <Provider>
+        <ContextProvider>
           <LayoutWrapper>
             <Component {...pageProps} />
           </LayoutWrapper>
-        </Provider>
+        </ContextProvider>
         <KeyboardShortcuts />
       </ThemeProvider>
     )

@@ -34,17 +34,14 @@ const KeyboardShortcuts = () => {
   // https://www.anycodings.com/1questions/5494275/focusing-input-field-with-mousetrapjs-but-input-field-also-pastes-the-hotkey-as-value
   useMousetrap("command+k", (e) => {
     e.preventDefault()
-    console.log("prevented!")
 
     let searchBox = document.querySelector(".aa-DetachedSearchButtonPlaceholder")
     let overlay = document.querySelector(".aa-DetachedCancelButton")
 
     if (overlay) {
-      console.log("overlay exists")
       simulateMouseClick(overlay)
       e.preventDefault()
     } else {
-      console.log("overlay does NOT exist")
       simulateMouseClick(searchBox)
       searchBox.focus()
       e.preventDefault()

@@ -5,25 +5,27 @@ import MobileNav from "./MobileNav"
 import ThemeSwitch from "./ThemeSwitch"
 
 import { useContext } from "react"
-import { MyContext } from "./Provider"
+import { AppContext } from "./ContextProvider"
 
 import Autocomplete from "@/components/AutoComplete"
 import "@algolia/autocomplete-theme-classic"
 
 const LayoutWrapper = ({ children }) => {
-  const [_, dispatch] = useContext(MyContext)
+  const [state, dispatch] = useContext(AppContext)
 
-  function increment() {
+  function ONLY_TECHNICAL() {
     dispatch({
-      type: "INCREMENT",
-      payload: 1,
+      type: "TECHNICAL",
     })
   }
-
-  function decrement() {
+  function ONLY_NONTECHNICAL() {
     dispatch({
-      type: "DECREMENT",
-      payload: 1,
+      type: "NONTECHNICAL",
+    })
+  }
+  function ALL_POSTS() {
+    dispatch({
+      type: "ALL",
     })
   }
 
@@ -60,8 +62,26 @@ const LayoutWrapper = ({ children }) => {
               <div id="autoCompleteComponentWrapper" className="-mt-1">
                 <Autocomplete />
               </div>
-              <button onClick={increment}> + </button>
-              <button onClick={decrement}> - </button>
+              <div className="mt-5 text-xl">
+                <div className="my-1 dark:text-green-200">
+                  <button className="font-bold" onClick={ONLY_TECHNICAL}>
+                    {" "}
+                    Technical{" "}
+                  </button>
+                </div>
+                <div className="my-1 dark:text-blue-200">
+                  <button className="font-bold" onClick={ONLY_NONTECHNICAL}>
+                    {" "}
+                    Non-Technical{" "}
+                  </button>
+                </div>
+                <div className="my-1 dark:text-pink-200">
+                  <button className="font-bold" onClick={ALL_POSTS}>
+                    {" "}
+                    All{" "}
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
           <main id="mainWrapper" className="flex-auto ">

@@ -2,7 +2,7 @@ import PostsGroupedByYear from "@/components/PostsGroupedByYear"
 import Pagination from "@/components/Pagination"
 
 import { useContext } from "react"
-import { MyContext } from "@/components/Provider"
+import { AppContext } from "@/components/ContextProvider"
 
 export default function ListLayout({ title, initialDisplayPosts = [], pagination }) {
   const displayPosts = initialDisplayPosts
@@ -18,7 +18,19 @@ export default function ListLayout({ title, initialDisplayPosts = [], pagination
     }
   })
 
-  const [state] = useContext(MyContext)
+  function useDescribeState() {
+    const [state, _] = useContext(AppContext)
+    if (state.technical && state.nonTechnical) {
+      return "All posts"
+    } else if (state.technical) {
+      return "Technical posts only"
+    } else if (state.nonTechnical) {
+      return "Non-technical posts only"
+    } else {
+      return "No posts"
+    }
+  }
+
   return (
     <>
       <div id="listLayoutWrapper" className="xl:ml-20 2xl:mt-10 ">
@@ -32,7 +44,7 @@ export default function ListLayout({ title, initialDisplayPosts = [], pagination
           >
             {title}
           </div>
-          <p>{state.count}</p>
+          <p>{useDescribeState()}</p>
         </div>
 
         <PostsGroupedByYear posts={yearlyDisplayPosts} />
