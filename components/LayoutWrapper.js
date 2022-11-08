@@ -34,10 +34,10 @@ const LayoutWrapper = ({ children }) => {
   }
 
   var bottomSection
-  if (router.asPath == "/posts") {
+  if (router.asPath === "/posts") {
     bottomSection = (
       <>
-        <div className="mt-10 mb-10 border-b-4 border-double"></div>
+        <div className="mt-10 mb-10 border-b-8 border-double  border-gray-600 dark:border-gray-200 "></div>
         <div className="mt-5 text-xl">
           <div
             className={`my-1 ${
