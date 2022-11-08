@@ -4,6 +4,8 @@ import Footer from "./Footer"
 import MobileNav from "./MobileNav"
 import ThemeSwitch from "./ThemeSwitch"
 
+import { useRouter } from "next/router"
+
 import { useContext } from "react"
 import { AppContext } from "./ContextProvider"
 
@@ -11,6 +13,7 @@ import Autocomplete from "@/components/AutoComplete"
 import "@algolia/autocomplete-theme-classic"
 
 const LayoutWrapper = ({ children }) => {
+  const router = useRouter()
   const [state, dispatch] = useContext(AppContext)
 
   function ONLY_TECHNICAL() {
@@ -27,6 +30,37 @@ const LayoutWrapper = ({ children }) => {
     dispatch({
       type: "ALL",
     })
+  }
+
+  var bottomSection
+  if (router.asPath == "/posts") {
+    bottomSection = (
+      <>
+        <div className="mt-10 mb-10 border-b-4 border-double"></div>
+        <div className="mt-5 text-xl">
+          <div className="my-1 dark:text-green-200">
+            <button className="font-bold" onClick={ONLY_TECHNICAL}>
+              {" "}
+              Technical{" "}
+            </button>
+          </div>
+          <div className="my-1 dark:text-blue-200">
+            <button className="font-bold" onClick={ONLY_NONTECHNICAL}>
+              {" "}
+              Non-Technical{" "}
+            </button>
+          </div>
+          <div className="my-1 dark:text-pink-200">
+            <button className="font-bold" onClick={ALL_POSTS}>
+              {" "}
+              All{" "}
+            </button>
+          </div>
+        </div>
+      </>
+    )
+  } else {
+    bottomSection = null
   }
 
   return (
@@ -59,29 +93,11 @@ const LayoutWrapper = ({ children }) => {
                   {link.title}
                 </Link>
               ))}
+
               <div id="autoCompleteComponentWrapper" className="-mt-1">
                 <Autocomplete />
               </div>
-              <div className="mt-5 text-xl">
-                <div className="my-1 dark:text-green-200">
-                  <button className="font-bold" onClick={ONLY_TECHNICAL}>
-                    {" "}
-                    Technical{" "}
-                  </button>
-                </div>
-                <div className="my-1 dark:text-blue-200">
-                  <button className="font-bold" onClick={ONLY_NONTECHNICAL}>
-                    {" "}
-                    Non-Technical{" "}
-                  </button>
-                </div>
-                <div className="my-1 dark:text-pink-200">
-                  <button className="font-bold" onClick={ALL_POSTS}>
-                    {" "}
-                    All{" "}
-                  </button>
-                </div>
-              </div>
+              {bottomSection}
             </div>
           </div>
           <main id="mainWrapper" className="flex-auto ">

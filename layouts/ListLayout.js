@@ -32,9 +32,6 @@ export default function ListLayout({ title, initialDisplayPosts = [], pagination
 
         <PostsGroupedByYear posts={yearlyDisplayPosts} />
       </div>
-      {pagination && pagination.totalPages > 1 && (
-        <Pagination currentPage={pagination.currentPage} totalPages={pagination.totalPages} />
-      )}
     </>
   )
 }

@@ -11,7 +11,7 @@ export async function getStaticProps() {
     // snippet posts only ever have 1 category (which is snippet)
     return post.category[0].toLowerCase() != "snippet"
   })
-  const initialDisplayPosts = posts.slice(0, POSTS_PER_PAGE)
+  const initialDisplayPosts = posts // dont need pagination //.slice(0, POSTS_PER_PAGE)
 
   const pagination = {
     currentPage: 1,
