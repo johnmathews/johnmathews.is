@@ -91,7 +91,7 @@ export default function Blog({ post, authorDetails, prev, next }) {
         <MobileNav />
       </div>
       <div id="header" className="hidden lg:-mt-10 lg:block lg:w-32 xl:mt-5 2xl:mt-5">
-        <div id="navbarWrapper" className="fixed ml-10 w-32 xl:w-40">
+        <div id="navbarWrapper" className="fixed ml-10 w-32 xl:mt-32 xl:w-40">
           <div id="sidebarTopSection" className="hiddden text-base leading-5 md:block ">
             <div className="">
               <div className="-ml-3 text-left">

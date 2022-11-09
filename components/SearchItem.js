@@ -11,7 +11,9 @@ export default function SearchItem({ hit, components }) {
         <div className="grow">
           <components.Highlight hit={hit} attribute="title" />
         </div>
-        <div className="flex-none font-normal text-gray-200">{catString}</div>
+        <div className="my-auto mr-2 flex-none pt-1 text-xs font-normal uppercase text-gray-700">
+          {catString}
+        </div>
       </div>
     </a>
   )

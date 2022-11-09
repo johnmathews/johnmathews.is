@@ -36,51 +36,37 @@ const LayoutWrapper = ({ children }) => {
   if (router.asPath === "/posts") {
     bottomSection = (
       <>
-        <div className="mt-10 mb-10 border-b-8 border-double  border-gray-600 dark:border-gray-200 "></div>
-        <div className="mt-5 text-xl">
-          <div
-            className={`my-1 ${
-              state.technical && !state.nonTechnical
-                ? "text-green-800 dark:text-green-200"
-                : "text-blue-500 dark:text-blue-400"
-            } `}
-          >
+        <div className="mt-10 mb-10 w-36 border-b-8 border-double  border-gray-600 dark:border-gray-200 "></div>
+        <div className="text-md mt-5">
+          <div className={`my-1`}>
             <button
               id="selectTechnical"
-              className={`${state.technical && !state.nonTechnical ? "font-bold" : "font-normal"}`}
+              className={`${
+                state.technical && !state.nonTechnical ? "font-medium" : "font-normal"
+              }`}
               onClick={ONLY_TECHNICAL}
             >
-              Technical
+              {`${state.technical && !state.nonTechnical ? ">" : ""}`} Technical
             </button>
           </div>
-          <div
-            className={`my-1 ${
-              !state.technical && state.nonTechnical
-                ? "text-green-800 dark:text-green-200"
-                : "text-blue-500 dark:text-blue-400"
-            } `}
-          >
+          <div className={`my-1 `}>
             <button
               id="selectNonTechnical"
-              className={`${!state.technical && state.nonTechnical ? "font-bold" : "font-normal"}`}
+              className={`${
+                !state.technical && state.nonTechnical ? "font-medium" : "font-normal"
+              }`}
               onClick={ONLY_NONTECHNICAL}
             >
-              Non-Technical
+              {`${!state.technical && state.nonTechnical ? ">" : ""}`} Non-Technical
             </button>
           </div>
-          <div
-            className={`my-1 ${
-              state.technical && state.nonTechnical
-                ? "text-green-800 dark:text-green-200"
-                : "text-blue-500 dark:text-blue-400"
-            } `}
-          >
+          <div className={`my-1 `}>
             <button
               id="selectAllPosts"
-              className={`${state.technical && state.nonTechnical ? "font-bold" : "font-normal"}`}
+              className={`${state.technical && state.nonTechnical ? "font-medium" : "font-normal"}`}
               onClick={ALL_POSTS}
             >
-              All
+              {`${state.technical && state.nonTechnical ? ">" : ""}`} All
             </button>
           </div>
         </div>
