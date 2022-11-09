@@ -36,6 +36,13 @@ export default function PostLayout({
     PostImage = null
   }
 
+  var PostSummary
+  if (frontMatter.summary) {
+    PostSummary = <div className="py-5 font-serif text-xl"> {frontMatter.summary} </div>
+  } else {
+    PostSummary = null
+  }
+
   return (
     <>
       <div
@@ -55,7 +62,7 @@ export default function PostLayout({
             <ScrollTop />
             <article id="article" className="md:mx-5 lg:mx-0 xl:mt-20">
               <div className="">
-                <header className="pt-0 2xl:mb-24">
+                <header className="pt-0 2xl:mb-6">
                   {PostImage}
                   <div className="space-y-1 text-center">
                     <div className="">
@@ -65,10 +72,11 @@ export default function PostLayout({
                 </header>
                 <div
                   id="contentContainer"
-                  className="divide-y divide-gray-200 pb-8 dark:divide-gray-700 xl:max-w-5xl xl:divide-y-0"
+                  className="pb-8 xl:max-w-5xl"
                   style={{ gridTemplateRows: "auto 1fr" }}
                 >
-                  <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
+                  <div className="xl:col-span-3 xl:row-span-2 xl:pb-0">
+                    {PostSummary}
                     <div
                       id="content"
                       className="prose-xl max-w-none pt-10 pb-8 dark:prose-dark dark:text-gray-100"
