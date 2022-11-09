@@ -1,11 +1,8 @@
 import PostsGroupedByYear from "@/components/PostsGroupedByYear"
-import Pagination from "@/components/Pagination"
 
-export default function ListLayout({ title, initialDisplayPosts = [], pagination }) {
-  const displayPosts = initialDisplayPosts
-
+export default function ListLayout({ title, posts }) {
   const yearlyDisplayPosts = {}
-  displayPosts.map((frontMatter) => {
+  posts.map((frontMatter) => {
     const dt = new Date(frontMatter.date)
     const year = dt.getFullYear()
     if (year in yearlyDisplayPosts) {

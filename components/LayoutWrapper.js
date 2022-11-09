@@ -15,7 +15,6 @@ import "@algolia/autocomplete-theme-classic"
 const LayoutWrapper = ({ children }) => {
   const router = useRouter()
   const [state, dispatch] = useContext(AppContext)
-  console.log("--- debug state: ", state)
 
   function ONLY_TECHNICAL() {
     dispatch({
