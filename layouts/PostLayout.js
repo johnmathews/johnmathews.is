@@ -15,8 +15,26 @@ const discussUrl = (slug) =>
     `${siteMetadata.siteUrl}/blog/${slug}`
   )}`
 
-export default function PostLayout({ frontMatter, authorDetails, next, prev, children }) {
+export default function PostLayout({
+  frontMatter,
+  authorDetails,
+  next,
+  prev,
+  titleImage,
+  children,
+}) {
   const { slug, fileName, date, title, images, tags, category } = frontMatter
+
+  var PostImage
+  if (frontMatter.image) {
+    PostImage = (
+      <div className="pb-5">
+        <Image src={frontMatter.image} alt={frontMatter.title} height="500" width="900" />
+      </div>
+    )
+  } else {
+    PostImage = null
+  }
 
   return (
     <>
@@ -38,6 +56,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
             <article id="article" className="md:mx-5 lg:mx-0 xl:mt-20">
               <div className="">
                 <header className="pt-0 2xl:mb-24">
+                  {PostImage}
                   <div className="space-y-1 text-center">
                     <div className="">
                       <PageTitle>{title}</PageTitle>

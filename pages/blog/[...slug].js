@@ -1,6 +1,7 @@
 import fs from "fs"
 import PageTitle from "@/components/PageTitle"
 import generateRss from "@/lib/generate-rss"
+
 import { MDXLayoutRenderer } from "@/components/MDXComponents"
 import { formatSlug, getAllFilesFrontMatter, getFileBySlug, getFiles } from "@/lib/mdx"
 
@@ -82,11 +83,11 @@ export async function getStaticProps({ params }) {
 
 export default function Blog({ post, authorDetails, prev, next }) {
   const { mdxSource, toc, frontMatter } = post
-  const { date, category } = frontMatter
+  const { date, category, image } = frontMatter
   const postDateTemplate = { year: "numeric", month: "long" }
 
   return (
-    <div className="mx-auto max-w-6xl">
+    <div className="mt-5 px-4 md:mx-auto lg:mx-5 lg:mt-16 xl:px-0 2xl:mx-32 2xl:mt-32 2xl:w-5/6">
       <div className="mr-4 lg:hidden">
         <MobileNav />
       </div>
@@ -176,6 +177,7 @@ export default function Blog({ post, authorDetails, prev, next }) {
         {frontMatter.draft !== true ? (
           <MDXLayoutRenderer
             layout={frontMatter.layout || DEFAULT_LAYOUT}
+            titleImage={image}
             toc={toc}
             mdxSource={mdxSource}
             frontMatter={frontMatter}
