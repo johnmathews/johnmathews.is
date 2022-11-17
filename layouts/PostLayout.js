@@ -1,6 +1,7 @@
 import Link from "@/components/Link"
 import PageTitle from "@/components/PageTitle"
 import { BlogSEO } from "@/components/SEO"
+import path from "path"
 
 import Footer from "@/components/Footer"
 import Image from "@/components/Image"
@@ -8,6 +9,11 @@ import Tag from "@/components/Tag"
 import siteMetadata from "@/data/siteMetadata"
 import Comments from "@/components/comments"
 import ScrollTop from "@/components/ScrollTop"
+
+import dynamic from "next/dynamic"
+const Notebook = dynamic(() => import("@/components/Notebook"), {
+  ssr: false,
+})
 
 const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
 const discussUrl = (slug) =>
@@ -41,6 +47,15 @@ export default function PostLayout({
     PostSummary = <div className="py-5 font-serif text-xl"> {frontMatter.summary} </div>
   } else {
     PostSummary = null
+  }
+
+  function getContent(frontMatter, children) {
+    if (frontMatter.isNotebook) {
+      const notebookPath = path.join(`/notebooks/${frontMatter.slug}.ipynb`)
+      return <Notebook filePath={notebookPath} notebookInputLanguage="python" />
+    } else {
+      return children
+    }
   }
 
   return (
@@ -81,7 +96,7 @@ export default function PostLayout({
                       id="content"
                       className="prose-xl max-w-none pt-10 pb-8 dark:prose-dark dark:text-gray-100"
                     >
-                      {children}
+                      {getContent(frontMatter, children)}
                     </div>
                   </div>
                   <footer className="">
