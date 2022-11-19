@@ -52,7 +52,7 @@ export default function PostLayout({
   function getContent(frontMatter, children) {
     if (frontMatter.isNotebook) {
       const notebookPath = path.join(`/notebooks/${frontMatter.slug}.ipynb`)
-      return <Notebook filePath={notebookPath} notebookInputLanguage="python" />
+      return <Notebook filePath={notebookPath} notebookInputLanguage="python" hideCodeBlocks />
     } else {
       return children
     }
