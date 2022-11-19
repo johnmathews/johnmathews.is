@@ -1,0 +1,8 @@
+/* Here is we disable output numeration in JupyterNotebookViewer */
+.output-block-text {
+  display: none !important;
+}
+
+.p-4 .hidden {
+  display: none;
+}

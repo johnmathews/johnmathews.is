@@ -2,15 +2,15 @@ import Link from "@/components/Link"
 import PageTitle from "@/components/PageTitle"
 import { BlogSEO } from "@/components/SEO"
 import path from "path"
-
 import Footer from "@/components/Footer"
 import Image from "@/components/Image"
 import Tag from "@/components/Tag"
 import siteMetadata from "@/data/siteMetadata"
 import Comments from "@/components/comments"
 import ScrollTop from "@/components/ScrollTop"
-
+import { useTheme } from "next-themes"
 import dynamic from "next/dynamic"
+
 const Notebook = dynamic(() => import("@/components/Notebook"), {
   ssr: false,
 })
@@ -30,7 +30,7 @@ export default function PostLayout({
   children,
 }) {
   const { slug, fileName, date, title, images, tags, category } = frontMatter
-
+  const { theme } = useTheme()
   var PostImage
   if (frontMatter.image) {
     PostImage = (
@@ -52,7 +52,16 @@ export default function PostLayout({
   function getContent(frontMatter, children) {
     if (frontMatter.isNotebook) {
       const notebookPath = path.join(`/notebooks/${frontMatter.slug}.ipynb`)
-      return <Notebook filePath={notebookPath} notebookInputLanguage="python" />
+      return (
+        <Notebook
+          filePath={notebookPath}
+          notebookInputLanguage="python"
+          hideCodeBlocks
+          inputCodeDarkTheme={theme === "dark"}
+          outputDarkTheme={theme === "dark"}
+          inputMarkdownDarkTheme={theme === "light"}
+        />
+      )
     } else {
       return children
     }

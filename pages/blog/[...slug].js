@@ -91,9 +91,9 @@ export default function Blog({ post, authorDetails, prev, next }) {
       <div className="mr-4 lg:hidden">
         <MobileNav />
       </div>
-      <div id="header" className="hidden lg:-mt-10 lg:block lg:w-32 xl:mt-5 2xl:mt-5">
+      <div id="header" className="invisible lg:visible">
         <div id="navbarWrapper" className="fixed ml-10 w-32 xl:mt-32 xl:w-40">
-          <div id="sidebarTopSection" className="hiddden text-base leading-5 md:block ">
+          <div id="sidebarTopSection" className="text-base leading-5 md:block ">
             <div className="">
               <div className="-ml-3 text-left">
                 <ThemeSwitch />
@@ -123,7 +123,7 @@ export default function Blog({ post, authorDetails, prev, next }) {
               className="my-8 border-t-4 border-double border-gray-800 dark:border-gray-100 lg:-mx-3 2xl:my-10 2xl:-mr-10"
             ></div>
 
-            <div className="hidden md:block">
+            <div className="md:block">
               <div className="flex flex-col  ">
                 <div className="my-3  text-lg">
                   <dt className="flex text-left text-gray-900 dark:text-gray-200 md:flex-col">
