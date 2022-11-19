@@ -16,7 +16,6 @@ import siteMetadata from "@/data/siteMetadata"
 import { Analytics } from "@vercel/analytics/react"
 import LayoutWrapper from "@/components/LayoutWrapper"
 import ContextProvider from "@/components/ContextProvider"
-// import KeyboardShortcusts from "@/components/KeyboardShortcuts"
 import { ClientReload } from "@/components/ClientReload"
 
 import { useRouter } from "next/router"
@@ -54,6 +53,7 @@ export default function App({ Component, pageProps }) {
       </ThemeProvider>
     )
   } else {
+    // everything else (e.g. /about, list of blog posts, categories, tags)
     return (
       <ThemeProvider attribute="class" defaultTheme={siteMetadata.theme}>
         <Head>
