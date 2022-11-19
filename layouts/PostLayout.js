@@ -55,11 +55,11 @@ export default function PostLayout({
       return (
         <Notebook
           filePath={notebookPath}
-          notebookInputLanguage="python"
           hideCodeBlocks
           inputCodeDarkTheme={theme === "dark"}
           outputDarkTheme={theme === "dark"}
           inputMarkdownDarkTheme={theme === "light"}
+          outputImageClassName="white"
         />
       )
     } else {
@@ -101,10 +101,7 @@ export default function PostLayout({
                 >
                   <div className="xl:col-span-3 xl:row-span-2 xl:pb-0">
                     {PostSummary}
-                    <div
-                      id="content"
-                      className="prose-xl max-w-none pt-10 pb-8 dark:prose-dark dark:text-gray-100"
-                    >
+                    <div id="content" className="prose-xl max-w-none pt-10 pb-8">
                       {getContent(frontMatter, children)}
                     </div>
                   </div>

@@ -6,3 +6,35 @@
 .p-4 .hidden {
   display: none;
 }
+
+.white {
+  background-color: white;
+}
+
+.light tr {
+  background-color: rgba(211, 211, 211, 0.6);
+  color: black;
+}
+
+.light td {
+  border: 1px solid black;
+  color: black;
+}
+
+.light th {
+  border: 1px solid black;
+}
+
+.dark tr {
+  background-color: rgba(31, 41, 55, 1);
+  color: white;
+}
+
+.dark td {
+  border: 1px solid rgba(211, 211, 211, 0.6);
+  color: white;
+}
+
+.dark th {
+  border: 1px solid rgba(211, 211, 211, 0.6);
+}
