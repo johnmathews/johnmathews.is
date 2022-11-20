@@ -56,8 +56,8 @@ export default function PostLayout({
         <div id="notebookWrapper">
           <Notebook
             filePath={notebookPath}
+            notebookInputLanguage="python"
             className="notebook p-0"
-            hideCodeBlocks
             inputCodeDarkTheme={theme === "dark"}
             outputDarkTheme={theme === "dark"}
             inputMarkdownDarkTheme={theme === "light"}

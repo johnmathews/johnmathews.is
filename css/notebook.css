@@ -52,11 +52,21 @@
   @apply mx-0 my-5 px-0  !important;
 }
 
-#notebookWrapper pre code span:first-child {
-  @apply pl-3 !important;
+/* #notebookWrapper pre code span:first-child { */
+/*   @apply pl-3 !important; */
+/* } */
+/* #notebookWrapper pre code span { */
+/*   @apply pl-2 !important; */
+/* } */
+
+#notebookWrapper [class^="input-"] pre {
+  @apply bg-slate-200 pl-5 dark:bg-slate-700 !important;
 }
-#notebookWrapper pre code span {
-  @apply pl-2 !important;
+#notebookWrapper [class^="input-"] span {
+  @apply text-blue-700  dark:text-slate-100;
+}
+#notebookWrapper [class^="output"] pre {
+  @apply bg-slate-300 pl-5 dark:bg-slate-800 !important;
 }
 
 #notebookWrapper table {
