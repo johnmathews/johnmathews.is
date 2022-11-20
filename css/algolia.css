@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Algolia AutoComplete Search */
+:root {
+  --aa-icon-size: 94px;
+}
+
+.aa-SubmitIcon {
+  @apply hidden;
+}
+.aa-SubmitButton {
+  @apply hidden;
+}
+
+.aa-InputWrapper input {
+  padding: 0 10px 0 10px;
+}
+
+.aa-DetachedSearchButtonIcon {
+  @apply hidden !important;
+}
+
+.aa-DetachedSearchButton {
+  @apply border-0 px-0 text-lg text-gray-800 dark:border-gray-900 dark:bg-slate-900 dark:text-gray-100 !important;
+}
+
+/* SIDEBAR OF LIST PAGES AND BLOG PAGES */
+#layoutWrapper #sidebarTopSection .aa-DetachedSearchButtonPlaceholder {
+  @apply text-2xl text-gray-900 hover:underline dark:text-gray-100;
+}
+#blogPostWrapper #sidebarTopSection .aa-DetachedSearchButtonPlaceholder {
+  @apply -ml-1 text-center text-lg text-gray-900 hover:underline dark:text-gray-100;
+}
+#sidebarTopSection .aa-DetachedSearchButtonIcon {
+  @apply invisible -ml-2 dark:ml-0;
+}
+
+/* MOBILE NAV */
+
+#mobileNavLinks .aa-DetachedSearchButton {
+  @apply mx-12 bg-gray-200;
+}
+#mobileNavLinks .aa-DetachedSearchButtonPlaceholder {
+  @apply text-2xl;
+  @apply ml-10 pl-12 font-bold tracking-widest text-gray-900 dark:text-gray-100;
+}
+#mobileNavLinks .aa-DetachedSearchButtonIcon {
+  @apply hidden;
+}
+#mobileNavLinks #componentWrapperDiv {
+  @apply block;
+}
+
+/* LANDING PAGE SEARCH TEXT */
+/* the icon disapears in dark mode */
+#landingListColumn .aa-AutoComplete {
+  @apply text-xl hover:underline dark:text-gray-100 lg:text-3xl;
+}
+#landingListColumn .aa-DetachedSearchButton {
+  @apply mx-auto w-32 dark:w-24 2xl:mt-10;
+}
+#landingListColumn .aa-DetachedSearchButtonPlaceholder {
+  @apply mx-auto text-center text-xl text-gray-900 hover:underline dark:text-gray-100  lg:text-3xl;
+}

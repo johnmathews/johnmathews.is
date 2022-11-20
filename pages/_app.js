@@ -1,6 +1,7 @@
 import "@/css/tailwind.css"
 import "@/css/prism.css"
 import "@/css/notebook.css"
+import "@/css/algolia.css"
 import "katex/dist/katex.css"
 
 // state management in React and Next.js
