@@ -53,14 +53,17 @@ export default function PostLayout({
     if (frontMatter.isNotebook) {
       const notebookPath = path.join(`/notebooks/${frontMatter.slug}.ipynb`)
       return (
-        <Notebook
-          filePath={notebookPath}
-          hideCodeBlocks
-          inputCodeDarkTheme={theme === "dark"}
-          outputDarkTheme={theme === "dark"}
-          inputMarkdownDarkTheme={theme === "light"}
-          outputImageClassName="white"
-        />
+        <div id="notebookWrapper">
+          <Notebook
+            filePath={notebookPath}
+            className="notebook p-0"
+            hideCodeBlocks
+            inputCodeDarkTheme={theme === "dark"}
+            outputDarkTheme={theme === "dark"}
+            inputMarkdownDarkTheme={theme === "light"}
+            outputImageClassName="bg-white"
+          />
+        </div>
       )
     } else {
       return children
