@@ -148,7 +148,7 @@ export default function Blog({ post, authorDetails, prev, next }) {
                 </div>
 
                 {(next || prev) && (
-                  <div className="flex justify-between py-3 text-gray-900 dark:text-gray-200 lg:block 2xl:py-8">
+                  <div className="flex flex-col justify-between py-3 text-gray-900 dark:text-gray-200 lg:block 2xl:py-8">
                     {prev && (
                       <div id="previousPost" className="my-3 2xl:my-5 ">
                         <div className="mb-1 2xl:mb-2"> Previous: </div>
