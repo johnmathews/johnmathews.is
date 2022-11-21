@@ -88,7 +88,7 @@ export default function SnippetLayout({
                 </div>
                 <div
                   id="footer"
-                  className="z-10 border-t-2 border-gray-200 bg-gray-100 dark:border-gray-700 dark:bg-slate-800"
+                  className="z-10 mb-1 border-t-2 border-gray-200 bg-gray-100 dark:border-gray-700 dark:bg-slate-800"
                 >
                   <div className="markdown mx-3  mb-1 mt-2">
                     <dl>
