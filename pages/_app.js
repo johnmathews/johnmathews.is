@@ -51,7 +51,9 @@ export default function App({ Component, pageProps }) {
         {isDevelopment && isSocket && <ClientReload />}
         <Analytics />
         <ContextProvider>
-          <Component {...pageProps} />
+          <LayoutWrapper>
+            <Component {...pageProps} />
+          </LayoutWrapper>
         </ContextProvider>
         <KeyboardShortcuts />
       </ThemeProvider>

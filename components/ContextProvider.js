@@ -13,7 +13,7 @@ export const AppContext = createContext()
 const initialState = {
   technical: true,
   nonTechnical: true,
-  blogPostMeta: {
+  postMetaData: {
     title: "Blog Post Title",
     date: "2021-08-01",
     category: "category",

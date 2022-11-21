@@ -20,10 +20,7 @@ const LayoutWrapper = ({ children }) => {
   const [state, dispatch] = useContext(AppContext)
 
   const postDateTemplate = { year: "numeric", month: "long" }
-  const postMetaData = state.frontMatter
-  const next = postMetaData.next
-  const prev = postMetaData.prev
-
+  const postMetaData = state.blogPostMeta
   console.log("--- debug postMetaData: ", postMetaData)
 
   function ONLY_TECHNICAL() {
@@ -82,7 +79,8 @@ const LayoutWrapper = ({ children }) => {
         </div>
       </>
     )
-  } else if (router.query.slug !== undefined) {
+    // } else if (router.query.slug !== undefined) {
+  } else if (router.query.slug == "foo") {
     bottomSection = (
       <div id="sidebarBottomSection" className="hiddden items-center text-base leading-5 md:block">
         <div
@@ -117,9 +115,9 @@ const LayoutWrapper = ({ children }) => {
               </dd>
             </div>
 
-            {(next || prev) && (
+            {(postMetaData.next || postMetaData.prev) && (
               <div className="flex flex-col justify-between py-3 text-gray-900 dark:text-gray-200 lg:block 2xl:py-8">
-                {prev && (
+                {postMetaData.prev && (
                   <div id="previousPost" className="my-3 2xl:my-5 ">
                     <div className="mb-1 2xl:mb-2"> Previous: </div>
                     <div className="line-clamp-2 hover:underline">
@@ -129,7 +127,7 @@ const LayoutWrapper = ({ children }) => {
                     </div>
                   </div>
                 )}
-                {next && (
+                {postMetaData.next && (
                   <div id="nextPost" className="my-3 2xl:my-5">
                     <div className="mb-1 2xl:mb-2"> Next: </div>
                     <div className="line-clamp-2 hover:underline">
