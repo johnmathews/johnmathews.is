@@ -80,7 +80,7 @@ export default function SnippetLayout({
                       {title}
                     </Link>
                   </div>
-                  <div className="markdown min-h-full overflow-y-scroll">
+                  <div className="markdown min-h-full overflow-y-auto">
                     <div className="px-4 pb-4 font-serif text-lg">
                       <MDXLayoutRenderer layout="SnippetCardLayout" mdxSource={mdxSource} />
                     </div>

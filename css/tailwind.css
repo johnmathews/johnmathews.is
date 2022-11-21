@@ -33,10 +33,6 @@ input:-webkit-autofill:focus {
   transition: background-color 600000s 0s, color 600000s 0s;
 }
 
-.snippetCard ul {
-  @apply mx-0 px-0;
-}
-
 /* Blog text */
 #contentContainer {
   @apply font-serif;
