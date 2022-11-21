@@ -5,6 +5,9 @@ import generateRss from "@/lib/generate-rss"
 import { MDXLayoutRenderer } from "@/components/MDXComponents"
 import { formatSlug, getAllFilesFrontMatter, getFileBySlug, getFiles } from "@/lib/mdx"
 
+import { useContext, useEffect } from "react"
+import { AppContext } from "@/components/ContextProvider"
+
 import Tag from "@/components/Tag"
 import Category from "@/components/Category"
 import Link from "@/components/Link"
@@ -85,6 +88,18 @@ export default function Blog({ post, authorDetails, prev, next }) {
   const { mdxSource, toc, frontMatter } = post
   const { date, category, image } = frontMatter
   const postDateTemplate = { year: "numeric", month: "long" }
+
+  const [state, dispatch] = useContext(AppContext)
+  const postMetaData = frontMatter
+  postMetaData.prev = prev
+  postMetaData.next = next
+
+  useEffect(() => {
+    dispatch({
+      type: "BLOG_POST",
+      frontMatter: postMetaData,
+    })
+  }, [])
 
   return (
     <div className="mt-5 px-4 md:mx-auto lg:mx-5 lg:mt-16 xl:px-0 2xl:mx-32 2xl:mt-32 2xl:w-5/6">

@@ -13,11 +13,17 @@ export const AppContext = createContext()
 const initialState = {
   technical: true,
   nonTechnical: true,
+  blogPostMeta: {
+    title: "Blog Post Title",
+    date: "2021-08-01",
+    category: "category",
+    nextPost: "next-post",
+    previousPost: "previous-post",
+  },
 }
 
 export default function ContextProvider(props) {
   // a reducer is a function that takes the current (initial) state and an action as arguments, and returns a new state result.
   const [state, dispatch] = useReducer(reducer, initialState)
-
   return <AppContext.Provider value={[state, dispatch]}>{props.children}</AppContext.Provider>
 }

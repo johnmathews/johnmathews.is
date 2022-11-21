@@ -50,7 +50,9 @@ export default function App({ Component, pageProps }) {
         </Head>
         {isDevelopment && isSocket && <ClientReload />}
         <Analytics />
-        <Component {...pageProps} />
+        <ContextProvider>
+          <Component {...pageProps} />
+        </ContextProvider>
         <KeyboardShortcuts />
       </ThemeProvider>
     )
