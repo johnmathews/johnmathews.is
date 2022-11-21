@@ -89,10 +89,7 @@ const LayoutWrapper = ({ children }) => {
           <div id="mobileNavWrapper" className="lg:hidden">
             <MobileNav />
           </div>
-          <div
-            id="sidebarOuterWrapper"
-            className="mr-12 hidden w-1/6 flex-none lg:block xl:mr-0 2xl:mt-5"
-          >
+          <div id="sidebarOuterWrapper" className="css/Tailwind.css">
             <div id="sidebarInnerWrapper" className="text-base leading-5 lg:fixed ">
               <div className="-ml-3 mb-3 text-left">
                 <ThemeSwitch />

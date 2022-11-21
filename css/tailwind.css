@@ -6,6 +6,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Cardo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap");
 
+#sidebarOuterWrapper {
+  @apply hidden flex-none lg:block !important;
+  @apply mr-12  w-1/6 xl:mr-0 2xl:mt-5;
+}
+
 .task-list-item::before {
   @apply hidden;
 }
