@@ -5,7 +5,7 @@ import siteMetadata from "@/data/siteMetadata"
 
 export default function SnippetCardLayout({ children }) {
   return (
-    <article className="snippetCard h-32">
+    <article className="snippetCard xl:min-h-32 h-32 2xl:h-full">
       <div className="xl:divide-y xl:divide-gray-200 xl:dark:divide-gray-700">
         <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
           <div
