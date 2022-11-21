@@ -4,7 +4,7 @@ slug: buying-btc
 date: "2017-12-7 9:56"
 category: Technical>Cryptocurrencies
 tags: ["bitcoin"]
-image: src="/images/btc_hype.png" alt="bitcoin hype"
+image: "/static/images/btc_hype.png"
 tweet: What to consider before buying Bitcoin
 ---
 

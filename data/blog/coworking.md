@@ -3,7 +3,7 @@ title: Coworking in Dublin
 slug: coworking
 date: "2017-9-15 11:55"
 category: Non-technical>Social
-image: src="/images/dogpatch1.jpg" alt="dogpatch"
+image: "/static/images/dogpatch1.jpg"
 tags:
   [
     "freelance",

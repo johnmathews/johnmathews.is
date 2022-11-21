@@ -2,7 +2,7 @@
 title: Sync a BTC node, quickly
 status: Published
 slug: sync-bitcoin-core-node
-image: src="/images/btc-core.jpg" alt="bitcoin-core"
+image: "/static/images/btc-core.jpg"
 date: "2018-10-13 20:34"
 category: Technical>Cryptocurrencies
 tags: ["bitcoin", "btc-core", "blockchain"]

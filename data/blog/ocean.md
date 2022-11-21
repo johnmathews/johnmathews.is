@@ -4,7 +4,7 @@ slug: ocean
 date: "2017-11-23 18:48"
 category: Non-technical>Journal
 tags: ["water"]
-image: src="/images/california2.jpg" alt="Californian beach"
+image: "/static/images/california2.jpg"
 summary: Being near water is better.
 ---
 

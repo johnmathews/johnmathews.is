@@ -4,7 +4,7 @@ slug: ethereum-parity-multisig-wallet
 date: "2017-8-12 22:28"
 category: Technical>Cryptocurrencies
 tags: ["ethereum", "parity", "blockchains", "fintech", "multi-sig", "wallet"]
-image: src="/images/parity-ethereum-logo.png" alt="Ethereum multisig wallet" style={{[width:50%]}}
+image: "/static/images/parity-ethereum-logo.png"
 tweet: How to create a #multisig #Ethereum wallet using #Parity
 summary: Set up and use Parity to create and manage multi-signature Ethereum wallets, edit the wallet's settings and view pending and past transactions
 status: Published

@@ -5,7 +5,7 @@ date: "2020-04-20 11:35"
 draft: true
 category: Non-technical>Entrepreneurship
 tags: ["startups", "web", "productivity", "founders"]
-image: src="/images/orange-2.jpg" alt="2"
+image: "/static/images/orange-2.jpg"
 tweet: Talking about the last 2 weeks of work building a web-app
 summary: Last week was not as productve as I wanted. I worked hard and completed a lot of tasks, but I think I spent my energy poorly.
 ---

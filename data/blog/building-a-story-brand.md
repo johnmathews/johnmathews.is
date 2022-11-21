@@ -4,7 +4,7 @@ slug: building-a-story-brand
 date: "2021-05-17 13:15:07"
 category: Non-technical>Learning
 tags: ["reading", "marketing", "communication", "book"]
-image: src="/images/building-a-story-brand/cover.jpg" alt="book cover"
+image: "/static/images/building-a-story-brand/cover.jpg"
 ---
 
 "Building a story brand" by Donald Miller is one of the most helpful marketing

@@ -5,7 +5,7 @@ slug: 1-page-marketing-plan
 date: "2020-11-19 15:50"
 category: Non-technical>Entrepreneurship
 tags: ["marketing", "book"]
-image: src="/images/marketing-plan.jpg" alt="book cover"
+image: "/static/images/marketing-plan.jpg"
 tweet: Notes on "the 1-page marketing plan" by Allan Dib.
 summary: My notes on "The 1-Page Marketing Plan" by Allan Dib
 ---

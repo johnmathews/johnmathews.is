@@ -5,7 +5,7 @@ slug: shell
 date: "2019-2-14 11:32"
 category: Technical>Developer-Tools
 tags: ["shell", "unix", "zsh", "bash", "profiling"]
-image: src="/images/zsh_order_blind_profiling.jpg" alt="what zsh spends its time doing when it starts"
+image: "/static/images/zsh_order_blind_profiling.jpg"
 tweet: Measure how slow you shell is and find out which components are causing the biggest delays
 summary: zsh was loading significantly slower than bash, so I used profiling to see what was slowing things down
 ---

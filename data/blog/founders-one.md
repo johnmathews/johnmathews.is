@@ -5,7 +5,7 @@ draft: true
 date: "2020-4-17 17:56"
 category: Non-technical>Entrepreneurship
 tags: ["startup", "finance", "fintech", "accounting"]
-image: src="/images/winding-road.jpg" alt="winding road"
+image: "/static/images/winding-road.jpg"
 tweet: Follow the progress of a solo founder jumping from data science to web developement.
 summary: I'm building a money mangement tool because a good one isn't already available.
 ---

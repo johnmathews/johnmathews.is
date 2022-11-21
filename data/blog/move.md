@@ -4,7 +4,7 @@ slug: move
 date: "2017-7-8 12:26"
 category: Non-technical>Journal
 tags: ["lifestyle"]
-image: src="/images/square_mile.jpg" alt="London's Square Mile"
+image: "/static/images/square_mile.jpg"
 tweet:
 summary: Training's over
 status:

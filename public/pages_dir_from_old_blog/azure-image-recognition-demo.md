@@ -1,10 +1,14 @@
-Template: azure-image-demo
-Title: Recognizing Traffic Lights Using The Azure Custom Vision API
-Date: 2021-01-26 14:34:10
-Slug: traffic
-Image: src="/images/traffic_lights/header.png" alt="gold"
-Summary1: I've trained and deployed a deep learning model to recognise and label traffic lights. You can upload an image to see the results below.
-Summary2: The model will show the location of the traffic lights, and how confident it is about each result. Just like in the image above.
+---
+template: azure-image-demo
+title: recognizing Traffic Lights Using The Azure Custom Vision API
+date: "2021-01-26 14:34:10"
+slug: traffic
+image: "/static/images/traffic_lights/header.png"
+category = ["technical.data_analysis"]
+tags = []
+summary1: I've trained and deployed a deep learning model to recognise and label traffic lights. You can upload an image to see the results below.
+summary2: The model will show the location of the traffic lights, and how confident it is about each result. Just like in the image above.
+---
 
 You can upload any image, I suggest googling [dashcam traffic lights](https://www.google.com/search?tbm=isch&as_q=dashcam+traffic+lights), or use one of the images below. Images should be smaller than 4mb and should be `.jpeg`, `.bmp` or `.png`.
 

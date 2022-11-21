@@ -4,7 +4,7 @@ slug: wallet
 date: "2017-11-8 16:09"
 category: Technical>Cryptocurrencies
 tags: ["wallet", "crypto", "blockchain", "bitcoin"]
-image: src="/images/hwWallets.jpg" alt="hardware wallets"
+image: "/static/images/hwWallets.jpg"
 tweet: Someone should make a hardware wallet that solves these problems #crypto #trezor #ledger
 summary: >
   Current hardware wallets are technically good but are awkward to use. A good solution would solve the following problems:

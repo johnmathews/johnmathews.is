@@ -3,9 +3,9 @@ title: Between Clients
 status: Published
 slug: between-clients
 date: "2019-10-8 16:05"
-category: Non-technical>Social
+category: Non-technical.Social
 tags: ["freelance"]
-image: src="/images/freelance-ds.png" alt="what my setup doesn't look like"
+image: "/static/images/freelance-ds.png"
 tweet:
 summary: As a freelance data scientist, I use time between client engagements to up-skill and pursue professional interests that I wouldn't otherwise be able to.
 ---

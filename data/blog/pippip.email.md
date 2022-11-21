@@ -4,7 +4,7 @@ slug: pippip.email
 date: "2020-10-28 13:37"
 category: Non-technical>Entrepreneurship
 tags: ["pippip"]
-image: src="/images/pippip.jpg" alt="PipPip.Email logo"
+image: "/static/images/pippip.jpg"
 tweet: PipPip.Email - event-driven and scheduled email delivery, from days to decades
 ---
 

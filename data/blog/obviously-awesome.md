@@ -5,7 +5,7 @@ slug: obviously-awesome
 date: "2020-12-03 15:46"
 category: Non-technical>Entrepreneurship
 tags: ["marketing", "positioning", "startups", "book"]
-image: src="/images/obviously-awesome.png" alt="Obviously Awesome by April Dunford "
+image: "/static/images/obviously-awesome.png"
 summary: My notes on "Obviously Awesome" by April Dunford
 ---
 

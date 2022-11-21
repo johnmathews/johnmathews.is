@@ -5,7 +5,7 @@ date: "2017-4-28 1:21"
 category: Technical>Web
 tags: ["pelican", "blog", "python", "static site"]
 status: published
-image: src="/images/get_pelican.png" alt="Pelican"
+image: "/static/images/get_pelican.png"
 summary: I switched to Pelican from Wordpress so that I could design the blog I wanted. Creating a blog in Pelican is a great way to learn HTML, CSS, Jinja templates and Git.
 ---
 

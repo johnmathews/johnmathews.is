@@ -6,7 +6,7 @@ date: "2017-6-1 18:00"
 category: Technical>Web
 tags: ["pelican", "jinja", "python", "twitter", "facebook", "blog", "static site"]
 tweet: Building a blog without compromising
-image: src="/images/get_pelican.png" alt="Pelican blogging platform"
+image: "/static/images/get_pelican.png"
 summary: My site is optimised for speed and clarity. I've added share buttons using a plugin which I modified and improved, and added meta tags to control how Twitter and Facebook show my articles in feeds.
 status: published
 ---

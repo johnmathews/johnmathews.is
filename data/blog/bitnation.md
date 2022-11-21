@@ -4,7 +4,7 @@ slug: bitnation
 date: "2017-9-14 11:25"
 category: Technical>Cryptocurrencies
 tags: ["bitnation", "blockchain", "disintermediation", "identity", "consulting", "finance"]
-image: src="/images/BITNATION-logo-website-white.png" alt="Bitnation logo"
+image: "/static/images/BITNATION-logo-website-white.png"
 tweet: #Bitnation - an ambitious startup with a growing team. Building tools for decentralised governance and identity management.
 summary: >
   I'm about to begin consulting for [Bitnation](http://bitnation.co) as their finance officer.
