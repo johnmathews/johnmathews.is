@@ -35,6 +35,7 @@ const MobileNav = () => {
     <div id="MobileNav" className="top-16 mt-5 mb-1 text-right">
       <button
         type="button"
+        id="openNav"
         className="ml-1 mr-1 h-8 w-8 rounded py-1"
         aria-label="Toggle Menu"
         onClick={onToggleNav}
@@ -60,7 +61,8 @@ const MobileNav = () => {
         <div className="flex justify-end">
           <button
             type="button"
-            className="mr-5 mt-11 h-8 w-8 rounded"
+            id="closeNav"
+            className="mr-8 mt-12 h-8 w-8 rounded"
             aria-label="Toggle Menu"
             onClick={onToggleNav}
           >
