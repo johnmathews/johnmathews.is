@@ -4,6 +4,8 @@ Session.vim
 
 old_blog/*
 
+public/notebooks/.ipynb_checkpoints/
+
 cache/
 
 # dependencies
