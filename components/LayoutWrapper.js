@@ -99,8 +99,8 @@ const LayoutWrapper = ({ children }) => {
 
         <div className="md:block">
           <div className="flex flex-col  ">
-            <div className="my-3  text-lg">
-              <dt className="flex text-left text-gray-900 dark:text-gray-100 md:flex-col">
+            <div className="text-md mt-3  mb-3">
+              <dt className="mb-1 flex text-left text-gray-900 dark:text-gray-100 md:flex-col">
                 Published:
               </dt>
               <dd className="text-gray-900 dark:text-gray-100">
@@ -113,11 +113,11 @@ const LayoutWrapper = ({ children }) => {
               </dd>
             </div>
 
-            <div className="my-1 text-lg">
-              <dt className="my-0 flex text-left text-gray-900 dark:text-gray-100 md:flex-col">
+            <div className="text-md mb-3">
+              <dt className="mb-1 flex text-left text-gray-900 dark:text-gray-100 md:flex-col">
                 Category:
               </dt>
-              <dd className="my-0 flex text-left text-gray-900 hover:underline dark:text-gray-100 md:flex-col">
+              <dd className="flex text-left text-gray-900 hover:underline dark:text-gray-100 md:flex-col">
                 {postMetaData.category.map((cat) => {
                   return <Category key={cat} text={cat} />
                 })}
@@ -125,10 +125,10 @@ const LayoutWrapper = ({ children }) => {
             </div>
 
             {(postMetaData.next || postMetaData.prev) && (
-              <div className="flex flex-col justify-between py-3 text-gray-900 dark:text-gray-100 lg:block 2xl:py-8">
+              <div className="mt-3 mb-3 flex w-44 flex-col justify-between text-gray-900 dark:text-gray-100 lg:block">
                 {postMetaData.prev && (
-                  <div id="previousPost" className="my-3 2xl:my-5 ">
-                    <div className="mb-1 2xl:mb-2"> Previous: </div>
+                  <div id="previousPost" className="mb-3">
+                    <div className="mb-1"> Previous: </div>
                     <div className="line-clamp-2 hover:underline">
                       <Link href={`/blog/${postMetaData.prev.slug}`}>
                         {postMetaData.prev.title}
@@ -137,8 +137,8 @@ const LayoutWrapper = ({ children }) => {
                   </div>
                 )}
                 {postMetaData.next && (
-                  <div id="nextPost" className="my-3 2xl:my-5">
-                    <div className="mb-1 2xl:mb-2"> Next: </div>
+                  <div id="nextPost" className="mb-3">
+                    <div className="mb-1"> Next: </div>
                     <div className="line-clamp-2 hover:underline">
                       <Link href={`/blog/${postMetaData.next.slug}`}>
                         {postMetaData.next.title}

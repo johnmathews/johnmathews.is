@@ -9,20 +9,7 @@ import { useContext, useEffect } from "react"
 import { useRouter } from "next/router"
 import { AppContext } from "@/components/ContextProvider"
 
-import Tag from "@/components/Tag"
-import Category from "@/components/Category"
-import Link from "@/components/Link"
-import MobileNav from "@/components/MobileNav"
-import ThemeSwitch from "@/components/ThemeSwitch"
-
-import Footer from "@/components/Footer"
-
-import Autocomplete from "@/components/AutoComplete"
 import "@algolia/autocomplete-theme-classic"
-
-import headerNavLinks from "@/data/headerNavLinks"
-import Logo from "@/data/logo.svg"
-import siteMetadata from "@/data/siteMetadata"
 
 const DEFAULT_LAYOUT = "PostLayout"
 

@@ -96,7 +96,7 @@ export default function PostLayout({
                 </header>
                 <div
                   id="contentContainer"
-                  className="pb-8 xl:max-w-5xl"
+                  className="xl:max-w-5xl"
                   style={{ gridTemplateRows: "auto 1fr" }}
                 >
                   <div className="xl:col-span-3 xl:row-span-2 xl:pb-0">
@@ -119,7 +119,6 @@ export default function PostLayout({
               </div>
             </article>
           </div>
-          <Footer />
         </div>
       </div>
     </>

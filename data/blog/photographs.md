@@ -7,21 +7,14 @@ category: Non-technical>Photographs
 tags: ["uncategorized"]
 ---
 
-[
+[![dog walker](/static/images/photos/dog_walker.jpeg)](/static/images/photos/dog_walker.jpeg)
 
-![dog walker](/static/images/photos/dog_walker.jpeg)/images/photos/dog_walker.jpeg)
-[
+[![stompetoren](/static/images/photos/stompetoren.jpeg)](/static/images/photos/stompetoren.jpeg)
 
-![stompetoren](/static/images/photos/stompetoren.jpeg)/images/photos/stompetoren.jpeg)
-[
+[![geese_on_polder](/static/images/photos/geese_on_polder.jpeg)](/static/images/photos/geese_on_polder.jpeg)
 
-![geese_on_polder](/static/images/photos/geese_on_polder.jpeg)/images/photos/geese_on_polder.jpeg)
-[
+[![bridges and gates](/static/images/photos/bridges_and_gates.jpeg)](/static/images/photos/bridges_and_gates.jpeg)
 
-![bridges and gates](/static/images/photos/bridges_and_gates.jpeg)/images/photos/bridges_and_gates.jpeg)
-[
+[![clounds above a lake](/static/images/photos/clouds_and_lake.jpeg)](/static/images/photos/clouds_and_lake.jpeg)
 
-![clounds above a lake](/static/images/photos/clouds_and_lake.jpeg)/images/photos/clouds_and_lake.jpeg)
-[
-
-![Polder and windmill](/static/images/photos/polder.jpeg)/images/photos/polder.jpeg)
+[![Polder and windmill](/static/images/photos/polder.jpeg)](/static/images/photos/polder.jpeg)

@@ -8,7 +8,6 @@
 #notebookWrapper .p {
   @apply my-0 !important;
 }
-
 /* keep this, otherwise a gutter is created */
 .notebook .hidden {
   display: none;
@@ -119,3 +118,7 @@
 /* .dark th { */
 /*   border: 1px solid rgba(211, 211, 211, 0.6); */
 /* } */
+
+#notebookWrapper .p code {
+  @apply bg-red-600 dark:bg-red-600 !important;
+}

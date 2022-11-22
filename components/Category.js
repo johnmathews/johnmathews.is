@@ -5,7 +5,7 @@ const Category = ({ text }) => {
   const childCat = text.split(".").pop()
   return (
     <Link href={`/categories/${categoryString}`}>
-      <a className="leading-tight">{childCat.toLowerCase()}</a>
+      <a className="capitalize leading-tight">{childCat.toLowerCase()}</a>
     </Link>
   )
 }
