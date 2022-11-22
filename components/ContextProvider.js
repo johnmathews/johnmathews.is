@@ -10,16 +10,18 @@ export const AppContext = createContext()
 // https://www.smashingmagazine.com/2022/08/react-context-propagation-javascript/
 // https://reactjs.org/docs/context.html
 
+const placeHolderPostMetaData = {
+  title: "PLACEHOLDER",
+  date: "2021-08-01",
+  category: ["PLACEHOLDER"],
+  next: "PLACEHOLDER",
+  prev: "PLACEHOLDER",
+}
+
 const initialState = {
   technical: true,
   nonTechnical: true,
-  postMetaData: {
-    title: "Blog Post Title",
-    date: "2021-08-01",
-    category: "category",
-    nextPost: "next-post",
-    previousPost: "previous-post",
-  },
+  postMetaData: placeHolderPostMetaData,
 }
 
 export default function ContextProvider(props) {

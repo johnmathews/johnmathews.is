@@ -72,13 +72,10 @@ export default function PostLayout({
 
   return (
     <>
-      <div
-        id="sectionContainerWrapsFooter"
-        className="mt-5 px-4 md:mx-auto lg:mt-16 xl:px-0 2xl:mt-32 2xl:w-5/6"
-      >
+      <div id="sectionContainerWrapsFooter" className="mt-5 px-4 xl:px-0 2xl:w-5/6">
         <div
           id="layoutWrapperDoesntWrapFooter"
-          className="min-h-screen justify-between md:flex md:flex-col lg:ml-32"
+          className="min-h-screen justify-between md:flex md:flex-col"
         >
           <div id="LayoutWrapperForFlex" className="justify-between lg:flex lg:flex-row">
             <BlogSEO

@@ -104,93 +104,8 @@ export default function Blog({ post, authorDetails, prev, next }) {
   }, [router])
 
   return (
-    <div className="mt-5 px-4 md:mx-auto lg:mx-5 lg:mt-16 xl:px-0 2xl:mx-32 2xl:mt-32 2xl:w-5/6">
-      <div className="mr-4 lg:hidden">
-        <MobileNav />
-      </div>
-      <div id="header" className="invisible lg:visible">
-        <div id="navbarWrapper" className="fixed ml-10 w-32 xl:mt-32 xl:w-40">
-          <div id="sidebarTopSection" className="text-base leading-5 md:block ">
-            <div className="">
-              <div className="-ml-3 text-left">
-                <ThemeSwitch />
-              </div>
-
-              {headerNavLinks.map((link) => (
-                <Link
-                  key={link.title}
-                  href={link.href}
-                  className="my-4 flex text-left text-lg text-gray-900 hover:underline dark:text-gray-100 md:flex-col"
-                >
-                  {link.title}
-                </Link>
-              ))}
-
-              <div id="autoCompleteComponentWrapper" className="-mt-2">
-                <Autocomplete />
-              </div>
-            </div>
-          </div>
-          <div
-            id="sidebarBottomSection"
-            className="hiddden items-center text-base leading-5 md:block"
-          >
-            <div
-              id="sideBarDivider"
-              className="my-8 border-t-4 border-double border-gray-800 dark:border-gray-100 lg:-mx-3 2xl:my-10 2xl:-mr-10"
-            ></div>
-
-            <div className="md:block">
-              <div className="flex flex-col  ">
-                <div className="my-3  text-lg">
-                  <dt className="flex text-left text-gray-900 dark:text-gray-200 md:flex-col">
-                    Published:
-                  </dt>
-                  <dd className="text-gray-900 dark:text-gray-200">
-                    <time dateTime={date}>
-                      {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
-                    </time>
-                  </dd>
-                </div>
-
-                <div className="my-1 text-lg">
-                  <dt className="my-0 flex text-left text-gray-900 dark:text-gray-200 md:flex-col">
-                    Category:
-                  </dt>
-                  <dd className="my-0 flex text-left text-gray-900 hover:underline dark:text-gray-200 md:flex-col">
-                    {category.map((cat) => {
-                      return <Category key={cat} text={cat} />
-                    })}
-                  </dd>
-                </div>
-
-                {(next || prev) && (
-                  <div className="flex flex-col justify-between py-3 text-gray-900 dark:text-gray-200 lg:block 2xl:py-8">
-                    {prev && (
-                      <div id="previousPost" className="my-3 2xl:my-5 ">
-                        <div className="mb-1 2xl:mb-2"> Previous: </div>
-                        <div className="line-clamp-2 hover:underline">
-                          <Link href={`/blog/${prev.slug}`}>{prev.title}</Link>
-                        </div>
-                      </div>
-                    )}
-                    {next && (
-                      <div id="nextPost" className="my-3 2xl:my-5">
-                        <div className="mb-1 2xl:mb-2"> Next: </div>
-                        <div className="line-clamp-2 hover:underline">
-                          <Link href={`/blog/${next.slug}`}>{next.title}</Link>
-                        </div>
-                      </div>
-                    )}
-                  </div>
-                )}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="main" className="w-full lg:ml-32 lg:pr-32 2xl:-mt-32 2xl:pr-0">
+    <>
+      <div id="main" className="w-full lg:pr-32 2xl:-mt-32 2xl:pr-0">
         {frontMatter.draft !== true ? (
           <MDXLayoutRenderer
             layout={frontMatter.layout || DEFAULT_LAYOUT}
@@ -213,6 +128,6 @@ export default function Blog({ post, authorDetails, prev, next }) {
           </div>
         )}
       </div>
-    </div>
+    </>
   )
 }

@@ -20,6 +20,7 @@ const LayoutWrapper = ({ children }) => {
   const [state, dispatch] = useContext(AppContext)
 
   // this is needed because I dont understand conceptually what happens when i click a link to another post
+  // placeHolder is needed, but is never seen
   const placeHolderPostMetaData = {
     title: "PLACEHOLDER",
     date: "2021-08-01",
@@ -99,10 +100,10 @@ const LayoutWrapper = ({ children }) => {
         <div className="md:block">
           <div className="flex flex-col  ">
             <div className="my-3  text-lg">
-              <dt className="flex text-left text-gray-900 dark:text-gray-200 md:flex-col">
+              <dt className="flex text-left text-gray-900 dark:text-gray-100 md:flex-col">
                 Published:
               </dt>
-              <dd className="text-gray-900 dark:text-gray-200">
+              <dd className="text-gray-900 dark:text-gray-100">
                 <time dateTime={postMetaData.date}>
                   {new Date(postMetaData.date).toLocaleDateString(
                     siteMetadata.locale,
@@ -113,10 +114,10 @@ const LayoutWrapper = ({ children }) => {
             </div>
 
             <div className="my-1 text-lg">
-              <dt className="my-0 flex text-left text-gray-900 dark:text-gray-200 md:flex-col">
+              <dt className="my-0 flex text-left text-gray-900 dark:text-gray-100 md:flex-col">
                 Category:
               </dt>
-              <dd className="my-0 flex text-left text-gray-900 hover:underline dark:text-gray-200 md:flex-col">
+              <dd className="my-0 flex text-left text-gray-900 hover:underline dark:text-gray-100 md:flex-col">
                 {postMetaData.category.map((cat) => {
                   return <Category key={cat} text={cat} />
                 })}
@@ -124,7 +125,7 @@ const LayoutWrapper = ({ children }) => {
             </div>
 
             {(postMetaData.next || postMetaData.prev) && (
-              <div className="flex flex-col justify-between py-3 text-gray-900 dark:text-gray-200 lg:block 2xl:py-8">
+              <div className="flex flex-col justify-between py-3 text-gray-900 dark:text-gray-100 lg:block 2xl:py-8">
                 {postMetaData.prev && (
                   <div id="previousPost" className="my-3 2xl:my-5 ">
                     <div className="mb-1 2xl:mb-2"> Previous: </div>
