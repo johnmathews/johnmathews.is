@@ -19,9 +19,17 @@ const LayoutWrapper = ({ children }) => {
   const router = useRouter()
   const [state, dispatch] = useContext(AppContext)
 
+  // this is needed because I dont understand conceptually what happens when i click a link to another post
+  const placeHolderPostMetaData = {
+    title: "PLACEHOLDER",
+    date: "2021-08-01",
+    category: ["PLACEHOLDER"],
+    next: "PLACEHOLDER",
+    prev: "PLACEHOLDER",
+  }
+  const postMetaData = state.blogPostMeta ? state.blogPostMeta : placeHolderPostMetaData
+
   const postDateTemplate = { year: "numeric", month: "long" }
-  const postMetaData = state.blogPostMeta
-  console.log("--- debug postMetaData: ", postMetaData)
 
   function ONLY_TECHNICAL() {
     dispatch({
@@ -79,8 +87,8 @@ const LayoutWrapper = ({ children }) => {
         </div>
       </>
     )
-    // } else if (router.query.slug !== undefined) {
-  } else if (router.query.slug == "foo") {
+  } else if (router.query.slug !== undefined) {
+    // } else if (router.query.slug == "foo") {
     bottomSection = (
       <div id="sidebarBottomSection" className="hiddden items-center text-base leading-5 md:block">
         <div

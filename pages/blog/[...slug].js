@@ -6,6 +6,7 @@ import { MDXLayoutRenderer } from "@/components/MDXComponents"
 import { formatSlug, getAllFilesFrontMatter, getFileBySlug, getFiles } from "@/lib/mdx"
 
 import { useContext, useEffect } from "react"
+import { useRouter } from "next/router"
 import { AppContext } from "@/components/ContextProvider"
 
 import Tag from "@/components/Tag"
@@ -94,12 +95,13 @@ export default function Blog({ post, authorDetails, prev, next }) {
   postMetaData.prev = prev
   postMetaData.next = next
 
+  const router = useRouter()
   useEffect(() => {
     dispatch({
       type: "BLOG_POST",
       frontMatter: postMetaData,
     })
-  }, [])
+  }, [router])
 
   return (
     <div className="mt-5 px-4 md:mx-auto lg:mx-5 lg:mt-16 xl:px-0 2xl:mx-32 2xl:mt-32 2xl:w-5/6">
