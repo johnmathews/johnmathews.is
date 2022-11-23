@@ -95,7 +95,7 @@ export default function PostLayout({
                       <PageTitle>{title}</PageTitle>
                     </div>
                   </div>
-                  <div className="mt-12 font-serif text-lg text-gray-600 dark:text-gray-200 md:mt-20 lg:hidden  ">
+                  <div className="mt-12 font-serif text-lg font-semibold text-gray-600 dark:text-gray-200 md:mt-20 lg:hidden  ">
                     <time dateTime={date}>
                       {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
                     </time>
