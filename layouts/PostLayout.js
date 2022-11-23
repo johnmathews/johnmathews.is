@@ -53,7 +53,7 @@ export default function PostLayout({
     if (frontMatter.isNotebook) {
       const notebookPath = path.join(`/notebooks/${frontMatter.slug}.ipynb`)
       return (
-        <div id="notebookWrapper">
+        <div id="notebookWrapper" className="">
           <Notebook
             filePath={notebookPath}
             notebookInputLanguage="python"
@@ -72,7 +72,7 @@ export default function PostLayout({
 
   return (
     <>
-      <div id="sectionContainerWrapsFooter" className="mt-5 px-4 xl:px-0 2xl:w-5/6">
+      <div id="sectionContainerWrapsFooter" className="mt-5 px-4 lg:mt-0 xl:px-0 ">
         <div
           id="layoutWrapperDoesntWrapFooter"
           className="min-h-screen justify-between md:flex md:flex-col"
@@ -84,7 +84,7 @@ export default function PostLayout({
               {...frontMatter}
             />
             <ScrollTop />
-            <article id="article" className="md:mx-5 lg:mx-0 xl:mt-20">
+            <article id="article" className="md:mx-5 lg:mx-0 2xl:mt-20">
               <div className="">
                 <header className="pt-0 2xl:mb-6">
                   {PostImage}

@@ -89,7 +89,6 @@ const LayoutWrapper = ({ children }) => {
       </>
     )
   } else if (router.query.slug !== undefined) {
-    // } else if (router.query.slug == "foo") {
     bottomSection = (
       <div id="sidebarBottomSection" className="hiddden items-center text-base leading-5 md:block">
         <div
@@ -158,8 +157,8 @@ const LayoutWrapper = ({ children }) => {
 
   return (
     <div
-      id="LayoutWrapper"
-      className="mt-5 px-4 md:mx-auto lg:mx-32 lg:mt-16 xl:mt-32 xl:px-0 2xl:mt-32 2xl:w-5/6"
+      id="LayoutContainer"
+      className="mx-auto mt-5 px-4 lg:mt-16 lg:px-10 xl:mt-32 xl:w-11/12 xl:px-0 2xl:w-10/12 3xl:w-8/12"
     >
       <div id="layoutwrapperInclFooter" className="min-h-screen">
         <div
@@ -190,7 +189,7 @@ const LayoutWrapper = ({ children }) => {
               {bottomSection}
             </div>
           </div>
-          <main id="mainWrapper" className="flex-auto ">
+          <main id="mainWrapper" className="flex-auto lg:ml-12 2xl:ml-72">
             {children}
           </main>
         </div>

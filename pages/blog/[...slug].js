@@ -92,7 +92,7 @@ export default function Blog({ post, authorDetails, prev, next }) {
 
   return (
     <>
-      <div id="main" className="w-full lg:pr-32 2xl:-mt-32 2xl:pr-0">
+      <div id="main" className="w-full 2xl:-mt-32">
         {frontMatter.draft !== true ? (
           <MDXLayoutRenderer
             layout={frontMatter.layout || DEFAULT_LAYOUT}

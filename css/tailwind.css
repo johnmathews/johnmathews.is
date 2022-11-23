@@ -8,7 +8,7 @@
 
 #sidebarOuterWrapper {
   @apply hidden flex-none lg:block !important;
-  @apply mr-12  w-1/6 xl:mr-0 2xl:mt-5;
+  @apply mt-5 mr-5 w-1/6 md:ml-10 lg:ml-5 xl:mr-0 2xl:w-1/12;
 }
 
 .task-list-item::before {

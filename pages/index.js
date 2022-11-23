@@ -36,7 +36,7 @@ export default function Home() {
   return (
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
-      <div id="centerer" className="mx-auto flex h-screen w-4/5 flex-col md:flex-row">
+      <div id="centerer" className="mx-auto flex h-screen w-4/5 flex-col md:flex-row 2xl:w-3/5 ">
         <div className="mx-auto mt-32 mb-12 flex content-center md:hidden ">
           <div className="md:hidden">
             <MobileNav />

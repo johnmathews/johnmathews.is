@@ -14,7 +14,7 @@ export default function ListLayout({ title, posts }) {
 
   return (
     <>
-      <div id="listLayoutWrapper" className="xl:ml-20 2xl:mt-10 ">
+      <div id="listLayoutWrapper" className="2xl:mt-0 ">
         <div
           id="titleWrapper"
           className="mb-10 space-y-2 border-b-8 border-double border-gray-600 pb-10 dark:border-gray-200 md:space-y-5  lg:mb-20 lg:pb-20 2xl:mb-20 2xl:pb-24"
