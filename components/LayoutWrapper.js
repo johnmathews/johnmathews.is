@@ -53,8 +53,9 @@ const LayoutWrapper = ({ children }) => {
     bottomSection = (
       <>
         <div className="mt-10 mb-10 w-36 border-b-8 border-double  border-gray-600 dark:border-gray-200 "></div>
-        <div className="text-md mt-5">
-          <div className={`my-1`}>
+        <div className="mt-5 text-lg">
+          <div className="mb-2 font-medium">Categories:</div>
+          <div className={`my-2`}>
             <button
               id="selectTechnical"
               className={`${
@@ -62,10 +63,10 @@ const LayoutWrapper = ({ children }) => {
               }`}
               onClick={ONLY_TECHNICAL}
             >
-              {`${state.technical && !state.nonTechnical ? ">" : ""}`} Technical
+              {`${state.technical && !state.nonTechnical ? "> " : ""}`} Technical
             </button>
           </div>
-          <div className={`my-1 `}>
+          <div className={`my-2 `}>
             <button
               id="selectNonTechnical"
               className={`${
@@ -73,16 +74,16 @@ const LayoutWrapper = ({ children }) => {
               }`}
               onClick={ONLY_NONTECHNICAL}
             >
-              {`${!state.technical && state.nonTechnical ? ">" : ""}`} Non-Technical
+              {`${!state.technical && state.nonTechnical ? "> " : ""}`} Non-Technical
             </button>
           </div>
-          <div className={`my-1 `}>
+          <div className={`my-2 `}>
             <button
               id="selectAllPosts"
               className={`${state.technical && state.nonTechnical ? "font-medium" : "font-normal"}`}
               onClick={ALL_POSTS}
             >
-              {`${state.technical && state.nonTechnical ? ">" : ""}`} All
+              {`${state.technical && state.nonTechnical ? "> " : ""}`} All
             </button>
           </div>
         </div>
