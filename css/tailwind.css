@@ -8,7 +8,7 @@
 
 #sidebarOuterWrapper {
   @apply hidden flex-none lg:block !important;
-  @apply mt-5 mr-5 w-1/6 md:ml-10 lg:ml-5 xl:mr-0 2xl:w-1/12 3xl:ml-0;
+  @apply mt-5 mr-5 w-1/6 md:ml-10 lg:ml-5 xl:ml-0 2xl:mr-20 2xl:w-1/12 3xl:ml-0;
 }
 
 .task-list-item::before {
@@ -46,6 +46,10 @@ input:-webkit-autofill:focus {
 }
 #contentContainer ul {
   @apply list-disc  dark:marker:text-gray-100;
+}
+
+#content a {
+  @apply font-semibold text-blue-600 dark:text-blue-300;
 }
 
 #content h1 {

@@ -15,6 +15,8 @@ const Notebook = dynamic(() => import("@/components/Notebook"), {
   ssr: false,
 })
 
+const postDateTemplate = { year: "numeric", month: "long" }
+
 const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
 const discussUrl = (slug) =>
   `https://mobile.twitter.com/search?q=${encodeURIComponent(
@@ -72,7 +74,7 @@ export default function PostLayout({
 
   return (
     <>
-      <div id="sectionContainerWrapsFooter" className="mt-5 px-4 lg:mt-0 xl:px-0 ">
+      <div id="sectionContainerWrapsFooter" className="mt-5 md:px-4 lg:mt-0 xl:px-0 ">
         <div
           id="layoutWrapperDoesntWrapFooter"
           className="min-h-screen justify-between md:flex md:flex-col"
@@ -92,6 +94,11 @@ export default function PostLayout({
                     <div className="2xl:mt-10">
                       <PageTitle>{title}</PageTitle>
                     </div>
+                  </div>
+                  <div className="mt-12 font-serif text-lg text-gray-600 dark:text-gray-200 md:mt-20 lg:hidden  ">
+                    <time dateTime={date}>
+                      {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
+                    </time>
                   </div>
                 </header>
                 <div

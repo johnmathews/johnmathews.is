@@ -93,7 +93,7 @@ const LayoutWrapper = ({ children }) => {
       <div id="sidebarBottomSection" className="hiddden items-center text-base leading-5 md:block">
         <div
           id="sideBarDivider"
-          className="my-8 border-t-4 border-double border-gray-800 dark:border-gray-100 lg:-mx-3 2xl:my-10 2xl:-mr-10"
+          className="my-8 border-t-4 border-double border-gray-800 dark:border-gray-100 2xl:my-10"
         ></div>
 
         <div className="md:block">
