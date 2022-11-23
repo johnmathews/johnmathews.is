@@ -39,7 +39,7 @@ const PostsInYear = ({ year, posts }) => {
       return (
         <li
           key={slug}
-          className={`text-normal my-5 hover:underline lg:my-3 ${showPost ? null : "hidden"}`}
+          className={`text-normal my-5  hover:underline lg:my-6 ${showPost ? null : "hidden"}`}
         >
           <div className="flex">
             <div className="flex-auto">
@@ -57,7 +57,7 @@ const PostsInYear = ({ year, posts }) => {
 
             <div
               id="dateBox"
-              className="hidden flex-none text-right font-serif text-xl font-semibold leading-6 text-gray-900 dark:text-gray-200 md:block 2xl:text-2xl "
+              className="hidden flex-none text-right font-serif text-xl font-semibold leading-6 text-gray-600 dark:text-gray-300 md:block 2xl:text-2xl "
             >
               <time dateTime={date}>{formatDate(date)}</time>
             </div>

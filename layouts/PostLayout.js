@@ -86,10 +86,10 @@ export default function PostLayout({
             <ScrollTop />
             <article id="article" className="md:mx-5 lg:mx-0 2xl:mt-20">
               <div className="">
-                <header className="pt-0 2xl:mb-6">
+                <header className="pt-0 2xl:mb-20">
                   {PostImage}
                   <div className="space-y-1 text-center">
-                    <div className="">
+                    <div className="2xl:mt-10">
                       <PageTitle>{title}</PageTitle>
                     </div>
                   </div>

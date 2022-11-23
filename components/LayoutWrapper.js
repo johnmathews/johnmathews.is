@@ -158,7 +158,7 @@ const LayoutWrapper = ({ children }) => {
   return (
     <div
       id="LayoutContainer"
-      className="mx-auto mt-5 px-4 lg:mt-16 lg:px-10 xl:mt-32 xl:w-11/12 xl:px-0 2xl:w-10/12 3xl:w-8/12"
+      className="3xl:w-0/12 mx-auto mt-5 px-4 lg:mt-16 lg:px-10 xl:mt-32 xl:w-11/12 xl:px-0 2xl:w-10/12"
     >
       <div id="layoutwrapperInclFooter" className="min-h-screen">
         <div
@@ -189,7 +189,7 @@ const LayoutWrapper = ({ children }) => {
               {bottomSection}
             </div>
           </div>
-          <main id="mainWrapper" className="flex-auto lg:ml-12 2xl:ml-72">
+          <main id="mainWrapper" className="flex-auto lg:ml-12 2xl:ml-28 2xl:mr-36">
             {children}
           </main>
         </div>
