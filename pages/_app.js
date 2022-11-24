@@ -13,6 +13,8 @@ import "@fontsource/inter/variable-full.css"
 import { ThemeProvider } from "next-themes"
 import Head from "next/head"
 
+import { useEffect } from "react"
+
 import siteMetadata from "@/data/siteMetadata"
 // import Analytics from "@/components/analytics"
 import { Analytics } from "@vercel/analytics/react"
@@ -26,8 +28,21 @@ import KeyboardShortcuts from "@/components/KeyboardShortcuts"
 const isDevelopment = process.env.NODE_ENV === "development"
 const isSocket = process.env.SOCKET
 
+function homeBrewAnalytics(pathname) {
+  const url =
+    "https://us-central1-johnmathews-website.cloudfunctions.net/page_view_logger?path=" + pathname
+  console.log("--- debug url: ", url)
+  window.navigator.sendBeacon(url)
+}
+
 export default function App({ Component, pageProps }) {
   const router = useRouter()
+
+  useEffect(() => {
+    homeBrewAnalytics(router.asPath)
+  }, [router])
+
+  // navigator.sendBeacon('https://us-central1-johnmathews-website.cloudfunctions.net/page_view_logger?path='+window.location.pathname)
   if (router.asPath == "/") {
     // landing page only
     return (
