@@ -27,13 +27,21 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const allPosts = await getAllFilesFrontMatter("blog")
+
+  // strCategory is a lowercase string of the parent and child category separated by a dot
   const strCategory = params.category.join(".")
+
   const filteredPosts = allPosts.filter(function (post) {
+    // postCategories is an array of lowercased strings with a dot separating parent and child categories
     if (typeof post.category == "string") {
       post.category = post.category.split(" ")
     }
-    return post.draft !== true && post.category.map((c) => c.includes(strCategory))
+    const postCategories = post.category.map((c) => c.toLowerCase())
+
+    var boolArray = postCategories.map((c) => strCategory.includes(c.toLowerCase()))
+    return post.draft !== true && boolArray.includes(true)
   })
+  console.log("--- debug filteredPosts: ", filteredPosts)
 
   // rss
   if (filteredPosts.length > 0) {
