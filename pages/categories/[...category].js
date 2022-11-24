@@ -41,7 +41,6 @@ export async function getStaticProps({ params }) {
     var boolArray = postCategories.map((c) => strCategory.includes(c.toLowerCase()))
     return post.draft !== true && boolArray.includes(true)
   })
-  console.log("--- debug filteredPosts: ", filteredPosts)
 
   // rss
   if (filteredPosts.length > 0) {
