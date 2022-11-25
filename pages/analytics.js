@@ -8,7 +8,7 @@ export async function getStaticProps() {
 }
 
 // https://blog.logrocket.com/modern-api-data-fetching-methods-react/
-// https://recharts.org/en-US/
+// https://recharts.org/en-US/guide/getting-started
 
 export default function Analytics() {
   const ASSETS_LOCATION = "assets.johnmathews.is"
@@ -21,27 +21,28 @@ export default function Analytics() {
   const { clientEventsIsLoading, clientEventsData, clientEventsError } = useFetch(client_events)
   const { pageViewsIsLoading, pageViewsData, pageViewsError } = useFetch(page_views_ip_addresses)
 
+  console.log("--- debug costsError: ", costsError)
+  console.log("--- debug costsIsLoading: ", costsIsLoading)
+  console.log("--- debug costsData: ", costsData)
   return (
     <>
       <PageTitle>{"Analytics"}</PageTitle>
-
       {costsIsLoading && <div>A moment please...</div>}
       {costsError && (
         <div>{`There is a problem fetching the daily costs data - ${costsError}`}</div>
       )}
       {costsData}
-
       {clientEventsIsLoading && <div>A moment please...</div>}
       {clientEventsError && (
         <div>{`There is a problem fetching the client eventsdata - ${clientEventsError}`}</div>
       )}
       {clientEventsData}
-
       {pageViewsIsLoading && <div>A moment please...</div>}
       {pageViewsError && (
         <div>{`There is a problem fetching the page views data - ${pageViewsError}`}</div>
       )}
       {pageViewsData}
+      foo
     </>
   )
 }

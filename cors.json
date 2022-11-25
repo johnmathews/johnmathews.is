@@ -1,8 +1,7 @@
 [
   {
-    "origin": ["https://johnmathews.is", "localhost:3000"],
-    "method": ["GET"],
-    "responseHeader": ["Content-Type", "Access-Control-Allow-Origin"],
-    "maxAgeSeconds": 600
+    "origin": ["*"],
+    "method": ["*"],
+    "maxAgeSeconds": 1
   }
 ]
