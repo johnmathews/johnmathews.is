@@ -4,7 +4,7 @@ Session.vim
 
 old_blog/*
 
-public/notebooks/.ipynb_checkpoints/
+public/notebooks/.ipynb_checkpoints/*
 
 cache/
 
