@@ -157,6 +157,12 @@ const KeyboardShortcuts = () => {
     router.push("/projects")
   })
 
+  useMousetrap("g m", () => {
+    let data = JSON.stringify({ category: "keyboard-shortcut", event: "gm" })
+    clientEventLogger(router.asPath, data)
+    router.push("/analytics")
+  })
+
   useMousetrap("g a", () => {
     let data = JSON.stringify({ category: "keyboard-shortcut", event: "ga" })
     clientEventLogger(router.asPath, data)
