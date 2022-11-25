@@ -1,6 +1,5 @@
 ---
 title: >
-  >
   Zsh commands: exec vs source
 slug: zsh-commands-exec-vs-source
 date: "2021-11-09 10:34:10"

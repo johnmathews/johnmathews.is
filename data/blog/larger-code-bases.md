@@ -1,6 +1,5 @@
 ---
 title: >
-  >
   Data Science vs Web Development: Larger Code Bases
 slug: larger-code-bases
 date: "2021-1-14 13:40"

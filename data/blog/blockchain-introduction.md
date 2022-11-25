@@ -1,6 +1,5 @@
 ---
 title: >
-  >
   Blockchains from the ground up: Part 1
 slug: blockchain-introduction
 date: "2017-5-25 20:38"

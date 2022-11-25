@@ -1,6 +1,5 @@
 ---
 title: >
-  >
   Reading: April 2018
 slug: reading-april-2018
 date: "2018-6-4 15:52"

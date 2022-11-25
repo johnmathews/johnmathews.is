@@ -1,6 +1,5 @@
 ---
 title: >
-  >
   Blockchains from the ground up: Part 2
 slug: blockchain-networks
 date: "2017-7-8 13:52"

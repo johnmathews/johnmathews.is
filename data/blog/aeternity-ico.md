@@ -1,6 +1,5 @@
 ---
 title: >
-  >
   The Æternity ICO: My experience
 slug: aeternity-ico
 date: "2017-4-30 23:37"
