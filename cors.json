@@ -1,7 +1,7 @@
 [
   {
-    "origin": ["https://johnmathews.is", "https://blog-lime-sigma.vercel.app", "localhost:3000"],
+    "origin": ["*"],
     "method": ["GET"],
-    "maxAgeSeconds": 1
+    "responseHeader": ["Content-Type", "Access-Control-Allow-Origin"]
   }
 ]
