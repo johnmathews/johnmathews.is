@@ -42,21 +42,27 @@ export default function Analytics() {
   return (
     <>
       <PageTitle>{"Analytics"}</PageTitle>
+
       <div className="my-3">
+        <div className="text-2xl font-semibold">Daily Costs</div>
         {dailyCostsIsLoading && <div>A moment please...</div>}
         {dailyCostsError && (
           <div>{`There is a problem fetching the daily costs data - ${dailyCostsError}`}</div>
         )}
         {dailyCostsData && <div>{dailyCostsData["daily_costs"]} </div>}
       </div>
+
       <div className="my-3">
+        <div className="text-2xl font-semibold">Page Views</div>
         {pageViewsIsLoading && <div>A moment please...</div>}
         {pageViewsError && (
           <div>{`There is a problem fetching the page views data - ${pageViewsError}`}</div>
         )}
         {pageViewsData && <div>{pageViewsData} </div>}
       </div>
+
       <div className="my-3">
+        <div className="text-2xl font-semibold">Client Events</div>
         {clientEventsIsLoading && <div>A moment please...</div>}
         {clientEventsError && (
           <div>{`There is a problem fetching the client events data - ${clientEventsError}`}</div>
