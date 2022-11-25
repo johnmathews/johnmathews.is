@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+import useFetch from "react-fetch-hook"
 
 import PageTitle from "@/components/PageTitle"
 
@@ -7,48 +8,32 @@ export async function getStaticProps() {
 }
 
 // https://blog.logrocket.com/modern-api-data-fetching-methods-react/
-// https://recharts.org/en-US/
+// https://recharts.org/en-US/guide/getting-started
 
 export default function Analytics() {
   const ASSETS_LOCATION = "assets.johnmathews.is"
+
   const daily_costs = `https://${ASSETS_LOCATION}/website-analytics/daily_costs.JSON`
-  console.log("--- debug daily_costs: ", daily_costs)
-  // const client_events = `https://${ASSETS_LOCATION}/website-analytics/aggregate-client-js-events.JSON`
-  // const page_views_ip_addresses = `https://${ASSETS_LOCATION}/website-analytics/aggregate-website-analyics.JSON`
+  const client_events = `https://${ASSETS_LOCATION}/website-analytics/aggregate-client-js-events.JSON`
+  const page_views_ip_addresses = `https://${ASSETS_LOCATION}/website-analytics/aggregate-website-analyics.JSON`
 
-  const [costData, setCostData] = useState(null)
-  const [loading, setLoading] = useState(true)
-  const [error, setError] = useState(null)
+  const {
+    isLoading: dailyCostsIsLoading,
+    data: dailyCostsData,
+    error: dailyCostsError,
+  } = useFetch(daily_costs)
+  console.log("--- debug dailyCostsData: ", dailyCostsData)
+  // const { isLoading, data, error } = useFetch(client_events)
+  // const { isLoading, data, error } = useFetch(page_views_ip_addresses)
 
-  useEffect(() => {
-    fetch(daily_costs)
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error(`This is an HTTP error: The status is ${response.status}`)
-        }
-        return response.json()
-      })
-      .then((data) => {
-        setCostData(data["daily_costs"])
-        setError(null)
-      })
-      .catch((err) => {
-        console.log(err.message)
-        setError(err.message)
-        setCostData(null)
-      })
-      .finally(() => {
-        setLoading(false)
-      })
-  }, [daily_costs])
   return (
     <>
       <PageTitle>{"Analytics"}</PageTitle>
-
-      {loading && <div>A moment please...</div>}
-      {error && <div>{`There is a problem fetching the data - ${error}`}</div>}
-
-      {costData}
+      {dailyCostsIsLoading && <div>A moment please...</div>}
+      {dailyCostsError && (
+        <div>{`There is a problem fetching the daily costs data - ${dailyCostsError}`}</div>
+      )}
+      {dailyCostsData && <div>{dailyCostsData["daily_costs"]} </div>}
     </>
   )
 }
