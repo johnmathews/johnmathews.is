@@ -47,7 +47,7 @@ export default function Analytics() {
         {dailyCostsError && (
           <div>{`There is a problem fetching the daily costs data - ${dailyCostsError}`}</div>
         )}
-        {dailyCostsData && <div>{dailyCostsData["daily_costs"]} </div>}
+        {dailyCostsData && <div>{Object.keys(dailyCostsData)} </div>}
       </div>
       <div className="my-3">
         <div className="text-2xl font-semibold">Page Views</div>
@@ -55,7 +55,7 @@ export default function Analytics() {
         {pageViewsError && (
           <div>{`There is a problem fetching the page views data - ${pageViewsError}`}</div>
         )}
-        {pageViewsData && <div>{pageViewsData["daily_views"]} </div>}
+        {pageViewsData && <div>{[Object.keys(pageViewsData)]} </div>}
       </div>
       <div className="my-3">
         <div className="text-2xl font-semibold">Client Events</div>
