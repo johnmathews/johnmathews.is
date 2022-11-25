@@ -1,9 +1,9 @@
 ---
 title: Trading digital assets
-slug: algo-trading
+slug: smaTraderBlog
 date: "2017-10-28"
-Author: John Mathews
-Category: ["Technical.Data"]
+author: John Mathews
+category: ["Technical.Data"]
 tags: ["Bitcoin", "Litecoin", "Ethereum", "Finance"]
 image: "/static/images/btcTrade.jpg"
 tweet: Simple effective algorithm to trade #Ethereum, #Bitcoin and #Litecoin using simple moving averages
