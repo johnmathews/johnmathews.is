@@ -22,18 +22,47 @@ export default function Analytics() {
     data: dailyCostsData,
     error: dailyCostsError,
   } = useFetch(daily_costs)
+
+  const {
+    isLoading: clientEventsIsLoading,
+    data: clientEventsData,
+    error: clientEventsError,
+  } = useFetch(client_events)
+
+  const {
+    isLoading: pageViewsIsLoading,
+    data: pageViewsData,
+    error: pageViewsError,
+  } = useFetch(page_views_ip_addresses)
+
   console.log("--- debug dailyCostsData: ", dailyCostsData)
-  // const { isLoading, data, error } = useFetch(client_events)
-  // const { isLoading, data, error } = useFetch(page_views_ip_addresses)
+  console.log("--- debug pageViewsData: ", pageViewsData)
+  console.log("--- debug clientEventsData: ", clientEventsData)
 
   return (
     <>
       <PageTitle>{"Analytics"}</PageTitle>
-      {dailyCostsIsLoading && <div>A moment please...</div>}
-      {dailyCostsError && (
-        <div>{`There is a problem fetching the daily costs data - ${dailyCostsError}`}</div>
-      )}
-      {dailyCostsData && <div>{dailyCostsData["daily_costs"]} </div>}
+      <div className="my-3">
+        {dailyCostsIsLoading && <div>A moment please...</div>}
+        {dailyCostsError && (
+          <div>{`There is a problem fetching the daily costs data - ${dailyCostsError}`}</div>
+        )}
+        {dailyCostsData && <div>{dailyCostsData["daily_costs"]} </div>}
+      </div>
+      <div className="my-3">
+        {pageViewsIsLoading && <div>A moment please...</div>}
+        {pageViewsError && (
+          <div>{`There is a problem fetching the page views data - ${pageViewsError}`}</div>
+        )}
+        {pageViewsData && <div>{pageViewsData} </div>}
+      </div>
+      <div className="my-3">
+        {clientEventsIsLoading && <div>A moment please...</div>}
+        {clientEventsError && (
+          <div>{`There is a problem fetching the client events data - ${clientEventsError}`}</div>
+        )}
+        {clientEventsData && <div>{clientEventsData} </div>}
+      </div>
     </>
   )
 }

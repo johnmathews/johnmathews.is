@@ -1,6 +1,6 @@
 [
   {
-    "origin": ["https://johnmathews.is", "localhost:3000"],
+    "origin": ["https://johnmathews.is", "https://blog-lime-sigma.vercel.app", "localhost:3000"],
     "method": ["GET"],
     "maxAgeSeconds": 1
   }
