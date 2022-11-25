@@ -11,8 +11,6 @@ import { AppContext } from "@/components/ContextProvider"
 
 import "@algolia/autocomplete-theme-classic"
 
-const DEFAULT_LAYOUT = "PostLayout"
-
 export async function getStaticPaths() {
   const posts = getFiles("blog") // list of filenames
   // need to get the file using the slug, and then filter the slugs/files based on draft status
@@ -95,7 +93,7 @@ export default function Blog({ post, authorDetails, prev, next }) {
       <div id="main" className="w-full 2xl:-mt-32">
         {frontMatter.draft !== true ? (
           <MDXLayoutRenderer
-            layout={frontMatter.layout || DEFAULT_LAYOUT}
+            layout={frontMatter.layout || "PostLayout"}
             titleImage={image}
             toc={toc}
             mdxSource={mdxSource}

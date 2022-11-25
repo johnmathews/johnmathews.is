@@ -31,7 +31,6 @@ const isSocket = process.env.SOCKET
 function homeBrewAnalytics(pathname) {
   const url =
     "https://us-central1-johnmathews-website.cloudfunctions.net/page_view_logger?path=" + pathname
-  console.log("--- debug url: ", url)
   window.navigator.sendBeacon(url)
 }
 
