@@ -4,8 +4,6 @@ Session.vim
 
 old_blog/*
 
-public/notebooks/.ipynb_checkpoints/*
-
 cache/
 
 # dependencies
@@ -43,3 +41,6 @@ yarn-error.log*
 .env.development.local
 .env.test.local
 .env.production.local
+
+# jupyter notebooks
+public/notebooks/.ipynb_checkpoints/
