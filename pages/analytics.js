@@ -1,5 +1,8 @@
 import PageTitle from "@/components/PageTitle"
+
 import ViewsToday from "@/components/homeBrewAnalytics/viewsToday"
+
+import siteMetadata from "@/data/siteMetadata"
 
 export async function getStaticProps() {
   return { props: {} }
@@ -40,12 +43,15 @@ export default function Analytics() {
   //   return values
   // })
 
+  const fetcher = (...args) => fetch(...args).then((res) => res.json())
+  const page_views_ip_addresses = `https://${siteMetadata.dataBucket}/website-analytics/aggregate-website-analyics.JSON`
+
   return (
     <>
       <PageTitle>{"Analytics"}</PageTitle>
 
       <div id="gridContainer" className="mt-5 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-        <ViewsToday />
+        <ViewsToday fetcher={fetcher} pageViewsIPAddresses={page_views_ip_addresses} />
         <div id="usersToday" className="min-h-32 border-2 border-slate-800 p-3 ">
           bar{" "}
         </div>
