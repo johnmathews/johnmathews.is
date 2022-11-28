@@ -47,6 +47,7 @@ export default function Analytics() {
 
   const fetcher = (...args) => fetch(...args).then((res) => res.json())
   const page_views_ip_addresses = `https://${siteMetadata.dataBucket}/website-analytics/aggregate-website-analyics.JSON`
+  const dailyCosts = `https://${siteMetadata.dataBucket}/website-analytics/daily_costs.JSON`
 
   return (
     <>
@@ -55,7 +56,7 @@ export default function Analytics() {
       <div id="gridContainer" className="mt-5 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
         <ViewsToday fetcher={fetcher} pageViewsIPAddresses={page_views_ip_addresses} />
         <UsersToday fetcher={fetcher} pageViewsIPAddresses={page_views_ip_addresses} />
-        <CostToday fetcher={fetcher} pageViewsIPAddresses={page_views_ip_addresses} />
+        <CostToday fetcher={fetcher} url={dailyCosts} />
         <div id="viewsPerPagePerDay" className="min-h-32  col-span-3 border-2 border-slate-800 p-3">
           views per page per day
         </div>
