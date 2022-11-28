@@ -3,6 +3,7 @@ import PageTitle from "@/components/PageTitle"
 import ViewsToday from "@/components/homeBrewAnalytics/viewsToday"
 import CostToday from "@/components/homeBrewAnalytics/costToday"
 import UsersToday from "@/components/homeBrewAnalytics/usersToday"
+import ViewsPerPagePerDay from "@/components/homeBrewAnalytics/viewsPerPagePerDay"
 
 import siteMetadata from "@/data/siteMetadata"
 
@@ -58,7 +59,7 @@ export default function Analytics() {
         <UsersToday fetcher={fetcher} pageViewsIPAddresses={page_views_ip_addresses} />
         <CostToday fetcher={fetcher} url={dailyCosts} />
         <div id="viewsPerPagePerDay" className="min-h-32  col-span-3 border-2 border-slate-800 p-3">
-          views per page per day
+          <ViewsPerPagePerDay />
         </div>
         <div id="pageViews" className="min-h-32 col-span-3 border-2 border-slate-800 p-3">
           page views
