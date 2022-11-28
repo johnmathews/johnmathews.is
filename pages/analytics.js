@@ -15,8 +15,6 @@ export async function getStaticProps() {
 // https://recharts.org/en-US/guide/getting-started
 
 export default function Analytics() {
-  // const ASSETS_LOCATION = "assets.johnmathews.is"
-
   // const daily_costs = `https://${ASSETS_LOCATION}/website-analytics/daily_costs.JSON`
   // const {
   //   isLoading: dailyCostsIsLoading,

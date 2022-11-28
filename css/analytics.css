@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#viewsPerPagePerDay table {
+  @apply w-full table-auto border-separate border border-slate-400;
+}
+#viewsPerPagePerDay table th {
+  @apply border-2 border-slate-400 bg-slate-400 text-white;
+}
+#viewsPerPagePerDay table tr {
+  @apply border-2 border-slate-400 bg-slate-400 text-white;
+}

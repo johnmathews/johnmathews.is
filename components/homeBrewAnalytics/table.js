@@ -8,7 +8,7 @@ export default function Table({ columns, data }) {
 
   const handleFilterChange = (e) => {
     const value = e.target.value || undefined
-    setFilter("show.name", value) // Update the show.name filter. Now our table will filter and show only the rows which have a matching value
+    setFilter("show.date", value) // Update the show.name filter. Now our table will filter and show only the rows which have a matching value
     setFilterInput(value)
   }
 
