@@ -2,12 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+/* borders */
 #viewsPerPagePerDay table {
-  @apply w-full table-auto border-separate border border-slate-400;
+  @apply w-full table-auto border-collapse border border-gray-800;
 }
+
+#viewsPerPagePerDay input {
+  @apply mb-3 p-1;
+}
+
+/* header */
 #viewsPerPagePerDay table th {
-  @apply border-2 border-slate-400 bg-slate-400 text-white;
+  @apply bg-white text-gray-800 dark:bg-slate-900 dark:text-gray-200;
 }
+/* rows */
 #viewsPerPagePerDay table tr {
-  @apply border-2 border-slate-400 bg-slate-400 text-white;
+  @apply mx-3 bg-white  text-gray-800 dark:bg-slate-900 dark:text-gray-200;
+}
+#viewsPerPagePerDay table tr td {
+  @apply p-2;
 }

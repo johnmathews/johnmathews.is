@@ -1,14 +1,25 @@
-import React from "react"
-import { useTable, useFilters, useSortBy } from "react-table"
+import { React, useEffect } from "react"
+import { useTable, useFilters, useSortBy, usePagination } from "react-table"
+
+import {
+  Pagination,
+  PagincationButtonContainer,
+  PaginationButton,
+  PaginationIndex,
+  RightIconSpan,
+  LeftIconSpan,
+  NextButtonIcon,
+  BackButtonIcon,
+} from "@/components/homeBrewAnalytics/table.style"
 
 import { useState } from "react"
 
-export default function Table({ columns, data }) {
+export default function Table({ columns, data, isPaginated = true }) {
   const [filterInput, setFilterInput] = useState("")
 
   const handleFilterChange = (e) => {
     const value = e.target.value || undefined
-    setFilter("page", value) // Update the show.name filter. Now our table will filter and show only the rows which have a matching value
+    setFilter("page", value)
     setFilterInput(value)
   }
 
@@ -17,9 +28,15 @@ export default function Table({ columns, data }) {
     getTableProps, // table props from react-table
     getTableBodyProps, // table body props from react-table
     headerGroups, // headerGroups, if your table has groupings
-    rows, // rows for the table based on the data passed
+    page,
     prepareRow, // Prepare the row (this function needs to be called for each row before getting the row props)
     setFilter, // The useFilter Hook provides a way to set the filter
+    canPreviousPage,
+    canNextPage,
+    pageOptions,
+    nextPage,
+    previousPage,
+    state: { pageIndex, pageSize },
   } = useTable(
     {
       columns,
@@ -35,15 +52,25 @@ export default function Table({ columns, data }) {
             desc: true,
           },
         ],
+        initialState: {
+          pageIndex: 0,
+          pageSize: 25,
+          hiddenColumns: columns.filter((column) => !column.show).map((column) => column.id),
+        },
+        manualPagination: true,
+        manualSortBy: true,
+        autoResetPage: false,
       },
     },
     useFilters, // use the useFilters Hook
-    useSortBy
+    useSortBy,
+    usePagination
   )
+
   /* 
-    Render the UI for your table
-    - react-table doesn't have UI, it's headless. We just need to put the react-table props from the Hooks, and it will do its magic automatically
-  */
+  Render the UI for your table
+  - react-table doesn't have UI, it's headless. We just need to put the react-table props from the Hooks, and it will do its magic automatically
+*/
   return (
     <>
       <input value={filterInput} onChange={handleFilterChange} placeholder={"Search name"} />
@@ -67,7 +94,7 @@ export default function Table({ columns, data }) {
           ))}
         </thead>
         <tbody {...getTableBodyProps()}>
-          {rows.map((row, i) => {
+          {page.map((row, i) => {
             prepareRow(row)
             return (
               <tr {...row.getRowProps()}>
@@ -79,6 +106,31 @@ export default function Table({ columns, data }) {
           })}
         </tbody>
       </table>
+      {Boolean(isPaginated) && (
+        <Pagination>
+          <PaginationIndex>
+            page {pageIndex + 1} of {pageOptions.length}
+          </PaginationIndex>{" "}
+          <PagincationButtonContainer>
+            {canPreviousPage ? (
+              <PaginationButton onClick={() => previousPage()}>
+                <LeftIconSpan>
+                  <BackButtonIcon />
+                </LeftIconSpan>
+                Back
+              </PaginationButton>
+            ) : null}
+            {canNextPage ? (
+              <PaginationButton onClick={() => nextPage()}>
+                Next{" "}
+                <RightIconSpan>
+                  <NextButtonIcon />
+                </RightIconSpan>
+              </PaginationButton>
+            ) : null}
+          </PagincationButtonContainer>
+        </Pagination>
+      )}
     </>
   )
 }
