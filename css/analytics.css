@@ -8,7 +8,7 @@
 }
 
 #viewsPerPagePerDay input {
-  @apply mb-3 p-1;
+  @apply mb-3 p-1 dark:bg-slate-900 dark:placeholder-slate-100;
 }
 
 /* header */
