@@ -61,7 +61,6 @@ export default function CostToday({ fetcher, url }) {
   const dailyCosts = JSON.parse(data.daily_costs)
   const index = dailyCosts.index
   const tax = dailyCosts.tax
-  console.log("--- debug index: ", index)
 
   // an array of dates in ascending order (most recent date last)
   let dateLabels = []
@@ -70,7 +69,6 @@ export default function CostToday({ fetcher, url }) {
     dateLabels.push(new Date(value))
   }
   dateLabels = dateLabels.sort((a, b) => b.date - a.date)
-  console.log("--- debug dateLabels: ", dateLabels)
 
   let datasets = []
   for (const i in Object.keys(dailyCosts)) {

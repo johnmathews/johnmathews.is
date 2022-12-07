@@ -8,7 +8,7 @@ export default function Table({ columns, data }) {
 
   const handleFilterChange = (e) => {
     const value = e.target.value || undefined
-    setFilter("show.date", value) // Update the show.name filter. Now our table will filter and show only the rows which have a matching value
+    setFilter("page", value) // Update the show.name filter. Now our table will filter and show only the rows which have a matching value
     setFilterInput(value)
   }
 
@@ -24,6 +24,18 @@ export default function Table({ columns, data }) {
     {
       columns,
       data,
+      initialState: {
+        sortBy: [
+          {
+            id: "date",
+            desc: false,
+          },
+          {
+            id: "views",
+            desc: true,
+          },
+        ],
+      },
     },
     useFilters, // use the useFilters Hook
     useSortBy

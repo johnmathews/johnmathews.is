@@ -56,9 +56,7 @@ export default function Analytics() {
         <ViewsToday fetcher={fetcher} pageViewsIPAddresses={page_views_ip_addresses} />
         <UsersToday fetcher={fetcher} pageViewsIPAddresses={page_views_ip_addresses} />
         <CostToday fetcher={fetcher} url={dailyCosts} />
-        <div id="viewsPerPagePerDay" className="min-h-32  col-span-3 border-2 border-slate-800 p-3">
-          <ViewsPerPagePerDay />
-        </div>
+        <ViewsPerPagePerDay fetcher={fetcher} url={page_views_ip_addresses} />
         <div id="pageViews" className="min-h-32 col-span-3 border-2 border-slate-800 p-3">
           page views
         </div>
