@@ -1,17 +1,6 @@
 import { React, useEffect } from "react"
 import { useTable, useFilters, useSortBy, usePagination } from "react-table"
 
-import {
-  Pagination,
-  PagincationButtonContainer,
-  PaginationButton,
-  PaginationIndex,
-  RightIconSpan,
-  LeftIconSpan,
-  NextButtonIcon,
-  BackButtonIcon,
-} from "@/components/homeBrewAnalytics/table.style"
-
 import { useState } from "react"
 
 export default function Table({ columns, data, isPaginated = true }) {
@@ -107,29 +96,23 @@ export default function Table({ columns, data, isPaginated = true }) {
         </tbody>
       </table>
       {Boolean(isPaginated) && (
-        <Pagination>
-          <PaginationIndex>
+        <div id="pagination">
+          <div id="pageNum">
             page {pageIndex + 1} of {pageOptions.length}
-          </PaginationIndex>{" "}
-          <PagincationButtonContainer>
+          </div>{" "}
+          <div id="nextPrevButtons">
             {canPreviousPage ? (
-              <PaginationButton onClick={() => previousPage()}>
-                <LeftIconSpan>
-                  <BackButtonIcon />
-                </LeftIconSpan>
+              <div id="backButton" onClick={() => previousPage()}>
                 Back
-              </PaginationButton>
+              </div>
             ) : null}
             {canNextPage ? (
-              <PaginationButton onClick={() => nextPage()}>
+              <div id="nextButton" onClick={() => nextPage()}>
                 Next{" "}
-                <RightIconSpan>
-                  <NextButtonIcon />
-                </RightIconSpan>
-              </PaginationButton>
+              </div>
             ) : null}
-          </PagincationButtonContainer>
-        </Pagination>
+          </div>
+        </div>
       )}
     </>
   )

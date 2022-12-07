@@ -2,6 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+/* pagination */
+#viewsPerPagePerDay #pagination {
+  @apply mt-3 flex w-full flex-row-reverse;
+}
+
+#pagination #prevButton {
+  @apply mx-3;
+}
+
+#pagination #nextButton {
+  @apply mx-3;
+}
+
+#pagination #pageNum {
+  @apply mx-3;
+}
+
+#pagination #nextPrevButtons {
+  @apply mx-3 flex flex-row;
+}
+
 /* borders */
 #viewsPerPagePerDay table {
   @apply w-full table-auto border-collapse border border-gray-800;
