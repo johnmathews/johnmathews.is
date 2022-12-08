@@ -2,6 +2,7 @@ import PageTitle from "@/components/PageTitle"
 
 import ViewsToday from "@/components/homeBrewAnalytics/viewsToday"
 import DailyUsers from "@/components/homeBrewAnalytics/dailyUsersChartData"
+import UserInteractionsData from "@/components/homeBrewAnalytics/userInteractionsChartData"
 import PageViewsData from "@/components/homeBrewAnalytics/pageViewsChartData"
 import CostToday from "@/components/homeBrewAnalytics/costToday"
 import UsersToday from "@/components/homeBrewAnalytics/usersToday"
@@ -29,10 +30,7 @@ export default function Analytics() {
         <ViewsPerPagePerDay fetcher={fetcher} url={page_views_ip_addresses} />
         <DailyUsers fetcher={fetcher} pageViewsIPAddresses={page_views_ip_addresses} />
         <PageViewsData fetcher={fetcher} pageViewsIPAddresses={page_views_ip_addresses} />
-
-        <div id="userInteractions" className="min-h-32  col-span-3 border-2 border-slate-800 p-3">
-          user interactions
-        </div>
+        <UserInteractionsData fetcher={fetcher} pageViewsIPAddresses={page_views_ip_addresses} />
 
         <div id="dailyCosts" className="min-h-32  col-span-3 border-2 border-slate-800 p-3">
           daily costs
