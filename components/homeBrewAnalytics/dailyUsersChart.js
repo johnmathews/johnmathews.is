@@ -12,11 +12,16 @@ import {
   ResponsiveContainer,
 } from "recharts"
 
+import siteMetadata from "@/data/siteMetadata"
+const dateTemplate = { year: "numeric", month: "short", day: "numeric" }
+
 const CustomTooltip = ({ active, payload, label }) => {
   if (active && payload && payload.length) {
+    const date = new Date(label)
+    const formattedDate = date.toLocaleDateString(siteMetadata.locale, dateTemplate)
     return (
       <div className="custom-tooltip border-2 bg-blue-400 p-3">
-        <p className="date">{`${label} : ${payload[0].value}`}</p>
+        <p className="date">{`${formattedDate} : ${payload[0].value}`}</p>
       </div>
     )
   }
