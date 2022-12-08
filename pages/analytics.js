@@ -36,7 +36,7 @@ export default function Analytics() {
           fetcher={fetcher}
           user_interactions_endpoint={user_interactions_endpoint}
         />
-        <DailyCostsData fetcher={fetcher} pageViewsIPAddresses={page_views_ip_addresses} />
+        <DailyCostsData fetcher={fetcher} dailyCostsEndpoint={dailyCosts} />
       </div>
     </>
   )

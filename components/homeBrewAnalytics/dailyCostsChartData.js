@@ -2,29 +2,25 @@ import DailyCosts from "@/components/homeBrewAnalytics/dailyCostsChart"
 
 import useSWR from "swr"
 
-export default function DailyCostsData({ fetcher, pageViewsIPAddresses }) {
-  const { data, error } = useSWR(pageViewsIPAddresses, fetcher)
+export default function DailyCostsData({ fetcher, dailyCostsEndpoint }) {
+  const { data, error } = useSWR(dailyCostsEndpoint, fetcher)
   if (error) return <div>failed to get data</div>
   if (!data) return <div>Unique Users per Day: loading...</div>
 
-  const dailyIpAddresses = JSON.parse(data.daily_ip_addresses)
+  const dailyCosts = JSON.parse(data.daily_costs)
 
-  var dailyIpAddressesCleaned = {}
-  for (var i in Object.keys(dailyIpAddresses.ip_address)) {
-    var epoch = parseInt(Object.keys(dailyIpAddresses.ip_address)[i])
-    var xDate = new Date(epoch)
-    var IPCount = dailyIpAddresses.ip_address[Object.keys(dailyIpAddresses.ip_address)[i]]
-    dailyIpAddressesCleaned[xDate] = IPCount
+  const index = dailyCosts.index
+  const dailyCostsCleaned = []
+  for (var i in Object.keys(index)) {
+    const item = {}
+    item.index = parseInt(i)
+    item.date = new Date(index[i])
+    for (var type in dailyCosts) {
+      if (type === "index") continue
+      item[type] = dailyCosts[type][i]
+    }
+    dailyCostsCleaned.push(item)
   }
 
-  // an array of objects. Each object is a datapoint containing an x, y pair
-  const chartData = []
-  Object.keys(dailyIpAddressesCleaned).map((date) => {
-    chartData.push({
-      date: date,
-      users: dailyIpAddressesCleaned[date],
-    })
-  })
-
-  return <DailyCosts data={chartData} />
+  return <DailyCosts data={dailyCostsCleaned} />
 }
