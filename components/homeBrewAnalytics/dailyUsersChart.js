@@ -55,7 +55,8 @@ export default function UsersPerDay({ data }) {
           <Area
             type="monotone"
             dataKey="users"
-            stroke="#8884d8"
+            stroke="#088f8f"
+            fill="#088f8f"
             strokeWidth={4}
             fillOpactity={1}
             activeDot={{ r: 5 }}
