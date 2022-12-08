@@ -6,9 +6,6 @@ export default function ViewsToday({ fetcher, pageViewsIPAddresses }) {
   if (!data) return <div>Views Today: loading...</div>
 
   const daily_views = JSON.parse(data.daily_views)
-  // let dailyIpAddresses = JSON.parse(data.daily_ip_addresses)
-  // let dailyIpAddresses = dailyIpAddresses.ip_address
-  // const viewsPageDay = JSON.parse(data.views_per_page_per_day)
 
   const dailyViewsCleaned = {}
   for (var i in Object.keys(daily_views.page)) {
