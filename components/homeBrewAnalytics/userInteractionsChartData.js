@@ -25,5 +25,5 @@ export default function PageViewsData({ fetcher, user_interactions_endpoint }) {
     dailyEventsCleaned.push(item)
   }
 
-  return <UserInteractions data={dailyEventsCleaned.reverse().slice(0, 40)} />
+  return <UserInteractions data={dailyEventsCleaned.reverse().slice(0, 50).reverse()} />
 }

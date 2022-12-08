@@ -10,6 +10,10 @@ import {
   ResponsiveContainer,
 } from "recharts"
 
+import siteMetadata from "@/data/siteMetadata"
+const dateTemplate = { year: "numeric", month: "short", day: "numeric" }
+const dateTemplateXAxis = { year: "numeric", month: "short", day: "numeric" }
+
 const colorArray = [
   "#FF6633",
   "#FFB399",
@@ -63,9 +67,33 @@ const colorArray = [
   "#6666FF",
 ]
 
+const CustomTooltip = ({ active, payload, label }) => {
+  if (active && payload && payload.length) {
+    const date = new Date(label)
+    const formattedDate = date.toLocaleDateString(siteMetadata.locale, dateTemplate)
+    return (
+      <div className="custom-tooltip border-2 bg-blue-600 p-3 text-gray-100">
+        <p className="date font-bold">{`${formattedDate}`}</p>
+        {payload.map((p) => {
+          if (p.value == 0) {
+            return null
+          } else {
+            return <p>{`${p.dataKey}: ${p.value}`}</p>
+          }
+        })}
+      </div>
+    )
+  }
+
+  return null
+}
+
 // https://recharts.org/en-US/guide/getting-started
 export default function UserInteractions({ data }) {
-  console.log("--- debug data: ", data)
+  data.map((d) => {
+    const date = new Date(d.date)
+    d.date = date.toLocaleDateString(siteMetadata.locale, dateTemplateXAxis)
+  })
   return (
     <div
       id="userInteractionsEachDay"
@@ -83,9 +111,9 @@ export default function UserInteractions({ data }) {
           }}
         >
           <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="date" />
+          <XAxis dataKey="date" reverses="true" />
           <YAxis />
-          <Tooltip />
+          <Tooltip content={<CustomTooltip />} />
           <Bar dataKey="/" fill={colorArray[0]} stackId="1" />
           <Bar dataKey="ga" fill={colorArray[1]} stackId="1" />
           <Bar dataKey="gc" fill={colorArray[2]} stackId="1" />
