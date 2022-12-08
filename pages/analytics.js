@@ -29,9 +29,6 @@ export default function Analytics() {
         <ViewsPerPagePerDay fetcher={fetcher} url={page_views_ip_addresses} />
         <DailyUsers fetcher={fetcher} pageViewsIPAddresses={page_views_ip_addresses} />
         <PageViewsData fetcher={fetcher} pageViewsIPAddresses={page_views_ip_addresses} />
-        <div id="pageViews" className="min-h-32 col-span-3 border-2 border-slate-800 p-3">
-          page views per day
-        </div>
 
         <div id="userInteractions" className="min-h-32  col-span-3 border-2 border-slate-800 p-3">
           user interactions

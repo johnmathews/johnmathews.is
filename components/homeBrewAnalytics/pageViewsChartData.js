@@ -8,22 +8,22 @@ export default function PageViewsData({ fetcher, pageViewsIPAddresses }) {
   if (error) return <div>failed to get data</div>
   if (!data) return <div>Unique Users per Day: loading...</div>
 
-  const dailyIpAddresses = JSON.parse(data.daily_ip_addresses)
+  const daily_views = JSON.parse(data.daily_views)
 
-  var dailyIpAddressesCleaned = {}
-  for (var i in Object.keys(dailyIpAddresses.ip_address)) {
-    var epoch = parseInt(Object.keys(dailyIpAddresses.ip_address)[i])
-    var xDate = new Date(epoch)
-    var IPCount = dailyIpAddresses.ip_address[Object.keys(dailyIpAddresses.ip_address)[i]]
-    dailyIpAddressesCleaned[xDate] = IPCount
+  const dailyViewsCleaned = {}
+  for (var i in Object.keys(daily_views.page)) {
+    var epoch = parseInt(Object.keys(daily_views.page)[i])
+    var viewDate = new Date(epoch)
+    var viewCount = daily_views.page[Object.keys(daily_views.page)[i]]
+    dailyViewsCleaned[viewDate] = viewCount
   }
 
   // an array of objects. Each object is a datapoint containing an x, y pair
   const chartData = []
-  Object.keys(dailyIpAddressesCleaned).map((date) => {
+  Object.keys(dailyViewsCleaned).map((date) => {
     chartData.push({
       date: date,
-      users: dailyIpAddressesCleaned[date],
+      pageViews: dailyViewsCleaned[date],
     })
   })
 

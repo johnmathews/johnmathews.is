@@ -15,7 +15,7 @@ import {
 // https://recharts.org/en-US/guide/getting-started
 export default function PageViews({ data }) {
   return (
-    <div id="viewsPerPagePerDay" className="min-h-32  col-span-3 border-2 border-slate-800 p-3">
+    <div id="pagesViewedEachDay" className="min-h-32  col-span-3 border-2 border-slate-800 p-3">
       <div className="mb-2">Page Views</div>
       <ResponsiveContainer width="100%" height={400}>
         <BarChart
@@ -32,7 +32,7 @@ export default function PageViews({ data }) {
           <YAxis />
           <Tooltip />
           <Legend />
-          <Bar dataKey="users" fill="#8884d8" />
+          <Bar dataKey="pageViews" fill="#8884d8" />
         </BarChart>
       </ResponsiveContainer>
     </div>
