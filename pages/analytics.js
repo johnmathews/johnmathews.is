@@ -19,6 +19,7 @@ export default function Analytics() {
   const fetcher = (...args) => fetch(...args).then((res) => res.json())
   const page_views_ip_addresses = `https://${siteMetadata.dataBucket}/website-analytics/aggregate-website-analyics.JSON`
   const dailyCosts = `https://${siteMetadata.dataBucket}/website-analytics/daily_costs.JSON`
+  const user_interactions_endpoint = `https://${siteMetadata.dataBucket}/website-analytics/aggregate-client-js-events.JSON`
 
   return (
     <>
@@ -31,7 +32,10 @@ export default function Analytics() {
         <ViewsPerPagePerDay fetcher={fetcher} url={page_views_ip_addresses} />
         <DailyUsers fetcher={fetcher} pageViewsIPAddresses={page_views_ip_addresses} />
         <PageViewsData fetcher={fetcher} pageViewsIPAddresses={page_views_ip_addresses} />
-        <UserInteractionsData fetcher={fetcher} pageViewsIPAddresses={page_views_ip_addresses} />
+        <UserInteractionsData
+          fetcher={fetcher}
+          user_interactions_endpoint={user_interactions_endpoint}
+        />
         <DailyCostsData fetcher={fetcher} pageViewsIPAddresses={page_views_ip_addresses} />
       </div>
     </>

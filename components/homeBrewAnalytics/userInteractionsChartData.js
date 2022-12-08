@@ -3,29 +3,27 @@ import UserInteractions from "@/components/homeBrewAnalytics/userInteractionsCha
 import useSWR from "swr"
 
 // https://recharts.org/en-US/guide/getting-started
-export default function PageViewsData({ fetcher, pageViewsIPAddresses }) {
-  const { data, error } = useSWR(pageViewsIPAddresses, fetcher)
-  if (error) return <div>failed to get data</div>
-  if (!data) return <div>Unique Users per Day: loading...</div>
+export default function PageViewsData({ fetcher, user_interactions_endpoint }) {
+  const { data, error } = useSWR(user_interactions_endpoint, fetcher)
+  if (error) return <div>failed to get user interactions data :(</div>
+  if (!data) return <div>User Interactions: loading data...</div>
 
-  const daily_views = JSON.parse(data.daily_views)
+  const dailyEvents = JSON.parse(data["daily_events_by_type"])
 
-  const dailyViewsCleaned = {}
-  for (var i in Object.keys(daily_views.page)) {
-    var epoch = parseInt(Object.keys(daily_views.page)[i])
-    var viewDate = new Date(epoch)
-    var viewCount = daily_views.page[Object.keys(daily_views.page)[i]]
-    dailyViewsCleaned[viewDate] = viewCount
+  // need an array of objects. Each array item is a datapoint. A day.
+  // dailyEvents is an object of objects. The key is an int.
+  const index = dailyEvents.index
+  const dailyEventsCleaned = []
+  for (var i in Object.keys(index)) {
+    const item = {}
+    item.index = parseInt(i)
+    item.date = new Date(index[i])
+    for (var eventType in dailyEvents) {
+      if (eventType === "index") continue
+      item[eventType] = dailyEvents[eventType][i]
+    }
+    dailyEventsCleaned.push(item)
   }
 
-  // an array of objects. Each object is a datapoint containing an x, y pair
-  const chartData = []
-  Object.keys(dailyViewsCleaned).map((date) => {
-    chartData.push({
-      date: date,
-      pageViews: dailyViewsCleaned[date],
-    })
-  })
-
-  return <UserInteractions data={chartData} />
+  return <UserInteractions data={dailyEventsCleaned.reverse().slice(0, 40)} />
 }
