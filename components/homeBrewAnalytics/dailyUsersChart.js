@@ -12,13 +12,25 @@ import {
   ResponsiveContainer,
 } from "recharts"
 
+const CustomTooltip = ({ active, payload, label }) => {
+  if (active && payload && payload.length) {
+    return (
+      <div className="custom-tooltip border-2 bg-blue-400 p-3">
+        <p className="date">{`${label} : ${payload[0].value}`}</p>
+      </div>
+    )
+  }
+
+  return null
+}
+
 // https://recharts.org/en-US/guide/getting-started
 export default function UsersPerDay({ data }) {
   return (
     <div id="viewsPerPagePerDay" className="min-h-32  col-span-3 border-2 border-slate-800 p-3">
       <div className="mb-2">Daily Users</div>
       <ResponsiveContainer width="100%" height={400}>
-        <BarChart
+        <LineChart
           data={data}
           margin={{
             top: 5,
@@ -30,10 +42,10 @@ export default function UsersPerDay({ data }) {
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="date" />
           <YAxis />
-          <Tooltip />
+          <Tooltip content={<CustomTooltip />} />
           <Legend />
-          <Bar dataKey="users" fill="#8884d8" />
-        </BarChart>
+          <Line type="monotone" dataKey="users" stroke="#8884d8" activeDot={{ r: 5 }} />
+        </LineChart>
       </ResponsiveContainer>
     </div>
   )
