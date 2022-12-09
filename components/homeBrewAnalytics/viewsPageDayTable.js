@@ -1,4 +1,5 @@
 const postDateTemplate = { year: "numeric", month: "short", day: "numeric" }
+import { useMemo } from "react"
 
 import siteMetadata from "@/data/siteMetadata"
 
@@ -52,37 +53,39 @@ export default function ViewsPageDayTable({ data }) {
     parsedData.push(dataRow)
   }
 
-  const columns = [
+  const columns = useMemo(() => [
     {
-      Header: "table header ",
-      columns: [
-        {
-          Header: "Date",
-          accessor: "date",
-          sortType: (a, b) => {
-            return new Date(b) - new Date(a)
-          },
-        },
-        {
-          Header: "Views",
-          accessor: "views",
-        },
-        {
-          Header: "Page",
-          accessor: "page",
-          // Cell method will provide the cell value; we pass it to render a custom component
-          // Cell: ({ cell: { value } }) => <Genres values={value} />,
-        },
-        {
-          Header: "Location",
-          accessor: "country_count",
-        },
-      ],
+      Header: "Date",
+      accessor: "date",
+      id: "date",
+      sortType: (a, b) => {
+        return new Date(b) - new Date(a)
+      },
     },
-  ]
+    {
+      Header: "Views",
+      id: "views",
+      accessor: "views",
+    },
+    {
+      Header: "Page",
+      id: "page",
+      accessor: "page",
+      // Cell method will provide the cell value; we pass it to render a custom component
+      // Cell: ({ cell: { value } }) => <Genres values={value} />,
+    },
+    {
+      Header: "Location",
+      id: "locatoin",
+      accessor: "country_count",
+    },
+  ])
 
   return (
-    <div id="viewsPerPagePerDay" className="min-h-32  col-span-3 border-2 border-slate-800 p-3">
+    <div
+      id="viewsPerPagePerDay"
+      className="min-h-32 col-span-3 border-separate border-2 border-slate-800 p-3"
+    >
       <Table columns={columns} data={parsedData} />
     </div>
   )
