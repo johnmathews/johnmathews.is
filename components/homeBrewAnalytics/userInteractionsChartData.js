@@ -19,8 +19,9 @@ export default function PageViewsData({ fetcher, user_interactions_endpoint }) {
     item.index = parseInt(i)
     item.date = new Date(index[i])
     for (var eventType in dailyEvents) {
-      if (eventType === "index") continue
-      item[eventType] = dailyEvents[eventType][i]
+      if (eventType !== "index") {
+        item[eventType] = dailyEvents[eventType][i]
+      }
     }
     dailyEventsCleaned.push(item)
   }

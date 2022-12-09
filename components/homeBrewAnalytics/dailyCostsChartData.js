@@ -22,5 +22,5 @@ export default function DailyCostsData({ fetcher, dailyCostsEndpoint }) {
     dailyCostsCleaned.push(item)
   }
 
-  return <DailyCosts data={dailyCostsCleaned} />
+  return <DailyCosts data={dailyCostsCleaned.reverse().slice(0, 50).reverse()} />
 }

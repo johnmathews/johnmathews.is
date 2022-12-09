@@ -112,7 +112,7 @@ export default function UserInteractions({ data }) {
         >
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="date" reverses="true" />
-          <YAxis />
+          <YAxis orientation="right" />
           <Tooltip content={<CustomTooltip />} />
           <Bar dataKey="/" fill={colorArray[0]} stackId="1" />
           <Bar dataKey="ga" fill={colorArray[1]} stackId="1" />

@@ -1,4 +1,6 @@
 import React, { PureComponent } from "react"
+import { camelCase } from "lodash"
+
 import {
   LineChart,
   BarChart,
@@ -111,14 +113,14 @@ export default function UserInteractions({ data }) {
         >
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="date" reverses="true" />
-          <YAxis scale="auto" orientation="right" />
+          <YAxis scale="log" domain={[0.005, "auto"]} allowDataOverflow orientation="right" />
           <Tooltip content={<CustomTooltip />} />
           {Object.keys(data[data.length - 1]).map((key) => {
             if (key != "date" && key != "index") {
-              return <Bar dataKey={key} stackId="a" fill={colorArray[1]} />
+              var index = Object.keys(data[data.length - 1]).indexOf(key)
+              return <Bar dataKey={key} stackId="1" fill={colorArray[index]} />
             }
           })}
-          <Bar dataKey="users" fill="#8884d8" />
         </BarChart>
       </ResponsiveContainer>
     </div>
