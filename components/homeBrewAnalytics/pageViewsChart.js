@@ -42,14 +42,14 @@ export default function PageViews({ data }) {
           data={data}
           margin={{
             top: 5,
-            right: 30,
+            right: 0,
             left: 20,
             bottom: 5,
           }}
         >
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="date" reversed="true" />
-          <YAxis />
+          <YAxis orientation="right" />
           <Tooltip content={<CustomTooltip />} />
           <Legend />
           <Area

@@ -105,7 +105,7 @@ export default function UserInteractions({ data }) {
           data={data}
           margin={{
             top: 5,
-            right: 30,
+            right: 0,
             left: 20,
             bottom: 5,
           }}
