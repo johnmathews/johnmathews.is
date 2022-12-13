@@ -42,7 +42,7 @@ export default function ViewsPageDayTable({ data }) {
           value = data[i][j]
           value = value.replaceAll("(", "[").replaceAll(")", "]").replaceAll("'", '"')
           value = JSON.parse(value)
-          // value = Object.assign(...value.map(([key, val]) => ({ [key]: val })))
+          console.log("--- debug value: ", value)
           dataRow["country_count"] = value
         }
       } else if (j === "views") {
@@ -63,16 +63,16 @@ export default function ViewsPageDayTable({ data }) {
       },
     },
     {
-      Header: "Views",
-      id: "views",
-      accessor: "views",
-    },
-    {
       Header: "Page",
       id: "page",
       accessor: "page",
       // Cell method will provide the cell value; we pass it to render a custom component
       // Cell: ({ cell: { value } }) => <Genres values={value} />,
+    },
+    {
+      Header: "Views",
+      id: "views",
+      accessor: "views",
     },
     {
       Header: "Location",

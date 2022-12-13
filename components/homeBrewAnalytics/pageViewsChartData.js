@@ -6,7 +6,7 @@ import useSWR from "swr"
 export default function PageViewsData({ fetcher, pageViewsIPAddresses }) {
   const { data, error } = useSWR(pageViewsIPAddresses, fetcher)
   if (error) return <div>failed to get data</div>
-  if (!data) return <div>Unique Users per Day: loading...</div>
+  if (!data) return <div>Page views data is loading...</div>
 
   const daily_views = JSON.parse(data.daily_views)
 

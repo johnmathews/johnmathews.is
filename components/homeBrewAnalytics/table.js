@@ -51,18 +51,13 @@ export default function Table({ columns, data, isPaginated = true }) {
         autoResetPage: false,
       },
     },
-    useFilters, // use the useFilters Hook
+    useFilters,
     useSortBy,
     usePagination
   )
-
-  /* 
-  Render the UI for your table
-  - react-table doesn't have UI, it's headless. We just need to put the react-table props from the Hooks, and it will do its magic automatically
-*/
   return (
     <>
-      <input value={filterInput} onChange={handleFilterChange} placeholder={"Search name"} />
+      <input value={filterInput} onChange={handleFilterChange} placeholder={"Page Name"} />
       <table {...getTableProps()}>
         <thead>
           {headerGroups.map((headerGroup) => (

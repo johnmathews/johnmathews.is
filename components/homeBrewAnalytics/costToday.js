@@ -56,7 +56,7 @@ const colorArray = [
 export default function CostToday({ fetcher, url }) {
   const { data, error } = useSWR(url, fetcher)
   if (error) return <div>failed to load</div>
-  if (!data) return <div>Views Today: loading...</div>
+  if (!data) return <div>Cost data is loading...</div>
 
   const dailyCosts = JSON.parse(data.daily_costs)
   const index = dailyCosts.index

@@ -5,7 +5,7 @@ import useSWR from "swr"
 export default function DailyCostsData({ fetcher, dailyCostsEndpoint }) {
   const { data, error } = useSWR(dailyCostsEndpoint, fetcher)
   if (error) return <div>failed to get data</div>
-  if (!data) return <div>Unique Users per Day: loading...</div>
+  if (!data) return <div>Daily cost data is loading...</div>
 
   const dailyCosts = JSON.parse(data.daily_costs)
 
