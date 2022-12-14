@@ -1,4 +1,6 @@
 const postDateTemplate = { year: "numeric", month: "short", day: "numeric" }
+
+import Link from "@/components/Link"
 import { useMemo } from "react"
 
 import siteMetadata from "@/data/siteMetadata"
@@ -42,7 +44,6 @@ export default function ViewsPageDayTable({ data }) {
           value = data[i][j]
           value = value.replaceAll("(", "[").replaceAll(")", "]").replaceAll("'", '"')
           value = JSON.parse(value)
-          console.log("--- debug value: ", value)
           dataRow["country_count"] = value
         }
       } else if (j === "views") {
@@ -51,6 +52,16 @@ export default function ViewsPageDayTable({ data }) {
       }
     }
     parsedData.push(dataRow)
+  }
+
+  const PageCellProcessor = ({ value, row: { index }, column: { id } }) => {
+    console.log("--- debug column: ", id)
+    return (
+      <Link href={value} className="hover:underline">
+        {" "}
+        {value}{" "}
+      </Link>
+    )
   }
 
   const columns = useMemo(() => [
@@ -66,6 +77,7 @@ export default function ViewsPageDayTable({ data }) {
       Header: "Page",
       id: "page",
       accessor: "page",
+      Cell: PageCellProcessor,
       // Cell method will provide the cell value; we pass it to render a custom component
       // Cell: ({ cell: { value } }) => <Genres values={value} />,
     },
