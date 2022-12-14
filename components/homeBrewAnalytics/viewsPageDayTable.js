@@ -6,20 +6,7 @@ import { useMemo } from "react"
 import siteMetadata from "@/data/siteMetadata"
 
 import Table from "@/components/homeBrewAnalytics/table"
-
-const Genres = ({ values }) => {
-  return (
-    <>
-      {values.map((genre, idx) => {
-        return (
-          <span key={idx} className="mx-1 rounded-xl border border-slate-800 bg-red-300 px-1 ">
-            {genre}
-          </span>
-        )
-      })}
-    </>
-  )
-}
+import LocationCountItem from "@/components/homeBrewAnalytics/locationCountItem"
 
 export default function ViewsPageDayTable({ data }) {
   // data should be an array of objects. each object is a row
@@ -55,13 +42,21 @@ export default function ViewsPageDayTable({ data }) {
   }
 
   const PageCellProcessor = ({ value, row: { index }, column: { id } }) => {
-    console.log("--- debug column: ", id)
     return (
       <Link href={value} className="hover:underline">
         {" "}
         {value}{" "}
       </Link>
     )
+  }
+
+  const LocationCellProcessor = ({ value }) => {
+    if (value == null) return <div></div>
+    const result = []
+    for (var z = 0; z < value.length; z++) {
+      result.push(<LocationCountItem value={value[z]} />)
+    }
+    return <div className="flex flex-shrink">{result} </div>
   }
 
   const columns = useMemo(() => [
@@ -90,6 +85,7 @@ export default function ViewsPageDayTable({ data }) {
       Header: "Location",
       id: "locatoin",
       accessor: "country_count",
+      Cell: LocationCellProcessor,
     },
   ])
 

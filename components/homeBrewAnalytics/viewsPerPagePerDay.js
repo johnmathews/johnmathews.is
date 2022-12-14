@@ -10,7 +10,5 @@ export default function ViewsPerPagePerDay({ fetcher, url }) {
   if (!data) return <div>Views Today: loading...</div>
 
   const daily_views = JSON.parse(data.views_per_page_per_day)
-  console.log("--- debug daily_views: ", daily_views)
-
   return <ViewsPageDayTable data={daily_views} />
 }
