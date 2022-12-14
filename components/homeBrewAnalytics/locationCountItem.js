@@ -11,9 +11,9 @@ export default function LocationCountItem({ value }) {
     <div
       key={key}
       title={value[0]}
-      className="mx-1 my-1 flex h-10 rounded-lg border-2 border-gray-300 px-2"
+      className="mx-1 my-1 flex rounded-lg border-2 border-gray-300 px-2"
     >
-      <Image className="mr-1" width={25} height={12} alt={value[0]} src={srcUrl} />
+      <Image className="mr-1" width="20" height="15" alt={value[0]} src={srcUrl} />
       <div>{value[1]}</div>
     </div>
   )
