@@ -56,7 +56,11 @@ export default function ViewsPageDayTable({ data }) {
     for (var z = 0; z < value.length; z++) {
       result.push(<LocationCountItem value={value[z]} />)
     }
-    return <div className="flex flex-shrink">{result} </div>
+    return (
+      <div key={value} className="flex flex-shrink">
+        {result}{" "}
+      </div>
+    )
   }
 
   const columns = useMemo(() => [

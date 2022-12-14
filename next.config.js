@@ -11,7 +11,7 @@ const ContentSecurityPolicy = `
   media-src 'none';
   connect-src *;
   font-src 'self' fonts.gstatic.com;
-  frame-src giscus.app www.youtube.com youtube.com ;
+  frame-src giscus.app www.youtube.com youtube.com flagscdn.com;
 `
 
 const securityHeaders = [
@@ -66,7 +66,7 @@ module.exports = withBundleAnalyzer({
       },
     ]
   },
-  images: { domains: ["picsum.photos"], formats: ["image/avif", "image/webp"] },
+  images: { domains: ["picsum.photos", "flagcdn.com"], formats: ["image/avif", "image/webp"] },
   webpack: (config, { dev, isServer }) => {
     config.module.rules.push({
       test: /\.svg$/,
