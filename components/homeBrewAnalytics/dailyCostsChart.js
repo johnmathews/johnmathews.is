@@ -19,7 +19,6 @@ const dateTemplate = { year: "numeric", month: "short", day: "numeric" }
 const dateTemplateXAxis = { year: "numeric", month: "short", day: "numeric" }
 
 const colorArray = [
-  "#FF6633",
   "#FFB399",
   "#FF33FF",
   "#FFFF99",
@@ -42,6 +41,7 @@ const colorArray = [
   "#66994D",
   "#B366CC",
   "#4D8000",
+  "#FF6633",
   "#B33300",
   "#CC80CC",
   "#66664D",
@@ -82,7 +82,7 @@ const CustomTooltip = ({ active, payload, label }) => {
           if (p.value == 0) {
             return null
           } else {
-            return <p>{`${p.dataKey}: ${p.value}`}</p>
+            return <p>{`${p.dataKey}: €${p.value}`}</p>
           }
         })}
       </div>
@@ -113,7 +113,13 @@ export default function UserInteractions({ data }) {
         >
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="date" reverses="true" />
-          <YAxis scale="log" domain={[0.005, "auto"]} allowDataOverflow orientation="right" />
+          <YAxis
+            scale="log"
+            label={{ value: "€", angle: -90, position: "right" }}
+            domain={[0.003, "auto"]}
+            allowDataOverflow
+            orientation="right"
+          />
           <Tooltip content={<CustomTooltip />} />
           {Object.keys(data[data.length - 1]).map((key) => {
             if (key != "date" && key != "index") {
