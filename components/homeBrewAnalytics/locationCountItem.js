@@ -23,9 +23,9 @@ export default function LocationCountItem({ value }) {
     <div
       key={key}
       title={countryName}
-      className="mx-1 grid h-7 grid-cols-2 place-content-center content-center gap-x-2 rounded-lg border-2 border-gray-300 py-1 px-2"
+      className="mx-1 grid grid-cols-2 place-content-center content-center gap-x-2 rounded-lg border-2 border-gray-300 py-1 px-2"
     >
-      <Image className="" width="20" height="15" alt={value[0]} src={srcUrl} />
+      <Image className="h-7" width="20" height="15" alt={value[0]} src={srcUrl} />
       <div className="">{value[1]}</div>
     </div>
   )
