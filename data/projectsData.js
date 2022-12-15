@@ -36,7 +36,7 @@ const projectsData = [
   {
     title: "Analysis of 5 cryptocurrencies",
     description: `Comparing the daily mean and median values of on-chain
-    transactons in order to quantify organic blockchain use.`,
+    transactions in order to quantify organic blockchain use.`,
     imgSrc: "/static/images/portfolio_thumbnails/btc-analysis.png",
     href: "/blog/btc-fork-analysis",
   },
