@@ -23,12 +23,10 @@ export default function LocationCountItem({ value }) {
     <div
       key={key}
       title={countryName}
-      className="mx-1 flex h-8 rounded-lg border-2 border-gray-300 py-1 px-1"
+      className="mx-1 grid grid-cols-2 place-content-center content-center gap-x-2 rounded-lg border-2 border-gray-300 py-1 px-2"
     >
-      <div className="mr-1 h-7">
-        <Image className="leading-none" width="20" height="15" alt={value[0]} src={srcUrl} />
-      </div>
-      <div className="pt-1 leading-none">{value[1]}</div>
+      <Image className="" width="20" height="15" alt={value[0]} src={srcUrl} />
+      <div className="">{value[1]}</div>
     </div>
   )
 }
