@@ -7,8 +7,8 @@ function getRandomInt() {
 
 export default function LocationCountItem({ value }) {
   const key = `${value[0]}_${getRandomInt()}`
-  const srcUrl = `https://flagcdn.com/20x15/${value[0].toLowerCase()}.png`
-  // const srcUrl = "/static/images/landing/test-image.jpeg"
+  // const srcUrl = `https://flagcdn.com/20x15/${value[0].toLowerCase()}.png`
+  const srcUrl = "/static/images/landing/test-image.jpeg"
 
   const fetcher = (...args) => fetch(...args).then((res) => res.json())
   const countryInfoEndpoint = `https://restcountries.com/v3.1/alpha/${value[0]}`
