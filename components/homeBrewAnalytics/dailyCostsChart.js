@@ -75,6 +75,7 @@ const CustomTooltip = ({ active, payload, label }) => {
   if (active && payload && payload.length) {
     const date = new Date(label)
     const formattedDate = date.toLocaleDateString(siteMetadata.locale, dateTemplate)
+    var totalCost = 0.0
     return (
       <div className="custom-tooltip border-2 bg-blue-600 p-3 text-gray-100">
         <p className="date font-bold">{`${formattedDate}`}</p>
@@ -82,9 +83,11 @@ const CustomTooltip = ({ active, payload, label }) => {
           if (p.value == 0) {
             return null
           } else {
+            totalCost += p.value
             return <p>{`${p.dataKey}: €${p.value}`}</p>
           }
         })}
+        <p>{`Total: €${totalCost}`}</p>
       </div>
     )
   }
