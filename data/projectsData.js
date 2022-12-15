@@ -1,5 +1,12 @@
 const projectsData = [
   {
+    title: "Lettergun.com",
+    description: `A service to create hand-written letters using robots and an LSTM neural
+    network. The product is built using a Python stack; Tensorflow, Django, and GCP.`,
+    imgSrc: "/static/images/portfolio_thumbnails/lettergun.png",
+    href: "https://python-blog.johnmathews.is/traffic.html",
+  },
+  {
     title: "Custom web analytics",
     description: `A custom analytics back-end and front-end for this website,
     built using GCP (Cloud Functions, Pub/Sub, BigQuery) and React.`,
@@ -12,6 +19,13 @@ const projectsData = [
     a crypto trading company.`,
     imgSrc: "/static/images/order-book.gif",
     href: "/blog/stoic-interview-technical-exercise",
+  },
+  {
+    title: "Machine Vision: Traffic Light Recognition",
+    description: `An image recognition app to identify and label traffic lights
+    using the Azure Custom Vision API. You can upload and test your owm images.`,
+    imgSrc: "/static/images/traffic_lights/thumbnail.png",
+    href: "https://python-blog.johnmathews.is/traffic.html",
   },
   {
     title: "Modelling credit risk",
