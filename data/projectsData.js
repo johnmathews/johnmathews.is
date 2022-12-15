@@ -1,19 +1,51 @@
 const projectsData = [
   {
-    title: "A Search Engine",
-    description: `What if you could look up any information in the world? Webpages, images, videos
-    and more. Google has many features to help you find exactly what you're looking
-    for.`,
-    imgSrc: "/static/images/google.png",
-    href: "https://www.google.com",
+    title: "Custom web analytics",
+    description: `A custom analytics back-end and front-end for this website,
+    built using GCP (Cloud Functions, Pub/Sub, BigQuery) and React.`,
+    imgSrc: "/static/images/portfolio_thumbnails/analytics.jpg",
+    href: "/metrics",
   },
   {
-    title: "The Time Machine",
-    description: `Imagine being able to travel back in time or to the future. Simple turn the knob
-    to the desired date and press "Go". No more worrying about lost keys or
-    forgotten headphones with this simple yet affordable solution.`,
-    imgSrc: "/static/images/time-machine.jpg",
-    href: "/blog/the-time-machine",
+    title: "Interface for order-book data",
+    description: `A technical exercise I worked on as part of an interview for
+    a crypto trading company.`,
+    imgSrc: "/static/images/order-book.gif",
+    href: "/blog/stoic-interview-technical-exercise",
+  },
+  {
+    title: "Modelling credit risk",
+    description: `Use logistic regression to model credit risk`,
+    imgSrc: "/static/images/credit-risk.webp",
+    href: "/blog/data-exploration-exercise",
+  },
+  {
+    title: "Analysis of 5 cryptocurrencies",
+    description: `Comparing the daily mean and median values of on-chain
+    transactons in order to quantify organic blockchain use.`,
+    imgSrc: "/static/images/portfolio_thumbnails/btc-analysis.png",
+    href: "/blog/btc-fork-analysis",
+  },
+  {
+    title: "Blockchains 101",
+    description: `An introduction to the main components of a blockchain, with
+    examples.`,
+    imgSrc: "/static/images/portfolio_thumbnails/blockchain.png",
+    href: "/blog/blockchain-introduction",
+  },
+  {
+    title: "Automated reconciliation of a General Ledger and Trial Balance",
+    description: `A script to reconcile a GL and TB automatically. The example
+    uses mocked data.`,
+    imgSrc: "/static/images/portfolio_thumbnails/coins.jpg",
+    href: "/blog/reconciliation",
+  },
+  {
+    title: "Doctorate Research - Silos and granular flows",
+    description: `A brief overview of my work investigation silos and granular
+    flows in increased gravitational fields.`,
+    imgSrc: "/static/images/portfolio_thumbnails/silo_piv.jpeg",
+    href: "/blog/silos",
   },
 ]
 

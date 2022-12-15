@@ -83,6 +83,6 @@
   @apply font-mono text-lg text-gray-800 dark:text-gray-200 !important;
 }
 
-#notebookWrapper .p code {
-  @apply bg-red-600 dark:bg-red-600 !important;
+#notebookWrapper code {
+  @apply bg-slate-200 text-gray-800 dark:bg-slate-700 dark:text-gray-200 !important;
 }
