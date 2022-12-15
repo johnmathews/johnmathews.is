@@ -100,7 +100,7 @@ export default function Table({ columns, data, isPaginated = true }) {
           <div id="nextPrevButtons">
             {canPreviousPage ? (
               <div id="backButton" onClick={() => previousPage()}>
-                Back
+                Previous
               </div>
             ) : null}
             {canNextPage ? (
