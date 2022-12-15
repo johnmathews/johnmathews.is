@@ -40,14 +40,9 @@ export default function Table({ columns, data, isPaginated = true }) {
             desc: true,
           },
         ],
-        initialState: {
-          pageIndex: 0,
-          pageSize: 25,
-          hiddenColumns: columns.filter((column) => !column.show).map((column) => column.id),
-        },
+        pageIndex: 0,
+        pageSize: 12,
         manualPagination: true,
-        manualSortBy: true,
-        autoResetPage: false,
       },
     },
     useFilters,
@@ -56,7 +51,15 @@ export default function Table({ columns, data, isPaginated = true }) {
   )
   return (
     <>
-      <input value={filterInput} onChange={handleFilterChange} placeholder={"Page Name"} />
+      <div className="flex justify-between align-middle">
+        <div> Page Views</div>
+        <input
+          className="mr-0 rounded-sm border border-gray-700 dark:border-gray-500 "
+          value={filterInput}
+          onChange={handleFilterChange}
+          placeholder={"Page (search)"}
+        />
+      </div>
       <table {...getTableProps()}>
         <thead>
           {headerGroups.map((headerGroup) => (

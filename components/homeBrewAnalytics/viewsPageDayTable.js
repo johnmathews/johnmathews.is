@@ -84,6 +84,7 @@ export default function ViewsPageDayTable({ data }) {
       Header: "Views",
       id: "views",
       accessor: "views",
+      sortType: "basic",
     },
     {
       Header: "Location",
