@@ -20,6 +20,7 @@ import siteMetadata from "@/data/siteMetadata"
 // import Analytics from "@/components/analytics"
 import { Analytics } from "@vercel/analytics/react"
 import LayoutWrapper from "@/components/LayoutWrapper"
+import Modal from "@/components/Modal"
 import ContextProvider from "@/components/ContextProvider"
 import { ClientReload } from "@/components/ClientReload"
 
@@ -53,6 +54,7 @@ export default function App({ Component, pageProps }) {
         {isDevelopment && isSocket && <ClientReload />}
         <Analytics />
         <Component {...pageProps} />
+        <Modal />
         <KeyboardShortcuts />
       </ThemeProvider>
     )
@@ -67,6 +69,7 @@ export default function App({ Component, pageProps }) {
         <Analytics />
         <ContextProvider>
           <LayoutWrapper>
+            <Modal />
             <Component {...pageProps} />
           </LayoutWrapper>
         </ContextProvider>
@@ -84,6 +87,7 @@ export default function App({ Component, pageProps }) {
         <Analytics />
         <ContextProvider>
           <LayoutWrapper>
+            <Modal />
             <Component {...pageProps} />
           </LayoutWrapper>
         </ContextProvider>

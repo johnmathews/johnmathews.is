@@ -18,7 +18,7 @@ function simulateMouseClick(element) {
 
 // https://www.google.com/search?client=firefox-b-d&q=react+map+key+to+arrow+up
 // https://stackoverflow.com/questions/42036865/react-how-to-navigate-through-list-by-arrow-keys
-// THIS SEEMS HALF DONE NOTE WORKING NOT FINISHED TODO
+// THIS SEEMS HALF DONE NOT WORKING NOT FINISHED TODO
 function downArrow() {
   const event = new KeyboardEvent("keypress", {
     key: "ArrowDown",
@@ -35,6 +35,10 @@ function clientEventLogger(pathname, data) {
 
 const KeyboardShortcuts = () => {
   const router = useRouter()
+
+  useMousetrap("?", (e) => {
+    const modal = document.getElementById("exampleModal")
+  })
 
   // https://www.anycodings.com/1questions/5494275/focusing-input-field-with-mousetrapjs-but-input-field-also-pastes-the-hotkey-as-value
   useMousetrap("command+k", (e) => {
