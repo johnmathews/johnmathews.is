@@ -12,14 +12,13 @@ export default function Table({ columns, data, isPaginated = true }) {
     setFilterInput(value)
   }
 
-  // Use the useTable Hook to send the columns and data to build the table
   const {
-    getTableProps, // table props from react-table
-    getTableBodyProps, // table body props from react-table
-    headerGroups, // headerGroups, if your table has groupings
+    getTableProps,
+    getTableBodyProps,
+    headerGroups,
     page,
-    prepareRow, // Prepare the row (this function needs to be called for each row before getting the row props)
-    setFilter, // The useFilter Hook provides a way to set the filter
+    prepareRow,
+    setFilter,
     canPreviousPage,
     canNextPage,
     pageOptions,
