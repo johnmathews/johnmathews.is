@@ -57,7 +57,7 @@ export default function Table({ columns, data, isPaginated = true }) {
           className="mr-0 rounded-sm border border-gray-700 dark:border-gray-500 "
           value={filterInput}
           onChange={handleFilterChange}
-          placeholder={"Page (search)"}
+          placeholder={" Page name filter"}
         />
       </div>
       <table {...getTableProps()}>
