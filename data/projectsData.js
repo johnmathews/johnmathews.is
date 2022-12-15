@@ -4,7 +4,7 @@ const projectsData = [
     description: `A service to create hand-written letters using robots and an LSTM neural
     network. The product is built using a Python stack; Tensorflow, Django, and GCP.`,
     imgSrc: "/static/images/portfolio_thumbnails/lettergun.png",
-    href: "https://python-blog.johnmathews.is/traffic.html",
+    href: "https://lettergun.com",
   },
   {
     title: "Custom web analytics",
