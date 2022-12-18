@@ -1,0 +1,47 @@
+---
+title: A new blog
+date: "2022-12-18"
+tags: ["blog", "js", "ssg"]
+draft: false
+summary: This blog is now built using Next.js
+images: []
+---
+
+Previously I'd been using Pelican, a Static Site Generator written in Python
+that uses Jinja templates. It was accessible and had all the functionality I
+needed, but as the amount of blog content grew it became very slow to render the
+content and make deployments. It was sow enough to discourage me from making
+fast or care-free edits, and I knew it would impact the way I used the site. And
+I knew it would only get worse.
+
+So I took the plunge and committed to using a more performant static site
+generator. I started by looking at this [list](https://jamstack.org/generators/)
+on jamstack.org, and thought that Hugo would be a good choice.
+
+Hugo would be great, but I'm JavaScript is everywhere, and
+apparently so is React. It was really awkward not being comfortable with modern
+JavaScript
+
+It was this [firebase video](https://youtu.be/SJeBRW1QQMA) that convinced me to commit to
+React and Next.js.
+
+It was a much larger undertaking than I expected, partly because I wanted to bring across
+all the functionality from the Python site - state management, dark mode, keyboard shortcuts, search, custom web
+analytics, the snippets page, the collections, embedding YouTube videos using
+MDMX...
+
+None of these features are novel or groundbreaking, it just requires a level of proficiency
+that isn't trivial, and that I didn't have.
+
+Converting all the blog posts also took a long time. The frontmatter had to be
+converted to yaml, and timestamps, tags and categories had to be formatted
+correctly. I also needed to change how iframes (mostly youtube videos) were
+embedded in blog posts.
+
+Converting Jupyter Notebooks to blog posts was also a mini project. State
+management across components, not just passing state to children, took a
+while to figure out.
+
+I now have something that will hopefully remain usable and fun-to-use for a
+long time. React doesn't seem like its going anywhere soon. Maybe (just maybe)
+this will be the last front-end web framework I decide to learn. Ha.
