@@ -80,7 +80,7 @@ const MobileNav = () => {
             </svg>
           </button>
         </div>
-        <nav id="mobileNavLinks" className="fixed mt-8 h-full">
+        <nav id="mobileNavLinks" className="fixed mt-0 h-full">
           <div className="px-12 py-4">
             <ThemeSwitch />
           </div>
