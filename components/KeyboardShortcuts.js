@@ -1,4 +1,9 @@
+import { useState } from "react"
+import { useContext } from "react"
+import { AppContext } from "@/components/ContextProvider"
+
 import useMousetrap from "mousetrap-react"
+
 // import { useNavigate } from 'react-router-dom';
 import { useRouter } from "next/router"
 
@@ -35,9 +40,19 @@ function clientEventLogger(pathname, data) {
 
 const KeyboardShortcuts = () => {
   const router = useRouter()
+  const [_, dispatch] = useContext(AppContext)
 
-  useMousetrap("?", (e) => {
-    const modal = document.getElementById("exampleModal")
+  function TOGGLE_MODAL() {
+    dispatch({
+      type: "MODAL",
+    })
+  }
+
+  useMousetrap("?", () => {
+    TOGGLE_MODAL()
+  })
+  useMousetrap("esc", () => {
+    TOGGLE_MODAL()
   })
 
   // https://www.anycodings.com/1questions/5494275/focusing-input-field-with-mousetrapjs-but-input-field-also-pastes-the-hotkey-as-value

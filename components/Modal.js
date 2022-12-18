@@ -1,48 +1,39 @@
-export default function Modal() {
+import { useContext } from "react"
+import { AppContext } from "@/components/ContextProvider"
+
+import keyboardShortcutsMenuItems from "@/data/keyboardShortcutsMenuItems"
+
+const Modal = () => {
+  const [state, _] = useContext(AppContext)
+  const bgOpacity = "rgba(128,128,128,0.25)"
+  var show = state.showModal
   return (
     <>
-      <div
-        className="modal fade fixed top-0 left-0 hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
-        id="exampleModal"
-        tabIndex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div className="modal-dialog pointer-events-none relative w-auto">
-          <div className="modal-content pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-white bg-clip-padding text-current shadow-lg outline-none">
-            <div className="modal-header flex flex-shrink-0 items-center justify-between rounded-t-md border-b border-gray-200 p-4">
-              <h5
-                className="text-xl font-medium leading-normal text-gray-800"
-                id="exampleModalLabel"
-              >
-                Modal title
-              </h5>
-              <button
-                type="button"
-                className="btn-close box-content h-4 w-4 rounded-none border-none p-1 text-black opacity-50 hover:text-black hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
+      {show ? (
+        <div
+          id="keyboardShortcutsModalincludingBackground"
+          style={{ backgroundColor: bgOpacity }}
+          className="absolute top-0 left-0 flex h-screen w-full items-center bg-gray-100 "
+        >
+          <div
+            id="centralBox"
+            className="mx-auto grid grid-cols-2 gap-x-20 gap-y-2 rounded-lg border-2 border-slate-800 bg-slate-200 p-12"
+          >
+            <div className="col-span-2 mx-auto mb-8 text-2xl font-semibold text-gray-800">
+              Keyboard Shortcuts
             </div>
-            <div className="modal-body relative p-4">Modal body text goes here.</div>
-            <div className="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end rounded-b-md border-t border-gray-200 p-4">
-              <button
-                type="button"
-                className="rounded bg-purple-600 px-6 py-2.5 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-purple-700 hover:shadow-lg focus:bg-purple-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-purple-800 active:shadow-lg"
-                data-bs-dismiss="modal"
-              >
-                Close
-              </button>
-              <button
-                type="button"
-                className="ml-1 rounded bg-blue-600 px-6 py-2.5 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg"
-              >
-                Save changes
-              </button>
-            </div>
+
+            {keyboardShortcutsMenuItems.map((item) => (
+              <div key={item.item} className="flex text-gray-800">
+                <div className="mr-2  rounded-lg border-2 bg-gray-400 px-2 ">{item.item}</div>
+                <span>{item.description}</span>
+              </div>
+            ))}
           </div>
         </div>
-      </div>{" "}
+      ) : null}
     </>
   )
 }
+
+export default Modal

@@ -5,8 +5,6 @@ import { AppContext } from "@/components/ContextProvider"
 
 import formatDate from "@/lib/utils/formatDate"
 
-// className={`text-normal my-5 hover:underline lg:my-3  ${categoryTypes.toString()} ${isTechnical? 'hidden' : null}`}
-
 const PostsInYear = ({ year, posts }) => {
   const [state, _] = useContext(AppContext)
   return posts[year].map((post) => {

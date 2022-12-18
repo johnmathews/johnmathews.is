@@ -6,6 +6,9 @@ import "@/css/analytics.css"
 import "@/css/algolia.css"
 import "katex/dist/katex.css"
 
+import { useContext } from "react"
+import { AppContext } from "@/components/ContextProvider"
+
 // state management in React and Next.js
 // https://www.smashingmagazine.com/2021/08/state-management-nextjs/
 
@@ -53,9 +56,11 @@ export default function App({ Component, pageProps }) {
         </Head>
         {isDevelopment && isSocket && <ClientReload />}
         <Analytics />
-        <Component {...pageProps} />
-        <Modal />
-        <KeyboardShortcuts />
+        <ContextProvider>
+          <Component {...pageProps} />
+          <Modal />
+          <KeyboardShortcuts />
+        </ContextProvider>
       </ThemeProvider>
     )
   } else if (router.query.slug !== undefined) {
@@ -69,11 +74,11 @@ export default function App({ Component, pageProps }) {
         <Analytics />
         <ContextProvider>
           <LayoutWrapper>
-            <Modal />
             <Component {...pageProps} />
           </LayoutWrapper>
+          <Modal />
+          <KeyboardShortcuts />
         </ContextProvider>
-        <KeyboardShortcuts />
       </ThemeProvider>
     )
   } else {
@@ -87,11 +92,11 @@ export default function App({ Component, pageProps }) {
         <Analytics />
         <ContextProvider>
           <LayoutWrapper>
-            <Modal />
             <Component {...pageProps} />
           </LayoutWrapper>
+          <Modal />
+          <KeyboardShortcuts />
         </ContextProvider>
-        <KeyboardShortcuts />
       </ThemeProvider>
     )
   }

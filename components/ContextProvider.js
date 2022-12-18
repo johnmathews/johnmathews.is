@@ -22,6 +22,7 @@ const initialState = {
   technical: true,
   nonTechnical: true,
   postMetaData: placeHolderPostMetaData,
+  showModal: false,
 }
 
 export default function ContextProvider(props) {
