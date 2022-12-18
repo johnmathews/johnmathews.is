@@ -1,6 +1,6 @@
 const menuItems = [
-  { item: "?", description: "Toggle keynoard shortcuts" },
-  { item: "esc", description: "Toggle keynoard shortcuts" },
+  { item: "?", description: "Toggle keyboard shortcuts" },
+  { item: "esc", description: "Toggle keyboard shortcuts" },
   { item: "cmd+k", description: "Search" },
   { item: "tt", description: "Toggle dark mode" },
   { item: "va", description: "Show all blog posts" },
