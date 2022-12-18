@@ -53,10 +53,7 @@ const KeyboardShortcuts = () => {
     })
   }
 
-  useMousetrap("?", () => {
-    TOGGLE_MODAL()
-  })
-  useMousetrap("esc", () => {
+  useMousetrap(["?", "esc", "q"], () => {
     TOGGLE_MODAL()
   })
 
