@@ -6,13 +6,15 @@ from datetime import datetime
 TEMPLATE = """
 ---
 title: {title}
+draft: false
 date: "{year}-{month}-{day} {hour}:{minute:02d}"
 category:
 tags:
-draft: false
 image:
 summary:
 ---
+
+
 """
 
 def make_entry(title):
