@@ -6,11 +6,11 @@ from datetime import datetime
 TEMPLATE = """
 ---
 title: {title}
-draft: false
+draft: true
 date: "{year}-{month}-{day} {hour}:{minute:02d}"
 category:
-tags:
-image:
+tags: []
+image: ""
 summary:
 ---
 
@@ -24,7 +24,6 @@ def make_entry(title):
     f_create = "data/blog/{}.mdx".format(slug)
     t = TEMPLATE.strip().format(
         title=title,
-        hashes='#' * len(title),
         year=today.year,
         month=today.month,
         day=today.day,
