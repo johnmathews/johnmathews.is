@@ -4,18 +4,22 @@ import sys
 from datetime import datetime
 
 TEMPLATE = """
-Title: {title}
-Date: {year}-{month}-{day} {hour}:{minute:02d}
-Category:
-Tags:
+---
+title: {title}
+date: "{year}-{month}-{day} {hour}:{minute:02d}"
+category:
+tags:
+draft: false
+image:
+summary:
+---
 """
-
 
 def make_entry(title):
     title = title.replace('_', ' ').title()
     today = datetime.today()
     slug = title.lower().strip().replace(' ', '-')
-    f_create = "content/articles/{}.md".format(slug)
+    f_create = "data/blog/{}.mdx".format(slug)
     t = TEMPLATE.strip().format(
         title=title,
         hashes='#' * len(title),
