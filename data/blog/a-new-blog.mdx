@@ -4,44 +4,64 @@ date: "2022-12-18"
 tags: ["blog", "js", "ssg"]
 draft: false
 summary: This blog is now built using Next.js
+category: Technical.Web
 images: []
 ---
 
-Previously I'd been using Pelican, a Static Site Generator written in Python
-that uses Jinja templates. It was accessible and had all the functionality I
-needed, but as the amount of blog content grew it became very slow to render the
-content and make deployments. It was sow enough to discourage me from making
-fast or care-free edits, and I knew it would impact the way I used the site. And
-I knew it would only get worse.
+## Background
+
+Previously, I'd been building this blog using Pelican, a Static Site Generator
+written in Python that uses Jinja templates. It's accessible and has all the
+functionality I needed, but as the amount of blog content has grown it has
+become slow and cumbersome.
+
+Waiting for edits to a blog post had become slow enough to discourage me from
+making care-free edits, and I knew it would impact the way I used the site. And
+it would only get worse as the amount of content increased.
 
 So I took the plunge and committed to using a more performant static site
-generator. I started by looking at this [list](https://jamstack.org/generators/)
-on jamstack.org, and thought that Hugo would be a good choice.
+generator. I started by looking at [this list](https://jamstack.org/generators/)
+on jamstack.org, and thought that [Hugo](https://gohugo.io/) would be a good choice.
 
-Hugo would be great, but I'm JavaScript is everywhere, and
-apparently so is React. It was really awkward not being comfortable with modern
-JavaScript
+Hugo would be great, but JavaScript is everywhere, and apparently so is React.
+Being unfamiliar with modern JavaScript web frameworks felt increasingly like an
+obstacle I had to work hard to avoid, and I know those kind of feelings are bad for
+creativity and happy coincidence.
 
 It was this [firebase video](https://youtu.be/SJeBRW1QQMA) that convinced me to commit to
-React and Next.js.
+React and Next.js, rather than some other framework, or meta-framework, like
+[Vue](https://vuejs.org/), or [Nuxt](https://nuxtjs.org/). Nuxt might be
+simpler, but if you're only going to be familiar with one framework, you might
+as well make it React. It is the de facto standard.
 
-It was a much larger undertaking than I expected, partly because I wanted to bring across
-all the functionality from the Python site - state management, dark mode, keyboard shortcuts, search, custom web
-analytics, the snippets page, the collections, embedding YouTube videos using
-MDMX...
+## Conversion
 
-None of these features are novel or groundbreaking, it just requires a level of proficiency
-that isn't trivial, and that I didn't have.
+Converting the [old blog](https://python-blog.johnmathews.is) to Next.js was a
+much larger undertaking than I expected, partly because I needed to convert the
+markdown files containing the post data, but mostly because I wanted to bring
+across all the functionality from the Python site:
 
-Converting all the blog posts also took a long time. The frontmatter had to be
+- state management,
+- dark theme,
+- keyboard shortcuts,
+- search,
+- custom web analytics,
+- the snippets page,
+- the collections,
+- embedding YouTube videos, or other content using MDMX
+
+None of these features are novel or groundbreaking, it just requires a level of
+proficiency that isn't trivial, and that I didn't have.
+
+Converting all the blog posts took a long time because the frontmatter had to be
 converted to yaml, and timestamps, tags and categories had to be formatted
 correctly. I also needed to change how iframes (mostly youtube videos) were
 embedded in blog posts.
 
-Converting Jupyter Notebooks to blog posts was also a mini project. State
+Converting Jupyter Notebooks to blog posts was another mini project. State
 management across components, not just passing state to children, took a
-while to figure out.
+while to figure out. Grokking react is not trivial.
 
-I now have something that will hopefully remain usable and fun-to-use for a
+I now have something that will hopefully remain performant and fun-to-use for a
 long time. React doesn't seem like its going anywhere soon. Maybe (just maybe)
 this will be the last front-end web framework I decide to learn. Ha.
