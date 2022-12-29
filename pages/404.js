@@ -13,19 +13,16 @@ export default function FourZeroFour() {
           </h1>
         </div>
         <div className="max-w-md">
-          <p className="mb-4 text-xl font-bold leading-normal md:text-2xl">
-            Sorry we couldn't find this page.
-          </p>
-          <p className="my-2">
+          <p className="mb-4 text-xl font-bold leading-normal md:text-2xl">Page not found.</p>
+          <p className="my-3">
             If you're looking for a page that used to exist, or have followed an old link, its
             probably moved.
           </p>
-          <p className="my-3"> Try searching for it.</p>
-          <span className="my-2 flex">
-            Search:{" "}
+          <span className="my-3 flex">
+            <p className=""> Try searching for it:</p>
             <pre className="ml-2 rounded-md border bg-slate-300 px-2 dark:bg-gray-600">cmd - k</pre>
           </span>
-          <span className="my-2 flex">
+          <span className="my-3 flex">
             Keyboard shortcuts:{" "}
             <pre className="ml-2 rounded-md border bg-slate-300 px-2 dark:bg-gray-600">?</pre>
           </span>
