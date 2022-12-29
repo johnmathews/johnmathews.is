@@ -14,10 +14,6 @@ export default function FourZeroFour() {
         </div>
         <div className="max-w-md">
           <p className="mb-4 text-xl font-bold leading-normal md:text-2xl">Page not found.</p>
-          <p className="my-3">
-            If you're looking for a page that used to exist, or have followed an old link, its
-            probably moved.
-          </p>
           <span className="my-3 flex">
             <p className=""> Try searching for it:</p>
             <pre className="ml-2 rounded-md border bg-slate-300 px-2 dark:bg-gray-600">cmd - k</pre>
