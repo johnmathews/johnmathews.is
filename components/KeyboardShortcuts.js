@@ -25,7 +25,7 @@ function simulateMouseClick(element) {
 // https://stackoverflow.com/questions/42036865/react-how-to-navigate-through-list-by-arrow-keys
 // THIS SEEMS HALF DONE NOT WORKING NOT FINISHED TODO
 function downArrow() {
-  const event = new KeyboardEvent("keypress", {
+  new KeyboardEvent("keypress", {
     key: "ArrowDown",
   })
 
@@ -40,7 +40,7 @@ function clientEventLogger(pathname, data) {
 
 const KeyboardShortcuts = () => {
   const router = useRouter()
-  const [_, dispatch] = useContext(AppContext)
+  const [state, dispatch] = useContext(AppContext)
 
   function TOGGLE_MODAL() {
     dispatch({
@@ -48,9 +48,11 @@ const KeyboardShortcuts = () => {
     })
   }
   function HIDE_MODAL() {
-    dispatch({
-      type: "HIDE_MODAL",
-    })
+    if (state.showModal) {
+      dispatch({
+        type: "HIDE_MODAL",
+      })
+    }
   }
 
   useMousetrap(["?", "esc", "q"], () => {

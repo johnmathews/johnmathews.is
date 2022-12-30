@@ -6,9 +6,6 @@ import "@/css/analytics.css"
 import "@/css/algolia.css"
 import "katex/dist/katex.css"
 
-import { useContext } from "react"
-import { AppContext } from "@/components/ContextProvider"
-
 // state management in React and Next.js
 // https://www.smashingmagazine.com/2021/08/state-management-nextjs/
 
