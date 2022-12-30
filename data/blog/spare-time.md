@@ -106,7 +106,7 @@ forgetting. Here's a break down of each item:
     fiction would be essential for exploring these. But for now, I'll prioritise
     point 3.
 
-    <IframeEmbed src='https://read.amazon.co.uk/kp/card?asin=B00796LLLK&amp;asin=B00796LLLK&amp;preview=inline&amp;linkCode=kpe&amp;ref_=cm_sw_r_kb_dp_GP2Rxb3Q8MYC4' />
+    <IframeEmbed src='https://read.amazon.com/kp/embed?asin=B00796LLLK&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_P95V8WRVHVKAEB6QTK1H' type="amazon"/>
 
 10. "Do a photography project" - This I would love to do, but probably won't.
     It would be a luxury, and the opportunity cost would be too great right

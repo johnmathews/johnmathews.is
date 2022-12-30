@@ -1,33 +1,33 @@
 ---
 title: A new blog
 date: "2022-12-18"
-tags: ["blog", "js", "ssg"]
 draft: false
-summary: This blog is now built using Next.js
+tags: ["blog", "js", "ssg"]
 category: Technical.Web
 images: []
+summary: This blog is now built using Next.js
 ---
 
 ## Background
 
-Previously, I'd been building this blog using Pelican, a Static Site Generator
+Until now this blog has been rendered using Pelican, a Static Site Generator
 written in Python that uses Jinja templates. It's accessible and has all the
 functionality I needed, but as the amount of blog content has grown it has
 become slow and cumbersome.
 
 Waiting for edits to a blog post had become slow enough to discourage me from
-making care-free edits, and I knew it would impact the way I used the site. And
-it would only get worse as the amount of content increased.
+making changes or creating content quickly. This would change the way I used
+the site, and it would only get worse as the amount of content increased.
 
-So I took the plunge and committed to using a more performant static site
-generator. I started by looking at [this list](https://jamstack.org/generators/)
-on jamstack.org, and thought that [Hugo](https://gohugo.io/) would be a good
-choice.
+I started looking for a more performant static site generator by looking at
+[this list](https://jamstack.org/generators/) on jamstack.org, and thought that
+[Hugo](https://gohugo.io/) would be a good choice.
 
-Hugo would be great, but JavaScript is everywhere, and apparently so is React.
-Being unfamiliar with modern JavaScript web frameworks felt increasingly like an
-obstacle I had to work hard to avoid, and I know those kind of feelings are bad
-for creativity and happy coincidence.
+But then I got to thinking how JavaScript is everywhere, and anything that I
+spend time learning needs to have multiple benefits. Hugo would teach me some
+Go, but that hasn't been necessary yet. JavaScript on the other hand is
+everywhere, and I seem to increasingly be having to work hard to avoid learning
+it. React seems to have become a de-facto framework.
 
 It was this [firebase video](https://youtu.be/SJeBRW1QQMA) that convinced me to
 commit to React and Next.js, rather than some other framework, or
@@ -38,7 +38,7 @@ framework, you might as well make it React. It is the de facto standard.
 ## Conversion
 
 Converting the [old blog](https://python-blog.johnmathews.is) to Next.js was a
-much larger undertaking than I expected, partly because I needed to convert the
+much larger undertaking than expected. Partly because I needed to convert the
 markdown files containing the post data, but mostly because I wanted to bring
 across all the functionality from the Python site:
 
