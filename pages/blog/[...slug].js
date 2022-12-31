@@ -80,6 +80,7 @@ export default function Blog({ post, authorDetails, prev, next }) {
   postMetaData.next = next
 
   const router = useRouter()
+
   useEffect(() => {
     dispatch({
       type: "BLOG_POST",
