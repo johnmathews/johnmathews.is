@@ -1,10 +1,8 @@
-import { useState } from "react"
 import { useContext } from "react"
 import { AppContext } from "@/components/ContextProvider"
 
 import useMousetrap from "mousetrap-react"
 
-// import { useNavigate } from 'react-router-dom';
 import { useRouter } from "next/router"
 
 const mouseClickEvents = ["click"]

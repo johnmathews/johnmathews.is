@@ -73,7 +73,6 @@ export async function getStaticProps({ params }) {
 export default function Blog({ post, authorDetails, prev, next }) {
   const { mdxSource, toc, frontMatter } = post
   const { date, category, image } = frontMatter
-  const postDateTemplate = { year: "numeric", month: "long" }
 
   const [state, dispatch] = useContext(AppContext)
   const postMetaData = frontMatter
