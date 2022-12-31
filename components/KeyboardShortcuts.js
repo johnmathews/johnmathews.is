@@ -76,6 +76,21 @@ const KeyboardShortcuts = () => {
     }
   })
 
+  useMousetrap("n p", () => {
+    let data = JSON.stringify({ category: "keyboard-shortcut", event: "np" })
+    clientEventLogger(router.asPath, data)
+    let nextPostButton = document.querySelector("#nextPost")
+    simulateMouseClick(nextPostButton)
+    HIDE_MODAL()
+  })
+  useMousetrap("p p", () => {
+    let data = JSON.stringify({ category: "keyboard-shortcut", event: "pp" })
+    clientEventLogger(router.asPath, data)
+    let prevPostButton = document.querySelector("#previousPost")
+    simulateMouseClick(prevPostButton)
+    HIDE_MODAL()
+  })
+
   useMousetrap("v a", () => {
     let data = JSON.stringify({ category: "keyboard-shortcut", event: "va" })
     clientEventLogger(router.asPath, data)
@@ -188,7 +203,7 @@ const KeyboardShortcuts = () => {
     HIDE_MODAL()
   })
 
-  useMousetrap("g p", () => {
+  useMousetrap("g j", () => {
     let data = JSON.stringify({ category: "keyboard-shortcut", event: "gp" })
     clientEventLogger(router.asPath, data)
     router.push("/projects")

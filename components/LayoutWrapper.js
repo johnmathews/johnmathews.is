@@ -127,7 +127,7 @@ const LayoutWrapper = ({ children }) => {
             {(postMetaData.next || postMetaData.prev) && (
               <div className="mt-3 mb-3 flex w-44 flex-col justify-between text-gray-900 dark:text-gray-100 lg:block">
                 {postMetaData.prev && (
-                  <div id="previousPost" className="mb-3">
+                  <div className="mb-3">
                     <div className="mb-1"> Previous: </div>
                     <div className="line-clamp-2 hover:underline">
                       <Link id="previousPost" href={`/blog/${postMetaData.prev.slug}`}>
@@ -137,7 +137,7 @@ const LayoutWrapper = ({ children }) => {
                   </div>
                 )}
                 {postMetaData.next && (
-                  <div id="nextPost" className="mb-3">
+                  <div className="mb-3">
                     <div className="mb-1"> Next: </div>
                     <div className="line-clamp-2 hover:underline">
                       <Link id="nextPost" href={`/blog/${postMetaData.next.slug}`}>
