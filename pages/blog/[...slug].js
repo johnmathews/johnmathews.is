@@ -72,9 +72,9 @@ export async function getStaticProps({ params }) {
 
 export default function Blog({ post, authorDetails, prev, next }) {
   const { mdxSource, toc, frontMatter } = post
-  const { date, category, image } = frontMatter
+  const { image } = frontMatter
 
-  const [state, dispatch] = useContext(AppContext)
+  const [_, dispatch] = useContext(AppContext)
   const postMetaData = frontMatter
   postMetaData.prev = prev
   postMetaData.next = next

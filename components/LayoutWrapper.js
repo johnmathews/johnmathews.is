@@ -130,7 +130,7 @@ const LayoutWrapper = ({ children }) => {
                   <div id="previousPost" className="mb-3">
                     <div className="mb-1"> Previous: </div>
                     <div className="line-clamp-2 hover:underline">
-                      <Link href={`/blog/${postMetaData.prev.slug}`}>
+                      <Link id="previousPost" href={`/blog/${postMetaData.prev.slug}`}>
                         {postMetaData.prev.title}
                       </Link>
                     </div>
@@ -140,7 +140,7 @@ const LayoutWrapper = ({ children }) => {
                   <div id="nextPost" className="mb-3">
                     <div className="mb-1"> Next: </div>
                     <div className="line-clamp-2 hover:underline">
-                      <Link href={`/blog/${postMetaData.next.slug}`}>
+                      <Link id="nextPost" href={`/blog/${postMetaData.next.slug}`}>
                         {postMetaData.next.title}
                       </Link>
                     </div>

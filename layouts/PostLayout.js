@@ -2,11 +2,8 @@ import Link from "@/components/Link"
 import PageTitle from "@/components/PageTitle"
 import { BlogSEO } from "@/components/SEO"
 import path from "path"
-import Footer from "@/components/Footer"
 import Image from "@/components/Image"
-import Tag from "@/components/Tag"
 import siteMetadata from "@/data/siteMetadata"
-import Comments from "@/components/comments"
 import ScrollTop from "@/components/ScrollTop"
 import { useTheme } from "next-themes"
 import dynamic from "next/dynamic"
@@ -17,21 +14,8 @@ const Notebook = dynamic(() => import("@/components/Notebook"), {
 
 const postDateTemplate = { year: "numeric", month: "long" }
 
-const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
-const discussUrl = (slug) =>
-  `https://mobile.twitter.com/search?q=${encodeURIComponent(
-    `${siteMetadata.siteUrl}/blog/${slug}`
-  )}`
-
-export default function PostLayout({
-  frontMatter,
-  authorDetails,
-  next,
-  prev,
-  titleImage,
-  children,
-}) {
-  const { slug, fileName, date, title, images, tags, category } = frontMatter
+export default function PostLayout({ frontMatter, authorDetails, children }) {
+  const { slug, date, title } = frontMatter
   const { theme } = useTheme()
   var PostImage
   if (frontMatter.image) {
