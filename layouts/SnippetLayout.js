@@ -66,7 +66,7 @@ export default function SnippetLayout({
             return (
               <article
                 key={slug}
-                className="snippet flex flex-col rounded-lg border-2 border-gray-300 bg-gray-100 shadow-lg dark:border-gray-200 dark:bg-slate-800 "
+                className="snippet flex max-h-snippet flex-col overflow-y-auto rounded-lg border-2 border-gray-300 bg-gray-100 shadow-lg dark:border-gray-200 dark:bg-slate-800 "
               >
                 <div className="flex-grow">
                   <div className="mt-1 px-4 pt-2">
