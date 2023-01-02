@@ -6,7 +6,6 @@ tags: ["photography", "photographer"]
 ---
 
 import IframeEmbed from '../components/IframeEmbed'
-
 <IframeEmbed src='https://youtube.com/embed/vT8dU4WyHcs' />
 
 Robert Doisneau (French: [ʁɔbɛʁ dwano]; 14 April 1912 – 1 April 1994)[1] was a
