@@ -87,7 +87,7 @@ const CustomTooltip = ({ active, payload, label }) => {
             return <p>{`${p.dataKey}: €${p.value}`}</p>
           }
         })}
-        <p>{`Total: €${totalCost}`}</p>
+        <p>{`Total: €${totalCost.toFixed(2)}`}</p>
       </div>
     )
   }
