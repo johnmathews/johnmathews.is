@@ -6,8 +6,6 @@ category: snippet
 tags: ["python", "console", "shell"]
 ---
 
-[
-
 ![rich module](/static/images/rich-python.png)/images/rich-python.png)
 `python -m rich` for a demo
 

@@ -26,10 +26,7 @@ export default function SnippetLayout({
 
   return (
     <>
-      <div
-        id="snippetLayoutWrapper"
-        className="divide-y divide-gray-200 dark:divide-gray-700 lg:-ml-10 lg:-mr-16 xl:-ml-0 xl:-mr-0"
-      >
+      <div id="snippetLayoutWrapper" className="lg:-ml-10 lg:-mr-16 xl:-ml-0 xl:-mr-0">
         <div className="space-y-2 pt-6 pb-8 md:space-y-5">
           <div className="mb-10 text-6xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             {title}
