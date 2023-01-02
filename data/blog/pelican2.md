@@ -13,9 +13,14 @@ status: published
 
 ## Design
 
-My approach to building my blog is to keep it as simple as possible, only adding features when they make a significant improvement to how the content is understood and used. Therefore I've done away with several features that would normally come baked into a WordPress theme. For example a footer full of links that would never be used, and a sidebar full of distractions.
+My approach to building my blog is to keep it as simple as possible, only adding
+features when they make a significant improvement to how the content is
+understood and used. Therefore I've done away with several features that would
+normally come baked into a WordPress theme. For example a footer full of links
+that would never be used, and a sidebar full of distractions.
 
-I opted for a single column design that hopefully presents text-heavy articles clearly and intuitively (please leave a comment and tell me what you think).
+I opted for a single column design that hopefully presents text-heavy articles
+clearly and intuitively (please leave a comment and tell me what you think).
 
 ## Plugins
 
