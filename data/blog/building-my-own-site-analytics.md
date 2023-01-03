@@ -116,7 +116,7 @@ page rules to prevent malicious traffic[^3].
 ## Tasks for later
 
 - [x] Make `/analytics.html` load faster - latency is caused by the Cloud Function initialising. Short of paying actual money for always-on resources I can't see a way to reduce this. However it's only an issue if you are the first person to view the page in the last ~10 minutes - this [blog post](https://mikhail.io/serverless/coldstarts/gcp/) explains whj.
-- [x] Add loading spinners - I used the same snippets as in my [Machine Vision demo](portfolio-traffic-lights).
+- [x] Add loading spinners - I used the same snippets as in my [Machine Vision demo](portfolio-image-recognition).
 - [ ] Group data by weeks or months as well as day.
 - [ ] Identify bots and search engines - the analytics requires JavaScript to be running so I think some types of non-human activity is already filtered. How can I do this?
 - [ ] Aggregate the data (once per day) in a Cloud Function instead of repeatedly in the browser.

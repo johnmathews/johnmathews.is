@@ -100,79 +100,59 @@ tags: ["bitcoin", "finance", "markets"]
 
 ## Stock to Flow Model
 
-[
-
-![bitcoin stock to flow model](/static/images/btc_price_charts/bitcoin-stock-to-flow-model.png)/images/btc_price_charts/bitcoin-stock-to-flow-model.png)
+[![bitcoin stock to flow model](/static/images/btc_price_charts/bitcoin-stock-to-flow-model.png)](/static/images/btc_price_charts/bitcoin-stock-to-flow-model.png)
 
 ## Rainbow Model
 
-[
-
-![bitcoin rainbow price bands](/static/images/btc_price_charts/bitcoin-when-to-sell.jpg)/images/btc_price_charts/bitcoin-when-to-sell.jpg)
+[![bitcoin rainbow price
+bands](/static/images/btc_price_charts/bitcoin-when-to-sell.jpg)](/static/images/btc_price_charts/bitcoin-when-to-sell.jpg)
 
 ## Top Cap
 
-[
-
-![Top Cap is 35*Average Cap](/static/images/btc_price_charts/TopCap.png)/images/btc_price_charts/TopCap.png)
+[![Top Cap is 35*Average Cap](/static/images/btc_price_charts/TopCap.png)](/static/images/btc_price_charts/TopCap.png)
 
 ## Realised Cap, NVT
 
-[
-
-![Realised Cap and NVT](/static/images/btc_price_charts/RealisedCapVsNVT.png)/images/btc_price_charts/RealisedCapVsNVT.png)
+[![Realised Cap and NVT](/static/images/btc_price_charts/RealisedCapVsNVT.png)](/static/images/btc_price_charts/RealisedCapVsNVT.png)
 
 ## Delta Cap
 
-[
-
-![Delta Cap until 2019](/static/images/btc_price_charts/delta2019.jpg)/images/btc_price_charts/delta2019.jpg)
+[![Delta Cap until 2019](/static/images/btc_price_charts/delta2019.jpg)](/static/images/btc_price_charts/delta2019.jpg)
 
 ## 3 month coin days destroyed
 
-[
-
-![bitcoin 3 month coin days destroyed](/static/images/btc_price_charts/3monthCoindaysDestroyed.png)/images/btc_price_charts/3monthCoindaysDestroyed.png)
+[![Bitcoin 3 month coin days destroyed](/static/images/btc_price_charts/3monthCoindaysDestroyed.png)](/static/images/btc_price_charts/3monthCoindaysDestroyed.png)
 
 ## Double top
 
-[
-
-![bitcoin historical double tops](/static/images/btc_price_charts/woobull_double_top_first_top_now.jpg)/images/btc_price_charts/woobull_double_top_first_top_now.jpg)
+[![bitcoin historical double
+tops](/static/images/btc_price_charts/woobull_double_top_first_top_now.jpg)](/static/images/btc_price_charts/woobull_double_top_first_top_now.jpg)
 
 ## Similarities to previous bull runs
 
 Version 1:
-[
 
-![bitcoin price comparison of historical bullruns](/static/images/btc_price_charts/bull_run_comparison.jpg)/images/btc_price_charts/bull_run_comparison.jpg)
+[![Bitcoin price comparison of historical bullruns](/static/images/btc_price_charts/bull_run_comparison.jpg)](/static/images/btc_price_charts/bull_run_comparison.jpg)
 
 Version 2:
-[
 
-![bitcoin price comparison of historical bullruns](/static/images/btc_price_charts/bull_run_comparison2.jpeg)/images/btc_price_charts/bull_run_comparison2.jpeg)
+[![Bitcoin price comparison of historical bullruns](/static/images/btc_price_charts/bull_run_comparison2.jpeg)](/static/images/btc_price_charts/bull_run_comparison2.jpeg)
 
 Halving model:
-[
 
-![bitcoin historical price oriented around historical halving](/static/images/btc_price_charts/halving_model.jpg)/images/btc_price_charts/halving_model.jpg)
+[![bitcoin historical price oriented around historical halving](/static/images/btc_price_charts/halving_model.jpg)](/static/images/btc_price_charts/halving_model.jpg)
 
 12 Month RSI comparison
-[
 
-![bitocin historical RSI](/static/images/btc_price_charts/rsi_comparison.jpg)/images/btc_price_charts/rsi_comparison.jpg)
+[![bitcoin historical RSI](/static/images/btc_price_charts/rsi_comparison.jpg)](/static/images/btc_price_charts/rsi_comparison.jpg)
 
 ## Bitcoin price history
 
-[
-
-![bitcoin price history](/static/images/btc_price_charts/btcPriceHistoryLog.png)/images/btc_price_charts/btcPriceHistoryLog.png)
+[![bitcoin price history](/static/images/btc_price_charts/btcPriceHistoryLog.png)](/static/images/btc_price_charts/btcPriceHistoryLog.png)
 
 ## Lowest price forward model
 
-[
-
-![bitcoin lowest price forward](/static/images/btc_price_charts/btc_minimum_price_forecast.jpg)/images/btc_price_charts/btc_minimum_price_forecast.jpg)
+[![bitcoin lowest price forward](/static/images/btc_price_charts/btc_minimum_price_forecast.jpg)](/static/images/btc_price_charts/btc_minimum_price_forecast.jpg)
 
 # Key metrics and terms
 
@@ -316,8 +296,8 @@ let me know and I'll edit the post.
 This article assumes some familiarity with blockchains and financial markets.
 Some more general articles on this site are:
 
-1. [Bitcoin compared to Gold]({filename}../articles/bitcoin.md)
-2. [How to buy bitcoin]({filename}../articles/buying-btc.md)
+1. [Bitcoin compared to Gold](/blog/bitcoin-vs-gold)
+2. [How to buy bitcoin](/blog/buying-btc)
 
 # Analysts
 
