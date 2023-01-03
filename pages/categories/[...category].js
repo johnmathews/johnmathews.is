@@ -53,9 +53,15 @@ export async function getStaticProps({ params }) {
   return { props: { posts: filteredPosts, category: params.category } }
 }
 
+function toTitleCase(str) {
+  return str.replace(/\w\S*/g, function (txt) {
+    return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()
+  })
+}
+
 export default function Category({ posts, category }) {
   // Capitalize first letter and convert space to dash
-  const title = category[1]
+  const title = toTitleCase(category[1])
   return (
     <>
       <CategorySEO
