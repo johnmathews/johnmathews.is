@@ -3,6 +3,7 @@ title: Principles Of Object Orientated Programming
 slug: principles-of-oop
 date: "2021-1-4 16:27"
 category: Technical.Developer-Tools
+tags: ["uncategorized"]
 ---
 
 I recently interviewed for a lead developer role at [Lab Digital](https://labdigital.nl/en/)[^1] and thought it would be sensible to review some of the fundamental aspects of Object Orientated Programming (OOP).

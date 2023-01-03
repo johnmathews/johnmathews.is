@@ -4,7 +4,7 @@ title: >
 slug: binance-node-api
 date: "2021-3-3 15:28"
 category: Technical>Cryptocurrencies
-tags: []
+tags: ["uncategorized"]
 ---
 
 I've been setting up a binance-chain node. Unlike Polkadot or

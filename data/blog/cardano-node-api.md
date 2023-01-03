@@ -4,6 +4,7 @@ title: >
 slug: cardano-node-api
 date: "2021-3-1 18:01"
 category: Technical.Cryptocurrencies
+tags: ["uncategorized"]
 ---
 
 I recently deployed a Cardano node on Google Cloud Platform and used its API to

@@ -3,6 +3,7 @@ title: Debugging the more_categories plugin for Pelican
 slug: debugging-more-categories-pelican-plugin
 date: "2021-1-19 12:00"
 category: Technical>Developer-Tools
+tags: ["uncategorized"]
 ---
 
 I've realised that one of the plugins I use to make this blog is not working

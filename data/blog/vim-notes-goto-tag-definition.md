@@ -4,6 +4,7 @@ title: >
 slug: vim-notes-goto-tag-definition
 date: "2021-3-31 15:57"
 category: Technical.Developer-Tools
+tags: ["uncategorized"]
 ---
 
 ## Update (2021-03-31):
