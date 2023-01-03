@@ -2,15 +2,14 @@
 title: Mental Models I Used To Use
 slug: mental-models-i-used-to-use
 date: "2021-1-20 16:48"
-category: Non-technical>Learning
-tags: ["uncategorized"]
+category: Non-technical.Learning
 ---
 
-The rules[ref]or policies[/ref] and mental models that helped me
+The rules (policies), and mental models that helped me
 succeed in one season or phase of life may not be the best for the next phase.
 
-Here is a list of a few mental models I remember being concious of in previous
-years. Probably I've already forgotten some.
+Here are a few mental models I remember being conscious of in previous years.
+I've probably already forgotten some.
 
 1.  _Always ask "why..."_. Be obsessive about this. It's going to make things
     harder for a while before things get easier. You'll find difficult answers
@@ -37,8 +36,7 @@ years. Probably I've already forgotten some.
 7.  If you are willing to try something, fail at it, and still be glad that you
     tried, then you should almost definitely do it. Commit to it and enjoy the
     experience! Don't be scared, or at least, be scared _and_ optimistic and
-    happy[ref]Courage isn't the absence of fear. It's being scared and doing
-    the right thing anyway.[/ref].
+    happy[^2].
 
 8.  There is beauty and luxury in being in such a bad spot that you are backed
     into a corner with seemingly no way out. Things become black and white,
@@ -74,3 +72,5 @@ because it lets you make decisions quickly and consistently. But understand
 that [the map is not the
 territory](https://fs.blog/2015/11/map-and-territory/), and these are just
 tools in a toolbox.
+
+[^2]: Courage isn't the absence of fear. It's being scared and doing the right thing anyway.

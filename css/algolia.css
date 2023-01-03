@@ -26,6 +26,10 @@
   @apply border-0 px-0 text-lg text-gray-800 dark:border-gray-900 dark:bg-slate-900 dark:text-gray-100 !important;
 }
 
+/* [id^="autocomplete-2-item-"][aria-selected="true"]{ */
+/*   @apply bg-slate-100 */
+/* } */
+
 /* SIDEBAR OF LIST PAGES AND BLOG PAGES */
 #layoutWrapper #sidebarTopSection .aa-DetachedSearchButtonPlaceholder {
   @apply text-2xl text-gray-900 hover:underline dark:text-gray-100;

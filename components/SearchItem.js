@@ -6,7 +6,7 @@ export default function SearchItem({ hit, components }) {
     var catString = "snippet"
   }
   return (
-    <a className="" href={`/blog/${hit.objectID}`}>
+    <a id="searchResultCandidate" className="" href={`/blog/${hit.objectID}`}>
       <div className="flex ">
         <div className="grow">
           <components.Highlight hit={hit} attribute="title" />
