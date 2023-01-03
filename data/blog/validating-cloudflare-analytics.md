@@ -35,7 +35,7 @@ this case I would expect the two analytics methods to agree more closely.
 I made some screen shots at 11pm on June 29$^{th}$ and compared the results from
 the CloudFlare [Analytics](https://www.cloudflare.com/analytics/), CloudFlare
 [Web Analytics](https://www.cloudflare.com/web-analytics/), and my own
-[analytics tool]({filename}/pages/website-analytics.md).
+analytics [tool](/metrics).
 
 CloudFlare's (normal) analytics say I've had 234 unique visitors. But their Web
 Analytics tool says I've had 11 visitors. My own tool reports 12 unique visitors.
@@ -48,7 +48,7 @@ difference.[/ref] I'd also expect real usage to fall when its night in the
 countries I get most traffic from, which I don't see. Perhaps the difference is
 caused by 95% of my readers are using an ad blocker.
 
-My own analytics [tool]({filename}/pages/website-analytics.md) can't give results
+My own analytics [tool](/metrics) can't give results
 from a rolling 24 hour window, it only groups data by day. Therefore I recorded
 the values at 11pm, which should be close enough. My simple method of logging IP
 addresses when a page is loaded and counting the unique IP addresses each day

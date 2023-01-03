@@ -17,7 +17,7 @@ Contents:
 Get used to expecting and letting abstractions emerge from projects. If you
 find yourself repeatedly solving similar problems in similar ways, what can you
 do that will simplify the code and the implementation[ref]
-[Abstraction]({filename}/articles/principles-of-oop.md#2-abstraction) is a
+[Abstraction](/blog/principles-of-oop#2-abstraction) is a
 principal of OOP[/ref]?
 
 Is it a couple of convenience methods on some helper class?
