@@ -20,7 +20,7 @@ export default function FourZeroFour() {
           </p>
           <span className="my-3 flex">
             <p className=""> Try searching for it:</p>
-            <pre className="ml-2 rounded-md border bg-slate-300 px-2 dark:bg-gray-600">cmd - k</pre>
+            <pre className="ml-2 rounded-md border bg-slate-300 px-2 dark:bg-gray-600">cmd + k</pre>
           </span>
           <span className="my-3 flex">
             Keyboard shortcuts:{" "}

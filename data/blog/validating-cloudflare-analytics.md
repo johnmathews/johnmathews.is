@@ -14,7 +14,7 @@ Contents:
 CloudFlare give me two different measures of how many people have
 visited my website, one using their Analytics product and other from their new
 Web Analytics product. I get very different results for page views and number of
-visitors. I also get a third distinct set of results from my own [analytics tool](analytics).
+visitors. I also get a third distinct set of results from my own [analytics tool](/metrics).
 
 ## Possible Reasons
 
@@ -33,8 +33,9 @@ this case I would expect the two analytics methods to agree more closely.
 ## Comparison
 
 I made some screen shots at 11pm on June 29$^{th}$ and compared the results from
-the CloudFlare [Analytics](https://www.cloudflare.com/analytics/), CloudFlare [Web Analytics](https://www.cloudflare.com/web-analytics/), and my own [analytics
-tool]({filename}/pages/website-analytics.md).
+the CloudFlare [Analytics](https://www.cloudflare.com/analytics/), CloudFlare
+[Web Analytics](https://www.cloudflare.com/web-analytics/), and my own
+[analytics tool]({filename}/pages/website-analytics.md).
 
 CloudFlare's (normal) analytics say I've had 234 unique visitors. But their Web
 Analytics tool says I've had 11 visitors. My own tool reports 12 unique visitors.
@@ -66,18 +67,12 @@ ideas!
 
 ## CloudFlare Analytics
 
-[
-
-![cloudflare analytics tab](/static/images/cloudflare/cloudflare analytics tab.png)/images/cloudflare/cloudflare analytics tab.png)
+[![CloudFlare analytics tab](/static/images/cloudflare/cloudflare_analytics_tab.png)](/static/images/cloudflare/cloudflare_analytics_tab.png)
 
 ## CloudFlare Web Analytics
 
-[
-
-![cloudflare analytics beta](/static/images/cloudflare/cloudflare analytics beta.png)/images/cloudflare/cloudflare analytics beta.png)
+[![CloudFlare analytics beta](/static/images/cloudflare/cloudflare_analytics_beta.png)](/static/images/cloudflare/cloudflare_analytics_beta.png)
 
 ## My own analytics tool
 
-[
-
-![homebrew analytics](/static/images/cloudflare/homebrew_analytics_visitors.png)/images/cloudflare/homebrew_analytics_visitors.png)
+[![homebrew analytics](/static/images/cloudflare/homebrew_analytics_visitors.png)](/static/images/cloudflare/homebrew_analytics_visitors.png)

@@ -58,7 +58,7 @@ const KeyboardShortcuts = () => {
   })
 
   // https://www.anycodings.com/1questions/5494275/focusing-input-field-with-mousetrapjs-but-input-field-also-pastes-the-hotkey-as-value
-  useMousetrap("command+k", (e) => {
+  useMousetrap(["/", "command+k"], (e) => {
     let data = JSON.stringify({ category: "keyboard-shortcut", event: "cmd+k" })
     clientEventLogger(router.asPath, data)
     e.preventDefault()

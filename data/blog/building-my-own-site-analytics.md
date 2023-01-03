@@ -7,8 +7,7 @@ tags: ["cloud-functions", "data"]
 ---
 
 I've built a simple client-side website analytics tool for this site, you can
-see it at [/analytics]({filename}/pages/website-analytics.md). It has the
-following metrics:
+see it at [/metrics](/metrics). It has the following metrics:
 
 - Page views per day,
 - Unique IP addresses per day
@@ -18,11 +17,11 @@ This article eventually made it to the front page of [Hacker
 News](https://news.ycombinator.com/item?id=27686873), which resulted in a lot of
 extra traffic and an opportunity to see how the tool performed under a much
 heavier load. I wrote about the affects of this and subsequent design changes
-[here](loadtesting-analytics).
+[here](/blog/load-testing-web-analytics-tool).
 
 I compare the different results from CloudFlare Analytics, CloudFlare Web
 Analytics and my own tool in this follow-up
-[article](analytics-comparison).
+[article](/blog/validating-cloudflare-analytics).
 
 ## Motivation
 
