@@ -3,8 +3,7 @@ title: >
   Cardano: Running a full node
 slug: cardano-node-api
 date: "2021-3-1 18:01"
-category: Technical>Cryptocurrencies
-tags: ["uncategorized"]
+category: Technical.Cryptocurrencies
 ---
 
 I recently deployed a Cardano node on Google Cloud Platform and used its API to
@@ -19,8 +18,7 @@ Contents:
 # Docker Compose
 
 The [Cardano Wallet](https://github.com/input-output-hk/cardano-wallet)
-repo[ref][https://github.com/input-output-hk/cardano-wallet](https://github.com/input-output-hk/cardano-wallet)[/ref]
-contains almost all you need to get started. The command to run is:
+repo[^1] contains almost all you need to get started. The command to run is:
 
 `NETWORK=testnet docker-compose up -d`
 
@@ -67,7 +65,7 @@ cardano-cli —version
 Perhaps you wont need to do this though because once the containers are up and
 running and online, you can use the REST API to monitor the node, make
 transactions, and watch
-addresses.[ref][https://input-output-hk.github.io/cardano-wallet/api/edge/#operation/postwallet](https://input-output-hk.github.io/cardano-wallet/api/edge/#operation/postWallet)[/ref]
+addresses[^2].
 
 For example, a good test to see if the node is ok is to run
 
@@ -86,9 +84,13 @@ according to the API spec.
 Cardano requires that addresses are created sequentially and instead of
 allowing the user to generate them _ad-hoc_, the node by default will manage
 the creation of addresses of each
-wallet.[ref][https://input-output-hk.github.io/adrestia/docs/common-use-cases/how-to-create-addresses/](https://input-output-hk.github.io/adrestia/docs/common-use-cases/how-to-create-addresses/)[/ref]
+wallet[^3].
 
 The value of `ADDRESS_POOL_GAP` sets the number of unused addresses in each
 wallet. By default this is 20. When an address is used, the node will
 automatically generate a new unused address for the wallet, so that there is
 always a pool of 20 unused addresses.
+
+[^1]: [https://github.com/input-output-hk/cardano-wallet](https://github.com/input-output-hk/cardano-wallet)
+[^2]: [https://input-output-hk.github.io/cardano-wallet/api/edge/#operation/postwallet](https://input-output-hk.github.io/cardano-wallet/api/edge/#operation/postWallet)
+[^3]: [https://input-output-hk.github.io/adrestia/docs/common-use-cases/how-to-create-addresses/](https://input-output-hk.github.io/adrestia/docs/common-use-cases/how-to-create-addresses/)

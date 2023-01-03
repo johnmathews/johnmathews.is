@@ -42,9 +42,7 @@ Analytics tool says I've had 11 visitors. My own tool reports 12 unique visitors
 
 Why are these results so different? Maybe one measure might be including bots
 and another might only be trying to report real people using normal browsers,
-but the difference seems too high for that.[ref]CloudFlare do tell me they've
-blocked 199 attacks in the last month, but I don't think this explains the
-difference.[/ref] I'd also expect real usage to fall when its night in the
+but the difference seems too high for that[^1]. I'd also expect real usage to fall when its night in the
 countries I get most traffic from, which I don't see. Perhaps the difference is
 caused by 95% of my readers are using an ad blocker.
 
@@ -59,8 +57,7 @@ Ad Blocker.
 If it were as simple as concluding that my own results agree with the CloudFlare
 analytics beta then that might be enough. But they only agree on this particular
 metric. I've logged 47 page views today using my own tool but the CloudFlare
-Analytics beta reports only 11 page views[ref]With an average load time of 90ms -
-pretty snappy if it can be believed.[/ref].
+Analytics beta reports only 11 page views[^2].
 
 Please let me know on [twitter](https://twitter.com/johnmathews) if you have any
 ideas!
@@ -76,3 +73,9 @@ ideas!
 ## My own analytics tool
 
 [![homebrew analytics](/static/images/cloudflare/homebrew_analytics_visitors.png)](/static/images/cloudflare/homebrew_analytics_visitors.png)
+
+[^1]:
+    CloudFlare do tell me they've blocked 199 attacks in the last month, but I
+    don't think this explains the difference.
+
+[^2]: With an average load time of 90ms - pretty snappy if it can be believed.

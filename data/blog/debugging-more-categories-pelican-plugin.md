@@ -3,7 +3,6 @@ title: Debugging the more_categories plugin for Pelican
 slug: debugging-more-categories-pelican-plugin
 date: "2021-1-19 12:00"
 category: Technical>Developer-Tools
-tags: ["uncategorized"]
 ---
 
 I've realised that one of the plugins I use to make this blog is not working
@@ -32,7 +31,7 @@ motivation to look at the underlying code so I'm going to give it a shot.
 
 The documentation is sparse which doesn't help, I get the impression that
 whoever wrote it feels like Pelican is simple and it's obvious what's going on
-[ref]I guess it's the "curse of knowledge"[/ref]. It's not obvious to me.
+[^1]. It's not obvious to me.
 
 ## Pelican Plugins
 
@@ -150,3 +149,5 @@ though.
 The class inherits from `URLWrapper` so that is probably the next best place to
 look... Indeed, looking at the definition of `URLWrapper` shows that the
 `as_dict` method is overriding the definition in the base class.
+
+[^1]: I guess it's the "curse of knowledge"

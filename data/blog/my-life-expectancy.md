@@ -17,8 +17,7 @@ tags: ["regression", "statistics", "life-expectancy", "death"]
 
 # Longevity Calculations
 
-I was playing with the life expectancy calculator at [blueprintincome](https://www.blueprintincome.com/tools/life-expectancy-calculator-how-long-will-i-live/)[ref]There is also a more detailed
-calculator at [projectbiglife](https://www.projectbiglife.ca/life-expectancy-calculator), its calibrated for Canadian citizens.[/ref] and was surprised to find that their regression technique gives me
+I was playing with the life expectancy calculator at [blueprintincome](https://www.blueprintincome.com/tools/life-expectancy-calculator-how-long-will-i-live/)[^1] and was surprised to find that their regression technique gives me
 a 50% chance of living to 95! I'd expected a result closer to 80.
 
 After printing out a [90 year calendar](/documents/90-year-life-calendar.jpg), my next
@@ -47,7 +46,7 @@ expectancy. I thought that it was best to not drink any alcohol at all.
 
 I should be drinking red wine or liquor 3 or 4 times each week. Liquor increases
 longevity in men, but reduces longevity for women. Red wine increases longevity in
-women, but has no effect in men[ref][alcohol consumption in later life and reaching longevity: the netherlands cohort study ](https://academic.oup.com/ageing/article/49/3/395/5730334)[/ref]. I guess I
+women, but has no effect in men[^2]. I guess I
 should drink some rum after each workout.
 
 ## Weight doesn't make a different
@@ -61,3 +60,6 @@ whiskey after each workout.
 
 The calculator only asks for quantifiable or physical attributes. It doesn't
 consider emotional, relational or spiritual factors.
+
+[^1]: There is also a more detailed calculator at [projectbiglife](https://www.projectbiglife.ca/life-expectancy-calculator), it's calibrated for Canadian citizens.
+[^2]: [alcohol consumption in later life and reaching longevity: the netherlands cohort study ](https://academic.oup.com/ageing/article/49/3/395/5730334)

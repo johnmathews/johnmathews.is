@@ -27,9 +27,7 @@ kind of documentation to show what stuff is supposed to be doing. Errr...
 Django was a big enough pile of abstractions as it was. Views, ORMs, mixins,
 serializers... Trying to add factories and fixtures into that took some getting
 used to. But eventually I made some progress, and now I quite enjoy running
-coverage reports to keep coverage _close_ to 100%[ref]Which is fun and all, but
-testing for the sake of it doesn't necessarily stop bad things happening. Its very possible to write a test that covers the code you've just
-written without ensuring that _only_ the intended behaviours happen.[/ref].
+coverage reports to keep coverage _close_ to 100%[^1].
 
 Some of the main things I've learnt about writing tests:
 
@@ -46,3 +44,9 @@ Some of the main things I've learnt about writing tests:
    testing anything to do with dates and times.
 5. Static type checkers, like `Mypy`, get more attractive in proportion to
    codebase complexity and size.
+
+[^1]:
+    Which is fun and all, but testing for the sake of it doesn't necessarily
+    stop bad things happening. Its very possible to write a test that covers the
+    code you've just written without ensuring that _only_ the intended behaviours
+    happen.

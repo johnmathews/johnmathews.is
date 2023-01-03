@@ -18,11 +18,7 @@ Therefore I thought I would separate the articles into two broad groups,
 If you visit this blog for the first time by clicking a link to a technical
 article, the site will then only show you the technical articles on the blog.
 It's the same for non-technical articles. If you want, you can change these
-settings by clicking the paw icon[ref]It's a paw because cat's have paws and
-cat is like category. I might change this to something more intuitive in
-future, like making the icon an `N` if the user is only seeing non-technical
-posts, `T` for technical, and `A` for all posts.[/ref] in the navbar on the
-blog index page.
+settings by clicking the paw icon[^1] in the navbar on the blog index page.
 
 I did this mainly because I could. I like playing around with the blog. The JAM
 stack feels accessible and its fun working with tailwind and with jQuery.
@@ -55,3 +51,9 @@ Here is the list of requirements I used when adding the feature:
 * [x] Article page: check if local storage option exists, print to console the result
 * [x] Article page: if local storage doesn't exist, create it according to article type
 * [x] Article page: if local storage does exist and is contradicted, update article type to all
+
+[^1]:
+    It's a paw because cat's have paws and cat is like category. I might
+    change this to something more intuitive in future, like making the icon an `N`
+    if the user is only seeing non-technical posts, `T` for technical, and `A` for
+    all posts.

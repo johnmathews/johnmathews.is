@@ -52,8 +52,10 @@ success when `BNCHOME` is defined.
 
 The documentation assumes you have familiarity with running tasks in the
 background of a terminal session, and that you're familiar with `nohup`. I
-wasn't - I'd even forgotten what the `&` symbol does[ref]It starts a process in
-the background. You can move it to the foreground with `fg` or see a list of
-running jobs using `jobs`. You can move a running job to the background (like a
-vim session) using `ctrl-z`[/ref] so I did some research and wrote some
+wasn't - I'd even forgotten what the `&` symbol does[^1] so I did some research and wrote some
 [notes](nohup-and-background-processes)
+
+[^1]:
+    It starts a process in the background. You can move it to the foreground
+    with `fg` or see a list of running jobs using `jobs`. You can move a running job
+    to the background (like a vim session) using `ctrl-z`

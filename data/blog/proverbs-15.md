@@ -95,8 +95,7 @@ succeed.</mark> You're not supposed to know everything and be completely
 independent. You are supposed to ask for help, weigh the advice, and
 deliberately look for wise people to be friends with.
 
-$^{23}$<mark>To make an apt[ref]Apt: Appropriate or suitable in the
-circumstances.[/ref] answer is a joy to a man, and a word in season, how good it
+$^{23}$<mark>To make an apt[^1] answer is a joy to a man, and a word in season, how good it
 is!</mark> It is fun to say something apt? It is a blessing to receive a bit of
 well-timed advice.
 
@@ -128,3 +127,5 @@ is what it means, but at least I know _what_ it means. They _why_ question is
 less foundational that the _what_.
 
 Learn humility, despise pride. Seek wisdom.
+
+[^1]: Apt: Appropriate or suitable in the circumstances.

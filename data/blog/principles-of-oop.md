@@ -2,11 +2,10 @@
 title: Principles Of Object Orientated Programming
 slug: principles-of-oop
 date: "2021-1-4 16:27"
-category: Technical>Developer-Tools
-tags: ["uncategorized"]
+category: Technical.Developer-Tools
 ---
 
-I recently interviewed for a lead developer role at [Lab Digital](https://labdigital.nl/en/)[ref]Unfortunately, I didn't get the job. They wanted a senior Python developer with experience with `Infrastructure As Code`, and also working at an agency. Can't win them all.[/ref] and thought it would be sensible to review some of the fundamental aspects of Object Orientated Programming (OOP).
+I recently interviewed for a lead developer role at [Lab Digital](https://labdigital.nl/en/)[^1] and thought it would be sensible to review some of the fundamental aspects of Object Orientated Programming (OOP).
 
 You might think that's a unusual way to prepare for an interview, and you'd be right. Nothing close to these notes arose during the interview, but I find this stuff interesting. If I'm motivated enough to study it, then I think that's a good enough reason by itself, without a specific reason. These are some brief notes.
 
@@ -57,3 +56,5 @@ I'd like to be so familiar with the following features that I can use them witho
 2. Instance methods compared to class methods.
 3. Inheritance, mixins, and decorators.
 4. The "magic" within the `Django` source code that requires `mypy` to use extensions in order to do its static type checking correctly.
+
+[^1]: Unfortunately I didn't get the job. They wanted a senior Python developer with experience with `Infrastructure As Code`, and also working at an agency. Can't win them all.

@@ -53,8 +53,7 @@ a fortune, it always seems to own them". There are various troubles and burdens
 you avoid by being poor, like choosing life instead of material excess. Lose
 your wealth and choose a rich life.
 
-$^{10}$<mark>By insolence[ref]Insolence: rude and disrespectful
-behaviour"[/ref] comes nothing but strife, but with those who take advice is
+$^{10}$<mark>By insolence[^1] comes nothing but strife, but with those who take advice is
 wisdom.</mark> Disrespect and rudeness never works, wisdom is acquired when you
 make a habit of asking for advice.
 
@@ -107,9 +106,7 @@ sure my children have good childhoods, which is not a trivial endeavour.
 
 23 and 24 break the pattern of "good example, bad example."
 
-$^{23}$ <mark>The fallow[ref]Fallow: ploughed and harrowed but left for a period without
-being sown in order to restore its fertility or to avoid surplus
-production[/ref] ground of the poor would yield much food, but it is swept away
+$^{23}$ <mark>The fallow[^2] ground of the poor would yield much food, but it is swept away
 through injustice.</mark> The missed opportunities are real. Poor people are not
 incapable of productive and fruitful work. It is injustice that prevents
 fruitfulness. I find this proverb subtly provocative and insightful.
@@ -130,4 +127,7 @@ have structure, and the author requires you to actually read the text closely in
 order to pull out meaning. Shocking. Clearly not optimised for engagement,
 SEO or social media.
 
-[comment]: #
+[^1]: Insolence: rude and disrespectful behaviour
+[^2]:
+    Fallow: ploughed and harrowed but left for a period without being sown in
+    order to restore its fertility or to avoid surplus production

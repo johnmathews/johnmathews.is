@@ -24,8 +24,7 @@ maintaining dotfiles on a single machine. But it's not robust or flexible enough
 for managing multiple machines or multiple operating systems.
 
 Also, it's not just files that sit in _$home_ anymore, I need to track
-configuration files that live in other places too[ref]For example, every file
-in `$HOME/.vim/ftplugin/` should be version controlled.[/ref].
+configuration files that live in other places too[^1].
 
 I needed something more robust and flexible than generating symlinks from a
 bash script.
@@ -46,13 +45,7 @@ but I'm happily managing dotfiles across different machines and
 updating/modifying them safely. Chezmoi (aliased to cm) is free and OSS so I'm
 confident it'll be "my" tool for the next few decades. I'm happy to invest a
 couple of hours to learn a few new habits and iron out a few
-wrinkles[ref]Happily, it seems like the amount of time required to learn or
-become familiar with a new tool is decreasing. I guess this is to be expected
-as experience increases but nonetheless it's gratifying to realise.<br></br>Dotfiles
-management was a fairly new and interesting concept when I first began
-symlinking into my home directory. It still feels amazing to bootstrap a fresh
-machine and have it feel like home in just a few minutes, but the
-technicalities of it are now familiar.[/ref].
+wrinkles[^2].
 
 # One Question
 
@@ -106,3 +99,13 @@ Update - the notes in my [follow-up](more-chezmoi) are likely much more useful.
 
 - [Github](https://github.com/twpayne/chezmoi)
 - [Project Site](https://www.chezmoi.io/)
+
+[^1]: For example, every file in `$HOME/.vim/ftplugin/` should be version controlled.
+[^2]:
+    Happily, it seems like the amount of time required to learn or
+    become familiar with a new tool is decreasing. I guess this is to be expected
+    as experience increases but nonetheless it's gratifying to realise.<br></br>Dotfiles
+    management was a fairly new and interesting concept when I first began
+    symlinking into my home directory. It still feels amazing to bootstrap a fresh
+    machine and have it feel like home in just a few minutes, but the
+    technicalities of it are now familiar.

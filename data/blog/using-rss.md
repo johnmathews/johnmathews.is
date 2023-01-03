@@ -2,8 +2,7 @@
 title: Using RSS
 slug: using-rss
 date: "2021-1-14 16:52"
-category: Non-technical>Learning
-tags: ["uncategorized"]
+category: Non-technical.Learning
 ---
 
 ### Updated: 10 Feb 2021
@@ -11,8 +10,7 @@ tags: ["uncategorized"]
 I found a [blog post](https://brandur.org/fragments/rss-abandon) which is
 surprisingly similar to my thoughts on RSS feeds, but better presented and
 thought through. The post mentions the idea that "RSS is about capturing the
-long tail of blogs that don't post frequently"
-[ref][https://marco.org/2013/03/26/power-of-rss](https://marco.org/2013/03/26/power-of-rss)[/ref].
+long tail of blogs that don't post frequently"[^1].
 
 This idea crystalised why I was so glad I'd started using RSS feeds
 again. If readers use RSS, then authors don't need to concern themselves with
@@ -69,3 +67,5 @@ email newsletters and subscribing to the RSS feed instead.
 It keeps my inbox quieter, and it feels good to have a 'separation of
 concerns'. It makes it easier to read interesting content without being
 distracted.
+
+[^1]: [https://marco.org/2013/03/26/power-of-rss](https://marco.org/2013/03/26/power-of-rss)

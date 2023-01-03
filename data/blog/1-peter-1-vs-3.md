@@ -28,8 +28,7 @@ souls.</mark>
 
 I thought that writing about 1 paragraph per post would be easy, maybe even too
 short, but this is so dense that I'm not sure. The last three highlighted
-paragraphs are all one paragraph originally[ref]Originally in my English bible.
-Does the original text even have paragraphs?[/ref] , I've just split them up to
+paragraphs are all one paragraph originally[^1], I've just split them up to
 make it easier to write about.
 
 # Part 1
@@ -97,3 +96,5 @@ evidence of the sincerity and truthiness of your faith and is expected.
 Believing in someone you've never seen, and loving someone you've never seen is
 going to result in you obtaining salvation. It's unusual, and different, but
 don't worry. Grace and peace.
+
+[^1]: Originally in my English bible. Does the original text even have paragraphs?

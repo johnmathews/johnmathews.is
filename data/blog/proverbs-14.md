@@ -10,8 +10,7 @@ $^{1}$<mark>The wisest of women builds her house, but folly with her own hands
 tears it down.</mark> This chapter begins with a proverb about women! And not by
 juxtaposing men either. It's important that I remember that wisdom - the
 desirable quality that so much of proverbs is about - is personified as a woman,
-like in chapter 9:1, _Wisdom has built her house, she has hewn[ref]Hewn: chop or
-cut with an const[/ref] her seven pillars._
+like in chapter 9:1, _Wisdom has built her house, she has hewn[^1] her seven pillars._
 
 $^{2}$<mark>Whoever walks in uprightness fears the Lord, but he who is devious
 in his ways despises him.</mark> Fear is contrasted with despising, so I don't
@@ -161,3 +160,5 @@ disturbance, or being calm. It's good for your health.
 $^{31}$<mark>Whoever oppresses a poor man insults his maker, but he who is
 generous to the needy honors him.</mark> The poor mater, and have dignity, and
 are worthy of respect, because we are all made.
+
+[^1]: Hewn: chop or cut with an const

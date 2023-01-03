@@ -39,10 +39,13 @@ Back to the text, Peters says that things have been announced to us via those
 who preached the good news to us by the Hold Spirit, who was sent from heaven.
 
 Preaching by the power or enabling of the Holy Spirit has revealed things to us
-that angels long[ref]Long, or longed? I would have expected it to be "longed to
-know", but its not. Does chronology get messed up from our perspective if the
-other party is outside of time?[/ref] to know. We don't know everything, and we
+that angels long[^1] to know. We don't know everything, and we
 still have questions, but some of our questions are answered, some of them
 inexpressibly, and some of the things we find mysterious or uncomfortable are
 supposed to be so until our salvation is complete. Grace and peace. Hang in
-there, you're doing ok.
+there, you're doing OK.
+
+[^1]:
+    Long, or longed? I would have expected it to be "longed to
+    know", but its not. Does chronology get messed up from our perspective if the
+    other party is outside of time?

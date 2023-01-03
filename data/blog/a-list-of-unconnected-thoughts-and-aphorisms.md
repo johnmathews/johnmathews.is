@@ -21,14 +21,14 @@ tags: ["uncategorized"]
 
 7.  You follow the rules of war for you, not your enemy. You fight by rules to
     keep your
-    humanity.[ref][source](https://www.globalo.com/history-wwii-charlie-brown-franz-stigler-incident/)[/ref]
+    humanity.[^1]
 
 8.  If you want to be a top performer in any field you must become abnormal.
     Normal is average, which by definition, is far below the top! "We can always
     be average and do what’s normal. I’m not in this to do what’s normal."
     --Kobe Bryant
 
-9.  Becoming Abnormally Good[ref][source](https://capitalandgrowth.org/answers/Article/3217401/Become-Abnormal)[/ref] at something:
+9.  Becoming Abnormally Good[^2] at something:
 
     - No reasonable excuses - don't make (reasonable) excuses that let you off the hook. You need the negative emotions that leads to inspired decision making.
     - Not Worrying About What You Can’t Control
@@ -36,4 +36,8 @@ tags: ["uncategorized"]
 10. We know it's best to be genuinely friendly no matter who you're trying to
     get information out of, thanks in part to the work of Hanns Scharff and a
     slew of studies on interrogation
-    techniques[ref][source](https://psmag.com/social-justice/nazi-interrogator-revealed-value-kindness-84747)[/ref].
+    techniques[^3].
+
+[^1]: [source](https://www.globalo.com/history-wwii-charlie-brown-franz-stigler-incident/)
+[^2]: [source](https://capitalandgrowth.org/answers/Article/3217401/Become-Abnormal)
+[^3]: [source](https://psmag.com/social-justice/nazi-interrogator-revealed-value-kindness-84747)

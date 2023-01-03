@@ -34,8 +34,7 @@ don't really know what I would do differently now that I've read this proverb. I
 can trust God that he knows what he's doing and that he is _good_. I'll add it
 to my list of things I know about God without taking anything else off the list.
 
-$^{5}$<mark>Everyone who is arrogant[ref]Arrogant: Having or revealing an
-exaggerated sense of ones own importance or abilities.[/ref] in heart is an
+$^{5}$<mark>Everyone who is arrogant[^1] in heart is an
 abomination to the Lord, be assured he will not go unpunished.</mark> God really
 doesn't like arrogance, which seems very similar to pride. This is troubling
 because society seems to have lost any appreciation for humility to the point
@@ -68,7 +67,7 @@ injustice.</mark> In case there was any doubt, here it is. Don't compromise
 yourself in order to make more money.
 
 $^{9}$<mark>The heart of a man plans his way, but the Lord
-establishes[ref]Establish: Set up on a firm or permanent basis.[/ref] his
+establishes[^2] his
 steps.</mark> So I can make my own plans, but if my plans are to be successful,
 or substantial, I need the Lord to make my plans "firm" or "permanent".
 
@@ -121,8 +120,7 @@ persuasive.
 $^{21}$<mark>The wise of heart is called discerning, and sweetness of speech
 increases persuasiveness.</mark>
 
-$^{23}$<mark>The heart of the wise makes his speech judicious[ref]Judicious:
-Having, showing or done with good judgement or sense.[/ref] and adds
+$^{23}$<mark>The heart of the wise makes his speech judicious[^3] and adds
 persuasiveness to his lips.</mark>
 
 $^{24}$<mark>Gracious words are like a honeycomb, sweetness to the soul and
@@ -144,3 +142,7 @@ rules his spirit than he who takes a city.</mark> Wow. This is high praise for
 self control.
 
 ![domino meme](/static/images/proverbs/domino-meme.jpg)
+
+[^1]: Arrogant: Having or revealing an exaggerated sense of ones own importance or abilities.
+[^2]: Establish: Set up on a firm or permanent basis.
+[^3]: Judicious: Having, showing or done with good judgement or sense.

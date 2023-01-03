@@ -92,8 +92,7 @@ this.
 
 The combination of Cloud Functions, Storage Buckets and Big Query (along with
 Scheduler and Pub/Sub) seems really versatile and I think there are many
-interesting things that could be done by combining these services[ref]The
-question then becomes: "Just because you could do it, should you do it?"[/ref] .
+interesting things that could be done by combining these services[^1].
 
 Using them all for free (my usage is well within the free tier) makes the
 possibilities even more interesting. Having compute and storage services
@@ -116,3 +115,5 @@ request more than one JSON file from the storage bucket.
 
 - [x] Frontend - the DataTables column containing the date should be sorted as a Date object. It is being sorted like a normal string.
 - [ ] Backend - create separate JSON files for each month.
+
+[^1]: The question then becomes: "Just because you could do it, should you do it?"

@@ -268,10 +268,7 @@ like 1 year in traditional markets". However volatility is decreasing and we
 are seeing lower highs and higher lows during each subsequent market cycle.
 
 The single biggest factor driving multi-year market cycles appears to be the
-decreasing rate of supply increase (the issuance rate). The last 3 halvings[ref]Every 210,000
-blocks, the number of bitcoin awarded to the miner for successfully adding a
-block is halved. The last halving occurred in May 2020 and the rate of issuance
-halved from 12.5 BTC/block to 6.25 BTC/block[/ref] seem to have provoked the last
+decreasing rate of supply increase (the issuance rate). The last 3 halvings[^1] seem to have provoked the last
 3 bull cycles. We are in the third bull cycle now (April 2021) and I fully
 expect it to be followed by a bear cycle.
 
@@ -281,9 +278,7 @@ But I'm aware that my methods are less nuanced than professional traders and
 analysts - I have access to less data than them and I'm not willing to put in
 as much effort as they are. I'm happy to do this
 [Pareto](https://en.wikipedia.org/wiki/Pareto_principle) style - I'll give it
-20% of my maximum effort and I'll be happy with 80% of an ideal result[ref]I
-realise this probably isn't, strictly, what Mr. Pareto was thinking when he
-published his research. I hope you get my intention.[/ref].
+20% of my maximum effort and I'll be happy with 80% of an ideal result[^2].
 
 This is a review of what I consider to be the best sources of metrics and
 analysis that I've come across. All the resources used in this article are
@@ -311,3 +306,12 @@ organisations:
 5. [therationalroot](https://twitter.com/rationalroot)
 6. [CoinMetrics](https://twitter.com/coinmetrics)
 7. [Jurrien Timmer](https://twitter.com/TimmerFidelity/status/1382026394541174787?s=20)
+
+[^1]:
+    Every 210,000 blocks, the number of bitcoin awarded to the miner for
+    successfully adding a block is halved. The last halving occurred in May 2020 and
+    the rate of issuance halved from 12.5 BTC/block to 6.25 BTC/block.
+
+[^2]:
+    I realise this probably isn't, strictly, what Mr. Pareto was thinking when
+    he published his research. I hope you get my intention.

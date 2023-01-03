@@ -12,19 +12,11 @@ forces me to organise my thoughts and look at how substantial they really are,
 or aren't.
 
 There is truth in the saying that "to know a thing you need to be able to teach
-it" [ref]Wikipedia
-[article](https://en.wikipedia.org/wiki/Learning_by_teaching), and some
-[external
-validation](https://web.archive.org/web/20210118112910/https://digest.bps.org.uk/2018/05/04/learning-by-teaching-others-is-extremely-effective-a-new-study-tested-a-key-reason-why/).[/ref]
-, and writing well has several similarities to teaching. Can I really copy a
-collection of thoughts from my head to yours?
-
-Powerful ideas are resilient and have many consequences. The older I get the more I believe
-that ideas matter[ref]A complimentary notion is that asking the right question is more
+it"[^1]. A complimentary notion is that asking the right question is more
 important than finding the right answer. I guess asking the right question is
 always necessary, but finding the right answer is only sometimes [sufficient](https://en.wikipedia.org/wiki/Necessity_and_sufficiency).
 Sometimes you can get the answer a bit wrong if you asked the right question,
-and still get enough benefits to avoid the problem.[/ref]. They have so many
+and still get enough benefits to avoid the problem. They have so many
 subtle consequences. They are the first
 [dominos](https://en.wikipedia.org/wiki/Domino_effect).
 
@@ -50,3 +42,13 @@ features and working out how to build them.
 
 [You Ain't Gonna Need
 It](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it), mate.
+
+[^1]:
+    Wikipedia [article](https://en.wikipedia.org/wiki/Learning_by_teaching),
+    and some [external
+    validation](https://web.archive.org/web/20210118112910/https://digest.bps.org.uk/2018/05/04/learning-by-teaching-others-is-extremely-effective-a-new-study-tested-a-key-reason-why/).
+    , and writing well has several similarities to teaching. Can I really copy a
+    collection of thoughts from my head to yours?
+
+Powerful ideas are resilient and have many consequences. The older I get the more I believe
+that ideas matter

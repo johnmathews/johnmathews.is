@@ -3,8 +3,7 @@ title: >
   Vim: GoTo Tag Definition
 slug: vim-notes-goto-tag-definition
 date: "2021-3-31 15:57"
-category: Technical>Developer-Tools
-tags: ["uncategorized"]
+category: Technical.Developer-Tools
 ---
 
 ## Update (2021-03-31):
@@ -18,8 +17,8 @@ useful, though there's a lot of overlap - coc can lint as well.
 
 If you're going to be jumping around to where things are defined, you will need
 to know how to jump back again. It seems there are two lists you need to be
-aware of, the _jump list_[ref]`:help jumplist`[/ref] and the _change
-list_[ref]`:help changelist`[/ref].
+aware of, the _jump list_[^1] and the _change
+list_[^2].
 
 ### Jump List
 
@@ -42,15 +41,9 @@ function or object is defined, and I usually need to do something at least 3 tim
 before I can do it without breaking my focus or train of thought.
 
 My memory is hazy but I remember spending a 1/2 day looking into this and
-considering which solution I wanted to commit to.[ref]The more powerful the
-tool, the more worthwhile it is to take a closer look at what it can and can't
-do.[/ref] My options seemed to be between
+considering which solution I wanted to commit to.[^3] My options seemed to be between
 [YouCompleteMe](https://github.com/ycm-core/YouCompleteMe) and
-[ALE](https://github.com/dense-analysis/ale). [Update![ref]YCM and
-ALE work fine for goto definition and linting, but they don't give me
-satisfactory autocompletion. `neoclide/coc.nvim` looks like it might offer some
-improvements.
-[neoclide/coc.nvim](https://www.vimfromscratch.com/articles/vim-for-python/)[/ref]]
+[ALE](https://github.com/dense-analysis/ale). [Update![^4]]
 
 I can't remember everything I read and tried, but I trust my conclusions.
 Looking in my `.vimrc` I see that I have `<leader>x` mapped to `:YcmCompleter GoTo` and it works just fine, even when a module is imported from somewhere
@@ -62,3 +55,15 @@ hadn't internalized it yet.
 - `<Leader>x` - GoTo definition - YCMs best guess at an 'intelligent' goto
   command, whether its a declaration or a definition.
 - `<F2>` - Toggle tagbar
+
+[^1]: `:help jumplist`
+[^2]: `:help changelist`
+[^3]:
+    The more powerful the tool, the more worthwhile it is to take a closer
+    look at what it can and can't do.
+
+[^4]:
+    YCM and ALE work fine for goto definition and linting, but they don't give
+    me satisfactory autocompletion. `neoclide/coc.nvim` looks like it might offer
+    some improvements.
+    [neoclide/coc.nvim](https://www.vimfromscratch.com/articles/vim-for-python/)

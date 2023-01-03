@@ -2,8 +2,7 @@
 title: Regrets Of The Dying
 slug: regrets-of-the-dying
 date: "2021-2-1 22:52"
-category: Non-technical>Journal
-tags: ["uncategorized"]
+category: Non-technical.Journal
 ---
 
 I wish that:
@@ -15,4 +14,6 @@ I wish that:
 - I'd let myself be happier.
 
 ...the five most common regrets of terminally ill patients, as described by a
-palliative care nurse[ref][source](https://bronnieware.com/blog/regrets-of-the-dying/)[/ref]:
+palliative care nurse[^1]:
+
+[^1]: [source](https://bronnieware.com/blog/regrets-of-the-dying/)
