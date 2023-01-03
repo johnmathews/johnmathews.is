@@ -46,7 +46,7 @@ design decisions. It's a choice that Python made, and other languages do it
 differently.
 
 There are different
-[levels]({filename}/articles/python-notes.md#levels-of-python-code) to
+[levels](/blog/python-notes#levels-of-python-code) to
 languages and this applies more to the idiom level than the design pattern
 level. It applies even less at the architectural level where there can be
 several equally good ways of organizing business logic and data

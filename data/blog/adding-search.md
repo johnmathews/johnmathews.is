@@ -69,7 +69,3 @@ feature. The search index includes article content as well as article titles
 and categories. I'd like to tweak a few of the keyboard shortcut behaviours,
 and add the contents of various pages (which aren't articles) to the search
 index.
-
-## Update
-
-I've reimplemented search using `fuse.js`. You can read about it [here]({filename}../articles/fuse.md)

@@ -15,7 +15,7 @@ Some super brief notes I made about API design:
 - Alternative API architectures:
   - SOAP (Simple Object Access Protocol) is a heavier style.
   - `GraphQL` - doesnt overfetch. Graph query language made by Facebook.
-- APIs are everywhere (not just web APIs). They're an [abstraction]({filename}/articles/principles-of-oop.md#2-abstraction) that hides an implementation. `Django` model managers are an API (and also part of Django's ORM), JavaScript is an API, etc.
+- APIs are everywhere (not just web APIs). They're an [abstraction](/blog/principles-of-oop#2-abstraction) that hides an implementation. `Django` model managers are an API (and also part of Django's ORM), JavaScript is an API, etc.
 
 ## RESTful APIs
 

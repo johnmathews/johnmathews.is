@@ -120,7 +120,7 @@ Final idea - store the results as a JSON blob in a Storage bucket and point the
 client at the bucket instead of the Cloud Function.
 
 Turns out this is a super fast and efficient solution.
-[/analytics.html]({filename}/pages/website-analytics.md) now loads in less than
+[/metrics](/metrics) now loads in less than
 half a second, and the only variable costs are egress on the bucket, which will
 be much smaller than the comparable costs of running a Cloud Function.
 

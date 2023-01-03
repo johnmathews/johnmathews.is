@@ -38,25 +38,25 @@ flexible permissions that their own.
 These short videos are good, but they're not a complete solution. I'm not sure
 where to look next.
 
-<IframeEmbed src='https://www.youtube-nocookie.com/embed/xXk1YlkKW_k' />
+<IframeEmbed src='https://www.youtube.com/embed/xXk1YlkKW_k' />
 
 # [Ansible](https://www.youtube.com/playlist?list=PL2_OBreMn7FplshFCWYlaN2uS8et9RjNG)
 
 Based on Jeff Geerlings book. There are 15 episodes. Jeff seems like a great
 guy. I'm going to try listen to one of these each day.
 
-<IframeEmbed src='https://www.youtube-nocookie.com/embed/goclfp6a2IQ' />
+<IframeEmbed src='https://www.youtube.com/embed/goclfp6a2IQ' />
 
 # [SSH](https://www.youtube.com/watch?v=hQWRp-FdTpc&list=PLQGMHRkCCyDw5arrPInZT_T8TbDdzmeBp&index=4)
 
-<IframeEmbed src='https://www.youtube-nocookie.com/embed/hQWRp-FdTpc' />
+<IframeEmbed src='https://www.youtube.com/embed/hQWRp-FdTpc' />
 
 [This](https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys)
-is also a very useful article. I made notes from it in another [post]({filename}../articles/ssh.md).
+is also a very useful article. I made notes from it in another [post](/blog/ssh-notes).
 
 # [Vagrant](https://www.youtube.com/watch?v=vBrezgo&list=PLQGMHRkCCyDw5arrPInZT_T8TbDdzmeBp&index=2X)
 
-<IframeEmbed src='https://www.youtube-nocookie.com/embed/vBreXjkizgo' />
+<IframeEmbed src='https://www.youtube.com/embed/vBreXjkizgo' />
 
 - Good for local development. (Especially when on aeroplanes?)
 - Not as good for cloud providers as Terraform.

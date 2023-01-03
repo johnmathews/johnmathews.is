@@ -1,11 +1,8 @@
 ---
 title: Jupyter (iPython) notebooks + Pandas
 date: "2016-08-03 13:04"
-Author: John Mathews
 category: Technical>Developer-Tools
 tags: ["data", "jupyter notebook", "pandas", "python"]
-slug: Jupyter-ipython-notebooks-pandas
-status: published
 ---
 
 When working with more data than can fit in an Excel file, or when you

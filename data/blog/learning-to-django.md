@@ -14,7 +14,7 @@ Contents:
 I came to web development via business analytics. I was working as an
 accountant and Excel wasn't good enough anymore, so I looked around for a way
 to get started and came across [Jupyter
-Notebooks]({filename}jupyter-ipython-notebooks-pandas.md).
+Notebooks](/blog/jupyter-ipython-notebooks-pandas).
 
 Notebooks are said to be a kind of "gateway drug" to programming, and I think
 that's true. They're the easiest and fastest way to start programming that I've
