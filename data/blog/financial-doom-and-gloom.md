@@ -22,13 +22,7 @@ value then a correction is inevitable.
 
 Interest rates are really low at the moment so if you have spare money and you
 want to make it work for you then where do you put it? Not into a bank account,
-because interest rates are low[ref]Why are interest rates low? Because
-confidence in the economy is low, so central bankers have to lower interest
-rates to make it 1. Cheaper for a business to borrow money to invest in their business and
-therefore easier for a business investments to be profitable, and 2. So that
-its more attractive for investors to use their capital to invest in a business
-(which grows the economy) relative to depositing spare cash in a bank account (which is safer but a less efficient way to deploy capital). Interest rates affect the relative risk-reward ratios of
-different investment strategies[/ref], and not into government debt, because
+because interest rates are low[^1], and not into government debt, because
 the yield is so low. It has to be stocks if you want the value of your
 investments to increase meaningfully.
 
@@ -46,7 +40,7 @@ influenced regarding what or when they buy or sell, then that is likely a new
 kind of threat to financial stability. We've never seen social media combined
 with quick, cheap investment services for amateurs before.
 
-Index funds are also more popular than ever[ref][index funds are the new kings of wall street](https://web.archive.org/web/20210119144242/https://www.wsj.com/articles/index-funds-are-the-new-kings-of-wall-street-11568799004)[/ref] - the efficacy of index investing
+Index funds are also more popular than ever[^2] - the efficacy of index investing
 relative to traditional funds that use stock pickers is very high over medium
 or long time horizons because index funds are much cheaper. But if index
 funds become too large then they end up influencing the market in predictable
@@ -58,10 +52,22 @@ to be bought or sold. It seems like its possible to create feedback loops where
 funds have to buy more of a rising stock, which increases its scarcity and
 price, which then requires index funds to purchase more of the same stock.
 
-The amount of euros in existence in 2019 was 90% more than in 2010.[ref][statista](https://www.statista.com/statistics/254220/value-of-euro-coins-in-circulation-since-2002/)[/ref]
-But inflation between 2010 and 2020 is
-13%.[ref][in2013dollars.com](https://www.in2013dollars.com/europe/inflation/2010)[/ref]
-Why is that?
+The amount of euros in existence in 2019 was 90% more than in 2010[^3].
+But inflation between 2010 and 2020 is 13%[^4]. Why is that?
 
 If the price of something doesn't represent its value, then a correction is
 inevitable.
+
+[^1]:
+    Why are interest rates low? Because confidence in the economy is low, so
+    central bankers have to lower interest rates to make it 1. Cheaper for a
+    business to borrow money to invest in their business and therefore easier for a
+    business investments to be profitable, and 2. So that its more attractive for
+    investors to use their capital to invest in a business (which grows the economy)
+    relative to depositing spare cash in a bank account (which is safer but a less
+    efficient way to deploy capital). Interest rates affect the relative risk-reward
+    ratios of different investment strategies
+
+[^2]: [Index funds are the new kings of wall street](https://web.archive.org/web/20210119144242/https://www.wsj.com/articles/index-funds-are-the-new-kings-of-wall-street-11568799004)
+[^3]: [Statista](https://www.statista.com/statistics/254220/value-of-euro-coins-in-circulation-since-2002/)
+[^4]: [In2013dollars.com](https://www.in2013dollars.com/europe/inflation/2010)

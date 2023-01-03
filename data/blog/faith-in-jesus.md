@@ -13,8 +13,7 @@ It seems to me that I am much happier as a Christian than I would be if I
 weren't. By "being a Christian" I mean following Jesus - trying my best to act,
 think and speak like he want's me to because I'm grateful that he did what I
 believe he did. I believe he died for my sins and is now alive, having been
-miraculously resurrected by his father[ref]And many other things also.[/ref]
-(who is now my father too).
+miraculously resurrected by his father[^1] (who is now my father too).
 
 It's not just an intellectual exercise. I believe that Jesus is alive because I
 seem to have experienced his companionship and intervention in my day-to-day
@@ -85,10 +84,10 @@ or christian politics and traditions. These are each different things, and unles
 
 I suspect that we are in a negative cycle of imprecise thinking leading to imprecise articulation, which leads to further imprecise thinking.
 
-Unless we can talk and think about one thing at a time, atomically[ref]from
-first principals[/ref] if necessary, we take on the additional risks of
-reaching the wrong conclusions personally, or arguing with others due to
-misunderstandings rather than actual disagreement.
+Unless we can talk and think about one thing at a time, atomically[^2] if
+necessary, we take on the additional risks of reaching the wrong conclusions
+personally, or arguing with others due to misunderstandings rather than actual
+disagreement.
 
 We should try to create a more precise vocabulary to navigate our Christian
 lives, so that we can think clearly about the experiences and questions we
@@ -99,3 +98,6 @@ there's an increased risk of disagreement or misunderstanding what someone
 else means. This makes it harder to talk about our faith, which makes talking
 less common, and this creates room for misunderstanding or apathy, or missed
 opportunities, or sadness.
+
+[^1]: And many other things also.
+[^2]: from first principals

@@ -31,10 +31,8 @@ morale high is necessary for success.
 ### Type 2:
 
 Hopefully you can make good progress understanding the basics and internalizing
-the relevant abstractions, and your problems quickly[ref]on which timescale?
-Life is long, does it really matter if it takes 1 week or 1 month to learn
-something meaningful? Momentum, and having fun, is important though.[/ref]
-become `type 2` problems. They each take from 15 to 45 minutes to solve.
+the relevant abstractions, and your problems quickly[^1] become `type 2`
+problems. They each take from 15 to 45 minutes to solve.
 
 Maybe this is because you know enough to break some big general problem into
 smaller problems (you are developing domain expertise) and your intuitions for
@@ -47,9 +45,7 @@ would ask the question. This isn't trivial but I don't hear people discussing
 this often.
 
 When most of my coding problems are `type 2`, it feels like I'm learning most
-efficiently and when I'm most productive[ref]from a personal growth point of
-view. I suppose from an employers point of view they want all problems solved
-fast, `type 1` problems.[/ref].
+efficiently and when I'm most productive[^2].
 
 ### Type 1:
 
@@ -58,14 +54,11 @@ They take less than 15 minutes to solve, because:
 
 1. All the big problems have been solved and now you've only got smaller problems left, and
 2. Your intuitions are good and your expertise has increased and you know where to look for
-   answers.[ref]Open the right file, google the right query (and follow the link to
-   stack overflow), make some changes, run your static type checker and linter,
-   run your tests, and push. Done and on to the next item.[/ref]
+   answers[^3].
 
 ## Exceptional problems:
 
-But there seems to be a consistent exception to this model.[ref]which is totally
-fine. It's just a mental model, and the map is not the territory[/ref] Let's
+But there seems to be a consistent exception to this model.[^4] Let's
 be silly and call them `type W` problems. These are the problems that eat up
 far too many hours, and are tiring to solve, even when you are (in most other
 respects) an expert.
@@ -130,3 +123,21 @@ difficult to solve:
 Having said all that, I think the best way to solve a problem is to prevent it
 from occurring in the first place, but I'm not good enough to figure out how to
 do that, yet.
+
+[^1]:
+    on which timescale? Life is long, does it really matter if it takes 1 week
+    or 1 month to learn something meaningful? Momentum, and having fun, is important
+    though.
+
+[^2]:
+    from a personal growth point of view. I suppose from an employers point of
+    view they want all problems solved fast, `type 1` problems.
+
+[^3]:
+    Open the right file, google the right query (and follow the link to stack
+    overflow), make some changes, run your static type checker and linter, run your
+    tests, and push. Done and on to the next item.
+
+[^4]:
+    which is totally fine. It's just a mental model, and the map is not the
+    territory

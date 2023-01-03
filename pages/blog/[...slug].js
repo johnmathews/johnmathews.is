@@ -86,7 +86,7 @@ export default function Blog({ post, authorDetails, prev, next }) {
       type: "BLOG_POST",
       frontMatter: postMetaData,
     })
-  }, [router])
+  }, [router, dispatch, postMetaData])
 
   return (
     <>

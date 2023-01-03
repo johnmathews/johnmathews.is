@@ -16,9 +16,7 @@ Contents:
 
 Get used to expecting and letting abstractions emerge from projects. If you
 find yourself repeatedly solving similar problems in similar ways, what can you
-do that will simplify the code and the implementation[ref]
-[Abstraction](/blog/principles-of-oop#2-abstraction) is a
-principal of OOP[/ref]?
+do that will simplify the code and the implementation[^1]?
 
 Is it a couple of convenience methods on some helper class?
 
@@ -116,3 +114,7 @@ the authoritative document for that feature and how to use it.
 
 PEPs tend to be written by the best programmers in the world, so hang out with
 them.
+
+[^1]:
+    [Abstraction](/blog/principles-of-oop#2-abstraction) is a principal of
+    OOP,

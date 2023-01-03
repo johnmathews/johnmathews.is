@@ -61,14 +61,19 @@ function toTitleCase(str) {
 
 export default function Category({ posts, category }) {
   // Capitalize first letter and convert space to dash
-  const title = toTitleCase(category[1])
+  if (category == "snippet") {
+    var formattedTitle = "Snippet"
+  }
+  if (category != "snippet") {
+    var formattedtitle = toTitleCase(category[1])
+  }
   return (
     <>
       <CategorySEO
-        title={`${title} - ${siteMetadata.author}`}
-        description={`${title} category - ${siteMetadata.author}`}
+        title={`${formattedTitle} - ${siteMetadata.author}`}
+        description={`${formattedTitle} category - ${siteMetadata.author}`}
       />
-      <ListLayout posts={posts} title={title} />
+      <ListLayout posts={posts} title={formattedTitle} />
     </>
   )
 }

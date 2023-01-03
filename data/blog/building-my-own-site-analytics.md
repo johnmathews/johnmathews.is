@@ -38,9 +38,7 @@ suits my use case, but I don't think its accurate.
 
 ## Design Considerations
 
-The analytics should be easy to access and easy to understand.[ref]In Google
-Analytics it can be fun clicking around on all the things and seeing lots of
-options, but its not really useful once the novelty has worn off.[/ref]
+The analytics should be easy to access and easy to understand.[^1]
 
 I know from my work visualizing data and building dashboards that the metrics
 presented will alter the users perception of the underlying reality.
@@ -79,8 +77,7 @@ JavaScript, HTTP headers.
 ### Assumptions
 
 I'm assuming that unique IP addresses is a good enough proxy for unique readers, even
-though I'm not considering crawlers, bots, or RSS subscribers[ref]I think this
-might be quite wrong, but I don't know why.[/ref] .
+though I'm not considering crawlers, bots, or RSS subscribers[^2].
 
 ### Technique
 
@@ -114,8 +111,7 @@ good way of learning and playing with cloud technologies and JavaScript.
 
 Unless someone decides to spam the site, I expect the costs to be less than
 €1/month. This site is hosted using CloudFlare, so I suppose I could setup some
-page rules to prevent malicious traffic[ref]The page is now rate limited to 5
-requests per minute per IP address.[/ref] .
+page rules to prevent malicious traffic[^3].
 
 ## Tasks for later
 
@@ -144,16 +140,27 @@ for the current day perhaps. I've made a couple of widgets before
 [[1](http://tracesof.net/uebersicht-widgets/#time_since),
 [2](http://tracesof.net/uebersicht-widgets/#time_until)] which were written in
 CoffeeScript, but the newer widgets are written in React, so I guess this is an
-opportunity to learn[ref]Done! My desktop now looks like this:
-
-![Dekstop widgets](/static/images/widgets.png)[/ref] .
+opportunity to learn[^4].
 
 Writing the "Time Since" (my daughters birth) and "Time Until" (my next
-accounting exam[ref]I failed the exam because I'd been working on
-[Ry's Git Tutorial](git) instead.[/ref] ) widgets were my
+accounting exam[^5]) widgets were my
 first ever taste of CSS, HTML and JavaScript. The first ever article on
 this blog was about the "Time Since" widget. CoffeeScript, and Ubersicht were
 just about simple enough for me to learn by trial and error, copying someone
 else's code and changing it bit by bit until I had what I want.
 
-[**Site Analytics**]({filename}/pages/website-analytics.md)
+[**Site Analytics**](/metrics)
+
+[^1]:
+    In Google Analytics it can be fun clicking around on all the things and
+    seeing lots of options, but its not really useful once the novelty has worn off.
+
+[^2]: I think this might be quite wrong, but I don't know why.
+[^3]: The page is now rate limited to 5 requests per minute per IP address.
+[^4]: Done! My desktop now looks like [this](/static/images/widgets.png)
+[^5]:
+    I failed the exam because I'd been working on [Ry's Git
+    Tutorial](/blog/rys-git-tutorial)
+    instead.
+
+![Desktop widgets](/static/images/widgets.png)
