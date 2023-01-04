@@ -1,6 +1,5 @@
-import { React } from "react"
+import { React, useMemo } from "react"
 
-import { useMemo } from "react"
 import { useTable, useFilters, useSortBy, usePagination } from "react-table"
 
 import { useState } from "react"
@@ -32,6 +31,9 @@ export default function Table({ columns, data, isPaginated = true }) {
       columns,
       data,
       initialState: {
+        defaultCanSort: true,
+        disableSortBy: false,
+        manualSortBy: true,
         sortBy: useMemo(
           () => [
             {
@@ -46,7 +48,7 @@ export default function Table({ columns, data, isPaginated = true }) {
           []
         ),
         pageIndex: 0,
-        pageSize: 15,
+        pageSize: 9,
         manualPagination: true,
       },
     },
@@ -71,9 +73,7 @@ export default function Table({ columns, data, isPaginated = true }) {
             <tr {...headerGroup.getHeaderGroupProps()}>
               {headerGroup.headers.map((column) => (
                 <th
-                  {...column.getHeaderProps(
-                    column.getSortByToggleProps(column.getSortByToggleProps())
-                  )}
+                  {...column.getHeaderProps(column.getSortByToggleProps())}
                   className={
                     column.isSorted ? (column.isSortedDesc ? "sort-desc" : "sort-asc") : ""
                   }

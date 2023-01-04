@@ -63,7 +63,6 @@ export default function ViewsPageDayTable({ data }) {
       {
         Header: "Date",
         accessor: "date",
-        canSort: true,
         sortType: (a, b) => {
           return new Date(b) - new Date(a)
         },
@@ -75,8 +74,8 @@ export default function ViewsPageDayTable({ data }) {
       },
       {
         Header: "Views",
-        canSort: true,
         accessor: "views",
+        sortType: "basic",
       },
       {
         Header: "Location",
