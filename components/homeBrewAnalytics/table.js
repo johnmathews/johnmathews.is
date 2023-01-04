@@ -1,4 +1,6 @@
-import { React, useEffect } from "react"
+import { React } from "react"
+
+import { useMemo } from "react"
 import { useTable, useFilters, useSortBy, usePagination } from "react-table"
 
 import { useState } from "react"
@@ -30,18 +32,21 @@ export default function Table({ columns, data, isPaginated = true }) {
       columns,
       data,
       initialState: {
-        sortBy: [
-          {
-            id: "date",
-            desc: false,
-          },
-          {
-            id: "views",
-            desc: true,
-          },
-        ],
+        sortBy: useMemo(
+          () => [
+            {
+              id: "date",
+              desc: false,
+            },
+            {
+              id: "views",
+              desc: true,
+            },
+          ],
+          []
+        ),
         pageIndex: 0,
-        pageSize: 12,
+        pageSize: 15,
         manualPagination: true,
       },
     },
@@ -80,7 +85,7 @@ export default function Table({ columns, data, isPaginated = true }) {
           ))}
         </thead>
         <tbody {...getTableBodyProps()}>
-          {page.map((row, i) => {
+          {page.map((row, _) => {
             prepareRow(row)
             return (
               <tr {...row.getRowProps()}>

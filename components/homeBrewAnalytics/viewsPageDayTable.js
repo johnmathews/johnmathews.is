@@ -9,18 +9,14 @@ import Table from "@/components/homeBrewAnalytics/table"
 import LocationCountItem from "@/components/homeBrewAnalytics/locationCountItem"
 
 export default function ViewsPageDayTable({ data }) {
-  // data should be an array of objects. each object is a row
-
   const parsedData = []
   for (var i = 0; i < data.length; i++) {
     const dataRow = {}
     for (var j in data[i]) {
-      // which Date
       if (j === "date") {
         var date = new Date(data[i][j])
         dataRow["date"] = date.toLocaleDateString(siteMetadata.locale, postDateTemplate)
       } else if (j === "page") {
-        // which page
         dataRow["page"] = data[i][j]
       } else if (j === "country_count") {
         var value = 0
@@ -34,7 +30,6 @@ export default function ViewsPageDayTable({ data }) {
           dataRow["country_count"] = value
         }
       } else if (j === "views") {
-        // how many views
         dataRow["views"] = parseInt(data[i][j])
       }
     }
@@ -63,36 +58,34 @@ export default function ViewsPageDayTable({ data }) {
     )
   }
 
-  const columns = useMemo(() => [
-    {
-      Header: "Date",
-      accessor: "date",
-      id: "date",
-      sortType: (a, b) => {
-        return new Date(b) - new Date(a)
+  const columns = useMemo(
+    () => [
+      {
+        Header: "Date",
+        accessor: "date",
+        canSort: true,
+        sortType: (a, b) => {
+          return new Date(b) - new Date(a)
+        },
       },
-    },
-    {
-      Header: "Page",
-      id: "page",
-      accessor: "page",
-      Cell: PageCellProcessor,
-      // Cell method will provide the cell value; we pass it to render a custom component
-      // Cell: ({ cell: { value } }) => <Genres values={value} />,
-    },
-    {
-      Header: "Views",
-      id: "views",
-      accessor: "views",
-      sortType: "basic",
-    },
-    {
-      Header: "Location",
-      id: "locatoin",
-      accessor: "country_count",
-      Cell: LocationCellProcessor,
-    },
-  ])
+      {
+        Header: "Page",
+        accessor: "page",
+        Cell: PageCellProcessor,
+      },
+      {
+        Header: "Views",
+        canSort: true,
+        accessor: "views",
+      },
+      {
+        Header: "Location",
+        accessor: "country_count",
+        Cell: LocationCellProcessor,
+      },
+    ],
+    []
+  )
 
   return (
     <div
