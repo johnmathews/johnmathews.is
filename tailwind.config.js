@@ -23,7 +23,7 @@ module.exports = {
       "3xl": "2000px",
     },
     maxHeight: {
-      snippet: "32rem;",
+      snippetContent: "26rem;",
     },
     fontFamily: {
       sans: [
