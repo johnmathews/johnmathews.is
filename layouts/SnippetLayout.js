@@ -1,6 +1,5 @@
 import Link from "@/components/Link"
 import Tag from "@/components/Tag"
-import siteMetadata from "@/data/siteMetadata"
 import { useState } from "react"
 import { MDXLayoutRenderer } from "@/components/MDXComponents"
 import Pagination from "@/components/Pagination"
