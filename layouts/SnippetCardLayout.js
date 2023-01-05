@@ -1,17 +1,9 @@
-import Link from "@/components/Link"
-import Image from "@/components/Image"
-import Footer from "@/components/Footer"
-import siteMetadata from "@/data/siteMetadata"
-
 export default function SnippetCardLayout({ children }) {
   return (
-    <article className="snippetCard xl:min-h-32 h-32 2xl:h-full">
+    <article className="snippetCard">
       <div className="xl:divide-y xl:divide-gray-200 xl:dark:divide-gray-700">
         <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
-          <div
-            id="content"
-            className="2xl:max-h-96 prose max-w-none overflow-y-auto py-3 dark:prose-dark"
-          >
+          <div id="content" className="prose max-w-none overflow-y-auto pb-3 dark:prose-dark">
             {children}
           </div>
         </div>

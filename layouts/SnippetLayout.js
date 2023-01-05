@@ -68,7 +68,7 @@ export default function SnippetLayout({
                 className="snippet flex flex-col rounded-lg border-2 border-gray-300 bg-gray-100 shadow-lg dark:border-gray-200 dark:bg-slate-800 "
               >
                 <div className="flex-grow">
-                  <div className="mt-1 px-4 pt-2">
+                  <div className="my-3 px-4">
                     <Link
                       href={`/blog/${slug}`}
                       className="text-lg font-semibold text-gray-900 dark:text-gray-100"
@@ -76,15 +76,15 @@ export default function SnippetLayout({
                       {title}
                     </Link>
                   </div>
-                  <div className="markdown z-0  max-h-snippetContent min-h-full overflow-y-auto">
-                    <div className="px-4 pb-4 font-serif text-lg">
+                  <div className="markdown  max-h-snippetContent overflow-y-auto ">
+                    <div className="px-4 pb-4 font-serif text-lg  ">
                       <MDXLayoutRenderer layout="SnippetCardLayout" mdxSource={mdxSource} />
                     </div>
                   </div>
                 </div>
                 <div
                   id="footer"
-                  className="z-10 mb-1 border-t-2 border-gray-200 bg-gray-100 dark:border-gray-700 dark:bg-slate-800"
+                  className="mb-1 h-16 border-t-2 border-gray-200 bg-gray-100 dark:border-gray-700 dark:bg-slate-800"
                 >
                   <div className="markdown mx-3  mb-1 mt-2">
                     <dl>
