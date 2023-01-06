@@ -70,6 +70,7 @@ input:-webkit-autofill:focus {
 
 pre {
   overflow-x: auto;
+  @apply bg-slate-900 !important;
 }
 
 /**
@@ -80,6 +81,7 @@ pre {
 .code-highlight {
   float: left; /* 1 */
   min-width: 100%; /* 2 */
+  @apply bg-slate-900 !important;
 }
 
 .code-line {
