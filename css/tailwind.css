@@ -67,6 +67,20 @@ input:-webkit-autofill:focus {
   @apply text-3xl;
 }
 
+/* SNIPPETS */
+
+.snippetCard ul {
+  @apply mx-0 pr-0;
+  @apply list-disc marker:text-gray-900 dark:marker:text-gray-100 !important;
+}
+
+.snippetCard li {
+  @apply my-0 py-0;
+}
+.snippetCard li p {
+  @apply my-0 py-0;
+}
+
 /* CODE SNIPPETS, SYNTAX HIGHLIGHTING */
 
 .relative pre {
