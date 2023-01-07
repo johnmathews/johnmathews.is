@@ -9,11 +9,11 @@ const menuItems = [
   { item: "vt", description: "Show technical blog posts only" },
   { item: "vn", description: "Show non-technical blog posts only" },
   { item: "gg", description: "Go to top of page" },
-  { item: "j", description: "move screen down" },
   { item: "G", description: "Go to bottom of page" },
+  { item: "gb", description: "browser back" },
+  { item: "gf", description: "browser forward" },
+  { item: "j", description: "move screen down" },
   { item: "k", description: "move screen up" },
-  { item: "se", description: "Sections page" },
-  { item: "su", description: "Summaries page" },
   { item: "ga", description: "About" },
   { item: "gl", description: "Landing" },
   { item: "gi", description: "blog post index" },
@@ -22,9 +22,9 @@ const menuItems = [
   { item: "gp", description: "Photographs" },
   { item: "gm", description: "Metrics" },
   { item: "gs", description: "Snippets" },
-  { item: "gc", description: "Categories" },
-  { item: "gb", description: "browser back" },
-  { item: "gf", description: "browser forward" },
+  { item: "ct", description: "Categories" },
+  { item: "gc", description: "Collections page" },
+  { item: "su", description: "Summaries page" },
 ]
 
 export default menuItems
