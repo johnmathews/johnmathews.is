@@ -15,6 +15,7 @@ const menuItems = [
   { item: "j", description: "move screen down" },
   { item: "k", description: "move screen up" },
   { item: "ga", description: "About" },
+  { item: "ge", description: "Experience" },
   { item: "gl", description: "Landing" },
   { item: "gi", description: "blog post index" },
   { item: "gk", description: "Books" },

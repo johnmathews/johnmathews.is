@@ -15,9 +15,11 @@ interests. It might be morphing into a
 project and somewhere I can experiment with web and cloud technologies.
 
 Most of my work is as a freelance
-[data-scientist](/projects/azure-image-recognition-demo.md). I also do
-[web development](/projects/website-analytics.md) and
-<a href="https://johnmathews.is/category/technical/cryptocurrencies.html">blockchain</a> infrastructure work.
+[data-scientist](/projects/azure-image-recognition-demo.md). I also do [web
+development](/projects/website-analytics.md) and <a
+href="https://johnmathews.is/category/technical/cryptocurrencies.html">blockchain</a>
+infrastructure work. More information about my work can be found
+[here](/experience).
 
 If you have questions, comments or find a mistake, you can find me on
 [twitter](https://twitter.com/johnmathews) or [email](mailto:mthwsjc@gmail.com). Thanks for reading!

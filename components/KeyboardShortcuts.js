@@ -249,6 +249,13 @@ const KeyboardShortcuts = () => {
     HIDE_MODAL()
   })
 
+  useMousetrap("g e", () => {
+    let data = JSON.stringify({ category: "keyboard-shortcut", event: "ge" })
+    clientEventLogger(router.asPath, data)
+    router.push("/experience")
+    HIDE_MODAL()
+  })
+
   return <></>
 }
 
