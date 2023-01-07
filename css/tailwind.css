@@ -6,6 +6,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Cardo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap");
 
+/* used when embedding tweets, such as `/tweets-april-2021` */
+.twitter-tweet {
+  @apply pt-2 pb-8;
+}
+
 #sidebarOuterWrapper {
   @apply hidden flex-none lg:block !important;
   @apply mt-5 mr-5 w-1/6 md:ml-10 lg:ml-5 xl:ml-0 2xl:mr-20 2xl:w-1/12 3xl:ml-0;
