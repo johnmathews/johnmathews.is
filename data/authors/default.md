@@ -1,12 +1,12 @@
 ---
 name: John Mathews
 avatar: /static/images/avatar.png
-occupation:
+occupation: Consultant Data Scientist
 company:
 email:
-twitter:
-linkedin:
-github:
+twitter: https://twitter.com/johnmathews
+linkedin: https://www.linkedin.com/in/johnmathews1/
+github: https://github.com/johnmathews
 ---
 
 This site is a mixture of my notes, a portfolio and a record of my hobbies and
@@ -21,5 +21,7 @@ Most of my work is as a freelance
 
 If you have questions, comments or find a mistake, you can find me on
 [twitter](https://twitter.com/johnmathews) or [email](mailto:mthwsjc@gmail.com). Thanks for reading!
+
+[LinkedIn](https://www.linkedin.com/in/johnmathews1/) | [Github](https://github.com/johnmathews)
 
 <img className="border-2 border-green-500" src="static/images/john_headshot.jpg" alt="Picture of the author" width={300} />
