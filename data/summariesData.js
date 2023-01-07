@@ -1,19 +1,19 @@
 const sectionsData = [
   {
     title: "April 2021: Learning",
-    description: "",
-    imgSrc: "GCP Service Accounts, SSH, Ansible, Vagrant",
+    description: "GCP Service Accounts, SSH, Ansible, Vagrant",
+    imgSrc: "",
     href: "/blog/learning-april-2021",
   },
   {
     title: "April 2021: Reading",
-    description: "",
-    imgSrc: "1-Person SaaS, Lots of technical stuff.",
+    description: "1-Person SaaS, Lots of technical stuff.",
+    imgSrc: "",
     href: "/blog/reading-april-2021",
   },
   {
     title: "April 2021: Tweets",
-    description: "this isnt rendering right, yet.",
+    description: "Surpringly interesting tweets",
     imgSrc: "",
     href: "/blog/tweets-april-2021",
   },
