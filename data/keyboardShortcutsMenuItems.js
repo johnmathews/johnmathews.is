@@ -1,7 +1,6 @@
 const menuItems = {
-  Navigation: [
-    { item: "?", description: "Toggle keyboard shortcuts" },
-    { item: "esc", description: "Toggle keyboard shortcuts" },
+  Actions: [
+    { item: "?, esc", description: "Toggle keyboard shortcuts" },
     { item: "cmd+k", description: "Search" },
     { item: "tt", description: "Toggle dark mode" },
     { item: "va", description: "Show all blog posts" },
@@ -20,7 +19,7 @@ const menuItems = {
     { item: "gi", description: "Blog index" },
     { item: "ga", description: "About" },
     { item: "gc", description: "Collections" },
-    { item: "su", description: "Monthly Summaries" },
+    { item: "su", description: "Monthly summaries" },
     { item: "gb", description: "Bible notes" },
     { item: "ge", description: "Experience" },
     { item: "gl", description: "Landing" },

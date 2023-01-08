@@ -21,7 +21,7 @@ export default function Collections() {
           </p>
         </div>
         <div className="container py-12">
-          <div className="-m-4">
+          <div className="-m-4 flex">
             {collectionsData.map((d) => (
               <Card
                 key={d.title}
