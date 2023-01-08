@@ -176,18 +176,37 @@ const KeyboardShortcuts = () => {
   })
 
   useMousetrap("c t", () => {
-    let data = JSON.stringify({ category: "keyboard-shortcut", event: "gc" })
+    let data = JSON.stringify({ category: "keyboard-shortcut", event: "ct" })
     clientEventLogger(router.asPath, data)
     router.push("/categories")
     HIDE_MODAL()
   })
 
-  useMousetrap("s u", () => {
-    let data = JSON.stringify({ category: "keyboard-shortcut", event: "su" })
+  useMousetrap("c m", () => {
+    let data = JSON.stringify({ category: "keyboard-shortcut", event: "cm" })
+    clientEventLogger(router.asPath, data)
+    router.push("/meta")
+    HIDE_MODAL()
+  })
+  useMousetrap("c l", () => {
+    let data = JSON.stringify({ category: "keyboard-shortcut", event: "cl" })
+    clientEventLogger(router.asPath, data)
+    router.push("/longform")
+    HIDE_MODAL()
+  })
+  useMousetrap("c s", () => {
+    let data = JSON.stringify({ category: "keyboard-shortcut", event: "cs" })
     clientEventLogger(router.asPath, data)
     router.push("/summaries")
     HIDE_MODAL()
   })
+  useMousetrap("c b", () => {
+    let data = JSON.stringify({ category: "keyboard-shortcut", event: "cb" })
+    clientEventLogger(router.asPath, data)
+    router.push("/bible")
+    HIDE_MODAL()
+  })
+
   useMousetrap("g c", () => {
     let data = JSON.stringify({ category: "keyboard-shortcut", event: "se" })
     clientEventLogger(router.asPath, data)

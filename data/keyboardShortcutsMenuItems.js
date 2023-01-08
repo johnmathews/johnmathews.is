@@ -19,8 +19,6 @@ const menuItems = {
     { item: "gi", description: "Blog index" },
     { item: "ga", description: "About" },
     { item: "gc", description: "Collections" },
-    { item: "su", description: "Monthly summaries" },
-    { item: "gb", description: "Bible notes" },
     { item: "ge", description: "Experience" },
     { item: "gl", description: "Landing" },
     { item: "gk", description: "Books" },
@@ -29,6 +27,10 @@ const menuItems = {
     { item: "gm", description: "Metrics" },
     { item: "gs", description: "Snippets" },
     { item: "ct", description: "Categories" },
+    { item: "cm", description: "Meta" },
+    { item: "cl", description: "Longform" },
+    { item: "cs", description: "Monthly summaries" },
+    { item: "cb", description: "Bible notes" },
   ],
 }
 
