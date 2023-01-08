@@ -1,6 +1,12 @@
 const collectionsData = [
   {
-    title: "Monthly Summaries",
+    title: "Long form",
+    description: "Longer posts, usually reflective or introspective.",
+    imgsrc: "",
+    href: "/meta",
+  },
+  {
+    title: "Monthly summaries",
     description: "",
     imgsrc: "",
     href: "/summaries",

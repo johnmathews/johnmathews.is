@@ -18,7 +18,7 @@ export default function Summaries() {
           <p></p>
         </div>
         <div className="container py-12">
-          <div className="-m-4 ">
+          <div className="-m-4 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
             {summariesData.map((d) => (
               <Card
                 key={d.title}
