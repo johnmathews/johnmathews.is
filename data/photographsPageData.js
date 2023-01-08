@@ -14,6 +14,11 @@ const photographsPageData = [
     imgSrc: "/static/images/photos/dog_walker.jpeg",
     href: "/blog/photographs",
   },
+  {
+    title: "Live near the ocean",
+    imgSrc: "/static/images/california2.jpg",
+    href: "/blog/ocean",
+  },
 ]
 
 export default photographsPageData

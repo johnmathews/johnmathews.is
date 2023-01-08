@@ -61,12 +61,7 @@ function toTitleCase(str) {
 
 export default function Category({ posts, category }) {
   // Capitalize first letter and convert space to dash
-  if (category == "snippet") {
-    var formattedTitle = "Snippet"
-  }
-  if (category != "snippet") {
-    var formattedtitle = toTitleCase(category[1])
-  }
+  const formattedTitle = category === "snippet" ? "Snippet" : toTitleCase(category[1])
   return (
     <>
       <CategorySEO

@@ -6,6 +6,12 @@ const collectionsData = [
     href: "/summaries",
   },
   {
+    title: "Meta",
+    description: "Attitudes, mental models, ways of thinking",
+    imgsrc: "",
+    href: "/meta",
+  },
+  {
     title: "Bible notes",
     description: "Brief and light notes on various parts of the bible",
     imgsrc: "",
