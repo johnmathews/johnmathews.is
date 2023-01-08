@@ -3,7 +3,7 @@ title: Long Life
 date: 2023-01-06 13:08:02
 category: Non-technical/Social
 tags: ["life", "death", "health", "friendship", "community"]
-summary: "Nine things healthy communities all have in common: Purpose, Movement, Low Stress, Eat lightly, Plants not meat, Wine, Church, Family First, Friends"
+summary: "Findings from a research paper on blue zones: Nine things healthy communities all have in common: Purpose, Movement, Low Stress, Eat lightly, Plants not meat, Wine, Church, Family, Friends"
 ---
 
 An [article](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6125071/)[^4] in the
@@ -33,12 +33,10 @@ The nine factors that each of the five geographic communities had in common are:
    stress. Okinawans take a few moments each day to remember their ancestors;
    Adventists pray; Ikarians take a nap; and Sardinians do happy hour.
 
-4. **80% Rule**. A 2500-year old Confucian mantra[^3] to be said before meals
-   reminds people to stop eating when their stomachs are 80% full. The 20% gap
-   between not being hungry and feeling full could be the difference between losing
-   weight or gaining it. People in the Blue Zones eat their smallest meal in the
-   late afternoon or early evening, and then, they do not eat any more the rest of
-   the day.
+4. **80% Rule**. The 20% gap between not being hungry and feeling full could be
+   the difference between losing weight or gaining it. People in the Blue Zones eat
+   their smallest meal in the late afternoon or early evening, and then, they do
+   not eat any more the rest of the day.
 
 5. **More Plants, Less Meat**. Beans, including fava, black, soy, and lentils, are the
    cornerstone of most centenarian diets. Meat—mostly pork—is eaten on average only
@@ -112,7 +110,6 @@ producing 200 litres of wine a year. His secret he says? “I just forgot to die
     Demographically confirmed, geographically defined areas with the highest
     percentage of centenarians
 
-[^3]: "Hara hachi bu"
 [^4]:
     Buettner D, Skemp S. Blue Zones: Lessons From the World's Longest Lived.
     Am J Lifestyle Med. 2016 Jul 7;10(5):318-321. doi: 10.1177/1559827616637066.

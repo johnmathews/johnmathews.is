@@ -3,7 +3,7 @@ const collectionsData = [
     title: "Long form",
     description: "Longer posts, usually reflective or introspective.",
     imgsrc: "",
-    href: "/meta",
+    href: "/longform",
   },
   {
     title: "Monthly summaries",

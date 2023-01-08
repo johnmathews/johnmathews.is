@@ -4,7 +4,7 @@ const metaPageData = {
       title: "Corporate London",
       description: ``,
       imgSrc: "",
-      href: "/blog/a-list-of-unconnected-thoughts-and-aphorisms",
+      href: "/blog/corporate",
     },
   ],
 }
