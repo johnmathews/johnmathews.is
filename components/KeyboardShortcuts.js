@@ -162,13 +162,13 @@ const KeyboardShortcuts = () => {
     // write an upArrow function but make downArrow work first
   })
 
-  useMousetrap("g f", () => {
+  useMousetrap("b f", () => {
     let data = JSON.stringify({ category: "keyboard-shortcut", event: "gf" })
     clientEventLogger(router.asPath, data)
     window.history.forward()
     HIDE_MODAL()
   })
-  useMousetrap("g b", () => {
+  useMousetrap("b b", () => {
     let data = JSON.stringify({ category: "keyboard-shortcut", event: "gb" })
     clientEventLogger(router.asPath, data)
     window.history.back()

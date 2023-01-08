@@ -23,12 +23,21 @@ const Modal = () => {
               Keyboard Shortcuts
             </div>
 
-            {keyboardShortcutsMenuItems.map((item) => (
-              <div key={item.item} className="flex text-gray-800">
-                <div className="mr-2  rounded-lg border-2 bg-gray-400 px-2 ">{item.item}</div>
-                <span>{item.description}</span>
-              </div>
-            ))}
+            {Object.keys(keyboardShortcutsMenuItems).map((heading) => {
+              return (
+                <div key={heading}>
+                  <h2 className="text-lg font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-900 sm:text-xl sm:leading-10 md:text-2xl md:leading-14">
+                    {heading}
+                  </h2>
+                  {keyboardShortcutsMenuItems[heading].map((item) => (
+                    <div key={item.item} className="flex text-gray-800">
+                      <div className="mr-2  rounded-lg border-2 bg-gray-400 px-2 ">{item.item}</div>
+                      <span>{item.description}</span>
+                    </div>
+                  ))}
+                </div>
+              )
+            })}
           </div>
         </div>
       ) : null}
