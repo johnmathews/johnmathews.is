@@ -119,7 +119,7 @@ export default function UserInteractions({ data }) {
           <YAxis
             scale="log"
             label={{ value: "€", angle: -90, position: "right" }}
-            domain={[0.003, "auto"]}
+            domain={[0.001, "auto"]}
             allowDataOverflow
             orientation="right"
           />
