@@ -24,7 +24,7 @@ const menuItems = {
     { item: "cl", description: "Longform" },
     { item: "cm", description: "Micro-SaaS" },
     { item: "cn", description: "Math" },
-    { item: "cr", description: "Running" },
+    { item: "cp", description: "Sport" },
     { item: "cs", description: "Monthly summaries" },
     { item: "ct", description: "Meta" },
     { item: "ga", description: "About" },

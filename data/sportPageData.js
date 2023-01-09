@@ -1,5 +1,5 @@
 const runningPageData = {
-  Placeholder: [
+  Running: [
     {
       title: "Running through adversity",
       description: ``,
@@ -13,6 +13,7 @@ const runningPageData = {
       href: "/blog/barkley-finisher-15-john-kelley",
     },
   ],
+  Cardio: [],
 }
 
 export default runningPageData

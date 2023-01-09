@@ -60,10 +60,10 @@ const collectionsData = [
     href: "/math",
   },
   {
-    title: "Running",
+    title: "Sport",
     description: "",
     imgsrc: "",
-    href: "/running",
+    href: "/sport",
   },
   {
     title: "Engineering",
