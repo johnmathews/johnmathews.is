@@ -219,9 +219,15 @@ const KeyboardShortcuts = () => {
     HIDE_MODAL()
   })
   useMousetrap("g c", () => {
-    let data = JSON.stringify({ category: "keyboard-shortcut", event: "se" })
+    let data = JSON.stringify({ category: "keyboard-shortcut", event: "gc" })
     clientEventLogger(router.asPath, data)
     router.push("/collections")
+    HIDE_MODAL()
+  })
+  useMousetrap("g e", () => {
+    let data = JSON.stringify({ category: "keyboard-shortcut", event: "ge" })
+    clientEventLogger(router.asPath, data)
+    router.push("/experience")
     HIDE_MODAL()
   })
   useMousetrap("g i", () => {
