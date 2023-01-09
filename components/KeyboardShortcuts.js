@@ -187,16 +187,46 @@ const KeyboardShortcuts = () => {
     router.push("/bible")
     HIDE_MODAL()
   })
+  useMousetrap("c e", () => {
+    let data = JSON.stringify({ category: "keyboard-shortcut", event: "ce" })
+    clientEventLogger(router.asPath, data)
+    router.push("/engineering")
+    HIDE_MODAL()
+  })
+  useMousetrap("c f", () => {
+    let data = JSON.stringify({ category: "keyboard-shortcut", event: "cf" })
+    clientEventLogger(router.asPath, data)
+    router.push("/finance")
+    HIDE_MODAL()
+  })
   useMousetrap("c m", () => {
     let data = JSON.stringify({ category: "keyboard-shortcut", event: "cm" })
     clientEventLogger(router.asPath, data)
     router.push("/micro-saas")
     HIDE_MODAL()
   })
+  useMousetrap("c n", () => {
+    let data = JSON.stringify({ category: "keyboard-shortcut", event: "cn" })
+    clientEventLogger(router.asPath, data)
+    router.push("/math")
+    HIDE_MODAL()
+  })
+  useMousetrap("c k", () => {
+    let data = JSON.stringify({ category: "keyboard-shortcut", event: "ck" })
+    clientEventLogger(router.asPath, data)
+    router.push("/books")
+    HIDE_MODAL()
+  })
   useMousetrap("c l", () => {
     let data = JSON.stringify({ category: "keyboard-shortcut", event: "cl" })
     clientEventLogger(router.asPath, data)
     router.push("/longform")
+    HIDE_MODAL()
+  })
+  useMousetrap("c r", () => {
+    let data = JSON.stringify({ category: "keyboard-shortcut", event: "cr" })
+    clientEventLogger(router.asPath, data)
+    router.push("/running")
     HIDE_MODAL()
   })
   useMousetrap("c s", () => {
@@ -240,12 +270,6 @@ const KeyboardShortcuts = () => {
     let data = JSON.stringify({ category: "keyboard-shortcut", event: "gp" })
     clientEventLogger(router.asPath, data)
     router.push("/projects")
-    HIDE_MODAL()
-  })
-  useMousetrap("g k", () => {
-    let data = JSON.stringify({ category: "keyboard-shortcut", event: "gk" })
-    clientEventLogger(router.asPath, data)
-    router.push("/books")
     HIDE_MODAL()
   })
   useMousetrap("g l", () => {
