@@ -8,4 +8,4 @@ tags: ["cli", "unix", "macos"]
 ---
 
 There is a similar tool, with a list of other similar tools
-[here](https://dev.yorhel.nl/ncdu`)
+[here](https://dev.yorhel.nl/ncdu)

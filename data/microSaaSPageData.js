@@ -10,13 +10,19 @@ const microSaaSPageData = {
       title: "Architecture behind a one person tech startup",
       description: ``,
       imgSrc: "",
-      href: "https://johnmathews.is/blog/reading-april-2021#the-architecture-behind-a-one-person-tech-startup",
+      href: "/blog/reading-april-2021#the-architecture-behind-a-one-person-tech-startup",
     },
     {
       title: "Boring tech behind a one person SaaS",
       description: ``,
       imgSrc: "",
-      href: "https://johnmathews.is/blog/reading-april-2021#boring-tech-behind-a-one-person-saas",
+      href: "/blog/reading-april-2021#boring-tech-behind-a-one-person-saas",
+    },
+    {
+      title: "Choose boring technology",
+      description: ``,
+      imgSrc: "",
+      href: "/blog/choose-boring-technology",
     },
   ],
   Product: [

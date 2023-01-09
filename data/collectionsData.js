@@ -1,4 +1,3 @@
-// could also do Math, Running, SaaS, Investing
 const collectionsData = [
   {
     title: "Long form",
@@ -47,6 +46,30 @@ const collectionsData = [
     description: "",
     imgsrc: "",
     href: "/books",
+  },
+  {
+    title: "Finance",
+    description: "",
+    imgsrc: "",
+    href: "/finance",
+  },
+  {
+    title: "Math",
+    description: "",
+    imgsrc: "",
+    href: "/math",
+  },
+  {
+    title: "Running",
+    description: "",
+    imgsrc: "",
+    href: "/running",
+  },
+  {
+    title: "Engineering",
+    description: "",
+    imgsrc: "",
+    href: "/engineering",
   },
 ]
 
