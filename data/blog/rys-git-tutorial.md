@@ -20,9 +20,7 @@ experiment with a project without fear of losing any hard-won progress.
 
 Ry's Git Tutorial by Ryan Hodson is the best way to learn Git that I have come
 across. Its simple, practical, and clear. The reader learns how to use Git by
-creating and maintaining a simple website[ref]This tutorial was also the first
-time I created a simple website, and it led to so many "ahah!" moments. It
-unlocked all the web development progress that followed.[/ref] . This gives the
+creating and maintaining a simple website[^1]. This gives the
 Git commands a meaningful context, which makes them a lot easier to remember and
 use in the future.
 
@@ -54,3 +52,8 @@ Download the example files for each module below:
 - [Chapter 11: Tips & Tricks](/documents/chapter11.zip)
 - [Chapter 12: Plumbing](/documents/chapter12.zip)
 - [end](/documents/chapter13.zip)
+
+[^1]:
+    This tutorial was also the first time I created a simple website, and it
+    led to so many "ahah!" moments. It unlocked all the web development progress
+    that followed.

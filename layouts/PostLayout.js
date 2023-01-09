@@ -1,3 +1,6 @@
+import { useRouter } from "next/router"
+import { useEffect } from "react"
+
 import Link from "@/components/Link"
 import PageTitle from "@/components/PageTitle"
 import { BlogSEO } from "@/components/SEO"
@@ -56,6 +59,15 @@ export default function PostLayout({ frontMatter, authorDetails, children }) {
     }
   }
 
+  const router = useRouter()
+
+  useEffect(() => {
+    router.beforePopState((state) => {
+      state.options.scroll = true
+      return true
+    })
+  }, [])
+
   return (
     <>
       <div id="sectionContainerWrapsFooter" className="mt-5 md:px-4 lg:mt-0 xl:px-0 ">
@@ -79,7 +91,7 @@ export default function PostLayout({ frontMatter, authorDetails, children }) {
                       <PageTitle>{title}</PageTitle>
                     </div>
                   </div>
-                  <div className="mt-12 font-serif text-lg font-semibold text-gray-600 dark:text-gray-200 md:mt-20 lg:hidden  ">
+                  <div className="mt-12 font-serif text-lg font-semibold text-gray-600 dark:text-gray-200 md:mt-5 lg:text-2xl ">
                     <time dateTime={date}>
                       {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
                     </time>
@@ -99,11 +111,11 @@ export default function PostLayout({ frontMatter, authorDetails, children }) {
                   <footer className="">
                     <div className="pt-4 xl:pt-8">
                       <Link
-                        href="/posts"
-                        className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                        className="text-lg font-semibold text-blue-700 hover:underline dark:text-blue-300"
+                        href="#"
                       >
-                        &larr; Back to the blog
-                      </Link>
+                        <a onClick={() => router.back()}>← Go back</a>
+                      </Link>{" "}
                     </div>
                   </footer>
                 </div>
