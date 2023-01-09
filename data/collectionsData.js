@@ -31,10 +31,16 @@ const collectionsData = [
     href: "/photographs",
   },
   {
-    title: "Projects",
+    title: "Past Projects",
     description: "",
     imgsrc: "",
     href: "/projects",
+  },
+  {
+    title: "Micro-SaaS",
+    description: "",
+    imgsrc: "",
+    href: "/micro-saas",
   },
   {
     title: "Book notes",
