@@ -31,13 +31,14 @@ const collectionsData = [
   },
   {
     title: "Past Projects",
-    description: "",
+    description: "A portfolio, I suppose.",
     imgsrc: "",
     href: "/projects",
   },
   {
     title: "Micro-SaaS",
-    description: "",
+    description:
+      "Ideally, I'd create a machine that could make money for me whilst I sleep. Invest my time and stop trading it for money.",
     imgsrc: "",
     href: "/micro-saas",
   },
@@ -49,13 +50,13 @@ const collectionsData = [
   },
   {
     title: "Finance",
-    description: "",
+    description: "Advice about money.",
     imgsrc: "",
     href: "/finance",
   },
   {
     title: "Math",
-    description: "",
+    description: "Number theoryyyyy.",
     imgsrc: "",
     href: "/math",
   },
