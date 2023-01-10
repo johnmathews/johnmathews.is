@@ -20,6 +20,12 @@ const runningPageData = {
       imgSrc: "",
       href: "/blog/insanity",
     },
+    {
+      title: "P90x",
+      description: ``,
+      imgSrc: "",
+      href: "/blog/p90x",
+    },
   ],
 }
 
