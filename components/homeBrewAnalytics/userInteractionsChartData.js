@@ -5,7 +5,7 @@ import useSWR from "swr"
 // https://recharts.org/en-US/guide/getting-started
 export default function PageViewsData({ fetcher, user_interactions_endpoint }) {
   const { data, error } = useSWR(user_interactions_endpoint, fetcher)
-  if (error) return <div>failed to get user interactions data :(</div>
+  if (error) return <div>failed to get user interactions data(</div>
   if (!data) return <div>User Interactions: loading data...</div>
 
   const dailyEvents = JSON.parse(data["daily_events_by_type"])

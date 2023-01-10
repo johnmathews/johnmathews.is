@@ -7,10 +7,10 @@ const runningPageData = {
       href: "/blog/running-through-adversity",
     },
     {
-      title: "John Kelly finished the 2017 Barkley Marathons",
+      title: "John Kelly finishes the 2017 Barkley Marathons",
       description: ``,
       imgSrc: "",
-      href: "/blog/barkley-finisher-15-john-kelley",
+      href: "/blog/barkley-finisher-15-john-kelly",
     },
   ],
   Workouts: [
