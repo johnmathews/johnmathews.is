@@ -13,7 +13,14 @@ const runningPageData = {
       href: "/blog/barkley-finisher-15-john-kelley",
     },
   ],
-  Cardio: [],
+  Workouts: [
+    {
+      title: "Insanity interval training",
+      description: ``,
+      imgSrc: "",
+      href: "/blog/insanity",
+    },
+  ],
 }
 
 export default runningPageData
