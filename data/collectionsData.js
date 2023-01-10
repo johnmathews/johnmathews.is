@@ -31,7 +31,7 @@ const collectionsData = [
   },
   {
     title: "Past Projects",
-    description: "A portfolio, I suppose.",
+    description: "A portfolio.",
     imgsrc: "",
     href: "/projects",
   },
@@ -68,7 +68,7 @@ const collectionsData = [
   },
   {
     title: "Engineering",
-    description: "",
+    description: "Advice about being a software engineer",
     imgsrc: "",
     href: "/engineering",
   },
