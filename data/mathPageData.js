@@ -1,4 +1,4 @@
-const financePageData = {
+const mathPageData = {
   "": [
     {
       title: "Bifurcation Theory",
@@ -45,4 +45,4 @@ const financePageData = {
   ],
 }
 
-export default financePageData
+export default mathPageData
