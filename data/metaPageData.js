@@ -13,40 +13,16 @@ const metaPageData = {
       href: "/blog/how-to-get-rich-without-getting-lucky",
     },
     {
-      title: "Skills needed by a senior engineer",
-      description: "",
+      title: "Notes from an interview with Geoffrey Hinton",
+      description: "The context is AI, but the advice easily becomes more general",
       imgSrc: "",
-      href: "/blog/an-incomplete-list-of-skills-senior-engineers-need",
+      href: "/blog/notes-from-an-interview-with-geoffrey-hinton",
     },
     {
       title: "Questions for interesting conversations",
       description: "A list of questions that might lead to interesting or intense conversations.",
       imgSrc: "",
       href: "/blog/questions",
-    },
-    {
-      title: "Startup engineering lessons",
-      description: "",
-      imgSrc: "",
-      href: "/blog/startup-engineering-lessons",
-    },
-    {
-      title: "Musk's engineering philosophy",
-      description: "",
-      imgSrc: "",
-      href: "/blog/elon-musk-s-engineering-philosophy",
-    },
-    {
-      title: "Lessons from the software industry",
-      description: "",
-      imgSrc: "",
-      href: "/blog/45-years-in-software",
-    },
-    {
-      title: "Staff Engineer",
-      description: "",
-      imgSrc: "",
-      href: "/blog/staff-eng",
     },
   ],
 }

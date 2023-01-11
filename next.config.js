@@ -60,6 +60,11 @@ module.exports = withBundleAnalyzer({
         destination: "/blog/rys-git-tutorial",
         permanent: true,
       },
+      {
+        source: "/about.html",
+        destination: "/about",
+        permanent: true,
+      },
     ]
   },
   reactStrictMode: true,
