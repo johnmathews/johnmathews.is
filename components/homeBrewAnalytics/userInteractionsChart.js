@@ -1,14 +1,5 @@
-import React, { PureComponent } from "react"
-import {
-  BarChart,
-  Bar,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  Legend,
-  ResponsiveContainer,
-} from "recharts"
+import React from "react"
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts"
 
 import siteMetadata from "@/data/siteMetadata"
 const dateTemplate = { year: "numeric", month: "short", day: "numeric" }
@@ -78,7 +69,7 @@ const CustomTooltip = ({ active, payload, label }) => {
           if (p.value == 0) {
             return null
           } else {
-            return <p>{`${p.dataKey}: ${p.value}`}</p>
+            return <p key={p}>{`${p.dataKey}: ${p.value}`}</p>
           }
         })}
       </div>

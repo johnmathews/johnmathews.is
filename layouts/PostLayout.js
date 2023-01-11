@@ -66,7 +66,7 @@ export default function PostLayout({ frontMatter, authorDetails, children }) {
       state.options.scroll = true
       return true
     })
-  }, [])
+  }, [router])
 
   return (
     <>
