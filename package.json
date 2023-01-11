@@ -6,6 +6,7 @@
     "start": "cross-env SOCKET=true node ./scripts/next-remote-watch.js ./data",
     "dev": "next dev",
     "build": "next build && node ./scripts/generate-sitemap && node ./scripts/searchCache",
+    "aux": "node ./scripts/generate-sitemap && node ./scripts/searchCache",
     "buildSearchIndex": "node ./scripts/searchCache",
     "buildSitemap": "node ./scripts/generate-sitemap",
     "serve": "next start",
