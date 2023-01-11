@@ -18,4 +18,4 @@ const siteMetadata = {
   dataBucket: "assets.johnmathews.is",
 }
 
-export default siteMetadata
+module.exports = siteMetadata
