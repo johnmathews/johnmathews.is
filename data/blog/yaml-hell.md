@@ -5,7 +5,7 @@ category: snippet
 tags: ["yaml", "markup", "JSON"]
 ---
 
-The [YAML document from hell](https://ruudvanasseldonk.com/2023/01/11/the-yaml-document-from-hell)
+[The YAML document from hell](https://ruudvanasseldonk.com/2023/01/11/the-yaml-document-from-hell)
 is a great blog post demonstrating several pitfalls and gotchas of the YAML standard.
 
 - aliases
