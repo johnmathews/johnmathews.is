@@ -6,8 +6,7 @@ category: Non-technical>Learning
 tags: ["icaew", "aca", "accounting"]
 image: "/static/images/icaew_banner.JPEG"
 tweet: #ICAEW #accountant
-summary: I've qualified as a chartered accountant and will soon become a member of the Institute of Chartered Accountants in England and Wales
-status:
+summary: I've qualified as a chartered accountant and will soon become a member of the Institute of Chartered Accountants in England and Wales.
 ---
 
 Earlier this year I qualified as a chartered accountant. Qualification requires

@@ -23,8 +23,8 @@ export default function PostLayout({ frontMatter, authorDetails, children }) {
   var PostImage
   if (frontMatter.image) {
     PostImage = (
-      <div className="pb-5">
-        <Image src={frontMatter.image} alt={frontMatter.title} height="500" width="900" />
+      <div style={{ width: "900px", height: "300px", position: "relative" }} className="pb-5">
+        <Image src={frontMatter.image} alt={frontMatter.title} layout="fill" objectFit="cover" />
       </div>
     )
   } else {
@@ -84,14 +84,14 @@ export default function PostLayout({ frontMatter, authorDetails, children }) {
             <ScrollTop />
             <article id="article" className="md:mx-5 lg:mx-0 2xl:mt-20">
               <div className="">
-                <header className="pt-0 2xl:mb-20">
+                <header className="pt-0 2xl:mb-12">
                   {PostImage}
                   <div className="space-y-1 text-center">
                     <div className="2xl:mt-10 3xl:mt-20">
                       <PageTitle>{title}</PageTitle>
                     </div>
                   </div>
-                  <div className="mt-12 font-serif text-lg font-semibold text-gray-600 dark:text-gray-200 md:mt-5 lg:text-2xl ">
+                  <div className="mt-12 font-serif text-lg font-semibold text-gray-600 dark:text-gray-200 lg:text-2xl ">
                     <time dateTime={date}>
                       {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
                     </time>
