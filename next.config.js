@@ -56,18 +56,8 @@ module.exports = withBundleAnalyzer({
   async redirects() {
     return [
       {
-        source: "/blockchain-introduction.html",
-        destination: "/blog/blockchain-introduction",
-        permanent: true,
-      },
-      {
-        source: "/rys-git-tutorial.html",
-        destination: "/blog/rys-git-tutorial",
-        permanent: true,
-      },
-      {
-        source: "/about.html",
-        destination: "/about",
+        source: "/:slug([^.]+).html",
+        destination: "/blog/:slug",
         permanent: true,
       },
     ]
