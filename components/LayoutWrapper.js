@@ -99,20 +99,6 @@ const LayoutWrapper = ({ children }) => {
 
         <div className="md:block">
           <div className="flex flex-col  ">
-            <div className="text-md mt-3  mb-3">
-              <dt className="mb-1 flex text-left text-gray-900 dark:text-gray-100 md:flex-col">
-                Published:
-              </dt>
-              <dd className="text-gray-900 dark:text-gray-100">
-                <time dateTime={postMetaData.date}>
-                  {new Date(postMetaData.date).toLocaleDateString(
-                    siteMetadata.locale,
-                    postDateTemplate
-                  )}
-                </time>
-              </dd>
-            </div>
-
             <div className="text-md mb-3">
               <dt className="mb-1 flex text-left text-gray-900 dark:text-gray-100 md:flex-col">
                 Category:

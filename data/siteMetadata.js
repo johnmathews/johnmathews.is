@@ -18,4 +18,5 @@ const siteMetadata = {
   dataBucket: "assets.johnmathews.is",
 }
 
+// @ts-ignore
 module.exports = siteMetadata
