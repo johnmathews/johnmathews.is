@@ -12,3 +12,6 @@ is a great blog post demonstrating several pitfalls and gotchas of the YAML stan
 - anchors
 - number formats
 - the Norway problem
+
+Also, there is [this website](https://yaml-multiline.info/) documenting the different ways of writing
+multiline strings.
