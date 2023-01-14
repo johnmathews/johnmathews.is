@@ -1,7 +1,7 @@
 ---
 title: Neovim plugins I could make
 date: 2023-01-14 23:24:32
-category: Technical/Developer Tools
+category: Technical.Developer-Tools
 tags: ["vim", "plugins", "lua", "neovim"]
 ---
 

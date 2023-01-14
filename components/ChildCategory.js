@@ -9,12 +9,13 @@ const ChildCategory = ({ parentName, category }) => {
 
   const onlyKey = Object.keys(category)[0]
   const numPosts = category[onlyKey].length
+  const cleanString = onlyKey.replace("-", " ")
 
   return (
     <div key={onlyKey} className="flex">
       <Link href={`/categories/${kebabCase(parentName)}/${kebabCase(onlyKey)}`}>
         <a className="text-lg capitalize">
-          {onlyKey} ({numPosts})
+          {cleanString} ({numPosts})
         </a>
       </Link>
     </div>
