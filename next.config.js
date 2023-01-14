@@ -56,6 +56,11 @@ module.exports = withBundleAnalyzer({
   async redirects() {
     return [
       {
+        source: "/blog/algo-trading",
+        destination: "/blog/smaTraderBlog",
+        permanent: true,
+      },
+      {
         source: "/:slug([^.]+).html",
         destination: "/blog/:slug",
         permanent: true,

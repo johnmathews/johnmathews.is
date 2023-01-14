@@ -20,11 +20,15 @@ export default function FourZeroFour() {
           </p>
           <span className="my-3 flex">
             <p className=""> Try searching for it:</p>
-            <pre className="ml-2 rounded-md border bg-slate-300 px-2 dark:bg-gray-600">cmd + k</pre>
+            <pre className="ml-2 rounded-md border bg-slate-300 px-2 text-white dark:bg-gray-600">
+              cmd + k
+            </pre>
           </span>
           <span className="my-3 flex">
             Keyboard shortcuts:{" "}
-            <pre className="ml-2 rounded-md border bg-slate-300 px-2 dark:bg-gray-600">?</pre>
+            <pre className="ml-2 rounded-md border bg-slate-300 px-2 text-white dark:bg-gray-600">
+              ?
+            </pre>
           </span>
           <Link className="" href="/posts">
             <button className="focus:shadow-outline-blue my-10 inline rounded-lg border border-transparent bg-blue-600 px-4 py-2 text-sm font-medium leading-5 text-white shadow transition-colors duration-150 hover:bg-blue-700 focus:outline-none dark:hover:bg-blue-500">

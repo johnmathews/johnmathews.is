@@ -1,9 +1,8 @@
 ---
-title: creating users with sudo permissions
-slug: creating-users-with-sudo-permissions
+title: Creating Users With Sudo Permissions
 date: "2021-03-04 23:25:50"
 category: snippet
-tags: ["sudo", "linux", "user", "admin"]
+tags: ["sudo", "Linux", "user", "admin"]
 ---
 
 ```bash
@@ -19,4 +18,4 @@ passwd <username>
 usermod -aG wheel <username>
 ```
 
-(wheel is a usergroup with sudo permissions)
+`wheel` is a usergroup with sudo permissions
