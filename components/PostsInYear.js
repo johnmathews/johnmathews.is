@@ -5,7 +5,7 @@ import { AppContext } from "@/components/ContextProvider"
 
 import formatDate from "@/lib/utils/formatDate"
 
-const PostsInYear = ({ year, posts }) => {
+const PostsInYear = ({ year, posts, filterSnippets = true }) => {
   const [state, _] = useContext(AppContext)
   return posts[year].map((post) => {
     const { slug, date, title, category } = post
@@ -33,7 +33,7 @@ const PostsInYear = ({ year, posts }) => {
       showPost = false
     }
 
-    if (category[0].toLowerCase() !== "snippet") {
+    if (!filterSnippets || category[0].toLowerCase() !== "snippet") {
       return (
         <li
           key={slug}

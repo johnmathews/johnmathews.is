@@ -29,7 +29,7 @@ export async function getStaticProps({ params }) {
     (post) => post.draft !== true && post.tags.map((t) => kebabCase(t)).includes(params.tag)
   )
 
-  // rss
+  // rss - works correctly
   if (filteredPosts.length > 0) {
     const rss = generateRss(filteredPosts, `tags/${params.tag}/feed.xml`)
     const rssPath = path.join(root, "public", "tags", params.tag)
@@ -49,7 +49,7 @@ export default function Tag({ posts, tag }) {
         title={`${tag} - ${siteMetadata.author}`}
         description={`${tag} tags - ${siteMetadata.author}`}
       />
-      <ListLayout posts={posts} title={title} />
+      <ListLayout posts={posts} title={title} filterSnippets={false} />
     </>
   )
 }

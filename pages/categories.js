@@ -1,9 +1,7 @@
-import Link from "@/components/Link"
 import { PageSEO } from "@/components/SEO"
 import ParentCategory from "@/components/ParentCategory"
 import siteMetadata from "@/data/siteMetadata"
 import { getAllCategories } from "@/lib/categories"
-import kebabCase from "@/lib/utils/kebabCase"
 
 export async function getStaticProps() {
   const categories = await getAllCategories("blog")
@@ -12,7 +10,6 @@ export async function getStaticProps() {
 }
 
 export default function Categories({ categories }) {
-  // built structuredCategories object
   const structuredCategories = {}
   Object.keys(categories).forEach((category) => {
     const categoryParts = category.split(".")

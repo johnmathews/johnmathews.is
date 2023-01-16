@@ -43,9 +43,12 @@ export async function getStaticProps({ params }) {
   })
 
   // rss
+  // https://johnmathews.is/categories/feed.xml - doesnt work correctly
   if (filteredPosts.length > 0) {
     const rss = generateRss(filteredPosts, `categories/${params.category}/feed.xml`)
+    console.log("--- debug rss: ", rss)
     const rssPath = path.join(root, "public", "categories", kebabCase(params.category))
+    console.log("--- debug rssPath: ", rssPath)
     fs.mkdirSync(rssPath, { recursive: true })
     fs.writeFileSync(path.join(rssPath, "feed.xml"), rss)
   }
