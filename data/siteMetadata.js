@@ -3,7 +3,7 @@ const siteMetadata = {
   author: "John Mathews",
   headerTitle: "John Mathews",
   description: "A blog by John Mathews",
-  defaultPostDescription: "A blog post by John Mathews",
+  defaultBlogPostDescription: "A blog post by John Mathews",
   language: "en-us",
   theme: "system", // system, dark or light
   siteUrl: "https://johnmathews.is",
