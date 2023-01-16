@@ -2,7 +2,7 @@
 title: Adding Search
 slug: adding-search
 date: "2021-3-12 17:27"
-category: Technical>Web
+category: Technical.Web
 tags: ["blog", "search", "tinysearch", "web"]
 ---
 
