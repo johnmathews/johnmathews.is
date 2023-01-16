@@ -184,7 +184,7 @@ export const BlogSEO = ({
         url: `${siteMetadata.siteUrl}${siteMetadata.siteLogo}`,
       },
     },
-    description: summary || description,
+    description: summary || description || siteMetadata.defaultPostDescription,
   }
 
   const twImageUrl = featuredImages[0].url
