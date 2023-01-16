@@ -9,7 +9,7 @@ tags: ["Fuse", "Search", "Web"]
 
 I've reimplemented search on this site using [fuse.js](https://fusejs.io/) instead of
 [tinySearch](https://github.com/tinysearch/tinysearch). You can read about how I implemented
-tinysearch [here](blog/tinysearch).
+tinysearch [here](adding-search).
 
 When I first implemented search I was surprised how much faster and more accessible the site began
 to feel. I could quickly access any content by typing a few words, I didn't need to scroll or follow
