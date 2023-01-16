@@ -125,6 +125,7 @@ export const BlogSEO = ({
   authorDetails,
   title,
   summary,
+  description,
   date,
   lastmod,
   url,
@@ -183,7 +184,7 @@ export const BlogSEO = ({
         url: `${siteMetadata.siteUrl}${siteMetadata.siteLogo}`,
       },
     },
-    description: summary,
+    description: summary || description,
   }
 
   const twImageUrl = featuredImages[0].url
