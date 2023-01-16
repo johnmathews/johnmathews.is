@@ -7,6 +7,7 @@
     "dev": "next dev",
     "build": "next build && node ./scripts/generate-sitemap && node ./scripts/searchCache",
     "aux": "node ./scripts/generate-sitemap && node ./scripts/searchCache",
+    "meta": "node ./scripts/generate-sitemap && node ./scripts/searchCache",
     "buildSearchIndex": "node ./scripts/searchCache",
     "buildSitemap": "node ./scripts/generate-sitemap",
     "serve": "next start",
