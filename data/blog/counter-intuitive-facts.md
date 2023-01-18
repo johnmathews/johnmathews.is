@@ -45,21 +45,25 @@ Thanks to [Alexander Kruel](https://substack.com/profile/2149674-alexander-kruel
    [(source)](https://fqxi.org/community/forum/topic/3345).
 
 1. Knowing just slightly more about the value of your car than a potential buyer can make it
-   impossible to sell it. [https://en.wikipedia.org/wiki/The_Market_for_Lemons](https://en.wikipedia.org/wiki/The_Market_for_Lemons)
+   impossible to sell it.
+   [https://en.wikipedia.org/wiki/The_Market_for_Lemons](https://en.wikipedia.org/wiki/The_Market_for_Lemons)
 
 1. Closing roads can improve everyone’s commute time.
    [https://mindyourdecisions.com/blog/2009/01/06/why-the-secret-to-speedier-highways-might-be-closing-some-roads-the-braess-paradox/#.U4Ksl_ldUud](https://mindyourdecisions.com/blog/2009/01/06/why-the-secret-to-speedier-highways-might-be-closing-some-roads-the-braess-paradox/#.U4Ksl_ldUud)
 
 1. If you pay the value you think something is worth, you are going to end up with a negative net
-   profit. [http://en.wikipedia.org/wiki/Winner%27s_curse](http://en.wikipedia.org/wiki/Winner%27s_curse)
+   profit.
+   [http://en.wikipedia.org/wiki/Winner%27s_curse](http://en.wikipedia.org/wiki/Winner%27s_curse)
 
 1. Adding 3 feet to a tightly tied rope around the earth would allow you to raise it uniformly by
-   almost 6 inches. [http://puzzles.nigelcoldwell.co.uk/fortyone.htm](http://puzzles.nigelcoldwell.co.uk/fortyone.htm)
+   almost 6 inches.
+   [http://puzzles.nigelcoldwell.co.uk/fortyone.htm](http://puzzles.nigelcoldwell.co.uk/fortyone.htm)
 
 1. Two 12 Inch Pizzas have less Pizza than one 18 inch pizza.
 
 1. If you let a 100g strawberry that is 99% water by mass dehydrate such that the water now accounts
-   for 98% of the total mass then its new mass is 50g. [https://en.wikipedia.org/wiki/Potato_paradox](https://en.wikipedia.org/wiki/Potato_paradox)
+   for 98% of the total mass then its new mass is 50g.
+   [https://en.wikipedia.org/wiki/Potato_paradox](https://en.wikipedia.org/wiki/Potato_paradox)
 
 1. At any given moment on the earth's surface, there exist 2 antipodal points (on exactly opposite
    sides of the earth) with the same temperature and barometric pressure:
