@@ -2,7 +2,7 @@ import React from "react"
 
 export default function SearchItem({ hit, components }) {
   var catString = ""
-  if (hit.category === "snippet") {
+  if (hit.category.toLowerCase() === "snippet") {
     var catString = "snippet"
   }
   return (

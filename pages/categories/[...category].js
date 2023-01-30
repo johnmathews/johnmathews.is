@@ -62,7 +62,7 @@ function toTitleCase(str) {
 
 export default function Category({ posts, category }) {
   const formattedTitle =
-    category[0] !== "snippet" && typeof category[0] === "string"
+    category[0].toLowerCase() !== "snippet" && typeof category[0] === "string"
       ? toTitleCase(category[1])
       : "Snippet"
   return (
