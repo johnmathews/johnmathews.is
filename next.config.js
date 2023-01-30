@@ -11,7 +11,7 @@ const ContentSecurityPolicy = `
   media-src 'none';
   connect-src *;
   font-src 'self' fonts.gstatic.com;
-  frame-src giscus.app www.youtube.com youtube.com flagscdn.com read.amazon.com platform.twitter.com ; 
+  frame-src giscus.app www.youtube.com youtube.com flagscdn.com read.amazon.com platform.twitter.com configure.zsa.io; 
 `
 
 const securityHeaders = [
