@@ -1,5 +1,5 @@
 ---
-title: The ZSA Moonlander Mark I Review
+title: ZSA Moonlander Review
 date: 2023-01-23 17:11:31
 category: Technical.Developer-Tools
 tags: ["keyboard", "review"]

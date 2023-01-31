@@ -30,8 +30,4 @@ The Insanity workout program is bodyweight based interval training. I enjoy it b
 - [Calendar](<https://us-east1-johnmathews-website.cloudfunctions.net/download?obj=fitness/insanity/workout calendar.png>)
 - [Nutrition Guide](<https://us-east1-johnmathews-website.cloudfunctions.net/download?obj=fitness/insanity/Insanity Nutrition Guide.pdf>)
 
-&nbsp;
-&nbsp;
-&nbsp;
-
 ![Insanity Calendar](/static/images/insanity-workout-calendar.png)
