@@ -5,11 +5,11 @@ const siteMetadata = {
   description: "A blog by John Mathews",
   defaultBlogPostDescription: "A blog post by John Mathews",
   language: "en-us",
-  theme: "system", // system, dark or light
+  theme: "system",
   siteUrl: "https://johnmathews.is",
-  siteRepo: "https://github.com/timlrx/tailwind-nextjs-starter-blog",
+  siteRepo: "https://github.com/johnmathews/johnmathews.is",
   siteLogo: "/static/favicons/favicon-180x180.png",
-  image: "/static/images/avatar.png",
+  image: "/static/favicons/favicon-180x180.png",
   socialBanner: "/static/favicons/favicon-180x180.png",
   email: "mthwsjc@gmail.com",
   github: "https://github.com/johnmathews",
@@ -19,5 +19,6 @@ const siteMetadata = {
   dataBucket: "assets.johnmathews.is",
 }
 
+// do not convert this to an ES module
 // @ts-ignore
 module.exports = siteMetadata
