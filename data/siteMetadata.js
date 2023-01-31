@@ -8,9 +8,9 @@ const siteMetadata = {
   theme: "system", // system, dark or light
   siteUrl: "https://johnmathews.is",
   siteRepo: "https://github.com/timlrx/tailwind-nextjs-starter-blog",
-  siteLogo: "/static/images/logo.png",
+  siteLogo: "/static/favicons/favicon-180x180.png",
   image: "/static/images/avatar.png",
-  socialBanner: "/static/images/twitter-card.png",
+  socialBanner: "/static/favicons/favicon-180x180.png",
   email: "mthwsjc@gmail.com",
   github: "https://github.com/johnmathews",
   twitter: "https://twitter.com/johnmathews",
