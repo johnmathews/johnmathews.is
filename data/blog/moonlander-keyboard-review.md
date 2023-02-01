@@ -49,6 +49,8 @@ and softer when typing. I also replaced the switches with ALIAZ
 were the only silent _and_ tactile switches I could find, and I realised after some experimentation
 that I really wanted to be able to type quietly.
 
+<IframeEmbed type='youtube' src='https://youtube.com/embed/N-2vutk4TCM' />
+
 ## Firmware customization
 
 The software to program what each key does is also very customizable, and there are a lot of tools
@@ -92,8 +94,8 @@ an iterative process.
   - Optimal depends on what keys you can comfortably hit, and that will change as your hands become
     more used to various movements that are unique to thumb clusters and split keyboards.
 
-- I quickly became comfortable with the tilting but the split took longer to get adapt to, I
-  was used to pressing `y` and `n` with my left hand, for example.
+- I quickly became comfortable with the tilting but the split took longer to get adapt to, I was
+  used to pressing `y` and `n` with my left hand, for example.
 
 # The Platform
 
