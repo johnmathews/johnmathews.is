@@ -6,7 +6,6 @@ category: Technical>Developer-Tools
 tags: ["python", "pyenv", "virtualenv", "virtual-environment"]
 ---
 
-Contents:
 <TOCInline toc={props.toc} exclude="Overview" toHeading={2} />
 
 # Recipe

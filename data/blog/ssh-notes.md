@@ -6,7 +6,6 @@ category: Technical>Developer-Tools
 tags: ["ssh", "linux", "security"]
 ---
 
-Contents:
 <TOCInline toc={props.toc} exclude="Overview" toHeading={2} />
 
 ## TLDR

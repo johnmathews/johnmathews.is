@@ -6,7 +6,6 @@ category: Technical>Developer-Tools
 tags: ["automation", "dotfiles"]
 ---
 
-Contents:
 <TOCInline toc={props.toc} exclude="Overview" toHeading={2} />
 
 Update: 7 months later, I've written some more detailed notes

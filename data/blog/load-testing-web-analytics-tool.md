@@ -6,7 +6,6 @@ category: Technical>Web
 tags: ["google-cloud-platform", "cloud-functions", "api"]
 ---
 
-Contents:
 <TOCInline toc={props.toc} exclude="Overview" toHeading={2} />
 
 # Background

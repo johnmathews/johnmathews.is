@@ -9,7 +9,6 @@ tags: ["uncategorized"]
 The parts of Aaron Maxwell's [Powerful Python](https://twitter.com/powerfulpython)
 newsletter that I don't want to forget:
 
-Contents:
 <TOCInline toc={props.toc} exclude="Overview" toHeading={2} />
 
 ## Emergent Abstractions

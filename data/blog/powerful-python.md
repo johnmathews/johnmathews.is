@@ -12,7 +12,6 @@ examples. If becoming exceptionally good at Python ever makes it to the top of
 my list of professional priorities then I'd certainly take the course. For now
 though I'm going to make some notes on the marketing emails he send:
 
-Contents:
 <TOCInline toc={props.toc} exclude="Overview" toHeading={2} />
 
 ## Good mental models:

@@ -6,7 +6,6 @@ category: Non-technical>Journal
 tags: ["books", "bible", "proverbs", "wisdom"]
 ---
 
-Contents:
 <TOCInline toc={props.toc} exclude="Overview" toHeading={2} />
 
 # Context

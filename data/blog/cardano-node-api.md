@@ -13,7 +13,6 @@ create and watch addresses, and make transactions.
 Helpfully, Cardano make it quite simple to get up and running if you are
 familiar with Docker-Compose, and know where to look, and what questions to ask.
 
-Contents:
 <TOCInline toc={props.toc} exclude="Overview" toHeading={2} />
 
 # Docker Compose

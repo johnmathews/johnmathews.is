@@ -6,7 +6,6 @@ category: Technical>Engineering
 tags: ["programming", "back-end"]
 ---
 
-Contents:
 <TOCInline toc={props.toc} exclude="Overview" toHeading={2} />
 
 A great [aricle](https://tuhrig.de/my-logging-best-practices/) by someone called

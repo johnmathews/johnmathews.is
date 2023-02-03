@@ -16,7 +16,6 @@ and this feels like that. It's strategy as well as tactics.
 
 These are my notes on an outstanding book.
 
-Contents:
 <TOCInline toc={props.toc} exclude="Overview" toHeading={2} />
 
 # Premise

@@ -6,7 +6,6 @@ category: Technical>Web
 tags: ["uncategorized"]
 ---
 
-Contents:
 <TOCInline toc={props.toc} exclude="Overview" toHeading={2} />
 
 ## A mystery

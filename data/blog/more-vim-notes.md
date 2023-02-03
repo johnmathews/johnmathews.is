@@ -6,7 +6,6 @@ category: Technical>Developer-Tools
 tags: ["tips", "vim"]
 ---
 
-Contents:
 <TOCInline toc={props.toc} exclude="Overview" toHeading={2} />
 
 ### Quickfix list

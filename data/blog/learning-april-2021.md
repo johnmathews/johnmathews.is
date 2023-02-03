@@ -18,7 +18,6 @@ tags:
 
 import IframeEmbed from '../components/IframeEmbed'
 
-Contents:
 <TOCInline toc={props.toc} exclude="Overview" toHeading={2} />
 
 # [Google Cloud Platform Service Accounts](https://www.youtube.com/playlist?list=PLIivdWyY5sqIlPnZ7cvkg2Ck-8ZZ8TA5t)

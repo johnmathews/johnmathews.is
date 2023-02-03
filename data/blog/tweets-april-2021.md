@@ -6,8 +6,6 @@ category: Non-technical/Journal, Technical>Other
 tags: ["twitter"]
 ---
 
-Contents:
-
 <TOCInline toc={props.toc} exclude="Overview" toHeading={2} />
 
 # Front-End

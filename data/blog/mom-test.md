@@ -11,7 +11,6 @@ summary: My notes on "The Mom Test" by Rob Fitzpatrick. It's called the Mom Test
 
 import IframeEmbed from '../components/IframeEmbed'
 
-Contents:
 <TOCInline toc={props.toc} exclude="Overview" toHeading={2} />
 
 ## Summary

@@ -5,6 +5,8 @@ category: Technical.Developer-Tools
 tags: ["neovim", "tmux", "vim"]
 ---
 
+<TOCInline toc={props.toc} exclude="Overview" toHeading={2} />
+
 # Background
 
 I've used [Vim](https://www.vim.org/) and then [Neovim](https://neovim.io/) since I started
@@ -24,7 +26,7 @@ It's also convenient being able to run a code-editor in the same terminal window
 shell that is running the code. You can also run shells from within Neovim (or vim) to execute tests
 or build code.
 
-# Context - why it matters
+# Why it matters
 
 I have in the past tried to use (Neo)vim distributions, like LunarVim, and have always found them
 too restrictive. I like my setup and I don't want to learn a new way of doing a thing if I can help
@@ -40,6 +42,8 @@ favourite hammer, but a generic hammer will do. Not so with a developer environm
 keep on enjoying the experience of getting better.
 
 # My setup
+
+You can see my current Neovim config [here](https://github.com/johnmathews/neovim).
 
 - At the end of 2021 I began to convert my [previous vim setup](/blog/vim-for-large-projects) to
   Neovim and was using Neovim from January 2022.

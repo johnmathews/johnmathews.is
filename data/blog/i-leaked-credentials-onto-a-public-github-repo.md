@@ -6,7 +6,6 @@ category: Technical>Engineering
 tags: ["hack", "github", "service-account", "keys", "security"]
 ---
 
-Contents:
 <TOCInline toc={props.toc} exclude="Overview" toHeading={2} />
 
 # Don't post secrets to public GitHub repositories.
