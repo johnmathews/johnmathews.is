@@ -53,7 +53,7 @@ You can see my current Neovim config [here](https://github.com/johnmathews/neovi
 
   The 'complicated' or 'magical' features have now been tamed:
 
-  - Adding 'sources' to the [CMP](https://github.com/hrsh7th/nvim-cmp) completion engine, including
+  - Adding 'sources' to the [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) completion engine, including
     snippets, [GitHub copilot](https://github.com/zbirenbaum/copilot-cmp), and LSP.
   - The LSP tool-chain, using [mason](https://github.com/williamboman/mason.nvim) ,
     [null-ls](https://github.com/jose-elias-alvarez/null-ls.nvim),
