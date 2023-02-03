@@ -3,7 +3,7 @@ title: My code editor setup in 2023
 date: 2023-02-03 15:36:36
 category: Technical.Developer-Tools
 tags: ["neovim", "tmux", "vim"]
-image: "static/images/neovim-logo.png"
+image: "/static/images/neovim-logo.png"
 ---
 
 <TOCInline toc={props.toc} exclude="Overview" toHeading={2} />

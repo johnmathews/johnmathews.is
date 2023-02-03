@@ -24,7 +24,7 @@ export default function PostLayout({ frontMatter, authorDetails, children }) {
   if (frontMatter.image) {
     PostImage = (
       <div style={{ width: "900px", height: "350px", position: "relative" }} className="pb-5">
-        <Image src={frontMatter.image} alt={frontMatter.title} layout="fill" objectFit="cover" />
+        <Image src={frontMatter.image} alt={frontMatter.title} layout="fill" />
       </div>
     )
   } else {
