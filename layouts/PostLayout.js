@@ -22,9 +22,15 @@ export default function PostLayout({ frontMatter, authorDetails, children }) {
   const { theme } = useTheme()
   var PostImage
   if (frontMatter.image) {
+    // https://stackoverflow.com/questions/66845889/next-js-image-how-to-maintain-aspect-ratio-and-add-letterboxes-when-needed
     PostImage = (
-      <div style={{ width: "900px", height: "350px", position: "relative" }} className="pb-5">
-        <Image src={frontMatter.image} alt={frontMatter.title} layout="fill" />
+      <div className="relative pb-5" style={{ width: "100%", height: "600px" }}>
+        <Image
+          src={frontMatter.image}
+          alt={frontMatter.title}
+          layout="fill"
+          objectFit={"contain"}
+        />
       </div>
     )
   } else {

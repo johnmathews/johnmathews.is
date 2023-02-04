@@ -3,12 +3,10 @@ title: ZSA Moonlander Review
 date: 2023-01-23 17:11:31
 category: Technical.Developer-Tools
 tags: ["keyboard", "review"]
+image: "/static/images/keyboard/keyboard1.jpg"
 ---
 
 import IframeEmbed from '../components/IframeEmbed'
-
-[![Moonlander with
-platform](/static/images/keyboard/keyboard1.jpg)](/static/images/keyboard/keyboard1.jpg)
 
 <IframeEmbed src='https://configure.zsa.io/embed/moonlander/layouts/Dnj6q/latest/0' />
 
