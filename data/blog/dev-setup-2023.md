@@ -2,8 +2,8 @@
 title: My code editor setup in 2023
 date: 2023-02-03 15:36:36
 category: Technical.Developer-Tools
-tags: ["neovim", "tmux", "vim"]
 image: "/static/images/neovim-logo.png"
+tags: ["neovim", "tmux", "vim"]
 ---
 
 <TOCInline toc={props.toc} exclude="Overview" toHeading={2} />
@@ -27,7 +27,7 @@ It's also convenient being able to run a code-editor in the same terminal window
 shell that is running the code. You can also run shells from within Neovim (or vim) to execute tests
 or build code.
 
-# Why it matters
+## Why it matters
 
 I have in the past tried to use (Neo)vim distributions, like LunarVim, and have always found them
 too restrictive. I like my setup and I don't want to learn a new way of doing a thing if I can help
@@ -42,7 +42,7 @@ purpose and should be interchangeable with other hammers if the need arises. I m
 favourite hammer, but a generic hammer will do. Not so with a developer environment, if I want to
 keep on enjoying the experience of getting better.
 
-# My setup
+## My setup
 
 You can see my current Neovim config [here](https://github.com/johnmathews/neovim).
 
@@ -69,7 +69,7 @@ You can see my current Neovim config [here](https://github.com/johnmathews/neovi
     avoid as much as possible.
 - I still have a hacky workaround for my occasional flaky colorscheme problems
 
-## Favourite plugins
+### Favourite plugins
 
 - [LSP-Saga](https://github.com/glepnir/lspsaga.nvim) makes LSP stuff seem more usable and less
   delicate
@@ -84,7 +84,7 @@ You can see my current Neovim config [here](https://github.com/johnmathews/neovi
 - [auto-session](https://github.com/rmagatti/auto-session) makes session management easy without
   having Session.vim files as clutter
 
-## Things I would miss
+### Things I would miss
 
 This is a list of features I enjoy using and find helpful
 

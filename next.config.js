@@ -85,6 +85,10 @@ module.exports = withBundleAnalyzer({
       },
     ]
   },
+  compiler: {
+    // Enables the styled-components SWC transform
+    styledComponents: true,
+  },
   images: { domains: ["picsum.photos", "flagcdn.com"], formats: ["image/avif", "image/webp"] },
   webpack: (config, { dev, isServer }) => {
     config.module.rules.push({
