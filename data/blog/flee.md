@@ -4,7 +4,6 @@ slug: flee
 date: "2017-7-4 08:42"
 category: Non-technical>Journal
 tags: ["poetry"]
-image: "/static/images/houses_streets.jpeg"
 ---
 
 Summer children <br></br>
