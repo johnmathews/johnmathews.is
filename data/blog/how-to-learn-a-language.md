@@ -17,8 +17,6 @@ sometime around the age of ten I walked into a bakery in France and announced th
 loaf of bread", and i would like to buy "a John". Everyone laughed. Later on at secondary school I
 was so shy that even the thought of speaking in German, french or Spanish class was terrifying.
 
-### a level 3 subheading
-
 Having said all that, I spend a couple of months in Mexico when I was ~20 and I somehow went from
 not being able to order food at the beginning, to discussing (badly) politics with a local. I'm
 still not sure how. I've never taken a Spanish class, but did try some conversational language
@@ -29,8 +27,6 @@ courses and watched some movies.
 When I lived in Vienna I took German classes and initially spent quite a lot of effort trying to
 memorize vocabulary and grammar, and had very little functional language at the end of it. All it
 really did was make me feel self-conscious and inadequate.
-
-#### a level 4 subheading
 
 At least I learnt how _not_ to learn a language - it became very clear to me that learning a
 language couldn't be done like math or engineering. Rules could be broken, things didn't need to be
