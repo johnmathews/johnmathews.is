@@ -39,7 +39,7 @@ const TOCInline = ({
       {filteredToc.map((heading) => (
         <li
           key={heading.value}
-          className={`ml-${Math.max(heading.depth - 1, 1) * 4 - 4} my-1 list-none`}
+          className={`toc-ml-${Math.max(heading.depth - 1, 1) * 4 - 4} my-1 list-none`}
         >
           <a href={heading.url}>
             {">"} {heading.value}

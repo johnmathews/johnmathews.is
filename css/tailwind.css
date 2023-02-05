@@ -6,6 +6,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Cardo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap");
 
+/* used for table of contents*/
+.toc-ml-2 {
+  @apply ml-2;
+}
+.toc-ml-4 {
+  @apply ml-4;
+}
+.toc-ml-6 {
+  @apply ml-6;
+}
+.toc-ml-8 {
+  @apply ml-8;
+}
+.toc-ml-10 {
+  @apply ml-10;
+}
+.toc-ml-12 {
+  @apply ml-12;
+}
+
 /* used when embedding tweets, such as `/tweets-april-2021` */
 .twitter-tweet {
   @apply pt-2 pb-8;
