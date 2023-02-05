@@ -57,3 +57,94 @@ with most things, YouTube is a fantastic way to teach yourself, and before I jum
 Dutch, I watched a few videos about how to learn a language. This is what I've learned, and what I
 need to remember (because part of me likes flashcard and vocab drills, even though it doesn't result
 in vocab being available when I need it in real situations)
+
+## Notes
+
+- [Kaufmann] Don't try to learn the basics, there is a natural order (for you, and people like you)
+  and just go with the flow. It doesn't matter if you make some mistakes on something for a while,
+  you'll figure it out, just like a child does.
+
+- Prioritize the phrases you use and hear the most
+- Prioritize how to express yourself, and your normal situations. Don't use someone else's structure
+
+- Accept uncertainty
+- Accept that you don't and won't understand everything
+- Don't try to understand too much, it's like mowing a lawn
+
+- If you understand well, you will eventually speak well
+
+### TPRS is Teaching Proficiency through Reading and Storytelling
+
+- Reading is fresh Comprehensible Input (CI)
+
+- Find the right instructor (for you).
+- Avoid reading and writing, just tell stories and describe pictures
+- Get many language parents
+
+- Magazines and children's books with pictures of things that are relevant to you
+- Ask the expert to lovingly describe the pictures and ask me simple yes or no questions about the
+  picture
+- Then I ask the expert simple questions like "what is this?" "what is he doing?" "why?"
+- Why questions are really good
+
+- Storytelling is a great language acquisition method.
+
+- If you get stuck, you can draw
+- If you get really stuck, just say "Het is niet belangrijk" and then move on.
+- No grammar, it doesn't help.
+- Don't bother with corrections, they don't work.
+- No English
+- Total Physical Response (TPR) - act it out, (whilst sitting if you want, with hand motions etc)
+
+- Read a lot
+- Input+1 (I+1): Input is what you know, the +1 is something a bit extra, beyond your level. Ask for
+  some i+1.
+
+- Apps are better than nothing, but they're not as good as storytelling with a human
+- Record your lessons and listen back to them. Repetition is great.
+
+### Interview
+
+- Come up with your own strategy
+- Language discovery is a personal process. People will disagree about what the best methods are,
+  the experts don't agree.
+- Different parts of your personality come through differently in different languages, this is
+  normal.
+- Even though you are always the same person, language learning is about imitating culture and
+  therefore you superficially change a bit.
+- Listen a lot - you cannot pronounce what you cannot hear, and after a while your brain will get
+  used to the new sounds of a new language.
+- Phrases imply the intonation
+- Massive amounts of repetitive reading and listening
+- He uses a tutor after he knows 3000 - 5000 words, the exact amount varies depending on the
+  language.
+- Start using a tutor when you want to start using a tutor. You should be comfortable and want to do
+  it, not apprehensive or embarrassed.
+- Be the owner of your own journey
+- Start speaking to people when you have about 5000 words, Sooner if you want to.
+- Accents are OK, don't worry about it.
+
+### "Arabic in 6 months" video
+
+#### Level 1
+
+- Listen and speak a lot
+- 1 hour/day
+- Write down useful vocab when you come across it
+- Review your notes
+- Type don't write
+
+#### Level 2
+
+- Find good quality listening material
+  - natural
+  - conversational
+  - not news, not audiobooks
+- Go for a walk everyday and listen and quietly repeat what you hear
+- Translate common phrases that stand out to you.
+
+#### Level 3
+
+- Talk to real people
+- Don't use English at all
+- It's normal that this would be uncomfortable and exhausting
