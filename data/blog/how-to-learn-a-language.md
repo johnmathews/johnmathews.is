@@ -2,15 +2,16 @@
 title: How to learn another language
 date: 2023-02-04 12:43:30
 category: Non-technical.Learning
-tags: ["languages"]
 image: /static/images/hieroglyphics.jpg
+tags: ["languages"]
 ---
 
+**This post is definitely still a draft**
 <TOCInline toc={props.toc} exclude='Contents' toHeading={2} />
 
-**This post is a draft**
+## Background
 
-## My name is "two loaves of bread"
+### My name is "two loaves of bread"
 
 To me, language learning has always been either intimidating or boring. It started off badly when,
 sometime around the age of ten I walked into a bakery in France and announced that my name was "a
@@ -22,7 +23,7 @@ not being able to order food at the beginning, to discussing (badly) politics wi
 still not sure how. I've never taken a Spanish class, but did try some conversational language
 courses and watched some movies.
 
-## The traditional approach is miserable
+### The traditional approach is miserable
 
 When I lived in Vienna I took German classes and initially spent quite a lot of effort trying to
 memorize vocabulary and grammar, and had very little functional language at the end of it. All it
@@ -34,7 +35,7 @@ completely right to be useful, and if an apparently random word or phrase appear
 certain context its probably correct and should be used without thinking about it too much. This is
 all very different to math.
 
-## Why now
+### Why now
 
 I've lived in the Netherlands for 5 years now, and I haven't needed to learn Dutch at all. The
 locals have an incredibly wide-spread level of proficiency speaking English, and culturally the

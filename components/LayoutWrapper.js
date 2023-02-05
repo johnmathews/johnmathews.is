@@ -152,7 +152,7 @@ const LayoutWrapper = ({ children }) => {
           id="LayoutWrapperExcFooter"
           className="mx-auto flex flex-col justify-between lg:flex-row"
         >
-          <div id="mobileNavWrapper" className="lg:hidden">
+          <div id="mobileNavWrapper" className="z-50 lg:hidden">
             <MobileNav />
           </div>
           <div id="sidebarOuterWrapper" className="css/Tailwind.css">

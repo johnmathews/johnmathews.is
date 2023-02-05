@@ -20,18 +20,7 @@
  * }} props
  *
  */
-const TOCInline = ({
-  toc,
-  indentDepth = 2,
-  fromHeading = 1,
-  toHeading = 6,
-  asDisclosure = true,
-  exclude = "",
-}) => {
-  const re = Array.isArray(exclude)
-    ? new RegExp("^(" + exclude.join("|") + ")$", "i")
-    : new RegExp("^(" + exclude + ")$", "i")
-
+const TOCInline = ({ toc, asDisclosure = true }) => {
   const filteredToc = toc
 
   const tocList = (

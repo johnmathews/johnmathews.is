@@ -1,5 +1,5 @@
 ---
-title: My code editor setup in 2023
+title: My Neovim setup in 2023
 date: 2023-02-03 15:36:36
 category: Technical.Developer-Tools
 image: "/static/images/neovim-logo.png"
@@ -53,8 +53,8 @@ You can see my current Neovim config [here](https://github.com/johnmathews/neovi
 
   The 'complicated' or 'magical' features have now been tamed:
 
-  - Adding 'sources' to the [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) completion engine, including
-    snippets, [GitHub copilot](https://github.com/zbirenbaum/copilot-cmp), and LSP.
+  - Adding 'sources' to the [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) completion engine,
+    including snippets, [GitHub copilot](https://github.com/zbirenbaum/copilot-cmp), and LSP.
   - The LSP tool-chain, using [mason](https://github.com/williamboman/mason.nvim) ,
     [null-ls](https://github.com/jose-elias-alvarez/null-ls.nvim),
     [toggle-lsp-diagnostics](https://github.com/WhoIsSethDaniel/toggle-lsp-diagnostics.nvim) , and
@@ -104,6 +104,20 @@ This is a list of features I enjoy using and find helpful
 - [close-buffer](https://github.com/Asheq/close-buffers.vim) and
   [smartq](https://github.com/marklcrns/vim-smartq) make quitting and closing buffers a little more
   intuitive for me.
+
+## Still to do
+
+The following features are quirky and I don't find them intuitive, but getting familiar with them
+would be increase speed and decrease cognitive load:
+
+- paste and yank behaviour:
+  - dont yank what I just pasted over
+  - use the yank registers (numbers 0 - 9 I think) to paste the thing I yanked before the last yank
+- navigation `t`, `f` and `s` (from the sneak plugin) to get the cursor to somewhere fast - no more
+  holding down the `hjkl` keys.
+- better find and replace. If I have to do the same thing 5 or 10 times, I'll probably just do it
+  manually. If I need to do it 100 times I'll write a macro. Ideally, I'll use find and replace, and
+  make better use of registers.
 
 [^1]:
     Now that I've written that, it seems really odd - how and why did I go from nothing to vim.. How
