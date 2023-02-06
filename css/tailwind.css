@@ -76,6 +76,10 @@ input:-webkit-autofill:focus {
   @apply list-disc  dark:marker:text-gray-100;
 }
 
+#contentContainer li {
+  @apply my-1;
+}
+
 #content a {
   @apply font-semibold text-blue-600 dark:text-blue-300;
 }
