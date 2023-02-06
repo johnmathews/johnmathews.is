@@ -24,7 +24,10 @@ export default function PostLayout({ frontMatter, authorDetails, children }) {
   if (frontMatter.image) {
     // https://stackoverflow.com/questions/66845889/next-js-image-how-to-maintain-aspect-ratio-and-add-letterboxes-when-needed
     PostImage = (
-      <div className="relative -mt-12 mb-5 h-64 w-full md:mb-10 md:h-96 md:w-full lg:mt-0 lg:ml-0 xl:h-postHeaderImage">
+      <div
+        id="postImage-wrapper"
+        className="relative -mt-12 mb-5 h-64 w-full sm:w-postHeaderImageWrappersm md:mb-10 md:h-96 md:w-postHeaderImageWrappermd lg:ml-0 lg:w-postHeaderImageWrapperlg xl:h-postHeaderImage xl:w-postHeaderImageWrapperxl 2xl:-mt-8 2xl:w-postHeaderImageWrapper2xl"
+      >
         <Image
           src={frontMatter.image}
           alt={frontMatter.title}

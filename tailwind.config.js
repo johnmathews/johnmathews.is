@@ -62,6 +62,14 @@ module.exports = {
       height: {
         postHeaderImage: "36rem",
       },
+      width: {
+        postHeaderImageWrapper2xl: "60rem",
+        postHeaderImageWrapperxl: "50rem",
+        postHeaderImageWrapperlg: "40rem",
+        postHeaderImageWrappermd: "35rem",
+        postHeaderImageWrappersm: "30rem",
+        postHeaderImageWrapper: "25rem",
+      },
       lineHeight: {
         11: "2.75rem",
         12: "3rem",

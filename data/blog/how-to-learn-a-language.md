@@ -14,32 +14,34 @@ tags: ["languages"]
 ### My name is "two loaves of bread"
 
 To me, language learning has always been either intimidating or boring. It started off badly when,
-sometime around the age of ten I walked into a bakery in France and announced that my name was "a
-loaf of bread", and i would like to buy "a John". Everyone laughed. Later on at secondary school I
-was so shy that even the thought of speaking in German, french or Spanish class was terrifying.
+sometime around the age of ten I walked into a bakery in France and announced that my name was "two
+loaves of bread". Everyone laughed. Later on at secondary school I was so shy that even the thought
+of speaking in German, French or Spanish class was terrifying.
 
-Having said all that, I spend a couple of months in Mexico when I was ~20 and I somehow went from
-not being able to order food at the beginning, to discussing (badly) politics with a local. I'm
-still not sure how. I've never taken a Spanish class, but did try some conversational language
-courses and watched some movies.
+Despite not loving language learning, I spent a couple of months in Mexico when I was ~20 and I
+somehow went from not being able to order food at the beginning, to discussing (badly) politics with
+a local. I'm still not sure how. I've never taken a Spanish class, but did try some conversational
+"teach-yourself" courses, and watched some movies.
 
-### The traditional approach is miserable
+### The traditional approach hasn't worked
 
-When I lived in Vienna I took German classes and initially spent quite a lot of effort trying to
-memorize vocabulary and grammar, and had very little functional language at the end of it. All it
-really did was make me feel self-conscious and inadequate.
+When I lived in Vienna I took German classes and spent quite a lot of effort trying to memorize
+vocabulary and grammar. Despite reaching level B1 in a classroom, I couldn't understand what people
+were saying in daily conversations, and if I asked a question I had to hope that they would answer
+it the exact way I was expecting them to. All it really did was make me feel self-conscious and
+inadequate.
 
-At least I learnt how _not_ to learn a language - it became very clear to me that learning a
-language couldn't be done like math or engineering. Rules could be broken, things didn't need to be
-completely right to be useful, and if an apparently random word or phrase appears in my head in a
-certain context its probably correct and should be used without thinking about it too much. This is
-all very different to math.
+At least all this taught me how _not_ to learn a language - it became very clear that it wasn't like
+math or engineering. Rules could be broken, things didn't need to be completely right to be useful.
+If an apparently random word or phrase appears in my head in a certain context, its probably correct
+and should be used without thinking about it too much.
 
 ### Why now
 
-I've lived in the Netherlands for 5 years now, and I haven't needed to learn Dutch at all. The
-locals have an incredibly wide-spread level of proficiency speaking English, and culturally the
-Dutch are very welcoming and open to speaking English - I think its kind of trendy, and people often
+I've lived in the Netherlands for 5 years now. I've bought a house, changed jobs, and my son was
+born here. Through all these experiences I haven't needed to learn Dutch at all.
+
+The Dutch are very proficient at speaking English, and culturally are very welcoming and open to speaking English. People often
 want to practice or demonstrate their English proficiency with me. Still, I feel arrogant for
 "forcing" people to speak my language, and recently I've decided that I'd like to become Dutch. My
 children are growing up here, attending Dutch schools, and its entirely possible that I might never
