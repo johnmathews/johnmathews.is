@@ -90,6 +90,9 @@ input:-webkit-autofill:focus {
 #content h2 {
   @apply text-3xl;
 }
+#content h3 {
+  @apply text-2xl;
+}
 
 /* SNIPPETS */
 

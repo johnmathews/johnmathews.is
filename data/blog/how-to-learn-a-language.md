@@ -8,7 +8,6 @@ tags: ["languages"]
 
 import IframeEmbed from '../components/IframeEmbed'
 
-**This post is definitely still a draft**
 <TOCInline toc={props.toc} exclude='Contents' toHeading={2} />
 
 ## Background
