@@ -13,15 +13,26 @@ import IframeEmbed from '../components/IframeEmbed'
 
 ## Background
 
+### Why now
+
+I've lived in the Netherlands for 5 years now. I've bought a house, changed jobs, and my son was
+born here. Through all these experiences I haven't needed to learn Dutch. But as my children get
+older it will become increasingly useful to speak Dutch socially, and my children will likely
+consider themselves more Dutch than British. I live and work in the Netherlands, but I am not part
+of the culture.
+
+I want this to change, and I've decided that I will learn to speak Dutch fluently. Learning needs to
+become a fun hobby, something that I enjoy and look forward to.
+
 ### My name is "two loaves of bread"
 
-To me, language learning has always been either intimidating or boring. It started off badly when,
+To me, language learning has always been either intimidating or boring. It started off badly when
 sometime around the age of ten I walked into a bakery in France and announced that my name was "two
-loaves of bread". Everyone laughed. Later on at secondary school I was so shy that even the thought
-of speaking in German, French or Spanish class was terrifying.
+loaves of bread". Everyone laughed. Later on at secondary school I was so shy that the thought of
+trying to speak French or German to another person was terrifying.
 
 Despite not loving language learning, I spent a couple of months in Mexico when I was ~20 and I
-somehow went from not being able to order food at the beginning, to discussing (badly) politics with
+somehow went from not being able to order food, to discussing politics (badly) with
 a local. I'm still not sure how. I've never taken a Spanish class, but did try some conversational
 "teach-yourself" courses, and watched some movies.
 
@@ -33,20 +44,10 @@ were saying in daily conversations, and if I asked a question I had to hope that
 it the exact way I was expecting them to. All it really did was make me feel self-conscious and
 inadequate.
 
-At least all this taught me how _not_ to learn a language - it became very clear that it wasn't like
-math or engineering. Rules could be broken, things didn't need to be completely right to be useful.
-If an apparently random word or phrase appears in my head in a certain context, its probably correct
-and should be used without thinking about it too much.
-
-### Why now
-
-I've lived in the Netherlands for 5 years now. I've bought a house, changed jobs, and my son was
-born here. Through all these experiences I haven't needed to learn Dutch. But as my children get
-older it will become increasingly useful to speak Dutch socially, and my children will likely
-consider themselves more Dutch than British.
-
-So I've decided that I want to learn, and that it needs to become a fun hobby - something that I
-enjoy and feels fun.
+These experiences have taught me how to not learn a language - it's very clear that it's not like
+learning math or engineering. Rules could be broken, things didn't need to be completely right to be
+useful. If an apparently random word or phrase appears in my head in a certain context, it's probably
+correct and should be used without thinking about it too much.
 
 ## Learning how to learn
 
@@ -56,9 +57,9 @@ different to most other people's, and apply those learnings to language learning
 photography, but that's for another post).
 
 As with most things, YouTube is a fantastic way to teach yourself, and before I jump into learning
-Dutch, I watched a few videos about how to learn a language. This post summarizes what I've learned, and what I
-need to remember to keep doing or keep avoiding. Part of me likes flashcard and vocab drills, even though it doesn't result
-in vocab being available when I need it in real situations.
+Dutch, I watched a few videos about how to learn a language. This post summarizes what I've learned,
+and what I need to remember to keep doing or keep avoiding. Part of me likes flashcard and vocab
+drills, even though it doesn't seem to help fluency at all.
 
 ## How to learn
 
@@ -71,8 +72,10 @@ my main source of listening and reading material.
 - Be the owner of your own journey and come up with your own strategy
 - Prioritize the phrases you use and hear the most
 - Prioritize how to express yourself, and your normal situations. Don't use someone else's structure
-- Don't try to learn "the basics" first or stick to a rigid order of progression, there is an order that will feel right. Go with the feeling.
-- It doesn't matter if you make some mistakes on something for a while, you'll figure it out just like a child does.
+- Don't try to learn "the basics" first or stick to a rigid order of progression, there is an order
+  that will feel right. Go with the feeling.
+- It doesn't matter if you make some mistakes on something for a while, you'll figure it out just
+  like a child does.
 - Language discovery is a personal process. People will disagree about what the best methods are,
   the experts don't agree.
 - If you are good at listening, you will eventually be good at speaking.
@@ -83,7 +86,8 @@ my main source of listening and reading material.
 - Don't try to understand too much in one go, it's like mowing a lawn.
 - Even though you are always the same person, language learning is about imitating culture and
   therefore you superficially change a bit.
-- It's normal that different parts of your personality come through differently in different languages.
+- It's normal that different parts of your personality come through differently in different
+  languages.
 
 ### Pre-storytelling Methods
 
@@ -120,8 +124,7 @@ my main source of listening and reading material.
 - Accents are OK, don't worry about it.
 - Start using a tutor when you want to start using a tutor. You should be comfortable and want to do
   it, not apprehensive or embarrassed.
-- Use a tutor after learning 3000 - 5000 words, the exact amount varies depending on the
-  language.
+- Use a tutor after learning 3000 - 5000 words, the exact amount varies depending on the language.
 - Find the right instructor (for you).
 - Get many partners, tutors or language parents.
 - Input+1 (I+1): Input is what you know, the +1 is something a bit extra, beyond your level. Ask for
@@ -132,8 +135,8 @@ my main source of listening and reading material.
 - Storytelling is a great language acquisition method.
   - Avoid reading and writing, just tell stories and describe pictures
   - Use magazines and children's books with pictures of things that are relevant to you
-  - Ask the expert to lovingly describe the pictures and ask you simple yes or no questions about the
-    picture.
+  - Ask the expert to lovingly describe the pictures and ask you simple yes or no questions about
+    the picture.
   - Then ask the expert simple questions like "what is this?" "what is he doing?" "why..?"
   - Why questions are really good.
   - Act it out, (whilst sitting if you want, with hand motions etc) - Total Physical Response (TPR)
