@@ -11,23 +11,21 @@ tags: ["neovim", "tmux", "vim"]
 # Background
 
 I've used [Vim](https://www.vim.org/) and then [Neovim](https://neovim.io/) since I started
-programming ~5 years ago[^1]. I like the feeling of control that comes from using a completely
-open-source tool chain, and to be honest I don't know what I'm missing when I think about using VS
-Code or an alternative editor.
+programming ~5 years ago[^1]. It's interesting and fun to use a completely open-source tool chain.
 
-I like seeing what new plugins are created, and the new features and utility they bring. Neovim has
-some buzz around it at the moment, and its fun to be around people who enjoy their code editing
-experience.
+I like seeing what new plugins are created and the new utility they bring. Neovim has some buzz
+around it at the moment, and its fun to be around people who enjoy improving a tool-chain I used
+everyday.
 
-I use Neovim from within Tmux. I have multiple sessions running - one session for each project or
-thing I'm working on - and never need to close anything. I can have ten or twenty instances of
-Neovim open, and its still instantaneous to open others or close and reopen.
+I use Neovim within Tmux. I have multiple sessions running - one session for each project or thing
+I'm working on. Speed is never a problem, and I never need to close anything. I can have ten or
+twenty instances of Neovim open, and its still instantaneous to open others or run language servers
+or other expensive operations.
 
-It's also convenient being able to run a code-editor in the same terminal window, right next to a
-shell that is running the code. You can also run shells from within Neovim (or vim) to execute tests
-or build code.
+It's also convenient being able to run a code-editor right next to the shell that is running the
+code. You can also run shells from within Neovim (or vim) to execute tests or build code.
 
-## Why it matters
+## Why personalization matters
 
 I have in the past tried to use (Neo)vim distributions, like LunarVim, and have always found them
 too restrictive. I like my setup and I don't want to learn a new way of doing a thing if I can help
@@ -39,17 +37,16 @@ To me, programming is a craft motivated by the satisfaction and fun found in bei
 editor setup is like a workshop where I practice my craft. Its personal, and an environment that I'm
 familiar with. This is different to, for example, a simple tool like a hammer that serves a single
 purpose and should be interchangeable with other hammers if the need arises. I might have a
-favourite hammer, but a generic hammer will do. Not so with a developer environment, if I want to
-keep on enjoying the experience of getting better.
+favourite hammer, but a generic hammer will do.
 
 ## My setup
 
 You can see my current Neovim config [here](https://github.com/johnmathews/neovim).
 
 - At the end of 2021 I began to convert my [previous vim setup](/blog/vim-for-large-projects) to
-  Neovim and was using Neovim from January 2022.
-- By the end of 2022 I had a setup I was super comfortable and familiar with, and had smoothed out a
-  few rough edges. The setup has no black boxes or scary parts.
+  Neovim and was using Neovim from January 2022. This was mainly a migration from vimscript to Lua.
+- By the end of 2022, I had a setup I was comfortable and familiar with. I'd smoothed out a
+  few rough edges and there were no black boxes, magical things, or unknowable parts.
 
   The 'complicated' or 'magical' features have now been tamed:
 
@@ -86,8 +83,6 @@ You can see my current Neovim config [here](https://github.com/johnmathews/neovi
 
 ### Things I would miss
 
-This is a list of features I enjoy using and find helpful
-
 - The collection of plugins that let me format, lint and explore code -
   [mason](https://github.com/williamboman/mason.nvim),
   [LSP-Saga](https://github.com/glepnir/lspsaga.nvim),
@@ -111,11 +106,11 @@ The following features are quirky and I don't find them intuitive, but getting f
 would be increase speed and decrease cognitive load:
 
 - paste and yank behaviour:
-  - dont yank what I just pasted over
-  - use the yank registers (numbers 0 - 9 I think) to paste the thing I yanked before the last yank
+  - Don't yank what I just pasted over.
+  - Use the yank registers (numbers 0 - 9 I think) to paste the thing I yanked before the last yank
 - navigation `t`, `f` and `s` (from the sneak plugin) to get the cursor to somewhere fast - no more
   holding down the `hjkl` keys.
-- better find and replace. If I have to do the same thing 5 or 10 times, I'll probably just do it
+- Make better use of find and replace. If I have to do the same thing 5 or 10 times, I'll probably just do it
   manually. If I need to do it 100 times I'll write a macro. Ideally, I'll use find and replace, and
   make better use of registers.
 

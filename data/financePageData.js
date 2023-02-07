@@ -1,10 +1,16 @@
 const financePageData = {
   Placeholder: [
     {
-      title: "Django for startup founders",
+      title: "Everything you can't have",
       description: ``,
       imgSrc: "",
-      href: "/blog/django-for-startup-founders",
+      href: "/blog/everything-you-cant-have ",
+    },
+    {
+      title: "Money is a negative art",
+      description: ``,
+      imgSrc: "",
+      href: "/blog/money-negative-art",
     },
   ],
 }
