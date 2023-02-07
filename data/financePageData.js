@@ -1,5 +1,5 @@
 const financePageData = {
-  Placeholder: [
+  "": [
     {
       title: "Everything you can't have",
       description: ``,
