@@ -5,24 +5,28 @@ category: Non-technical.Learning
 tags: ["finance", "psychology"]
 ---
 
-A post by Morgan House on the [collabfund](https://collabfund.com/blog/everything-you-cant-have/)
-blog. It's an interesting exploration of the psychology of want and value, but I think the article
-makes too much of being a slave to dopamine only.
+I recently read a post by Morgan Housel on the
+[Collabfund blog](https://collabfund.com/blog/everything-you-cant-have/) about the psychology of
+want and value. I think the article makes too much of being a slave to dopamine.
 
-I think that the state described in the article is a base state that we can grow out of, with
-practice, and that the article assumes implicitly that we are all more selfish than we necessarily
-are.
+I like the article because it clearly articulates a psychological process that we all experience. I
+think that the mechanisms described in the article are a default condition that we can grow
+out of if we are wise, and that the article assumes implicitly that we are all slaves to our selfish
+wants, or need for dopamine.
 
-However, the beginning of the article is such a nice description of the foolishness that we begin
-with that I have copied it here.
+The beginning of the article is such a nice description of the foolishness that we begin with, that
+I have copied it here:
+
+===
 
 ## Nothing is as desired as much as the thing you want but can’t have.
 
 In fact for most people there’s a hierarchy of wants that goes something like this:
 
-> If you don’t want something and don’t have it, you don’t think about it. If you want something and
-> have it, you might feel OK. If you want something and don’t have it, you might feel motivated. If
-> you want something and can’t have it, you drive yourself mad.
+> If you don’t want something and don’t have it, you don’t think about it.  
+> If you want something and have it, you might feel OK.  
+> If you want something and don’t have it, you might feel motivated.  
+> If you want something and can’t have it, you drive yourself mad.
 
 A few years after leaving office, Richard Nixon mentioned that the richest people in the world are
 some of the unhappiest, because they can afford to never struggle.

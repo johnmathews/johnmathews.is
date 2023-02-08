@@ -62,7 +62,10 @@ input:-webkit-autofill:focus {
   transition: background-color 600000s 0s, color 600000s 0s;
 }
 
-/* Blog text */
+#contentContainer blockquote {
+  @apply border-l-4 border-gray-300 dark:border-gray-500;
+}
+
 #contentContainer {
   @apply font-serif;
 }

@@ -1,15 +1,19 @@
 ---
 title: Money is a negative art
 date: 2023-02-07 11:21:11
-category: non-technical.learning
+category: non-technical.finance
 tags: ["finance", "pyschology"]
-summary: I recently found an interesting article on collabfund's blog thinking about FOMO as it relates to investing.
 ---
 
-[Source](https://collabfund.com/blog/fomo-the-worst-financial-trait/)
+This is another noteworthy article by Morgan Housl from the
+[Collabfund blog](https://collabfund.com/blog/fomo-the-worst-financial-trait/) about what it takes
+to be good at investing. This is the first time I've come across this idea, and I want to preserve
+it here.
+
+---
 
 A funny thing about money is that it’s a negative art. You often have a better chance of
-accumulating more of it by getting rid of bad traits vs. acquiring good ones
+accumulating more of it by getting rid of bad traits vs. acquiring good ones.
 
 Most ambitious people’s intuition is to ask, “How can I get smarter? More informed? Find new
 skills?”
@@ -44,10 +48,7 @@ Charlie Munger once said:
 
 Remove FOMO from the equation, and what’s left?
 
-You only care about your own goals.
-
-You tend to avoid getting sucked into bubbles.
-
-You tend to think long term.
-
-And you don’t need much else to do well over time.
+- You only care about your own goals.
+- You tend to avoid getting sucked into bubbles.
+- You tend to think long term.
+- And you don’t need much else to do well over time.
