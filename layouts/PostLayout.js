@@ -26,7 +26,7 @@ export default function PostLayout({ frontMatter, authorDetails, children }) {
     PostImage = (
       <div
         id="postImage-wrapper"
-        className="relative -mt-12 mb-5 h-64 w-full sm:w-postHeaderImageWrappersm md:mb-10 md:h-96 md:w-postHeaderImageWrappermd lg:ml-0 lg:w-postHeaderImageWrapperlg xl:h-postHeaderImage xl:w-postHeaderImageWrapperxl 2xl:-mt-8 2xl:w-postHeaderImageWrapper2xl"
+        className="relative -mt-12 mb-5 h-64 w-full sm:w-postHeaderImageWrappersm md:mb-16 md:h-96 md:w-postHeaderImageWrappermd lg:ml-0 lg:w-postHeaderImageWrapperlg xl:h-postHeaderImage xl:w-postHeaderImageWrapperxl 2xl:-mt-8 2xl:w-postHeaderImageWrapper2xl"
       >
         <Image
           src={frontMatter.image}
@@ -42,7 +42,12 @@ export default function PostLayout({ frontMatter, authorDetails, children }) {
 
   var PostSummary
   if (frontMatter.summary) {
-    PostSummary = <div className="py-5 font-serif text-xl"> {frontMatter.summary} </div>
+    PostSummary = (
+      <div id="postSummary" className="font-serif text-xl">
+        {" "}
+        {frontMatter.summary}{" "}
+      </div>
+    )
   } else {
     PostSummary = null
   }
@@ -112,8 +117,8 @@ export default function PostLayout({ frontMatter, authorDetails, children }) {
                   style={{ gridTemplateRows: "auto 1fr" }}
                 >
                   <div className="xl:col-span-3 xl:row-span-2 xl:pb-0">
-                    {PostSummary}
                     <div id="content" className="prose-xl max-w-none pt-10 pb-8">
+                      {PostSummary}
                       {getContent(frontMatter, children)}
                     </div>
                   </div>
