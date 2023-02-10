@@ -26,7 +26,7 @@ export default function PostLayout({ frontMatter, authorDetails, children }) {
     PostImage = (
       <div
         id="postImage-wrapper"
-        className="relative -mt-12 mb-5 h-64 w-full sm:w-postHeaderImageWrappersm md:mb-16 md:h-96 md:w-postHeaderImageWrappermd lg:ml-0 lg:w-postHeaderImageWrapperlg xl:h-postHeaderImage xl:w-postHeaderImageWrapperxl 2xl:-mt-8 2xl:w-postHeaderImageWrapper2xl"
+        className="relative -mt-12 mb-5 h-64 w-full sm:w-postHeaderImageWrappersm md:mb-16 md:h-96 md:w-postHeaderImageWrappermd lg:ml-0 lg:w-postHeaderImageWrapperlg xl:h-postHeaderImage xl:w-postHeaderImageWrapperxl 2xl:-mt-8 2xl:w-postHeaderImageWrapper2xl 3xl:w-postHeaderImageWrapper3xl"
       >
         <Image
           src={frontMatter.image}

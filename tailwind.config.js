@@ -63,7 +63,8 @@ module.exports = {
         postHeaderImage: "36rem",
       },
       width: {
-        postHeaderImageWrapper2xl: "60rem",
+        postHeaderImageWrapper3xl: "50rem",
+        postHeaderImageWrapper2xl: "50rem",
         postHeaderImageWrapperxl: "50rem",
         postHeaderImageWrapperlg: "40rem",
         postHeaderImageWrappermd: "35rem",
