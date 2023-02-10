@@ -53,10 +53,6 @@ const KeyboardShortcuts = () => {
     }
   }
 
-  useMousetrap(["?", "esc", "q"], () => {
-    TOGGLE_MODAL()
-  })
-
   // https://www.anycodings.com/1questions/5494275/focusing-input-field-with-mousetrapjs-but-input-field-also-pastes-the-hotkey-as-value
   useMousetrap(["/", "command+k"], (e) => {
     let data = JSON.stringify({ category: "keyboard-shortcut", event: "cmd+k" })
@@ -74,6 +70,12 @@ const KeyboardShortcuts = () => {
       searchBox.focus()
       e.preventDefault()
     }
+  })
+
+  useMousetrap(["?", "esc", "q"], () => {
+    let data = JSON.stringify({ category: "keyboard-shortcut", event: "?" })
+    clientEventLogger(router.asPath, data)
+    TOGGLE_MODAL()
   })
 
   useMousetrap("n p", () => {

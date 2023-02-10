@@ -14,7 +14,7 @@ I've used [Vim](https://www.vim.org/) and then [Neovim](https://neovim.io/) sinc
 programming ~5 years ago[^1]. It's interesting and fun to use a completely open-source tool chain.
 
 I like seeing what new plugins are created and the new utility they bring. Neovim has some buzz
-around it at the moment, and its fun to be around people who enjoy improving a tool-chain I used
+around it at the moment, and its fun to be around people who enjoy improving a tool-chain I use
 everyday.
 
 I use Neovim within Tmux. I have multiple sessions running - one session for each project or thing
@@ -27,7 +27,7 @@ code. You can also run shells from within Neovim (or vim) to execute tests or bu
 
 ## Why personalization matters
 
-I have in the past tried to use (Neo)vim distributions, like LunarVim, and have always found them
+In the past I've tried to use (Neo)vim distributions such as LunarVim, and have always found them
 too restrictive. I like my setup and I don't want to learn a new way of doing a thing if I can help
 it. Ideally editing, navigating and exploring code would be intuitive and the only thing to think
 about would be the code itself, not the tooling that lets me access it. I think that my Neovim setup
@@ -48,14 +48,14 @@ You can see my current Neovim config [here](https://github.com/johnmathews/neovi
 - By the end of 2022, I had a setup I was comfortable and familiar with. I'd smoothed out a
   few rough edges and there were no black boxes, magical things, or unknowable parts.
 
-  The 'complicated' or 'magical' features have now been tamed:
+The 'complicated' or 'magical' features have now been tamed:
 
-  - Adding 'sources' to the [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) completion engine,
-    including snippets, [GitHub copilot](https://github.com/zbirenbaum/copilot-cmp), and LSP.
-  - The LSP tool-chain, using [mason](https://github.com/williamboman/mason.nvim) ,
-    [null-ls](https://github.com/jose-elias-alvarez/null-ls.nvim),
-    [toggle-lsp-diagnostics](https://github.com/WhoIsSethDaniel/toggle-lsp-diagnostics.nvim) , and
-    [LSP-Saga](https://github.com/glepnir/lspsaga.nvim) .
+- Adding 'sources' to the [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) completion engine,
+  including snippets, [GitHub copilot](https://github.com/zbirenbaum/copilot-cmp), and LSP.
+- The LSP tool-chain, using [mason](https://github.com/williamboman/mason.nvim) ,
+  [null-ls](https://github.com/jose-elias-alvarez/null-ls.nvim),
+  [toggle-lsp-diagnostics](https://github.com/WhoIsSethDaniel/toggle-lsp-diagnostics.nvim) , and
+  [LSP-Saga](https://github.com/glepnir/lspsaga.nvim) .
 
 - I've been using GitHub copilot, which is usually helpful and occasionally jaw-dropping.
 - Overall the change from Vim to Neovim is a big improvement - I can't imagine going back.
