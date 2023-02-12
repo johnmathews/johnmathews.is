@@ -54,36 +54,44 @@ const LayoutWrapper = ({ children }) => {
       <>
         <div className="mt-10 mb-10 w-36 border-b-8 border-double  border-gray-600 dark:border-gray-200 "></div>
         <div className="mt-5 text-lg">
-          <div className="mb-2 font-medium">Categories:</div>
+          <div className="mb-2 font-medium">Posts about:</div>
           <div className={`my-2`}>
             <button
               id="selectTechnical"
               className={`${
-                state.technical && !state.nonTechnical ? "font-medium" : "font-normal"
+                state.technical && !state.nonTechnical
+                  ? "font-small rounded-xl border-2 border-slate-600 bg-green-300 px-2 dark:border-slate-900 dark:bg-green-800"
+                  : "px-2 font-normal "
               }`}
               onClick={ONLY_TECHNICAL}
             >
-              {`${state.technical && !state.nonTechnical ? "> " : ""}`} Technical
+              {`${state.technical && !state.nonTechnical ? "" : ""}`} Working with computers
             </button>
           </div>
           <div className={`my-2 `}>
             <button
               id="selectNonTechnical"
               className={`${
-                !state.technical && state.nonTechnical ? "font-medium" : "font-normal"
+                !state.technical && state.nonTechnical
+                  ? "font-small rounded-xl border-2 border-slate-600 bg-green-300 px-2 dark:border-slate-900 dark:bg-green-800"
+                  : "px-2 font-normal"
               }`}
               onClick={ONLY_NONTECHNICAL}
             >
-              {`${!state.technical && state.nonTechnical ? "> " : ""}`} Non-Technical
+              {`${!state.technical && state.nonTechnical ? "" : ""}`} Being a human
             </button>
           </div>
           <div className={`my-2 `}>
             <button
               id="selectAllPosts"
-              className={`${state.technical && state.nonTechnical ? "font-medium" : "font-normal"}`}
+              className={`${
+                state.technical && state.nonTechnical
+                  ? "font-small rounded-xl border-2 border-slate-600 bg-green-300 px-2 dark:border-slate-900 dark:bg-green-800"
+                  : "px-2 font-normal"
+              }`}
               onClick={ALL_POSTS}
             >
-              {`${state.technical && state.nonTechnical ? "> " : ""}`} All
+              {`${state.technical && state.nonTechnical ? "" : ""}`} Everything
             </button>
           </div>
         </div>
