@@ -54,7 +54,7 @@ const LayoutWrapper = ({ children }) => {
       <>
         <div className="mt-10 mb-10 w-36 border-b-8 border-double  border-gray-600 dark:border-gray-200 "></div>
         <div className="mt-5 text-lg">
-          <div className="mb-2 font-medium">Posts about:</div>
+          <div className="mb-2 font-medium">Categories:</div>
           <div className={`my-2`}>
             <button
               id="selectTechnical"
@@ -65,7 +65,7 @@ const LayoutWrapper = ({ children }) => {
               }`}
               onClick={ONLY_TECHNICAL}
             >
-              {`${state.technical && !state.nonTechnical ? "" : ""}`} Working with computers
+              {`${state.technical && !state.nonTechnical ? "" : ""}`} Technical
             </button>
           </div>
           <div className={`my-2 `}>
@@ -78,7 +78,7 @@ const LayoutWrapper = ({ children }) => {
               }`}
               onClick={ONLY_NONTECHNICAL}
             >
-              {`${!state.technical && state.nonTechnical ? "" : ""}`} Being a human
+              {`${!state.technical && state.nonTechnical ? "" : ""}`} Non-technical
             </button>
           </div>
           <div className={`my-2 `}>
