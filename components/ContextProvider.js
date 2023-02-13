@@ -18,9 +18,10 @@ const placeHolderPostMetaData = {
   prev: "PLACEHOLDER",
 }
 
+// this is the initial state that everyone starts with
 const initialState = {
   technical: true,
-  nonTechnical: true,
+  nonTechnical: false,
   postMetaData: placeHolderPostMetaData,
   showModal: false,
 }
