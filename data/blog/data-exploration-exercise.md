@@ -2,7 +2,7 @@
 title: Modeling Credit Risk
 date: "2021-05-25"
 author: John Mathews
-category: ["Technical.Data"]
+category: "Technical.Data"
 tags:
   [
     "Finance",

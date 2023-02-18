@@ -23,7 +23,7 @@ export default function Analytics() {
 
   return (
     <>
-      <PageTitle>{"Analytics"}</PageTitle>
+      <PageTitle>{"Site Metrics"}</PageTitle>
 
       <div id="gridContainer" className="mt-5 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
         <ViewsToday fetcher={fetcher} pageViewsIPAddresses={page_views_ip_addresses} />

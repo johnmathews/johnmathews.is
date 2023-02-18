@@ -3,7 +3,7 @@ title: Macro Analysis of the Bitcoin Blockchain
 slug: btc-analysis
 date: "2017-08-03"
 author: John Mathews
-category: ["Technical.Data"]
+category: "Technical.Data"
 tags: ["Bitcoin", "Blockchain", "Distributed Applications", "Finance"]
 image: "/static/images/btc_board.jpg"
 tweet: An analysis of the #Bitcoin #blockchain correlating key performance indicators

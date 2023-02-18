@@ -2,9 +2,15 @@ import React from "react"
 
 export default function SearchItem({ hit, components }) {
   var catString = ""
-  if (hit.category.toLowerCase() === "snippet") {
-    var catString = "snippet"
+
+  // category could be an array of categories (some posts have category as an array in their frontmatter),
+  // but a snippet will never have multiple categories, so this if statement will never not label a snippet correctly
+  if (typeof hit.category == "string") {
+    if (hit.category.toLowerCase() === "snippet") {
+      var catString = "snippet"
+    }
   }
+
   return (
     <a id="searchResultCandidate" className="" href={`/blog/${hit.objectID}`}>
       <div className="flex ">
