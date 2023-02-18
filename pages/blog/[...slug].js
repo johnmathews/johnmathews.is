@@ -10,6 +10,7 @@ import { useRouter } from "next/router"
 import { AppContext } from "@/components/ContextProvider"
 
 import "@algolia/autocomplete-theme-classic"
+import { setToStorage, getFromStorage } from "@/lib/localStorage"
 
 export async function getStaticPaths() {
   const posts = getFiles("blog") // list of filenames
@@ -86,6 +87,25 @@ export default function Blog({ post, authorDetails, prev, next }) {
       type: "BLOG_POST",
       frontMatter: postMetaData,
     })
+
+    // get type of current blog post
+    const postCat = postMetaData.category[0]
+    const currentPostType = postCat.toLowerCase().replace("-", "").split(".")[0]
+
+    // retrieve setting from local storage
+    const currentFilter = getFromStorage("postFilter")
+
+    if (currentPostType != "snippet") {
+      // update or set localStorage setting
+      if (currentFilter == null) {
+        setToStorage("postFilter", currentPostType)
+      } else if (currentFilter != currentPostType) {
+        setToStorage("postFilter", "both")
+      } else if (currentFilter == currentPostType) {
+        // do nothing
+      }
+    }
+    console.log('--- debug getFromStorage("postFilter"): ', getFromStorage("postFilter"))
   }, [router, dispatch, postMetaData])
 
   return (
