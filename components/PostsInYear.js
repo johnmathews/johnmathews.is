@@ -1,7 +1,7 @@
 import Link from "next/link"
 
-import { useContext } from "react"
 import { AppContext } from "@/components/ContextProvider"
+import { useContext } from "react"
 
 import formatDate from "@/lib/utils/formatDate"
 
@@ -22,7 +22,7 @@ const PostsInYear = ({ year, posts, filterSnippets = true }) => {
     })
     const categoryTypes = [...new Set(catType)]
 
-    var showPost
+    var showPost = false
     if (state.technical && state.nonTechnical) {
       showPost = true
     } else if (state.technical && categoryTypes.includes("technical")) {
@@ -32,7 +32,6 @@ const PostsInYear = ({ year, posts, filterSnippets = true }) => {
     } else {
       showPost = false
     }
-
     if (!filterSnippets || category[0].toLowerCase() !== "snippet") {
       return (
         <li

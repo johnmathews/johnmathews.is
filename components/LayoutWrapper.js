@@ -12,7 +12,8 @@ import { AppContext } from "./ContextProvider"
 import Autocomplete from "@/components/AutoComplete"
 import "@algolia/autocomplete-theme-classic"
 
-import siteMetadata from "@/data/siteMetadata"
+import { setToStorage } from "@/lib/localStorage"
+
 import Category from "@/components/Category"
 
 const LayoutWrapper = ({ children }) => {
@@ -21,6 +22,7 @@ const LayoutWrapper = ({ children }) => {
 
   // this is needed because I dont understand conceptually what happens when i click a link to another post
   // placeHolder is needed, but is never seen
+  // maybe if the page is not a blog post?
   const placeHolderPostMetaData = {
     title: "PLACEHOLDER",
     date: "2021-08-01",
@@ -30,22 +32,23 @@ const LayoutWrapper = ({ children }) => {
   }
   const postMetaData = state.blogPostMeta ? state.blogPostMeta : placeHolderPostMetaData
 
-  const postDateTemplate = { year: "numeric", month: "long" }
-
   function ONLY_TECHNICAL() {
     dispatch({
       type: "TECHNICAL",
     })
+    setToStorage("postFilter", "technical")
   }
   function ONLY_NONTECHNICAL() {
     dispatch({
       type: "NONTECHNICAL",
     })
+    setToStorage("postFilter", "nontechnical")
   }
   function ALL_POSTS() {
     dispatch({
       type: "ALL",
     })
+    setToStorage("postFilter", "both")
   }
 
   var bottomSection

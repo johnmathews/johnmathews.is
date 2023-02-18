@@ -105,7 +105,6 @@ export default function Blog({ post, authorDetails, prev, next }) {
         // do nothing
       }
     }
-    console.log('--- debug getFromStorage("postFilter"): ', getFromStorage("postFilter"))
   }, [router, dispatch, postMetaData])
 
   return (
