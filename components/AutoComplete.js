@@ -1,5 +1,4 @@
 import { autocomplete } from "@algolia/autocomplete-js"
-import { getAlgoliaFacets } from "@algolia/autocomplete-preset-algolia"
 import React, { createElement, Fragment, useEffect, useRef } from "react"
 import { render } from "react-dom"
 import { useRouter } from "next/router"
