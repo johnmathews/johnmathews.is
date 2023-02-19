@@ -27,6 +27,7 @@ function getAllPosts() {
       url: post_url,
       objectID: id,
       title: matterResult.data.title,
+      date: matterResult.data.date,
       tags: String(matterResult.data.tags),
       category: matterResult.data.category,
       draft: matterResult.data.draft,

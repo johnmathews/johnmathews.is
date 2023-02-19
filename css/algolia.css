@@ -4,7 +4,19 @@
 
 /* Algolia AutoComplete Search */
 :root {
-  --aa-icon-size: 94px;
+  --aa-icon-size: 94px !important;
+  --aa-detached-modal-max-width: 1000px !important;
+  --aa-detached-modal-max-height: 1000px !important;
+  --aa-spacing: 25px !important;
+  --aa-font-size: 1.2rem !important;
+  --aa-selected-color-alpha: 0.9 !important;
+  /* --aa-description-highlight-background-color-rgb: 127,255,0 !important; */
+  --aa-selected-color-rgb: 60, 179, 113 !important;
+  /* --aa-background-color-rgb: 127,255,0  !important; */
+}
+
+[id^="autocomplete-2-item-"] {
+  @apply rounded-xl border-2 !important;
 }
 
 .aa-SubmitIcon {
@@ -25,10 +37,6 @@
 .aa-DetachedSearchButton {
   @apply border-0 bg-gray-100 px-0 text-lg text-gray-800 dark:border-gray-900 dark:bg-slate-900 dark:text-gray-100 !important;
 }
-
-/* [id^="autocomplete-2-item-"][aria-selected="true"]{ */
-/*   @apply bg-slate-100 */
-/* } */
 
 /* SIDEBAR OF LIST PAGES AND BLOG PAGES */
 #layoutWrapper #sidebarTopSection .aa-DetachedSearchButtonPlaceholder {
