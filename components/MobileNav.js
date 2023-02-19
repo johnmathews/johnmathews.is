@@ -1,23 +1,19 @@
-import { useState } from "react"
 import Link from "./Link"
 import headerNavLinks from "@/data/headerNavLinks"
 
-import { getAlgoliaResults } from "@algolia/autocomplete-js"
-import algoliasearch from "algoliasearch"
 import Autocomplete from "@/components/AutoComplete"
 
 import ThemeSwitch from "@/components/ThemeSwitch"
-import SearchItem from "@/components/SearchItem"
-import Search from "@/components/Search"
 
+import { useContext, useState } from "react"
+import { AppContext } from "./ContextProvider"
+
+import { setToStorage } from "@/lib/localStorage"
 import "@algolia/autocomplete-theme-classic"
-
-const appId = "56G1FXZV4K"
-const apiKey = "c9a76549bd2473401cb96c00b503698e"
-const searchClient = algoliasearch(appId, apiKey)
 
 const MobileNav = () => {
   const [navShow, setNavShow] = useState(false)
+  const [state, dispatch] = useContext(AppContext)
 
   const onToggleNav = () => {
     setNavShow((status) => {
@@ -29,6 +25,25 @@ const MobileNav = () => {
       }
       return !status
     })
+  }
+
+  function ONLY_TECHNICAL() {
+    dispatch({
+      type: "TECHNICAL",
+    })
+    setToStorage("postFilter", "technical")
+  }
+  function ONLY_NONTECHNICAL() {
+    dispatch({
+      type: "NONTECHNICAL",
+    })
+    setToStorage("postFilter", "nontechnical")
+  }
+  function ALL_POSTS() {
+    dispatch({
+      type: "ALL",
+    })
+    setToStorage("postFilter", "both")
   }
 
   return (
@@ -102,6 +117,53 @@ const MobileNav = () => {
             className="text-right text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100 "
           >
             <Autocomplete />
+          </div>
+
+          <div
+            id="catChooserWrapper"
+            className="mt-8 flex flex-row-reverse px-12 text-right text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100  "
+          >
+            <div className={`my-2 `}>
+              <button
+                id="selectAllPosts"
+                className={`${
+                  state.technical && state.nonTechnical
+                    ? "font-small rounded-xl border-2 border-slate-600 bg-blue-300 px-2 dark:border-slate-900 dark:bg-blue-800"
+                    : "px-2 font-normal"
+                }`}
+                onClick={ALL_POSTS}
+              >
+                {`${state.technical && state.nonTechnical ? "" : ""}`} A
+              </button>
+            </div>
+            <div className="my-2 mx-1">&sol;&sol;</div>
+            <div className={`my-2 `}>
+              <button
+                id="selectNonTechnical"
+                className={`${
+                  !state.technical && state.nonTechnical
+                    ? "font-small rounded-xl border-2 border-slate-600 bg-blue-300 px-2 dark:border-slate-900 dark:bg-blue-800"
+                    : "px-2 font-normal"
+                }`}
+                onClick={ONLY_NONTECHNICAL}
+              >
+                {`${!state.technical && state.nonTechnical ? "" : ""}`} NT
+              </button>
+            </div>
+            <div className="my-2 mx-1">&sol;&sol;</div>
+            <div className={`my-2`}>
+              <button
+                id="selectTechnical"
+                className={`${
+                  state.technical && !state.nonTechnical
+                    ? "font-small rounded-xl border-2 border-slate-600 bg-blue-300 px-2 dark:border-slate-900 dark:bg-blue-800"
+                    : "px-2 font-normal "
+                }`}
+                onClick={ONLY_TECHNICAL}
+              >
+                {`${state.technical && !state.nonTechnical ? "" : ""}`} T
+              </button>
+            </div>
           </div>
         </nav>
       </div>

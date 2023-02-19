@@ -20,9 +20,6 @@ const LayoutWrapper = ({ children }) => {
   const router = useRouter()
   const [state, dispatch] = useContext(AppContext)
 
-  // this is needed because I dont understand conceptually what happens when i click a link to another post
-  // placeHolder is needed, but is never seen
-  // maybe if the page is not a blog post?
   const placeHolderPostMetaData = {
     title: "PLACEHOLDER",
     date: "2021-08-01",
