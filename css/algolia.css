@@ -23,7 +23,7 @@
 }
 
 .aa-DetachedSearchButton {
-  @apply border-0 px-0 text-lg text-gray-800 dark:border-gray-900 dark:bg-slate-900 dark:text-gray-100 !important;
+  @apply border-0 bg-gray-100 px-0 text-lg text-gray-800 dark:border-gray-900 dark:bg-slate-900 dark:text-gray-100 !important;
 }
 
 /* [id^="autocomplete-2-item-"][aria-selected="true"]{ */
@@ -44,7 +44,7 @@
 /* MOBILE NAV */
 
 #mobileNavLinks .aa-DetachedSearchButton {
-  @apply mx-12 bg-gray-200;
+  @apply mx-12 bg-gray-200 dark:bg-slate-900 !important;
 }
 #mobileNavLinks .aa-DetachedSearchButtonPlaceholder {
   @apply text-2xl;
