@@ -1,4 +1,3 @@
-import { useContext, useEffect } from "react"
 import PostsInYear from "@/components/PostsInYear"
 
 const PostsGroupedByYear = ({ posts, filterSnippets = true }) => {
