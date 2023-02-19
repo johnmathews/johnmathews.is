@@ -36,7 +36,7 @@ const PostsInYear = ({ year, posts, filterSnippets = true }) => {
       return (
         <li
           key={slug}
-          className={`text-normal my-5  hover:underline lg:my-6 ${showPost ? null : "hidden"}`}
+          className={`text-normal mb-5  hover:underline lg:mb-6 ${showPost ? null : "hidden"}`}
         >
           <div className="flex">
             <div className="flex-auto">
