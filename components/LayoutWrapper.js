@@ -60,7 +60,7 @@ const LayoutWrapper = ({ children }) => {
               id="selectTechnical"
               className={`${
                 state.technical && !state.nonTechnical
-                  ? "font-small rounded-xl border-2 border-slate-600 bg-green-300 px-2 dark:border-slate-900 dark:bg-green-800"
+                  ? "font-small px-2 italic underline"
                   : "px-2 font-normal "
               }`}
               onClick={ONLY_TECHNICAL}
@@ -73,7 +73,7 @@ const LayoutWrapper = ({ children }) => {
               id="selectNonTechnical"
               className={`${
                 !state.technical && state.nonTechnical
-                  ? "font-small rounded-xl border-2 border-slate-600 bg-green-300 px-2 dark:border-slate-900 dark:bg-green-800"
+                  ? "font-small px-2 italic underline"
                   : "px-2 font-normal"
               }`}
               onClick={ONLY_NONTECHNICAL}
@@ -86,7 +86,7 @@ const LayoutWrapper = ({ children }) => {
               id="selectAllPosts"
               className={`${
                 state.technical && state.nonTechnical
-                  ? "font-small rounded-xl border-2 border-slate-600 bg-green-300 px-2 dark:border-slate-900 dark:bg-green-800"
+                  ? "font-small px-2 italic underline"
                   : "px-2 font-normal"
               }`}
               onClick={ALL_POSTS}
