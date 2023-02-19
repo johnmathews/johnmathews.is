@@ -121,7 +121,7 @@ const MobileNav = () => {
 
           <div
             id="catChooserWrapper"
-            className="mt-8 flex flex-row-reverse px-12 text-right text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100  "
+            className="mt-8 flex flex-row-reverse px-12 text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100  "
           >
             <div className={`my-2 `}>
               <button
@@ -136,7 +136,7 @@ const MobileNav = () => {
                 {`${state.technical && state.nonTechnical ? "" : ""}`} A
               </button>
             </div>
-            <div className="my-2 mx-1">&sol;&sol;</div>
+            <div className="my-2 mx-1">&#47;&#47;</div>
             <div className={`my-2 `}>
               <button
                 id="selectNonTechnical"
@@ -150,7 +150,7 @@ const MobileNav = () => {
                 {`${!state.technical && state.nonTechnical ? "" : ""}`} NT
               </button>
             </div>
-            <div className="my-2 mx-1">&sol;&sol;</div>
+            <div className="my-2 mx-1">&#47;&#47;</div>
             <div className={`my-2`}>
               <button
                 id="selectTechnical"
