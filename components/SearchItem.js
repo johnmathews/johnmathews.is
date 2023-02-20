@@ -13,10 +13,13 @@ export default function SearchItem({ hit, components }) {
   var options = { year: "numeric", month: "long" }
 
   var _date = Date.parse(hit.date)
-  var date = new Intl.DateTimeFormat("en", options).format(_date)
-  console.log("--- debug date: ", date)
+  try {
+    var date = new Intl.DateTimeFormat("en", options).format(_date)
+  } catch (error) {
+    date = ""
+  }
   return (
-    <a id="searchResultCandidate" className="mx-1 -mb-2 -mt-1" href={`/blog/${hit.objectID}`}>
+    <a id="searchResultCandidate" className="mx-1 mb-2 -mt-1" href={`/blog/${hit.objectID}`}>
       <div className="flex ">
         <div className="grow align-middle text-xl">
           <components.Highlight hit={hit} attribute="title" />

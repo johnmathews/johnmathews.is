@@ -1,9 +1,8 @@
 ---
-title: Understanding all of Python, through its built-ins - Notes
-slug: understanding-all-of-python-through-its-built-ins
+title: Understanding all of Python, through its built-ins
 date: "2021-10-11 10:52:17"
 draft: true
-category: Technical>Developer-Tools
+category: Technical.Developer-Tools
 tags: ["python", "programming"]
 ---
 
