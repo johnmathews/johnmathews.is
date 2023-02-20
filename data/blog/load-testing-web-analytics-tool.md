@@ -10,7 +10,7 @@ tags: ["google-cloud-platform", "cloud-functions", "api"]
 
 # Background
 
-I posted a previous [article](analytics) (about building an analytics tool) onto the Hacker
+I posted a previous [article](/blog/building-my-own-site-analytics) (about building an analytics tool) onto the Hacker
 News forum. It was quickly buried and didn't get any attention.
 
 To my surprise, I received an email from a Hacker News administrator (Daniel) explaining that it
