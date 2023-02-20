@@ -2,21 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+/* https://www.algolia.com/doc/ui-libraries/autocomplete/api-reference/autocomplete-theme-classic/#css-variables */
+
 /* Algolia AutoComplete Search */
 :root {
-  --aa-icon-size: 94px !important;
-  --aa-detached-modal-max-width: 1000px !important;
+  --aa-icon-size: 20px !important;
+  --aa-detached-modal-max-width: 1400px !important;
   --aa-detached-modal-max-height: 1000px !important;
-  --aa-spacing: 25px !important;
+  --aa-spacing-factor: 1.6 !important;
   --aa-font-size: 1.2rem !important;
-  --aa-selected-color-alpha: 0.9 !important;
-  /* --aa-description-highlight-background-color-rgb: 127,255,0 !important; */
+  --aa-selected-color-alpha: 0.7 !important;
   --aa-selected-color-rgb: 60, 179, 113 !important;
-  /* --aa-background-color-rgb: 127,255,0  !important; */
+  --aa-text-color-rgb: 0, 0, 0 !important;
 }
 
-[id^="autocomplete-2-item-"] {
-  @apply rounded-xl border-2 !important;
+[id^="autocomplete-4-item-"] {
+  @apply my-5  !important;
+}
+
+.aa-Item {
+  @apply rounded-xl border-2 border-slate-800 !important;
+}
+
+.aa-ClearIcon {
+  @apply -mr-3 !important;
 }
 
 .aa-SubmitIcon {

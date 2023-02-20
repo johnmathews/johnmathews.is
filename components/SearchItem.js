@@ -16,7 +16,7 @@ export default function SearchItem({ hit, components }) {
   var date = new Intl.DateTimeFormat("en", options).format(_date)
   console.log("--- debug date: ", date)
   return (
-    <a id="searchResultCandidate" className="my-2 mx-1" href={`/blog/${hit.objectID}`}>
+    <a id="searchResultCandidate" className="mx-1 -mb-2 -mt-1" href={`/blog/${hit.objectID}`}>
       <div className="flex ">
         <div className="grow align-middle text-xl">
           <components.Highlight hit={hit} attribute="title" />
