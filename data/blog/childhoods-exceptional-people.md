@@ -1,0 +1,10 @@
+---
+title: Childhoods of exceptional people
+date: 2023-02-20 12:56:49
+category: snippet
+tags: ["biography"]
+image: "/static/images/<NAME>.png"
+---
+
+A [blog post](https://www.lesswrong.com/posts/CYN7swrefEss4e3Qe/childhoods-of-exceptional-people)
+looking at the childhoods of exceptional people.
