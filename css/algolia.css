@@ -80,7 +80,7 @@
   @apply text-xl hover:underline dark:text-gray-100 lg:text-3xl;
 }
 #landingListColumn .aa-DetachedSearchButton {
-  @apply mx-auto w-32 dark:w-24 2xl:mt-10;
+  @apply mx-auto w-32 dark:w-24;
 }
 #landingListColumn .aa-DetachedSearchButtonPlaceholder {
   @apply mx-auto text-center text-xl text-gray-900 hover:underline dark:text-gray-100  lg:text-3xl;
