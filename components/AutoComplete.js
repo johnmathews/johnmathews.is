@@ -63,7 +63,7 @@ export default function Autocomplete(props) {
         // root: "bg-gray-900", // this is the box you click on, maybe
       },
       renderer: { createElement, Fragment, render },
-
+      // number of search results
       getSources() {
         return [
           {
@@ -79,7 +79,7 @@ export default function Autocomplete(props) {
                     indexName: "blogArticles",
                     query,
                     params: {
-                      hitsPerPage: 9,
+                      hitsPerPage: 14,
                     },
                   },
                 ],

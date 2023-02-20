@@ -8,7 +8,7 @@
 :root {
   --aa-icon-size: 20px !important;
   --aa-detached-modal-max-width: 1400px !important;
-  --aa-detached-modal-max-height: 1000px !important;
+  --aa-detached-modal-max-height: 2000px !important;
   --aa-spacing-factor: 1.6 !important;
   --aa-font-size: 1.2rem !important;
   --aa-selected-color-alpha: 0.7 !important;
