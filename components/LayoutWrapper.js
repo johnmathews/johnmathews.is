@@ -165,9 +165,6 @@ const LayoutWrapper = ({ children }) => {
           </div>
           <div id="sidebarOuterWrapper" className="css/Tailwind.css">
             <div id="sidebarInnerWrapper" className="text-base leading-5 lg:fixed ">
-              <div className="-ml-3 mb-3 text-left">
-                <ThemeSwitch />
-              </div>
               {headerNavLinks.map((link) => (
                 <Link
                   key={link.title}
@@ -178,9 +175,13 @@ const LayoutWrapper = ({ children }) => {
                 </Link>
               ))}
 
-              <div id="autoCompleteComponentWrapper" className="-mt-1">
+              <div id="autoCompleteComponentWrapper" className="mt-5">
                 <Autocomplete />
               </div>
+              <div className="-ml-2 mt-2 text-left">
+                <ThemeSwitch />
+              </div>
+
               {bottomSection}
             </div>
           </div>
