@@ -6,7 +6,11 @@ tags: ["craft", "technicality", "skill", "learning"]
 ---
 
 A [blog post](https://stkbailey.substack.com/p/elitism-as-the-mid-career-growth) by Stephen Bailey
-articulating something I've thought about but never seen anyone else consider:
+articulating ideas I've thought about but never seen anyone else consider;
+
+1. An aggressive[^1] attitude can drive progress - it's one of the mental tools in the toolbox.
+2. Software engineering is a craft - I am a craftsman. Not an artist, and not a
+   technician.
 
 > The active and violent spirit of the postdoc is a critical difference in the ways that early- and
 > mid-career professionals grow in their craft.
@@ -17,3 +21,5 @@ articulating something I've thought about but never seen anyone else consider:
 
 > After the beginner’s scaffolding of skills, what matters is the mechanism for deciding what’s
 > next. That’s where opinion and aversion — not reason! — comes in.
+
+[^1]: And therefore opinionated
