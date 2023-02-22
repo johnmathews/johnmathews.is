@@ -5,6 +5,9 @@ import { MDXLayoutRenderer } from "@/components/MDXComponents"
 import Pagination from "@/components/Pagination"
 import formatDate from "@/lib/utils/formatDate"
 
+import { AppContext } from "@/components/ContextProvider"
+import { useContext } from "react"
+
 export default function SnippetLayout({
   content,
   frontmatter,
@@ -13,15 +16,7 @@ export default function SnippetLayout({
   pagination,
 }) {
   const [searchValue, setSearchValue] = useState("")
-  const filteredSnippets = content.filter((post) => {
-    const fm = post.frontMatter
-    const searchContent = fm.title + fm.summary + fm.category + fm.tags.join(" ")
-    return searchContent.toLowerCase().includes(searchValue.toLowerCase())
-  })
-
-  // If initialDisplayPosts exist, display it if no searchValue is specified
-  const displayPosts =
-    initialDisplayPosts.length > 0 && !searchValue ? initialDisplayPosts : filteredSnippets
+  const [state, _] = useContext(AppContext)
 
   return (
     <>
@@ -39,8 +34,7 @@ export default function SnippetLayout({
           id="snippetsSection"
           className="grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-3 md:gap-3 lg:grid-cols-3 xl:gap-5 2xl:grid-cols-3"
         >
-          {!filteredSnippets.length && "No posts found."}
-          {displayPosts.map((post) => {
+          {content.map((post) => {
             const { slug, date, title, tags } = post.frontMatter
             const { mdxSource } = post
             return (
