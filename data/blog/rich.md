@@ -2,7 +2,7 @@
 title: Rich
 slug: rich
 date: "2021-06-16 12:29:43"
-category: snippet
+category: t.snippet
 tags: ["python", "console", "shell"]
 ---
 

@@ -2,7 +2,7 @@
 title: Stop Prepending sudo to Docker Commands
 slug: stop-prepending-sudo-to-docker-commands
 date: "2021-03-05 23:22:58"
-category: snippet
+category: t.snippet
 tags: ["sudo", "docker", "linux"]
 ---
 

@@ -2,7 +2,7 @@
 title: Pelican Plugin Guide
 slug: pelican-plugin-guide
 date: "2021-03-29 23:07:52"
-category: snippet
+category: t.snippet
 tags: ["pelican", "plugin", "guide"]
 ---
 

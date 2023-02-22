@@ -2,7 +2,7 @@
 title: Proxy Servers
 slug: reverse-proxy
 date: "2021-11-22 10:13:06"
-category: snippet
+category: t.snippet
 tags: ["networks"]
 ---
 

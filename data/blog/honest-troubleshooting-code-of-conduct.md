@@ -2,7 +2,7 @@
 title: The Honest Troubleshooting Code of Conduct
 slug: honest-troubleshooting-code-of-conduct
 date: "2021-05-03 17:46:28"
-category: snippet
+category: t.snippet
 tags: ["uncategorized"]
 ---
 

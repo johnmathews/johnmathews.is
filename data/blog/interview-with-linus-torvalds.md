@@ -1,8 +1,7 @@
 ---
 title: Linus Torvalds
-slug: interview-with-linus-torvalds
 date: "2021-04-29 17:38:33"
-category: snippet
+category: t.snippet
 tags: ["linux", "interview", "linus"]
 ---
 

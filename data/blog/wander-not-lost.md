@@ -1,7 +1,7 @@
 ---
 title: All that is gold does not glitter
 date: 2023-01-10 12:57:52
-category: snippet
+category: nt.snippet
 tags: ["tolkien", "poetry"]
 ---
 

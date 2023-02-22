@@ -2,7 +2,7 @@
 title: Foxes and Hedgehogs
 slug: foxes-and-hedgehogs
 date: "2021-06-12 10:34:52"
-category: snippet
+category: t.snippet, nt.snippet
 tags: ["meta", "classification", "thinking"]
 ---
 

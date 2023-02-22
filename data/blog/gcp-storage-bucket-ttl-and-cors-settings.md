@@ -2,7 +2,7 @@
 title: Google Cloud Storage - TTL and CORS settings
 slug: gcp-storage-bucket-ttl-and-cors-settings
 date: "2021-09-20 15:45:42"
-category: snippet
+category: t.snippet
 tags: ["google-cloud-platform", "storage", "cloud", "caching"]
 ---
 

@@ -1,8 +1,7 @@
 ---
 title: vim save sudo
-slug: vim-save-sudo
 date: "2021-04-17 22:44:10"
-category: snippet
+category: t.snippet
 tags: ["vim", "macos", "linux"]
 ---
 

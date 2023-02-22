@@ -1,7 +1,7 @@
 ---
 title: Childhoods of exceptional people
 date: 2023-02-20 12:56:49
-category: snippet
+category: nt.snippet
 tags: ["biography"]
 image: "/static/images/<NAME>.png"
 ---

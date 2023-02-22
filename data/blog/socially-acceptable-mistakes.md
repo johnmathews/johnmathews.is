@@ -2,7 +2,7 @@
 title: Socially Acceptable Mistakes
 slug: socially-acceptable-mistakes
 date: "2021-04-10 22:52:26"
-category: snippet
+category: nt.snippet
 tags: ["meta", "thinking", "advice"]
 ---
 

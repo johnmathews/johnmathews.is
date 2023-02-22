@@ -2,7 +2,7 @@
 title: Pair programming using Vim
 slug: pair-programming-using-vim-tmux-ssh
 date: "2021-06-12 07:18:25"
-category: snippet
+category: t.snippet
 tags: ["pair-programming", "vim", "tmux", "ssh"]
 ---
 

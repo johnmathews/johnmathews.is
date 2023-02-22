@@ -2,7 +2,7 @@
 title: Find
 slug: find
 date: "2021-12-03 13:15:28"
-category: snippet
+category: t.snippet
 tags: ["fd", "cli"]
 ---
 

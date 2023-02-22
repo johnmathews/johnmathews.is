@@ -2,7 +2,7 @@
 title: Staff Engineer
 slug: staff-engineer
 date: "2022-03-13 13:32:20"
-category: snippet
+category: t.snippet
 tags: ["tech", "career", "todo"]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: January Music
 date: 2023-01-05 14:12:25
-category: snippet
+category: nt.snippet
 tags: ["music"]
 ---
 

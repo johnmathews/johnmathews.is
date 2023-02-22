@@ -2,7 +2,7 @@
 title: See where Vim is setting an option
 slug: where-was-a-setting-set-
 date: "2021-05-12 11:17:45"
-category: snippet
+category: t.snippet
 tags: ["vim"]
 ---
 

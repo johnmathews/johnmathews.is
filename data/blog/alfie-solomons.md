@@ -2,7 +2,7 @@
 title: Alfie Solomons
 slug: alfie-solomons
 date: "2021-06-22 13:55:29"
-category: snippet
+category: nt.snippet
 tags: ["movie", "youtube", "peaky-blinders", "humanity"]
 ---
 

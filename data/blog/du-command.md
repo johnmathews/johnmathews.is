@@ -3,7 +3,7 @@ title: >
   `du` is a tool for showing disk usage.
 slug: du-command
 date: "2021-04-07 22:55:19"
-category: snippet
+category: t.snippet
 tags: ["cli", "unix", "macos"]
 ---
 

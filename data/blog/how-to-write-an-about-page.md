@@ -2,7 +2,7 @@
 title: How to write an About Page
 slug: how-to-write-an-about-page
 date: "2021-05-04 17:55:03"
-category: snippet
+category: nt.snippet
 tags: ["writing"]
 ---
 

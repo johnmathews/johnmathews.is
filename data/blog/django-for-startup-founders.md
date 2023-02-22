@@ -2,7 +2,7 @@
 title: Django for Startup Founders
 slug: django-for-startup-founders
 date: "2021-06-23 20:55:46"
-category: snippet
+category: t.snippet, nt.snippet
 tags: ["django", "saas", "startups", "python"]
 ---
 

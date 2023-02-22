@@ -2,7 +2,7 @@
 title: Teaching Kids About Money
 slug: teaching-kids-about-money
 date: "2021-03-05 23:23:46"
-category: snippet
+category: nt.snippet
 tags: ["parenting", "kids", "money", "teaching"]
 ---
 

@@ -2,7 +2,7 @@
 title: Why the past 10 years of American life have been uniquely stupid
 slug: social-media-and-the-tower-of-babel
 date: "2022-04-12 10:12:46"
-category: snippet
+category: nt.snippet
 tags: ["social-media", "tech", "history"]
 ---
 

@@ -3,7 +3,7 @@ title: >
   `cat` and a new line
 slug: cat-and-a-new-line
 date: "2021-03-5 23:21:43"
-category: snippet
+category: t.snippet
 tags: ["cat", "linux", "bash", "shell"]
 ---
 

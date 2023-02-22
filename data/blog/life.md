@@ -1,8 +1,7 @@
 ---
 title: Life
-slug: life
 date: "2021-09-08 17:58:07"
-category: snippet
+category: nt.snippet
 tags: ["aphorism"]
 ---
 

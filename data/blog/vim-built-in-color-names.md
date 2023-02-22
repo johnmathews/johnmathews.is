@@ -2,7 +2,7 @@
 title: Vim built-in color names
 slug: vim-built-in-color-names
 date: "2021-09-29 11:51:08"
-category: snippet
+category: t.snippet
 tags: ["vim"]
 ---
 

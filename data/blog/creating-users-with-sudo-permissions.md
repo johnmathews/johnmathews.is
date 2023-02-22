@@ -1,7 +1,7 @@
 ---
 title: Creating Users With Sudo Permissions
 date: "2021-03-04 23:25:50"
-category: snippet
+category: t.snippet
 tags: ["sudo", "Linux", "user", "admin"]
 ---
 

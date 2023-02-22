@@ -2,7 +2,7 @@
 title: Training Zones
 slug: training-zones
 date: "2021-10-19 15:41:17"
-category: snippet
+category: nt.snippet
 tags: ["running", "training", "exercise"]
 ---
 

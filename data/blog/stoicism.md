@@ -2,7 +2,7 @@
 title: Stoicism
 slug: stoicism
 date: "2021-11-04 13:50:53"
-category: snippet
+category: nt.snippet
 tags: ["philosophy"]
 ---
 

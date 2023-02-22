@@ -2,7 +2,7 @@
 title: Chezmoi commands
 slug: chezmoi-commands
 date: "2021-11-05 17:03:37"
-category: snippet
+category: t.snippet
 tags: ["dotfiles", "tools", "productivity", "developer"]
 ---
 

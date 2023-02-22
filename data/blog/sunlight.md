@@ -2,7 +2,7 @@
 title: Don't avoid sunlight
 slug: sunlight
 date: "2022-05-23 10:41:21"
-category: snippet
+category: nt.snippet
 tags: ["health"]
 ---
 

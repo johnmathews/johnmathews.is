@@ -1,8 +1,7 @@
 ---
 title: Docker Commands
-slug: docker-commands
 date: "2021-03-17 23:14:43"
-category: snippet
+category: t.snippet
 tags: ["docker"]
 ---
 

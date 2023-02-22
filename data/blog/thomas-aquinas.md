@@ -2,7 +2,7 @@
 title: Thomas Aquinas
 slug: thomas-aquinas
 date: "2021-07-06 18:10:37"
-category: snippet
+category: nt.snippet
 tags: ["theology", "history"]
 ---
 

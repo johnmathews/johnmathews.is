@@ -2,7 +2,7 @@
 title: View a List of Keyboard Mappings in Vim
 slug: vim-debug-mapping
 date: "2021-05-18 10:37:17"
-category: snippet
+category: t.snippet
 tags: ["vim"]
 ---
 

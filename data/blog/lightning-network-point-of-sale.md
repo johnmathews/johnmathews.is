@@ -2,7 +2,7 @@
 title: Lightning network point-of-sale
 slug: lightning-network-point-of-sale
 date: "2021-09-28 11:58:24"
-category: snippet
+category: t.snippet
 tags: ["lightning", "bitcoin", "crypto"]
 ---
 

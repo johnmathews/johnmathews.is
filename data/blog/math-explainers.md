@@ -2,7 +2,7 @@
 title: Math explainers
 slug: math-explainers
 date: "2021-11-04 13:11:28"
-category: snippet
+category: nt.snippet
 tags: ["math"]
 ---
 

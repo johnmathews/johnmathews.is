@@ -2,7 +2,7 @@
 title: Miller CLI
 slug: miller-cli
 date: "2021-08-25 10:34:31"
-category: snippet
+category: t.snippet
 tags: ["cli", "tools"]
 ---
 

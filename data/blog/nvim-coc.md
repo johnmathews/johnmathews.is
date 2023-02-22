@@ -2,7 +2,7 @@
 title: nvim.CoC
 slug: nvim-coc
 date: "2021-12-03 17:41:26"
-category: snippet
+category: t.snippet
 tags: ["vim"]
 ---
 

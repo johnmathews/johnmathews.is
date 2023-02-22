@@ -2,7 +2,7 @@
 title: ripgrep Regret
 slug: ripgrep-regret
 date: "2021-03-10 23:18:09"
-category: snippet
+category: t.snippet
 tags: ["ripgrep", "fail"]
 ---
 

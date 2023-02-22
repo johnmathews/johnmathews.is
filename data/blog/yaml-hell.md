@@ -1,7 +1,7 @@
 ---
 title: YAML gotchas
 date: 2023-01-12 15:46:00
-category: snippet
+category: t.snippet
 tags: ["yaml", "markup", "JSON"]
 ---
 

@@ -2,7 +2,7 @@
 title: A Project of One's Own
 slug: paul-graham-a-project-of-ones-own
 date: "2021-06-08 16:33:28"
-category: snippet
+category: nt.snippet, t.snippet
 tags: ["paul-graham", "meta", "learning", "school"]
 ---
 

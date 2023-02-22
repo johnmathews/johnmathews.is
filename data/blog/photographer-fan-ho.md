@@ -1,7 +1,7 @@
 ---
 title: Fan Ho
 date: 2023-01-02 11:33:36
-category: snippet
+category: nt.snippet
 tags: ["photography", "photographer"]
 ---
 

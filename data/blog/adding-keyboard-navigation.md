@@ -2,7 +2,7 @@
 title: Adding Keyboard Navigation
 slug: adding-keyboard-navigation
 date: "2021-04-12 22:50:48"
-category: snippet
+category: t.snippet
 tags: ["blog", "jam", "jquery"]
 ---
 

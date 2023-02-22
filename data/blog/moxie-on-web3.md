@@ -2,7 +2,7 @@
 title: Moxie on web3
 slug: moxie-on-web3
 date: "2022-01-08"
-category: snippet
+category: t.snippet, nt.snippet
 tags: ["web3", "crypto", "nft"]
 ---
 

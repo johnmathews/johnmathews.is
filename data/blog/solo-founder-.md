@@ -1,8 +1,7 @@
 ---
 title: Solo founder
-slug: solo-founder-
 date: "2021-12-24 10:11:12"
-category: snippet
+category: t.snippet
 tags: ["entrepreneur", "saas", "maker", "founder"]
 ---
 

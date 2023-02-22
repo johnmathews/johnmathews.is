@@ -2,7 +2,7 @@
 title: alias to real
 slug: alias-real
 date: "2021-04-20 22:40:09"
-category: snippet
+category: t.snippet
 tags: ["macos", "linux", "cli", "bash"]
 ---
 

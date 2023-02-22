@@ -2,7 +2,7 @@
 title: Useful Business
 slug: useful-business
 date: "2021-03-30 23:07:07"
-category: snippet
+category: nt.snippet
 tags: ["entrepreneur", "saas"]
 ---
 

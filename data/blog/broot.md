@@ -2,7 +2,7 @@
 title: Broot
 slug: broot
 date: "2021-04-13 22:49:26"
-category: snippet
+category: t.snippet
 tags: ["broot", "macos", "cli"]
 ---
 

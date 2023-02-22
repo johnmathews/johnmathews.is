@@ -2,7 +2,7 @@
 title: Pretty print JSON
 slug: pretty-print-json-in-typescript
 date: "2021-03-31 23:04:25"
-category: snippet
+category: t.snippet
 tags: ["typescript", "json", "syntax"]
 ---
 

@@ -2,7 +2,7 @@
 title: Stop reading the news
 slug: stop-reading-the-news
 date: "2021-09-22 16:44:54"
-category: snippet
+category: nt.snippet
 tags: ["humanity", "culture", "web"]
 ---
 

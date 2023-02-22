@@ -2,7 +2,7 @@
 title: Dreaming of Emacs
 slug: emacs-dreaming
 date: "2020-11-27 23:31:01"
-category: snippet
+category: t.snippet
 tags: ["emacs", "dream"]
 ---
 

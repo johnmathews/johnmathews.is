@@ -2,7 +2,7 @@
 title: Browser Security
 slug: browser-security
 date: "2021-04-30 22:24:40"
-category: snippet
+category: t.snippet
 tags: ["xss", "cors", "http"]
 ---
 

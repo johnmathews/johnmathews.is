@@ -2,7 +2,7 @@
 title: How doctors die
 slug: how-doctors-die
 date: "2021-09-09 10:24:08"
-category: snippet
+category: nt.snippet
 tags: ["humanity", "death"]
 ---
 

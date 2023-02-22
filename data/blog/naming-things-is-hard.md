@@ -2,7 +2,7 @@
 title: Naming things is hard
 slug: naming-things-is-hard
 date: "2021-10-14 13:10:37"
-category: snippet
+category: t.snippet, nt.snippet
 tags: ["entrepreneurship", "saas"]
 ---
 

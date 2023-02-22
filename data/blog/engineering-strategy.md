@@ -1,7 +1,7 @@
 ---
 title: What is an engineering strategy
 date: 2023-02-20 12:57:44
-category: snippet
+category: t.snippet
 tags: ["engineering", "management"]
 ---
 

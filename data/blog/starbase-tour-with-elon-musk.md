@@ -2,7 +2,7 @@
 title: Starbase Tour with Elon Musk
 slug: starbase-tour-with-elon-musk
 date: "2021-08-04 14:34:17"
-category: snippet
+category: nt.snippet, t.snippet
 tags: ["elon-musk", "starbase", "engineering"]
 ---
 

@@ -2,7 +2,7 @@
 title: Ranger File Manager
 slug: ranger-file-manager
 date: "2021-04-28 11:53:44"
-category: snippet
+category: t.snippet
 tags: ["ranger", "unix", "vim", "tools"]
 ---
 

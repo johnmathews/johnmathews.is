@@ -1,7 +1,7 @@
 ---
 title: The sleeping beauty problem
 date: "2023-02-13 12:00:46"
-category: snippet
+category: nt.snippet
 tags: ["math", "statistics", "veritasium", "youtube"]
 ---
 

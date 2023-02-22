@@ -2,7 +2,7 @@
 title: Startup Engineering Lessons
 slug: startup-engineering-lessons
 date: "2021-07-10 11:11:51"
-category: snippet
+category: t.snippet
 tags: ["startup", "engineering"]
 ---
 
