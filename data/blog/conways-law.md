@@ -2,7 +2,7 @@
 title: Conway's Law
 slug: conways-law
 date: "2021-08-16 11:57:58"
-category: snippet
+category: t.snippet
 tags: ["organisations"]
 ---
 

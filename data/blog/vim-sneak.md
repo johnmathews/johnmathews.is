@@ -2,7 +2,7 @@
 title: Vim Sneak
 slug: vim-sneak
 date: "2021-06-15 14:52:28"
-category: snippet
+category: t.snippet
 tags: ["vim", "plugin"]
 ---
 

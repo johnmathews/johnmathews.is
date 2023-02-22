@@ -2,7 +2,7 @@
 title: Do-nothing scripts
 slug: do-nothing-scripts
 date: "2021-11-03 14:52:37"
-category: snippet
+category: t.snippet
 tags: ["programming"]
 ---
 

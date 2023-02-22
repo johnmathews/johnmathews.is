@@ -2,7 +2,7 @@
 title: ChezMoi shortcuts
 slug: chezmoi-shortcuts
 date: "2021-05-05 17:58:52"
-category: snippet
+category: t.snippet
 tags: ["dotfiles", "alias"]
 ---
 

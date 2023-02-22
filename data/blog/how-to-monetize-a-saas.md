@@ -2,7 +2,7 @@
 title: How to monetize a SaaS
 slug: how-to-monetize-a-saas
 date: "2021-12-14 10:11:01"
-category: snippet
+category: t.snippet
 tags: ["saas", "side-project", "business"]
 ---
 

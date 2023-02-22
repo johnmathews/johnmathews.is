@@ -1,7 +1,7 @@
 ---
 title: Fun, Fear, Pain, Accomplishment
 date: 2023-01-28 21:12:04
-category: snippet
+category: nt.snippet
 tags: ["creativity", "risk"]
 ---
 

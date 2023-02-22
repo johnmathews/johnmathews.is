@@ -2,7 +2,7 @@
 title: Ultra-running benchmarks
 slug: ultra-running-benchmarks
 date: "2021-10-01 13:06:26"
-category: snippet
+category: nt.snippet
 tags: ["courtney-dauwalter", "running", "150km", "jeff-pelletier"]
 ---
 

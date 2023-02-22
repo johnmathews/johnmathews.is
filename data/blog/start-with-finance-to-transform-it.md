@@ -2,7 +2,7 @@
 title: Start with Finance to transform IT
 slug: start-with-finance-to-transform-it
 date: "2021-07-14 11:13:56"
-category: snippet
+category: t.snippet
 tags: ["engineering", "organisations", "business", "corporations"]
 ---
 
