@@ -12,7 +12,7 @@ import { PageSEO } from "@/components/SEO"
 export async function getStaticProps() {
   const allPosts = await getAllFilesFrontMatter("blog")
   const posts = allPosts.filter(function (post) {
-    return post.category[0].toLowerCase() != "snippet"
+    return !post.category[0].toLowerCase().includes("snippet")
   })
 
   return { props: { posts } }
