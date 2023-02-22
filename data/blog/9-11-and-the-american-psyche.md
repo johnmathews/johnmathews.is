@@ -2,7 +2,7 @@
 title: 9/11 and the American psyche
 slug: 9-11-and-the-american-psyche
 date: "2021-09-10 11:42:03"
-category: snippet
+category: nt.snippet
 tags: ["history", "essay"]
 ---
 

@@ -2,7 +2,7 @@
 title: 103 attempts to make it work
 slug: 103-attempts-to-make-it-work
 date: "2021-12-15 17:14:54"
-category: Technical>Data
+category: Technical.Data
 tags: ["python", "pandas", "oop"]
 ---
 
