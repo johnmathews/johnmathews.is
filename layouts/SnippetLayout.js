@@ -1,21 +1,12 @@
 import Link from "@/components/Link"
 import Tag from "@/components/Tag"
-import { useState } from "react"
 import { MDXLayoutRenderer } from "@/components/MDXComponents"
-import Pagination from "@/components/Pagination"
 import formatDate from "@/lib/utils/formatDate"
 
 import { AppContext } from "@/components/ContextProvider"
 import { useContext } from "react"
 
-export default function SnippetLayout({
-  content,
-  frontmatter,
-  title,
-  initialDisplayPosts = [],
-  pagination,
-}) {
-  const [searchValue, setSearchValue] = useState("")
+export default function SnippetLayout({ content, frontmatter, title }) {
   const [state, _] = useContext(AppContext)
 
   return (
@@ -79,9 +70,6 @@ export default function SnippetLayout({
           })}
         </div>
       </div>
-      {pagination && pagination.totalPages > 1 && !searchValue && (
-        <Pagination currentPage={pagination.currentPage} totalPages={pagination.totalPages} />
-      )}
     </>
   )
 }
