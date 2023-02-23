@@ -5,7 +5,7 @@ import { useContext } from "react"
 
 import formatDate from "@/lib/utils/formatDate"
 
-const PostsInYear = ({ year, posts, filterSnippets = true }) => {
+const PostsInYear = ({ year, posts, filterSnippets = true, filterCats = true }) => {
   const [state, _] = useContext(AppContext)
   return posts[year].map((post) => {
     const { slug, date, title, category } = post
@@ -23,7 +23,9 @@ const PostsInYear = ({ year, posts, filterSnippets = true }) => {
     const categoryTypes = [...new Set(catType)]
 
     var showPost = false
-    if (state.technical && state.nonTechnical) {
+    if (!filterCats) {
+      showPost = true
+    } else if (state.technical && state.nonTechnical) {
       showPost = true
     } else if (state.technical && categoryTypes.includes("technical")) {
       showPost = true

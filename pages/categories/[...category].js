@@ -61,20 +61,17 @@ function toTitleCase(str) {
 }
 
 export default function Category({ posts, category }) {
-  console.log("--- debug category: ", category)
-  console.log("--- debug posts: ", posts)
   const formattedTitle =
     !category[0].toLowerCase().includes("snippet") && typeof category[0] === "string"
       ? toTitleCase(category[1])
       : "Snippet"
-  console.log("--- debug formattedTitle: ", formattedTitle)
   return (
     <>
       <CategorySEO
         title={`${formattedTitle} - ${siteMetadata.author}`}
         description={`${formattedTitle} category - ${siteMetadata.author}`}
       />
-      <ListLayout posts={posts} title={formattedTitle} />
+      <ListLayout posts={posts} title={formattedTitle} filterCats={false} />
     </>
   )
 }

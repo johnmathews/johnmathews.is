@@ -1,6 +1,6 @@
 import PostsInYear from "@/components/PostsInYear"
 
-const PostsGroupedByYear = ({ posts, filterSnippets = true }) => {
+const PostsGroupedByYear = ({ posts, filterSnippets = true, filterCats = true }) => {
   return (
     <>
       {Object.keys(posts)
@@ -10,7 +10,12 @@ const PostsGroupedByYear = ({ posts, filterSnippets = true }) => {
             <div key={year}>
               <div className="pb-6 text-3xl font-medium 2xl:my-10 2xl:text-4xl">{year}</div>
               <ul>
-                <PostsInYear year={year} posts={posts} filterSnippets={filterSnippets} />
+                <PostsInYear
+                  year={year}
+                  posts={posts}
+                  filterSnippets={filterSnippets}
+                  filterCats={filterCats}
+                />
               </ul>
             </div>
           )

@@ -1,6 +1,6 @@
 import PostsGroupedByYear from "@/components/PostsGroupedByYear"
 
-export default function ListLayout({ title, posts, filterSnippets = true }) {
+export default function ListLayout({ title, posts, filterSnippets = true, filterCats = true }) {
   const yearlyDisplayPosts = {}
   posts.map((frontMatter) => {
     const dt = new Date(frontMatter.date)
@@ -27,7 +27,11 @@ export default function ListLayout({ title, posts, filterSnippets = true }) {
           </div>
         </div>
 
-        <PostsGroupedByYear posts={yearlyDisplayPosts} filterSnippets={filterSnippets} />
+        <PostsGroupedByYear
+          posts={yearlyDisplayPosts}
+          filterSnippets={filterSnippets}
+          filterCats={filterCats}
+        />
       </div>
     </>
   )
