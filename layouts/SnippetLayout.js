@@ -27,14 +27,20 @@ export default function SnippetLayout({ content, frontmatter, title }) {
         >
           {content.map((post) => {
             const { slug, date, title, tags, category } = post.frontMatter
+            const lowerCaseCategories = category.map(function (item) {
+              return item.toLowerCase()
+            })
             const { mdxSource } = post
 
             var showPost = false
             if (state.technical && state.nonTechnical) {
               showPost = true
-            } else if (state.technical && category.includes("t.snippet")) {
+            } else if (state.technical && lowerCaseCategories.includes("technical.snippet")) {
               showPost = true
-            } else if (state.nonTechnical && category.includes("nt.snippet")) {
+            } else if (
+              state.nonTechnical &&
+              lowerCaseCategories.includes("non-technical.snippet")
+            ) {
               showPost = true
             }
 
