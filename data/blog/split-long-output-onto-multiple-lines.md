@@ -2,7 +2,7 @@
 title: Split Long Strings
 slug: split-long-output-onto-multiple-lines
 date: "2021-03-10 23:19:12"
-category: t.snippet
+category: technical.snippet
 tags: ["bash", "linux"]
 ---
 

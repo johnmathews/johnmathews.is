@@ -2,7 +2,7 @@
 title: Vim Regex
 slug: vim-regex
 date: "2021-04-28 11:37:58"
-category: t.snippet
+category: technical.snippet
 tags: ["vim", "regex"]
 ---
 

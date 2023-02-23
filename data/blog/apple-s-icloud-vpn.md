@@ -1,7 +1,7 @@
 ---
 title: Apple's iCloud+ "VPN"
 date: "2021-06-16 21:36:34"
-category: t.snippet
+category: technical.snippet
 tags: ["apple", "onion", "vpn", "icloud"]
 ---
 

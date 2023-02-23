@@ -2,7 +2,7 @@
 title: Daughter
 slug: daughter
 date: "2021-07-12 15:55:23"
-category: nt.snippet
+category: non-technical.snippet
 tags: ["family"]
 ---
 

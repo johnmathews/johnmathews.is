@@ -2,7 +2,7 @@
 title: Dan Lebrero book notes
 slug: dan-lebrero-book-notes
 date: "2022-03-24 10:33:26"
-category: t.snippet, nt.snippet
+category: technical.snippet, non-technical.snippet
 tags: ["reading", "books"]
 ---
 

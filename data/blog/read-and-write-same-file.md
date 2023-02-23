@@ -2,7 +2,7 @@
 title: Read and Write the Same File in Bash
 slug: read-and-write-same-file
 date: "2021-03-24 23:11:55"
-category: t.snippet
+category: technical.snippet
 tags: ["shell", "pipe", "syntax", "bash"]
 ---
 

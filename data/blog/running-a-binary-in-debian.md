@@ -2,7 +2,7 @@
 title: Running a Binary in Debian
 slug: running-a-binary-in-debian
 date: "2021-04-05 22:58:02"
-category: t.snippet
+category: technical.snippet
 tags: ["debian", "binary", "path"]
 ---
 

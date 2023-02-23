@@ -2,7 +2,7 @@
 title: Man swallowed by whale
 slug: man-swallowed-by-whale
 date: "2021-06-12 07:11:46"
-category: nt.snippet
+category: non-technical.snippet
 tags: ["whale"]
 ---
 

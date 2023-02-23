@@ -2,7 +2,7 @@
 title: Better Text Objects
 slug: vim-text-objects
 date: "2021-05-05 18:04:40"
-category: t.snippet
+category: technical.snippet
 tags: ["vim"]
 ---
 

@@ -2,7 +2,7 @@
 title: Bifurcation Theory
 slug: bifurcation-theory
 date: "2021-06-17 11:19:12"
-category: nt.snippet
+category: non-technical.snippet
 tags: ["math", "chaos"]
 ---
 

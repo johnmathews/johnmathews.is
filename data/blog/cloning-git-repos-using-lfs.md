@@ -2,7 +2,7 @@
 title: Git LFS
 slug: cloning-git-repos-using-lfs
 date: "2021-03-03 23:24:35"
-category: t.snippet
+category: technical.snippet
 tags: ["git", "git-lfs"]
 ---
 

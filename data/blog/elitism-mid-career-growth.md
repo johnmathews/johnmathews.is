@@ -1,7 +1,7 @@
 ---
 title: Elitism as the mid-career growth engine
 date: 2023-02-20 17:32:40
-category: t.snippet
+category: technical.snippet
 tags: ["craft", "technicality", "skill", "learning"]
 ---
 

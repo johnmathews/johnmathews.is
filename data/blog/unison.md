@@ -2,7 +2,7 @@
 title: Unison
 slug: unison
 date: "2021-11-17 14:01:06"
-category: t.snippet
+category: technical.snippet
 tags: ["syncronization", "linux", "macos", "infrastructure"]
 ---
 

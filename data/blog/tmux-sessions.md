@@ -2,7 +2,7 @@
 title: Tmux sessions
 slug: tmux-sessions
 date: "2021-12-03 13:14:26"
-category: t.snippet
+category: technical.snippet
 tags: ["tmux", "cli"]
 ---
 

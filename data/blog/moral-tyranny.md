@@ -2,7 +2,7 @@
 title: Moral tyranny
 slug: moral-tyranny
 date: "2021-07-12 10:49:09"
-category: nt.snippet
+category: non-technical.snippet
 tags: ["oppression", "consent"]
 ---
 

@@ -2,7 +2,7 @@
 title: lsblk
 slug: lsblk-command
 date: "2021-04-28 12:18:40"
-category: t.snippet
+category: technical.snippet
 tags: ["unix", "cli"]
 ---
 

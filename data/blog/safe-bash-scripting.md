@@ -2,7 +2,7 @@
 title: Safe Bash Scripting
 slug: safe-bash-scripting
 date: "2021-04-06 22:56:14"
-category: t.snippet
+category: technical.snippet
 tags: ["bash"]
 ---
 

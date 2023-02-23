@@ -2,7 +2,7 @@
 title: Performance Optimizations for the shell prompt
 slug: performance-targets
 date: "2021-05-28 13:48:59"
-category: t.snippet
+category: technical.snippet
 tags: ["shell"]
 ---
 

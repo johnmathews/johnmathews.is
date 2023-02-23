@@ -2,7 +2,7 @@
 title: Rearrange splits in Vim
 slug: vim-split-rearranging
 date: "2021-03-29 23:09:27"
-category: t.snippet
+category: technical.snippet
 tags: ["vim"]
 ---
 

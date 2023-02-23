@@ -1,7 +1,7 @@
 ---
 title: Upgrading Cryptographic Libraries
 date: "2021-07-10 11:17:16"
-category: t.snippet
+category: technical.snippet
 tags: ["hashing", "versioning"]
 ---
 

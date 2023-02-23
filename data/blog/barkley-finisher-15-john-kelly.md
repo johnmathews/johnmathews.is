@@ -2,7 +2,7 @@
 title: John Kelly finishing the 2017 Barkley Marathons.
 slug: barkley-finisher-15-john-kelly
 date: "2021-06-10 17:04:25"
-category: nt.snippet
+category: non-technical.snippet
 tags: ["movie", "running", "barkley", "youtube"]
 ---
 

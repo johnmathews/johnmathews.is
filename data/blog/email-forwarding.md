@@ -2,7 +2,7 @@
 title: Forward Email
 slug: email-forwarding
 date: "2021-05-14 13:44:11"
-category: t.snippet
+category: technical.snippet
 tags: ["email"]
 ---
 

@@ -2,7 +2,7 @@
 title: nmap
 slug: nmap
 date: "2021-09-04 20:30:04"
-category: t.snippet
+category: technical.snippet
 tags: ["networking", "cli"]
 ---
 

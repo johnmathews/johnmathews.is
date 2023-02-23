@@ -1,7 +1,7 @@
 ---
 title: Small Teams
 date: 2023-01-05 10:27:03
-category: t.snippet, nt.snippet
+category: technical.snippet, non-technical.snippet
 tags: ["productivity", "teams", "business"]
 ---
 

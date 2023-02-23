@@ -1,7 +1,7 @@
 ---
 title: Robert Doisneau
 date: 2023-01-02 11:33:36
-category: nt.snippet
+category: non-technical.snippet
 tags: ["photography", "photographer"]
 ---
 

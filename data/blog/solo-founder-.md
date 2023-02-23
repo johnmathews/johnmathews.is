@@ -1,7 +1,7 @@
 ---
 title: Solo founder
 date: "2021-12-24 10:11:12"
-category: t.snippet
+category: technical.snippet
 tags: ["entrepreneur", "saas", "maker", "founder"]
 ---
 

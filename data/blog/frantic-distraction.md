@@ -2,7 +2,7 @@
 title: Frantic Distraction
 slug: frantic-distraction
 date: "2021-03-30 23:05:59"
-category: nt.Snippet
+category: non-technical.snippet
 tags: ["meta", "thinking"]
 ---
 

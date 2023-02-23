@@ -2,7 +2,7 @@
 title: Edward Hoppers Paintings
 slug: edward-hopper-s-paintings
 date: "2021-06-30 13:21:42"
-category: nt.snippet
+category: non-technical.snippet
 tags: ["art", "painting", "photography"]
 ---
 

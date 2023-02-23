@@ -2,7 +2,7 @@
 title: Handwritten letters at scale
 slug: handwritten-letters-at-scale
 date: "2021-09-20 14:28:59"
-category: t.snippet, nt.snippet
+category: technical.snippet, non-technical.snippet
 tags: ["automation", "hardware", "marketing", "raspberry-pi"]
 ---
 

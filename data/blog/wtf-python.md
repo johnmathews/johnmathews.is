@@ -2,7 +2,7 @@
 title: WTF Python
 slug: wtf-python
 date: "2021-08-02 10:30:55"
-category: t.snippet
+category: technical.snippet
 tags: ["python", "programming"]
 ---
 

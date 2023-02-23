@@ -2,7 +2,7 @@
 title: Multi-tenant Django webapps
 slug: multi-tenant-django-webapps
 date: "2021-11-25 13:43:34"
-category: t.snippet
+category: technical.snippet
 tags: ["python", "django", "webapp"]
 ---
 

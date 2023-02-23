@@ -2,7 +2,7 @@
 title: Vim spellcheck commands
 slug: vim-spell
 date: "2021-05-27 16:14:57"
-category: t.snippet
+category: technical.snippet
 tags: ["vim"]
 ---
 

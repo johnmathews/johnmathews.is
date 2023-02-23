@@ -2,7 +2,7 @@
 title: Github Actions
 slug: github-actions-blog
 date: "2021-04-10 22:53:39"
-category: t.snippet
+category: technical.snippet
 tags: ["github", "blog"]
 ---
 

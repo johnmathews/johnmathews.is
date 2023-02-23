@@ -2,7 +2,7 @@
 title: Creating Slowly
 slug: creating-slowly
 date: "2021-04-01 23:02:09"
-category: nt.snippet, t.snippet
+category: technical.snippet, non-technical.snippet
 tags: ["meta", "thinking", "advice"]
 ---
 

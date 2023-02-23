@@ -2,7 +2,7 @@
 title: zsh suspend or push function
 slug: zsh-suspend-or-push-function
 date: "2021-11-05 11:24:01"
-category: t.snippet
+category: technical.snippet
 tags: ["zsh"]
 ---
 

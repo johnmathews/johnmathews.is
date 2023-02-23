@@ -2,7 +2,7 @@
 title: My dead dad's journal
 slug: my-dead-dads-journal
 date: "2021-08-26 13:32:50"
-category: nt.snippet
+category: non-technical.snippet
 tags: ["humanity"]
 ---
 

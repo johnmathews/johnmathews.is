@@ -2,7 +2,7 @@
 title: Athletes, Careers, and Mental Health
 slug: athletes-and-mental-health
 date: "2021-08-02 12:23:00"
-category: nt.snippet
+category: non-technical.snippet
 tags: ["sport", "competition", "comparmentalization", "psychology"]
 ---
 

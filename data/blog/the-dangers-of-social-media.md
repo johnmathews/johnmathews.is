@@ -2,7 +2,7 @@
 title: The dangers of social media
 slug: the-dangers-of-social-media
 date: "2021-09-16 10:37:28"
-category: t.snippet, nt.snippet
+category: technical.snippet, non-technical.snippet
 tags: ["technology", "mobile", "social-media"]
 ---
 

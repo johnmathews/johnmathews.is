@@ -2,7 +2,7 @@
 title: Newish Command-Line Tools
 slug: newish-command-line-tools
 date: "2022-04-13 10:33:22"
-category: t.snippet
+category: technical.snippet
 tags: ["linux", "cli"]
 ---
 

@@ -2,7 +2,7 @@
 title: Your .bashrc doesn't have to be a mess
 slug: your-bashrc-doesn-t-have-to-be-a-mess
 date: "2021-06-11 11:14:41"
-category: t.snippet
+category: technical.snippet
 tags: ["bash", "shell", "zsh"]
 ---
 

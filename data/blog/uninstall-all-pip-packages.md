@@ -2,7 +2,7 @@
 title: Uninstall all pip packages
 slug: uninstall-all-pip-packages
 date: "2021-11-09 17:05:27"
-category: t.snippet
+category: technical.snippet
 tags: ["python"]
 ---
 

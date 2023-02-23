@@ -1,7 +1,7 @@
 ---
 title: Life
 date: "2021-09-08 17:58:07"
-category: nt.snippet
+category: non-technical.snippet
 tags: ["aphorism"]
 ---
 

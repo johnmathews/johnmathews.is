@@ -2,7 +2,7 @@
 title: Heuristics for effective software development
 slug: heuristics-for-effective-software-development
 date: "2021-07-26 13:33:30"
-category: t.snippet
+category: technical.snippet
 tags: ["engineering", "teams", "organisations"]
 ---
 

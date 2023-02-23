@@ -2,7 +2,7 @@
 title: Slavery
 slug: slavery
 date: "2021-09-08 15:33:37"
-category: nt.snippet
+category: non-technical.snippet
 tags: ["humanity"]
 ---
 

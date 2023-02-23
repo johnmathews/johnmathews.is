@@ -1,7 +1,7 @@
 ---
 title: View and change settings for GCloud CLI
 date: "2021-09-22 09:41:15"
-category: t.snippet
+category: technical.snippet
 tags: ["google-cloud-platform", "cli"]
 ---
 

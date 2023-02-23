@@ -2,7 +2,7 @@
 title: The Worst Volume Control UI
 slug: the-worst-volume-control-ui
 date: "2021-07-14 11:11:06"
-category: t.snippet, nt.snippet
+category: technical.snippet, non-technical.snippet
 tags: ["ui"]
 ---
 

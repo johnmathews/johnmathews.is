@@ -2,7 +2,7 @@
 title: Vim register for yanked text
 slug: vim-yanked-text-buffer
 date: "2021-05-05 18:00:44"
-category: t.snippet
+category: technical.snippet
 tags: ["vim", "text"]
 ---
 

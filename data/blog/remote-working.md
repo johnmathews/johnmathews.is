@@ -2,7 +2,7 @@
 title: Remote Working
 slug: remote-working
 date: "2021-08-02 13:53:49"
-category: nt.snippet
+category: non-technical.snippet
 tags: ["remote", "engineering"]
 ---
 

@@ -2,7 +2,7 @@
 title: Domain Name Registrars
 slug: domain-name-registrars
 date: "2021-05-03 17:49:59"
-category: t.snippet
+category: technical.snippet
 tags: ["web"]
 ---
 

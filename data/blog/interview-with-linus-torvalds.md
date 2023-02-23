@@ -1,7 +1,7 @@
 ---
 title: Linus Torvalds
 date: "2021-04-29 17:38:33"
-category: t.snippet
+category: technical.snippet
 tags: ["linux", "interview", "linus"]
 ---
 

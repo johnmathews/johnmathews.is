@@ -1,7 +1,7 @@
 ---
 title: Three Falls in the Alps
 date: 2022-12-27 17:12:20
-category: nt.snippet
+category: non-technical.snippet
 tags: ["mountaineering", "death"]
 ---
 

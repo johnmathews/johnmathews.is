@@ -2,7 +2,7 @@
 title: Cloud Functions Minimum Instances
 slug: cloud-functions-minimum-instances
 date: "2021-09-08 10:38:47"
-category: t.snippet
+category: technical.snippet
 tags: ["google-cloud-platform", "serverless"]
 ---
 

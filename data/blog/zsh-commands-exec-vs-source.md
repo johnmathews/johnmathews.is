@@ -2,7 +2,7 @@
 title: >
   Zsh commands: exec vs source
 date: "2021-11-09 10:34:10"
-category: t.snippet
+category: technical.snippet
 tags: ["zsh", "shell"]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Shell Comparisons
 date: "2021-03-02 23:28:35"
-category: t.snippet
+category: technical.snippet
 tags: ["zsh", "bash", "bsh", "linux", "cli"]
 ---
 

@@ -2,7 +2,7 @@
 title: The 3-2-1 backup rule
 slug: the-3-2-1-backup-rule
 date: "2021-11-25 10:40:14"
-category: t.snippet, nt.snippet
+category: technical.snippet, non-technical.snippet
 tags: ["archive", "data"]
 ---
 

@@ -2,7 +2,7 @@
 title: Globbing
 slug: globbing
 date: "2021-05-10 16:12:25"
-category: t.snippet
+category: technical.snippet
 tags: ["linux"]
 ---
 

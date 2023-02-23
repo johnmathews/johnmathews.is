@@ -2,7 +2,7 @@
 title: Linux Filesystem Hierarchy Standard
 slug: linux-etsy-dir
 date: "2021-05-02 17:43:08"
-category: t.snippet
+category: technical.snippet
 tags: [" linux", "filesystem"]
 ---
 

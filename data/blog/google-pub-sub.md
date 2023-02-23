@@ -2,7 +2,7 @@
 title: Google Pub/Sub
 slug: google-pub-sub
 date: "2021-09-20 21:09:20"
-category: t.snippet
+category: technical.snippet
 tags: ["google-cloud-platform", "message-systems"]
 ---
 

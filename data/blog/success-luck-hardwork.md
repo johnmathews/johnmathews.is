@@ -1,7 +1,7 @@
 ---
 title: Is success luck or hardwork?
 date: "2023-02-13 11:00:46"
-category: nt.snippet
+category: non-technical.snippet
 tags: ["math", "veritasium", "youtube"]
 ---
 

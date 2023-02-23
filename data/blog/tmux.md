@@ -2,7 +2,7 @@
 title: Tmux tutorials
 slug: tmux
 date: "2022-05-09 13:41:21"
-category: t.snippet
+category: technical.snippet
 tags: ["tmux"]
 ---
 

@@ -2,7 +2,7 @@
 title: nohup
 slug: nohup
 date: "2021-03-02 23:30:02"
-category: t.snippet
+category: technical.snippet
 tags: ["linux", "cli"]
 ---
 

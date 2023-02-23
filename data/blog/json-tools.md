@@ -2,7 +2,7 @@
 title: JSON tools
 slug: json-tools
 date: "2021-03-24 23:10:45"
-category: t.snippet
+category: technical.snippet
 tags: ["json"]
 ---
 

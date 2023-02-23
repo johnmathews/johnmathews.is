@@ -2,7 +2,7 @@
 title: Poisson's Equation
 slug: poissons-equation
 date: "2021-07-06 18:12:12"
-category: nt.snippet
+category: non-technical.snippet
 tags: ["math"]
 ---
 

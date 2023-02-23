@@ -2,7 +2,7 @@
 title: Global Aliases
 slug: global-aliases
 date: "2021-05-05 18:02:11"
-category: t.snippet
+category: technical.snippet
 tags: ["alias", "linux"]
 ---
 

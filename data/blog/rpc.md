@@ -2,7 +2,7 @@
 title: Remote Procedure Calls
 slug: rpc
 date: "2021-04-29 17:37:38"
-category: t.snippet
+category: technical.snippet
 tags: ["rpc", "linux"]
 ---
 
