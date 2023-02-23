@@ -55,16 +55,19 @@ export async function getStaticProps({ params }) {
 }
 
 function toTitleCase(str) {
-  return str.replace("-", " ").replace(/\w\S*/g, function (txt) {
+  return str.replace(/\w\S*/g, function (txt) {
     return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()
   })
 }
 
 export default function Category({ posts, category }) {
+  console.log("--- debug category: ", category)
+  console.log("--- debug posts: ", posts)
   const formattedTitle =
     !category[0].toLowerCase().includes("snippet") && typeof category[0] === "string"
       ? toTitleCase(category[1])
       : "Snippet"
+  console.log("--- debug formattedTitle: ", formattedTitle)
   return (
     <>
       <CategorySEO

@@ -9,7 +9,6 @@ const ParentCategory = ({ catName, structuredCategories }) => {
     niceCategory = catName
   }
 
-  console.log("--- debug components/ParentCategory structuredCategories: ", structuredCategories)
   return (
     <div key={catName}>
       <div className="my-3 text-2xl font-bold capitalize text-gray-900 dark:text-gray-100 ">
@@ -18,7 +17,6 @@ const ParentCategory = ({ catName, structuredCategories }) => {
 
       <div>
         {structuredCategories.map((category) => {
-          console.log("--- debug components/ParentCategory category: ", Object.keys(category)[0])
           return (
             <ChildCategory
               key={Object.keys(category)[0]}

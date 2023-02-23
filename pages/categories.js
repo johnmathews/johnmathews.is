@@ -38,7 +38,6 @@ export default function Categories({ categories }) {
         </div>
         <div key={"cat_parent"} id="categories" className="flex max-w-lg flex-col"></div>
         {Object.keys(structuredCategories).map((category) => {
-          console.log("--- debug pages/categories.js category: ", category)
           return (
             <ParentCategory
               key={category}
