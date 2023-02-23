@@ -1,8 +1,7 @@
 ---
 title: Reading - April 2021
-slug: reading-april-2021
 date: "2021-04-21 12:55:20"
-category: Non-technical>Journal, Technical>Other
+category: Non-technical.Journal, Technical.Other
 tags: ["reading"]
 ---
 
@@ -10,7 +9,7 @@ tags: ["reading"]
 
 Articles and blog posts I saved to read later:
 
-# [The Architecture Behind A One-Person Tech Startup](https://anthonynsimon.com/blog/one-man-saas-architecture/)
+## [The Architecture Behind A One-Person Tech Startup](https://anthonynsimon.com/blog/one-man-saas-architecture/)
 
 An article by [Anthony Najjar Simon](https://twitter.com/anthonynsimon) about how he runs his one-man SaaS using Django.
 
@@ -22,7 +21,7 @@ An article by [Anthony Najjar Simon](https://twitter.com/anthonynsimon) about ho
 - Productive because he used the tools he is most familiar with and he can focus on shipping.
 - Django, Celery, PostgreSQL, Python, AWS, Redis. - same as MoneyBar and PipPip.
 
-# [Boring tech behind a one person SaaS](https://www.listennotes.com/blog/the-boring-technology-behind-a-one-person-23/)
+## [Boring tech behind a one person SaaS](https://www.listennotes.com/blog/the-boring-technology-behind-a-one-person-23/)
 
 - The tech-stack keeps evolving
 - "Boring" means "what I'm familiar with so that I can focus on the business"
@@ -47,16 +46,16 @@ An article by [Anthony Najjar Simon](https://twitter.com/anthonynsimon) about ho
 - Use boring technology, or whatever tech you want. Just make sure you're solving an actual problem.
 - Ignore the [cargo cult people](https://stevemcconnell.com/articles/cargo-cult-software-engineering/) and ignore the noise. Keep calm and carry on.
 
-# [Django's place in a web development world](https://thenewstack.io/djangos-place-in-a-web-development-world-ruled-by-react/)
+## [Django's place in a web development world](https://thenewstack.io/djangos-place-in-a-web-development-world-ruled-by-react/)
 
 - Not everything needs to be an SPA
 - Django is a back-end framework, it'll work with an front-end framework, because separation of concerns.
 - To use Django with an SPA, you could use DRF, or just normal views that return JSON.
 - Reading this makes me want to check out React to see what all the fuss is about.
 
-# <s>[Cache invalidation](https://yihui.org/en/2018/06/cache-invalidation/)</s>
+## <s>[Cache invalidation](https://yihui.org/en/2018/06/cache-invalidation/)</s>
 
-# [Vim abbreviations](https://jovica.org/posts/vim_abbreviations/)
+## [Vim abbreviations](https://jovica.org/posts/vim_abbreviations/)
 
 - Cool and all, but not as powerful as snippets I think.
 - Auto correcting typos: teh -> the
@@ -65,26 +64,26 @@ An article by [Anthony Najjar Simon](https://twitter.com/anthonynsimon) about ho
 - It really seems similar to what I'm using UltiSnips for.
 - I found [this](https://stackoverflow.com/questions/30266587/snippets-vs-abbreviations-in-vim) question on SO comparing abbreviations and snippets. TLDR: It's easier to add and maintain snippets than abbreviations, and you have less boilerplate with snippets than abbreviations, especially in complex cases.
 
-# <s>[To fix the social sciences, look to the “dark ages” of medicine](https://thereader.mitpress.mit.edu/social-sciences-dark-ages/)</s>
+## <s>[To fix the social sciences, look to the “dark ages” of medicine](https://thereader.mitpress.mit.edu/social-sciences-dark-ages/)</s>
 
-# [Emotional resilience in leadership report](https://docs.google.com/document/d/18FfZ86PGA_uSFf425EzKXAmiFQLFBPqjqPN7iu1TZRw/preview?pru=AAABdEZGCv8*_gdPBrQH8tAPyvMfLk6Unw)
+## [Emotional resilience in leadership report](https://docs.google.com/document/d/18FfZ86PGA_uSFf425EzKXAmiFQLFBPqjqPN7iu1TZRw/preview?pru=AAABdEZGCv8*_gdPBrQH8tAPyvMfLk6Unw)
 
-# [3 virtues of a programmer](http://threevirtues.com/)
+## [3 virtues of a programmer](http://threevirtues.com/)
 
 - Laziness - The quality that makes you go to great effort to reduce overall energy expenditure. It makes you write labor-saving programs that other people will find useful and document what you wrote so you don't have to answer so many questions about it.
 - Impatience - The anger you feel when the computer is being lazy. This makes you write programs that don't just react to your needs, but actually anticipate them. Or at least pretend to.
 - Hubris - The quality that makes you write (and maintain) programs that other people won't want to say bad things about.
 - Also, I read a quote somewhere saying the mark of a great program is having people use it in ways you didn't expect, or something like that.
 
-# [Is WebAssembly magic performance pixie dust?](https://surma.dev/things/js-to-asc/)
+## [Is WebAssembly magic performance pixie dust?](https://surma.dev/things/js-to-asc/)
 
-# [Yamauchi No.10 Family Office](https://y-n10.com/)
+## [Yamauchi No.10 Family Office](https://y-n10.com/)
 
 - A beautifully designed website.
 
-# [Improve and Extend Your Text Objects With targets.vim](https://www.barbarianmeetscoding.com/blog/exploring-vim-plugins-improve-and-extend-your-text-objects-with-targets-vim)
+## [Improve and Extend Your Text Objects With targets.vim](https://www.barbarianmeetscoding.com/blog/exploring-vim-plugins-improve-and-extend-your-text-objects-with-targets-vim)
 
-# [A Vim Guide for Adept Users](https://thevaluable.dev/vim-adept)
+## [A Vim Guide for Adept Users](https://thevaluable.dev/vim-adept)
 
 - How to manipulate multiple quickfix and location lists.
 - What are digraphs and how to use them.
@@ -94,9 +93,9 @@ An article by [Anthony Najjar Simon](https://twitter.com/anthonynsimon) about ho
 - Using shell commands in Vim.
 - Folding content.
 
-# [Deep dive in CORS](https://ieftimov.com/post/deep-dive-cors-history-how-it-works-best-practices/)
+## [Deep dive in CORS](https://ieftimov.com/post/deep-dive-cors-history-how-it-works-best-practices/)
 
-# [The TTY demystified](http://www.linusakesson.net/programming/tty/index.php)
+## [The TTY demystified](http://www.linusakesson.net/programming/tty/index.php)
 
 - `ps 1` - see which processes are running or sleeping. `WCHAN` tells you which
   kernel event a waiting processing is awaiting.

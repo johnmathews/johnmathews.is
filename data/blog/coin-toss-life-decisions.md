@@ -5,11 +5,12 @@ category: Non-technical.Social
 tags: ["academic", "happiness"]
 ---
 
-This paper concludes that people are excessively cautious when making big decisions. This
-corresponds to my personal experience, and is a nice reminder (from an unlikely source) that I am
-biased towards being too cautious and should be mindful of this bias.
+[This paper](https://www.gwern.net/docs/psychology/cognitive-bias/2020-levitt.pdf) concludes that
+people are excessively cautious when making big decisions. This corresponds to my personal
+experience, and is a nice reminder (from an unlikely source) that I am biased towards being too
+cautious and should be mindful of this bias.
 
-# The abstract:
+## Abstract
 
 Little is known about whether people make good choices when facing important decisions. This article
 reports on a large-scale randomized field experiment in which research subjects having difficulty
