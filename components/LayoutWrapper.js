@@ -155,7 +155,7 @@ const LayoutWrapper = ({ children }) => {
       id="LayoutContainer"
       className="3xl:w-0/12 mx-auto mt-5 px-4 lg:mt-16 lg:px-10 xl:mt-32 xl:w-11/12 xl:px-0 2xl:w-10/12"
     >
-      <div id="layoutwrapperInclFooter" className="min-h-screen">
+      <div id="layoutwrapperInclFooter" className="">
         <div
           id="LayoutWrapperExcFooter"
           className="mx-auto flex flex-col justify-between lg:flex-row"
