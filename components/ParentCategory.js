@@ -1,25 +1,31 @@
-import Link from "next/link"
-import kebabCase from "@/lib/utils/kebabCase"
 import ChildCategory from "@/components/ChildCategory"
 
 const ParentCategory = ({ catName, structuredCategories }) => {
-  var category = ""
+  var niceCategory = ""
   // this is because the `capitalize` className doesnt work with hyphens
   if (catName == "non-technical") {
-    category = "Non-Technical"
+    niceCategory = "Non-Technical"
   } else {
-    category = catName
+    niceCategory = catName
   }
 
+  console.log("--- debug components/ParentCategory structuredCategories: ", structuredCategories)
   return (
     <div key={catName}>
       <div className="my-3 text-2xl font-bold capitalize text-gray-900 dark:text-gray-100 ">
-        {category}
+        {niceCategory}
       </div>
 
       <div>
         {structuredCategories.map((category) => {
-          return <ChildCategory key={category} parentName={catName} category={category} />
+          console.log("--- debug components/ParentCategory category: ", Object.keys(category)[0])
+          return (
+            <ChildCategory
+              key={Object.keys(category)[0]}
+              parentName={catName}
+              category={category}
+            />
+          )
         })}
       </div>
     </div>
