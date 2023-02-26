@@ -1,11 +1,12 @@
 import { useContext } from "react"
-import { AppContext } from "@/components/ContextProvider"
-
+import { useRouter } from "next/router"
 import useMousetrap from "mousetrap-react"
 
-import { useRouter } from "next/router"
+import { AppContext } from "@/components/ContextProvider"
+import { setToStorage } from "@/lib/localStorage"
 
 const mouseClickEvents = ["click"]
+
 function simulateMouseClick(element) {
   mouseClickEvents.forEach((mouseEventType) =>
     element.dispatchEvent(
@@ -96,6 +97,7 @@ const KeyboardShortcuts = () => {
   useMousetrap("v a", () => {
     let data = JSON.stringify({ category: "keyboard-shortcut", event: "va" })
     clientEventLogger(router.asPath, data)
+    setToStorage("postFilter", "both")
     let allPostsButton = document.querySelector("#selectAllPosts")
     simulateMouseClick(allPostsButton)
     HIDE_MODAL()
@@ -104,6 +106,7 @@ const KeyboardShortcuts = () => {
     let data = JSON.stringify({ category: "keyboard-shortcut", event: "vn" })
     clientEventLogger(router.asPath, data)
     let nonTechnicalButton = document.querySelector("#selectNonTechnical")
+    setToStorage("postFilter", "nontechnical")
     simulateMouseClick(nonTechnicalButton)
     HIDE_MODAL()
   })
@@ -111,6 +114,7 @@ const KeyboardShortcuts = () => {
     let data = JSON.stringify({ category: "keyboard-shortcut", event: "vt" })
     clientEventLogger(router.asPath, data)
     let technicalButton = document.querySelector("#selectTechnical")
+    setToStorage("postFilter", "technical")
     simulateMouseClick(technicalButton)
     HIDE_MODAL()
   })
