@@ -82,7 +82,7 @@ to keep my fingers close to the home-row as much as possible. This means that my
 symmetrical, and therefore the easiest keys to hit are not the same on both sides.
 
 You can see my [layout history here](https://configure.zsa.io/my_layout/view/Dnj6q). Its been a long
-an iterative process.
+and iterative process.
 
 ## Summary
 

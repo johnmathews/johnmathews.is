@@ -48,7 +48,7 @@ export default function Table({ columns, data, isPaginated = true }) {
           []
         ),
         pageIndex: 0,
-        pageSize: 9,
+        pageSize: 12,
         manualPagination: true,
       },
     },
