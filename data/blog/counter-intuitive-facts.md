@@ -27,7 +27,7 @@ Thanks to [Alexander Kruel](https://substack.com/profile/2149674-alexander-kruel
    rolls higher than C more than half the time
    [Wikipedia](https://en.wikipedia.org/wiki/Nontransitive_dice).
 
-6. Causation does not imply correlation [- arxiv](https://arxiv.org/abs/1505.03118).
+6. Causation does not imply correlation [arxiv](https://arxiv.org/abs/1505.03118).
 
 7. The Earth makes 366.25 rotations around its axis per year. (Related. 0% selected the right answer
    on this SAT question: Circle A has 1/3 the radius of circle B, and circle A rolls one trip around
@@ -38,8 +38,8 @@ Thanks to [Alexander Kruel](https://substack.com/profile/2149674-alexander-kruel
    [Wikipedia](https://en.wikipedia.org/wiki/Mobius_strip).
 
 9. It is possible to travel downwind faster than the wind.
-   [- YouTube](https://youtube.com/watch?v=jyQwgBAaBag) (for a mechanical demonstration see "Under
-   the ruler faster than the ruler" [- YouTube](https://youtube.com/watch?v=k-trDF8Yldc)).
+   [YouTube](https://youtube.com/watch?v=jyQwgBAaBag) (for a mechanical demonstration see "Under
+   the ruler faster than the ruler" [YouTube](https://youtube.com/watch?v=k-trDF8Yldc)).
 
 10. It is possible to read out the results of events that 'didn't happen' and whose 'probability of
     happening' can be driven arbitrarily low.
@@ -65,7 +65,7 @@ Thanks to [Alexander Kruel](https://substack.com/profile/2149674-alexander-kruel
 
 17. At any given moment on the earth's surface, there exist 2 antipodal points (on exactly opposite
     sides of the earth) with the same temperature and barometric pressure:
-    [- YouTube](https://youtube.com/watch?v=cchIr1OXc8E)
+    [YouTube](https://youtube.com/watch?v=cchIr1OXc8E)
 
 18. A one-in-billion event will happen 8 times a month. [-source](https://gwern.net/Littlewood)
 
