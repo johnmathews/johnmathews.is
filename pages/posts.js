@@ -26,9 +26,20 @@ export async function getStaticProps() {
     return !post.category[0].toLowerCase().includes("snippet")
   })
   const posts = unsortedPosts.sort(compareDates)
+  var technicalIndex = 0
+  var nontechnicalIndex = 0
   posts.map((post, index) => {
+    // doesnt consider posts with multiple categories
     post["indexAllPosts"] = index
+    if (post.category[0].toLowerCase() == "non-technical") {
+      post["indexNonTechnical"] = nontechnicalIndex
+      nontechnicalIndex++
+    } else {
+      post["indexTechnical"] = technicalIndex
+      technicalIndex++
+    }
   })
+  console.log("--- debug posts: ", posts.slice(0, 13))
   return { props: { posts } }
 }
 
