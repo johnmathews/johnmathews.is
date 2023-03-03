@@ -20,6 +20,23 @@ function compareDates(a, b) {
   return 0
 }
 
+function categoryGroup(categories) {
+  // each post can have more than one category
+  // returns a set showing which category groups the post belongs too
+  // technical, non-technical, or snippet
+  var groups = new Set()
+  for (var i = 0; i < categories.length; i++) {
+    if (categories[i].split(".")[0].toLowerCase() == "non-technical") {
+      groups.add("non-technical")
+    } else if (categories[i].split(".")[0].toLowerCase() == "technical") {
+      groups.add("technical")
+    } else if (categories[i].split(".")[0].toLowerCase() == "snippet") {
+      groups.add("snippet")
+    }
+  }
+  return groups
+}
+
 export async function getStaticProps() {
   const allPosts = await getAllFilesFrontMatter("blog")
   const unsortedPosts = allPosts.filter(function (post) {
@@ -31,15 +48,16 @@ export async function getStaticProps() {
   posts.map((post, index) => {
     // doesnt consider posts with multiple categories
     post["indexAllPosts"] = index
-    if (post.category[0].toLowerCase() == "non-technical") {
+    var catGroups = categoryGroup(post.category)
+    if (catGroups.has("non-technical")) {
       post["indexNonTechnical"] = nontechnicalIndex
       nontechnicalIndex++
-    } else {
+    }
+    if (catGroups.has("technical")) {
       post["indexTechnical"] = technicalIndex
       technicalIndex++
     }
   })
-  console.log("--- debug posts: ", posts.slice(0, 13))
   return { props: { posts } }
 }
 
