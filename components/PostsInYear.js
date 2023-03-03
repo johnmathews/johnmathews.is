@@ -10,6 +10,7 @@ const PostsInYear = ({ year, posts, filterSnippets = true, filterCats = true }) 
   return posts[year].map((post) => {
     const { slug, date, title, category } = post
 
+    // create a set of category types called categoryTypes
     const catType = []
     category.forEach((cat) => {
       if (cat.toLowerCase().split(".")[0] === "technical") {
@@ -22,15 +23,21 @@ const PostsInYear = ({ year, posts, filterSnippets = true, filterCats = true }) 
     })
     const categoryTypes = [...new Set(catType)]
 
+    // show or hide post depending on visibility state and what groups the psot
+    // belongs to
     var showPost = false
+    var index = 0
     if (!filterCats) {
       showPost = true
     } else if (state.technical && state.nonTechnical) {
       showPost = true
+      index = post.indexAllPosts
     } else if (state.technical && categoryTypes.includes("technical")) {
       showPost = true
+      index = post.indexTechnical
     } else if (state.nonTechnical && categoryTypes.includes("nonTechnical")) {
       showPost = true
+      index = post.indexNonTechnical
     } else {
       showPost = false
     }
@@ -38,7 +45,9 @@ const PostsInYear = ({ year, posts, filterSnippets = true, filterCats = true }) 
       return (
         <li
           key={slug}
-          className={`text-normal mb-5  hover:underline lg:mb-6 ${showPost ? null : "hidden"}`}
+          className={`text-normal mb-5  hover:underline lg:mb-6 ${
+            showPost ? "index-" + index : "hidden"
+          }`}
         >
           <div className="flex">
             <div className="flex-auto">
