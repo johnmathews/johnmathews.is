@@ -67,7 +67,7 @@ Thanks to [Alexander Kruel](https://substack.com/profile/2149674-alexander-kruel
     sides of the earth) with the same temperature and barometric pressure:
     [YouTube](https://youtube.com/watch?v=cchIr1OXc8E)
 
-18. A one-in-billion event will happen 8 times a month. [-source](https://gwern.net/Littlewood)
+18. A one-in-billion event will happen 8 times a month. [source](https://gwern.net/Littlewood)
 
 19. Given a solid ball in 3‑dimensional space, there exists a decomposition of the ball into a
     finite number of disjoint subsets, which can then be put back together in a different way to
@@ -190,19 +190,19 @@ Thanks to [Alexander Kruel](https://substack.com/profile/2149674-alexander-kruel
 
 26. Counterfactual mugging [source](https://wiki.lesswrong.com/wiki/Counterfactual_mugging)
 
-27. Vexing Expectations [source](https://authors.library.caltech.edu/7496/1/NOVmind04.pdf)
+27. Vexing Expectations [pdf](https://authors.library.caltech.edu/7496/1/NOVmind04.pdf)
 
 28. The Absent-Minded Driver [source](http://lesswrong.com/lw/182/the_absentminded_driver/)
 
 29. The Hardest Logic Puzzle Ever [Wikipedia](https://en.wikipedia.org/wiki/The_Hardest_Logic_Puzzle_Ever)
 
-30. Seven Puzzles You Think You Must Not Have Heard Correctly [source](https://math.dartmouth.edu/~pw/solutions.pdf)
+30. Seven Puzzles You Think You Must Not Have Heard Correctly [pdf](https://math.dartmouth.edu/~pw/solutions.pdf)
 
 31. Simpson's Paradox [wikipedia](https://en.wikipedia.org/wiki/Simpson%27s_paradox)
 
 32. Berkson's paradox [wikipedia](https://en.wikipedia.org/wiki/Berkson%27s_paradox)
 
-33. Counterintuitive examples in probability [source](https://math.stackexchange.com/questions/2140493/counterintuitive-examples-in-probability)
+33. Counterintuitive examples in probability [stack exchange](https://math.stackexchange.com/questions/2140493/counterintuitive-examples-in-probability)
 
 34. What are some counter-intuitive results in mathematics that involve only finite objects?
-    [source](https://math.stackexchange.com/questions/2040811/what-are-some-counter-intuitive-results-in-mathematics-that-involve-only-finite)
+    [stack exchange](https://math.stackexchange.com/questions/2040811/what-are-some-counter-intuitive-results-in-mathematics-that-involve-only-finite)

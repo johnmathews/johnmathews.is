@@ -40,16 +40,17 @@ export default function PostLayout({ frontMatter, authorDetails, children }) {
     PostImage = null
   }
 
-  var PostSummary
-  if (frontMatter.summary) {
-    PostSummary = (
+  var PostDescription
+  const description = frontMatter.summary || frontMatter.description
+  if (description) {
+    PostDescription = (
       <div id="postSummary" className="font-serif text-xl">
         {" "}
-        {frontMatter.summary}{" "}
+        {description}{" "}
       </div>
     )
   } else {
-    PostSummary = null
+    PostDescription = null
   }
 
   function getContent(frontMatter, children) {
@@ -118,7 +119,7 @@ export default function PostLayout({ frontMatter, authorDetails, children }) {
                 >
                   <div className="xl:col-span-3 xl:row-span-2 xl:pb-0">
                     <div id="content" className="prose-2xl max-w-none pt-10 pb-8">
-                      {PostSummary}
+                      {PostDescription}
                       {getContent(frontMatter, children)}
                     </div>
                   </div>

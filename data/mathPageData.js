@@ -1,6 +1,13 @@
 const mathPageData = {
   "": [
     {
+      title: "Counterintuitive Facts",
+      description: "",
+
+      imgSrc: "",
+      href: "/blog/counter-intuitive-facts",
+    },
+    {
       title: "Bifurcation Theory [Ve]",
       description: `Feigenbaum constnat`,
       imgSrc: "",
@@ -41,12 +48,6 @@ const mathPageData = {
       description: "",
       imgSrc: "",
       href: "/blog/poissons-equation",
-    },
-    {
-      title: "Counterintuitive Facts",
-      description: "",
-      imgSrc: "",
-      href: "/blog/counter-intuitive-facts",
     },
     {
       title: "How to Size Bets",

@@ -16,7 +16,7 @@ and skimmed their [white
 paper](https://blockchain.Æternity.com/%C3%A6ternity-blockchain-whitepaper.pdf).
 The project is ambitious, like many crypto projects, but seems well organised.
 The team is well known in the space. There is a clear plan to develop the
-project and create a blockchain technology that, if successful, could bring. A
+project and create a blockchain technology that, if successful, could bring a
 step change in the use of digital currencies for high volume low value
 transactions, and the viable implementation of smart contracts.
 
