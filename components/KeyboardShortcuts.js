@@ -93,6 +93,8 @@ const KeyboardShortcuts = () => {
     dispatch({
       type: "LIST_POSITION_INCREASE",
     })
+    const element = document.getElementsByClassName("selected")
+    element[0].scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" })
   })
   useMousetrap("ctrl+k", () => {
     let data = JSON.stringify({ category: "keyboard-shortcut", event: "ctrl+j" })
@@ -100,13 +102,15 @@ const KeyboardShortcuts = () => {
     dispatch({
       type: "LIST_POSITION_DECREASE",
     })
+    const element = document.getElementsByClassName("selected")
+    element[0].scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" })
   })
 
   useMousetrap("return", () => {
     console.log("--- debug return: ", "smoke!")
     let data = JSON.stringify({ category: "keyboard-shortcut", event: "return" })
     clientEventLogger(router.asPath, data)
-    let selectedPost = document.querySelector(".selected")
+    let selectedPost = document.querySelector(".viewable .selected")
     console.log("--- debug selectedPost: ", selectedPost)
     simulateMouseClick(selectedPost)
     HIDE_MODAL()
@@ -139,6 +143,8 @@ const KeyboardShortcuts = () => {
     setToStorage("postFilter", "both")
     let allPostsButton = document.querySelector("#selectAllPosts")
     simulateMouseClick(allPostsButton)
+    dispatch({ type: "LIST_POSITION_RESET" })
+    window.scrollTo(0, 0)
     HIDE_MODAL()
   })
   useMousetrap("v n", () => {
@@ -147,6 +153,8 @@ const KeyboardShortcuts = () => {
     let nonTechnicalButton = document.querySelector("#selectNonTechnical")
     setToStorage("postFilter", "nontechnical")
     simulateMouseClick(nonTechnicalButton)
+    dispatch({ type: "LIST_POSITION_RESET" })
+    window.scrollTo(0, 0)
     HIDE_MODAL()
   })
   useMousetrap("v t", () => {
@@ -155,6 +163,8 @@ const KeyboardShortcuts = () => {
     let technicalButton = document.querySelector("#selectTechnical")
     setToStorage("postFilter", "technical")
     simulateMouseClick(technicalButton)
+    dispatch({ type: "LIST_POSITION_RESET" })
+    window.scrollTo(0, 0)
     HIDE_MODAL()
   })
 

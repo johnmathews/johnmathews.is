@@ -47,7 +47,7 @@ const PostsInYear = ({ year, posts, filterSnippets = true, filterCats = true }) 
           key={slug}
           className={`text-normal mb-5  hover:underline lg:mb-6 ${
             state.listPosition == index ? "underline" : null
-          } ${showPost ? "index-" + index : "hidden"}`}
+          } ${showPost ? "viewable index-" + index : "hidden"}`}
         >
           <div className="flex">
             <div className="flex-auto">
@@ -55,7 +55,7 @@ const PostsInYear = ({ year, posts, filterSnippets = true, filterCats = true }) 
                 <div className="font-serif text-2xl font-bold">
                   <Link
                     href={`/blog/${slug}`}
-                    className={`${state.listPosition == index ? "selected" : null}`}
+                    className={`${state.listPosition == index ? "selected" : "notSelected"}`}
                   >
                     {title}
                   </Link>
