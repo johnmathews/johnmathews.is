@@ -27,7 +27,7 @@ export async function getStaticProps() {
   })
   const posts = unsortedPosts.sort(compareDates)
   posts.map((post, index) => {
-    post["index"] = index
+    post["indexAllPosts"] = index
   })
   return { props: { posts } }
 }
