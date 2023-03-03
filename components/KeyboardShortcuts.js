@@ -73,6 +73,45 @@ const KeyboardShortcuts = () => {
     }
   })
 
+  useMousetrap(["j"], () => {
+    let data = JSON.stringify({ category: "keyboard-shortcut", event: "j" })
+    clientEventLogger(router.asPath, data)
+    window.scrollBy({ top: 200, left: 0, behavior: "smooth" })
+    HIDE_MODAL()
+  })
+
+  useMousetrap(["k"], () => {
+    let data = JSON.stringify({ category: "keyboard-shortcut", event: "k" })
+    clientEventLogger(router.asPath, data)
+    window.scrollBy({ top: -200, left: 0, behavior: "smooth" })
+    HIDE_MODAL()
+  })
+
+  useMousetrap("ctrl+j", () => {
+    let data = JSON.stringify({ category: "keyboard-shortcut", event: "ctrl+j" })
+    clientEventLogger(router.asPath, data)
+    dispatch({
+      type: "LIST_POSITION_INCREASE",
+    })
+  })
+  useMousetrap("ctrl+k", () => {
+    let data = JSON.stringify({ category: "keyboard-shortcut", event: "ctrl+j" })
+    clientEventLogger(router.asPath, data)
+    dispatch({
+      type: "LIST_POSITION_DECREASE",
+    })
+  })
+
+  useMousetrap("return", () => {
+    console.log("--- debug return: ", "smoke!")
+    let data = JSON.stringify({ category: "keyboard-shortcut", event: "return" })
+    clientEventLogger(router.asPath, data)
+    let selectedPost = document.querySelector(".selected")
+    console.log("--- debug selectedPost: ", selectedPost)
+    simulateMouseClick(selectedPost)
+    HIDE_MODAL()
+  })
+
   useMousetrap(["?", "esc", "q"], () => {
     let data = JSON.stringify({ category: "keyboard-shortcut", event: "?" })
     clientEventLogger(router.asPath, data)
@@ -127,20 +166,6 @@ const KeyboardShortcuts = () => {
     HIDE_MODAL()
   })
 
-  useMousetrap("j", () => {
-    let data = JSON.stringify({ category: "keyboard-shortcut", event: "j" })
-    clientEventLogger(router.asPath, data)
-    window.scrollBy({ top: 200, left: 0, behavior: "smooth" })
-    HIDE_MODAL()
-  })
-
-  useMousetrap("k", () => {
-    let data = JSON.stringify({ category: "keyboard-shortcut", event: "k" })
-    clientEventLogger(router.asPath, data)
-    window.scrollBy({ top: -200, left: 0, behavior: "smooth" })
-    HIDE_MODAL()
-  })
-
   useMousetrap("g g", () => {
     let data = JSON.stringify({ category: "keyboard-shortcut", event: "gg" })
     clientEventLogger(router.asPath, data)
@@ -153,19 +178,6 @@ const KeyboardShortcuts = () => {
     clientEventLogger(router.asPath, data)
     window.scrollTo(0, 999999)
     HIDE_MODAL()
-  })
-
-  useMousetrap("ctrl+j", () => {
-    let data = JSON.stringify({ category: "keyboard-shortcut", event: "ctrl+j" })
-    clientEventLogger(router.asPath, data)
-    downArrow()
-    HIDE_MODAL()
-  })
-  useMousetrap("ctrl+k", () => {
-    let data = JSON.stringify({ category: "keyboard-shortcut", event: "ctrl+k" })
-    clientEventLogger(router.asPath, data)
-    HIDE_MODAL()
-    // write an upArrow function but make downArrow work first
   })
 
   useMousetrap("b f", () => {

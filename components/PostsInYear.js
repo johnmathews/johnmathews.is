@@ -1,6 +1,5 @@
-import Link from "next/link"
-
 import { AppContext } from "@/components/ContextProvider"
+import Link from "@/components/Link"
 import { useContext } from "react"
 
 import formatDate from "@/lib/utils/formatDate"
@@ -23,8 +22,9 @@ const PostsInYear = ({ year, posts, filterSnippets = true, filterCats = true }) 
     })
     const categoryTypes = [...new Set(catType)]
 
-    // show or hide post depending on visibility state and what groups the psot
-    // belongs to
+    // show or hide post depending on visibility state and what groups the post
+    // belongs to. Doesnt work on category page because cat group state doesnt
+    // apply to a category page.
     var showPost = false
     var index = 0
     if (!filterCats) {
@@ -46,8 +46,8 @@ const PostsInYear = ({ year, posts, filterSnippets = true, filterCats = true }) 
         <li
           key={slug}
           className={`text-normal mb-5  hover:underline lg:mb-6 ${
-            showPost ? "index-" + index : "hidden"
-          }`}
+            state.listPosition == index ? "underline" : null
+          } ${showPost ? "index-" + index : "hidden"}`}
         >
           <div className="flex">
             <div className="flex-auto">
@@ -55,7 +55,7 @@ const PostsInYear = ({ year, posts, filterSnippets = true, filterCats = true }) 
                 <div className="font-serif text-2xl font-bold">
                   <Link
                     href={`/blog/${slug}`}
-                    className="capitalize text-gray-900 hover:underline dark:text-gray-100"
+                    className={`${state.listPosition == index ? "selected" : null}`}
                   >
                     {title}
                   </Link>

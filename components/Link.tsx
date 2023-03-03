@@ -16,7 +16,7 @@ function CustomLink({ href, ...rest }) {
     return <a href={href} {...rest} />
   }
 
-  return <a target="_blank" rel="noopener noreferrer" href={href} {...rest} />
+  return <a target="_blank" rel="noreferrer" className={rest.className} href={href} {...rest} />
 }
 
 export default CustomLink
