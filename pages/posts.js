@@ -9,12 +9,26 @@ import siteMetadata from "@/data/siteMetadata"
 import ListLayout from "@/layouts/ListLayout"
 import { PageSEO } from "@/components/SEO"
 
+function compareDates(a, b) {
+  // descending
+  if (new Date(a.date) < new Date(b.date)) {
+    return 1
+  }
+  if (new Date(a.date) > new Date(b.date)) {
+    return -1
+  }
+  return 0
+}
+
 export async function getStaticProps() {
   const allPosts = await getAllFilesFrontMatter("blog")
-  const posts = allPosts.filter(function (post) {
+  const unsortedPosts = allPosts.filter(function (post) {
     return !post.category[0].toLowerCase().includes("snippet")
   })
-
+  const posts = unsortedPosts.sort(compareDates)
+  posts.map((post, index) => {
+    post["index"] = index
+  })
   return { props: { posts } }
 }
 
