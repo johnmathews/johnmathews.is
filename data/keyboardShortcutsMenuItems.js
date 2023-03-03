@@ -12,6 +12,8 @@ const menuItems = {
     { item: "bf", description: "browser forward" },
     { item: "j", description: "move screen down" },
     { item: "k", description: "move screen up" },
+    { item: "ctrl+j", description: "select previous blog post" },
+    { item: "ctrl+k", description: "select next blog post" },
     { item: "np", description: "go to next blog post" },
     { item: "pp", description: "go to previous blog post" },
   ],
