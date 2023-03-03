@@ -103,7 +103,7 @@ const KeyboardShortcuts = () => {
       type: "LIST_POSITION_DECREASE",
     })
     const element = document.getElementsByClassName("selected")
-    element[0].scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" })
+    element[0].scrollIntoView({ behavior: "smooth", block: "center" })
   })
 
   useMousetrap("return", () => {
