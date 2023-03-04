@@ -4,14 +4,17 @@ import { AppContext } from "@/components/ContextProvider"
 import { useContext } from "react"
 import Link from "./Link"
 
-const Card = ({ title, description, imgSrc, href, keyboardShortcut = "" }) => {
+const Card = ({ title, description, imgSrc, href, keyboardShortcut, index }) => {
   const [state, _] = useContext(AppContext)
   return (
     <div className="p-4 ">
       <div
-        className={`${
-          imgSrc && "h-full"
-        }  min-h-full overflow-hidden rounded-md border-2 border-gray-200 border-opacity-60 dark:border-gray-700`}
+        className={` ${
+          state.keyboardMode && state.listPosition == index
+            ? "viewable border-2 border-red-500 dark:border-red-500 "
+            : " border-2 border-gray-200  dark:border-gray-700"
+        } 
+          min-h-full overflow-hidden rounded-md border-opacity-60 `}
       >
         {imgSrc &&
           (href ? (
@@ -33,7 +36,11 @@ const Card = ({ title, description, imgSrc, href, keyboardShortcut = "" }) => {
               height={306}
             />
           ))}
-        <Link href={href} aria-label={`Link to ${title}`}>
+        <Link
+          href={href}
+          aria-label={`Link to ${title}`}
+          className={`${state.keyboardMode && state.listPosition == index ? "selected" : null}`}
+        >
           <div className="min-h-32 px-6 pt-3 pb-3">
             <div className="flex justify-between">
               <h2 className="text-2xl font-bold leading-8 tracking-tight">{title}</h2>

@@ -22,7 +22,7 @@ export default function Collections() {
         </div>
         <div className="container py-12">
           <div className="-m-4 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
-            {collectionsData.map((d) => (
+            {collectionsData.map((d, index) => (
               <Card
                 key={d.title}
                 title={d.title}
@@ -30,6 +30,7 @@ export default function Collections() {
                 imgSrc={d.imgSrc}
                 href={d.href}
                 keyboardShortcut={d.keyboardShortcut}
+                index={index}
               />
             ))}
           </div>
