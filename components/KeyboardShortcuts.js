@@ -61,6 +61,12 @@ const KeyboardShortcuts = () => {
     }
   })
 
+  useMousetrap(["tab"], () => {
+    let data = JSON.stringify({ category: "keyboard-shortcut", event: "tab" })
+    clientEventLogger(router.asPath, data)
+    dispatch({ type: "TOGGLE_KEYBOARD_MODE" })
+  })
+
   useMousetrap(["j"], () => {
     let data = JSON.stringify({ category: "keyboard-shortcut", event: "j" })
     clientEventLogger(router.asPath, data)

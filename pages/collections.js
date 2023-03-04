@@ -29,6 +29,7 @@ export default function Collections() {
                 description={d.description}
                 imgSrc={d.imgSrc}
                 href={d.href}
+                keyboardShortcut={d.keyboardShortcut}
               />
             ))}
           </div>
