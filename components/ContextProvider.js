@@ -24,7 +24,7 @@ const initialState = {
   nonTechnical: false,
   postMetaData: placeHolderPostMetaData,
   showModal: false,
-  listPosition: -1,
+  listPosition: 0,
   keyboardHints: false,
   keyboardMode: false,
   searchVisible: false,

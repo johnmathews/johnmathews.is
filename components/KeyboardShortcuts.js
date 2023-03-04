@@ -83,12 +83,10 @@ const KeyboardShortcuts = () => {
 
   useMousetrap("ctrl+j", () => {
     let data = JSON.stringify({ category: "keyboard-shortcut", event: "ctrl+j" })
-    console.log("--- debug data: ", data)
     clientEventLogger(router.asPath, data)
     dispatch({ type: "KEYBOARD_MODE_ON" })
     const element = document.getElementsByClassName("selected")
     if (element.length > 0) {
-      console.log("--- debug state.listPosition: ", state.listPosition)
       dispatch({ type: "LIST_POSITION_INCREASE" })
       element[0].scrollIntoView({ behavior: "smooth", block: "end" })
     } else {
@@ -102,7 +100,6 @@ const KeyboardShortcuts = () => {
     dispatch({ type: "KEYBOARD_MODE_ON" })
     const element = document.getElementsByClassName("selected")
     if (element.length > 0) {
-      console.log("--- debug state.listPosition: ", state.listPosition)
       dispatch({ type: "LIST_POSITION_DECREASE" })
       element[0].scrollIntoView({ behavior: "smooth", block: "end" })
     } else {
