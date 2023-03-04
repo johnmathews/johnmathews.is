@@ -26,6 +26,7 @@ const initialState = {
   showModal: false,
   listPosition: 0,
   keyboardHints: false,
+  keyboardMode: false,
   searchVisible: false,
 }
 

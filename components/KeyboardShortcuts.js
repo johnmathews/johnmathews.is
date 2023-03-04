@@ -64,7 +64,7 @@ const KeyboardShortcuts = () => {
   useMousetrap(["tab"], () => {
     let data = JSON.stringify({ category: "keyboard-shortcut", event: "tab" })
     clientEventLogger(router.asPath, data)
-    dispatch({ type: "TOGGLE_KEYBOARD_MODE" })
+    dispatch({ type: "TOGGLE_KEYBOARD_HINTS" })
   })
 
   useMousetrap(["j"], () => {
@@ -84,6 +84,7 @@ const KeyboardShortcuts = () => {
   useMousetrap("ctrl+j", () => {
     let data = JSON.stringify({ category: "keyboard-shortcut", event: "ctrl+j" })
     clientEventLogger(router.asPath, data)
+    dispatch({ type: "KEYBOARD_MODE_ON" })
     const element = document.getElementsByClassName("selected")
     if (element.length > 0) {
       dispatch({ type: "LIST_POSITION_INCREASE" })
@@ -96,6 +97,7 @@ const KeyboardShortcuts = () => {
   useMousetrap("ctrl+k", () => {
     let data = JSON.stringify({ category: "keyboard-shortcut", event: "ctrl+j" })
     clientEventLogger(router.asPath, data)
+    dispatch({ type: "KEYBOARD_MODE_ON" })
     const element = document.getElementsByClassName("selected")
     if (element.length > 0) {
       dispatch({ type: "LIST_POSITION_DECREASE" })

@@ -64,7 +64,9 @@ export async function getStaticProps() {
 export default function Blog({ posts }) {
   const router = useRouter()
   const [_, dispatch] = useContext(AppContext)
+
   useEffect(() => {
+    dispatch({ type: "KEYBOARD_MODE_OFF" })
     const currentFilter = getFromStorage("postFilter")
     if (currentFilter != null) {
       if (currentFilter == "technical") {
