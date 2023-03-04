@@ -83,10 +83,12 @@ const KeyboardShortcuts = () => {
 
   useMousetrap("ctrl+j", () => {
     let data = JSON.stringify({ category: "keyboard-shortcut", event: "ctrl+j" })
+    console.log("--- debug data: ", data)
     clientEventLogger(router.asPath, data)
     dispatch({ type: "KEYBOARD_MODE_ON" })
     const element = document.getElementsByClassName("selected")
     if (element.length > 0) {
+      console.log("--- debug state.listPosition: ", state.listPosition)
       dispatch({ type: "LIST_POSITION_INCREASE" })
       element[0].scrollIntoView({ behavior: "smooth", block: "end" })
     } else {
@@ -100,6 +102,7 @@ const KeyboardShortcuts = () => {
     dispatch({ type: "KEYBOARD_MODE_ON" })
     const element = document.getElementsByClassName("selected")
     if (element.length > 0) {
+      console.log("--- debug state.listPosition: ", state.listPosition)
       dispatch({ type: "LIST_POSITION_DECREASE" })
       element[0].scrollIntoView({ behavior: "smooth", block: "end" })
     } else {
@@ -108,11 +111,10 @@ const KeyboardShortcuts = () => {
   })
 
   useMousetrap("return", () => {
-    console.log("--- debug return: ", "smoke!")
     let data = JSON.stringify({ category: "keyboard-shortcut", event: "return" })
     clientEventLogger(router.asPath, data)
     let selectedPost = document.querySelector(".viewable .selected")
-    console.log("--- debug selectedPost: ", selectedPost)
+    dispatch({ type: "LIST_POSITION_RESET" })
     simulateMouseClick(selectedPost)
     HIDE_MODAL()
   })
@@ -129,6 +131,7 @@ const KeyboardShortcuts = () => {
     let nextPostButton = document.querySelector("#nextPost")
     simulateMouseClick(nextPostButton)
     HIDE_MODAL()
+    dispatch({ type: "LIST_POSITION_RESET" })
   })
   useMousetrap("p p", () => {
     let data = JSON.stringify({ category: "keyboard-shortcut", event: "pp" })
@@ -136,6 +139,7 @@ const KeyboardShortcuts = () => {
     let prevPostButton = document.querySelector("#previousPost")
     simulateMouseClick(prevPostButton)
     HIDE_MODAL()
+    dispatch({ type: "LIST_POSITION_RESET" })
   })
 
   useMousetrap("v a", () => {
@@ -197,12 +201,14 @@ const KeyboardShortcuts = () => {
     clientEventLogger(router.asPath, data)
     window.history.forward()
     HIDE_MODAL()
+    dispatch({ type: "LIST_POSITION_RESET" })
   })
   useMousetrap("b b", () => {
     let data = JSON.stringify({ category: "keyboard-shortcut", event: "gb" })
     clientEventLogger(router.asPath, data)
     window.history.back()
     HIDE_MODAL()
+    dispatch({ type: "LIST_POSITION_RESET" })
   })
 
   useMousetrap("c a", () => {
@@ -210,66 +216,77 @@ const KeyboardShortcuts = () => {
     clientEventLogger(router.asPath, data)
     router.push("/categories")
     HIDE_MODAL()
+    dispatch({ type: "LIST_POSITION_RESET" })
   })
   useMousetrap("c b", () => {
     let data = JSON.stringify({ category: "keyboard-shortcut", event: "cb" })
     clientEventLogger(router.asPath, data)
     router.push("/bible")
     HIDE_MODAL()
+    dispatch({ type: "LIST_POSITION_RESET" })
   })
   useMousetrap("c e", () => {
     let data = JSON.stringify({ category: "keyboard-shortcut", event: "ce" })
     clientEventLogger(router.asPath, data)
     router.push("/engineering")
     HIDE_MODAL()
+    dispatch({ type: "LIST_POSITION_RESET" })
   })
   useMousetrap("c f", () => {
     let data = JSON.stringify({ category: "keyboard-shortcut", event: "cf" })
     clientEventLogger(router.asPath, data)
     router.push("/finance")
     HIDE_MODAL()
+    dispatch({ type: "LIST_POSITION_RESET" })
   })
   useMousetrap("c m", () => {
     let data = JSON.stringify({ category: "keyboard-shortcut", event: "cm" })
     clientEventLogger(router.asPath, data)
     router.push("/micro-saas")
     HIDE_MODAL()
+    dispatch({ type: "LIST_POSITION_RESET" })
   })
   useMousetrap("c n", () => {
     let data = JSON.stringify({ category: "keyboard-shortcut", event: "cn" })
     clientEventLogger(router.asPath, data)
     router.push("/math")
     HIDE_MODAL()
+    dispatch({ type: "LIST_POSITION_RESET" })
   })
   useMousetrap("c k", () => {
     let data = JSON.stringify({ category: "keyboard-shortcut", event: "ck" })
     clientEventLogger(router.asPath, data)
     router.push("/books")
     HIDE_MODAL()
+    dispatch({ type: "LIST_POSITION_RESET" })
   })
   useMousetrap("c l", () => {
     let data = JSON.stringify({ category: "keyboard-shortcut", event: "cl" })
     clientEventLogger(router.asPath, data)
     router.push("/longform")
     HIDE_MODAL()
+    dispatch({ type: "LIST_POSITION_RESET" })
   })
   useMousetrap("c p", () => {
     let data = JSON.stringify({ category: "keyboard-shortcut", event: "cp" })
     clientEventLogger(router.asPath, data)
     router.push("/sport")
     HIDE_MODAL()
+    dispatch({ type: "LIST_POSITION_RESET" })
   })
   useMousetrap("c s", () => {
     let data = JSON.stringify({ category: "keyboard-shortcut", event: "cs" })
     clientEventLogger(router.asPath, data)
     router.push("/summaries")
     HIDE_MODAL()
+    dispatch({ type: "LIST_POSITION_RESET" })
   })
   useMousetrap("c t", () => {
     let data = JSON.stringify({ category: "keyboard-shortcut", event: "ct" })
     clientEventLogger(router.asPath, data)
     router.push("/meta")
     HIDE_MODAL()
+    dispatch({ type: "LIST_POSITION_RESET" })
   })
 
   useMousetrap("g a", () => {
@@ -277,54 +294,63 @@ const KeyboardShortcuts = () => {
     clientEventLogger(router.asPath, data)
     router.push("/about")
     HIDE_MODAL()
+    dispatch({ type: "LIST_POSITION_RESET" })
   })
   useMousetrap("g c", () => {
     let data = JSON.stringify({ category: "keyboard-shortcut", event: "gc" })
     clientEventLogger(router.asPath, data)
     router.push("/collections")
     HIDE_MODAL()
+    dispatch({ type: "LIST_POSITION_RESET" })
   })
   useMousetrap("g e", () => {
     let data = JSON.stringify({ category: "keyboard-shortcut", event: "ge" })
     clientEventLogger(router.asPath, data)
     router.push("/experience")
     HIDE_MODAL()
+    dispatch({ type: "LIST_POSITION_RESET" })
   })
   useMousetrap("g i", () => {
     let data = JSON.stringify({ category: "keyboard-shortcut", event: "gi" })
     clientEventLogger(router.asPath, data)
     router.push("/posts")
     HIDE_MODAL()
+    dispatch({ type: "LIST_POSITION_RESET" })
   })
   useMousetrap("g j", () => {
     let data = JSON.stringify({ category: "keyboard-shortcut", event: "gp" })
     clientEventLogger(router.asPath, data)
     router.push("/projects")
     HIDE_MODAL()
+    dispatch({ type: "LIST_POSITION_RESET" })
   })
   useMousetrap("g l", () => {
     let data = JSON.stringify({ category: "keyboard-shortcut", event: "gl" })
     clientEventLogger(router.asPath, data)
     router.push("/")
     HIDE_MODAL()
+    dispatch({ type: "LIST_POSITION_RESET" })
   })
   useMousetrap("g m", () => {
     let data = JSON.stringify({ category: "keyboard-shortcut", event: "gm" })
     clientEventLogger(router.asPath, data)
     router.push("/metrics")
     HIDE_MODAL()
+    dispatch({ type: "LIST_POSITION_RESET" })
   })
   useMousetrap("g p", () => {
     let data = JSON.stringify({ category: "keyboard-shortcut", event: "gp" })
     clientEventLogger(router.asPath, data)
     router.push("/photographs")
     HIDE_MODAL()
+    dispatch({ type: "LIST_POSITION_RESET" })
   })
   useMousetrap("g s", () => {
     let data = JSON.stringify({ category: "keyboard-shortcut", event: "gs" })
     clientEventLogger(router.asPath, data)
     router.push("/snippets")
     HIDE_MODAL()
+    dispatch({ type: "LIST_POSITION_RESET" })
   })
   return <></>
 }

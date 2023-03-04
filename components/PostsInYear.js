@@ -46,7 +46,9 @@ const PostsInYear = ({ year, posts, filterSnippets = true, filterCats = true }) 
         <li
           key={slug}
           className={`text-normal mb-5 px-1  hover:underline lg:mb-6 ${
-            state.keyboardMode && state.listPosition == index ? "underline" : null
+            state.keyboardMode && state.listPosition == index
+              ? "-ml-1 -mr-1 rounded-md border-2 border-slate-400 bg-blue-200 px-2 dark:border-slate-300 dark:bg-blue-600"
+              : null
           } ${showPost ? "viewable index-" + index : "hidden"}`}
         >
           <div className="flex">
