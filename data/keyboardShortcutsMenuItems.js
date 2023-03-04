@@ -3,6 +3,7 @@ const menuItems = {
     { item: "?, esc", description: "Toggle keyboard shortcuts" },
     { item: "cmd+k", description: "Search" },
     { item: "tt", description: "Toggle dark mode" },
+    { item: "tab", description: "Toggle keyboard hints" },
     { item: "va", description: "Show all blog posts" },
     { item: "vt", description: "Show technical blog posts only" },
     { item: "vn", description: "Show non-technical blog posts only" },

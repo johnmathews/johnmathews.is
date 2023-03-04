@@ -38,7 +38,7 @@ const Card = ({ title, description, imgSrc, href, keyboardShortcut = "" }) => {
             <div className="flex justify-between">
               <h2 className="text-2xl font-bold leading-8 tracking-tight">{title}</h2>
               <div
-                className={`mt-1 rounded-lg border px-2 ${state.keyboardMode ? null : "hidden"}`}
+                className={`mt-1 rounded-lg border px-2 ${state.keyboardHints ? null : "hidden"}`}
               >
                 {keyboardShortcut}
               </div>

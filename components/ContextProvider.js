@@ -25,7 +25,7 @@ const initialState = {
   postMetaData: placeHolderPostMetaData,
   showModal: false,
   listPosition: 0,
-  keyboardMode: false,
+  keyboardHints: false,
   searchVisible: false,
 }
 
