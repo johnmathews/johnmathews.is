@@ -25,6 +25,8 @@ const initialState = {
   postMetaData: placeHolderPostMetaData,
   showModal: false,
   listPosition: 0,
+  keyboardMode: false,
+  searchVisible: false,
 }
 
 export default function ContextProvider(props) {

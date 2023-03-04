@@ -45,8 +45,8 @@ const PostsInYear = ({ year, posts, filterSnippets = true, filterCats = true }) 
       return (
         <li
           key={slug}
-          className={`text-normal mb-5  hover:underline lg:mb-6 ${
-            state.listPosition == index ? "underline" : null
+          className={`text-normal mb-5 px-1  hover:underline lg:mb-6 ${
+            state.listPosition == index ? "rounded-lg underline" : null
           } ${showPost ? "viewable index-" + index : "hidden"}`}
         >
           <div className="flex">

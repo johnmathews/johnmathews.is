@@ -20,18 +20,6 @@ function simulateMouseClick(element) {
   )
 }
 
-// https://www.google.com/search?client=firefox-b-d&q=react+map+key+to+arrow+up
-// https://stackoverflow.com/questions/42036865/react-how-to-navigate-through-list-by-arrow-keys
-// THIS SEEMS HALF DONE NOT WORKING NOT FINISHED TODO
-function downArrow() {
-  new KeyboardEvent("keypress", {
-    key: "ArrowDown",
-  })
-
-  new KeyboardEvent("keydown", { key: "ArrowDown", charCode: 0, keyCode: 40, bubbles: true })
-  return new KeyboardEvent("keydown", { key: "ArrowDown", charCode: 0, keyCode: 40, bubbles: true })
-}
-
 function clientEventLogger(pathname, data) {
   const url = `https://us-central1-johnmathews-website.cloudfunctions.net/client-event-logger?path=${pathname}`
   window.navigator.sendBeacon(url, data)
@@ -90,20 +78,25 @@ const KeyboardShortcuts = () => {
   useMousetrap("ctrl+j", () => {
     let data = JSON.stringify({ category: "keyboard-shortcut", event: "ctrl+j" })
     clientEventLogger(router.asPath, data)
-    dispatch({
-      type: "LIST_POSITION_INCREASE",
-    })
     const element = document.getElementsByClassName("selected")
-    element[0].scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" })
+    if (element.length > 0) {
+      dispatch({ type: "LIST_POSITION_INCREASE" })
+      element[0].scrollIntoView({ behavior: "smooth", block: "end" })
+    } else {
+      // https://stackoverflow.com/questions/596481/is-it-possible-to-simulate-key-press-events-programmatically
+    }
   })
+
   useMousetrap("ctrl+k", () => {
     let data = JSON.stringify({ category: "keyboard-shortcut", event: "ctrl+j" })
     clientEventLogger(router.asPath, data)
-    dispatch({
-      type: "LIST_POSITION_DECREASE",
-    })
     const element = document.getElementsByClassName("selected")
-    element[0].scrollIntoView({ behavior: "smooth", block: "center" })
+    if (element.length > 0) {
+      dispatch({ type: "LIST_POSITION_DECREASE" })
+      element[0].scrollIntoView({ behavior: "smooth", block: "end" })
+    } else {
+      // https://stackoverflow.com/questions/596481/is-it-possible-to-simulate-key-press-events-programmatically
+    }
   })
 
   useMousetrap("return", () => {
@@ -180,6 +173,7 @@ const KeyboardShortcuts = () => {
     let data = JSON.stringify({ category: "keyboard-shortcut", event: "gg" })
     clientEventLogger(router.asPath, data)
     window.scrollTo(0, 0)
+    dispatch({ type: "LIST_POSITION_RESET" })
     HIDE_MODAL()
   })
 
