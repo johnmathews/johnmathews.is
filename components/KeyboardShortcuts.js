@@ -93,6 +93,8 @@ const KeyboardShortcuts = () => {
       dispatch({ type: "LIST_POSITION_INCREASE" }) // this changes the index and therefore changes what element has "selected" status
       try {
         element[0].scrollIntoView({ behavior: "smooth", block: "end" })
+        const y = element[0].getBoundingClientRect().top + window.pageYOffset - 400
+        window.scrollTo({ top: y, behavior: "smooth" })
       } catch {
         dispatch({ type: "LIST_POSITION_RESET" })
       }
@@ -111,7 +113,8 @@ const KeyboardShortcuts = () => {
     const element = document.getElementsByClassName("selected")
     if (element.length > 0) {
       dispatch({ type: "LIST_POSITION_DECREASE" })
-      element[0].scrollIntoView({ behavior: "smooth", block: "end" })
+      const y = element[0].getBoundingClientRect().top + window.pageYOffset - 400
+      window.scrollTo({ top: y, behavior: "smooth" })
     } else {
       // https://stackoverflow.com/questions/596481/is-it-possible-to-simulate-key-press-events-programmatically
     }
