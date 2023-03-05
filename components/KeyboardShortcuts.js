@@ -84,11 +84,18 @@ const KeyboardShortcuts = () => {
   useMousetrap("ctrl+j", () => {
     let data = JSON.stringify({ category: "keyboard-shortcut", event: "ctrl+j" })
     clientEventLogger(router.asPath, data)
+    // this keyboard_mode_on needs to exist, and be before the "selected"
+    // element is getted, because if keyboard mode is off (normal mode) then
+    // selection boxes arent visible because the page looks normal
     dispatch({ type: "KEYBOARD_MODE_ON" })
     const element = document.getElementsByClassName("selected")
-    if (element.length > 0) {
-      dispatch({ type: "LIST_POSITION_INCREASE" })
-      element[0].scrollIntoView({ behavior: "smooth", block: "end" })
+    if (element[0] != undefined) {
+      dispatch({ type: "LIST_POSITION_INCREASE" }) // this changes the index and therefore changes what element has "selected" status
+      try {
+        element[0].scrollIntoView({ behavior: "smooth", block: "end" })
+      } catch {
+        dispatch({ type: "LIST_POSITION_RESET" })
+      }
     } else {
       // https://stackoverflow.com/questions/596481/is-it-possible-to-simulate-key-press-events-programmatically
     }
@@ -97,6 +104,9 @@ const KeyboardShortcuts = () => {
   useMousetrap("ctrl+k", () => {
     let data = JSON.stringify({ category: "keyboard-shortcut", event: "ctrl+j" })
     clientEventLogger(router.asPath, data)
+    // this keyboard_mode_on needs to exist, and be before the "selected"
+    // element is getted, because if keyboard mode is off (normal mode) then
+    // selection boxes arent visible because the page looks normal
     dispatch({ type: "KEYBOARD_MODE_ON" })
     const element = document.getElementsByClassName("selected")
     if (element.length > 0) {

@@ -19,13 +19,14 @@ export default function Summaries() {
         </div>
         <div className="container py-12">
           <div className="-m-4 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
-            {summariesData.map((d) => (
+            {summariesData.map((d, index) => (
               <Card
                 key={d.title}
                 title={d.title}
                 description={d.description}
                 imgSrc={d.imgSrc}
                 href={d.href}
+                index={index}
               />
             ))}
           </div>

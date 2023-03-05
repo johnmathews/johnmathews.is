@@ -11,7 +11,7 @@ const Card = ({ title, description, imgSrc, href, keyboardShortcut, index }) => 
       <div
         className={` ${
           state.keyboardMode && state.listPosition == index
-            ? "viewable border-2 border-red-500 dark:border-red-500 "
+            ? "viewable border-2 border-blue-500 dark:border-blue-500 "
             : " border-2 border-gray-200  dark:border-gray-700"
         } 
           min-h-full overflow-hidden rounded-md border-opacity-60 `}
