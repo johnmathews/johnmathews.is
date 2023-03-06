@@ -3,7 +3,11 @@ import bibleData from "@/data/bibleNotesPageData"
 import Link from "@/components/Link"
 import { PageSEO } from "@/components/SEO"
 
+import { AppContext } from "@/components/ContextProvider"
+import { useContext } from "react"
+
 export default function BookNotes() {
+  const [state, _] = useContext(AppContext)
   return (
     <>
       <PageSEO title={`Bible - ${siteMetadata.author}`} description={siteMetadata.description} />
@@ -24,11 +28,11 @@ export default function BookNotes() {
                     {h}
                   </h2>
                   <ul className="ml-5 list-disc ">
-                    {bibleData[h].map((d) => (
+                    {bibleData[h].map((d, index) => (
                       <li key={d} className="my-3">
                         <Link
                           href={d.href}
-                          className="text-xl font-normal text-gray-700 hover:underline dark:text-gray-200 "
+                          className={`text-xl font-normal text-gray-700 hover:underline dark:text-gray-200`}
                         >
                           {d.title}
                         </Link>

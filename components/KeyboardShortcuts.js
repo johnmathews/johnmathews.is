@@ -127,6 +127,7 @@ const KeyboardShortcuts = () => {
     dispatch({ type: "LIST_POSITION_RESET" })
     simulateMouseClick(selectedPost)
     HIDE_MODAL()
+    dispatch({ type: "KEYBOARD_MODE_OFF" })
   })
 
   useMousetrap(["?", "esc", "q"], () => {
