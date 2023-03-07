@@ -1,7 +1,5 @@
 # Personal blog built using Tailwind and Nextjs.
 
-[Original template](https://github.com/timlrx/tailwind-nextjs-starter-blog)
-
 I should write some context here. Including:
 
 - what the blog is for.
