@@ -4,7 +4,7 @@
 
 I should write some context here. Including:
 
-- what the blog is for
+- what the blog is for.
 - how I use it
 - which commands to run to:
   - create a new post,
