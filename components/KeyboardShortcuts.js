@@ -44,6 +44,7 @@ const KeyboardShortcuts = () => {
 
   function HOUSEKEEPING(resetList = true, resetScroll = false) {
     HIDE_MODAL()
+    dispatch({ type: 'KEYBOARD_HINTS_OFF' })
     if (resetList) {
       dispatch({ type: 'LIST_POSITION_RESET' })
       dispatch({ type: 'KEYBOARD_MODE_OFF' })
