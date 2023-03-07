@@ -1,6 +1,6 @@
-import UsersPerDay from "@/components/homeBrewAnalytics/dailyUsersChart"
+import UsersPerDay from '@/components/homeBrewAnalytics/dailyUsersChart'
 
-import useSWR from "swr"
+import useSWR from 'swr'
 
 // https://recharts.org/en-US/guide/getting-started
 export default function DailyUsers({ fetcher, pageViewsIPAddresses }) {

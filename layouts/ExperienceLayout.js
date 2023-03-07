@@ -1,4 +1,4 @@
-import { PageSEO } from "@/components/SEO"
+import { PageSEO } from '@/components/SEO'
 
 export default function AuthorLayout({ children, frontMatter }) {
   const { name } = frontMatter

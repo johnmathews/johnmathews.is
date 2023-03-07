@@ -1,4 +1,4 @@
-import useSWR from "swr"
+import useSWR from 'swr'
 
 export default function UsersToday({ fetcher, pageViewsIPAddresses }) {
   const { data, error } = useSWR(pageViewsIPAddresses, fetcher)

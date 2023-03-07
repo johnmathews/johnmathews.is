@@ -1,22 +1,22 @@
-import React from "react"
+import React from 'react'
 
 export default function SearchItem({ hit, components }) {
-  var catString = ""
+  var catString = ''
 
   // category could be an array of categories (some posts have category as an array in their frontmatter),
   // but a snippet will never have multiple categories, so this if statement will never not label a snippet correctly
-  if (typeof hit.category == "string") {
-    if (hit.category.toLowerCase() === "snippet") {
-      var catString = "snippet"
+  if (typeof hit.category == 'string') {
+    if (hit.category.toLowerCase() === 'snippet') {
+      var catString = 'snippet'
     }
   }
-  var options = { year: "numeric", month: "long" }
+  var options = { year: 'numeric', month: 'long' }
 
   var _date = Date.parse(hit.date)
   try {
-    var date = new Intl.DateTimeFormat("en", options).format(_date)
+    var date = new Intl.DateTimeFormat('en', options).format(_date)
   } catch (error) {
-    date = ""
+    date = ''
   }
   return (
     <a id="searchResultCandidate" className="mx-1 " href={`/blog/${hit.objectID}`}>

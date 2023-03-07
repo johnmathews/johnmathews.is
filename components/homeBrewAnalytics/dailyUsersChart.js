@@ -1,4 +1,4 @@
-import React, { PureComponent } from "react"
+import React, { PureComponent } from 'react'
 import {
   AreaChart,
   Area,
@@ -8,11 +8,11 @@ import {
   Tooltip,
   Legend,
   ResponsiveContainer,
-} from "recharts"
+} from 'recharts'
 
-import siteMetadata from "@/data/siteMetadata"
-const dateTemplate = { year: "numeric", month: "short", day: "numeric" }
-const dateTemplateXAxis = { year: "numeric", month: "short", day: "numeric" }
+import siteMetadata from '@/data/siteMetadata'
+const dateTemplate = { year: 'numeric', month: 'short', day: 'numeric' }
+const dateTemplateXAxis = { year: 'numeric', month: 'short', day: 'numeric' }
 
 const CustomTooltip = ({ active, payload, label }) => {
   if (active && payload && payload.length) {

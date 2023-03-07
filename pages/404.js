@@ -1,6 +1,6 @@
-import Link from "@/components/Link"
-import { PageSEO } from "@/components/SEO"
-import siteMetadata from "@/data/siteMetadata"
+import Link from '@/components/Link'
+import { PageSEO } from '@/components/SEO'
+import siteMetadata from '@/data/siteMetadata'
 
 export default function FourZeroFour() {
   return (
@@ -25,7 +25,7 @@ export default function FourZeroFour() {
             </pre>
           </span>
           <span className="my-3 flex">
-            Keyboard shortcuts:{" "}
+            Keyboard shortcuts:{' '}
             <pre className="ml-2 rounded-md border bg-slate-300 px-2 text-white dark:bg-gray-600">
               ?
             </pre>

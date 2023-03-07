@@ -1,15 +1,15 @@
-import { React, useMemo } from "react"
+import { React, useMemo } from 'react'
 
-import { useTable, useFilters, useSortBy, usePagination } from "react-table"
+import { useTable, useFilters, useSortBy, usePagination } from 'react-table'
 
-import { useState } from "react"
+import { useState } from 'react'
 
 export default function Table({ columns, data, isPaginated = true }) {
-  const [filterInput, setFilterInput] = useState("")
+  const [filterInput, setFilterInput] = useState('')
 
   const handleFilterChange = (e) => {
     const value = e.target.value || undefined
-    setFilter("page", value)
+    setFilter('page', value)
     setFilterInput(value)
   }
 
@@ -37,11 +37,11 @@ export default function Table({ columns, data, isPaginated = true }) {
         sortBy: useMemo(
           () => [
             {
-              id: "date",
+              id: 'date',
               desc: false,
             },
             {
-              id: "views",
+              id: 'views',
               desc: true,
             },
           ],
@@ -64,7 +64,7 @@ export default function Table({ columns, data, isPaginated = true }) {
           className="mr-0 rounded-sm border border-gray-700 dark:border-gray-500 "
           value={filterInput}
           onChange={handleFilterChange}
-          placeholder={" Page name filter"}
+          placeholder={' Page name filter'}
         />
       </div>
       <table {...getTableProps()}>
@@ -75,10 +75,10 @@ export default function Table({ columns, data, isPaginated = true }) {
                 <th
                   {...column.getHeaderProps(column.getSortByToggleProps())}
                   className={
-                    column.isSorted ? (column.isSortedDesc ? "sort-desc" : "sort-asc") : ""
+                    column.isSorted ? (column.isSortedDesc ? 'sort-desc' : 'sort-asc') : ''
                   }
                 >
-                  {column.render("Header")}
+                  {column.render('Header')}
                 </th>
               ))}
             </tr>
@@ -90,7 +90,7 @@ export default function Table({ columns, data, isPaginated = true }) {
             return (
               <tr {...row.getRowProps()}>
                 {row.cells.map((cell) => {
-                  return <td {...cell.getCellProps()}>{cell.render("Cell")}</td>
+                  return <td {...cell.getCellProps()}>{cell.render('Cell')}</td>
                 })}
               </tr>
             )
@@ -101,7 +101,7 @@ export default function Table({ columns, data, isPaginated = true }) {
         <div id="pagination">
           <div id="pageNum">
             page {pageIndex + 1} of {pageOptions.length}
-          </div>{" "}
+          </div>{' '}
           <div id="nextPrevButtons">
             {canPreviousPage ? (
               <div id="backButton" onClick={() => previousPage()}>
@@ -110,7 +110,7 @@ export default function Table({ columns, data, isPaginated = true }) {
             ) : null}
             {canNextPage ? (
               <div id="nextButton" onClick={() => nextPage()}>
-                Next{" "}
+                Next{' '}
               </div>
             ) : null}
           </div>

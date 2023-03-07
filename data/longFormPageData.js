@@ -1,10 +1,10 @@
 const metaPageData = {
   Summaries: [
     {
-      title: "Corporate London",
+      title: 'Corporate London',
       description: ``,
-      imgSrc: "",
-      href: "/blog/corporate",
+      imgSrc: '',
+      href: '/blog/corporate',
     },
   ],
 }

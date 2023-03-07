@@ -1,6 +1,6 @@
-import DailyCosts from "@/components/homeBrewAnalytics/dailyCostsChart"
+import DailyCosts from '@/components/homeBrewAnalytics/dailyCostsChart'
 
-import useSWR from "swr"
+import useSWR from 'swr'
 
 export default function DailyCostsData({ fetcher, dailyCostsEndpoint }) {
   const { data, error } = useSWR(dailyCostsEndpoint, fetcher)
@@ -16,7 +16,7 @@ export default function DailyCostsData({ fetcher, dailyCostsEndpoint }) {
     item.index = parseInt(i)
     item.date = new Date(index[i])
     for (var type in dailyCosts) {
-      if (type === "index") continue
+      if (type === 'index') continue
       item[type] = dailyCosts[type][i]
     }
     dailyCostsCleaned.push(item)

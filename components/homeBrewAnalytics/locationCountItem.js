@@ -1,5 +1,5 @@
-import useSWR from "swr"
-import Image from "@/components/Image"
+import useSWR from 'swr'
+import Image from '@/components/Image'
 
 function getRandomInt() {
   return Math.floor(Math.random() * 999999)

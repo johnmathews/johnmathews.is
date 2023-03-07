@@ -1,11 +1,11 @@
-import { useContext } from "react"
-import { AppContext } from "@/components/ContextProvider"
+import { useContext } from 'react'
+import { AppContext } from '@/components/ContextProvider'
 
-import keyboardShortcutsMenuItems from "@/data/keyboardShortcutsMenuItems"
+import keyboardShortcutsMenuItems from '@/data/keyboardShortcutsMenuItems'
 
 const Modal = () => {
   const [state, _] = useContext(AppContext)
-  const bgOpacity = "rgba(128,128,128,0.25)"
+  const bgOpacity = 'rgba(128,128,128,0.25)'
   var show = state.showModal
   return (
     <>

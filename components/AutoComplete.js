@@ -1,16 +1,16 @@
-import { autocomplete } from "@algolia/autocomplete-js"
-import React, { createElement, Fragment, useEffect, useRef } from "react"
-import { render } from "react-dom"
-import { useRouter } from "next/router"
+import { autocomplete } from '@algolia/autocomplete-js'
+import React, { createElement, Fragment, useEffect, useRef } from 'react'
+import { render } from 'react-dom'
+import { useRouter } from 'next/router'
 
-import SearchItem from "@/components/SearchItem"
-import algoliasearch from "algoliasearch"
-import { getAlgoliaResults } from "@algolia/autocomplete-js"
-const appId = "56G1FXZV4K"
-const apiKey = "c9a76549bd2473401cb96c00b503698e"
+import SearchItem from '@/components/SearchItem'
+import algoliasearch from 'algoliasearch'
+import { getAlgoliaResults } from '@algolia/autocomplete-js'
+const appId = '56G1FXZV4K'
+const apiKey = 'c9a76549bd2473401cb96c00b503698e'
 const searchClient = algoliasearch(appId, apiKey)
 
-import { createLocalStorageRecentSearchesPlugin } from "@algolia/autocomplete-plugin-recent-searches"
+import { createLocalStorageRecentSearchesPlugin } from '@algolia/autocomplete-plugin-recent-searches'
 
 // https://www.algolia.com/doc/ui-libraries/autocomplete/introduction/getting-started/
 export default function Autocomplete(props) {
@@ -19,7 +19,7 @@ export default function Autocomplete(props) {
 
   const plugins = React.useMemo(() => {
     const recentSearchesPlugin = createLocalStorageRecentSearchesPlugin({
-      key: "id",
+      key: 'id',
       limit: 3,
       transformSource({ source }) {
         return {
@@ -45,8 +45,8 @@ export default function Autocomplete(props) {
     const search = autocomplete({
       container: containerRef.current,
       openOnFocus: true,
-      placeholder: "Search",
-      detachedMediaQuery: "",
+      placeholder: 'Search',
+      detachedMediaQuery: '',
       defaultActiveItemId: 0,
       // debug: true,
       plugins: plugins,
@@ -56,7 +56,7 @@ export default function Autocomplete(props) {
       // check the tailwind.css for other overrides for the serach box
       // https://www.algolia.com/doc/ui-libraries/autocomplete/api-reference/autocomplete-js/autocomplete/#param-classnames
       classNames: {
-        item: "text-lg font-semibold border-2 border-blue-400 py-3 px-1 my-2 ", // each item in the search results
+        item: 'text-lg font-semibold border-2 border-blue-400 py-3 px-1 my-2 ', // each item in the search results
         // detachedSearchButtonIcon: "hidden"
         // list: "",
         // panel: "bg-green-500",
@@ -67,7 +67,7 @@ export default function Autocomplete(props) {
       getSources() {
         return [
           {
-            sourceId: "id",
+            sourceId: 'id',
             getItemUrl({ item }) {
               return item.url
             },
@@ -76,7 +76,7 @@ export default function Autocomplete(props) {
                 searchClient,
                 queries: [
                   {
-                    indexName: "blogArticles",
+                    indexName: 'blogArticles',
                     query,
                     params: {
                       hitsPerPage: 14,

@@ -1,5 +1,5 @@
-import siteMetadata from "@/data/siteMetadata"
-import { useEffect, useState } from "react"
+import siteMetadata from '@/data/siteMetadata'
+import { useEffect, useState } from 'react'
 
 const ScrollTop = () => {
   const [show, setShow] = useState(false)
@@ -10,8 +10,8 @@ const ScrollTop = () => {
       else setShow(false)
     }
 
-    window.addEventListener("scroll", handleWindowScroll)
-    return () => window.removeEventListener("scroll", handleWindowScroll)
+    window.addEventListener('scroll', handleWindowScroll)
+    return () => window.removeEventListener('scroll', handleWindowScroll)
   }, [])
 
   const handleScrollTop = () => {
@@ -19,7 +19,7 @@ const ScrollTop = () => {
   }
   return (
     <div
-      className={`fixed right-8 bottom-8 hidden flex-col gap-3 ${show ? "md:flex" : "md:hidden"}`}
+      className={`fixed right-8 bottom-8 hidden flex-col gap-3 ${show ? 'md:flex' : 'md:hidden'}`}
     >
       <button
         aria-label="Scroll To Top"

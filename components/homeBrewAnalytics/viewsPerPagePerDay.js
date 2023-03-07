@@ -1,6 +1,6 @@
-import useSWR from "swr"
+import useSWR from 'swr'
 
-import ViewsPageDayTable from "@/components/homeBrewAnalytics/viewsPageDayTable"
+import ViewsPageDayTable from '@/components/homeBrewAnalytics/viewsPageDayTable'
 
 // https://blog.logrocket.com/complete-guide-building-smart-data-table-react/
 

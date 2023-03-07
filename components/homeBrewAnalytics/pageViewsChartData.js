@@ -1,6 +1,6 @@
-import PageViews from "@/components/homeBrewAnalytics/pageViewsChart"
+import PageViews from '@/components/homeBrewAnalytics/pageViewsChart'
 
-import useSWR from "swr"
+import useSWR from 'swr'
 
 // https://recharts.org/en-US/guide/getting-started
 export default function PageViewsData({ fetcher, pageViewsIPAddresses }) {

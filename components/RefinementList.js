@@ -1,4 +1,4 @@
-import { useRefinementList } from "react-instantsearch-hooks-web"
+import { useRefinementList } from 'react-instantsearch-hooks-web'
 
 export function RefinementList(props) {
   // Retrieves the refinement `items` and the `refine` function to update the
@@ -12,8 +12,8 @@ export function RefinementList(props) {
           <li
             key={item.value}
             className={cx(
-              "ais-RefinementList-item",
-              item.isRefined && "ais-RefinementList-item--selected"
+              'ais-RefinementList-item',
+              item.isRefined && 'ais-RefinementList-item--selected'
             )}
           >
             <label className="ais-RefinementList-label">
@@ -35,5 +35,5 @@ export function RefinementList(props) {
 }
 
 function cx(...classNames) {
-  return classNames.filter(Boolean).join(" ")
+  return classNames.filter(Boolean).join(' ')
 }

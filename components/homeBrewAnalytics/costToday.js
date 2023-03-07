@@ -1,56 +1,56 @@
-import useSWR from "swr"
+import useSWR from 'swr'
 
 const colorArray = [
-  "#FF6633",
-  "#FFB399",
-  "#FF33FF",
-  "#FFFF99",
-  "#00B3E6",
-  "#E6B333",
-  "#3366E6",
-  "#999966",
-  "#99FF99",
-  "#B34D4D",
-  "#80B300",
-  "#809900",
-  "#E6B3B3",
-  "#6680B3",
-  "#66991A",
-  "#FF99E6",
-  "#CCFF1A",
-  "#FF1A66",
-  "#E6331A",
-  "#33FFCC",
-  "#66994D",
-  "#B366CC",
-  "#4D8000",
-  "#B33300",
-  "#CC80CC",
-  "#66664D",
-  "#991AFF",
-  "#E666FF",
-  "#4DB3FF",
-  "#1AB399",
-  "#E666B3",
-  "#33991A",
-  "#CC9999",
-  "#B3B31A",
-  "#00E680",
-  "#4D8066",
-  "#809980",
-  "#E6FF80",
-  "#1AFF33",
-  "#999933",
-  "#FF3380",
-  "#CCCC00",
-  "#66E64D",
-  "#4D80CC",
-  "#9900B3",
-  "#E64D66",
-  "#4DB380",
-  "#FF4D4D",
-  "#99E6E6",
-  "#6666FF",
+  '#FF6633',
+  '#FFB399',
+  '#FF33FF',
+  '#FFFF99',
+  '#00B3E6',
+  '#E6B333',
+  '#3366E6',
+  '#999966',
+  '#99FF99',
+  '#B34D4D',
+  '#80B300',
+  '#809900',
+  '#E6B3B3',
+  '#6680B3',
+  '#66991A',
+  '#FF99E6',
+  '#CCFF1A',
+  '#FF1A66',
+  '#E6331A',
+  '#33FFCC',
+  '#66994D',
+  '#B366CC',
+  '#4D8000',
+  '#B33300',
+  '#CC80CC',
+  '#66664D',
+  '#991AFF',
+  '#E666FF',
+  '#4DB3FF',
+  '#1AB399',
+  '#E666B3',
+  '#33991A',
+  '#CC9999',
+  '#B3B31A',
+  '#00E680',
+  '#4D8066',
+  '#809980',
+  '#E6FF80',
+  '#1AFF33',
+  '#999933',
+  '#FF3380',
+  '#CCCC00',
+  '#66E64D',
+  '#4D80CC',
+  '#9900B3',
+  '#E64D66',
+  '#4DB380',
+  '#FF4D4D',
+  '#99E6E6',
+  '#6666FF',
 ]
 
 export default function CostToday({ fetcher, url }) {
@@ -72,14 +72,14 @@ export default function CostToday({ fetcher, url }) {
 
   let datasets = []
   for (const i in Object.keys(dailyCosts)) {
-    if ((Object.keys(dailyCosts)[i] === "index") == false) {
+    if ((Object.keys(dailyCosts)[i] === 'index') == false) {
       const set = {}
-      set["label"] = Object.keys(dailyCosts)[i]
-      set["backgroundColor"] = colorArray[parseInt(i) + 4]
-      set["data"] = []
+      set['label'] = Object.keys(dailyCosts)[i]
+      set['backgroundColor'] = colorArray[parseInt(i) + 4]
+      set['data'] = []
       for (var j in Object.keys(dailyCosts[Object.keys(dailyCosts)[i]])) {
         const value = Object.values(dailyCosts[Object.keys(dailyCosts)[i]])[j]
-        set["data"].push(value)
+        set['data'].push(value)
       }
       datasets.push(set)
     }
@@ -87,7 +87,7 @@ export default function CostToday({ fetcher, url }) {
 
   var costYesterday = 0
   datasets.forEach(function (item) {
-    costYesterday += item["data"][item["data"].length - 2]
+    costYesterday += item['data'][item['data'].length - 2]
   })
 
   // let dailyIpAddresses = JSON.parse(data.daily_ip_addresses)
@@ -108,7 +108,7 @@ export default function CostToday({ fetcher, url }) {
 
   return (
     <div id="costToday" className="min-h-32 border-2 border-slate-800 p-3">
-      Costs {(costYesterday * 100).toFixed(1).toString() + "¢"}
+      Costs {(costYesterday * 100).toFixed(1).toString() + '¢'}
     </div>
   )
 }

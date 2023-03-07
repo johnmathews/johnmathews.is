@@ -1,7 +1,7 @@
-import siteMetadata from "@/data/siteMetadata"
-import microSaaSData from "@/data/microSaaSPageData"
-import Link from "@/components/Link"
-import { PageSEO } from "@/components/SEO"
+import siteMetadata from '@/data/siteMetadata'
+import microSaaSData from '@/data/microSaaSPageData'
+import Link from '@/components/Link'
+import { PageSEO } from '@/components/SEO'
 
 export default function BookNotes() {
   return (
