@@ -4,6 +4,7 @@ import Card from '@/components/Card'
 import { PageSEO } from '@/components/SEO'
 
 export default function Collections() {
+  const indexOffset = 0
   return (
     <>
       <PageSEO
@@ -30,7 +31,7 @@ export default function Collections() {
                 imgSrc={d.imgSrc}
                 href={d.href}
                 keyboardShortcut={d.keyboardShortcut}
-                index={index}
+                index={index + indexOffset}
               />
             ))}
           </div>

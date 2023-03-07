@@ -6,7 +6,6 @@ import Link from './Link'
 
 const Card = ({ title, description, imgSrc, href, keyboardShortcut, index }) => {
   const [state, _] = useContext(AppContext)
-  console.log('--- debug state.keyboardMode: ', state.keyboardMode)
 
   return (
     <div className="p-4 ">
