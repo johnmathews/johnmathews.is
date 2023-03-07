@@ -1,7 +1,7 @@
-import siteMetadata from "@/data/siteMetadata"
-import summariesData from "@/data/summariesData"
-import Card from "@/components/Card"
-import { PageSEO } from "@/components/SEO"
+import siteMetadata from '@/data/siteMetadata'
+import summariesData from '@/data/summariesData'
+import Card from '@/components/Card'
+import { PageSEO } from '@/components/SEO'
 
 export default function Summaries() {
   return (

@@ -1,5 +1,5 @@
-import { createContext, useReducer } from "react"
-import reducer from "@/lib/reducer"
+import { createContext, useReducer } from 'react'
+import reducer from '@/lib/reducer'
 
 // Create a context for the ap. You could create many contexts, or put an
 // object with many attributes in one context.
@@ -11,11 +11,11 @@ export const AppContext = createContext()
 // https://reactjs.org/docs/context.html
 
 const placeHolderPostMetaData = {
-  title: "PLACEHOLDER",
-  date: "2021-08-01",
-  category: ["PLACEHOLDER"],
-  next: "PLACEHOLDER",
-  prev: "PLACEHOLDER",
+  title: 'PLACEHOLDER',
+  date: '2021-08-01',
+  category: ['PLACEHOLDER'],
+  next: 'PLACEHOLDER',
+  prev: 'PLACEHOLDER',
 }
 
 // this is the initial state that everyone starts with

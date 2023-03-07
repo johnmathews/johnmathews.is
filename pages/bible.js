@@ -3,17 +3,13 @@ import bibleData from '@/data/bibleNotesPageData'
 import Link from '@/components/Link'
 import { PageSEO } from '@/components/SEO'
 
-import { AppContext } from '@/components/ContextProvider'
-import { useContext } from 'react'
-
 export default function BookNotes() {
-  const [state, _] = useContext(AppContext)
   return (
     <>
       <PageSEO title={`Bible - ${siteMetadata.author}`} description={siteMetadata.description} />
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
-        <div className="space-y-2 pb-8 pt-6 md:space-y-5   ">
-          <h1 className="text-3xl font-extrabold leading-9  tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+        <div className="space-y-2 pb-8 pt-6 md:space-y-5">
+          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             Bible Notes
           </h1>
           <p>These are quick and candid thoughts on various parts of the bible.</p>
@@ -28,16 +24,18 @@ export default function BookNotes() {
                     {h}
                   </h2>
                   <ul className="ml-5 list-disc ">
-                    {bibleData[h].map((d, index) => (
-                      <li key={d} className="my-3">
-                        <Link
-                          href={d.href}
-                          className={`text-xl font-normal text-gray-700 hover:underline dark:text-gray-200`}
-                        >
-                          {d.title}
-                        </Link>
-                      </li>
-                    ))}
+                    {bibleData[h].map((d) => {
+                      return (
+                        <li key={d} className="my-3">
+                          <Link
+                            href={d.href}
+                            className={`text-xl font-normal text-gray-700 hover:underline dark:text-gray-200`}
+                          >
+                            {d.title}
+                          </Link>
+                        </li>
+                      )
+                    })}
                   </ul>
                 </div>
               )

@@ -1,7 +1,7 @@
-import siteMetadata from "@/data/siteMetadata"
-import projectsData from "@/data/photographsPageData"
-import PhotoCard from "@/components/PhotoCard"
-import { PageSEO } from "@/components/SEO"
+import siteMetadata from '@/data/siteMetadata'
+import projectsData from '@/data/photographsPageData'
+import PhotoCard from '@/components/PhotoCard'
+import { PageSEO } from '@/components/SEO'
 
 export default function Photographs() {
   return (

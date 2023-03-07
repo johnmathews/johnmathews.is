@@ -1,10 +1,10 @@
-import { PageSEO } from "@/components/SEO"
-import ParentCategory from "@/components/ParentCategory"
-import siteMetadata from "@/data/siteMetadata"
-import { getAllCategories } from "@/lib/categories"
+import { PageSEO } from '@/components/SEO'
+import ParentCategory from '@/components/ParentCategory'
+import siteMetadata from '@/data/siteMetadata'
+import { getAllCategories } from '@/lib/categories'
 
 export async function getStaticProps() {
-  const categories = await getAllCategories("blog")
+  const categories = await getAllCategories('blog')
 
   return { props: { categories } }
 }
@@ -12,7 +12,7 @@ export async function getStaticProps() {
 export default function Categories({ categories }) {
   const structuredCategories = {}
   Object.keys(categories).forEach((category) => {
-    const categoryParts = category.split(".")
+    const categoryParts = category.split('.')
     const categoryParent = categoryParts[0]
     const categoryChild = {}
     categoryChild[categoryParts[1]] = categories[category]
@@ -36,7 +36,7 @@ export default function Categories({ categories }) {
             Categories
           </div>
         </div>
-        <div key={"cat_parent"} id="categories" className="flex max-w-lg flex-col"></div>
+        <div key={'cat_parent'} id="categories" className="flex max-w-lg flex-col"></div>
         {Object.keys(structuredCategories).map((category) => {
           return (
             <ParentCategory

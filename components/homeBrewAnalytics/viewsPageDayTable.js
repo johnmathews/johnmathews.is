@@ -1,36 +1,36 @@
-const postDateTemplate = { year: "numeric", month: "short", day: "numeric" }
+const postDateTemplate = { year: 'numeric', month: 'short', day: 'numeric' }
 
-import Link from "@/components/Link"
-import { useMemo } from "react"
+import Link from '@/components/Link'
+import { useMemo } from 'react'
 
-import siteMetadata from "@/data/siteMetadata"
+import siteMetadata from '@/data/siteMetadata'
 
-import Table from "@/components/homeBrewAnalytics/table"
-import LocationCountItem from "@/components/homeBrewAnalytics/locationCountItem"
+import Table from '@/components/homeBrewAnalytics/table'
+import LocationCountItem from '@/components/homeBrewAnalytics/locationCountItem'
 
 export default function ViewsPageDayTable({ data }) {
   const parsedData = []
   for (var i = 0; i < data.length; i++) {
     const dataRow = {}
     for (var j in data[i]) {
-      if (j === "date") {
+      if (j === 'date') {
         var date = new Date(data[i][j])
-        dataRow["date"] = date.toLocaleDateString(siteMetadata.locale, postDateTemplate)
-      } else if (j === "page") {
-        dataRow["page"] = data[i][j]
-      } else if (j === "country_count") {
+        dataRow['date'] = date.toLocaleDateString(siteMetadata.locale, postDateTemplate)
+      } else if (j === 'page') {
+        dataRow['page'] = data[i][j]
+      } else if (j === 'country_count') {
         var value = 0
         if (data[i][j] == null) {
-          value = "unknown"
-          dataRow["country_count"] = null
+          value = 'unknown'
+          dataRow['country_count'] = null
         } else {
           value = data[i][j]
-          value = value.replaceAll("(", "[").replaceAll(")", "]").replaceAll("'", '"')
+          value = value.replaceAll('(', '[').replaceAll(')', ']').replaceAll("'", '"')
           value = JSON.parse(value)
-          dataRow["country_count"] = value
+          dataRow['country_count'] = value
         }
-      } else if (j === "views") {
-        dataRow["views"] = parseInt(data[i][j])
+      } else if (j === 'views') {
+        dataRow['views'] = parseInt(data[i][j])
       }
     }
     parsedData.push(dataRow)
@@ -47,8 +47,8 @@ export default function ViewsPageDayTable({ data }) {
   const PageCellProcessor = ({ value, row: { index }, column: { id } }) => {
     return (
       <Link href={value} className="hover:underline">
-        {" "}
-        {value}{" "}
+        {' '}
+        {value}{' '}
       </Link>
     )
   }
@@ -61,7 +61,7 @@ export default function ViewsPageDayTable({ data }) {
     }
     return (
       <div key={value} className="flex flex-shrink">
-        {result}{" "}
+        {result}{' '}
       </div>
     )
   }
@@ -69,25 +69,25 @@ export default function ViewsPageDayTable({ data }) {
   const columns = useMemo(
     () => [
       {
-        Header: "Date",
-        accessor: "date",
+        Header: 'Date',
+        accessor: 'date',
         sortType: (a, b) => {
           return new Date(b) - new Date(a)
         },
       },
       {
-        Header: "Page",
-        accessor: "page",
+        Header: 'Page',
+        accessor: 'page',
         Cell: PageCellProcessor,
       },
       {
-        Header: "Views",
-        accessor: "views",
-        sortType: "basic",
+        Header: 'Views',
+        accessor: 'views',
+        sortType: 'basic',
       },
       {
-        Header: "Location",
-        accessor: "country_count",
+        Header: 'Location',
+        accessor: 'country_count',
         Cell: LocationCellProcessor,
       },
     ],

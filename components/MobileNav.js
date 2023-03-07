@@ -1,15 +1,15 @@
-import Link from "./Link"
-import headerNavLinks from "@/data/headerNavLinks"
+import Link from './Link'
+import headerNavLinks from '@/data/headerNavLinks'
 
-import Autocomplete from "@/components/AutoComplete"
+import Autocomplete from '@/components/AutoComplete'
 
-import ThemeSwitch from "@/components/ThemeSwitch"
+import ThemeSwitch from '@/components/ThemeSwitch'
 
-import { useContext, useState } from "react"
-import { AppContext } from "./ContextProvider"
+import { useContext, useState } from 'react'
+import { AppContext } from './ContextProvider'
 
-import { setToStorage } from "@/lib/localStorage"
-import "@algolia/autocomplete-theme-classic"
+import { setToStorage } from '@/lib/localStorage'
+import '@algolia/autocomplete-theme-classic'
 
 const MobileNav = () => {
   const [navShow, setNavShow] = useState(false)
@@ -18,10 +18,10 @@ const MobileNav = () => {
   const onToggleNav = () => {
     setNavShow((status) => {
       if (status) {
-        document.body.style.overflow = "auto"
+        document.body.style.overflow = 'auto'
       } else {
         // Prevent scrolling
-        document.body.style.overflow = "hidden"
+        document.body.style.overflow = 'hidden'
       }
       return !status
     })
@@ -29,21 +29,21 @@ const MobileNav = () => {
 
   function ONLY_TECHNICAL() {
     dispatch({
-      type: "TECHNICAL",
+      type: 'TECHNICAL',
     })
-    setToStorage("postFilter", "technical")
+    setToStorage('postFilter', 'technical')
   }
   function ONLY_NONTECHNICAL() {
     dispatch({
-      type: "NONTECHNICAL",
+      type: 'NONTECHNICAL',
     })
-    setToStorage("postFilter", "nontechnical")
+    setToStorage('postFilter', 'nontechnical')
   }
   function ALL_POSTS() {
     dispatch({
-      type: "ALL",
+      type: 'ALL',
     })
-    setToStorage("postFilter", "both")
+    setToStorage('postFilter', 'both')
   }
 
   return (
@@ -70,7 +70,7 @@ const MobileNav = () => {
       </button>
       <div
         className={`fixed top-0 left-0 z-20 min-h-screen w-full transform overflow-auto bg-gray-200 opacity-100 duration-300 ease-in-out dark:bg-slate-900 ${
-          navShow ? "translate-x-0" : "translate-x-full"
+          navShow ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
         <div className="flex justify-end">
@@ -128,12 +128,12 @@ const MobileNav = () => {
                 id="selectAllPosts"
                 className={`${
                   state.technical && state.nonTechnical
-                    ? "font-small border-b-2 border-gray-800  px-2 dark:border-gray-200"
-                    : "px-2 font-normal"
+                    ? 'font-small border-b-2 border-gray-800  px-2 dark:border-gray-200'
+                    : 'px-2 font-normal'
                 }`}
                 onClick={ALL_POSTS}
               >
-                {`${state.technical && state.nonTechnical ? "" : ""}`} A
+                {`${state.technical && state.nonTechnical ? '' : ''}`} A
               </button>
             </div>
             <div className="my-2 mx-1">&#47;&#47;</div>
@@ -142,12 +142,12 @@ const MobileNav = () => {
                 id="selectNonTechnical"
                 className={`${
                   !state.technical && state.nonTechnical
-                    ? "font-small border-b-2 border-gray-800  px-2 dark:border-gray-200"
-                    : "px-2 font-normal"
+                    ? 'font-small border-b-2 border-gray-800  px-2 dark:border-gray-200'
+                    : 'px-2 font-normal'
                 }`}
                 onClick={ONLY_NONTECHNICAL}
               >
-                {`${!state.technical && state.nonTechnical ? "" : ""}`} NT
+                {`${!state.technical && state.nonTechnical ? '' : ''}`} NT
               </button>
             </div>
             <div className="my-2 mx-1">&#47;&#47;</div>
@@ -156,12 +156,12 @@ const MobileNav = () => {
                 id="selectTechnical"
                 className={`${
                   state.technical && !state.nonTechnical
-                    ? "font-small border-b-2 border-gray-800 px-2 dark:border-gray-200"
-                    : "px-2 font-normal "
+                    ? 'font-small border-b-2 border-gray-800 px-2 dark:border-gray-200'
+                    : 'px-2 font-normal '
                 }`}
                 onClick={ONLY_TECHNICAL}
               >
-                {`${state.technical && !state.nonTechnical ? "" : ""}`} T
+                {`${state.technical && !state.nonTechnical ? '' : ''}`} T
               </button>
             </div>
           </div>

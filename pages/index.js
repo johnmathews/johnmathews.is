@@ -1,34 +1,34 @@
-import Link from "@/components/Link"
-import { PageSEO } from "@/components/SEO"
-import siteMetadata from "@/data/siteMetadata"
-import { getAllFilesFrontMatter } from "@/lib/mdx"
+import Link from '@/components/Link'
+import { PageSEO } from '@/components/SEO'
+import siteMetadata from '@/data/siteMetadata'
+import { getAllFilesFrontMatter } from '@/lib/mdx'
 
-import headerNavLinks from "@/data/headerNavLinks"
+import headerNavLinks from '@/data/headerNavLinks'
 
-import MobileNav from "@/components/MobileNav"
+import MobileNav from '@/components/MobileNav'
 
-import ThemeSwitch from "@/components/ThemeSwitch"
-import Image from "next/image"
+import ThemeSwitch from '@/components/ThemeSwitch'
+import Image from 'next/image'
 
-import Autocomplete from "@/components/AutoComplete"
-import "@algolia/autocomplete-theme-classic"
+import Autocomplete from '@/components/AutoComplete'
+import '@algolia/autocomplete-theme-classic'
 
 export async function getStaticProps() {
-  const posts = await getAllFilesFrontMatter("blog")
+  const posts = await getAllFilesFrontMatter('blog')
 
   return { props: { posts } }
 }
 
 function getRandomImage() {
   var images = [
-    "bike.jpeg",
-    "square.jpeg",
-    "roofs.jpeg",
-    "roof-tower.jpeg",
-    "starship-first-stacking.png",
+    'bike.jpeg',
+    'square.jpeg',
+    'roofs.jpeg',
+    'roof-tower.jpeg',
+    'starship-first-stacking.png',
   ]
   var imageName = images[Math.floor(Math.random() * images.length)]
-  var imageSource = "/static/images/landing/" + imageName
+  var imageSource = '/static/images/landing/' + imageName
   return imageSource
 }
 

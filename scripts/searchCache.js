@@ -1,27 +1,27 @@
 // https://medium.com/@matswainson/building-a-search-component-for-your-next-js-markdown-blog-9e75e0e7d210
 // ignore yaml, get content only https://stackoverflow.com/questions/15207069/remove-yaml-header-from-markdown-file
 
-require("dotenv").config()
+require('dotenv').config()
 
-const algoliasearch = require("algoliasearch")
+const algoliasearch = require('algoliasearch')
 
-const fs = require("fs")
-const path = require("path")
-const matter = require("gray-matter")
+const fs = require('fs')
+const path = require('path')
+const matter = require('gray-matter')
 
-const client = algoliasearch("56G1FXZV4K", process.env.ALGOLIA_ADMIN_API_KEY)
+const client = algoliasearch('56G1FXZV4K', process.env.ALGOLIA_ADMIN_API_KEY)
 const index = client.initIndex(process.env.ALGOLIA_INDEX_NAME)
 
 function getAllPosts() {
-  const postsDirectory = path.join(process.cwd(), "data/blog")
+  const postsDirectory = path.join(process.cwd(), 'data/blog')
   const fileNames = fs.readdirSync(postsDirectory)
   const posts = fileNames.map((fileName) => {
-    const id = fileName.replace(/\.md$/, "")
+    const id = fileName.replace(/\.md$/, '')
     const fullPath = path.join(postsDirectory, fileName)
-    const fileContents = fs.readFileSync(fullPath, "utf8")
+    const fileContents = fs.readFileSync(fullPath, 'utf8')
     const matterResult = matter(fileContents)
-    const markdownContent = fileContents.replace(/---(.|\n)*?---/, "")
-    const post_url = process.env.ROOT_URL + "/blog/" + id
+    const markdownContent = fileContents.replace(/---(.|\n)*?---/, '')
+    const post_url = process.env.ROOT_URL + '/blog/' + id
     return {
       id,
       url: post_url,
@@ -31,7 +31,7 @@ function getAllPosts() {
       tags: String(matterResult.data.tags),
       category: matterResult.data.category,
       draft: matterResult.data.draft,
-      content: markdownContent.replaceAll('"', "'").replaceAll("\n", " "),
+      content: markdownContent.replaceAll('"', "'").replaceAll('\n', ' '),
     }
   })
   const publishedPosts = posts.filter((post) => {
@@ -45,28 +45,28 @@ const searchableContent = `export const posts = ${JSON.stringify(getAllPosts(), 
 const JSONData = JSON.stringify(getAllPosts(), null, 2)
 
 try {
-  fs.readdirSync("cache")
+  fs.readdirSync('cache')
 } catch (e) {
-  fs.mkdirSync("cache")
+  fs.mkdirSync('cache')
 }
 
-fs.writeFile("cache/searchData.js", searchableContent, (err) => {
+fs.writeFile('cache/searchData.js', searchableContent, (err) => {
   if (err) console.log(err)
   else {
-    console.log("Updated local index: cache/searchData.js")
+    console.log('Updated local index: cache/searchData.js')
   }
 })
 
-fs.writeFile("cache/searchData.json", JSONData, (err) => {
+fs.writeFile('cache/searchData.json', JSONData, (err) => {
   if (err) console.log(err)
   else {
-    console.log("Updated local index: cache/searchData.json")
+    console.log('Updated local index: cache/searchData.json')
   }
 })
 
 index
   .saveObjects(getAllPosts(), { autoGenerateObjectIDIfNotExist: false })
   .then(() => {
-    console.log("Algolia index updated!")
+    console.log('Algolia index updated!')
   })
   .catch((e) => console.log(e))

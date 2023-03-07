@@ -1,15 +1,15 @@
-import PageTitle from "@/components/PageTitle"
+import PageTitle from '@/components/PageTitle'
 
-import ViewsToday from "@/components/homeBrewAnalytics/viewsToday"
-import DailyUsers from "@/components/homeBrewAnalytics/dailyUsersChartData"
-import UserInteractionsData from "@/components/homeBrewAnalytics/userInteractionsChartData"
-import DailyCostsData from "@/components/homeBrewAnalytics/dailyCostsChartData"
-import PageViewsData from "@/components/homeBrewAnalytics/pageViewsChartData"
-import CostToday from "@/components/homeBrewAnalytics/costToday"
-import UsersToday from "@/components/homeBrewAnalytics/usersToday"
-import ViewsPerPagePerDay from "@/components/homeBrewAnalytics/viewsPerPagePerDay"
+import ViewsToday from '@/components/homeBrewAnalytics/viewsToday'
+import DailyUsers from '@/components/homeBrewAnalytics/dailyUsersChartData'
+import UserInteractionsData from '@/components/homeBrewAnalytics/userInteractionsChartData'
+import DailyCostsData from '@/components/homeBrewAnalytics/dailyCostsChartData'
+import PageViewsData from '@/components/homeBrewAnalytics/pageViewsChartData'
+import CostToday from '@/components/homeBrewAnalytics/costToday'
+import UsersToday from '@/components/homeBrewAnalytics/usersToday'
+import ViewsPerPagePerDay from '@/components/homeBrewAnalytics/viewsPerPagePerDay'
 
-import siteMetadata from "@/data/siteMetadata"
+import siteMetadata from '@/data/siteMetadata'
 
 export async function getStaticProps() {
   return { props: {} }
@@ -23,7 +23,7 @@ export default function Analytics() {
 
   return (
     <>
-      <PageTitle>{"Site Metrics"}</PageTitle>
+      <PageTitle>{'Site Metrics'}</PageTitle>
 
       <div id="gridContainer" className="mt-5 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
         <ViewsToday fetcher={fetcher} pageViewsIPAddresses={page_views_ip_addresses} />

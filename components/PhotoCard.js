@@ -1,18 +1,18 @@
-import { AppContext } from "@/components/ContextProvider"
-import { useContext } from "react"
+import { AppContext } from '@/components/ContextProvider'
+import { useContext } from 'react'
 
-import Image from "./Image"
-import Link from "./Link"
+import Image from './Image'
+import Link from './Link'
 
 const PhotoCard = ({ title, imgSrc, href, index }) => {
   const [state, _] = useContext(AppContext)
   return (
-    <div className="md p-4 md:w-1/2 " style={{ maxWidth: "544px" }}>
+    <div className="md p-4 md:w-1/2 " style={{ maxWidth: '544px' }}>
       <div
         className={` ${
           state.keyboardMode && state.listPosition == index
-            ? "viewable border-blue-500 dark:border-blue-500 "
-            : " border-gray-200  dark:border-gray-700"
+            ? 'viewable border-blue-500 dark:border-blue-500 '
+            : ' border-gray-200  dark:border-gray-700'
         }
       overflow-hidden rounded-md border-4 border-opacity-60 bg-slate-200  dark:bg-slate-700
      `}
@@ -44,7 +44,7 @@ const PhotoCard = ({ title, imgSrc, href, index }) => {
                 href={href}
                 aria-label={`Link to ${title}`}
                 className={`${
-                  state.keyboardMode && state.listPosition == index ? "selected" : null
+                  state.keyboardMode && state.listPosition == index ? 'selected' : null
                 }`}
               >
                 {title}

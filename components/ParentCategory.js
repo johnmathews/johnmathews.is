@@ -1,10 +1,10 @@
-import ChildCategory from "@/components/ChildCategory"
+import ChildCategory from '@/components/ChildCategory'
 
 const ParentCategory = ({ catName, structuredCategories }) => {
-  var niceCategory = ""
+  var niceCategory = ''
   // this is because the `capitalize` className doesnt work with hyphens
-  if (catName == "non-technical") {
-    niceCategory = "Non-Technical"
+  if (catName == 'non-technical') {
+    niceCategory = 'Non-Technical'
   } else {
     niceCategory = catName
   }

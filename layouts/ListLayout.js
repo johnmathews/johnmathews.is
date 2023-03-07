@@ -1,4 +1,4 @@
-import PostsGroupedByYear from "@/components/PostsGroupedByYear"
+import PostsGroupedByYear from '@/components/PostsGroupedByYear'
 
 export default function ListLayout({ title, posts, filterSnippets = true, filterCats = true }) {
   const groupsOfPosts = {}

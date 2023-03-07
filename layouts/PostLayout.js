@@ -1,21 +1,21 @@
-import { useRouter } from "next/router"
-import { useEffect } from "react"
+import { useRouter } from 'next/router'
+import { useEffect } from 'react'
 
-import Link from "@/components/Link"
-import PageTitle from "@/components/PageTitle"
-import { BlogSEO } from "@/components/SEO"
-import path from "path"
-import Image from "@/components/Image"
-import siteMetadata from "@/data/siteMetadata"
-import ScrollTop from "@/components/ScrollTop"
-import { useTheme } from "next-themes"
-import dynamic from "next/dynamic"
+import Link from '@/components/Link'
+import PageTitle from '@/components/PageTitle'
+import { BlogSEO } from '@/components/SEO'
+import path from 'path'
+import Image from '@/components/Image'
+import siteMetadata from '@/data/siteMetadata'
+import ScrollTop from '@/components/ScrollTop'
+import { useTheme } from 'next-themes'
+import dynamic from 'next/dynamic'
 
-const Notebook = dynamic(() => import("@/components/Notebook"), {
+const Notebook = dynamic(() => import('@/components/Notebook'), {
   ssr: false,
 })
 
-const postDateTemplate = { year: "numeric", month: "long" }
+const postDateTemplate = { year: 'numeric', month: 'long' }
 
 export default function PostLayout({ frontMatter, authorDetails, children }) {
   const { slug, date, title } = frontMatter
@@ -32,7 +32,7 @@ export default function PostLayout({ frontMatter, authorDetails, children }) {
           src={frontMatter.image}
           alt={frontMatter.title}
           layout="fill"
-          objectFit={"contain"}
+          objectFit={'contain'}
         />
       </div>
     )
@@ -45,8 +45,8 @@ export default function PostLayout({ frontMatter, authorDetails, children }) {
   if (description) {
     PostDescription = (
       <div id="postSummary" className="font-serif text-xl">
-        {" "}
-        {description}{" "}
+        {' '}
+        {description}{' '}
       </div>
     )
   } else {
@@ -62,9 +62,9 @@ export default function PostLayout({ frontMatter, authorDetails, children }) {
             filePath={notebookPath}
             notebookInputLanguage="python"
             className="notebook p-0"
-            inputCodeDarkTheme={theme === "dark"}
-            outputDarkTheme={theme === "dark"}
-            inputMarkdownDarkTheme={theme === "light"}
+            inputCodeDarkTheme={theme === 'dark'}
+            outputDarkTheme={theme === 'dark'}
+            inputMarkdownDarkTheme={theme === 'light'}
             outputImageClassName="bg-white"
           />
         </div>
@@ -115,7 +115,7 @@ export default function PostLayout({ frontMatter, authorDetails, children }) {
                 <div
                   id="contentContainer"
                   className="max-w-4xl 2xl:max-w-5xl"
-                  style={{ gridTemplateRows: "auto 1fr" }}
+                  style={{ gridTemplateRows: 'auto 1fr' }}
                 >
                   <div className="xl:col-span-3 xl:row-span-2 xl:pb-0">
                     <div id="content" className="prose-2xl max-w-none pt-10 pb-8">
@@ -130,7 +130,7 @@ export default function PostLayout({ frontMatter, authorDetails, children }) {
                         href="#"
                       >
                         <a onClick={() => router.back()}>← Go back</a>
-                      </Link>{" "}
+                      </Link>{' '}
                     </div>
                   </footer>
                 </div>

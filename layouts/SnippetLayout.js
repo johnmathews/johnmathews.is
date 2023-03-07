@@ -1,10 +1,10 @@
-import Link from "@/components/Link"
-import Tag from "@/components/Tag"
-import { MDXLayoutRenderer } from "@/components/MDXComponents"
-import formatDate from "@/lib/utils/formatDate"
+import Link from '@/components/Link'
+import Tag from '@/components/Tag'
+import { MDXLayoutRenderer } from '@/components/MDXComponents'
+import formatDate from '@/lib/utils/formatDate'
 
-import { AppContext } from "@/components/ContextProvider"
-import { useContext } from "react"
+import { AppContext } from '@/components/ContextProvider'
+import { useContext } from 'react'
 
 export default function SnippetLayout({ content, frontmatter, title }) {
   const [state, _] = useContext(AppContext)
@@ -17,7 +17,7 @@ export default function SnippetLayout({ content, frontmatter, title }) {
             {title}
           </div>
           <div className="relative mt-20 max-w-lg ">
-            {" "}
+            {' '}
             Notes and bookmarks to content from around the web.
           </div>
         </div>
@@ -35,11 +35,11 @@ export default function SnippetLayout({ content, frontmatter, title }) {
             var showPost = false
             if (state.technical && state.nonTechnical) {
               showPost = true
-            } else if (state.technical && lowerCaseCategories.includes("technical.snippet")) {
+            } else if (state.technical && lowerCaseCategories.includes('technical.snippet')) {
               showPost = true
             } else if (
               state.nonTechnical &&
-              lowerCaseCategories.includes("non-technical.snippet")
+              lowerCaseCategories.includes('non-technical.snippet')
             ) {
               showPost = true
             }
@@ -48,7 +48,7 @@ export default function SnippetLayout({ content, frontmatter, title }) {
               <article
                 key={slug}
                 className={`snippet flex flex-col rounded-lg border-2 border-gray-300 bg-gray-100 shadow-lg dark:border-gray-200 dark:bg-slate-800 ${
-                  showPost ? null : "hidden"
+                  showPost ? null : 'hidden'
                 }`}
               >
                 <div className="flex-grow">

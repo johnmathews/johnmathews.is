@@ -1,55 +1,55 @@
-import headerNavLinks from "@/data/headerNavLinks"
-import Link from "./Link"
-import Footer from "./Footer"
-import MobileNav from "./MobileNav"
-import ThemeSwitch from "./ThemeSwitch"
+import headerNavLinks from '@/data/headerNavLinks'
+import Link from './Link'
+import Footer from './Footer'
+import MobileNav from './MobileNav'
+import ThemeSwitch from './ThemeSwitch'
 
-import { useRouter } from "next/router"
+import { useRouter } from 'next/router'
 
-import { useContext } from "react"
-import { AppContext } from "./ContextProvider"
+import { useContext } from 'react'
+import { AppContext } from './ContextProvider'
 
-import Autocomplete from "@/components/AutoComplete"
-import "@algolia/autocomplete-theme-classic"
+import Autocomplete from '@/components/AutoComplete'
+import '@algolia/autocomplete-theme-classic'
 
-import { setToStorage } from "@/lib/localStorage"
+import { setToStorage } from '@/lib/localStorage'
 
-import Category from "@/components/Category"
+import Category from '@/components/Category'
 
 const LayoutWrapper = ({ children }) => {
   const router = useRouter()
   const [state, dispatch] = useContext(AppContext)
 
   const placeHolderPostMetaData = {
-    title: "PLACEHOLDER",
-    date: "2021-08-01",
-    category: ["PLACEHOLDER"],
-    next: "PLACEHOLDER",
-    prev: "PLACEHOLDER",
+    title: 'PLACEHOLDER',
+    date: '2021-08-01',
+    category: ['PLACEHOLDER'],
+    next: 'PLACEHOLDER',
+    prev: 'PLACEHOLDER',
   }
   const postMetaData = state.blogPostMeta ? state.blogPostMeta : placeHolderPostMetaData
 
   function ONLY_TECHNICAL() {
     dispatch({
-      type: "TECHNICAL",
+      type: 'TECHNICAL',
     })
-    setToStorage("postFilter", "technical")
+    setToStorage('postFilter', 'technical')
   }
   function ONLY_NONTECHNICAL() {
     dispatch({
-      type: "NONTECHNICAL",
+      type: 'NONTECHNICAL',
     })
-    setToStorage("postFilter", "nontechnical")
+    setToStorage('postFilter', 'nontechnical')
   }
   function ALL_POSTS() {
     dispatch({
-      type: "ALL",
+      type: 'ALL',
     })
-    setToStorage("postFilter", "both")
+    setToStorage('postFilter', 'both')
   }
 
   var bottomSection
-  if (["/posts", "/snippets"].includes(router.asPath)) {
+  if (['/posts', '/snippets'].includes(router.asPath)) {
     bottomSection = (
       <>
         <div className="mt-10 mb-10 w-36 border-b-8 border-double  border-gray-600 dark:border-gray-200 "></div>
@@ -60,12 +60,12 @@ const LayoutWrapper = ({ children }) => {
               id="selectTechnical"
               className={`${
                 state.technical && !state.nonTechnical
-                  ? "font-small px-2 italic underline"
-                  : "px-2 font-normal "
+                  ? 'font-small px-2 italic underline'
+                  : 'px-2 font-normal '
               }`}
               onClick={ONLY_TECHNICAL}
             >
-              {`${state.technical && !state.nonTechnical ? "" : ""}`} Technical
+              {`${state.technical && !state.nonTechnical ? '' : ''}`} Technical
             </button>
           </div>
           <div className={`my-2 `}>
@@ -73,12 +73,12 @@ const LayoutWrapper = ({ children }) => {
               id="selectNonTechnical"
               className={`${
                 !state.technical && state.nonTechnical
-                  ? "font-small px-2 italic underline"
-                  : "px-2 font-normal"
+                  ? 'font-small px-2 italic underline'
+                  : 'px-2 font-normal'
               }`}
               onClick={ONLY_NONTECHNICAL}
             >
-              {`${!state.technical && state.nonTechnical ? "" : ""}`} Non-technical
+              {`${!state.technical && state.nonTechnical ? '' : ''}`} Non-technical
             </button>
           </div>
           <div className={`my-2 `}>
@@ -86,12 +86,12 @@ const LayoutWrapper = ({ children }) => {
               id="selectAllPosts"
               className={`${
                 state.technical && state.nonTechnical
-                  ? "font-small px-2 italic underline"
-                  : "px-2 font-normal"
+                  ? 'font-small px-2 italic underline'
+                  : 'px-2 font-normal'
               }`}
               onClick={ALL_POSTS}
             >
-              {`${state.technical && state.nonTechnical ? "" : ""}`} Everything
+              {`${state.technical && state.nonTechnical ? '' : ''}`} Everything
             </button>
           </div>
         </div>

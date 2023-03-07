@@ -1,4 +1,4 @@
-import PostsInYear from "@/components/PostsInYear"
+import PostsInYear from '@/components/PostsInYear'
 
 const PostsGroupedByYear = ({ posts, filterSnippets = true, filterCats = true }) => {
   return (

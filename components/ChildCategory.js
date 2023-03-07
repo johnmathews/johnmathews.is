@@ -1,5 +1,5 @@
-import Link from "next/link"
-import kebabCase from "@/lib/utils/kebabCase"
+import Link from 'next/link'
+import kebabCase from '@/lib/utils/kebabCase'
 
 const ChildCategory = ({ parentName, category }) => {
   /*
@@ -9,7 +9,7 @@ const ChildCategory = ({ parentName, category }) => {
 
   const onlyKey = Object.keys(category)[0]
   const numPosts = category[onlyKey].length
-  const cleanString = onlyKey.replace("-", " ")
+  const cleanString = onlyKey.replace('-', ' ')
 
   return (
     <div key={onlyKey} className="flex">
