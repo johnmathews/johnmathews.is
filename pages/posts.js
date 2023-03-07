@@ -43,11 +43,10 @@ export async function getStaticProps() {
     return !post.category[0].toLowerCase().includes('snippet')
   })
   const posts = unsortedPosts.sort(compareDates)
-  const indexOffset = 1
-  var technicalIndex = indexOffset
-  var nontechnicalIndex = indexOffset
+  var indexOffset = 0
+  var technicalIndex = indexOffset + 1
+  var nontechnicalIndex = indexOffset + 1
   posts.map((post, index) => {
-    // doesnt consider posts with multiple categories
     post['indexAllPosts'] = index + indexOffset
     var catGroups = categoryGroup(post.category)
     if (catGroups.has('non-technical')) {

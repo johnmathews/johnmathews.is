@@ -96,9 +96,6 @@ const KeyboardShortcuts = () => {
   useMousetrap('ctrl+j', () => {
     let data = JSON.stringify({ category: 'keyboard-shortcut', event: 'ctrl+j' })
     clientEventLogger(router.asPath, data)
-    // this keyboard_mode_on needs to exist, and be before the "selected"
-    // element is getted, because if keyboard mode is off (normal mode) then
-    // selection boxes arent visible because the page looks normal
     dispatch({ type: 'KEYBOARD_MODE_ON' })
     const element = document.getElementsByClassName('selected')
     if (element[0] != undefined) {
@@ -118,12 +115,9 @@ const KeyboardShortcuts = () => {
   useMousetrap('ctrl+k', () => {
     let data = JSON.stringify({ category: 'keyboard-shortcut', event: 'ctrl+j' })
     clientEventLogger(router.asPath, data)
-    // this keyboard_mode_on needs to exist, and be before the "selected"
-    // element is getted, because if keyboard mode is off (normal mode) then
-    // selection boxes arent visible because the page looks normal
     dispatch({ type: 'KEYBOARD_MODE_ON' })
     const element = document.getElementsByClassName('selected')
-    if (element.length > 0) {
+    if (element[0] != undefined) {
       dispatch({ type: 'LIST_POSITION_DECREASE' })
       const y = element[0].getBoundingClientRect().top + window.pageYOffset - 400
       window.scrollTo({ top: y, behavior: 'smooth' })
@@ -169,7 +163,7 @@ const KeyboardShortcuts = () => {
     setToStorage('postFilter', 'both')
     let allPostsButton = document.querySelector('#selectAllPosts')
     simulateMouseClick(allPostsButton)
-    HOUSEKEEPING({ resetList: false, resetScroll: true })
+    HOUSEKEEPING({ resetList: true, resetScroll: true })
   })
   useMousetrap('v n', () => {
     let data = JSON.stringify({ category: 'keyboard-shortcut', event: 'vn' })

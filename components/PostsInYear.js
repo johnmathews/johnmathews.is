@@ -27,6 +27,7 @@ const PostsInYear = ({ year, posts, filterSnippets = true, filterCats = true }) 
     // apply to a category page.
     var showPost = false
     var index = 0
+
     if (!filterCats) {
       showPost = true
     } else if (state.technical && state.nonTechnical) {
@@ -41,6 +42,7 @@ const PostsInYear = ({ year, posts, filterSnippets = true, filterCats = true }) 
     } else {
       showPost = false
     }
+
     if (!filterSnippets || category[0].toLowerCase() !== 'snippet') {
       return (
         <li
