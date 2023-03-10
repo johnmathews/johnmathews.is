@@ -4,7 +4,6 @@ date: 2023-02-27 15:46:32
 category: non-technical.journal
 tags: ['career', 'meaning', 'worth']
 description:
-image: /static/images/.png
 ---
 
 A [blog article](https://ludic.mataroa.blog/blog/most-data-work-seems-fundamentally-worthless/) that
