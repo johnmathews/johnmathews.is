@@ -1,8 +1,8 @@
 ---
 title: Most Data Work Seems Fundamentally Worthless
 date: 2023-02-27 15:46:32
-category: non-technical.snippet
-tags: ["career", "meaning", "worth"]
+category: non-technical.journal
+tags: ['career', 'meaning', 'worth']
 description:
 image: /static/images/.png
 ---
