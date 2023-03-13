@@ -2,7 +2,7 @@
 title: Most Data Work Seems Fundamentally Worthless
 date: 2023-02-27 15:46:32
 category: non-technical.journal
-tags: ['career', 'meaning', 'worth']
+tags: ['career', 'meaning', 'worth', 'lasagne', 'useless']
 description:
 ---
 
@@ -23,3 +23,14 @@ nature of the writing.
 
 I've been thinking about non-profit work, or academia. After reading this, I'm more likely to
 consider academia.
+
+---
+
+A related blog post: [Goodbye, Data Science](https://ryxcommar.com/2022/11/27/goodbye-data-science/?utm_source=substack&utm_medium=email)
+
+- the author trades data science for data engineering
+- does publicising a view make it more likely that others will publish similar views?
+
+---
+
+![doer vs thinker, internal vs external](/static/images/doer-thinker-on-team-off-team.jpg)
