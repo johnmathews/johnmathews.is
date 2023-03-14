@@ -20,5 +20,4 @@ const siteMetadata = {
 }
 
 // do not convert this to an ES module
-// @ts-ignore
-module.exports = siteMetadata
+module.exports = siteMetadata // eslint-disable-line
