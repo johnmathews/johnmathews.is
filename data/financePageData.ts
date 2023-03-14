@@ -1,4 +1,6 @@
-const financePageData = {
+import { PageData } from 'types/CollectionPage'
+
+const financePageData: PageData = {
   '': [
     {
       title: 'Money is a negative art',

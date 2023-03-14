@@ -1,4 +1,6 @@
-const mathPageData = {
+import { PageData } from 'types/CollectionPage'
+
+const mathPageData: PageData = {
   '': [
     {
       title: 'Counterintuitive Facts',

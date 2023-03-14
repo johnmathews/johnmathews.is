@@ -1,4 +1,6 @@
-const photographsPageData = [
+import { CollectionItem } from 'types/CollectionPage'
+
+const photographsPageData: CollectionItem[] = [
   {
     title: 'Beach Photos',
     imgSrc: '/static/images/beach-photos/wind.jpeg',

@@ -1,4 +1,6 @@
-const photographsPageData = [
+import { CollectionItem } from 'types/CollectionPage'
+
+const bookNotesPageData: CollectionItem[] = [
   {
     title: 'Building a Story Brand',
     description: `Very good. A compelling marketing framework for a small business that
@@ -32,4 +34,4 @@ const photographsPageData = [
   },
 ]
 
-export default photographsPageData
+export default bookNotesPageData

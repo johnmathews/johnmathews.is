@@ -1,4 +1,6 @@
-const runningPageData = {
+import { PageData } from 'types/CollectionPage'
+
+const runningPageData: PageData = {
   Running: [
     {
       title: 'Running through adversity',

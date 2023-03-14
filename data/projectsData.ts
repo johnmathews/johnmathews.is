@@ -1,4 +1,6 @@
-const projectsData = [
+import { CollectionItem } from 'types/CollectionPage'
+
+const projectsData: CollectionItem[] = [
   {
     title: 'Lettergun.com',
     description: `A service to create hand-written letters using robots and an LSTM neural

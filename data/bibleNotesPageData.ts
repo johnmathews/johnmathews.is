@@ -1,4 +1,6 @@
-const bibleNotesPageData = {
+import { PageData } from 'types/CollectionPage'
+
+const bibleNotesPageData: PageData = {
   Proverbs: [
     {
       title: 'Proverbs 11',

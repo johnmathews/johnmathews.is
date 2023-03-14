@@ -1,4 +1,9 @@
-const headerNavLinks = [
+interface HeaderNavItem {
+  href: string
+  title: string
+}
+
+const headerNavLinks: HeaderNavItem[] = [
   { href: '/posts', title: 'Blog' },
   { href: '/collections', title: 'Collections' },
   { href: '/photographs', title: 'Photographs' },

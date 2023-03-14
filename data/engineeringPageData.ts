@@ -1,4 +1,6 @@
-const metaPageData = {
+import { PageData } from 'types/CollectionPage'
+
+const metaPageData: PageData = {
   General: [
     {
       title: 'Skills needed by a senior engineer',

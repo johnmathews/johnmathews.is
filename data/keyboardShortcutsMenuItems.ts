@@ -1,4 +1,13 @@
-const menuItems = {
+interface Item {
+  item: string
+  description: string
+}
+
+interface KeyboardShortcuts {
+  [key: string]: Item[]
+}
+
+const menuItems: KeyboardShortcuts = {
   Actions: [
     { item: '?, esc', description: 'Toggle keyboard shortcuts' },
     { item: 'cmd+k', description: 'Search' },

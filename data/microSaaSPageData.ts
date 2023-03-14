@@ -1,4 +1,6 @@
-const microSaaSPageData = {
+import { PageData } from 'types/CollectionPage'
+
+const microSaaSPageData: PageData = {
   Technical: [
     {
       title: 'Django for startup founders',

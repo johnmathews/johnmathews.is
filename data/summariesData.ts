@@ -1,4 +1,6 @@
-const sectionsData = [
+import { CollectionItem } from 'types/CollectionPage'
+
+const sectionsData: CollectionItem[] = [
   {
     title: 'April 2021: Learning',
     description: 'GCP Service Accounts, SSH, Ansible, Vagrant',
