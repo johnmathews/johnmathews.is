@@ -37,7 +37,7 @@ export default function Snippets(props) {
       />
       <SnippetLayout
         content={props.snippetContent}
-        frontmatter={props.snippetFrontmatter}
+        frontMatter={props.snippetFrontmatter}
         title={title}
       />
     </>

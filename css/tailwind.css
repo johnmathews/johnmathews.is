@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.gstatic.com");
-@import url("https://fonts.googleapis.com/css2?family=Cardo&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap");
+@import url('https://fonts.gstatic.com');
+@import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
 
 /* used for table of contents*/
 .toc-ml-2 {
@@ -125,7 +125,13 @@ pre {
   @apply bg-slate-900 !important;
 }
 
+mark {
+  @apply rounded-md bg-green-300 px-1 pt-1 dark:bg-green-400;
+}
+
 /**
+ * DOES THIS CONFLICT WITH PRISM.CSS FILE?
+ *
  * Inspired by gatsby remark prism - https://www.gatsbyjs.com/plugins/gatsby-remark-prismjs/
  * 1. Make the element just wide enough to fit its content.
  * 2. Always fill the visible space in .code-highlight.

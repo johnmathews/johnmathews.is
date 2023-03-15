@@ -6,9 +6,10 @@ import formatDate from '@/lib/utils/formatDate'
 import { AppContext } from '@/components/ContextProvider'
 import { useContext } from 'react'
 
-export default function SnippetLayout({ content, frontmatter, title }) {
+export default function SnippetLayout({ content, frontMatter, title }) {
   const [state, _] = useContext(AppContext)
 
+  // anything to do with a specific snippet post is within content.map loop below
   return (
     <>
       <div id="snippetLayoutWrapper" className="lg:-ml-10 lg:-mr-16 xl:-mr-32 xl:-ml-0">
@@ -31,6 +32,20 @@ export default function SnippetLayout({ content, frontmatter, title }) {
               return item.toLowerCase()
             })
             const { mdxSource } = post
+
+            var PostDescription
+            const description = post.frontMatter.summary || post.frontMatter.description
+            if (description) {
+              console.log('--- debug description: ', description)
+              PostDescription = (
+                <div id="postSummary" className=" mb-3 text-lg">
+                  {' '}
+                  {description}{' '}
+                </div>
+              )
+            } else {
+              PostDescription = null
+            }
 
             var showPost = false
             if (state.technical && state.nonTechnical) {
@@ -62,6 +77,7 @@ export default function SnippetLayout({ content, frontmatter, title }) {
                   </div>
                   <div className="markdown  max-h-snippetContent overflow-y-auto ">
                     <div className="px-4 pb-4 font-serif text-lg  ">
+                      {PostDescription}
                       <MDXLayoutRenderer layout="SnippetCardLayout" mdxSource={mdxSource} />
                     </div>
                   </div>
