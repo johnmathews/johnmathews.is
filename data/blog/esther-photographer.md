@@ -14,4 +14,4 @@ description:
 [![estherscanon](/static/images/estherscanon/esther3.png)](/static/images/estherscanon/esther3.png)
 [![estherscanon](/static/images/estherscanon/esther2.jpg)](/static/images/estherscanon/esther2.jpg)
 
-[Esther Scannon](https://www.estherscanon.com/)
+[Esther Scanon](https://www.estherscanon.com/)
