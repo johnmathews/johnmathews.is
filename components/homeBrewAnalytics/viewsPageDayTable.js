@@ -60,7 +60,7 @@ export default function ViewsPageDayTable({ data }) {
       result.push(<LocationCountItem value={value[z]} />)
     }
     return (
-      <div key={value} className="flex flex-shrink">
+      <div key={value} className="flex flex-wrap">
         {result}{' '}
       </div>
     )
