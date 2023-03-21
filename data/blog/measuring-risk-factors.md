@@ -46,7 +46,7 @@ description:
      OK, take smaller risks.
 
      For example, if you're investing €100 and it wont ruin your life if you lose it then you can
-     take big risk. But if you've turned that €100 into €100,000 and you're financial security is
+     take a big risk. But if you've turned that €100 into €100,000 and you're financial security is
      much improved, then don't take big risks. You have much more to lose and much less to gain.
 
 9. The biggest risks always look obvious in hindsight, yet we never catch them beforehand.
