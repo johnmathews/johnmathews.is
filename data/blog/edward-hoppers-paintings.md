@@ -1,9 +1,8 @@
 ---
-title: Edward Hoppers Paintings
-slug: edward-hopper-s-paintings
-date: "2021-06-30 13:21:42"
+title: Edward Hopper's Paintings
+date: '2021-06-30 13:21:42'
 category: non-technical.snippet
-tags: ["art", "painting", "photography"]
+tags: ['art', 'painting', 'photography']
 ---
 
 import IframeEmbed from '../components/IframeEmbed'
