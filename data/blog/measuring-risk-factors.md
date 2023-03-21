@@ -3,7 +3,7 @@ title: Thinking about risk
 date: 2023-03-21 12:34:43
 category: non-technical.entrepreneurship
 tags: ['finance']
-image: /static/images/.png
+image: # /static/images/.png
 description:
 ---
 
