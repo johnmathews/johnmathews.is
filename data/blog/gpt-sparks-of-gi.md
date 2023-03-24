@@ -9,13 +9,11 @@ description:
 
 import IframeEmbed from '../components/IframeEmbed'
 
-A paper describing what the unrestricted GPT-4 can do.
+A [paper](https://arxiv.org/pdf/2303.12712.pdf) describing what the unrestricted GPT-4 can do.
 
 <IframeEmbed type='youtube' src='https://youtube.com/embed/Mqg3aTGNxZ0' />
 
 Come back to this
-
-- [paper](https://arxiv.org/pdf/2303.12712.pdf)
 
 Can do:
 
