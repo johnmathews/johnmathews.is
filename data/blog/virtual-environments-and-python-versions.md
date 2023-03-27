@@ -1,16 +1,16 @@
 ---
 title: Virtual environments and python versions
 slug: virtual-environments-and-python-versions
-date: "2021-11-01 16:09:14"
+date: '2021-11-01 16:09:14'
 category: Technical>Developer-Tools
-tags: ["python", "pyenv", "virtualenv", "virtual-environment"]
+tags: ['python', 'pyenv', 'virtualenv', 'virtual-environment']
 ---
 
 <TOCInline toc={props.toc} exclude="Overview" toHeading={2} />
 
-# Recipe
+## Recipe
 
-## Create and activate a new virtualenv
+### Create and activate a new virtualenv
 
 - `pyenv versions` or `pyenv install -l` - list available versions
 - **`pyenv virtualenv <python version> <environment name>`**
@@ -25,7 +25,7 @@ If you did not configure `eval "$(pyenv virtualenv-init -)"` to run in your shel
 - `pyenv activate <environment name>`
 - `pyenv deactivate`
 
-# Background
+## Background
 
 - `pyenv` manages multiple versions of Python itself.
 - `virtualenv/venv` manages virtual environments for a specific Python version.
@@ -33,9 +33,9 @@ If you did not configure `eval "$(pyenv virtualenv-init -)"` to run in your shel
 - `python -V` - shows which python version is currently being used.
 - `which python` - shows the path or location of the current python.
 
-# Python versions
+## Python versions
 
-## Installing new python versions
+### Installing new python versions
 
 - `pyenv install --list | grep " 3\.9\."` - list versions
 - `pyevn install <name>` - install a new version
@@ -44,7 +44,7 @@ If you did not configure `eval "$(pyenv virtualenv-init -)"` to run in your shel
   - `rm -rf ..` the subdir in `~/.pyenv/versions/...`
   - `pyenv uninstall <name>`
 
-## Set a particular python version
+### Set a particular python version
 
 - `pyenv versions` - list available versions
 - `pyenv global <name>` - set system default python version
@@ -54,7 +54,7 @@ If you did not configure `eval "$(pyenv virtualenv-init -)"` to run in your shel
   active in your environment then the version specified in this file will be
   activated
 
-## Other commands
+### Other commands
 
 - `pyenv uninstall <version>`
 - `pyenv rehash` - run after installing a new version, or install a package
@@ -62,15 +62,15 @@ If you did not configure `eval "$(pyenv virtualenv-init -)"` to run in your shel
 
 [source](https://github.com/pyenv/pyenv/blob/master/COMMANDS.md)
 
-## Tests
+### Tests
 
 - `python -m test` - run some tests to be confident everything is ok
 
-## Source
+### Source
 
 [Real Python article](https://realpython.com/intro-to-pyenv/)
 
-# Code editor integration using `activate_this.py`
+## Code editor integration using `activate_this.py`
 
 So that code editors like vim can respond to the currently active virtual
 environment and update `path`, `sys.path` and `sys.prefix` (for example when
@@ -86,8 +86,8 @@ and I haven't looked at why yet. Copy paste the version below into `~/.pyenv/ver
 **activate_this.py**
 
 ```Python
-# -*- coding: utf-8 -*-
-# https://github.com/pypa/virtualenv/blob/main/src/virtualenv/activation/python/activate_this.py
+## -*- coding: utf-8 -*-
+## https://github.com/pypa/virtualenv/blob/main/src/virtualenv/activation/python/activate_this.py
 
 """Activate virtualenv for current interpreter:
 Use exec(open(this_file).read(), {'__file__': this_file}).
@@ -105,11 +105,11 @@ except NameError:
 bin_dir = os.path.dirname(abs_file)
 base = bin_dir[: -len("__BIN_NAME__") - 1]  # strip away the bin part from the __file__, plus the path separator
 
-# prepend bin to PATH (this file is inside the bin directory)
+## prepend bin to PATH (this file is inside the bin directory)
 os.environ["PATH"] = os.pathsep.join([bin_dir] + os.environ.get("PATH", "").split(os.pathsep))
 os.environ["VIRTUAL_ENV"] = base  # virtual env is right above bin directory
 
-# add the virtual environments libraries to the host python import mechanism
+## add the virtual environments libraries to the host python import mechanism
 prev_length = len(sys.path)
 for lib in "__LIB_FOLDERS__".split(os.pathsep):
     path = os.path.realpath(os.path.join(bin_dir, lib))
