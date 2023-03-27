@@ -62,7 +62,7 @@ module.exports = withBundleAnalyzer({
       },
       {
         source: '/blog/algo-trading',
-        destination: '/blog/smaTraderBlog',
+        destination: '/blog/sma-trader-blog',
         permanent: true,
       },
       {

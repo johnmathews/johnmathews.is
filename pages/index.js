@@ -45,9 +45,9 @@ export default function Home() {
 
         <div
           id="landingListColumn"
-          className="my-auto mx-auto hidden content-center font-serif text-xl leading-relaxed dark:text-gray-200 md:block md:leading-normal lg:text-3xl "
+          className="my-auto mx-auto hidden content-center font-serif text-xl leading-relaxed dark:text-gray-200 md:block md:leading-normal lg:text-3xl"
         >
-          <ul id="primaryList" className="my-3 text-center">
+          <ul id="primaryList" className="my-3 text-left">
             {headerNavLinks.map((link) => (
               <li key={link.title} className="my-5">
                 <Link
@@ -58,11 +58,11 @@ export default function Home() {
                 </Link>
               </li>
             ))}
-            <li className="mt-10 -ml-3 font-normal text-gray-700 hover:underline dark:text-gray-200 ">
-              <ThemeSwitch />
-            </li>
-            <li className="-mt-3">
+            <li className="mt-10 -ml-20 pl-1">
               <Autocomplete />
+            </li>
+            <li className="mt-4 -ml-3 font-normal text-gray-700 hover:underline dark:text-gray-200 ">
+              <ThemeSwitch />
             </li>
           </ul>
         </div>
