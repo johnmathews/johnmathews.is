@@ -3,6 +3,9 @@ import PostsGroupedByYear from '@/components/PostsGroupedByYear'
 export default function ListLayout({ title, posts, filterSnippets = true, filterCats = true }) {
   const groupsOfPosts = {}
   posts.map((frontMatter) => {
+    if (frontMatter.draft) {
+      return
+    }
     const dt = new Date(frontMatter.date)
     const year = dt.getFullYear()
     if (year in groupsOfPosts) {

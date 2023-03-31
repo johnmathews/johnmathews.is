@@ -23,6 +23,12 @@ const runningPageData: PageData = {
       href: '/blog/insanity',
     },
     {
+      title: 'P90x3',
+      description: ``,
+      imgSrc: '',
+      href: '/blog/p90x3',
+    },
+    {
       title: 'P90x',
       description: ``,
       imgSrc: '',

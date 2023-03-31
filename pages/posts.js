@@ -21,9 +21,8 @@ function compareDates(a, b) {
 }
 
 function categoryGroup(categories) {
-  // each post can have more than one category
-  // returns a set showing which category groups the post belongs too
-  // technical, non-technical, or snippet
+  // add numbers to post metadata. each post can have more than one category
+  // returns a set showing which category groups the post belongs too. technical, non-technical, or snippet
   var groups = new Set()
   for (var i = 0; i < categories.length; i++) {
     if (categories[i].split('.')[0].toLowerCase() == 'non-technical') {

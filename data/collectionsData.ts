@@ -77,7 +77,7 @@ const collectionsData: CollectionItem[] = [
     description: '',
     imgSrc: '',
     href: '/sport',
-    keyboardShortcut: 'cn',
+    keyboardShortcut: 'cp',
   },
   {
     title: 'Engineering',
