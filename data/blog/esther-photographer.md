@@ -1,6 +1,6 @@
 ---
 title: >
-  Photographer: Esther Scanon
+  Photographer: Esther Brown
 date: 2023-03-15 10:37:08
 category: non-technical.snippet
 tags: ['photographer', 'portraits', 'natural light']

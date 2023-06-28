@@ -68,7 +68,12 @@ export default function Home() {
         </div>
         <div id="imageColumn" className="-mt-5 md:my-auto md:w-96 md:pl-10 lg:ml-32 lg:w-auto ">
           <Link href="/posts">
-            <Image src={getRandomImage()} alt="placeholder" width="1000" height="800" />
+            <Image
+              src="/static/images/landing/roofs.jpeg"
+              alt="cover image"
+              width="1000"
+              height="800"
+            />
           </Link>
         </div>
       </div>
