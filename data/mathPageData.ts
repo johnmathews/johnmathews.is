@@ -3,9 +3,14 @@ import { PageData } from 'types/CollectionPage'
 const mathPageData: PageData = {
   '': [
     {
+      title: '3x+1 Problem [Ve]',
+      description: 'The simplest unsolved problem',
+      imgSrc: '',
+      href: '/blog/collatz-conjecture',
+    },
+    {
       title: 'Counterintuitive Facts',
       description: '',
-
       imgSrc: '',
       href: '/blog/counter-intuitive-facts',
     },

@@ -19,9 +19,6 @@ export default function BookNotes() {
             {Object.keys(data).map((h) => {
               return (
                 <div key={h} className="ml-5">
-                  <h2 className="-mb-2 text-lg font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-xl sm:leading-10 md:text-2xl md:leading-14">
-                    {h}
-                  </h2>
                   <ul className="ml-5 list-disc ">
                     {data[h].map((d) => (
                       <li key={d} className="my-3">
@@ -29,7 +26,8 @@ export default function BookNotes() {
                           href={d.href}
                           className="text-xl font-normal text-gray-700 hover:underline dark:text-gray-200 "
                         >
-                          {d.title}
+                          {d.title} {d.description ? ' - ' : ''}{' '}
+                          {d.description ? d.description : ''}
                         </Link>
                       </li>
                     ))}
