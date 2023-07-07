@@ -37,6 +37,12 @@ const microSaaSPageData: PageData = {
   ],
   Marketing: [
     {
+      title: '19 Things I learned the hard way',
+      description: ``,
+      imgSrc: '',
+      href: '/blog/19-things-i-learned-the-hard-way',
+    },
+    {
       title: 'Story led marketing',
       description: ``,
       imgSrc: '',

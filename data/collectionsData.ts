@@ -2,20 +2,6 @@ import { CollectionItem } from 'types/CollectionPage'
 
 const collectionsData: CollectionItem[] = [
   {
-    title: 'Long form',
-    description: 'Longer posts, usually reflective or introspective.',
-    imgSrc: '',
-    href: '/longform',
-    keyboardShortcut: 'cl',
-  },
-  {
-    title: 'Monthly summaries',
-    description: '',
-    imgSrc: '',
-    href: '/summaries',
-    keyboardShortcut: 'cs',
-  },
-  {
     title: 'Meta',
     description: 'Attitudes, mental models, ways of thinking',
     imgSrc: '',
@@ -23,18 +9,18 @@ const collectionsData: CollectionItem[] = [
     keyboardShortcut: 'ct',
   },
   {
-    title: 'Bible notes',
-    description: 'Brief and light notes on various parts of the bible',
+    title: 'Finance',
+    description: 'Advice about money.',
     imgSrc: '',
-    href: '/bible',
-    keyboardShortcut: 'cb',
+    href: '/finance',
+    keyboardShortcut: 'cf',
   },
   {
-    title: 'Photographs',
-    description: '',
+    title: 'Engineering',
+    description: 'Advice about being a software engineer',
     imgSrc: '',
-    href: '/photographs',
-    keyboardShortcut: 'gp',
+    href: '/engineering',
+    keyboardShortcut: 'ce',
   },
   {
     title: 'Past Projects',
@@ -52,20 +38,6 @@ const collectionsData: CollectionItem[] = [
     keyboardShortcut: 'cm',
   },
   {
-    title: 'Book notes',
-    description: '',
-    imgSrc: '',
-    href: '/books',
-    keyboardShortcut: 'ck',
-  },
-  {
-    title: 'Finance',
-    description: 'Advice about money.',
-    imgSrc: '',
-    href: '/finance',
-    keyboardShortcut: 'cf',
-  },
-  {
     title: 'Math',
     description: 'Number theoryyyyy.',
     imgSrc: '',
@@ -73,18 +45,46 @@ const collectionsData: CollectionItem[] = [
     keyboardShortcut: 'cn',
   },
   {
+    title: 'Book notes',
+    description: '',
+    imgSrc: '',
+    href: '/books',
+    keyboardShortcut: 'ck',
+  },
+  {
+    title: 'Bible notes',
+    description: 'Brief and light notes on various parts of the bible',
+    imgSrc: '',
+    href: '/bible',
+    keyboardShortcut: 'cb',
+  },
+  {
+    title: 'Monthly summaries',
+    description: '',
+    imgSrc: '',
+    href: '/summaries',
+    keyboardShortcut: 'cs',
+  },
+  {
+    title: 'Long form',
+    description: 'Longer posts, usually reflective or introspective.',
+    imgSrc: '',
+    href: '/longform',
+    keyboardShortcut: 'cl',
+  },
+  {
+    title: 'Photographs',
+    description: '',
+    imgSrc: '',
+    href: '/photographs',
+    keyboardShortcut: 'gp',
+  },
+  {
     title: 'Sport',
     description: '',
     imgSrc: '',
     href: '/sport',
     keyboardShortcut: 'cp',
-  },
-  {
-    title: 'Engineering',
-    description: 'Advice about being a software engineer',
-    imgSrc: '',
-    href: '/engineering',
-    keyboardShortcut: 'ce',
   },
 ]
 

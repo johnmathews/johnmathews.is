@@ -16,10 +16,7 @@ export default function Collections() {
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             Collections
           </h1>
-          <p>
-            This pge links to various collections of posts organised around a common theme. For
-            example, monthly recaps.
-          </p>
+          <p>This pge links to various collections of posts organised around a common theme.</p>
         </div>
         <div className="container py-12">
           <div className="-m-4 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
