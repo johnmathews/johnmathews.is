@@ -16,7 +16,9 @@ function getAllPosts() {
   const postsDirectory = path.join(process.cwd(), 'data/blog')
   const fileNames = fs.readdirSync(postsDirectory)
   const posts = fileNames.map((fileName) => {
-    const id = fileName.replace(/\.md$/, '')
+    // const id = fileName.replace(/\.md$/, '')
+    const id = fileName.substr(0, fileName.lastIndexOf('.'))
+    if (id.includes('mdx')) console.log('--- debug id: ', id)
     const fullPath = path.join(postsDirectory, fileName)
     const fileContents = fs.readFileSync(fullPath, 'utf8')
     const matterResult = matter(fileContents)
@@ -65,7 +67,7 @@ fs.writeFile('cache/searchData.json', JSONData, (err) => {
 })
 
 index
-  .saveObjects(getAllPosts(), { autoGenerateObjectIDIfNotExist: false })
+  .replaceAllObjects(getAllPosts(), { autoGenerateObjectIDIfNotExist: false })
   .then(() => {
     console.log('Algolia index updated!')
   })

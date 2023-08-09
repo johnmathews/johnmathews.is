@@ -2,7 +2,7 @@
 title: MacOS Keyboard Shortcuts
 slug: macos-keyboard-shortcuts
 date: '2022-04-05 14:31:09'
-draft: true
+draft: false
 category: technical.snippet
 tags: ['macos', 'keyboard']
 ---
