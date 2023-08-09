@@ -12,7 +12,7 @@ export default function SnippetLayout({ content, frontMatter, title }) {
   // anything to do with a specific snippet post is within content.map loop below
   return (
     <>
-      <div id="snippetLayoutWrapper" className="lg:-ml-10 lg:-mr-16 xl:-ml-0 xl:-mr-32">
+      <div id="snippetLayoutWrapper" className="lg:-ml-10 xl:-ml-0">
         <div className="space-y-2 pb-8 pt-6 md:space-y-5">
           <div className="mb-10 text-6xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             {title}
@@ -36,7 +36,6 @@ export default function SnippetLayout({ content, frontMatter, title }) {
             var PostDescription
             const description = post.frontMatter.summary || post.frontMatter.description
             if (description) {
-              console.log('--- debug description: ', description)
               PostDescription = (
                 <div id="postSummary" className=" mb-3 text-lg">
                   {' '}
