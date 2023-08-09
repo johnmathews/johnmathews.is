@@ -6,6 +6,9 @@ old_blog/*
 
 cache/
 
+.envrc
+.env
+
 # dependencies
 /node_modules
 /.pnp
