@@ -37,5 +37,3 @@ I should write some context here. Including:
 - some of the keyboard shortcuts
 - the video archive feature
 - how GCP buckets are used
-
-x
