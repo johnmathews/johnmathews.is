@@ -223,6 +223,5 @@ module.exports = {
     require('@tailwindcss/typography'),
     require('tailwindcss-aspect-ratio'),
     require('tailwindcss-responsive-embed'),
-    require('@tailwindcss/line-clamp'),
   ],
 }
