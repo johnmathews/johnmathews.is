@@ -13,11 +13,10 @@ const ChildCategory = ({ parentName, category }) => {
 
   return (
     <div key={onlyKey} className="flex">
-      <Link
-        href={`/categories/${kebabCase(parentName)}/${kebabCase(onlyKey)}`}
-        className="text-lg capitalize"
-      >
-        {cleanString}({numPosts})
+      <Link href={`/categories/${kebabCase(parentName)}/${kebabCase(onlyKey)}`}>
+        <a className="text-lg capitalize">
+          {cleanString} ({numPosts})
+        </a>
       </Link>
     </div>
   )
