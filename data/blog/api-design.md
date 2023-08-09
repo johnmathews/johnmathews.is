@@ -1,9 +1,9 @@
 ---
 title: API Design Principles
 slug: api-design
-date: "2021-1-4 16:59"
+date: '2021-1-4 16:59'
 category: Technical>Developer-Tools
-tags: ["uncategorized"]
+tags: ['uncategorized']
 ---
 
 Some super brief notes I made about API design:

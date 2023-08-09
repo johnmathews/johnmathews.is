@@ -1,9 +1,9 @@
 ---
 title: Do-nothing scripts
 slug: do-nothing-scripts
-date: "2021-11-03 14:52:37"
+date: '2021-11-03 14:52:37'
 category: technical.snippet
-tags: ["programming"]
+tags: ['programming']
 ---
 
 Interesting

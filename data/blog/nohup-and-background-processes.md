@@ -1,9 +1,9 @@
 ---
 title: nohup and Background Processes
 slug: nohup-and-background-processes
-date: "2021-3-2 13:10"
+date: '2021-3-2 13:10'
 category: Technical>Developer-Tools
-tags: ["uncategorized"]
+tags: ['uncategorized']
 ---
 
 # Stop stuff stopping

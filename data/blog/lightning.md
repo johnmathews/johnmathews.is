@@ -1,10 +1,10 @@
 ---
 title: The Bitcoin Lightning Network
 slug: lightning
-date: "2018-4-12 15:53"
+date: '2018-4-12 15:53'
 category: Technical>Cryptocurrencies
-tags: ["bitcoin"]
-image: "/static/images/lightningTestnet.jpg"
+tags: ['bitcoin']
+image: '/static/images/lightningTestnet.jpg'
 tweet: Bitcoin lightning network
 summary: This is an unfinished article from 2018. I'm publishing it in 2021 because it has a few ideas I'd like to be able to refer to in future.
 ---

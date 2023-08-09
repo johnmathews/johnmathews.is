@@ -1,9 +1,9 @@
 ---
 title: Better Text Objects
 slug: vim-text-objects
-date: "2021-05-05 18:04:40"
+date: '2021-05-05 18:04:40'
 category: technical.snippet
-tags: ["vim"]
+tags: ['vim']
 ---
 
 - target function arguments

@@ -1,9 +1,9 @@
 ---
 title: Vim!
-date: "2016-12-01 22:32"
+date: '2016-12-01 22:32'
 Author: John Mathews
 category: Technical>Developer-Tools
-tags: ["vim "]
+tags: ['vim ']
 slug: vim
 ---
 

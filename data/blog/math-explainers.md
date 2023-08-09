@@ -1,9 +1,9 @@
 ---
 title: Math explainers
 slug: math-explainers
-date: "2021-11-04 13:11:28"
+date: '2021-11-04 13:11:28'
 category: non-technical.snippet
-tags: ["math"]
+tags: ['math']
 ---
 
 import IframeEmbed from '../components/IframeEmbed'

@@ -3,8 +3,8 @@ title: >
   Unix: Utilities To Analyse And Update Multiple Text Files
 slug: using-unix-utilities-to-analyse-and-update-multiple-files
 category: Technical>Developer-Tools
-date: "2021-1-4 13:02"
-tags: ["uncategorized"]
+date: '2021-1-4 13:02'
+tags: ['uncategorized']
 ---
 
 As part of the redesign of this blog I wanted to make an article's category more meaningful. Previously, I simply picked a handful of categories and then assigned a single category to each post. This method becomes limiting when an article is relevant to multiple categories.

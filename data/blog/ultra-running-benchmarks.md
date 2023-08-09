@@ -1,9 +1,9 @@
 ---
 title: Ultra-running benchmarks
 slug: ultra-running-benchmarks
-date: "2021-10-01 13:06:26"
+date: '2021-10-01 13:06:26'
 category: non-technical.snippet
-tags: ["courtney-dauwalter", "running", "150km", "jeff-pelletier"]
+tags: ['courtney-dauwalter', 'running', '150km', 'jeff-pelletier']
 ---
 
 - 7 days/week

@@ -1,9 +1,9 @@
 ---
 title: Globbing
 slug: globbing
-date: "2021-05-10 16:12:25"
+date: '2021-05-10 16:12:25'
 category: technical.snippet
-tags: ["linux"]
+tags: ['linux']
 ---
 
 - `????` → 4 chars

@@ -1,9 +1,9 @@
 ---
 title: Moral tyranny
 slug: moral-tyranny
-date: "2021-07-12 10:49:09"
+date: '2021-07-12 10:49:09'
 category: non-technical.snippet
-tags: ["oppression", "consent"]
+tags: ['oppression', 'consent']
 ---
 
 Of all tyrannies, a tyranny sincerely exercised for the good of its victims may

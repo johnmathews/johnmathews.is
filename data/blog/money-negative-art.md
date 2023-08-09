@@ -2,7 +2,7 @@
 title: Money is a negative art
 date: 2023-02-07 11:21:11
 category: non-technical.finance
-tags: ["finance", "pyschology"]
+tags: ['finance', 'pyschology']
 ---
 
 This is another noteworthy article by Morgan Housl from the

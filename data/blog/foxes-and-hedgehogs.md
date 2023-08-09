@@ -1,9 +1,9 @@
 ---
 title: Foxes and Hedgehogs
 slug: foxes-and-hedgehogs
-date: "2021-06-12 10:34:52"
+date: '2021-06-12 10:34:52'
 category: technical.snippet, non-technical.snippet
-tags: ["meta", "classification", "thinking"]
+tags: ['meta', 'classification', 'thinking']
 ---
 
 [wikipedia](https://en.wikipedia.org/wiki/The_Hedgehog_and_the_Fox)

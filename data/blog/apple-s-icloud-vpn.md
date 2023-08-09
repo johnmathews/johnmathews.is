@@ -1,8 +1,8 @@
 ---
 title: Apple's iCloud+ "VPN"
-date: "2021-06-16 21:36:34"
+date: '2021-06-16 21:36:34'
 category: technical.snippet
-tags: ["apple", "onion", "vpn", "icloud"]
+tags: ['apple', 'onion', 'vpn', 'icloud']
 ---
 
 [article](https://www.metzdowd.com/pipermail/cryptography/2021-June/037144.html)

@@ -1,9 +1,9 @@
 ---
 title: Proverbs 15
 slug: proverbs-15
-date: "2021-06-24 15:36:13"
+date: '2021-06-24 15:36:13'
 category: Non-technical>Journal
-tags: ["books", "bible", "wisdom"]
+tags: ['books', 'bible', 'wisdom']
 ---
 
 $^{1}$<mark>A soft answer turns away wrath, but a harsh word stirs up

@@ -1,9 +1,9 @@
 ---
 title: Disk Full and Disk Usage Commands
 slug: disk-full-and-usage-commands
-date: "2021-03-03 23:27:11"
+date: '2021-03-03 23:27:11'
 category: technical.snippet
-tags: ["linux", "du", "df", "shell", "cli"]
+tags: ['linux', 'du', 'df', 'shell', 'cli']
 ---
 
 `df -h`

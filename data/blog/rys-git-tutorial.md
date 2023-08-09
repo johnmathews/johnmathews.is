@@ -1,10 +1,10 @@
 ---
 title: Ry's Git Tutorial
 slug: rys-git-tutorial
-date: "2018-6-1 17:11"
+date: '2018-6-1 17:11'
 category: Technical>Developer-Tools
-tags: ["git", "rys", "tutorial", "ryan hodson"]
-image: "/static/images/rys-git-tutorial.jpg"
+tags: ['git', 'rys', 'tutorial', 'ryan hodson']
+image: '/static/images/rys-git-tutorial.jpg'
 tweet: Ry's Git Tutorial is the best #git #tutorial - learn by doing.
 summary: Ry's Git Tutorial is a great way to learn Git. Learn by doing as you create and maintain a simple website.
 ---

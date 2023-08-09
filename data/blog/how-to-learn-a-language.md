@@ -3,7 +3,7 @@ title: How to learn another language
 date: 2023-02-04 12:43:30
 category: Non-technical.Learning
 image: /static/images/hieroglyphics.jpg
-tags: ["languages"]
+tags: ['languages']
 ---
 
 import IframeEmbed from '../components/IframeEmbed'

@@ -1,9 +1,9 @@
 ---
 title: Grep only inside particular files
 slug: grep-particular-files-only
-date: "2021-05-18 13:11:15"
+date: '2021-05-18 13:11:15'
 category: technical.snippet
-tags: ["grep", "linux"]
+tags: ['grep', 'linux']
 ---
 
 ```bash

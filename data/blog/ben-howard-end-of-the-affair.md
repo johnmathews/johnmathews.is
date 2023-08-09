@@ -2,7 +2,7 @@
 title: Ben Howard - The End of the Affair
 date: 2023-01-14 23:10:58
 category: non-technical.snippet
-tags: ["music", "live", "sad", "angry"]
+tags: ['music', 'live', 'sad', 'angry']
 ---
 
 import IframeEmbed from '../components/IframeEmbed'

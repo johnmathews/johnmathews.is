@@ -1,9 +1,9 @@
 ---
 title: Proxy Servers
 slug: reverse-proxy
-date: "2021-11-22 10:13:06"
+date: '2021-11-22 10:13:06'
 category: technical.snippet
-tags: ["networks"]
+tags: ['networks']
 ---
 
 ### Reverse proxy server

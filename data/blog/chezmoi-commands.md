@@ -1,9 +1,9 @@
 ---
 title: Chezmoi commands
 slug: chezmoi-commands
-date: "2021-11-05 17:03:37"
+date: '2021-11-05 17:03:37'
 category: technical.snippet
-tags: ["dotfiles", "tools", "productivity", "developer"]
+tags: ['dotfiles', 'tools', 'productivity', 'developer']
 ---
 
 Chezmoi is a dotfiles manager.

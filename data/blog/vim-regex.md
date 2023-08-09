@@ -1,9 +1,9 @@
 ---
 title: Vim Regex
 slug: vim-regex
-date: "2021-04-28 11:37:58"
+date: '2021-04-28 11:37:58'
 category: technical.snippet
-tags: ["vim", "regex"]
+tags: ['vim', 'regex']
 ---
 
 This is a great article about using regular expressions in Vim:

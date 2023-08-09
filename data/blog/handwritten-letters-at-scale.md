@@ -1,9 +1,9 @@
 ---
 title: Handwritten letters at scale
 slug: handwritten-letters-at-scale
-date: "2021-09-20 14:28:59"
+date: '2021-09-20 14:28:59'
 category: technical.snippet, non-technical.snippet
-tags: ["automation", "hardware", "marketing", "raspberry-pi"]
+tags: ['automation', 'hardware', 'marketing', 'raspberry-pi']
 ---
 
 A [twitter thread](https://twitter.com/aarondfrancis/status/1438888219471491074)

@@ -1,8 +1,8 @@
 ---
 title: Creating Users With Sudo Permissions
-date: "2021-03-04 23:25:50"
+date: '2021-03-04 23:25:50'
 category: technical.snippet
-tags: ["sudo", "Linux", "user", "admin"]
+tags: ['sudo', 'Linux', 'user', 'admin']
 ---
 
 ```bash

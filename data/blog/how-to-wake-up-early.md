@@ -1,9 +1,9 @@
 ---
 title: How to wake up early
-date: "2016-08-06 22:04"
+date: '2016-08-06 22:04'
 Author: John Mathews
 category: Non-technical>Journal
-tags: ["productivity", "sleep"]
+tags: ['productivity', 'sleep']
 slug: how-to-wake-up-early
 status: published
 ---

@@ -1,9 +1,9 @@
 ---
 title: How to size bets
 slug: how-to-size-bets
-date: "2022-02-09 12:34:36"
+date: '2022-02-09 12:34:36'
 category: Non-technical.Other
-tags: ["statistics", "investing", "gambling", "math"]
+tags: ['statistics', 'investing', 'gambling', 'math']
 ---
 
 An interactive [article](https://explore.paulbutler.org/bet/) that discusses the optimal strategy

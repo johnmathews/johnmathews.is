@@ -1,8 +1,8 @@
 ---
 title: Fuse Search
-date: "2021-4-5 10:45"
+date: '2021-4-5 10:45'
 category: Technical.Web
-tags: ["Fuse", "Search", "Web"]
+tags: ['Fuse', 'Search', 'Web']
 ---
 
 ## Adding search made the site feel faster and more accessible

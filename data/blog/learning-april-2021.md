@@ -1,18 +1,18 @@
 ---
 title: Learning - April 2021
 slug: learning-april-2021
-date: "2021-04-21 11:09:19"
+date: '2021-04-21 11:09:19'
 category: Technical>Developer-Tools
 tags:
   [
-    "learning",
-    "youtube",
-    "ansible",
-    "ssh",
-    "vagrant",
-    "google-cloud-platform",
-    "service-accounts",
-    "iam",
+    'learning',
+    'youtube',
+    'ansible',
+    'ssh',
+    'vagrant',
+    'google-cloud-platform',
+    'service-accounts',
+    'iam',
   ]
 ---
 

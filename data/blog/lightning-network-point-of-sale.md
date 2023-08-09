@@ -1,9 +1,9 @@
 ---
 title: Lightning network point-of-sale
 slug: lightning-network-point-of-sale
-date: "2021-09-28 11:58:24"
+date: '2021-09-28 11:58:24'
 category: technical.snippet
-tags: ["lightning", "bitcoin", "crypto"]
+tags: ['lightning', 'bitcoin', 'crypto']
 ---
 
 A project to demonstrate an offline, fast, point-of-sale device to allow

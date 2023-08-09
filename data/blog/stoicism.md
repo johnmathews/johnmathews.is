@@ -1,9 +1,9 @@
 ---
 title: Stoicism
 slug: stoicism
-date: "2021-11-04 13:50:53"
+date: '2021-11-04 13:50:53'
 category: non-technical.snippet
-tags: ["philosophy"]
+tags: ['philosophy']
 ---
 
 import IframeEmbed from '../components/IframeEmbed'

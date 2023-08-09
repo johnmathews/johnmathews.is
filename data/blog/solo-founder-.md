@@ -1,8 +1,8 @@
 ---
 title: Solo founder
-date: "2021-12-24 10:11:12"
+date: '2021-12-24 10:11:12'
 category: technical.snippet
-tags: ["entrepreneur", "saas", "maker", "founder"]
+tags: ['entrepreneur', 'saas', 'maker', 'founder']
 ---
 
 [Corey Zue](https://www.coryzue.com/open/) is an indie maker who made Pegasus

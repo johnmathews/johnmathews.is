@@ -1,21 +1,21 @@
 ---
 title: Coworking in Dublin
 slug: coworking
-date: "2017-9-15 11:55"
+date: '2017-9-15 11:55'
 category: Non-technical>Social
-image: "/static/images/dogpatch1.jpg"
+image: '/static/images/dogpatch1.jpg'
 tags:
   [
-    "freelance",
-    "coworking",
-    "dublin",
-    "element78",
-    "regus",
-    "officesuites",
-    "cocreate",
-    "studio9",
-    "glandore",
-    "tcube",
+    'freelance',
+    'coworking',
+    'dublin',
+    'element78',
+    'regus',
+    'officesuites',
+    'cocreate',
+    'studio9',
+    'glandore',
+    'tcube',
   ]
 tweet: Looking for a #Coworking space in #Dublin? Read this:
 summary: A review of eight coworking spaces in Dublin

@@ -1,9 +1,9 @@
 ---
 title: Axiom
 slug: axiom
-date: "2021-06-12 11:00:46"
+date: '2021-06-12 11:00:46'
 category: non-technical.snippet
-tags: ["math"]
+tags: ['math']
 ---
 
 import IframeEmbed from '../components/IframeEmbed'

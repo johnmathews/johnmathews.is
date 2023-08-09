@@ -1,9 +1,9 @@
 ---
 title: Notes From An Interview With Geoffrey Hinton
 slug: notes-from-an-interview-with-geoffrey-hinton
-date: "2021-2-1 22:17"
+date: '2021-2-1 22:17'
 category: Non-technical>Learning
-tags: ["uncategorized"]
+tags: ['uncategorized']
 ---
 
 1.  **Read the literature, but don't read too much** of it.

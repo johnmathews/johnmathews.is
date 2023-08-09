@@ -1,9 +1,9 @@
 ---
 title: Optimizing The Performance Of This Blog
 slug: site-performance
-date: "2021-1-4 16:05"
+date: '2021-1-4 16:05'
 category: Technical>Web
-tags: ["uncategorized"]
+tags: ['uncategorized']
 ---
 
 I'm coming to the end of redesigning this site. Now that the main changes have been

@@ -2,7 +2,7 @@
 title: Everything you can't have
 date: 2023-02-07 11:30:20
 category: Non-technical.Learning
-tags: ["finance", "psychology"]
+tags: ['finance', 'psychology']
 ---
 
 I recently read a post by Morgan Housel on the

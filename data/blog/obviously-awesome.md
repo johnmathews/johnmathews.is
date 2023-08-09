@@ -2,10 +2,10 @@
 title: Obviously Awesome
 status: Published
 slug: obviously-awesome
-date: "2020-12-03 15:46"
+date: '2020-12-03 15:46'
 category: Non-technical>Entrepreneurship
-tags: ["marketing", "positioning", "startups", "book"]
-image: "/static/images/obviously-awesome.png"
+tags: ['marketing', 'positioning', 'startups', 'book']
+image: '/static/images/obviously-awesome.png'
 summary: My notes on "Obviously Awesome" by April Dunford
 ---
 

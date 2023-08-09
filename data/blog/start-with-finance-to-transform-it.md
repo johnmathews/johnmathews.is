@@ -1,9 +1,9 @@
 ---
 title: Start with Finance to transform IT
 slug: start-with-finance-to-transform-it
-date: "2021-07-14 11:13:56"
+date: '2021-07-14 11:13:56'
 category: technical.snippet
-tags: ["engineering", "organisations", "business", "corporations"]
+tags: ['engineering', 'organisations', 'business', 'corporations']
 ---
 
 Zwischenzugs [blog post](https://zwischenzugs.com/2021/07/12/if-you-want-to-transform-it-start-with-finance/)

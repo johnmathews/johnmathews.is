@@ -2,8 +2,8 @@
 title: ZSA Moonlander Review
 date: 2023-01-23 17:11:31
 category: Technical.Developer-Tools
-image: "/static/images/keyboard/keyboard1.jpg"
-tags: ["keyboard", "review"]
+image: '/static/images/keyboard/keyboard1.jpg'
+tags: ['keyboard', 'review']
 ---
 
 import IframeEmbed from '../components/IframeEmbed'

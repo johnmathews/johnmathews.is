@@ -1,8 +1,8 @@
 ---
 title: Docker Commands
-date: "2021-03-17 23:14:43"
+date: '2021-03-17 23:14:43'
 category: technical.snippet
-tags: ["docker"]
+tags: ['docker']
 ---
 
 ```bash

@@ -1,9 +1,9 @@
 ---
 title: My Life Expectancy
 slug: my-life-expectancy
-date: "2021-05-12 10:59:32"
+date: '2021-05-12 10:59:32'
 category: Non-technical>Journal
-tags: ["regression", "statistics", "life-expectancy", "death"]
+tags: ['regression', 'statistics', 'life-expectancy', 'death']
 ---
 
 # Key points:

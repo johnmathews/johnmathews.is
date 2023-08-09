@@ -2,7 +2,7 @@
 title: Elitism as the mid-career growth engine
 date: 2023-02-20 17:32:40
 category: technical.snippet
-tags: ["craft", "technicality", "skill", "learning"]
+tags: ['craft', 'technicality', 'skill', 'learning']
 ---
 
 A [blog post](https://stkbailey.substack.com/p/elitism-as-the-mid-career-growth) by Stephen Bailey

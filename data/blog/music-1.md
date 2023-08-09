@@ -2,7 +2,7 @@
 title: January Music
 date: 2023-01-05 14:12:25
 category: non-technical.snippet
-tags: ["music"]
+tags: ['music']
 ---
 
 import IframeEmbed from '../components/IframeEmbed'

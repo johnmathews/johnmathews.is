@@ -16,7 +16,7 @@
   --aa-text-color-rgb: 0, 0, 0 !important;
 }
 
-[id^="autocomplete-4-item-"] {
+[id^='autocomplete-4-item-'] {
   @apply my-5  !important;
 }
 

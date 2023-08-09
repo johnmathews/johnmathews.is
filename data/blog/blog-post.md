@@ -1,9 +1,9 @@
 ---
 title: Pen-testing web apps
 slug: blog-post
-date: "2021-08-06 15:46:40"
+date: '2021-08-06 15:46:40'
 category: technical.snippet
-tags: ["penetration-testing", "hacking", "web-apps", "credentials"]
+tags: ['penetration-testing', 'hacking', 'web-apps', 'credentials']
 ---
 
 A [blog

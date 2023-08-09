@@ -1,9 +1,9 @@
 ---
 title: Lessons from 45 years in the software industry
 slug: 45-years-in-software
-date: "2021-05-27 10:37:18"
+date: '2021-05-27 10:37:18'
 category: Technical.Engineering
-tags: ["advice"]
+tags: ['advice']
 ---
 
 An [article](https://web.archive.org/web/20210527083359/https://www.bti360.com/what-ive-learned-in-45-years-in-the-software-industry/)

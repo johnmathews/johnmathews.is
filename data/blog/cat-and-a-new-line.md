@@ -2,9 +2,9 @@
 title: >
   `cat` and a new line
 slug: cat-and-a-new-line
-date: "2021-03-5 23:21:43"
+date: '2021-03-5 23:21:43'
 category: technical.snippet
-tags: ["cat", "linux", "bash", "shell"]
+tags: ['cat', 'linux', 'bash', 'shell']
 ---
 
 If you're `cat`-ing a file and the bash prompt doesn't start on a new line (cos

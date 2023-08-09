@@ -1,9 +1,9 @@
 ---
 title: Proverbs 13
 slug: proverbs-13
-date: "2021-06-08 11:30:55"
+date: '2021-06-08 11:30:55'
 category: Non-technical>Journal
-tags: ["books", "bible", "proverbs", "wisdom"]
+tags: ['books', 'bible', 'proverbs', 'wisdom']
 ---
 
 $^{1}$<mark>A wise son hears his father's instruction, but a scoffer does not listen

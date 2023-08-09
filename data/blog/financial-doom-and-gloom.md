@@ -1,9 +1,9 @@
 ---
 title: Financial Doom And Gloom
 slug: financial-doom-and-gloom
-date: "2021-1-19 14:57"
+date: '2021-1-19 14:57'
 category: Non-technical>Social
-tags: ["uncategorized"]
+tags: ['uncategorized']
 ---
 
 Financial crises seem to happen fairly regularly so they shouldn't be

@@ -1,9 +1,9 @@
 ---
 title: Georges St-Pierre Training Meta
 slug: georges-st-pierre-training-meta
-date: "2021-06-29 17:58:46"
+date: '2021-06-29 17:58:46'
 category: non-technical.snippet
-tags: ["sport", "meta", "training"]
+tags: ['sport', 'meta', 'training']
 ---
 
 import IframeEmbed from '../components/IframeEmbed'

@@ -1,9 +1,9 @@
 ---
 title: Choose Boring Technology
 slug: choose-boring-technology
-date: "2021-06-07 12:24:05"
+date: '2021-06-07 12:24:05'
 category: Technical>Engineering
-tags: ["advice", "management"]
+tags: ['advice', 'management']
 ---
 
 I'm surprised I haven't posted this before because the "choose boring tech" article

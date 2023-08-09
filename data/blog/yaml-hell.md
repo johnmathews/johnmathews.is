@@ -2,7 +2,7 @@
 title: YAML gotchas
 date: 2023-01-12 15:46:00
 category: technical.snippet
-tags: ["yaml", "markup", "JSON"]
+tags: ['yaml', 'markup', 'JSON']
 ---
 
 [The YAML document from hell](https://ruudvanasseldonk.com/2023/01/11/the-yaml-document-from-hell)

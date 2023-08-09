@@ -1,9 +1,9 @@
 ---
 title: Questions For Interesting Conversations
 slug: questions
-date: "2021-2-1 22:05"
+date: '2021-2-1 22:05'
 category: Non-technical>Journal
-tags: ["uncategorized"]
+tags: ['uncategorized']
 ---
 
 1.  What’s the **best piece of advice** you ever received?

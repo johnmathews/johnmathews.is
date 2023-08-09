@@ -1,9 +1,9 @@
 ---
 title: Bat
 slug: bat
-date: "2021-12-03 12:00:34"
+date: '2021-12-03 12:00:34'
 category: Technical>Developer-Tools
-tags: ["cli"]
+tags: ['cli']
 ---
 
 [Bat](https://github.com/sharkdp/bat#adding-new-themes) is like cat, but has

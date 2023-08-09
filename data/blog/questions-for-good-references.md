@@ -1,9 +1,9 @@
 ---
 title: Questions for good references
 slug: questions-for-good-references
-date: "2021-05-27 15:28:49"
+date: '2021-05-27 15:28:49'
 category: Non-technical>Entrepreneurship
-tags: ["marketing"]
+tags: ['marketing']
 ---
 
 Use the following questions to get better references:

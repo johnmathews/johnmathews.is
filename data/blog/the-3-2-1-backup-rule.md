@@ -1,9 +1,9 @@
 ---
 title: The 3-2-1 backup rule
 slug: the-3-2-1-backup-rule
-date: "2021-11-25 10:40:14"
+date: '2021-11-25 10:40:14'
 category: technical.snippet, non-technical.snippet
-tags: ["archive", "data"]
+tags: ['archive', 'data']
 ---
 
 - **3 copies, 2 types of media, 1 copy off-site**

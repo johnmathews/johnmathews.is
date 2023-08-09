@@ -1,8 +1,8 @@
 ---
 title: Git LFS
-date: "2021-06-11 11:52:59"
+date: '2021-06-11 11:52:59'
 category: technical.snippet
-tags: ["git", "lfs", "github-pages"]
+tags: ['git', 'lfs', 'github-pages']
 ---
 
 Key commands

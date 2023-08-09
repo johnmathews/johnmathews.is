@@ -2,7 +2,7 @@
 title: High levels of bitcoin dormancy
 date: 2023-02-26 19:08:34
 category: technical.snippet
-tags: ["bitcoin", "market", "investment"]
+tags: ['bitcoin', 'market', 'investment']
 description:
   Investors are keeping their coins still, with the amount of Bitcoin not budging nearing a new
   all-time high.

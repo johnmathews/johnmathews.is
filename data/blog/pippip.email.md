@@ -1,10 +1,10 @@
 ---
 title: Pippip.Email
 slug: pippip.email
-date: "2020-10-28 13:37"
+date: '2020-10-28 13:37'
 category: Non-technical>Entrepreneurship
-tags: ["pippip"]
-image: "/static/images/pippip.jpg"
+tags: ['pippip']
+image: '/static/images/pippip.jpg'
 tweet: PipPip.Email - event-driven and scheduled email delivery, from days to decades
 ---
 

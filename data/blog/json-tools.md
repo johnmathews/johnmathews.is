@@ -1,9 +1,9 @@
 ---
 title: JSON tools
 slug: json-tools
-date: "2021-03-24 23:10:45"
+date: '2021-03-24 23:10:45'
 category: technical.snippet
-tags: ["json"]
+tags: ['json']
 ---
 
 `jj` - A [stream editor](https://github.com/tidwall/jj)  

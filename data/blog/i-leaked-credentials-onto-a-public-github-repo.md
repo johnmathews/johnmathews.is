@@ -1,9 +1,9 @@
 ---
 title: I Leaked Credentials Onto A Public GitHub Repo
 slug: i-leaked-credentials-onto-a-public-github-repo
-date: "2021-04-15 19:19:35"
+date: '2021-04-15 19:19:35'
 category: Technical>Engineering
-tags: ["hack", "github", "service-account", "keys", "security"]
+tags: ['hack', 'github', 'service-account', 'keys', 'security']
 ---
 
 <TOCInline toc={props.toc} exclude="Overview" toHeading={2} />

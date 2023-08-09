@@ -1,9 +1,9 @@
 ---
 title: Athletes, Careers, and Mental Health
 slug: athletes-and-mental-health
-date: "2021-08-02 12:23:00"
+date: '2021-08-02 12:23:00'
 category: non-technical.snippet
-tags: ["sport", "competition", "comparmentalization", "psychology"]
+tags: ['sport', 'competition', 'comparmentalization', 'psychology']
 ---
 
 Being very good at one particular thing can make it easy to be bad at normal

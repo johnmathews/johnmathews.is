@@ -1,9 +1,9 @@
 ---
 title: How to be an ambitious founder in Europe
 slug: ambitious
-date: "2017-6-9 21:55"
+date: '2017-6-9 21:55'
 category: Non-technical>Entrepreneurship
-tags: ["lis", "startup", "fintech", "europe"]
+tags: ['lis', 'startup', 'fintech', 'europe']
 image:
 tweet: #lis17 #Lisbon #Portugal #startup #entrepreneur
 summary: Creating something that matters is hard. Learn to leverage your time, you can never get it back. Being a successful founder is not impossible, it is always exciting.

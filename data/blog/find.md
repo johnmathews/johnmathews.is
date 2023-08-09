@@ -1,9 +1,9 @@
 ---
 title: Find
 slug: find
-date: "2021-12-03 13:15:28"
+date: '2021-12-03 13:15:28'
 category: technical.snippet
-tags: ["fd", "cli"]
+tags: ['fd', 'cli']
 ---
 
 `fd` is a replacement for `find` with more intuitive defaults.

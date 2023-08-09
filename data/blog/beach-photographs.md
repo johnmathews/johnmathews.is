@@ -1,10 +1,10 @@
 ---
 title: Beach Photos
 slug: beach-photographs
-date: "2021-08-01 11:42"
+date: '2021-08-01 11:42'
 Template: article-photo
 category: Non-technical>Photographs
-tags: ["uncategorized"]
+tags: ['uncategorized']
 ---
 
 ![tracks](/static/images/beach-photos/tracks.jpeg)]

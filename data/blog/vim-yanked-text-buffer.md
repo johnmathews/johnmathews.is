@@ -1,9 +1,9 @@
 ---
 title: Vim register for yanked text
 slug: vim-yanked-text-buffer
-date: "2021-05-05 18:00:44"
+date: '2021-05-05 18:00:44'
 category: technical.snippet
-tags: ["vim", "text"]
+tags: ['vim', 'text']
 ---
 
 It's annoying when you delete something and overwrite your yanked text.

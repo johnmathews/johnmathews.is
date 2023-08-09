@@ -2,7 +2,7 @@
 title: Lessons from history in tackling climate change
 date: 2023-03-03 10:27:00
 category: non-technical.journal
-tags: ["purpose", "change"]
+tags: ['purpose', 'change']
 description:
   An FT article quantifying climate changing activities and contrasting them with otherwise familiar
   benchmarks

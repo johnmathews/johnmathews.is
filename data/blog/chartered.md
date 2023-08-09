@@ -1,10 +1,10 @@
 ---
 title: I'm a chartered accountant
 slug: chartered
-date: "2017-10-19 21:56"
+date: '2017-10-19 21:56'
 category: Non-technical>Learning
-tags: ["icaew", "aca", "accounting"]
-image: "/static/images/icaew_banner.JPEG"
+tags: ['icaew', 'aca', 'accounting']
+image: '/static/images/icaew_banner.JPEG'
 tweet: #ICAEW #accountant
 summary: I've qualified as a chartered accountant and will soon become a member of the Institute of Chartered Accountants in England and Wales.
 ---

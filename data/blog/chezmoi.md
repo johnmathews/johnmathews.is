@@ -1,9 +1,9 @@
 ---
 title: Chezmoi
 slug: chezmoi
-date: "2021-04-20 11:46:46"
+date: '2021-04-20 11:46:46'
 category: Technical>Developer-Tools
-tags: ["automation", "dotfiles"]
+tags: ['automation', 'dotfiles']
 ---
 
 <TOCInline toc={props.toc} exclude="Overview" toHeading={2} />

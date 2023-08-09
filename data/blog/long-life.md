@@ -2,8 +2,8 @@
 title: Long Life
 date: 2023-01-06 13:08:02
 category: Non-technical/Social
-tags: ["life", "death", "health", "friendship", "community"]
-summary: "Findings from a research paper on blue zones: Nine things healthy communities all have in common: Purpose, Movement, Low Stress, Eat lightly, Plants not meat, Wine, Church, Family, Friends"
+tags: ['life', 'death', 'health', 'friendship', 'community']
+summary: 'Findings from a research paper on blue zones: Nine things healthy communities all have in common: Purpose, Movement, Low Stress, Eat lightly, Plants not meat, Wine, Church, Family, Friends'
 ---
 
 An [article](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6125071/)[^4] in the

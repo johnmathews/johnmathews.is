@@ -1,9 +1,9 @@
 ---
 title: Load-testing my Web Analytics Tool
 slug: load-testing-web-analytics-tool
-date: "2021-07-02 15:39:45"
+date: '2021-07-02 15:39:45'
 category: Technical>Web
-tags: ["google-cloud-platform", "cloud-functions", "api"]
+tags: ['google-cloud-platform', 'cloud-functions', 'api']
 ---
 
 <TOCInline toc={props.toc} exclude="Overview" toHeading={2} />

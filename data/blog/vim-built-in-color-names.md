@@ -1,9 +1,9 @@
 ---
 title: Vim built-in color names
 slug: vim-built-in-color-names
-date: "2021-09-29 11:51:08"
+date: '2021-09-29 11:51:08'
 category: technical.snippet
-tags: ["vim"]
+tags: ['vim']
 ---
 
 Script to output colors in a buffer:

@@ -2,7 +2,7 @@
 title: Insanity workouts
 date: 2023-01-09 22:21:43
 category: Non-technical/Other
-tags: ["exercise", "sport", "cardio", "health"]
+tags: ['exercise', 'sport', 'cardio', 'health']
 ---
 
 The Insanity workout program is bodyweight based interval training. I enjoy it because it requires

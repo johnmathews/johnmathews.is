@@ -1,9 +1,9 @@
 ---
 title: Using Vim with large codebases
 slug: vim-for-large-projects
-date: "2021-1-15 15:02"
+date: '2021-1-15 15:02'
 category: Technical>Developer-Tools
-tags: ["uncategorized"]
+tags: ['uncategorized']
 ---
 
 I use Vim as my text editor and IDE. I like that its free, open

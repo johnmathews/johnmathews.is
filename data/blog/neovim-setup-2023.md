@@ -2,8 +2,8 @@
 title: My Neovim setup in 2023
 date: 2023-02-03 15:36:36
 category: Technical.Developer-Tools
-image: "/static/images/neovim-logo.png"
-tags: ["neovim", "tmux", "vim"]
+image: '/static/images/neovim-logo.png'
+tags: ['neovim', 'tmux', 'vim']
 ---
 
 <TOCInline toc={props.toc} exclude="Overview" toHeading={2} />

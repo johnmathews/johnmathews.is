@@ -1,9 +1,9 @@
 ---
 title: Python Notes
 slug: python-notes-2
-date: "2021-3-17 09:12"
+date: '2021-3-17 09:12'
 category: Technical>Developer-Tools
-tags: ["python", "learning notes"]
+tags: ['python', 'learning notes']
 ---
 
 # \_\_call\_\_()

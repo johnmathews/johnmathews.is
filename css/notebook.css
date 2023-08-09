@@ -17,23 +17,23 @@
 }
 
 /* reset input blocks to remove built-in arbitrary and small margins, padding and border */
-#notebookWrapper [class^="input-"] {
+#notebookWrapper [class^='input-'] {
   @apply my-0 border-0 py-0 pl-0 !important;
 }
 
-#notebookWrapper [class^="input-"] p {
+#notebookWrapper [class^='input-'] p {
   @apply my-0 !important;
 }
 
-#notebookWrapper [class^="input-"] div {
+#notebookWrapper [class^='input-'] div {
   @apply w-full !important;
 }
 
-#notebookWrapper [class^="input-"] li {
+#notebookWrapper [class^='input-'] li {
   @apply my-0 !important;
 }
 
-#notebookWrapper [class^="input-"] li p {
+#notebookWrapper [class^='input-'] li p {
   @apply my-0 !important;
 }
 
@@ -57,18 +57,18 @@
 /*   @apply pl-2 !important; */
 /* } */
 
-#notebookWrapper [class^="input-"] pre {
+#notebookWrapper [class^='input-'] pre {
   @apply bg-slate-200 pl-5 dark:bg-slate-700 !important;
 }
-#notebookWrapper [class^="input-"] span {
+#notebookWrapper [class^='input-'] span {
   @apply text-blue-700  dark:text-slate-100;
 }
-#notebookWrapper [class^="output"] pre {
+#notebookWrapper [class^='output'] pre {
   @apply bg-slate-300 pl-5 dark:bg-slate-800 !important;
 }
 
 #notebookWrapper table {
-  @apply mt-3 mb-10 !important;
+  @apply mb-10 mt-3 !important;
 }
 
 #notebookWrapper table th {

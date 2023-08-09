@@ -1,9 +1,9 @@
 ---
 title: zsh suspend or push function
 slug: zsh-suspend-or-push-function
-date: "2021-11-05 11:24:01"
+date: '2021-11-05 11:24:01'
 category: technical.snippet
-tags: ["zsh"]
+tags: ['zsh']
 ---
 
 In zsh you can suspend a command whilst typing it.

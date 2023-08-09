@@ -1,9 +1,9 @@
 ---
 title: The Worst Volume Control UI
 slug: the-worst-volume-control-ui
-date: "2021-07-14 11:11:06"
+date: '2021-07-14 11:11:06'
 category: technical.snippet, non-technical.snippet
-tags: ["ui"]
+tags: ['ui']
 ---
 
 Hilarious article from [UI

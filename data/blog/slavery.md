@@ -1,9 +1,9 @@
 ---
 title: Slavery
 slug: slavery
-date: "2021-09-08 15:33:37"
+date: '2021-09-08 15:33:37'
 category: non-technical.snippet
-tags: ["humanity"]
+tags: ['humanity']
 ---
 
 This [article](https://www.ft.com/content/26f1a120-990f-11e5-95c7-d47aa298f769)

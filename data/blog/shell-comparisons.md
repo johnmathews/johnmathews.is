@@ -1,8 +1,8 @@
 ---
 title: Shell Comparisons
-date: "2021-03-02 23:28:35"
+date: '2021-03-02 23:28:35'
 category: technical.snippet
-tags: ["zsh", "bash", "bsh", "linux", "cli"]
+tags: ['zsh', 'bash', 'bsh', 'linux', 'cli']
 ---
 
 You can group shells into groups:

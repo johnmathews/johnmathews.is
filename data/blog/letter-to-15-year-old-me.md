@@ -2,8 +2,8 @@
 title: Letter to 15 year old me
 date: 2023-02-10 11:13:59
 category: non-technical.snippet
-tags: ["bio", "running"]
-image: "/static/images/15yearme.webp"
+tags: ['bio', 'running']
+image: '/static/images/15yearme.webp'
 ---
 
 ![headerImage](/static/images/15yearme.webp)

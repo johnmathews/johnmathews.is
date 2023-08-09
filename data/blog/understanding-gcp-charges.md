@@ -1,9 +1,9 @@
 ---
 title: Understanding GCP charges
 slug: understanding-gcp-charges
-date: "2021-08-27 12:10:24"
+date: '2021-08-27 12:10:24'
 category: technical.snippet
-tags: ["google-cloud-platform"]
+tags: ['google-cloud-platform']
 ---
 
 A clear

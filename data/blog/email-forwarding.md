@@ -1,9 +1,9 @@
 ---
 title: Forward Email
 slug: email-forwarding
-date: "2021-05-14 13:44:11"
+date: '2021-05-14 13:44:11'
 category: technical.snippet
-tags: ["email"]
+tags: ['email']
 ---
 
 I know about [ImprovMX](https://improvmx.com/), which used to be great because you could do a lot for

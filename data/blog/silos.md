@@ -1,19 +1,19 @@
 ---
 title: Introduction to my doctorate research - Silos
-date: "2016-10-02 00:06"
+date: '2016-10-02 00:06'
 Author: John Mathews
 category: Technical>Other
 tags:
   [
-    "doctorate",
-    "granular flow",
-    "granular materials",
-    "phd",
-    "research",
-    "engineering",
-    "silo",
-    "thesis",
-    "vienna",
+    'doctorate',
+    'granular flow',
+    'granular materials',
+    'phd',
+    'research',
+    'engineering',
+    'silo',
+    'thesis',
+    'vienna',
   ]
 slug: silos
 status: published

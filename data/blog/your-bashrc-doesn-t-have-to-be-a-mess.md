@@ -1,9 +1,9 @@
 ---
 title: Your .bashrc doesn't have to be a mess
 slug: your-bashrc-doesn-t-have-to-be-a-mess
-date: "2021-06-11 11:14:41"
+date: '2021-06-11 11:14:41'
 category: technical.snippet
-tags: ["bash", "shell", "zsh"]
+tags: ['bash', 'shell', 'zsh']
 ---
 
 [Blog post](https://write.as/bpsylevc6lliaspe) demonstrating how to split a

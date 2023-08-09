@@ -1,9 +1,9 @@
 ---
 title: Split Long Strings
 slug: split-long-output-onto-multiple-lines
-date: "2021-03-10 23:19:12"
+date: '2021-03-10 23:19:12'
 category: technical.snippet
-tags: ["bash", "linux"]
+tags: ['bash', 'linux']
 ---
 
 Split long strings (or command outputs) onto multiple lines

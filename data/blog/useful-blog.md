@@ -1,9 +1,9 @@
 ---
 title: An interesting blog
 slug: useful-blog
-date: "2021-04-29 17:35:17"
+date: '2021-04-29 17:35:17'
 category: technical.snippet
-tags: ["linux", "shell", "fzf", "workflow", "zsh", "bash", "builtin"]
+tags: ['linux', 'shell', 'fzf', 'workflow', 'zsh', 'bash', 'builtin']
 ---
 
 Just found a really useful [blog](https://seb.jambor.dev)

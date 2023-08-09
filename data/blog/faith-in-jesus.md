@@ -1,10 +1,10 @@
 ---
 title: Why Talk About Jesus?
 slug: faith-in-jesus
-date: "2021-1-5 18:24"
+date: '2021-1-5 18:24'
 category: Non-technical>Other
 status: Published
-tags: ["uncategorized"]
+tags: ['uncategorized']
 ---
 
 ## Start with happiness

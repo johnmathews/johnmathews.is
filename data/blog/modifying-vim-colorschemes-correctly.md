@@ -1,9 +1,9 @@
 ---
 title: Nested Auto Commands for Overriding Colorschemes
 slug: modifying-vim-colorschemes-correctly
-date: "2021-05-13 14:12"
+date: '2021-05-13 14:12'
 category: technical.snippet
-tags: ["vim"]
+tags: ['vim']
 ---
 
 A [snippet](https://gist.github.com/romainl/379904f91fa40533175dfaec4c833f2f)

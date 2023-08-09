@@ -1,9 +1,9 @@
 ---
 title: Proverbs 14
 slug: proverbs-14
-date: "2021-06-14 15:20:40"
+date: '2021-06-14 15:20:40'
 category: Non-technical>Journal
-tags: ["books", "bible", "wisdom"]
+tags: ['books', 'bible', 'wisdom']
 ---
 
 $^{1}$<mark>The wisest of women builds her house, but folly with her own hands

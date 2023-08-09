@@ -1,9 +1,9 @@
 ---
 title: Visual mathematical proofs
 slug: visual-mathematical-proofs
-date: "2021-09-11 11:30:51"
+date: '2021-09-11 11:30:51'
 category: non-technical.snippet
-tags: ["math"]
+tags: ['math']
 ---
 
 A

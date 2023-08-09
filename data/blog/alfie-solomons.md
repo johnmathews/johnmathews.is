@@ -1,9 +1,9 @@
 ---
 title: Alfie Solomons
 slug: alfie-solomons
-date: "2021-06-22 13:55:29"
+date: '2021-06-22 13:55:29'
 category: non-technical.snippet
-tags: ["movie", "youtube", "peaky-blinders", "humanity"]
+tags: ['movie', 'youtube', 'peaky-blinders', 'humanity']
 ---
 
 import IframeEmbed from '../components/IframeEmbed'

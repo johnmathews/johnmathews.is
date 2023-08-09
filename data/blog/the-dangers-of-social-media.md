@@ -1,9 +1,9 @@
 ---
 title: The dangers of social media
 slug: the-dangers-of-social-media
-date: "2021-09-16 10:37:28"
+date: '2021-09-16 10:37:28'
 category: technical.snippet, non-technical.snippet
-tags: ["technology", "mobile", "social-media"]
+tags: ['technology', 'mobile', 'social-media']
 ---
 
 A [ledger](https://ledger.humanetech.com/) (what's a ledger? It's a webpage)

@@ -1,9 +1,9 @@
 ---
 title: Notes on learning Django
 slug: learning-to-django
-date: "2021-1-14 14:17"
+date: '2021-1-14 14:17'
 category: Technical>Web
-tags: ["uncategorized"]
+tags: ['uncategorized']
 ---
 
 <TOCInline toc={props.toc} exclude="Overview" toHeading={2} />

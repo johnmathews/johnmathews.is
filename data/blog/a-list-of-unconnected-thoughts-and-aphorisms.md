@@ -1,9 +1,9 @@
 ---
 title: A List Of Unconnected Thoughts And Aphorisms
 slug: a-list-of-unconnected-thoughts-and-aphorisms
-date: "2021-2-1 22:27"
+date: '2021-2-1 22:27'
 category: Non-technical>Journal
-tags: ["uncategorized"]
+tags: ['uncategorized']
 ---
 
 1.  Do the people you care about love you back?

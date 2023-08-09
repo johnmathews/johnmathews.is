@@ -1,9 +1,9 @@
 ---
 title: Linux performance analysis in 60 seconds
 slug: linux-performance-analysis-in-60-seconds
-date: "2021-09-27 16:41:15"
+date: '2021-09-27 16:41:15'
 category: technical.snippet
-tags: ["linux", "security"]
+tags: ['linux', 'security']
 ---
 
 A [blog

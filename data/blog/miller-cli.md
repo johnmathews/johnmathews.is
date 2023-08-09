@@ -1,9 +1,9 @@
 ---
 title: Miller CLI
 slug: miller-cli
-date: "2021-08-25 10:34:31"
+date: '2021-08-25 10:34:31'
 category: technical.snippet
-tags: ["cli", "tools"]
+tags: ['cli', 'tools']
 ---
 
 [Miller](https://github.com/johnkerl/miller) is like awk, sed, cut, join, and

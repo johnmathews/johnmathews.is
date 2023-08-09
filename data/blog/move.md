@@ -1,10 +1,10 @@
 ---
 title: Move
 slug: move
-date: "2017-7-8 12:26"
+date: '2017-7-8 12:26'
 category: Non-technical>Journal
-tags: ["lifestyle"]
-image: "/static/images/square_mile.jpg"
+tags: ['lifestyle']
+image: '/static/images/square_mile.jpg'
 tweet:
 summary: Training's over
 status:

@@ -1,8 +1,8 @@
 ---
 title: Is success luck or hardwork?
-date: "2023-02-13 11:00:46"
+date: '2023-02-13 11:00:46'
 category: non-technical.snippet
-tags: ["math", "veritasium", "youtube"]
+tags: ['math', 'veritasium', 'youtube']
 ---
 
 import IframeEmbed from '../components/IframeEmbed'

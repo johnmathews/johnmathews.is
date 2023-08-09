@@ -2,10 +2,10 @@
 title: Bitcoin Lightning
 status: Published
 slug: bitcoin-lightning
-date: "2019-1-24 12:57"
+date: '2019-1-24 12:57'
 category: Technical>Cryptocurrencies
-tags: ["bitcoin", "lightning", "crypto"]
-image: "/static/images/lightning_sticker.jpg"
+tags: ['bitcoin', 'lightning', 'crypto']
+image: '/static/images/lightning_sticker.jpg'
 tweet: Bitcoin Lightning, on a Raspberry Pi...
 summary: I set up a  node on the Bitcoin Lightning network and sent a payment of &#36;0.005 which confirmed in a few seconds.
 ---

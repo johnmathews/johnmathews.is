@@ -1,9 +1,9 @@
 ---
 title: Counter intuitive facts
-date: "2021-10-06 12:30:08"
+date: '2021-10-06 12:30:08'
 draft: false
 category: Technical.Other
-tags: ["math", "science"]
+tags: ['math', 'science']
 ---
 
 Thanks to [Alexander Kruel](https://substack.com/profile/2149674-alexander-kruel) for this list:

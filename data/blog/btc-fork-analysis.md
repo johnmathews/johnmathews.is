@@ -1,20 +1,20 @@
 ---
 title: Analysis of the mean and median value of transactions on 5 Blockchains
-date: "2019-09-02"
+date: '2019-09-02'
 author: John Mathews
-category: ["technical.data"]
+category: ['technical.data']
 tags:
   [
-    "bitcoin",
-    "blockchain",
-    "litecoin",
-    "dogecoin",
-    "bitcoin cash",
-    "bitcoin sv",
-    "finance",
-    "notebook",
+    'bitcoin',
+    'blockchain',
+    'litecoin',
+    'dogecoin',
+    'bitcoin cash',
+    'bitcoin sv',
+    'finance',
+    'notebook',
   ]
-image: "/static/images/btc_board.jpg"
+image: '/static/images/btc_board.jpg'
 tweet: An analysis of the mean and median value of transactions on 5 blockchains
 status: Published
 isNotebook: true

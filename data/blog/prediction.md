@@ -1,10 +1,10 @@
 ---
 title: Prediction Markets
 slug: prediction
-date: "2018-6-7 12:29"
+date: '2018-6-7 12:29'
 category: Technical>Cryptocurrencies
-image: "/static/images/dover.jpg"
-tags: ["gnosis", "prediction", "markets", "brexit", "betting"]
+image: '/static/images/dover.jpg'
+tags: ['gnosis', 'prediction', 'markets', 'brexit', 'betting']
 tweet: Prediction markets - more reliable than surveys, experts and many statistical methods, and they're getting easier and cheaper! #Gnosis
 summary: Prediction markets can be more accurate than surveys, experts, and polls, and they're becoming easier and cheaper to create.
 ---

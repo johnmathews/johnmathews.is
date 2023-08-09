@@ -1,10 +1,10 @@
 ---
 title: Bitcoin compared to gold
 slug: bitcoin-vs-gold
-date: "2017-11-21 17:35"
+date: '2017-11-21 17:35'
 category: Technical>Cryptocurrencies
-tags: ["bitcoin", "gold", "safe haven"]
-image: "/static/images/gold.jpg"
+tags: ['bitcoin', 'gold', 'safe haven']
+image: '/static/images/gold.jpg'
 tweet: why #bitcoin will replace #gold as a #safehaven #assetstore
 summary: Bitcoin will become a safe haven asset comparable to gold
 ---

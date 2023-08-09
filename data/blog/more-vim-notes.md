@@ -1,9 +1,9 @@
 ---
 title: More VIM Notes
 slug: more-vim-notes
-date: "2021-5-10 10:44"
+date: '2021-5-10 10:44'
 category: Technical>Developer-Tools
-tags: ["tips", "vim"]
+tags: ['tips', 'vim']
 ---
 
 <TOCInline toc={props.toc} exclude="Overview" toHeading={2} />

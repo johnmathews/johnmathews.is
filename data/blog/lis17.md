@@ -1,10 +1,10 @@
 ---
 title: The Lisbon Investment Summit
 slug: lis17
-date: "2017-6-9 17:53"
+date: '2017-6-9 17:53'
 category: Non-technical>Entrepreneurship
-tags: ["fintech", "startup", "europe", "lis"]
-image: "/static/images/lis17.jpeg"
+tags: ['fintech', 'startup', 'europe', 'lis']
+image: '/static/images/lis17.jpeg'
 tweet: #lis17 #Lisbon #Portugal #startup #entrepreneur
 summary: The Lisbon investment Summit was full of Investors as well as Founders. The sessions were good enough but the real value was in the conversations.
 status: Published

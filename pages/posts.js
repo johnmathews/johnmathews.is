@@ -82,7 +82,7 @@ export default function Blog({ posts }) {
         })
       }
     }
-  }, [router])
+  }, [router, dispatch])
 
   return (
     <>

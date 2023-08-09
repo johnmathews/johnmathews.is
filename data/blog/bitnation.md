@@ -1,9 +1,9 @@
 ---
 title: Bitnation
-date: "2017-9-14 11:25"
+date: '2017-9-14 11:25'
 category: Technical>Cryptocurrencies
-tags: ["bitnation", "blockchain", "disintermediation", "identity", "consulting", "finance"]
-image: "/static/images/BITNATION-logo-website-white.png"
+tags: ['bitnation', 'blockchain', 'disintermediation', 'identity', 'consulting', 'finance']
+image: '/static/images/BITNATION-logo-website-white.png'
 tweet: #Bitnation - an ambitious startup with a growing team. Building tools for decentralised governance and identity management.
 ---
 

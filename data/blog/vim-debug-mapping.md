@@ -1,9 +1,9 @@
 ---
 title: View a List of Keyboard Mappings in Vim
 slug: vim-debug-mapping
-date: "2021-05-18 10:37:17"
+date: '2021-05-18 10:37:17'
 category: technical.snippet
-tags: ["vim"]
+tags: ['vim']
 ---
 
 `:map` → show a list of the current keyboard mappings for _normal_, _visual_, _select_ and _operator pending_ modes.

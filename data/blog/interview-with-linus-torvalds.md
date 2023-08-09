@@ -1,8 +1,8 @@
 ---
 title: Linus Torvalds
-date: "2021-04-29 17:38:33"
+date: '2021-04-29 17:38:33'
 category: technical.snippet
-tags: ["linux", "interview", "linus"]
+tags: ['linux', 'interview', 'linus']
 ---
 
 From an [Interview](https://tag1consulting.com/blog/interview-linus-torvalds-linux-and-git:):

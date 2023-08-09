@@ -1,9 +1,9 @@
 ---
 title: Man swallowed by whale
 slug: man-swallowed-by-whale
-date: "2021-06-12 07:11:46"
+date: '2021-06-12 07:11:46'
 category: non-technical.snippet
-tags: ["whale"]
+tags: ['whale']
 ---
 
 A lobster diver was swallowed by a humpback whale. Then it spit him out.

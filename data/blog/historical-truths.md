@@ -1,9 +1,9 @@
 ---
 title: Can an explanation of an historical event ever be completely true?
 slug: historical-truths
-date: "2021-07-06 16:53:56"
+date: '2021-07-06 16:53:56'
 category: Non-technical>Journal
-tags: ["history"]
+tags: ['history']
 ---
 
 We use historical events as examples to learn from, but is it possible to

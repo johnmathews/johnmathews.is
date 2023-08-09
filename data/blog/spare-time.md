@@ -1,9 +1,9 @@
 ---
 title: Spare time
-date: "2016-08-13 21:15"
+date: '2016-08-13 21:15'
 Author: John Mathews
 category: Non-technical>Learning
-tags: ["habits", "advice", "reflection"]
+tags: ['habits', 'advice', 'reflection']
 slug: spare-time
 status: published
 ---

@@ -1,9 +1,9 @@
 ---
 title: nvim.CoC
 slug: nvim-coc
-date: "2021-12-03 17:41:26"
+date: '2021-12-03 17:41:26'
 category: technical.snippet
-tags: ["vim"]
+tags: ['vim']
 ---
 
 I've been trying to replace ALE with CoC. It didn't work. Maybe I have unusually

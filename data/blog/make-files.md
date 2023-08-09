@@ -1,9 +1,9 @@
 ---
 title: Make files
 slug: make-files
-date: "2021-09-28 11:40:13"
+date: '2021-09-28 11:40:13'
 category: technical.snippet
-tags: ["automation", "build-system"]
+tags: ['automation', 'build-system']
 ---
 
 This

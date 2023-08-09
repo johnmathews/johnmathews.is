@@ -1,8 +1,8 @@
 ---
 title: Adding Search
-date: "2021-3-12 17:27"
+date: '2021-3-12 17:27'
 category: Technical.Web
-tags: ["blog", "search", "tinysearch", "web"]
+tags: ['blog', 'search', 'tinysearch', 'web']
 ---
 
 I've added search to this blog. Results are generated as you type. Try it by

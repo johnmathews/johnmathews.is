@@ -1,9 +1,9 @@
 ---
 title: Proverbs 12
 slug: proverbs-12
-date: "2021-06-02 12:24:40"
+date: '2021-06-02 12:24:40'
 category: Non-technical>Journal
-tags: ["bible", "proverbs", "wisdom"]
+tags: ['bible', 'proverbs', 'wisdom']
 ---
 
 The chapter starts with <mark>"Whoever loves discipline loves knowledge, but he

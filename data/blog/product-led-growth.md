@@ -2,10 +2,10 @@
 title: Product-Led Growth
 status: Published
 slug: product-led-growth
-date: "2020-12-8 12:59"
+date: '2020-12-8 12:59'
 category: Non-technical>Entrepreneurship
-tags: ["marketing", "startups"]
-image: "/static/images/product-led-growth.jpg"
+tags: ['marketing', 'startups']
+image: '/static/images/product-led-growth.jpg'
 summary: My notes on "Product-Led Growth" by Wes Bush
 ---
 

@@ -1,9 +1,9 @@
 ---
 title: 1 Peter 1 vs 3
 slug: 1-peter-1-vs-3
-date: "2021-08-27 15:09:08"
+date: '2021-08-27 15:09:08'
 category: Non-technical>Journal
-tags: ["bible"]
+tags: ['bible']
 ---
 
 <mark>May grace and peace be multiplied to you.</mark>

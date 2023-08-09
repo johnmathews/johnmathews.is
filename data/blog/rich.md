@@ -1,9 +1,9 @@
 ---
 title: Rich
 slug: rich
-date: "2021-06-16 12:29:43"
+date: '2021-06-16 12:29:43'
 category: technical.snippet
-tags: ["python", "console", "shell"]
+tags: ['python', 'console', 'shell']
 ---
 
 ![rich module](/static/images/rich-python.png)/images/rich-python.png)

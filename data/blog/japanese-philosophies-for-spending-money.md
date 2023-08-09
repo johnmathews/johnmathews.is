@@ -1,9 +1,9 @@
 ---
 title: Japanese philosophies for spending money
 slug: japanese-philosophies-for-spending-money
-date: "2021-11-14 11:05:54"
+date: '2021-11-14 11:05:54'
 category: non-technical.snippet
-tags: ["money", "finance", "japan"]
+tags: ['money', 'finance', 'japan']
 ---
 
 ## Chisoku

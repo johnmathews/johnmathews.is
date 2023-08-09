@@ -1,9 +1,9 @@
 ---
 title: Tmux tutorials
 slug: tmux
-date: "2022-05-09 13:41:21"
+date: '2022-05-09 13:41:21'
 category: technical.snippet
-tags: ["tmux"]
+tags: ['tmux']
 ---
 
 A handy [site](https://waylonwalker.com/tmux-nav-2021/) with lots of tmux info,

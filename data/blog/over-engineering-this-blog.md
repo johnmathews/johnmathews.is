@@ -1,8 +1,8 @@
 ---
 title: Over-Engineering this blog
-date: "2021-4-5 11:54"
+date: '2021-4-5 11:54'
 category: Technical.Web, Non-technical.Journal
-tags: ["blog", "javascript", "self-reflection"]
+tags: ['blog', 'javascript', 'self-reflection']
 ---
 
 Over the last few weeks I've spent an unreasonable amount of time and energy making unnecessary

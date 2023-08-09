@@ -2,7 +2,7 @@
 title: The Impact of a Coin Toss on Major Life Decisions
 date: 2023-01-18 10:18:08
 category: Non-technical.Social
-tags: ["academic", "happiness"]
+tags: ['academic', 'happiness']
 ---
 
 [This paper](https://www.gwern.net/docs/psychology/cognitive-bias/2020-levitt.pdf) concludes that

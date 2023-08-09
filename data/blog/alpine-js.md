@@ -1,9 +1,9 @@
 ---
 title: alpine.js
 slug: alpine-js
-date: "2021-11-09 10:53:34"
+date: '2021-11-09 10:53:34'
 category: technical.snippet
-tags: ["javascript", "front-end", "ui"]
+tags: ['javascript', 'front-end', 'ui']
 ---
 
 An introductory

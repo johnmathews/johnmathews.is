@@ -2,7 +2,7 @@
 title: What is an engineering strategy
 date: 2023-02-20 12:57:44
 category: technical.snippet
-tags: ["engineering", "management"]
+tags: ['engineering', 'management']
 ---
 
 A [blog post](https://lethain.com/eng-strategies/) about engineering strategy. This author has

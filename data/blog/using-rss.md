@@ -1,9 +1,9 @@
 ---
 title: Using RSS
 slug: using-rss
-date: "2021-1-14 16:52"
+date: '2021-1-14 16:52'
 category: Non-technical.Learning
-tags: ["uncategorized"]
+tags: ['uncategorized']
 ---
 
 ### Updated: 10 Feb 2021

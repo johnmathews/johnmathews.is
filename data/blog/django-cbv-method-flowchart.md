@@ -1,9 +1,9 @@
 ---
 title: Django CBV method flowchart
 slug: django-cbv-method-flowchart
-date: "2022-02-16 09:33:28"
+date: '2022-02-16 09:33:28'
 category: Technical>Web
-tags: ["django", "back-end", "web-dev"]
+tags: ['django', 'back-end', 'web-dev']
 ---
 
 The

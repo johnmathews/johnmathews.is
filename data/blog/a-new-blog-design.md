@@ -1,10 +1,10 @@
 ---
 title: A New Blog Design
 slug: a-new-blog-design
-date: "2020-12-18 14:37"
+date: '2020-12-18 14:37'
 category: Technical>Web
 summary:
-tags: ["uncategorized"]
+tags: ['uncategorized']
 ---
 
 The blog has a new design! Out with the old, and in with well-written HTML, an

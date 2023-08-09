@@ -1,10 +1,10 @@
 ---
 title: Spaarndam
 slug: photographs
-date: "2021-1-22 11:42"
+date: '2021-1-22 11:42'
 Template: article-photo
 category: Non-technical>Photographs
-tags: ["uncategorized"]
+tags: ['uncategorized']
 ---
 
 [![dog walker](/static/images/photos/dog_walker.jpeg)](/static/images/photos/dog_walker.jpeg)

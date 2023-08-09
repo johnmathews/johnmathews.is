@@ -1,9 +1,9 @@
 ---
 title: Where and when will the current Bitcoin market peak?
 slug: when-bitcoin-top
-date: "2021-04-27 17:46:58"
+date: '2021-04-27 17:46:58'
 category: Technical>Cryptocurrencies
-tags: ["bitcoin", "finance", "markets"]
+tags: ['bitcoin', 'finance', 'markets']
 ---
 
 # Buying Checklist

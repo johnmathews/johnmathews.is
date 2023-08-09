@@ -1,9 +1,9 @@
 ---
 title: Adding Keyboard Navigation
 slug: adding-keyboard-navigation
-date: "2021-04-12 22:50:48"
+date: '2021-04-12 22:50:48'
 category: technical.snippet
-tags: ["blog", "jam", "jquery"]
+tags: ['blog', 'jam', 'jquery']
 ---
 
 _I added keyboard navigation to my blog and it works really well. Now I find

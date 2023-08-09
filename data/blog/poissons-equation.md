@@ -1,9 +1,9 @@
 ---
 title: Poisson's Equation
 slug: poissons-equation
-date: "2021-07-06 18:12:12"
+date: '2021-07-06 18:12:12'
 category: non-technical.snippet
-tags: ["math"]
+tags: ['math']
 ---
 
 A great [article](https://mattferraro.dev/posts/poissons-equation) introducing

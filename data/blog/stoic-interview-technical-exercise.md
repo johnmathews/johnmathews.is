@@ -1,8 +1,8 @@
 ---
 title: Coding exercise for a technical interview
-date: "2021-06-14"
+date: '2021-06-14'
 slug: stoic-interview-technical-exercise
-category: "Technical.Data"
-tags: ["trading", "finance"]
+category: 'Technical.Data'
+tags: ['trading', 'finance']
 isNotebook: true
 ---

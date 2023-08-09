@@ -1,9 +1,9 @@
 ---
 title: Domain Name Registrars
 slug: domain-name-registrars
-date: "2021-05-03 17:49:59"
+date: '2021-05-03 17:49:59'
 category: technical.snippet
-tags: ["web"]
+tags: ['web']
 ---
 
 - [https://namecheap.com](https://namecheap.com) (cheap)

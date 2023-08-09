@@ -1,9 +1,9 @@
 ---
 title: Different Views For Different Users
 slug: different-views-for-different-users
-date: "2021-1-19 10:32"
+date: '2021-1-19 10:32'
 category: Technical>Web
-tags: ["uncategorized"]
+tags: ['uncategorized']
 ---
 
 This blog serves a variety of purposes. It's partly a journal of how I'm

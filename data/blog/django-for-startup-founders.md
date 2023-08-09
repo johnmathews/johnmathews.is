@@ -1,9 +1,9 @@
 ---
 title: Django for Startup Founders
 slug: django-for-startup-founders
-date: "2021-06-23 20:55:46"
+date: '2021-06-23 20:55:46'
 category: technical.snippet, non-technical.snippet
-tags: ["django", "saas", "startups", "python"]
+tags: ['django', 'saas', 'startups', 'python']
 ---
 
 Better read this

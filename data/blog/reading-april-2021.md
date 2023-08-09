@@ -1,8 +1,8 @@
 ---
 title: Reading - April 2021
-date: "2021-04-21 12:55:20"
+date: '2021-04-21 12:55:20'
 category: Non-technical.Journal, Technical.Other
-tags: ["reading"]
+tags: ['reading']
 ---
 
 <TOCInline toc={props.toc} exclude="Overview" toHeading={2} />

@@ -1,9 +1,9 @@
 ---
 title: Coursera's "Data Science Specialisation"
-date: "2016-08-01 13:30"
+date: '2016-08-01 13:30'
 Author: John Mathews
 category: Technical>Data
-tags: ["coursera", "data science", "r"]
+tags: ['coursera', 'data science', 'r']
 slug: courseras-data-science-specialisation
 status: published
 ---

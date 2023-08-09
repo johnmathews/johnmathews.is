@@ -1,9 +1,9 @@
 ---
 title: Flee
 slug: flee
-date: "2017-7-4 08:42"
+date: '2017-7-4 08:42'
 category: Non-technical>Journal
-tags: ["poetry"]
+tags: ['poetry']
 ---
 
 Summer children <br></br>

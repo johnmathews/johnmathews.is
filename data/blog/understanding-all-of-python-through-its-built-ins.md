@@ -1,9 +1,9 @@
 ---
 title: Understanding all of Python, through its built-ins
-date: "2021-10-11 10:52:17"
+date: '2021-10-11 10:52:17'
 draft: true
 category: Technical.Developer-Tools
-tags: ["python", "programming"]
+tags: ['python', 'programming']
 ---
 
 A long and interesting article [article](https://sadh.life/post/builtins/) about

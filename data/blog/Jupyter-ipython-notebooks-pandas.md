@@ -1,8 +1,8 @@
 ---
 title: Jupyter (iPython) notebooks + Pandas
-date: "2016-08-03 13:04"
+date: '2016-08-03 13:04'
 category: Technical>Developer-Tools
-tags: ["data", "jupyter notebook", "pandas", "python"]
+tags: ['data', 'jupyter notebook', 'pandas', 'python']
 ---
 
 When working with more data than can fit in an Excel file, or when you

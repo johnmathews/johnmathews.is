@@ -1,9 +1,9 @@
 ---
 title: Unison helper
 slug: unison-helper
-date: "2021-11-23 15:09:46"
+date: '2021-11-23 15:09:46'
 category: Technical>Developer-Tools
-tags: ["linux", "syncronization"]
+tags: ['linux', 'syncronization']
 ---
 
 [Unison](https://www.cis.upenn.edu/~bcpierce/unison/) is a file synchronization

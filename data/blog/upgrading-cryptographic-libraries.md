@@ -1,8 +1,8 @@
 ---
 title: Upgrading Cryptographic Libraries
-date: "2021-07-10 11:17:16"
+date: '2021-07-10 11:17:16'
 category: technical.snippet
-tags: ["hashing", "versioning"]
+tags: ['hashing', 'versioning']
 ---
 
 [Blog post](https://gcollazo.com/eventually-you-will-need-to-upgrade-the-crypto/) about how to make it easier to upgrade a cryptographic or hashing library.

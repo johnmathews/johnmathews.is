@@ -1,9 +1,9 @@
 ---
 title: Vim spellcheck commands
 slug: vim-spell
-date: "2021-05-27 16:14:57"
+date: '2021-05-27 16:14:57'
 category: technical.snippet
-tags: ["vim"]
+tags: ['vim']
 ---
 
 - `[s` or `]s` → go to next/previous bad word

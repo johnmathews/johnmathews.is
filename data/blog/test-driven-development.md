@@ -1,9 +1,9 @@
 ---
 title: Test Driven Development
 slug: test-driven-development
-date: "2021-1-6 17:50"
+date: '2021-1-6 17:50'
 category: Technical>Developer-Tools
-tags: ["python", "django", "testing", "web-app"]
+tags: ['python', 'django', 'testing', 'web-app']
 ---
 
 Test Driven Development was mind-bending when I first grappled with it:

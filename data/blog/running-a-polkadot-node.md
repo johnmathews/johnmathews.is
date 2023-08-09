@@ -2,9 +2,9 @@
 title: >
   Polkadot: Running and interacting with a full node
 slug: running-a-polkadot-node
-date: "2021-3-1 17:40"
+date: '2021-3-1 17:40'
 category: Technical>Cryptocurrencies
-tags: ["uncategorized"]
+tags: ['uncategorized']
 ---
 
 I recently set up a Polkadot node on Google Cloud Platform that could create

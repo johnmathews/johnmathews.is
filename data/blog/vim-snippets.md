@@ -1,9 +1,9 @@
 ---
 title: Vim Snippets
 slug: vim-snippets
-date: "2021-05-13 13:04:09"
+date: '2021-05-13 13:04:09'
 category: technical.snippet
-tags: ["vim", "netrw"]
+tags: ['vim', 'netrw']
 ---
 
 A useful collection of

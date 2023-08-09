@@ -1,9 +1,9 @@
 ---
 title: Arrow syntax in bash
 slug: arrow-syntax-in-bash
-date: "2021-04-01 22:59:00"
+date: '2021-04-01 22:59:00'
 category: technical.snippet
-tags: ["bash", "syntax"]
+tags: ['bash', 'syntax']
 ---
 
 `bar << foo` bar will stop reading input when it reached "foo".

@@ -1,9 +1,9 @@
 ---
 title: Validating CloudFlare analytics
 slug: validating-cloudflare-analytics
-date: "2021-06-29 17:40:38"
+date: '2021-06-29 17:40:38'
 category: Technical>Web
-tags: ["uncategorized"]
+tags: ['uncategorized']
 ---
 
 <TOCInline toc={props.toc} exclude="Overview" toHeading={2} />

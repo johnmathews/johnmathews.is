@@ -1,9 +1,9 @@
 ---
 title: Rearrange splits in Vim
 slug: vim-split-rearranging
-date: "2021-03-29 23:09:27"
+date: '2021-03-29 23:09:27'
 category: technical.snippet
-tags: ["vim"]
+tags: ['vim']
 ---
 
 `<C-w>x` - swap buffers, but keep arrangement the same

@@ -1,9 +1,9 @@
 ---
 title: Global Aliases
 slug: global-aliases
-date: "2021-05-05 18:02:11"
+date: '2021-05-05 18:02:11'
 category: technical.snippet
-tags: ["alias", "linux"]
+tags: ['alias', 'linux']
 ---
 
 If you want to alias a bunch of arguments for a command, use global aliases:

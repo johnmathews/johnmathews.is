@@ -1,9 +1,9 @@
 ---
 title: Predicting the Future using Human Nature and Technology
 slug: what-happens-next
-date: "2021-1-20 14:05"
+date: '2021-1-20 14:05'
 category: Non-technical>Social
-tags: ["uncategorized"]
+tags: ['uncategorized']
 ---
 
 Predicting the future sounds like a tough problem, but we try to do it all the

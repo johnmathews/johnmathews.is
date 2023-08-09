@@ -1,9 +1,9 @@
 ---
 title: Ansible
 slug: ansible
-date: "2021-04-12 11:40:41"
+date: '2021-04-12 11:40:41'
 category: Technical>Developer-Tools
-tags: ["ansible", "servers", "ssh", "automation"]
+tags: ['ansible', 'servers', 'ssh', 'automation']
 ---
 
 # Background

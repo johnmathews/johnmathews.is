@@ -1,9 +1,9 @@
 ---
 title: Playing with Google Cloud Platform
 slug: playing-with-google-cloud-platform
-date: "2021-07-13 21:18:29"
+date: '2021-07-13 21:18:29'
 category: Technical>Engineering
-tags: ["cloud", "google-cloud-platform", "serverless"]
+tags: ['cloud', 'google-cloud-platform', 'serverless']
 ---
 
 Building my own [web analytics](analytics) has

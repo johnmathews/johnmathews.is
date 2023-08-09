@@ -1,9 +1,9 @@
 ---
 title: My dead dad's journal
 slug: my-dead-dads-journal
-date: "2021-08-26 13:32:50"
+date: '2021-08-26 13:32:50'
 category: non-technical.snippet
-tags: ["humanity"]
+tags: ['humanity']
 ---
 
 _Your relationships will come to define your life more than anything else._

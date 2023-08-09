@@ -1,9 +1,9 @@
 ---
 title: Tools to help children learn to code
 slug: tools-to-help-children-learn-to-code
-date: "2022-02-09 13:48:20"
+date: '2022-02-09 13:48:20'
 category: technical.snippet, non-technical.snippet
-tags: ["children", "learning"]
+tags: ['children', 'learning']
 ---
 
 A

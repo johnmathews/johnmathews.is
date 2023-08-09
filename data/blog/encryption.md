@@ -1,17 +1,17 @@
 ---
 title: Encryption
-date: "2016-08-30 23:04"
+date: '2016-08-30 23:04'
 Author: John Mathews
 category: Technical>Cryptocurrencies
 tags:
   [
-    "encryption",
-    "rsa",
-    "dlt",
-    "blockchains",
-    "bitcoin",
-    "digital currencies",
-    "public key cryptography",
+    'encryption',
+    'rsa',
+    'dlt',
+    'blockchains',
+    'bitcoin',
+    'digital currencies',
+    'public key cryptography',
   ]
 slug: encryption
 status: published
@@ -92,8 +92,8 @@ shrinks. A better trap door function is required.
 
 ## Overview of the RSA algorithm
 
-Named after its founders ([Ron Rivest](https://en.wikipedia.org/wiki/Ron_Rivest "Ron Rivest"), [Adi Shamir](https://en.wikipedia.org/wiki/Adi_Shamir "Adi
-Shamir"), and [Leonard Adleman](https://en.wikipedia.org/wiki/Leonard_Adleman "Leonard ")), RSA was one of the first public-key encryption algorithms and is
+Named after its founders ([Ron Rivest](https://en.wikipedia.org/wiki/Ron_Rivest 'Ron Rivest'), [Adi Shamir](https://en.wikipedia.org/wiki/Adi_Shamir 'Adi
+Shamir'), and [Leonard Adleman](https://en.wikipedia.org/wiki/Leonard_Adleman 'Leonard ')), RSA was one of the first public-key encryption algorithms and is
 still widely used.
 
 RSA (as well as other cryptographic techniques) makes use of a number line which

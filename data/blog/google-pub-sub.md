@@ -1,9 +1,9 @@
 ---
 title: Google Pub/Sub
 slug: google-pub-sub
-date: "2021-09-20 21:09:20"
+date: '2021-09-20 21:09:20'
 category: technical.snippet
-tags: ["google-cloud-platform", "message-systems"]
+tags: ['google-cloud-platform', 'message-systems']
 ---
 
 Google Pub/Sub has client libraries in all the usual languages. You can also

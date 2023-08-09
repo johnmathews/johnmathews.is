@@ -2,9 +2,9 @@
 title: >
   Python: Becoming A Better Python Developer
 slug: becoming-a-better-python-developer
-date: "2021-1-18 11:25"
+date: '2021-1-18 11:25'
 category: Technical>Developer-Tools
-tags: ["uncategorized"]
+tags: ['uncategorized']
 ---
 
 I've been subscribed to Aaron Maxwell's "Powerful Python" newsletter for over a

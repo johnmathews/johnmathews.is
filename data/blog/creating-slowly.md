@@ -1,9 +1,9 @@
 ---
 title: Creating Slowly
 slug: creating-slowly
-date: "2021-04-01 23:02:09"
+date: '2021-04-01 23:02:09'
 category: technical.snippet, non-technical.snippet
-tags: ["meta", "thinking", "advice"]
+tags: ['meta', 'thinking', 'advice']
 ---
 
 As a hacker, or creator, or whatever the best label is, I always want to create

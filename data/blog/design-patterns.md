@@ -1,9 +1,9 @@
 ---
 title: Design Patterns
 slug: design-patterns
-date: "2021-06-15 11:18:37"
+date: '2021-06-15 11:18:37'
 category: Technical>Engineering
-tags: ["abstractions", "meta", "software-engineering"]
+tags: ['abstractions', 'meta', 'software-engineering']
 ---
 
 import IframeEmbed from '../components/IframeEmbed'

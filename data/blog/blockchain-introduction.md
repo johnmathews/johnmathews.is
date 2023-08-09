@@ -2,10 +2,10 @@
 title: >
   Blockchains from the ground up: Part 1
 slug: blockchain-introduction
-date: "2017-5-25 20:38"
+date: '2017-5-25 20:38'
 category: Technical>Cryptocurrencies
 tags:
-  ["blockchains", "digital currencies", "distributed ledger technology", "public key cryptography"]
+  ['blockchains', 'digital currencies', 'distributed ledger technology', 'public key cryptography']
 tweet:
 summary: Using a scenario that begins with the exchange of apples for oranges, understand the essential concepts and advantages of blockchains.
 status: Published

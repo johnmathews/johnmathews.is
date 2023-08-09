@@ -2,11 +2,11 @@
 title: >
   The Æternity ICO: My experience
 slug: aeternity-ico
-date: "2017-4-30 23:37"
+date: '2017-4-30 23:37'
 category: Technical>Cryptocurrencies
-tags: ["fintech", "finance", "digital currencies", "blockchains", "dlt", "æternity", "ico"]
+tags: ['fintech', 'finance', 'digital currencies', 'blockchains', 'dlt', 'æternity', 'ico']
 status: Published
-image: "/static/images/aeternity_logo.png"
+image: '/static/images/aeternity_logo.png'
 summary: I participated in phase 1 of the Æternity ICO by converting Sterling to Æons via Ether. I tried several exchanges and chose the quickest, cheapest conversion method.
 ---
 

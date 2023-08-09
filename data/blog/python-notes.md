@@ -1,9 +1,9 @@
 ---
 title: Notes From "Powerful Python"
 slug: python-notes
-date: "2021-1-21 14:55"
+date: '2021-1-21 14:55'
 category: Technical>Developer-Tools
-tags: ["uncategorized"]
+tags: ['uncategorized']
 ---
 
 The parts of Aaron Maxwell's [Powerful Python](https://twitter.com/powerfulpython)

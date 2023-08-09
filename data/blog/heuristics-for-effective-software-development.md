@@ -1,9 +1,9 @@
 ---
 title: Heuristics for effective software development
 slug: heuristics-for-effective-software-development
-date: "2021-07-26 13:33:30"
+date: '2021-07-26 13:33:30'
 category: technical.snippet
-tags: ["engineering", "teams", "organisations"]
+tags: ['engineering', 'teams', 'organisations']
 ---
 
 "Without psychological safety, respect, and trust, none of the following is
