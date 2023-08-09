@@ -12,8 +12,8 @@ export default function SnippetLayout({ content, frontMatter, title }) {
   // anything to do with a specific snippet post is within content.map loop below
   return (
     <>
-      <div id="snippetLayoutWrapper" className="lg:-ml-10 lg:-mr-16 xl:-mr-32 xl:-ml-0">
-        <div className="space-y-2 pt-6 pb-8 md:space-y-5">
+      <div id="snippetLayoutWrapper" className="lg:-ml-10 lg:-mr-16 xl:-ml-0 xl:-mr-32">
+        <div className="space-y-2 pb-8 pt-6 md:space-y-5">
           <div className="mb-10 text-6xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             {title}
           </div>
@@ -93,7 +93,7 @@ export default function SnippetLayout({ content, frontMatter, title }) {
                       </dd>
                     </dl>
                   </div>
-                  <div className="mt-1 mb-2 flex flex-wrap px-3">
+                  <div className="mb-2 mt-1 flex flex-wrap px-3">
                     {tags.map((tag) => (
                       <Tag key={tag} text={tag} />
                     ))}

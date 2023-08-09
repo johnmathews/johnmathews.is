@@ -42,7 +42,7 @@ const Card = ({ title, description, imgSrc, href, keyboardShortcut, index }) => 
           aria-label={`Link to ${title}`}
           className={`${state.keyboardMode && state.listPosition == index ? 'selected' : null}`}
         >
-          <div className="min-h-32 px-6 pt-3 pb-3">
+          <div className="min-h-32 px-6 pb-3 pt-3">
             <div className="flex justify-between">
               <h2 className="text-2xl font-bold leading-8 tracking-tight">{title}</h2>
               <div
@@ -54,7 +54,7 @@ const Card = ({ title, description, imgSrc, href, keyboardShortcut, index }) => 
               </div>
             </div>
             {description && (
-              <p className="prose mt-3 mb-1 max-w-none text-gray-500 dark:text-gray-400">
+              <p className="prose mb-1 mt-3 max-w-none text-gray-500 dark:text-gray-400">
                 {description}
               </p>
             )}

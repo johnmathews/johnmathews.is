@@ -42,7 +42,7 @@ const TOCInline = ({ toc, asDisclosure = true }) => {
     <>
       {asDisclosure ? (
         <details className="mb-10" open>
-          <summary className="pt-2 pb-2 text-2xl font-bold">Contents:</summary>
+          <summary className="pb-2 pt-2 text-2xl font-bold">Contents:</summary>
           <div className="">{tocList}</div>
         </details>
       ) : (

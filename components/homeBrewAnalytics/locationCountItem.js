@@ -23,7 +23,7 @@ export default function LocationCountItem({ value }) {
     <div
       key={key}
       title={countryName}
-      className="mx-1 my-1 flex h-8 rounded-lg border-2 border-gray-300 py-1 px-1"
+      className="mx-1 my-1 flex h-8 rounded-lg border-2 border-gray-300 px-1 py-1"
     >
       <div className="mr-1 h-7 w-5">
         <Image className="leading-none" width="20" height="15" alt={value[0]} src={srcUrl} />

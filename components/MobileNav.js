@@ -47,7 +47,7 @@ const MobileNav = () => {
   }
 
   return (
-    <div id="MobileNav" className="top-16 z-50 mt-3 mb-3 pb-3 text-right">
+    <div id="MobileNav" className="top-16 z-50 mb-3 mt-3 pb-3 text-right">
       <button
         type="button"
         id="openNav"
@@ -69,7 +69,7 @@ const MobileNav = () => {
         </svg>
       </button>
       <div
-        className={`fixed top-0 left-0 z-20 min-h-screen w-full transform overflow-auto bg-gray-200 opacity-100 duration-300 ease-in-out dark:bg-slate-900 ${
+        className={`fixed left-0 top-0 z-20 min-h-screen w-full transform overflow-auto bg-gray-200 opacity-100 duration-300 ease-in-out dark:bg-slate-900 ${
           navShow ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
@@ -136,7 +136,7 @@ const MobileNav = () => {
                 {`${state.technical && state.nonTechnical ? '' : ''}`} A
               </button>
             </div>
-            <div className="my-2 mx-1">&#47;&#47;</div>
+            <div className="mx-1 my-2">&#47;&#47;</div>
             <div className={`my-2 `}>
               <button
                 id="selectNonTechnical"
@@ -150,7 +150,7 @@ const MobileNav = () => {
                 {`${!state.technical && state.nonTechnical ? '' : ''}`} NT
               </button>
             </div>
-            <div className="my-2 mx-1">&#47;&#47;</div>
+            <div className="mx-1 my-2">&#47;&#47;</div>
             <div className={`my-2`}>
               <button
                 id="selectTechnical"

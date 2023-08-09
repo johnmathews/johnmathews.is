@@ -13,7 +13,7 @@ const Modal = () => {
         <div
           id="keyboardShortcutsModalincludingBackground"
           style={{ backgroundColor: bgOpacity }}
-          className="fixed top-0 left-0 flex h-screen w-full items-center bg-gray-100 "
+          className="fixed left-0 top-0 flex h-screen w-full items-center bg-gray-100 "
         >
           <div
             id="centralBox"

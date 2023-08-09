@@ -52,7 +52,7 @@ const LayoutWrapper = ({ children }) => {
   if (['/posts', '/snippets'].includes(router.asPath)) {
     bottomSection = (
       <>
-        <div className="mt-10 mb-10 w-36 border-b-8 border-double  border-gray-600 dark:border-gray-200 "></div>
+        <div className="mb-10 mt-10 w-36 border-b-8 border-double  border-gray-600 dark:border-gray-200 "></div>
         <div className="mt-5 text-lg">
           <div className="mb-2 font-medium">Categories:</div>
           <div className={`my-2`}>
@@ -119,7 +119,7 @@ const LayoutWrapper = ({ children }) => {
             </div>
 
             {(postMetaData.next || postMetaData.prev) && (
-              <div className="mt-3 mb-3 flex w-44 flex-col justify-between text-gray-900 dark:text-gray-100 lg:block">
+              <div className="mb-3 mt-3 flex w-44 flex-col justify-between text-gray-900 dark:text-gray-100 lg:block">
                 {postMetaData.prev && (
                   <div className="mb-3">
                     <div className="mb-1"> Previous: </div>
