@@ -8,6 +8,8 @@ draft: true
 description:
 ---
 
+Note: This is still a draft
+
 ## Background
 
 At different times, I've often found photography mesmerizing and frustrating. Memories fade and our
