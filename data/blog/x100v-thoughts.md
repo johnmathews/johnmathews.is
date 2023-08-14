@@ -135,19 +135,19 @@ probably won't be in my hand.
 After two weeks of fun and frequent photography of the streets, my village, my kids, my house...
 here are some thoughts.
 
-## Thoughts after 1 week
+### Thoughts after 1 week
 
 1. It's **fun**. This is not a trivial quality for a complicated tool to possess.
 2. It's small(er) and that's a really big deal, more than I expected.
-3. It's very right-handed. Probably the most right-handed object I own. I am left handed.
-4. You can use it with one hand, this is also a really big deal.
-5. Having any camera in your hand, or pocket, is totally different and preferably to having a better
-   camera in your bag.
-6. Having a built in flash is super fun and engaging. It's a fun "look", and it changes the
-   experience of being photographed for the better. The subject knows when the photo has been taken,
-   it's more of an "event", more different, and therefore more special. It "feels" like they've had
-   their photo taken in a more tangible way than without a flash.
-7. It looks inviting and interesting to the people who will be in your photographs.
+3. Most of the people who will be in your photographs will think it looks good.
+4. It's very right-handed. Probably the most right-handed thing I've ever owned. I am left handed.
+5. You can use it with one hand, this has a lot of benefits.
+6. Having any camera in your hand, or pocket, is totally different to having a better camera in a
+   bag.
+7. The built-in flash is fun and engaging. It's a fun "look", and sometimes it improves
+   the experience of being photographed. The subject knows when the photo has been taken and from
+   their perspective a photograph becomes more of an "event", and therefore more special. It feels
+   like they've had their photo taken because something obvious has happened.
 8. The lens is wonderful. It makes beautiful photos.
 9. The controls are great - the aperture ring, shutter speed dial and exposure compensation dials in
    particular feel sturdy and well made. It feels good to hold and operate.
@@ -156,11 +156,11 @@ here are some thoughts.
 12. The view finder is fun.
 13. The flip screen is great for waste height shots
 
-## Improvements
+### Improvements
 
-If and when a successor arrives..
+If and when a successor arrives, I'd like it to have..
 
-1. Bigger battery - you want to start the day with a full battery for sure
+1. A bigger battery
 2. A quieter lens
 3. More megapixels. Seriously. It's a prime lens and sometimes I want to crop a lot. It was nice to
    have 40 on the XT-5.
@@ -172,9 +172,9 @@ If and when a successor arrives..
 8. A dedicated switch or button to go into video mode - I really want to use this camera for video
    too! Don't bury the switch in a menu.
 9. Different sets of custom modes for video and stills - like on the XT-5.
-10. A screen that can tilt "vertically" as well as horizontally. I'd also like it to
-    flip all the way around - through 180 degrees - so that I can see the screen whilst standing in
-    front of the camera.
+10. A screen that can tilt "vertically" as well as horizontally. I'd also like it to flip all the
+    way around - through 180 degrees - so that I can see the screen whilst standing in front of the
+    camera.
 
 That is all.
 
