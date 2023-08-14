@@ -12,9 +12,9 @@ description:
 
 ## Background
 
-Over the last 20 years I've often found photography mesmerizing and frustrating. I've also noticed
-memories changing over time. I've realised that my thoughts or opinions about a past event are very
-much dependent on other disconnected events.
+I'm 37 now, and I bought my first camera when I was 17. I find photography mesmerizing and
+frustrating, and I notice that my memories can change over time. I've realised that my thoughts or
+opinions about a past event can be changed by another disconnected event.
 
 Photography offers an opportunity to curate our past. Maybe that's obvious, and it requires
 recognising the value of the present. Choose what is important, say it visually, and cast it into
@@ -144,10 +144,10 @@ here are some thoughts.
 5. You can use it with one hand, this has a lot of benefits.
 6. Having any camera in your hand, or pocket, is totally different to having a better camera in a
    bag.
-7. The built-in flash is fun and engaging. It's a fun "look", and sometimes it improves
-   the experience of being photographed. The subject knows when the photo has been taken and from
-   their perspective a photograph becomes more of an "event", and therefore more special. It feels
-   like they've had their photo taken because something obvious has happened.
+7. The built-in flash is fun and engaging. It's a fun "look", and sometimes it improves the
+   experience of being photographed. The subject knows when the photo has been taken and from their
+   perspective a photograph becomes more of an "event", and therefore more special. It feels like
+   they've had their photo taken because something obvious has happened.
 8. The lens is wonderful. It makes beautiful photos.
 9. The controls are great - the aperture ring, shutter speed dial and exposure compensation dials in
    particular feel sturdy and well made. It feels good to hold and operate.
