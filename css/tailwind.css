@@ -88,16 +88,16 @@ input:-webkit-autofill:focus {
 }
 
 #content h1 {
-  @apply text-5xl;
-}
-#content h2 {
   @apply text-4xl;
 }
-#content h3 {
+#content h2 {
   @apply text-3xl;
 }
-#content h4 {
+#content h3 {
   @apply text-2xl;
+}
+#content h4 {
+  @apply text-xl;
 }
 
 /* SNIPPETS */
