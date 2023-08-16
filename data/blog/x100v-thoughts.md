@@ -3,7 +3,7 @@ title: Thoughts on the Fujifilm x100v
 date: 2023-08-11 10:23:43
 category: non-technical.photographs
 tags: ['photography', 'fujifilm', 'camera']
-image: # /static/images/.png
+image: /static/images/my_x100v.jpg
 ---
 
 <TOCInline toc={props.toc} exclude="Overview" toHeading={2} />
@@ -20,6 +20,8 @@ of a present moment, and offers the chance to show my adult children and grandch
 experienced and the times I lived through.
 
 I gravitate towards documentation and aspire to be an environmental portrait photographer.
+
+![beach and sea](/static/images/beach_sea.jpg)
 
 ## HP850
 
@@ -95,6 +97,8 @@ takes several seconds to process edits or to show another photo doesn't encourag
 flow. It's frustrating how complex the feedback loop can be - make some photos, cull and edit them,
 reflect, repeat.
 
+![a pond at sunset](/static/images/sunset_pond.jpg)
+
 ## The X100V
 
 I'm not sure when I first learnt about the
@@ -129,6 +133,8 @@ almost zero.
 I am surprised that a 3 year old, fixed lens camera, with half hearted video capabilities, no IBIS,
 a short lived battery and a mere 24 megapixel sensor, could be better (to me, in almost every
 meaningful sense) than the latest flagship camera body and some incredible lenses.
+
+![a bungalow in a garden](/static/images/garden_house.jpg)
 
 But I think this shows how much I still have to learn about the art of photography, and about
 resisting marketing FUD. All the outstanding and incredible photographs I find inspiring were made
