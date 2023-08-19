@@ -163,8 +163,8 @@ const LayoutWrapper = ({ children }) => {
           <div id="mobileNavWrapper" className="z-50 lg:hidden">
             <MobileNav />
           </div>
-          <div id="sidebarOuterWrapper" className="css/Tailwind.css">
-            <div id="sidebarInnerWrapper" className="text-base leading-5 lg:fixed ">
+          <div id="sidebarOuterWrapper" className="have_a_look_at_css/Tailwind.css">
+            <div id="sidebarInnerWrapper" className="text-base leading-5 lg:fixed">
               {headerNavLinks.map((link) => (
                 <Link
                   key={link.title}
