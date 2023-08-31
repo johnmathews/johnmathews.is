@@ -20,8 +20,7 @@ command first, like:
 
 Zsh has built-in functions `push-line` and `push-input`.
 
-[blog post](https://sgeb.io/posts/bash-zsh-half-typed-commands/) and also this [SO answer](https://unix.stackexchange.com/a/10851/235350)
-[archive](https://web.archive.org/web/20230830122834/https://sgeb.io/posts/bash-zsh-half-typed-commands/)
-
-[zsh widgets](https://sgeb.io/posts/zsh-zle-custom-widgets/)
-[zsh documentation](https://zsh.sourceforge.io/Doc/Release/Zsh-Line-Editor.html#Zle-Widgets)
+- [sgeb blog](https://sgeb.io/posts/bash-zsh-half-typed-commands/) ([archive](https://web.archive.org/web/20230830122834/https://sgeb.io/posts/bash-zsh-half-typed-commands/))
+- [SO answer](https://unix.stackexchange.com/a/10851/235350)
+- [zsh widgets](https://sgeb.io/posts/zsh-zle-custom-widgets/)
+- [zsh documentation](https://zsh.sourceforge.io/Doc/Release/Zsh-Line-Editor.html#Zle-Widgets)
