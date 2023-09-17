@@ -377,116 +377,258 @@ const KeyboardShortcuts = () => {
     },
   ])
 
-  // useMousetrap('c e', () => {
-  //   let data = JSON.stringify({ category: 'keyboard-shortcut', event: 'ce' })
-  //   clientEventLogger(router.asPath, data)
-  //   router.push('/engineering')
-  //   HOUSEKEEPING()
-  // })
-  // useMousetrap('c f', () => {
-  //   let data = JSON.stringify({ category: 'keyboard-shortcut', event: 'cf' })
-  //   clientEventLogger(router.asPath, data)
-  //   router.push('/finance')
-  //   HIDE_MODAL()
-  //   dispatch({ type: 'LIST_POSITION_RESET' })
-  // })
-  // useMousetrap('c m', () => {
-  //   let data = JSON.stringify({ category: 'keyboard-shortcut', event: 'cm' })
-  //   clientEventLogger(router.asPath, data)
-  //   router.push('/micro-saas')
-  //   HOUSEKEEPING()
-  // })
-  // useMousetrap('c n', () => {
-  //   let data = JSON.stringify({ category: 'keyboard-shortcut', event: 'cn' })
-  //   clientEventLogger(router.asPath, data)
-  //   router.push('/math')
-  //   HOUSEKEEPING()
-  // })
-  // useMousetrap('c k', () => {
-  //   let data = JSON.stringify({ category: 'keyboard-shortcut', event: 'ck' })
-  //   clientEventLogger(router.asPath, data)
-  //   router.push('/books')
-  //   HOUSEKEEPING()
-  // })
-  // useMousetrap('c l', () => {
-  //   let data = JSON.stringify({ category: 'keyboard-shortcut', event: 'cl' })
-  //   clientEventLogger(router.asPath, data)
-  //   router.push('/longform')
-  //   HOUSEKEEPING()
-  // })
-  // useMousetrap('c p', () => {
-  //   let data = JSON.stringify({ category: 'keyboard-shortcut', event: 'cp' })
-  //   clientEventLogger(router.asPath, data)
-  //   router.push('/sport')
-  //   HOUSEKEEPING()
-  // })
-  // useMousetrap('c s', () => {
-  //   let data = JSON.stringify({ category: 'keyboard-shortcut', event: 'cs' })
-  //   clientEventLogger(router.asPath, data)
-  //   router.push('/summaries')
-  //   HOUSEKEEPING()
-  // })
-  // useMousetrap('c t', () => {
-  //   let data = JSON.stringify({ category: 'keyboard-shortcut', event: 'ct' })
-  //   clientEventLogger(router.asPath, data)
-  //   router.push('/meta')
-  //   HOUSEKEEPING()
-  // })
+  useHotkeys([
+    {
+      name: 'c e',
+      keys: ['c e'],
+      category: 'keys',
+      callback: (e) => {
+        let data = JSON.stringify({ category: 'keyboard-shortcut', event: 'ce' })
+        clientEventLogger(router.asPath, data)
+        router.push('/engineering')
+        HOUSEKEEPING()
+      },
+    },
+  ])
 
-  // useMousetrap('g a', () => {
-  //   let data = JSON.stringify({ category: 'keyboard-shortcut', event: 'ga' })
-  //   clientEventLogger(router.asPath, data)
-  //   router.push('/about')
-  //   HOUSEKEEPING()
-  // })
-  // useMousetrap('g c', () => {
-  //   let data = JSON.stringify({ category: 'keyboard-shortcut', event: 'gc' })
-  //   clientEventLogger(router.asPath, data)
-  //   router.push('/collections')
-  //   HOUSEKEEPING()
-  // })
-  // useMousetrap('g e', () => {
-  //   let data = JSON.stringify({ category: 'keyboard-shortcut', event: 'ge' })
-  //   clientEventLogger(router.asPath, data)
-  //   router.push('/experience')
-  //   HOUSEKEEPING()
-  // })
-  // useMousetrap('g i', () => {
-  //   let data = JSON.stringify({ category: 'keyboard-shortcut', event: 'gi' })
-  //   clientEventLogger(router.asPath, data)
-  //   router.push('/posts')
-  //   HOUSEKEEPING()
-  // })
-  // useMousetrap('g j', () => {
-  //   let data = JSON.stringify({ category: 'keyboard-shortcut', event: 'gp' })
-  //   clientEventLogger(router.asPath, data)
-  //   router.push('/projects')
-  //   HOUSEKEEPING()
-  // })
-  // useMousetrap('g l', () => {
-  //   let data = JSON.stringify({ category: 'keyboard-shortcut', event: 'gl' })
-  //   clientEventLogger(router.asPath, data)
-  //   router.push('/')
-  //   HOUSEKEEPING()
-  // })
-  // useMousetrap('g m', () => {
-  //   let data = JSON.stringify({ category: 'keyboard-shortcut', event: 'gm' })
-  //   clientEventLogger(router.asPath, data)
-  //   router.push('/metrics')
-  //   HOUSEKEEPING()
-  // })
-  // useMousetrap('g p', () => {
-  //   let data = JSON.stringify({ category: 'keyboard-shortcut', event: 'gp' })
-  //   clientEventLogger(router.asPath, data)
-  //   router.push('/photographs')
-  //   HOUSEKEEPING()
-  // })
-  // useMousetrap('g s', () => {
-  //   let data = JSON.stringify({ category: 'keyboard-shortcut', event: 'gs' })
-  //   clientEventLogger(router.asPath, data)
-  //   router.push('/snippets')
-  //   HOUSEKEEPING()
-  // })
+  useHotkeys([
+    {
+      name: 'c f',
+      keys: ['c f'],
+      category: 'keys',
+      callback: (e) => {
+        let data = JSON.stringify({ category: 'keyboard-shortcut', event: 'cf' })
+        clientEventLogger(router.asPath, data)
+        router.push('/finance')
+        HIDE_MODAL()
+        dispatch({ type: 'LIST_POSITION_RESET' })
+      },
+    },
+  ])
+
+  useHotkeys([
+    {
+      name: 'c m',
+      keys: ['c m'],
+      category: 'keys',
+      callback: (e) => {
+        let data = JSON.stringify({ category: 'keyboard-shortcut', event: 'cm' })
+        clientEventLogger(router.asPath, data)
+        router.push('/micro-saas')
+        HOUSEKEEPING()
+      },
+    },
+  ])
+
+  useHotkeys([
+    {
+      name: 'c n',
+      keys: ['c n'],
+      category: 'keys',
+      callback: (e) => {
+        let data = JSON.stringify({ category: 'keyboard-shortcut', event: 'cn' })
+        clientEventLogger(router.asPath, data)
+        router.push('/math')
+        HOUSEKEEPING()
+      },
+    },
+  ])
+
+  useHotkeys([
+    {
+      name: 'c k',
+      keys: ['c k'],
+      category: 'keys',
+      callback: (e) => {
+        let data = JSON.stringify({ category: 'keyboard-shortcut', event: 'ck' })
+        clientEventLogger(router.asPath, data)
+        router.push('/books')
+        HOUSEKEEPING()
+      },
+    },
+  ])
+
+  useHotkeys([
+    {
+      name: 'c l',
+      keys: ['c l'],
+      category: 'keys',
+      callback: (e) => {
+        let data = JSON.stringify({ category: 'keyboard-shortcut', event: 'cl' })
+        clientEventLogger(router.asPath, data)
+        router.push('/longform')
+        HOUSEKEEPING()
+      },
+    },
+  ])
+
+  useHotkeys([
+    {
+      name: 'c p',
+      keys: ['c p'],
+      category: 'keys',
+      callback: (e) => {
+        let data = JSON.stringify({ category: 'keyboard-shortcut', event: 'cp' })
+        clientEventLogger(router.asPath, data)
+        router.push('/sport')
+        HOUSEKEEPING()
+      },
+    },
+  ])
+
+  useHotkeys([
+    {
+      name: 'c s',
+      keys: ['c s'],
+      category: 'keys',
+      callback: (e) => {
+        let data = JSON.stringify({ category: 'keyboard-shortcut', event: 'cs' })
+        clientEventLogger(router.asPath, data)
+        router.push('/summaries')
+        HOUSEKEEPING()
+      },
+    },
+  ])
+
+  useHotkeys([
+    {
+      name: 'c t',
+      keys: ['c t'],
+      category: 'keys',
+      callback: (e) => {
+        let data = JSON.stringify({ category: 'keyboard-shortcut', event: 'ct' })
+        clientEventLogger(router.asPath, data)
+        router.push('/meta')
+        HOUSEKEEPING()
+      },
+    },
+  ])
+
+  useHotkeys([
+    {
+      name: 'g a',
+      keys: ['g a'],
+      category: 'keys',
+      callback: (e) => {
+        let data = JSON.stringify({ category: 'keyboard-shortcut', event: 'ga' })
+        clientEventLogger(router.asPath, data)
+        router.push('/about')
+        HOUSEKEEPING()
+      },
+    },
+  ])
+
+  useHotkeys([
+    {
+      name: 'g c',
+      keys: ['g c'],
+      category: 'keys',
+      callback: (e) => {
+        let data = JSON.stringify({ category: 'keyboard-shortcut', event: 'gc' })
+        clientEventLogger(router.asPath, data)
+        router.push('/collections')
+        HOUSEKEEPING()
+      },
+    },
+  ])
+
+  useHotkeys([
+    {
+      name: 'g e',
+      keys: ['g e'],
+      category: 'keys',
+      callback: (e) => {
+        let data = JSON.stringify({ category: 'keyboard-shortcut', event: 'ge' })
+        clientEventLogger(router.asPath, data)
+        router.push('/experience')
+        HOUSEKEEPING()
+      },
+    },
+  ])
+
+  useHotkeys([
+    {
+      name: 'g i',
+      keys: ['g i'],
+      category: 'keys',
+      callback: (e) => {
+        let data = JSON.stringify({ category: 'keyboard-shortcut', event: 'gi' })
+        clientEventLogger(router.asPath, data)
+        router.push('/posts')
+        HOUSEKEEPING()
+      },
+    },
+  ])
+
+  useHotkeys([
+    {
+      name: 'g j',
+      keys: ['g j'],
+      category: 'keys',
+      callback: (e) => {
+        let data = JSON.stringify({ category: 'keyboard-shortcut', event: 'gp' })
+        clientEventLogger(router.asPath, data)
+        router.push('/projects')
+        HOUSEKEEPING()
+      },
+    },
+  ])
+
+  useHotkeys([
+    {
+      name: 'g l',
+      keys: ['g l'],
+      category: 'keys',
+      callback: (e) => {
+        let data = JSON.stringify({ category: 'keyboard-shortcut', event: 'gl' })
+        clientEventLogger(router.asPath, data)
+        router.push('/')
+        HOUSEKEEPING()
+      },
+    },
+  ])
+
+  useHotkeys([
+    {
+      name: 'g m',
+      keys: ['g m'],
+      category: 'keys',
+      callback: (e) => {
+        let data = JSON.stringify({ category: 'keyboard-shortcut', event: 'gm' })
+        clientEventLogger(router.asPath, data)
+        router.push('/metrics')
+        HOUSEKEEPING()
+      },
+    },
+  ])
+
+  useHotkeys([
+    {
+      name: 'g p',
+      keys: ['g p'],
+      category: 'keys',
+      callback: (e) => {
+        let data = JSON.stringify({ category: 'keyboard-shortcut', event: 'gp' })
+        clientEventLogger(router.asPath, data)
+        router.push('/photographs')
+        HOUSEKEEPING()
+      },
+    },
+  ])
+
+  useHotkeys([
+    {
+      name: 'g s',
+      keys: ['g s'],
+      category: 'keys',
+      callback: (e) => {
+        let data = JSON.stringify({ category: 'keyboard-shortcut', event: 'gs' })
+        clientEventLogger(router.asPath, data)
+        router.push('/snippets')
+        HOUSEKEEPING()
+      },
+    },
+  ])
   return <></>
 }
 
