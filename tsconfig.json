@@ -8,8 +8,10 @@
       "@/data/*": ["data/*"],
       "@/layouts/*": ["layouts/*"],
       "@/lib/*": ["lib/*"],
-      "@/css/*": ["css/*"]
+      "@/css/*": ["css/*"],
+      "@/types/*": ["types/*"]
     },
+
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
