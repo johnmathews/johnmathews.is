@@ -1,13 +1,9 @@
 import { IconArrowRight, IconExternalLink, IconSearch } from '@tabler/icons-react'
 import endent from 'endent'
-import Head from 'next/head'
 import { KeyboardEvent, useEffect, useRef, useState } from 'react'
-
 import { JMChunk } from '@/types/Chat'
 
 import Answer from '@/components/chat/Answer/Answer'
-import ChatFooter from '@/components/chat/Footer'
-import ChatNavbar from '@/components/chat/Navbar'
 
 export default function Chat() {
   const inputRef = useRef<HTMLInputElement>(null)
@@ -200,15 +196,7 @@ export default function Chat() {
 
   return (
     <>
-      <Head>
-        <title>John Mathews GPT</title>
-        <meta name="description" content={`AI-powered search and chat for my blog.`} />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <div className="flex h-screen flex-col">
-        <ChatNavbar />
         <div className="flex-1 overflow-auto">
           <div className="mx-auto flex h-full w-full max-w-[750px] flex-col items-center px-3 pt-4 sm:pt-8">
             <button
@@ -394,11 +382,10 @@ export default function Chat() {
                 ))}
               </div>
             ) : (
-              <div className="mt-6 text-center text-lg">{`AI-powered search & chat for my blog.`}</div>
+              <div className="mt-6 text-center text-lg">{`AI-powered search & chat...`}</div>
             )}
           </div>
         </div>
-        <ChatFooter />
       </div>
     </>
   )
