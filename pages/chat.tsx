@@ -198,13 +198,16 @@ export default function Chat() {
     <>
       <div className="flex h-screen flex-col">
         <div className="flex-1 overflow-auto">
-          <div className="mx-auto flex h-full w-full max-w-[750px] flex-col items-center px-3 pt-4 sm:pt-8">
-            <button
-              className="mt-4 flex cursor-pointer items-center space-x-2 rounded-full border border-zinc-600 px-3 py-1 text-sm hover:opacity-50"
-              onClick={() => setShowSettings(!showSettings)}
-            >
-              {showSettings ? 'Hide' : 'Show'} Settings
-            </button>
+          <div className="items-left mx-auto flex h-full w-full max-w-[750px] flex-col space-y-20 px-3">
+            <div className="hidden">
+              <button
+                id="settings"
+                className="items-left ml-0 flex cursor-pointer space-x-2 rounded-full border border-zinc-600 px-3 py-1 text-sm hover:opacity-50"
+                onClick={() => setShowSettings(!showSettings)}
+              >
+                {showSettings ? 'Hide' : 'Show'} Settings
+              </button>
+            </div>
 
             {showSettings && (
               <div className="w-[340px] sm:w-[400px]">
@@ -268,14 +271,13 @@ export default function Chat() {
             )}
 
             {apiKey.length === 51 ? (
-              <div className="relative mt-4 w-full">
-                <IconSearch className="absolute left-1 top-3 h-6 w-10 rounded-full opacity-50 sm:left-3 sm:top-4 sm:h-8" />
-
+              <div id="queryContainer" className="relative mt-4 w-full">
                 <input
+                  id="queryBox"
                   ref={inputRef}
                   className="h-12 w-full rounded-full border border-zinc-600 pl-11 pr-12 focus:border-zinc-800 focus:outline-none focus:ring-1 focus:ring-zinc-800 sm:h-16 sm:py-2 sm:pl-16 sm:pr-16 sm:text-lg"
                   type="text"
-                  placeholder="How do I start a startup?"
+                  placeholder="What skills does John have?"
                   value={query}
                   onChange={(e) => setQuery(e.target.value)}
                   onKeyDown={handleKeyDown}
@@ -302,7 +304,7 @@ export default function Chat() {
             )}
 
             {loading ? (
-              <div className="mt-6 w-full">
+              <div id="results" className="mt-12 w-full">
                 {mode === 'chat' && (
                   <>
                     <div className="text-2xl font-bold">Answer</div>
@@ -326,16 +328,18 @@ export default function Chat() {
                 </div>
               </div>
             ) : answer ? (
-              <div className="mt-6">
+              <div id="answer" className="mt-12">
                 <div className="mb-2 text-2xl font-bold">Answer</div>
                 <Answer text={answer} />
 
                 <div className="mb-16 mt-6">
-                  <div className="text-2xl font-bold">Passages</div>
+                  <div id="passages" className="mt-12 text-2xl font-bold">
+                    Passages
+                  </div>
 
                   {chunks.map((chunk, index) => (
                     <div key={index}>
-                      <div className="mt-4 rounded-lg border border-zinc-600 p-4">
+                      <div className="mt-8 rounded-lg border border-zinc-600 p-4">
                         <div className="flex justify-between">
                           <div>
                             <div className="text-xl font-bold">{chunk.blog_title}</div>
@@ -382,7 +386,7 @@ export default function Chat() {
                 ))}
               </div>
             ) : (
-              <div className="mt-6 text-center text-lg">{`AI-powered search & chat...`}</div>
+              <div className="mt-5 text-lg">{`AI-powered search & chat...`}</div>
             )}
           </div>
         </div>

@@ -1,7 +1,6 @@
 import { useContext } from 'react'
 import { useRouter } from 'next/router'
 
-import useMousetrap from 'mousetrap-react'
 import { useHotkeys } from 'reakeys'
 
 import { AppContext } from '@/components/ContextProvider'
