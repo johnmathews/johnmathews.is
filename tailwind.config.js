@@ -5,14 +5,14 @@ const colors = require('tailwindcss/colors')
 
 module.exports = {
   mode: 'jit',
-  purge: [
-    './pages/**/*.{js,ts,jsx,tsx}',
-    './components/**/*.{js,ts,jsx,tsx}',
-    './layouts/**/*.{js, ts, jsx, tsx}',
-    './app/**/*.{js,ts,jsx,tsx}',
-    './lib/**/*.{js, ts, jsx, tsx}',
-    './data/**/*.{mdx, md}',
-  ],
+  // purge: [
+  //   './pages/**/*.{js,ts,jsx,tsx}',
+  //   './components/**/*.{js,ts,jsx,tsx}',
+  //   './layouts/**/*.{js, ts, jsx, tsx}',
+  //   './app/**/*.{js,ts,jsx,tsx}',
+  //   './lib/**/*.{js, ts, jsx, tsx}',
+  //   './data/**/*.{mdx, md}',
+  // ],
   experimental: {
     optimizeUniversalDefaults: true,
   },
