@@ -2,9 +2,9 @@
 
 ## Setup for local development
 
-1. `npm install`
+1. `yarn`
 2. `npm run build`
-3. `npm start`
+3. `yarn start`
 
 Then go to localhost:3000
 
@@ -19,21 +19,19 @@ Then go to localhost:3000
 
 ## Search and sitemap
 
-1. run `npm aux`
+1. run `npm aux`. If you run `npm run build` then the search index and aloglia data will be updated
+   and uploaded. Sitemap is also updated I think.
 
 ## TODO
 
 I should write some context here. Including:
 
-- what the blog is for.
-- how I use it
-- which commands to run to:
-  - create a new post,
-  - deploy to vercel,
-  - build search cache,
-  - build sitemap
-  - or just look in `package.json`
-- how to use snippets
 - some of the keyboard shortcuts
 - the video archive feature
 - how GCP buckets are used
+- the chatbot feature
+
+## Known issues
+
+- The keyboard shortcuts library (reakeys) causes some errors about SSR and useEffect.
+- The photos pages, or maybe images in general, cause some warnings about latex incompatible input.
