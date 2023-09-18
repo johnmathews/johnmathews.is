@@ -73,7 +73,7 @@ module.exports = withBundleAnalyzer({
     ]
   },
   reactStrictMode: true,
-  pageExtensions: ['js', 'sx', 'tsx', 'ts', 'md', 'mdx'],
+  pageExtensions: ['js', 'jsx', 'tsx', 'ts', 'md', 'mdx'],
   eslint: {
     dirs: ['pages', 'components', 'lib', 'layouts', 'scripts'],
   },
