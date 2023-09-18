@@ -211,7 +211,10 @@ export default function Chat() {
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             Chatbot
           </h1>
-          <p>Ask an AI some questions about me</p>
+          <p>
+            This is a quick demo of a domain-specific chatbot. You can ask an AI some questions
+            about me or my blog.
+          </p>
         </div>
         <div className="flex h-screen flex-col">
           <div className="">
