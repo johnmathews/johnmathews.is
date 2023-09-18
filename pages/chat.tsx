@@ -275,7 +275,7 @@ export default function Chat() {
                 <input
                   id="queryBox"
                   ref={inputRef}
-                  className="h-12 w-full rounded-full border border-zinc-600 pl-11 pr-12 focus:border-zinc-800 focus:outline-none focus:ring-1 focus:ring-zinc-800 sm:h-16 sm:py-2 sm:pl-16 sm:pr-16 sm:text-lg"
+                  className="h-12 w-full rounded-full border border-zinc-600 pl-11 pr-12 focus:border-zinc-800 focus:outline-none focus:ring-1 focus:ring-zinc-800 dark:text-gray-800 sm:h-16 sm:py-2 sm:pl-16 sm:pr-16 sm:text-lg"
                   type="text"
                   placeholder="What skills does John have?"
                   value={query}
@@ -294,7 +294,7 @@ export default function Chat() {
               <div className="mt-7 text-center text-3xl font-bold">
                 Please enter your
                 <a
-                  className="mx-2 underline hover:opacity-50"
+                  className="mx-2 px-2 underline hover:opacity-50"
                   href="https://platform.openai.com/account/api-keys"
                 >
                   OpenAI API key
