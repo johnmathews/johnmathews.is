@@ -10,7 +10,6 @@ import 'katex/dist/katex.css'
 
 import '@fontsource/inter/variable-full.css'
 
-import { ThemeProvider } from 'next-themes'
 import Head from 'next/head'
 
 import { useEffect } from 'react'
@@ -45,7 +44,7 @@ export default function App({ Component, pageProps }) {
   if (router.asPath == '/') {
     // landing page only
     return (
-      <ThemeProvider attribute="class" defaultTheme={siteMetadata.theme}>
+      <div>
         <Head>
           <meta content="width=device-width, initial-scale=1" name="viewport" />
         </Head>
@@ -56,12 +55,12 @@ export default function App({ Component, pageProps }) {
           <Modal />
           <KeyboardShortcuts />
         </ContextProvider>
-      </ThemeProvider>
+      </div>
     )
   } else if (router.query.slug !== undefined) {
     // blog posts only
     return (
-      <ThemeProvider attribute="class" defaultTheme={siteMetadata.theme}>
+      <div>
         <Head>
           <meta content="width=device-width, initial-scale=1" name="viewport" />
         </Head>
@@ -74,12 +73,12 @@ export default function App({ Component, pageProps }) {
           <Modal />
           <KeyboardShortcuts />
         </ContextProvider>
-      </ThemeProvider>
+      </div>
     )
   } else {
     // everything else (e.g. /about, list of blog posts, categories, tags)
     return (
-      <ThemeProvider attribute="class" defaultTheme={siteMetadata.theme}>
+      <div>
         <Head>
           <meta content="width=device-width, initial-scale=1" name="viewport" />
         </Head>
@@ -92,7 +91,7 @@ export default function App({ Component, pageProps }) {
           <Modal />
           <KeyboardShortcuts />
         </ContextProvider>
-      </ThemeProvider>
+      </div>
     )
   }
 }
