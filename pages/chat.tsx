@@ -10,6 +10,7 @@ import Answer from '@/components/chat/Answer/Answer'
 
 export default function Chat() {
   const inputRef = useRef<HTMLInputElement>(null)
+  const API_KEY = process.env.NEXT_PUBLIC_OPENAI_API_KEY
 
   const [query, setQuery] = useState<string>('')
   const [chunks, setChunks] = useState<JMChunk[]>([])
@@ -19,13 +20,7 @@ export default function Chat() {
   const [showSettings, setShowSettings] = useState<boolean>(false)
   const [mode, setMode] = useState<'search' | 'chat'>('chat')
   const [matchCount, setMatchCount] = useState<number>(5)
-  const [apiKey, setApiKey] = useState<string>('')
-
-  useEffect(() => {
-    if (loading) {
-      console.log('Loading is true')
-    }
-  }, [loading])
+  const [apiKey, setApiKey] = useState<string>(API_KEY)
 
   const handleSearch = async () => {
     if (!apiKey) {
@@ -151,58 +146,6 @@ export default function Chat() {
     }
   }
 
-  const handleSave = () => {
-    if (apiKey.length !== 51) {
-      alert('Please enter a valid API key.')
-      return
-    }
-
-    localStorage.setItem('JM_KEY', apiKey)
-    localStorage.setItem('JM_MATCH_COUNT', matchCount.toString())
-    localStorage.setItem('JM_MODE', mode)
-
-    setShowSettings(false)
-    inputRef.current?.focus()
-  }
-
-  const handleClear = () => {
-    localStorage.removeItem('JM_KEY')
-    localStorage.removeItem('JM_MATCH_COUNT')
-    localStorage.removeItem('JM_MODE')
-
-    setApiKey('')
-    setMatchCount(5)
-    setMode('search')
-  }
-
-  useEffect(() => {
-    if (matchCount > 10) {
-      setMatchCount(10)
-    } else if (matchCount < 1) {
-      setMatchCount(1)
-    }
-  }, [matchCount])
-
-  useEffect(() => {
-    const PG_KEY = localStorage.getItem('PG_KEY')
-    const PG_MATCH_COUNT = localStorage.getItem('PG_MATCH_COUNT')
-    const PG_MODE = localStorage.getItem('PG_MODE')
-
-    if (PG_KEY) {
-      setApiKey(PG_KEY)
-    }
-
-    if (PG_MATCH_COUNT) {
-      setMatchCount(parseInt(PG_MATCH_COUNT))
-    }
-
-    if (PG_MODE) {
-      setMode(PG_MODE as 'search' | 'chat')
-    }
-
-    inputRef.current?.focus()
-  }, [])
-
   return (
     <>
       <PageSEO title={`Chat - ${siteMetadata.author}`} description={siteMetadata.description} />
@@ -232,106 +175,32 @@ export default function Chat() {
                 </button>
               </div>
 
-              {showSettings && (
-                <div className="w-[340px] sm:w-[400px]">
-                  <div>
-                    <div>Mode</div>
-                    <select
-                      className="block w-full max-w-[400px] cursor-pointer rounded-md border border-gray-300 p-2 text-black shadow-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 sm:text-sm"
-                      value={mode}
-                      onChange={(e) => setMode(e.target.value as 'search' | 'chat')}
-                    >
-                      <option value="search">Search</option>
-                      <option value="chat">Chat</option>
-                    </select>
-                  </div>
+              <div id="queryContainer" className="relative w-full">
+                <input
+                  id="queryBox"
+                  ref={inputRef}
+                  className="h-12 w-full rounded-md border border-zinc-600 pr-12 text-gray-800 focus:border-zinc-800 focus:outline-none focus:ring-1 focus:ring-zinc-800 dark:bg-gray-200 dark:text-gray-800 sm:h-16 sm:py-2 sm:pr-16 sm:text-lg"
+                  type="text"
+                  placeholder="What skills does John have?"
+                  value={query}
+                  onChange={(e) => setQuery(e.target.value)}
+                  onKeyDown={handleKeyDown}
+                />
 
-                  <div className="mt-2">
-                    <div>Passage Count</div>
-                    <input
-                      type="number"
-                      min={1}
-                      max={10}
-                      value={matchCount}
-                      onChange={(e) => setMatchCount(Number(e.target.value))}
-                      className="block w-full max-w-[400px] rounded-md border border-gray-300 p-2 text-black shadow-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 sm:text-sm"
-                    />
-                  </div>
-
-                  <div className="mt-2">
-                    <div>OpenAI API Key</div>
-                    <input
-                      type="password"
-                      placeholder="OpenAI API Key"
-                      className="block w-full max-w-[400px] rounded-md border border-gray-300 p-2 text-black shadow-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 sm:text-sm"
-                      value={apiKey}
-                      onChange={(e) => {
-                        setApiKey(e.target.value)
-
-                        if (e.target.value.length !== 51) {
-                          setShowSettings(true)
-                        }
-                      }}
-                    />
-                  </div>
-
-                  <div className="mt-4 flex justify-center space-x-2">
-                    <div
-                      className="flex cursor-pointer items-center space-x-2 rounded-full bg-green-500 px-3 py-1 text-sm text-white hover:bg-green-600"
-                      onClick={handleSave}
-                    >
-                      Save
-                    </div>
-
-                    <div
-                      className="flex cursor-pointer items-center space-x-2 rounded-full bg-red-500 px-3 py-1 text-sm text-white hover:bg-red-600"
-                      onClick={handleClear}
-                    >
-                      Clear
-                    </div>
-                  </div>
-                </div>
-              )}
-
-              {apiKey.length === 51 ? (
-                <div id="queryContainer" className="relative w-full">
-                  <input
-                    id="queryBox"
-                    ref={inputRef}
-                    className="h-12 w-full rounded-md border border-zinc-600 pr-12 text-gray-800 focus:border-zinc-800 focus:outline-none focus:ring-1 focus:ring-zinc-800 dark:bg-gray-200 dark:text-gray-800 sm:h-16 sm:py-2 sm:pr-16 sm:text-lg"
-                    type="text"
-                    placeholder="What skills does John have?"
-                    value={query}
-                    onChange={(e) => setQuery(e.target.value)}
-                    onKeyDown={handleKeyDown}
-                  />
-
-                  <button>
-                    <svg
-                      onClick={mode === 'search' ? handleSearch : handleAnswer}
-                      className="absolute right-2 h-7 w-12 p-1 pt-1 text-gray-900 hover:animate-bounce hover:cursor-pointer dark:text-gray-100 sm:right-3 sm:top-3 sm:h-10 sm:w-10 "
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 32 32"
-                    >
-                      <g data-name="11-Arrow Right">
-                        <path d="M25 0H7a7 7 0 0 0-7 7v18a7 7 0 0 0 7 7h18a7 7 0 0 0 7-7V7a7 7 0 0 0-7-7zm5 25a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5h18a5 5 0 0 1 5 5z" />
-                        <path d="m19.71 8.29-1.42 1.42 5.3 5.29H5v2h18.59l-5.29 5.29 1.41 1.41 7-7a1 1 0 0 0 0-1.41z" />
-                      </g>
-                    </svg>
-                  </button>
-                </div>
-              ) : (
-                <div className="mt-7 text-center text-3xl font-bold">
-                  Please enter your
-                  <a
-                    className="mx-2 px-2 underline hover:opacity-50"
-                    href="https://platform.openai.com/account/api-keys"
+                <button>
+                  <svg
+                    onClick={mode === 'search' ? handleSearch : handleAnswer}
+                    className="absolute right-2 h-7 w-12 p-1 pt-1 text-gray-900 hover:animate-bounce hover:cursor-pointer dark:text-gray-100 sm:right-3 sm:top-3 sm:h-10 sm:w-10 "
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 32 32"
                   >
-                    OpenAI API key
-                  </a>
-                  in settings.
-                </div>
-              )}
+                    <g data-name="11-Arrow Right">
+                      <path d="M25 0H7a7 7 0 0 0-7 7v18a7 7 0 0 0 7 7h18a7 7 0 0 0 7-7V7a7 7 0 0 0-7-7zm5 25a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5h18a5 5 0 0 1 5 5z" />
+                      <path d="m19.71 8.29-1.42 1.42 5.3 5.29H5v2h18.59l-5.29 5.29 1.41 1.41 7-7a1 1 0 0 0 0-1.41z" />
+                    </g>
+                  </svg>
+                </button>
+              </div>
 
               {loading ? (
                 <div id="chatResults" className="mt-12 w-full">
