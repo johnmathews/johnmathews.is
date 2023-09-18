@@ -4,7 +4,7 @@ import { createParser, ParsedEvent, ReconnectInterval } from 'eventsource-parser
 
 export const supabaseAdmin = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.SUPABASE_SERVICE_ROLE_KEY!
+  process.env.NEXT_PUBLIC_SUPABASE_SERVICE_ROLE_KEY!
 )
 
 export const OpenAIStream = async (prompt: string, apiKey: string) => {
@@ -30,7 +30,7 @@ export const OpenAIStream = async (prompt: string, apiKey: string) => {
           content: prompt,
         },
       ],
-      max_tokens: 150,
+      max_tokens: 300,
       temperature: 0.0,
       stream: true,
     }),
