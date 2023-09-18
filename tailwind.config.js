@@ -9,6 +9,9 @@ module.exports = {
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
     './layouts/**/*.{js, ts, jsx, tsx}',
+    './app/**/*.{js,ts,jsx,tsx}',
+    './lib/**/*.{js, ts, jsx, tsx}',
+    './data/**/*.{mdx, md}',
   ],
   experimental: {
     optimizeUniversalDefaults: true,
@@ -16,8 +19,8 @@ module.exports = {
   // content: [
   //   './pages/**/*.{js, ts, jsx, tsx}',
   //   './components/**/*.{js, ts, jsx, tsx}',
-  //   './app/**/*.{js,ts,jsx,tsx}',
   //   './layouts/**/*.{js, ts, jsx, tsx}',
+  //   './app/**/*.{js,ts,jsx,tsx}',
   //   './lib/**/*.{js, ts, jsx, tsx}',
   //   './data/**/*.{mdx, md}',
   // ],
