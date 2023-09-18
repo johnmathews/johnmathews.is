@@ -217,7 +217,7 @@ export default function Chat() {
           <div className="">
             <div
               id="parentContainer"
-              className="items-left mx-auto flex h-full w-full max-w-[750px] flex-col space-y-20"
+              className="items-left flex h-full w-full max-w-3xl flex-col space-y-20 pr-2"
             >
               <div className="hidden">
                 <button
@@ -291,11 +291,11 @@ export default function Chat() {
               )}
 
               {apiKey.length === 51 ? (
-                <div id="queryContainer" className="relative mt-4 w-full">
+                <div id="queryContainer" className="relative w-full">
                   <input
                     id="queryBox"
                     ref={inputRef}
-                    className="h-12 w-full rounded-md border border-zinc-600 pl-11 pr-12 text-gray-800 focus:border-zinc-800 focus:outline-none focus:ring-1 focus:ring-zinc-800 dark:text-gray-800 sm:h-16 sm:py-2 sm:pl-16 sm:pr-16 sm:text-lg"
+                    className="h-12 w-full rounded-md border border-zinc-600 pr-12 text-gray-800 focus:border-zinc-800 focus:outline-none focus:ring-1 focus:ring-zinc-800 dark:bg-gray-200 dark:text-gray-800 sm:h-16 sm:py-2 sm:pr-16 sm:text-lg"
                     type="text"
                     placeholder="What skills does John have?"
                     value={query}
@@ -306,7 +306,7 @@ export default function Chat() {
                   <button>
                     <svg
                       onClick={mode === 'search' ? handleSearch : handleAnswer}
-                      className=" absolute right-2 -mt-5 h-7 w-12 animate-spin bg-blue-500 p-1 pt-1 text-gray-900 hover:cursor-pointer hover:bg-blue-600 dark:text-gray-100 sm:right-3 sm:top-3 sm:h-10 sm:w-10 "
+                      className="absolute right-2 h-7 w-12 p-1 pt-1 text-gray-900 hover:animate-bounce hover:cursor-pointer dark:text-gray-100 sm:right-3 sm:top-3 sm:h-10 sm:w-10 "
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 32 32"
                     >
@@ -336,11 +336,11 @@ export default function Chat() {
                     <>
                       <div className="text-2xl font-bold">Answer</div>
                       <div className="mt-2 animate-pulse">
-                        <div className="h-4 animate-pulse rounded bg-gray-300">...</div>
-                        <div className="mt-2 h-4 animate-pulse rounded bg-gray-300">...</div>
-                        <div className="mt-2 h-4 animate-pulse rounded bg-gray-300">...</div>
-                        <div className="mt-2 h-4 rounded bg-gray-300">...</div>
-                        <div className="mt-2 h-4 rounded bg-gray-300">...</div>
+                        <div className="h-4 animate-pulse rounded bg-gray-300"></div>
+                        <div className="mt-2 h-4 animate-pulse rounded bg-gray-300"></div>
+                        <div className="mt-2 h-4 animate-pulse rounded bg-gray-300"></div>
+                        <div className="mt-2 h-4 rounded bg-gray-300"></div>
+                        <div className="mt-2 h-4 rounded bg-gray-300"></div>
                       </div>
                     </>
                   )}

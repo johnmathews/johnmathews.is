@@ -12,7 +12,6 @@ const handler = async (req: Request): Promise<Response> => {
     }
 
     const stream = await OpenAIStream(prompt, apiKey)
-    console.log('--- debug stream: ', stream)
 
     return new Response(stream)
   } catch (error) {
