@@ -1,4 +1,4 @@
-import { supabaseAdmin } from '@/utils'
+import { supabaseAdmin } from '@/utils/chat'
 
 export const config = {
   runtime: 'edge',

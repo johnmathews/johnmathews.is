@@ -1,7 +1,7 @@
 import { Answer } from '@/components/Answer/Answer'
 import { Footer } from '@/components/Footer'
 import { Navbar } from '@/components/Navbar'
-import { JMChunk } from '@/types'
+import { JMChunk } from '@/types/chat'
 import { IconArrowRight, IconExternalLink, IconSearch } from '@tabler/icons-react'
 import endent from 'endent'
 import Head from 'next/head'
