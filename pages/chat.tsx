@@ -205,9 +205,9 @@ export default function Home() {
           </h1>
           <p>Ask an AI about me or my blog</p>
         </div>
-        <div className="flex h-screen flex-col">
-          <div className="flex-1 overflow-auto">
-            <div className="mx-auto flex h-full w-full max-w-[750px] flex-col items-center px-3 pt-4 sm:pt-8">
+        <div className="flex h-screen w-full flex-col items-start">
+          <div className="w-full">
+            <div className="flex h-full w-full flex-col items-center pr-3 pt-4 sm:pt-8">
               <button
                 className="mt-4 flex cursor-pointer items-center space-x-2 rounded-full border border-zinc-600 px-3 py-1 text-sm hover:opacity-50"
                 onClick={() => setShowSettings(!showSettings)}
