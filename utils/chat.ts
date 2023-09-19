@@ -1,4 +1,4 @@
-import { OpenAIModel } from '@/types'
+import { OpenAIModel } from '@/types/chat'
 import { createClient } from '@supabase/supabase-js'
 import { createParser, ParsedEvent, ReconnectInterval } from 'eventsource-parser'
 

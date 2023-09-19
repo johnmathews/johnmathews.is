@@ -1,4 +1,4 @@
-import { JMArticle, JMChunk, JMJSON } from '@/types'
+import { JMArticle, JMChunk, JMJSON } from '@/types/chat'
 import axios from 'axios'
 import * as cheerio from 'cheerio'
 import fs from 'fs'
