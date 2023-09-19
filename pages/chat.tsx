@@ -277,12 +277,12 @@ export default function Home() {
               )}
 
               {apiKey.length === 51 ? (
-                <div className="relative mt-4 w-full">
-                  <IconSearch className="absolute left-1 top-3 h-6 w-10 rounded-full opacity-50 sm:left-3 sm:top-4 sm:h-8" />
+                <div id="inputWrapper" className="relative mt-4 w-full">
+                  <IconSearch className="absolute left-1 top-3 h-6 w-10 rounded-full opacity-50 dark:text-gray-800 sm:left-3 sm:top-4 sm:h-8" />
 
                   <input
                     ref={inputRef}
-                    className="h-12 w-full rounded-full border border-zinc-600 pl-11 pr-12 focus:border-zinc-800 focus:outline-none focus:ring-1 focus:ring-zinc-800 sm:h-16 sm:py-2 sm:pl-16 sm:pr-16 sm:text-lg"
+                    className="h-12 w-full rounded-xl border border-zinc-600 pl-11 pr-12 text-gray-800 focus:border-zinc-800 focus:outline-none focus:ring-1 focus:ring-zinc-800 dark:text-gray-800 sm:h-16 sm:py-2 sm:pl-16 sm:pr-16 sm:text-lg"
                     type="text"
                     placeholder="How do I start a startup?"
                     value={query}

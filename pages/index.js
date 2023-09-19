@@ -66,7 +66,10 @@ export default function Home() {
             </li>
           </ul>
         </div>
-        <div id="imageColumn" className="-mt-5 md:my-auto md:w-96 md:pl-10 lg:ml-32 lg:w-auto ">
+        <div
+          id="imageColumn"
+          className="-mt-5 md:my-auto md:w-96 md:pl-10 lg:ml-32 lg:w-auto xl:max-w-3xl"
+        >
           <Link href="/posts">
             <Image
               src="/static/images/landing/roofs.jpeg"
