@@ -1,5 +1,5 @@
 import chalk from 'chalk'
-import { JMArticle, JMJSON } from '@/types'
+import { JMArticle, JMJSON } from '@/types/chat'
 import { loadEnvConfig } from '@next/env'
 import { createClient } from '@supabase/supabase-js'
 import fs from 'fs'
