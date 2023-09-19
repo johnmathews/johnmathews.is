@@ -42,7 +42,7 @@
     "next-themes": "^0.0.14",
     "postcss": "^8.4.5",
     "postcss-import": "^15.1.0",
-    "preact": "^10.6.2",
+    "preact": "^10.17.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-instantsearch-hooks": "^6.36.0",
