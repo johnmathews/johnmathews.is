@@ -70,6 +70,7 @@ export default function Home() {
           <Link href="/posts">
             <Image
               src="/static/images/landing/roofs.jpeg"
+              className="rounded-3xl"
               alt="cover image"
               width="1000"
               height="800"
