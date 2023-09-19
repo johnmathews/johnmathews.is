@@ -22,3 +22,5 @@ export const Answer: React.FC<AnswerProps> = ({ text }) => {
     </div>
   )
 }
+
+export default Answer

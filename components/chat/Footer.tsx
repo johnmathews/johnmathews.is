@@ -22,3 +22,5 @@ export const Footer: FC = () => {
     </div>
   )
 }
+
+export default Footer

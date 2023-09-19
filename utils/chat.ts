@@ -56,7 +56,6 @@ export const OpenAIStream = async (prompt: string, apiKey: string) => {
             const text = json.choices[0].delta.content
             const queue = encoder.encode(text)
             controller.enqueue(queue)
-            console.log('--- debug json: ', json)
           } catch (e) {
             controller.error(e)
           }
