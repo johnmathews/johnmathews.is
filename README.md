@@ -8,11 +8,6 @@
 
 Then go to localhost:3000
 
-## How to create a new blog post or snippet
-
-1. Run `:Mp name-of-markdown-file`
-2. In neovim, use the `meta` snippet to generate the frontmatter.
-
 ## Deploy and publish
 
 1. Push to `main`. If you push to another branch the deploy will be built but it won't be
@@ -23,6 +18,11 @@ Then go to localhost:3000
 1. Run `yarn aux`.
 2. Alternatively, if you run `yarn build` then the sitemap, search index and aloglia data will be updated
    and uploaded too.
+
+## How to create a new blog post or snippet
+
+1. In vim, run `:Mp name-of-markdown-file`
+2. In neovim, use the `meta` snippet to generate the frontmatter.
 
 ## Chatbot
 
