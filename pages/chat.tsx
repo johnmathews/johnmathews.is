@@ -13,6 +13,7 @@ export default function Home() {
   const [chunks, setChunks] = useState<JMChunk[]>([])
   const [answer, setAnswer] = useState<string>('')
   const [loading, setLoading] = useState<boolean>(false)
+  const [streaming, setStreaming] = useState<boolean>(false)
 
   const [showSettings, setShowSettings] = useState<boolean>(false)
   const [mode, setMode] = useState<'search' | 'chat'>('chat')
@@ -83,6 +84,8 @@ export default function Home() {
       body: JSON.stringify({ query, apiKey, matches: matchCount }),
     })
 
+    setStreaming(true)
+
     if (!searchResponse.ok) {
       setLoading(false)
       throw new Error(searchResponse.statusText)
@@ -129,6 +132,7 @@ export default function Home() {
       const chunkValue = decoder.decode(value)
       setAnswer((prev) => prev + chunkValue)
     }
+    setStreaming(false)
 
     inputRef.current?.focus()
   }

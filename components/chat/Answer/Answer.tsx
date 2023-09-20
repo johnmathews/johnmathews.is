@@ -9,14 +9,22 @@ export const Answer: React.FC<AnswerProps> = ({ text }) => {
   const [words, setWords] = useState<string[]>([])
 
   useEffect(() => {
-    setWords(text.split(' '))
+    const placeholder = '<NEWLINE>'
+    const words = text.replace(/\n/g, ` ${placeholder} `).split(/\s+/)
+    setWords(words)
   }, [text])
 
   return (
-    <div>
+    <div id="AnswerContainer">
       {words.map((word, index) => (
         <span key={index} className={styles.fadeIn} style={{ animationDelay: `${index * 0.01}s` }}>
-          {word}{' '}
+          {word === '<NEWLINE>' ? (
+            <>
+              <br />
+            </>
+          ) : (
+            `${word} `
+          )}
         </span>
       ))}
     </div>

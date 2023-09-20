@@ -525,6 +525,20 @@ const KeyboardShortcuts = () => {
       callback: (e) => {
         let data = JSON.stringify({ category: 'keyboard-shortcut', event: 'gc' })
         clientEventLogger(router.asPath, data)
+        router.push('/chat')
+        HOUSEKEEPING()
+      },
+    },
+  ])
+
+  useHotkeys([
+    {
+      name: 'g o',
+      keys: ['g o'],
+      category: 'keys',
+      callback: (e) => {
+        let data = JSON.stringify({ category: 'keyboard-shortcut', event: 'go' })
+        clientEventLogger(router.asPath, data)
         router.push('/collections')
         HOUSEKEEPING()
       },
@@ -561,8 +575,8 @@ const KeyboardShortcuts = () => {
 
   useHotkeys([
     {
-      name: 'g j',
-      keys: ['g j'],
+      name: 'g p',
+      keys: ['g p'],
       category: 'keys',
       callback: (e) => {
         let data = JSON.stringify({ category: 'keyboard-shortcut', event: 'gp' })
@@ -603,11 +617,11 @@ const KeyboardShortcuts = () => {
 
   useHotkeys([
     {
-      name: 'g p',
-      keys: ['g p'],
+      name: 'g f',
+      keys: ['g f'],
       category: 'keys',
       callback: (e) => {
-        let data = JSON.stringify({ category: 'keyboard-shortcut', event: 'gp' })
+        let data = JSON.stringify({ category: 'keyboard-shortcut', event: 'gf' })
         clientEventLogger(router.asPath, data)
         router.push('/photographs')
         HOUSEKEEPING()

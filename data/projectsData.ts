@@ -2,6 +2,12 @@ import { CollectionItem } from 'types/CollectionPage'
 
 const projectsData: CollectionItem[] = [
   {
+    title: 'Domain-specific chatbot',
+    description: `A domain-specific chatbot built using content from this site. Use it to chat about me or about content I've written.`,
+    imgSrc: '/static/images/chatbot.png',
+    href: '/chat',
+  },
+  {
     title: 'Lettergun.com',
     description: `A service to create hand-written letters using robots and an LSTM neural
     network. The product is built using a Python stack; Tensorflow, Django, and GCP.`,

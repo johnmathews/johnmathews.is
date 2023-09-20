@@ -27,7 +27,7 @@ const collectionsData: CollectionItem[] = [
     description: 'A portfolio.',
     imgSrc: '',
     href: '/projects',
-    keyboardShortcut: 'gj',
+    keyboardShortcut: 'gp',
   },
   {
     title: 'Micro-SaaS',
@@ -77,7 +77,7 @@ const collectionsData: CollectionItem[] = [
     description: '',
     imgSrc: '',
     href: '/photographs',
-    keyboardShortcut: 'gp',
+    keyboardShortcut: 'gf',
   },
   {
     title: 'Sport',
