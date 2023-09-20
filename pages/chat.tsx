@@ -6,7 +6,15 @@ import { IconArrowRight, IconExternalLink, IconSearch } from '@tabler/icons-reac
 import endent from 'endent'
 import { KeyboardEvent, useEffect, useRef, useState } from 'react'
 
-export default function Home() {
+import { useRouter } from 'next/router'
+
+function clientEventLogger(pathname: string, data) {
+  const url = `https://us-central1-johnmathews-website.cloudfunctions.net/client-event-logger?path=${pathname}`
+  window.navigator.sendBeacon(url, data)
+}
+
+export default function Chat() {
+  const router = useRouter()
   const inputRef = useRef<HTMLInputElement>(null)
 
   const [query, setQuery] = useState<string>('')
@@ -70,6 +78,13 @@ export default function Home() {
       alert('Please enter a query.')
       return
     }
+
+    let eventData = JSON.stringify({
+      category: 'keyboard-shortcut',
+      event: 'chatbot',
+      details: String(query),
+    })
+    clientEventLogger(router.asPath, eventData)
 
     setAnswer('')
     setChunks([])
