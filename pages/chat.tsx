@@ -25,9 +25,7 @@ export default function Chat() {
   const [showSettings, setShowSettings] = useState<boolean>(false)
   const [mode, setMode] = useState<'search' | 'chat'>('chat')
   const [matchCount, setMatchCount] = useState<number>(5)
-  const [apiKey, setApiKey] = useState<string>(
-    process.env.NEXT_PUBLIC_SUPABASE_SERVICE_ROLE_KEY! || ''
-  )
+  const [apiKey, setApiKey] = useState<string>(process.env.NEXT_PUBLIC_OPENAI_API_KEY! || '')
 
   const handleSearch = async () => {
     if (!apiKey) {
