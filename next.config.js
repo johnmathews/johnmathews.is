@@ -4,9 +4,9 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 
 // You might need to insert additional domains in script-src if you are using external services
 const ContentSecurityPolicy = `
-  default-src 'self'  api.openai.com ojfdsjhuemowizxtijbk.supabase.co ;
+  default-src 'self' johnmathews.is  api.openai.com ojfdsjhuemowizxtijbk.supabase.co ;
   script-src 'self' 'unsafe-eval' 'unsafe-inline' giscus.app platform.twitter.com ;
-  style-src 'self' 'unsafe-inline' fonts.googleapis.com font.gstatic.com ;
+  style-src 'self' 'unsafe-inline' fonts.googleapis.com fonts.gstatic.com ;
   img-src * blob: data:;
   media-src 'none';
   connect-src *;
