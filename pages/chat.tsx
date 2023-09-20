@@ -1,7 +1,7 @@
 import siteMetadata from '@/data/siteMetadata'
 import { PageSEO } from '@/components/SEO'
 import { Answer } from '@/components/chat/Answer/Answer'
-import { JMChunk } from '@/types/chat'
+import { BlogChunk } from '@/types/chat'
 import { IconArrowRight, IconExternalLink, IconSearch } from '@tabler/icons-react'
 import endent from 'endent'
 import { KeyboardEvent, useEffect, useRef, useState } from 'react'
@@ -18,7 +18,7 @@ export default function Chat() {
   const inputRef = useRef<HTMLInputElement>(null)
 
   const [query, setQuery] = useState<string>('')
-  const [chunks, setChunks] = useState<JMChunk[]>([])
+  const [chunks, setChunks] = useState<BlogChunk[]>([])
   const [answer, setAnswer] = useState<string>('')
   const [loading, setLoading] = useState<boolean>(false)
   const [freshPage, setFreshPage] = useState<boolean>(true)
@@ -57,7 +57,7 @@ export default function Chat() {
       throw new Error(searchResponse.statusText)
     }
 
-    const results: JMChunk[] = await searchResponse.json()
+    const results: BlogChunk[] = await searchResponse.json()
 
     setChunks(results)
 
@@ -105,7 +105,7 @@ export default function Chat() {
       throw new Error(searchResponse.statusText)
     }
 
-    const results: JMChunk[] = await searchResponse.json()
+    const results: BlogChunk[] = await searchResponse.json()
 
     setChunks(results)
 
