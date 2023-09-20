@@ -116,7 +116,7 @@ export default function Chat() {
     console.log('--- debug prompt: ', prompt)
 
     const answerResponse = await fetch('/api/answer', {
-      method: 'GET',
+      method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
