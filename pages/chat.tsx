@@ -113,6 +113,8 @@ export default function Chat() {
     ${results?.map((d: any) => d.content).join('\n\n')}
     `
 
+    console.log('--- debug prompt: ', prompt)
+
     const answerResponse = await fetch('/api/answer', {
       method: 'POST',
       headers: {
@@ -121,12 +123,14 @@ export default function Chat() {
       body: JSON.stringify({ prompt, apiKey }),
     })
 
+    console.log('--- debug answerResponse: ', answerResponse)
     if (!answerResponse.ok) {
       setLoading(false)
       throw new Error(answerResponse.statusText)
     }
 
     const data = answerResponse.body
+    console.log('--- debug data: ', data)
 
     if (!data) {
       return
