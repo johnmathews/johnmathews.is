@@ -25,7 +25,7 @@ export default function Chat() {
   const [showSettings, setShowSettings] = useState<boolean>(false)
   const [mode, setMode] = useState<'search' | 'chat'>('chat')
   const [matchCount, setMatchCount] = useState<number>(5)
-  const [apiKey, setApiKey] = useState<string>('')
+  const [apiKey, setApiKey] = useState<string>(process.env.NEXT_PUBLIC_OPENAI_API_KEY!)
 
   const handleSearch = async () => {
     if (!apiKey) {
@@ -113,8 +113,6 @@ export default function Chat() {
     ${results?.map((d: any) => d.content).join('\n\n')}
     `
 
-    console.log('--- debug prompt: ', prompt)
-
     const answerResponse = await fetch('/api/answer', {
       method: 'POST',
       headers: {
@@ -123,14 +121,12 @@ export default function Chat() {
       body: JSON.stringify({ prompt, apiKey }),
     })
 
-    console.log('--- debug answerResponse: ', answerResponse)
     if (!answerResponse.ok) {
       setLoading(false)
       throw new Error(answerResponse.statusText)
     }
 
     const data = answerResponse.body
-    console.log('--- debug data: ', data)
 
     if (!data) {
       return
