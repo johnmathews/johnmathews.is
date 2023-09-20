@@ -3,7 +3,7 @@
 ## Setup for local development
 
 1. `yarn`
-2. `npm run build`
+2. `yarn build`
 3. `yarn start`
 
 Then go to localhost:3000
@@ -15,29 +15,33 @@ Then go to localhost:3000
 
 ## Deploy and publish
 
-1. Just push to `main`. Vercel is watching the github repo.
+1. Just push to `main`. If you push to another branch the deploy will be built but it won't be
+   promoted to production.
 
 ## Search and sitemap
 
-1. run `npm aux`. If you run `npm run build` then the search index and aloglia data will be updated
-   and uploaded. Sitemap is also updated I think.
+1. run `yarn aux`. If you run `yarn build` then the sitemap, search index and aloglia data will be updated
+   and uploaded too.
 
 ## Chatbot
 
-1. run `npm run scrape` - this scrapes the live site at johnmathews.is and creates
-   `scripts/jm.json`
+Goto [/chat](https://johnmathews.is/chat) and you can ask a chatbot questions about me and the
+content on my blog. It's kind of like an interactive CV.
+
+### Build
+
+1. run `npm run scrape` - this scrapes the live site at [johnmathews.is](johnmathws.is) and puts the data in `scripts/jm.json`.
 2. run `npm run embed`
+
+## Extra things
+
+- Use `?` to show keyboard shortcuts
+- There are simple usage metrics at [/metrics](https://johnmathews.is/metrics)
 
 ## TODO
 
-I should write some context here. Including:
-
-- some of the keyboard shortcuts
 - the video archive feature
-- how GCP buckets are used
-- the chatbot feature
 
 ## Known issues
 
-- The keyboard shortcuts library (reakeys) causes some errors about SSR and useEffect.
 - The photos pages, or maybe images in general, cause some warnings about latex incompatible input.
