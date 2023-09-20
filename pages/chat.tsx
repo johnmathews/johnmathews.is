@@ -225,13 +225,14 @@ export default function Chat() {
         <div className="flex h-screen w-full flex-col items-start">
           <div className="w-full">
             <div className="flex h-full w-full flex-col items-center pr-3 pt-4 sm:pt-8">
-              <button
-                className="mt-4 flex hidden cursor-pointer items-center space-x-2 rounded-full border border-zinc-600 px-3 py-1 text-sm hover:opacity-50"
-                onClick={() => setShowSettings(!showSettings)}
-              >
-                {showSettings ? 'Hide' : 'Show'} Settings
-              </button>
-
+              <div id="hideSettings" className="hidden">
+                <button
+                  className="mt-4 flex hidden cursor-pointer items-center space-x-2 rounded-full border border-zinc-600 px-3 py-1 text-sm hover:opacity-50"
+                  onClick={() => setShowSettings(!showSettings)}
+                >
+                  {showSettings ? 'Hide' : 'Show'} Settings
+                </button>
+              </div>
               {showSettings && (
                 <div className="w-[340px] sm:w-[400px]">
                   <div>
