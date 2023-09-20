@@ -8,9 +8,9 @@ import { KeyboardEvent, useEffect, useRef, useState } from 'react'
 
 import { useRouter } from 'next/router'
 
-function clientEventLogger(pathname: string, data) {
+function clientEventLogger(pathname: string, eventData: string) {
   const url = `https://us-central1-johnmathews-website.cloudfunctions.net/client-event-logger?path=${pathname}`
-  window.navigator.sendBeacon(url, data)
+  window.navigator.sendBeacon(url, eventData)
 }
 
 export default function Chat() {
@@ -21,7 +21,6 @@ export default function Chat() {
   const [chunks, setChunks] = useState<JMChunk[]>([])
   const [answer, setAnswer] = useState<string>('')
   const [loading, setLoading] = useState<boolean>(false)
-  const [streaming, setStreaming] = useState<boolean>(false)
 
   const [showSettings, setShowSettings] = useState<boolean>(false)
   const [mode, setMode] = useState<'search' | 'chat'>('chat')
@@ -80,8 +79,8 @@ export default function Chat() {
     }
 
     let eventData = JSON.stringify({
-      category: 'keyboard-shortcut',
-      event: 'chatbot',
+      category: 'chatbot',
+      event: 'query',
       details: String(query),
     })
     clientEventLogger(router.asPath, eventData)
@@ -98,8 +97,6 @@ export default function Chat() {
       },
       body: JSON.stringify({ query, apiKey, matches: matchCount }),
     })
-
-    setStreaming(true)
 
     if (!searchResponse.ok) {
       setLoading(false)
@@ -147,7 +144,6 @@ export default function Chat() {
       const chunkValue = decoder.decode(value)
       setAnswer((prev) => prev + chunkValue)
     }
-    setStreaming(false)
 
     inputRef.current?.focus()
   }
