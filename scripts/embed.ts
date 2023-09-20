@@ -1,5 +1,5 @@
 import chalk from 'chalk'
-import { JMArticle, JMJSON } from '@/types/chat'
+import { BlogArticle, BlogJSON } from '@/types/chat'
 import { loadEnvConfig } from '@next/env'
 import { createClient } from '@supabase/supabase-js'
 import fs from 'fs'
@@ -7,7 +7,7 @@ import { Configuration, OpenAIApi } from 'openai'
 
 loadEnvConfig('')
 
-const generateEmbeddings = async (articles: JMArticle[]) => {
+const generateEmbeddings = async (articles: BlogArticle[]) => {
   const configuration = new Configuration({
     apiKey: process.env.OPENAI_API_KEY,
   })
@@ -24,15 +24,7 @@ const generateEmbeddings = async (articles: JMArticle[]) => {
     for (let j = 0; j < section.chunks.length; j++) {
       const chunk = section.chunks[j]
 
-      const {
-        blog_title,
-        blog_url,
-        blog_date,
-        blog_thanks,
-        content,
-        content_length,
-        content_tokens,
-      } = chunk
+      const { blog_title, blog_url, blog_date, content, content_length, content_tokens } = chunk
 
       const embeddingResponse = await openai.createEmbedding({
         model: 'text-embedding-ada-002',
@@ -42,12 +34,11 @@ const generateEmbeddings = async (articles: JMArticle[]) => {
       const [{ embedding }] = embeddingResponse.data.data
 
       const { data, error } = await supabase
-        .from('jm')
+        .from('blog_content')
         .insert({
           blog_title,
           blog_url,
           blog_date,
-          blog_thanks,
           content,
           content_length,
           content_tokens,
@@ -69,7 +60,7 @@ const generateEmbeddings = async (articles: JMArticle[]) => {
 }
 
 ;(async () => {
-  const book: JMJSON = JSON.parse(fs.readFileSync('scripts/jm.json', 'utf8'))
+  const book: BlogJSON = JSON.parse(fs.readFileSync('scripts/blog_content.json', 'utf8'))
 
   await generateEmbeddings(book.posts)
 })()

@@ -1,4 +1,4 @@
-import { JMArticle, JMChunk, JMJSON } from '@/types/chat'
+import { BlogArticle, BlogChunk, BlogJSON } from '@/types/chat'
 import axios from 'axios'
 import * as cheerio from 'cheerio'
 import fs from 'fs'
@@ -12,32 +12,30 @@ const getLinks = async () => {
   const $ = cheerio.load(html.data)
 
   const listLayoutWrapper = $('#listLayoutWrapper')
-  const childDivCount = listLayoutWrapper.children('div').length
 
   const linksArr: { url: string | undefined; title: string }[] = []
 
-  listLayoutWrapper.children('div').each((i, div) => {
+  listLayoutWrapper.children('div').each((_i, div) => {
     if ($(div).attr('id') != 'titleWrapper') {
-      // select an unorderlist inside the element and an iterate through the li elements
       $(div)
         .children('ul')
         .children('li')
-        .each((i, li) => {
+        .each((_i, li) => {
           $(li)
             .children('div')
-            .each((i, li) => {
+            .each((_i, li) => {
               $(li)
                 .children('div')
-                .each((i, li) => {
+                .each((_i, li) => {
                   $(li)
                     .children('div')
-                    .each((i, li) => {
+                    .each((_i, li) => {
                       $(li)
                         .children('div')
-                        .each((i, li) => {
+                        .each((_i, li) => {
                           $(li)
                             .children('a')
-                            .each((i, a) => {
+                            .each((_i, a) => {
                               const url = $(a).attr('href')
                               const title = $(a).text()
                               const linkObj = {
@@ -60,11 +58,10 @@ const getLinks = async () => {
 const getBlogPost = async (linkObj: { url: string | undefined; title: string }) => {
   const { title, url } = linkObj
 
-  let article: JMArticle = {
+  let article: BlogArticle = {
     title: '',
     url: '',
     date: '',
-    thanks: '',
     content: '',
     length: 0,
     tokens: 0,
@@ -115,7 +112,6 @@ const getBlogPost = async (linkObj: { url: string | undefined; title: string }) 
     title: articleTitle,
     url: fullLink,
     date: dateStr,
-    thanks: '',
     content: trimmedContent,
     length: trimmedContent.length,
     tokens: encode(trimmedContent).length,
@@ -125,8 +121,8 @@ const getBlogPost = async (linkObj: { url: string | undefined; title: string }) 
   return article
 }
 
-const chunkBlogPost = async (essay: JMArticle) => {
-  const { title, url, date, thanks, content, ...chunklessSection } = essay
+const chunkBlogPost = async (essay: BlogArticle) => {
+  const { title, url, date, content, ...chunklessSection } = essay
   console.log('scraping: ', title)
 
   let essayTextChunks = []
@@ -162,11 +158,10 @@ const chunkBlogPost = async (essay: JMArticle) => {
   const essayChunks = essayTextChunks.map((text) => {
     const trimmedText = text.trim()
 
-    const chunk: JMChunk = {
+    const chunk: BlogChunk = {
       blog_title: title,
       blog_url: url,
       blog_date: date,
-      blog_thanks: thanks,
       content: trimmedText,
       content_length: trimmedText.length,
       content_tokens: encode(trimmedText).length,
@@ -191,7 +186,7 @@ const chunkBlogPost = async (essay: JMArticle) => {
     }
   }
 
-  const chunkedSection: JMArticle = {
+  const chunkedSection: BlogArticle = {
     ...essay,
     chunks: essayChunks,
   }
@@ -201,16 +196,25 @@ const chunkBlogPost = async (essay: JMArticle) => {
 
 ;(async () => {
   const links = await getLinks()
-
   let blogPosts = []
 
+  // these blog posts wont be crawled
+  let badWords = ['peter', 'proverbs']
+
   for (let i = 0; i < links.length; i++) {
+    const lowerTitle = links[i].title.toLowerCase()
+
+    // Skip if title contains any word in badWords
+    if (badWords.some((badWord) => lowerTitle.includes(badWord))) {
+      continue
+    }
+
     const blogPost = await getBlogPost(links[i])
     const chunkedBlogPost = await chunkBlogPost(blogPost)
     blogPosts.push(chunkedBlogPost)
   }
 
-  const json: JMJSON = {
+  const json: BlogJSON = {
     current_date: '2023-09-15',
     author: 'John Mathews',
     url: 'http://johnmathews.is/posts',
@@ -219,5 +223,5 @@ const chunkBlogPost = async (essay: JMArticle) => {
     posts: blogPosts,
   }
 
-  fs.writeFileSync('scripts/jm.json', JSON.stringify(json))
+  fs.writeFileSync('scripts/blog_content.json', JSON.stringify(json))
 })()
