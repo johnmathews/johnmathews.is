@@ -302,7 +302,7 @@ export default function Chat() {
                     ref={inputRef}
                     className="h-12 w-full rounded-xl border border-zinc-600 pl-11 pr-12 text-gray-800 focus:border-zinc-800 focus:outline-none focus:ring-1 focus:ring-zinc-800 dark:text-gray-800 sm:h-16 sm:py-2 sm:pl-16 sm:pr-16 sm:text-lg"
                     type="text"
-                    placeholder="How do I start a startup?"
+                    placeholder="Is John a consultant data scientist?"
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
                     onKeyDown={handleKeyDown}
@@ -332,6 +332,7 @@ export default function Chat() {
                   <div className="text-xl">Things you could ask:</div>
                   <ul className="ml-3 mt-4 list-inside list-disc">
                     <li>What are John's skills?</li>
+                    <li>What professional experience does he have?</li>
                     <li>Is John a terrible programmer?</li>
                     <li>Does John enjoy exercise?</li>
                     <li>What are his hobbies?</li>
