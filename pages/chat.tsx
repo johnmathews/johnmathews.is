@@ -25,7 +25,9 @@ export default function Chat() {
   const [showSettings, setShowSettings] = useState<boolean>(false)
   const [mode, setMode] = useState<'search' | 'chat'>('chat')
   const [matchCount, setMatchCount] = useState<number>(5)
-  const [apiKey, setApiKey] = useState<string>(process.env.NEXT_PUBLIC_OPENAI_API_KEY!)
+  const [apiKey, setApiKey] = useState<string>(
+    process.env.NEXT_PUBLIC_SUPABASE_SERVICE_ROLE_KEY! || ''
+  )
 
   const handleSearch = async () => {
     if (!apiKey) {
@@ -224,7 +226,7 @@ export default function Chat() {
           <div className="w-full">
             <div className="flex h-full w-full flex-col items-center pr-3 pt-4 sm:pt-8">
               <button
-                className="mt-4 flex cursor-pointer items-center space-x-2 rounded-full border border-zinc-600 px-3 py-1 text-sm hover:opacity-50"
+                className="mt-4 flex hidden cursor-pointer items-center space-x-2 rounded-full border border-zinc-600 px-3 py-1 text-sm hover:opacity-50"
                 onClick={() => setShowSettings(!showSettings)}
               >
                 {showSettings ? 'Hide' : 'Show'} Settings
