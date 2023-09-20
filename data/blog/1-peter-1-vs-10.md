@@ -4,6 +4,7 @@ slug: 1-peter-1-vs-10
 date: '2021-09-10 13:52:22'
 category: Non-technical>Journal
 tags: ['bible']
+draft: true
 ---
 
 <mark>Concerning this salvation, the prophets who prophesied about the grace

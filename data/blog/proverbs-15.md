@@ -4,6 +4,7 @@ slug: proverbs-15
 date: '2021-06-24 15:36:13'
 category: Non-technical>Journal
 tags: ['books', 'bible', 'wisdom']
+draft: true
 ---
 
 $^{1}$<mark>A soft answer turns away wrath, but a harsh word stirs up

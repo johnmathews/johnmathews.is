@@ -22,6 +22,12 @@ Then go to localhost:3000
 1. run `npm aux`. If you run `npm run build` then the search index and aloglia data will be updated
    and uploaded. Sitemap is also updated I think.
 
+## Chatbot
+
+1. run `npm run scrape` - this scrapes the live site at johnmathews.is and creates
+   `scripts/jm.json`
+2. run `npm run embed`
+
 ## TODO
 
 I should write some context here. Including:

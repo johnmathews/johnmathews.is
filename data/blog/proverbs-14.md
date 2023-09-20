@@ -4,6 +4,7 @@ slug: proverbs-14
 date: '2021-06-14 15:20:40'
 category: Non-technical>Journal
 tags: ['books', 'bible', 'wisdom']
+draft: true
 ---
 
 $^{1}$<mark>The wisest of women builds her house, but folly with her own hands
