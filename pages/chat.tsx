@@ -21,6 +21,7 @@ export default function Chat() {
   const [chunks, setChunks] = useState<JMChunk[]>([])
   const [answer, setAnswer] = useState<string>('')
   const [loading, setLoading] = useState<boolean>(false)
+  const [freshPage, setFreshPage] = useState<boolean>(true)
 
   const [showSettings, setShowSettings] = useState<boolean>(false)
   const [mode, setMode] = useState<'search' | 'chat'>('chat')
@@ -85,6 +86,7 @@ export default function Chat() {
     })
     clientEventLogger(router.asPath, eventData)
 
+    setFreshPage(false)
     setAnswer('')
     setChunks([])
 
@@ -309,7 +311,7 @@ export default function Chat() {
                   <button>
                     <IconArrowRight
                       onClick={mode === 'search' ? handleSearch : handleAnswer}
-                      className="absolute right-2 top-2.5 h-7 w-7 rounded-full bg-blue-500 p-1 text-white hover:cursor-pointer hover:bg-blue-600 sm:right-3 sm:top-3 sm:h-10 sm:w-10"
+                      className="absolute right-2 top-2.5 h-7 w-7 rounded-xl bg-green-700 p-1 text-white hover:cursor-pointer hover:bg-green-600 sm:right-3 sm:top-3 sm:h-10 sm:w-10"
                     />
                   </button>
                 </div>
@@ -325,6 +327,17 @@ export default function Chat() {
                   in settings.
                 </div>
               )}
+              {freshPage ? (
+                <div className="mt-6 w-full">
+                  <div className="text-xl">Things you could ask:</div>
+                  <ul className="ml-3 mt-4 list-inside list-disc">
+                    <li>What are John's skills?</li>
+                    <li>Is John a terrible programmer?</li>
+                    <li>Does John enjoy exercise?</li>
+                    <li>What are his hobbies?</li>
+                  </ul>
+                </div>
+              ) : null}
 
               {loading ? (
                 <div className="mt-6 w-full">
