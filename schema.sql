@@ -1,3 +1,5 @@
+# vim: set filetype=sql:
+
 --  RUN 1st
 create extension vector;
 
