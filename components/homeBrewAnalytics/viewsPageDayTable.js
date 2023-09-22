@@ -36,6 +36,19 @@ export default function ViewsPageDayTable({ data }) {
     parsedData.push(dataRow)
   }
 
+  // parsedData.sort((a, b) => {
+  //   if (a.date === b.date) {
+  //     return a.views < b.views ? 1 : -1
+  //   } else {
+  //     return Date(a.date) < Date(b.date) ? 1 : -1
+  //   }
+  // })
+  parsedData.sort((a, b) => {
+    const dateDiff = new Date(b.date) - new Date(a.date)
+    if (dateDiff !== 0) return dateDiff
+    return b.views - a.views
+  })
+
   const PageCellProcessor = ({ value, row: { index }, column: { id } }) => {
     return (
       <Link href={value} className="hover:underline">
