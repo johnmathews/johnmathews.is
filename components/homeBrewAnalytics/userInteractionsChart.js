@@ -98,7 +98,7 @@ export default function UserInteractions({ data }) {
   return (
     <div
       id="userInteractionsEachDay"
-      className="min-h-32  col-span-3 border-2 border-slate-800 p-3"
+      className="min-h-32  col-span-3 border-2 border-slate-800 p-3 dark:border-slate-500"
     >
       <div className="mb-2">User Interactions</div>
       <ResponsiveContainer width="100%" height={400}>

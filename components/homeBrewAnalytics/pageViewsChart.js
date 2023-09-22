@@ -35,7 +35,10 @@ export default function PageViews({ data }) {
     d.date = date.toLocaleDateString(siteMetadata.locale, dateTemplateXAxis)
   })
   return (
-    <div id="pagesViewedEachDay" className="min-h-32  col-span-3 border-2 border-slate-800 p-3">
+    <div
+      id="pagesViewedEachDay"
+      className="min-h-32  col-span-3 border-2 border-slate-800 p-3 dark:border-slate-500"
+    >
       <div className="mb-2">Page Views</div>
       <ResponsiveContainer width="100%" height={400}>
         <AreaChart

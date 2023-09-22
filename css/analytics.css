@@ -29,17 +29,17 @@
 }
 
 #viewsPerPagePerDay input {
-  @apply mb-3 p-1 dark:bg-slate-900 dark:placeholder-slate-100;
+  @apply mb-3 p-1 dark:bg-gray-900 dark:placeholder-slate-100;
 }
 
 /* header */
 #viewsPerPagePerDay table th {
-  @apply bg-slate-200 text-gray-800 dark:bg-slate-900 dark:text-gray-200;
+  @apply bg-slate-200 text-gray-800 dark:border dark:border-gray-300 dark:bg-gray-900 dark:text-gray-200;
 }
 /* rows */
 #viewsPerPagePerDay table tr {
-  @apply mx-3 border  border-slate-500 bg-white text-gray-800 dark:bg-slate-900 dark:text-gray-200;
+  @apply mx-3 border border-slate-500 bg-white  text-gray-800 dark:border dark:border-gray-300 dark:bg-gray-900 dark:text-gray-200;
 }
 #viewsPerPagePerDay table tr td {
-  @apply border  border-slate-500 p-2;
+  @apply border border-slate-500  p-2 dark:border-gray-300;
 }

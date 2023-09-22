@@ -102,7 +102,7 @@ export default function ViewsPageDayTable({ data }) {
   return (
     <div
       id="viewsPerPagePerDay"
-      className="min-h-32 col-span-3 border-separate border-2 border-slate-800 p-3"
+      className="min-h-32 col-span-3 border-separate border-2 border-slate-800 p-3 dark:border-slate-500"
     >
       <Table columns={columns} data={parsedData} />
     </div>

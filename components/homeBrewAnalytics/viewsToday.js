@@ -20,7 +20,7 @@ export default function ViewsToday({ fetcher, pageViewsIPAddresses }) {
   const viewsToday = dailyViewsCleaned[today]
 
   return (
-    <div id="viewsToday" className="min-h-32 border-2 border-slate-800 p-3  ">
+    <div id="viewsToday" className="min-h-32 border-2 border-slate-800 p-3 dark:border-slate-500  ">
       Views Today: {viewsToday}
     </div>
   )

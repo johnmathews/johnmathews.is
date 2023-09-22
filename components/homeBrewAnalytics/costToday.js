@@ -107,7 +107,7 @@ export default function CostToday({ fetcher, url }) {
   // const viewsToday = dailyViewsCleaned[today]
 
   return (
-    <div id="costToday" className="min-h-32 border-2 border-slate-800 p-3">
+    <div id="costToday" className="min-h-32 border-2 border-slate-800  p-3 dark:border-slate-500">
       Costs {(costYesterday * 100).toFixed(1).toString() + '¢'}
     </div>
   )

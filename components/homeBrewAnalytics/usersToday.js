@@ -19,7 +19,7 @@ export default function UsersToday({ fetcher, pageViewsIPAddresses }) {
   const usersToday = dailyIpAddressesCleaned[date]
 
   return (
-    <div id="usersToday" className="min-h-32 border-2 border-slate-800 p-3  ">
+    <div id="usersToday" className="min-h-32 border-2 border-slate-800 p-3 dark:border-slate-500  ">
       Users Today: {[usersToday]}
     </div>
   )
