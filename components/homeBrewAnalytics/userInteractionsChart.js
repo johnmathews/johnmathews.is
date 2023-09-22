@@ -57,28 +57,6 @@ const colorArray = [
   '#99E6E6',
   '#6666FF',
 ]
-// <Bar dataKey="/" fill={colorArray[0]} stackId="1" />
-// <Bar dataKey="query" fill={colorArray[20]} stackId="1" />
-// <Bar dataKey="ga" fill={colorArray[1]} stackId="1" />
-// <Bar dataKey="gc" fill={colorArray[2]} stackId="1" />
-// <Bar dataKey="go" fill={colorArray[21]} stackId="1" />
-// <Bar dataKey="gi" fill={colorArray[3]} stackId="1" />
-// <Bar dataKey="gl" fill={colorArray[4]} stackId="1" />
-// <Bar dataKey="gm" fill={colorArray[5]} stackId="1" />
-// <Bar dataKey="gg" fill={colorArray[6]} stackId="1" />
-// <Bar dataKey="G" fill={colorArray[7]} stackId="1" />
-// <Bar dataKey="cmnd+k" fill={colorArray[8]} stackId="1" />
-// <Bar dataKey="cmd+k" fill={colorArray[9]} stackId="1" />
-// <Bar dataKey="ctrl+j" fill={colorArray[10]} stackId="1" />
-// <Bar dataKey="esc" fill={colorArray[11]} stackId="1" />
-// <Bar dataKey="hamburgerMenu" fill={colorArray[12]} stackId="1" />
-// <Bar dataKey="j" fill={colorArray[13]} stackId="1" />
-// <Bar dataKey="k" fill={colorArray[14]} stackId="1" />
-// <Bar dataKey="keyboardShortcuts" fill={colorArray[15]} stackId="1" />
-// <Bar dataKey="tt" fill={colorArray[16]} stackId="1" />
-// <Bar dataKey="va" fill={colorArray[17]} stackId="1" />
-// <Bar dataKey="viewShortcuts" fill={colorArray[18]} stackId="1" />
-// <Bar dataKey="vn" fill={colorArray[19]} stackId="1" />
 
 const CustomTooltip = ({ active, payload, label }) => {
   if (active && payload && payload.length) {
@@ -91,7 +69,7 @@ const CustomTooltip = ({ active, payload, label }) => {
           if (p.value == 0) {
             return null
           } else {
-            return <p key={p}>{`${p.dataKey}: ${p.value}`}</p>
+            return <p key={p.dataKey}>{`${p.dataKey}: ${p.value}`}</p>
           }
         })}
       </div>
