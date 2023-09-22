@@ -83,6 +83,15 @@ const getPageContent = async (linkObj: { url: string; title: string }) => {
   const pageTitle = $('#pageTitle').text().trim()
 
   let cleanedText = ''
+
+  // for the about page
+  $('#pageContent')
+    .children('p')
+    .each((_, element) => {
+      cleanedText += $(element).text() + ' '
+    })
+
+  // for the experience page
   $('#pageContent')
     .find('*')
     .each((_, element) => {
@@ -96,7 +105,6 @@ const getPageContent = async (linkObj: { url: string; title: string }) => {
     .replace(/<img[^>]*>/g, '')
     .replace(/\s+/g, ' ')
     .trim()
-
   const trimmedContent = cleanedText.trim()
 
   article = {
@@ -137,10 +145,6 @@ const getBlogPost = async (linkObj: { url: string; title: string }) => {
 
   const articleTitle = articleHeader.find('div div div').first().text().trim()
 
-  // const articleText = $("#content").text();
-  // let cleanedText = articleText.replace(/\s+/g, " ");
-  // cleanedText = cleanedText.replace(/\.([a-zA-Z])/g, ". $1");
-
   // try to not include nested html tags
   let cleanedText = ''
   $('#content')
@@ -180,7 +184,6 @@ const getBlogPost = async (linkObj: { url: string; title: string }) => {
 
 const chunkBlogPost = async (webPage: BlogArticle) => {
   const { title, url, date, content } = webPage
-  console.log('scraping: ', title)
 
   let essayTextChunks = []
 
@@ -253,30 +256,22 @@ const chunkBlogPost = async (webPage: BlogArticle) => {
 
 // this syntax is an immediatly invoked function expression (IIFE)
 // it functions like `if __name__=="__main__":` in python
-
 ;(async () => {
   const links = await getLinks()
   let blogPosts = []
 
-  console.log('scraping manual pages..')
-
+  console.log('\nscraping manual pages..\n\n')
   const otherPages = await otherLinks()
-  console.log('--- otherPages: ', otherPages)
-
   for (let i = 0; i < otherPages.length; i++) {
     const webPage = await getPageContent(otherPages[i])
-    console.log('--- got webPage: i=', i)
-
-    const chunkedWebPage = chunkBlogPost(webPage)
-    console.log('--- chunked webPage: i=', i)
-
+    const chunkedWebPage = await chunkBlogPost(webPage)
     blogPosts.push(chunkedWebPage)
   }
 
-  // these blog posts wont be crawled
+  // blog posts with these words in the title wont be crawled
   let skipTheseBlogPosts = ['peter', 'proverbs']
 
-  console.log('scraping blog posts')
+  console.log('\n\nscraping blog posts..\n\n')
   for (let i = 0; i < links.length; i++) {
     const lowerTitle = links[i].title.toLowerCase()
 

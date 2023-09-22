@@ -1,9 +1,10 @@
+import fs from 'fs'
 import chalk from 'chalk'
+import { Configuration, OpenAIApi } from 'openai'
+
 import { BlogArticle, BlogJSON } from '@/types/chat'
 import { loadEnvConfig } from '@next/env'
 import { createClient } from '@supabase/supabase-js'
-import fs from 'fs'
-import { Configuration, OpenAIApi } from 'openai'
 
 loadEnvConfig('')
 
@@ -17,6 +18,14 @@ const generateEmbeddings = async (articles: BlogArticle[]) => {
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
     process.env.SUPABASE_SERVICE_ROLE_KEY!
   )
+
+  // Delete all existing rows in supabase table to avoid duplicates
+  const { error: delError } = await supabase.from('blog_content').delete().neq('blog_title', '')
+
+  if (delError) {
+    console.log('delete error', delError)
+    return
+  }
 
   for (let i = 0; i < articles.length; i++) {
     const section = articles[i]
