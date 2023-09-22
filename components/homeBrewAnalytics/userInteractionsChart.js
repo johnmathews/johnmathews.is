@@ -57,6 +57,28 @@ const colorArray = [
   '#99E6E6',
   '#6666FF',
 ]
+// <Bar dataKey="/" fill={colorArray[0]} stackId="1" />
+// <Bar dataKey="query" fill={colorArray[20]} stackId="1" />
+// <Bar dataKey="ga" fill={colorArray[1]} stackId="1" />
+// <Bar dataKey="gc" fill={colorArray[2]} stackId="1" />
+// <Bar dataKey="go" fill={colorArray[21]} stackId="1" />
+// <Bar dataKey="gi" fill={colorArray[3]} stackId="1" />
+// <Bar dataKey="gl" fill={colorArray[4]} stackId="1" />
+// <Bar dataKey="gm" fill={colorArray[5]} stackId="1" />
+// <Bar dataKey="gg" fill={colorArray[6]} stackId="1" />
+// <Bar dataKey="G" fill={colorArray[7]} stackId="1" />
+// <Bar dataKey="cmnd+k" fill={colorArray[8]} stackId="1" />
+// <Bar dataKey="cmd+k" fill={colorArray[9]} stackId="1" />
+// <Bar dataKey="ctrl+j" fill={colorArray[10]} stackId="1" />
+// <Bar dataKey="esc" fill={colorArray[11]} stackId="1" />
+// <Bar dataKey="hamburgerMenu" fill={colorArray[12]} stackId="1" />
+// <Bar dataKey="j" fill={colorArray[13]} stackId="1" />
+// <Bar dataKey="k" fill={colorArray[14]} stackId="1" />
+// <Bar dataKey="keyboardShortcuts" fill={colorArray[15]} stackId="1" />
+// <Bar dataKey="tt" fill={colorArray[16]} stackId="1" />
+// <Bar dataKey="va" fill={colorArray[17]} stackId="1" />
+// <Bar dataKey="viewShortcuts" fill={colorArray[18]} stackId="1" />
+// <Bar dataKey="vn" fill={colorArray[19]} stackId="1" />
 
 const CustomTooltip = ({ active, payload, label }) => {
   if (active && payload && payload.length) {
@@ -85,6 +107,16 @@ export default function UserInteractions({ data }) {
     const date = new Date(d.date)
     d.date = date.toLocaleDateString(siteMetadata.locale, dateTemplateXAxis)
   })
+
+  const uniqueKeys = new Set()
+  data.forEach((item) => {
+    Object.keys(item).forEach((key) => {
+      uniqueKeys.add(key)
+    })
+  })
+
+  const keysToPlot = Array.from(uniqueKeys).filter((key) => key !== 'date' && key !== 'index')
+
   return (
     <div
       id="userInteractionsEachDay"
@@ -105,28 +137,9 @@ export default function UserInteractions({ data }) {
           <XAxis dataKey="date" reverses="true" />
           <YAxis orientation="right" />
           <Tooltip content={<CustomTooltip />} />
-          <Bar dataKey="/" fill={colorArray[0]} stackId="1" />
-          <Bar dataKey="query" fill={colorArray[20]} stackId="1" />
-          <Bar dataKey="ga" fill={colorArray[1]} stackId="1" />
-          <Bar dataKey="gc" fill={colorArray[2]} stackId="1" />
-          <Bar dataKey="go" fill={colorArray[21]} stackId="1" />
-          <Bar dataKey="gi" fill={colorArray[3]} stackId="1" />
-          <Bar dataKey="gl" fill={colorArray[4]} stackId="1" />
-          <Bar dataKey="gm" fill={colorArray[5]} stackId="1" />
-          <Bar dataKey="gg" fill={colorArray[6]} stackId="1" />
-          <Bar dataKey="G" fill={colorArray[7]} stackId="1" />
-          <Bar dataKey="cmnd+k" fill={colorArray[8]} stackId="1" />
-          <Bar dataKey="cmd+k" fill={colorArray[9]} stackId="1" />
-          <Bar dataKey="ctrl+j" fill={colorArray[10]} stackId="1" />
-          <Bar dataKey="esc" fill={colorArray[11]} stackId="1" />
-          <Bar dataKey="hamburgerMenu" fill={colorArray[12]} stackId="1" />
-          <Bar dataKey="j" fill={colorArray[13]} stackId="1" />
-          <Bar dataKey="k" fill={colorArray[14]} stackId="1" />
-          <Bar dataKey="keyboardShortcuts" fill={colorArray[15]} stackId="1" />
-          <Bar dataKey="tt" fill={colorArray[16]} stackId="1" />
-          <Bar dataKey="va" fill={colorArray[17]} stackId="1" />
-          <Bar dataKey="viewShortcuts" fill={colorArray[18]} stackId="1" />
-          <Bar dataKey="vn" fill={colorArray[19]} stackId="1" />
+          {keysToPlot.map((key, index) => (
+            <Bar key={key} dataKey={key} fill={colorArray[index % colorArray.length]} stackId="1" />
+          ))}
         </BarChart>
       </ResponsiveContainer>
     </div>

@@ -10,14 +10,14 @@ Then go to localhost:3000
 
 ## Deploy and publish
 
-1. Push to `main`. If you push to another branch the deploy will be built but it won't be
-   promoted to production.
+1. Push to `main`. If you push to another branch the deploy will be built but it won't be promoted
+   to production.
 
 ## Search and sitemap
 
 1. Run `yarn aux`.
-2. Alternatively, if you run `yarn build` then the sitemap, search index and aloglia data will be updated
-   and uploaded too.
+2. Alternatively, if you run `yarn build` then the sitemap, search index and aloglia data will be
+   updated and uploaded too.
 
 ## How to create a new blog post or snippet
 
@@ -31,7 +31,8 @@ content on my blog. It's kind of like an interactive CV.
 
 ### Build
 
-1. run `npm run scrape` - this scrapes the live site at [johnmathews.is](https://johnmathws.is/posts) and puts the data in `scripts/jm.json`.
+1. run `npm run scrape` - this scrapes the live site at
+   [johnmathews.is](https://johnmathws.is/posts) and puts the data in `scripts/jm.json`.
 2. run `npm run embed`
 
 ## Extra things
