@@ -58,6 +58,7 @@ export default function Chat() {
     }
 
     const results: BlogChunk[] = await searchResponse.json()
+    console.log('--- debug results: ', results)
 
     setChunks(results)
 
