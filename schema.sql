@@ -43,7 +43,7 @@ begin
     blog_content.content,
     blog_content.content_length,
     blog_content.content_tokens,
-    1 - (jm.embedding <=> query_embedding) as similarity
+    1 - (blog_content.embedding <=> query_embedding) as similarity
   from blog_content
   where 1 - (blog_content.embedding <=> query_embedding) > similarity_threshold
   order by blog_content.embedding <=> query_embedding
