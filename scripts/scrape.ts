@@ -55,8 +55,16 @@ const getLinks = async () => {
   return linksArr
 }
 
-const getBlogPost = async (linkObj: { url: string | undefined; title: string }) => {
-  const { title, url } = linkObj
+const otherLinks = async () => {
+  const otherLinks = [
+    { title: 'About', url: '/about' },
+    { title: 'Experience', url: '/experience' },
+  ]
+  return otherLinks
+}
+
+const getBlogPost = async (linkObj: { url: string; title: string }) => {
+  const { url } = linkObj
 
   let article: BlogArticle = {
     title: '',
@@ -122,7 +130,7 @@ const getBlogPost = async (linkObj: { url: string | undefined; title: string }) 
 }
 
 const chunkBlogPost = async (essay: BlogArticle) => {
-  const { title, url, date, content, ...chunklessSection } = essay
+  const { title, url, date, content } = essay
   console.log('scraping: ', title)
 
   let essayTextChunks = []
@@ -194,18 +202,21 @@ const chunkBlogPost = async (essay: BlogArticle) => {
   return chunkedSection
 }
 
+// this syntax is an immediatly invoked function expression (IIFE)
+// it functions like `if __name__=="__main__":` in python
+
 ;(async () => {
   const links = await getLinks()
   let blogPosts = []
 
   // these blog posts wont be crawled
-  let badWords = ['peter', 'proverbs']
+  let skipTheseBlogPosts = ['peter', 'proverbs']
 
   for (let i = 0; i < links.length; i++) {
     const lowerTitle = links[i].title.toLowerCase()
 
-    // Skip if title contains any word in badWords
-    if (badWords.some((badWord) => lowerTitle.includes(badWord))) {
+    // Skip if title contains any word in skipTheseBlogPosts
+    if (skipTheseBlogPosts.some((badWord) => lowerTitle.includes(badWord))) {
       continue
     }
 
