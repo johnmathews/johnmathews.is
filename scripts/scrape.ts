@@ -63,6 +63,55 @@ const otherLinks = async () => {
   return otherLinks
 }
 
+const getPageContent = async (linkObj: { url: string; title: string }) => {
+  const { url } = linkObj
+
+  let article: BlogArticle = {
+    title: '',
+    url: '',
+    date: '',
+    content: '',
+    length: 0,
+    tokens: 0,
+    chunks: [],
+  }
+
+  const fullLink = BASE_URL + url
+  const html = await axios.get(fullLink)
+  const $ = cheerio.load(html.data)
+
+  const pageTitle = $('#pageTitle').text().trim()
+
+  let cleanedText = ''
+  $('#pageContent')
+    .find('*')
+    .each((_, element) => {
+      if ($(element).children().length === 0) {
+        cleanedText += $(element).text() + ' '
+      }
+    })
+
+  // remove image tags
+  cleanedText = cleanedText
+    .replace(/<img[^>]*>/g, '')
+    .replace(/\s+/g, ' ')
+    .trim()
+
+  const trimmedContent = cleanedText.trim()
+
+  article = {
+    title: pageTitle,
+    url: fullLink,
+    date: '',
+    content: trimmedContent,
+    length: trimmedContent.length,
+    tokens: encode(trimmedContent).length,
+    chunks: [],
+  }
+
+  return article
+}
+
 const getBlogPost = async (linkObj: { url: string; title: string }) => {
   const { url } = linkObj
 
@@ -129,8 +178,8 @@ const getBlogPost = async (linkObj: { url: string; title: string }) => {
   return article
 }
 
-const chunkBlogPost = async (essay: BlogArticle) => {
-  const { title, url, date, content } = essay
+const chunkBlogPost = async (webPage: BlogArticle) => {
+  const { title, url, date, content } = webPage
   console.log('scraping: ', title)
 
   let essayTextChunks = []
@@ -195,7 +244,7 @@ const chunkBlogPost = async (essay: BlogArticle) => {
   }
 
   const chunkedSection: BlogArticle = {
-    ...essay,
+    ...webPage,
     chunks: essayChunks,
   }
 
@@ -209,9 +258,25 @@ const chunkBlogPost = async (essay: BlogArticle) => {
   const links = await getLinks()
   let blogPosts = []
 
+  console.log('scraping manual pages..')
+
+  const otherPages = await otherLinks()
+  console.log('--- otherPages: ', otherPages)
+
+  for (let i = 0; i < otherPages.length; i++) {
+    const webPage = await getPageContent(otherPages[i])
+    console.log('--- got webPage: i=', i)
+
+    const chunkedWebPage = chunkBlogPost(webPage)
+    console.log('--- chunked webPage: i=', i)
+
+    blogPosts.push(chunkedWebPage)
+  }
+
   // these blog posts wont be crawled
   let skipTheseBlogPosts = ['peter', 'proverbs']
 
+  console.log('scraping blog posts')
   for (let i = 0; i < links.length; i++) {
     const lowerTitle = links[i].title.toLowerCase()
 
