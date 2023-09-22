@@ -4,18 +4,18 @@
   "private": true,
   "scripts": {
     "start": "cross-env SOCKET=true node ./scripts/next-remote-watch.js ./data",
-    "dev": "next dev",
-    "build": "next build && node ./scripts/generate-sitemap && node ./scripts/searchCache",
-    "aux": "node ./scripts/generate-sitemap && node ./scripts/searchCache",
-    "meta": "node ./scripts/generate-sitemap && node ./scripts/searchCache",
-    "buildSearchIndex": "node ./scripts/searchCache",
-    "buildSitemap": "node ./scripts/generate-sitemap",
     "serve": "next start",
     "analyze": "cross-env ANALYZE=true next build",
-    "lint": "next lint --fix --dir pages --dir components --dir lib --dir layouts --dir scripts",
-    "prepare": "husky install",
+    "dev": "next dev",
+    "build": "next build && node ./scripts/generate-sitemap && node ./scripts/searchCache",
+    "chat": "tsx scripts/scrape.ts && tsx scripts/embed.ts",
     "scrape": "tsx scripts/scrape.ts",
-    "embed": "tsx scripts/embed.ts"
+    "embed": "tsx scripts/embed.ts",
+    "aux": "node ./scripts/generate-sitemap && node ./scripts/searchCache",
+    "buildSearchIndex": "node ./scripts/searchCache",
+    "buildSitemap": "node ./scripts/generate-sitemap",
+    "lint": "next lint --fix --dir pages --dir components --dir lib --dir layouts --dir scripts",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@algolia/autocomplete-js": "^1.7.1",
