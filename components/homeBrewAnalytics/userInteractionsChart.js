@@ -106,8 +106,10 @@ export default function UserInteractions({ data }) {
           <YAxis orientation="right" />
           <Tooltip content={<CustomTooltip />} />
           <Bar dataKey="/" fill={colorArray[0]} stackId="1" />
+          <Bar dataKey="query" fill={colorArray[20]} stackId="1" />
           <Bar dataKey="ga" fill={colorArray[1]} stackId="1" />
           <Bar dataKey="gc" fill={colorArray[2]} stackId="1" />
+          <Bar dataKey="go" fill={colorArray[21]} stackId="1" />
           <Bar dataKey="gi" fill={colorArray[3]} stackId="1" />
           <Bar dataKey="gl" fill={colorArray[4]} stackId="1" />
           <Bar dataKey="gm" fill={colorArray[5]} stackId="1" />
