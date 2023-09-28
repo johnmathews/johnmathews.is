@@ -2,9 +2,83 @@
   "current_date": "2023-09-15",
   "author": "John Mathews",
   "url": "http://johnmathews.is/posts",
-  "length": 365005,
-  "tokens": 80259,
+  "length": 370762,
+  "tokens": 81367,
   "posts": [
+    {
+      "title": "About",
+      "url": "https://www.johnmathews.is/about",
+      "date": "",
+      "content": "This site is a mixture of my notes, a portfolio and a record of my hobbies and interests. It might be morphing into a Zettelkasten. It's a personal project and somewhere I can experiment with web and cloud technologies. Most of my work is as a freelance data-scientist. I also do web development and blockchain infrastructure work. More information about my work can be found here. If you have questions, comments or find a mistake, you can find me on twitter or email. Thanks for reading! LinkedIn | Github Zettelkasten data-scientist web development blockchain here twitter email LinkedIn Github",
+      "length": 597,
+      "tokens": 126,
+      "chunks": [
+        {
+          "blog_title": "About",
+          "blog_url": "https://www.johnmathews.is/about",
+          "blog_date": "",
+          "content": "This site is a mixture of my notes, a portfolio and a record of my hobbies and interests. It might be morphing into a Zettelkasten. It's a personal project and somewhere I can experiment with web and cloud technologies. Most of my work is as a freelance data-scientist. I also do web development and blockchain infrastructure work. More information about my work can be found here. If you have questions, comments or find a mistake, you can find me on twitter or email. Thanks for reading! LinkedIn | Github Zettelkasten data-scientist web development blockchain here twitter email LinkedIn Github",
+          "content_length": 597,
+          "content_tokens": 126,
+          "embedding": []
+        }
+      ]
+    },
+    {
+      "title": "Experience",
+      "url": "https://www.johnmathews.is/experience",
+      "date": "",
+      "content": "Blockchain integrations for a cryptocurrency broker. Deploying and managing nodes for networks including Ethereum, Binance Smart Chain, Polkadot, Cardano, Tron, and others. Ansible and Docker were used to configuration and deployment. The Rosetta API was used to create workflows including generating batches of addresses, notifying services about deposits, and treasury management. PipPip.email: Event-driven and long-term scheduled email delivery. Focus on writing then relax knowing that scheduled delivery is guaranteed. MoneyBar.nl Personal financial dashboard and data driven web-app. \"John is a creative and conscientious software engineer, who understands business requirements well and translating those into applications under tight deadlines. Highly recommended.\" - ** Principal Geoscientist** NLP, data driven web-apps, mentoring. Working as an internal consultant I developed and delivered a range of tools. I worked with a wide variety of stakeholders and prioritized understanding business needs and defining scopes, whilst using agile development practices. I advised my team on software development practices and tooling decisions, and mentored junior members to improve their coding and business skills. Tools included Python, and used Plot.ly Dash, WSL, and Azure \"John played a big role helping my team get our biggest and most challenging analytics tool across the line. He ramped up quickly, communicated well and was always responsive.\" - Sankari Nair, Lead Analytics Manager Developed an analytics tool using Python and Plot.ly Dash. The tool has a broad scope covering multiple regions, scales and business lines. I re-designed the app for scalability, maintainability and performance whilst increasing functionality, and provided a flexible foundation for new features to be developed after I left the project. Challenges included building custom visualizations, refactoring legacy code, and processing large data sets efficiently. Design, create and maintain internal data tools for a cryptocurrency exchange. As the only data specialist, I did whatever needed to be done. I delivered tools to provide business insights including management information, fraud analysis, tax reporting, KPI tracking, regulatory compliance and marketing and growth. I also delivered sentiment analysis of key social media channels. I worked with stakeholders across the business including back-end, founders, customer support, finance, DevOps and growth teams. Tools included: Python, Bokeh, Google Cloud Platform (BigQuery, DataStore, Data Studio), PostgreSQL. Blockport has been bought by Bux Technical design and execution of a novel cryptographic crowd-funding method. Whilst working with a tech startup as a financial accountant, I worked with stakeholders and external developers to design, test and execute an initial coin offering (ICO). I also led investor relations throughout the funding round and provided book-keeping services. Data engineering and analytics Deliver the ETL pipeline, analysis and visualization of large financial datasets including financial journals and loan books. As a chartered accountant and external financial auditor of clients in banking and capital markets in London (HSBC, Barclays, Lloyds, BNP Paribas) I facilitated the transfer of data from client systems before transforming and loading them into our on-prem SQL environments. We recalculated clients' financial statements and mined the data for additional value-add insights. I also qualified as a chartered accountant with the ICAEW. In 2010 I began my PhD researching granular materials at the University of Natural Resources and Life Sciences in Vienna, Austria. Information about my research of silos and granular flows can be found here. During my final year at Edinburgh University the Great Recession arrived. After I graduated I found a job at Starbucks and became curious about finance. I resolved to one day understand \"how banks work\". — @johnmathews Wayfair Bitladon Blockchain integrations for a cryptocurrency broker. Rosetta API PipPip.email scheduled email delivery MoneyBar.nl Personal financial dashboard Shell (Exploration) \"John is a creative and conscientious software engineer, who understands business requirements well and translating those into applications under tight deadlines. Highly recommended.\" NLP, data driven web-apps, mentoring. Python Plot.ly Dash WSL Azure Uber \"John played a big role helping my team get our biggest and most challenging analytics tool across the line. He ramped up quickly, communicated well and was always responsive.\" Sankari Nair, Lead Analytics Manager Developed an analytics tool using Python and Plot.ly Dash. Blockport Design, create and maintain internal data tools for a cryptocurrency exchange. I worked with stakeholders across the business including back-end, founders, customer support, finance, DevOps and growth teams. Python Bokeh Google Cloud Platform PostgreSQL Bux Technical design and execution of a novel cryptographic crowd-funding method. Data engineering and analytics ICAEW University of Natural Resources and Life Sciences here Great Recession \"how banks work\" @johnmathews",
+      "length": 5160,
+      "tokens": 981,
+      "chunks": [
+        {
+          "blog_title": "Experience",
+          "blog_url": "https://www.johnmathews.is/experience",
+          "blog_date": "",
+          "content": "Blockchain integrations for a cryptocurrency broker. Deploying and managing nodes for networks including Ethereum, Binance Smart Chain, Polkadot, Cardano, Tron, and others. Ansible and Docker were used to configuration and deployment. The Rosetta API was used to create workflows including generating batches of addresses, notifying services about deposits, and treasury management. PipPip.email: Event-driven and long-term scheduled email delivery. Focus on writing then relax knowing that scheduled delivery is guaranteed. MoneyBar.nl Personal financial dashboard and data driven web-app. \"John is a creative and conscientious software engineer, who understands business requirements well and translating those into applications under tight deadlines. Highly recommended.\" - ** Principal Geoscientist** NLP, data driven web-apps, mentoring. Working as an internal consultant I developed and delivered a range of tools.",
+          "content_length": 920,
+          "content_tokens": 178,
+          "embedding": []
+        },
+        {
+          "blog_title": "Experience",
+          "blog_url": "https://www.johnmathews.is/experience",
+          "blog_date": "",
+          "content": "I worked with a wide variety of stakeholders and prioritized understanding business needs and defining scopes, whilst using agile development practices. I advised my team on software development practices and tooling decisions, and mentored junior members to improve their coding and business skills. Tools included Python, and used Plot.ly Dash, WSL, and Azure \"John played a big role helping my team get our biggest and most challenging analytics tool across the line. He ramped up quickly, communicated well and was always responsive.\" - Sankari Nair, Lead Analytics Manager Developed an analytics tool using Python and Plot.ly Dash. The tool has a broad scope covering multiple regions, scales and business lines. I re-designed the app for scalability, maintainability and performance whilst increasing functionality, and provided a flexible foundation for new features to be developed after I left the project. Challenges included building custom visualizations, refactoring legacy code, and processing large data sets efficiently.",
+          "content_length": 1036,
+          "content_tokens": 194,
+          "embedding": []
+        },
+        {
+          "blog_title": "Experience",
+          "blog_url": "https://www.johnmathews.is/experience",
+          "blog_date": "",
+          "content": "Design, create and maintain internal data tools for a cryptocurrency exchange. As the only data specialist, I did whatever needed to be done. I delivered tools to provide business insights including management information, fraud analysis, tax reporting, KPI tracking, regulatory compliance and marketing and growth. I also delivered sentiment analysis of key social media channels. I worked with stakeholders across the business including back-end, founders, customer support, finance, DevOps and growth teams. Tools included: Python, Bokeh, Google Cloud Platform (BigQuery, DataStore, Data Studio), PostgreSQL. Blockport has been bought by Bux Technical design and execution of a novel cryptographic crowd-funding method. Whilst working with a tech startup as a financial accountant, I worked with stakeholders and external developers to design, test and execute an initial coin offering (ICO) I also led investor relations throughout the funding round and provided book-keeping services.",
+          "content_length": 989,
+          "content_tokens": 184,
+          "embedding": []
+        },
+        {
+          "blog_title": "Experience",
+          "blog_url": "https://www.johnmathews.is/experience",
+          "blog_date": "",
+          "content": "Data engineering and analytics Deliver the ETL pipeline, analysis and visualization of large financial datasets including financial journals and loan books. As a chartered accountant and external financial auditor of clients in banking and capital markets in London (HSBC, Barclays, Lloyds, BNP Paribas) I facilitated the transfer of data from client systems before transforming and loading them into our on-prem SQL environments. We recalculated clients' financial statements and mined the data for additional value-add insights. I also qualified as a chartered accountant with the ICAEW. In 2010 I began my PhD researching granular materials at the University of Natural Resources and Life Sciences in Vienna, Austria. Information about my research of silos and granular flows can be found here. During my final year at Edinburgh University the Great Recession arrived. After I graduated I found a job at Starbucks and became curious about finance. I resolved to one day understand \"how banks work\"",
+          "content_length": 1000,
+          "content_tokens": 190,
+          "embedding": []
+        },
+        {
+          "blog_title": "Experience",
+          "blog_url": "https://www.johnmathews.is/experience",
+          "blog_date": "",
+          "content": "— @johnmathews Wayfair Bitladon Blockchain integrations for a cryptocurrency broker. Rosetta API PipPip.email scheduled email delivery MoneyBar.nl Personal financial dashboard Shell (Exploration) \"John is a creative and conscientious software engineer, who understands business requirements well and translating those into applications under tight deadlines. Highly recommended.\" NLP, data driven web-apps, mentoring. Python Plot.ly Dash WSL Azure Uber \"John played a big role helping my team get our biggest and most challenging analytics tool across the line. He ramped up quickly, communicated well and was always responsive.\" Sankari Nair, Lead Analytics Manager Developed an analytics tool using Python and Plot.ly Dash. Blockport Design, create and maintain internal data tools for a cryptocurrency exchange. I worked with stakeholders across the business including back-end, founders, customer support, finance, DevOps and growth teams. Python Bokeh Google Cloud Platform PostgreSQL Bux Technical design and execution of a novel cryptographic crowd-funding method. Data engineering and analytics ICAEW University of Natural Resources and Life Sciences here Great Recession \"how banks work\" @johnmathews.",
+          "content_length": 1209,
+          "content_tokens": 236,
+          "embedding": []
+        }
+      ]
+    },
     {
       "title": "Thoughts on the Fujifilm x100v",
       "url": "https://www.johnmathews.is/blog/x100v-thoughts",
@@ -5367,9 +5441,9 @@
       "title": "Autumn, BIN and $PATH",
       "url": "https://www.johnmathews.is/blog/autumn-bin-and-path",
       "date": "December 01, 2016",
-      "content": "Two small things have been learnt recently: the importance of PATH and the contents of various BIN folders. Autumn 2016 has not gone as planned. Whilst studying for a couple of exams plans were put on hold and hobbies were ceased. Now that life is returning to normal, I have opportunity to post again. (function(){var js = \"window['__CF$cv$params']={r:'809cbadb7d430b81',t:'MTY5NTI0MDgxNi4xMTEwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);\";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})(); Bin as in Binary, not Bin as in Trash. The bin folders contain binary files, which are programmes ready to be run. If I run \"echo $PATH\" from the Terminal, I see 9 folders called bin, and its only by convention that they contain binaries. They are just normal folders, which the OS is set to look in when asked to run an application. /Users/John/anaconda3/bin:/Library/Frameworks/Python.framework/Versions/ 3.5/bin:/Users/John/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/ Library/TeX/texbin",
+      "content": "Two small things have been learnt recently: the importance of PATH and the contents of various BIN folders. Autumn 2016 has not gone as planned. Whilst studying for a couple of exams plans were put on hold and hobbies were ceased. Now that life is returning to normal, I have opportunity to post again. (function(){var js = \"window['__CF$cv$params']={r:'80a96dd64e671c84',t:'MTY5NTM3Mzk3Ni4wNjkwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);\";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})(); Bin as in Binary, not Bin as in Trash. The bin folders contain binary files, which are programmes ready to be run. If I run \"echo $PATH\" from the Terminal, I see 9 folders called bin, and its only by convention that they contain binaries. They are just normal folders, which the OS is set to look in when asked to run an application. /Users/John/anaconda3/bin:/Library/Frameworks/Python.framework/Versions/ 3.5/bin:/Users/John/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/ Library/TeX/texbin",
       "length": 1874,
-      "tokens": 594,
+      "tokens": 595,
       "chunks": [
         {
           "blog_title": "Autumn, BIN and $PATH",
@@ -5384,9 +5458,9 @@
           "blog_title": "Autumn, BIN and $PATH",
           "blog_url": "https://www.johnmathews.is/blog/autumn-bin-and-path",
           "blog_date": "December 01, 2016",
-          "content": "(function(){var js = \"window['__CF$cv$params']={r:'809cbadb7d430b81',t:'MTY5NTI0MDgxNi4xMTEwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);\";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})(); Bin as in Binary, not Bin as in Trash.",
+          "content": "(function(){var js = \"window['__CF$cv$params']={r:'80a96dd64e671c84',t:'MTY5NTM3Mzk3Ni4wNjkwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);\";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})(); Bin as in Binary, not Bin as in Trash.",
           "content_length": 1113,
-          "content_tokens": 408,
+          "content_tokens": 409,
           "embedding": []
         },
         {

@@ -35,6 +35,8 @@ content on my blog. It's kind of like an interactive CV.
    [johnmathews.is](https://johnmathws.is/posts) and puts the data in `scripts/jm.json`.
 2. run `npm run embed`
 
+Alternatively, `yarn chat` will do the whole process sequentially.
+
 ## Extra things
 
 - Use `?` to show keyboard shortcuts.

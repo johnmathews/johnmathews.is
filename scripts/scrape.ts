@@ -7,6 +7,9 @@ import { encode } from 'gpt-3-encoder'
 const BASE_URL = 'https://www.johnmathews.is'
 const CHUNK_SIZE = 200
 
+const filePath = 'scripts/blog_content.json'
+const backupPath = 'scripts/blog_content.json.backup'
+
 const getLinks = async () => {
   const html = await axios.get(`${BASE_URL}/posts`)
   const $ = cheerio.load(html.data)
@@ -260,7 +263,7 @@ const chunkBlogPost = async (webPage: BlogArticle) => {
   const links = await getLinks()
   let blogPosts = []
 
-  console.log('\nscraping manual pages..\n\n')
+  console.log('\nscraping manual pages..')
   const otherPages = await otherLinks()
   for (let i = 0; i < otherPages.length; i++) {
     const webPage = await getPageContent(otherPages[i])
@@ -269,9 +272,9 @@ const chunkBlogPost = async (webPage: BlogArticle) => {
   }
 
   // blog posts with these words in the title wont be crawled
-  let skipTheseBlogPosts = ['peter', 'proverbs']
+  let skipTheseBlogPosts = ['peter', 'proverbs', 'jesus']
 
-  console.log('\n\nscraping blog posts..\n\n')
+  console.log('scraping blog posts..\n')
   for (let i = 0; i < links.length; i++) {
     const lowerTitle = links[i].title.toLowerCase()
 
@@ -294,5 +297,15 @@ const chunkBlogPost = async (webPage: BlogArticle) => {
     posts: blogPosts,
   }
 
-  fs.writeFileSync('scripts/blog_content.json', JSON.stringify(json))
+  // Delete existing backup if it exists
+  if (fs.existsSync(backupPath)) {
+    fs.unlinkSync(backupPath)
+  }
+
+  // Rename existing file to .backup if it exists
+  if (fs.existsSync(filePath)) {
+    fs.renameSync(filePath, backupPath)
+  }
+
+  fs.writeFileSync(filePath, JSON.stringify(json))
 })()
