@@ -222,6 +222,15 @@ export default function Chat() {
             Chatbot
           </h1>
           <p>Ask an AI about me or my blog</p>
+          <p className="text-xl">
+            Update: Following OpenAI's recent release of custom GPTs, I've created{' '}
+            <a
+              className="text-blue-600 hover:text-green-600 dark:text-blue-500 dark:hover:text-green-500"
+              href="https://chat.openai.com/g/g-13yb89STk-bloggpt"
+            >
+              BlogGPT
+            </a>{' '}
+          </p>
         </div>
         <div className="flex h-screen w-full flex-col items-start">
           <div className="w-full">
