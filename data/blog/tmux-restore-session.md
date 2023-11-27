@@ -7,8 +7,11 @@ tags: ['tmux']
 <!-- description: -->
 ---
 
-Tmux has a plugin called [Resurrect](https://github.com/tmux-plugins/tmux-resurrect) that lets you
-restore your last session if you've had to restart your computer.
+[Tmux](https://github.com/tmux/tmux/wiki) has a plugin called
+[Resurrect](https://github.com/tmux-plugins/tmux-resurrect) that lets you restore your last session
+if you've had to restart your computer. It works alongside a another plugin called
+[Continuum](https://github.com/tmux-plugins/tmux-continuum) that automatically saves your Tmux
+environment.
 
 It stores session data in `.txt` files at `~/.local/share/tmux/resurrect/` and creates a symlink
 called `share` that points to the most recent save file.
