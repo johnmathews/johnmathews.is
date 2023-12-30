@@ -2,32 +2,23 @@
   "current_date": "2023-09-15",
   "author": "John Mathews",
   "url": "http://johnmathews.is/posts",
-  "length": 368868,
-  "tokens": 80918,
+  "length": 373669,
+  "tokens": 81622,
   "posts": [
     {
       "title": "About",
       "url": "https://www.johnmathews.is/about",
       "date": "",
-      "content": "Hello! I'm a python developer and data scientist with a passion for building things with code. This site is a mixture of my notes, a portfolio and a record of my hobbies and interests. It might be morphing into a Zettelkasten. It's a personal project and somewhere I can experiment with web and cloud technologies. Most of my work is as a freelance data-scientist. I also do web development and blockchain infrastructure work. More information about my work can be found here. John is a data scientist and full-stack developer with over six years of experience in applying data analytics, machine learning, and web development to various domains and industries. He is the founder of Lettergun, a service that produces realistic handwritten notes, written by robots. He is also a data science consultant at Equal Experts, where he works with large and small organizations to solve complex problems with data-driven solutions. John has a diverse and versatile skill set, ranging from accounting and auditing to natural language processing and blockchain technology. He has worked with startups and corporations, such as Blockport, Bitnation, Shell, and Uber, developing data engineering, analysis, and visualization pipelines, designing and implementing NLP machine learning models and web applications, and writing about blockchain and data analytics on his blog. John holds an engineering PhD and is a qualified accountant (ICAEW). He enjoys delivering value and innovation whilst working with many stakeholders. He is passionate about being a generalist, learning new things, and sharing his work and interests with others.- If you have questions, comments or find a mistake, you can find me on twitter or email. Thanks for reading! LinkedIn | Github Hello! I'm a python developer and data scientist with a passion for building things with code. Zettelkasten data-scientist web development blockchain here John is a data scientist and full-stack developer with over six years of experience in applying data analytics, machine learning, and web development to various domains and industries. He is the founder of Lettergun, a service that produces realistic handwritten notes, written by robots. He is also a data science consultant at Equal Experts, where he works with large and small organizations to solve complex problems with data-driven solutions. John has a diverse and versatile skill set, ranging from accounting and auditing to natural language processing and blockchain technology. He has worked with startups and corporations, such as Blockport, Bitnation, Shell, and Uber, developing data engineering, analysis, and visualization pipelines, designing and implementing NLP machine learning models and web applications, and writing about blockchain and data analytics on his blog. John holds an engineering PhD and is a qualified accountant (ICAEW). He enjoys delivering value and innovation whilst working with many stakeholders. He is passionate about being a generalist, learning new things, and sharing his work and interests with others.- twitter email LinkedIn Github",
-      "length": 3085,
-      "tokens": 578,
+      "content": "John Mathews' personal website showcases a blend of technical expertise and personal reflections, creating a unique online presence. The website is currently built using Next.js, a modern web framework built on JavaScript. This represents a shift from its earlier incarnation, which was created using Python and Pelican. John maintains the older version of the blog at a subdomain, indicating his willingness to preserve his digital history and his enjoyment of experimenting with web technologies. The content on the website is cleverly organized to cater to different audiences. John has divided his blog posts into two main categories: technical and non-technical. This division allows visitors to easily navigate to content that aligns with their interests. If a visitor arrives at the blog through a link to a technical article, the site will then prioritize showing them other technical articles, and vice versa for non-technical content. This user experience is enhanced by the use of web development techniques such as tailwind and jQuery, reflecting John's skills in creating an interactive and user-friendly website. In terms of content, the 'Technical' category likely includes posts related to John's work as a data scientist, python developer, and full-stack developer, where he applies his expertise in data analytics, machine learning, and web development across various domains. The 'Non-technical' category might include more personal reflections, hobbies, and interests, providing a holistic view of John as both a professional and an individual. The blog also features a category labeled 'Everything', which presumably includes all posts irrespective of their technical nature. For a more detailed professional background, the 'About' page on John's website offers a comprehensive look into his career and skill set. It highlights his experience in data science, web development, and blockchain technology, along with his work with startups and large corporations. John's academic credentials, including a PhD in engineering and a qualification as an accountant (ICAEW), are also mentioned, showcasing his diverse expertise and commitment to lifelong learning and innovation. Overall, John Mathews' website is a testament to his multifaceted interests and abilities, merging his professional achievements with personal insights and creating a platform that is both informative and engaging. Hello! I'm a python developer and data scientist with a passion for building things with code. This site is a mixture of my notes, a portfolio and a record of my hobbies and interests. It might be morphing into a Zettelkasten. It's a personal project and somewhere I can experiment with web and cloud technologies. Most of my work is as a freelance data-scientist. I also do web development and blockchain infrastructure work. More information about my work can be found here. John is a data scientist and full-stack developer with over six years of experience in applying data analytics, machine learning, and web development to various domains and industries. He is the founder of Lettergun, a service that produces realistic handwritten notes, written by robots. He is also a data science consultant at Equal Experts, where he works with large and small organizations to solve complex problems with data-driven solutions. John has a diverse and versatile skill set, ranging from accounting and auditing to natural language processing and blockchain technology. He has worked with startups and corporations, such as Blockport, Bitnation, Shell, and Uber, developing data engineering, analysis, and visualization pipelines, designing and implementing NLP machine learning models and web applications, and writing about blockchain and data analytics on his blog. John holds an engineering PhD and is a qualified accountant (ICAEW). He enjoys delivering value and innovation whilst working with many stakeholders. He is passionate about being a generalist, learning new things, and sharing his work and interests with others.- If you have questions, comments or find a mistake, you can find me on twitter or email. Thanks for reading! LinkedIn | Github customGPT John Mathews' personal website showcases a blend of technical expertise and personal reflections, creating a unique online presence. The website is currently built using Next.js, a modern web framework built on JavaScript. This represents a shift from its earlier incarnation, which was created using Python and Pelican. John maintains the older version of the blog at a subdomain, indicating his willingness to preserve his digital history and his enjoyment of experimenting with web technologies. The content on the website is cleverly organized to cater to different audiences. John has divided his blog posts into two main categories: technical and non-technical. This division allows visitors to easily navigate to content that aligns with their interests. If a visitor arrives at the blog through a link to a technical article, the site will then prioritize showing them other technical articles, and vice versa for non-technical content. This user experience is enhanced by the use of web development techniques such as tailwind and jQuery, reflecting John's skills in creating an interactive and user-friendly website. In terms of content, the 'Technical' category likely includes posts related to John's work as a data scientist, python developer, and full-stack developer, where he applies his expertise in data analytics, machine learning, and web development across various domains. The 'Non-technical' category might include more personal reflections, hobbies, and interests, providing a holistic view of John as both a professional and an individual. The blog also features a category labeled 'Everything', which presumably includes all posts irrespective of their technical nature. For a more detailed professional background, the 'About' page on John's website offers a comprehensive look into his career and skill set. It highlights his experience in data science, web development, and blockchain technology, along with his work with startups and large corporations. John's academic credentials, including a PhD in engineering and a qualification as an accountant (ICAEW), are also mentioned, showcasing his diverse expertise and commitment to lifelong learning and innovation. Overall, John Mathews' website is a testament to his multifaceted interests and abilities, merging his professional achievements with personal insights and creating a platform that is both informative and engaging. Hello! I'm a python developer and data scientist with a passion for building things with code. Zettelkasten data-scientist web development blockchain here John is a data scientist and full-stack developer with over six years of experience in applying data analytics, machine learning, and web development to various domains and industries. He is the founder of Lettergun, a service that produces realistic handwritten notes, written by robots. He is also a data science consultant at Equal Experts, where he works with large and small organizations to solve complex problems with data-driven solutions. John has a diverse and versatile skill set, ranging from accounting and auditing to natural language processing and blockchain technology. He has worked with startups and corporations, such as Blockport, Bitnation, Shell, and Uber, developing data engineering, analysis, and visualization pipelines, designing and implementing NLP machine learning models and web applications, and writing about blockchain and data analytics on his blog. John holds an engineering PhD and is a qualified accountant (ICAEW). He enjoys delivering value and innovation whilst working with many stakeholders. He is passionate about being a generalist, learning new things, and sharing his work and interests with others.- twitter email LinkedIn Github",
+      "length": 7915,
+      "tokens": 1447,
       "chunks": [
         {
           "blog_title": "About",
           "blog_url": "https://www.johnmathews.is/about",
           "blog_date": "",
-          "content": "Hello! I'm a python developer and data scientist with a passion for building things with code. This site is a mixture of my notes, a portfolio and a record of my hobbies and interests. It might be morphing into a Zettelkasten. It's a personal project and somewhere I can experiment with web and cloud technologies. Most of my work is as a freelance data-scientist. I also do web development and blockchain infrastructure work. More information about my work can be found here. John is a data scientist and full-stack developer with over six years of experience in applying data analytics, machine learning, and web development to various domains and industries. He is the founder of Lettergun, a service that produces realistic handwritten notes, written by robots. He is also a data science consultant at Equal Experts, where he works with large and small organizations to solve complex problems with data-driven solutions.",
-          "content_length": 924,
-          "content_tokens": 183,
-          "embedding": []
-        },
-        {
-          "blog_title": "About",
-          "blog_url": "https://www.johnmathews.is/about",
-          "blog_date": "",
-          "content": "John has a diverse and versatile skill set, ranging from accounting and auditing to natural language processing and blockchain technology. He has worked with startups and corporations, such as Blockport, Bitnation, Shell, and Uber, developing data engineering, analysis, and visualization pipelines, designing and implementing NLP machine learning models and web applications, and writing about blockchain and data analytics on his blog. John holds an engineering PhD and is a qualified accountant (ICAEW) He enjoys delivering value and innovation whilst working with many stakeholders. He is passionate about being a generalist, learning new things, and sharing his work and interests with others.- If you have questions, comments or find a mistake, you can find me on twitter or email. Thanks for reading! LinkedIn | Github Hello! I'm a python developer and data scientist with a passion for building things with code.",
-          "content_length": 920,
+          "content": "John Mathews' personal website showcases a blend of technical expertise and personal reflections, creating a unique online presence. The website is currently built using Next.js, a modern web framework built on JavaScript. This represents a shift from its earlier incarnation, which was created using Python and Pelican. John maintains the older version of the blog at a subdomain, indicating his willingness to preserve his digital history and his enjoyment of experimenting with web technologies. The content on the website is cleverly organized to cater to different audiences. John has divided his blog posts into two main categories: technical and non-technical. This division allows visitors to easily navigate to content that aligns with their interests. If a visitor arrives at the blog through a link to a technical article, the site will then prioritize showing them other technical articles, and vice versa for non-technical content.",
+          "content_length": 944,
           "content_tokens": 171,
           "embedding": []
         },
@@ -35,9 +26,63 @@
           "blog_title": "About",
           "blog_url": "https://www.johnmathews.is/about",
           "blog_date": "",
-          "content": "Zettelkasten data-scientist web development blockchain here John is a data scientist and full-stack developer with over six years of experience in applying data analytics, machine learning, and web development to various domains and industries. He is the founder of Lettergun, a service that produces realistic handwritten notes, written by robots. He is also a data science consultant at Equal Experts, where he works with large and small organizations to solve complex problems with data-driven solutions. John has a diverse and versatile skill set, ranging from accounting and auditing to natural language processing and blockchain technology. He has worked with startups and corporations, such as Blockport, Bitnation, Shell, and Uber, developing data engineering, analysis, and visualization pipelines, designing and implementing NLP machine learning models and web applications, and writing about blockchain and data analytics on his blog. John holds an engineering PhD and is a qualified accountant (ICAEW) He enjoys delivering value and innovation whilst working with many stakeholders. He is passionate about being a generalist, learning new things, and sharing his work and interests with others.- twitter email LinkedIn Github.",
-          "content_length": 1237,
-          "content_tokens": 225,
+          "content": "This user experience is enhanced by the use of web development techniques such as tailwind and jQuery, reflecting John's skills in creating an interactive and user-friendly website. In terms of content, the 'Technical' category likely includes posts related to John's work as a data scientist, python developer, and full-stack developer, where he applies his expertise in data analytics, machine learning, and web development across various domains. The 'Non-technical' category might include more personal reflections, hobbies, and interests, providing a holistic view of John as both a professional and an individual. The blog also features a category labeled 'Everything', which presumably includes all posts irrespective of their technical nature. For a more detailed professional background, the 'About' page on John's website offers a comprehensive look into his career and skill set. It highlights his experience in data science, web development, and blockchain technology, along with his work with startups and large corporations.",
+          "content_length": 1038,
+          "content_tokens": 189,
+          "embedding": []
+        },
+        {
+          "blog_title": "About",
+          "blog_url": "https://www.johnmathews.is/about",
+          "blog_date": "",
+          "content": "John's academic credentials, including a PhD in engineering and a qualification as an accountant (ICAEW), are also mentioned, showcasing his diverse expertise and commitment to lifelong learning and innovation. Overall, John Mathews' website is a testament to his multifaceted interests and abilities, merging his professional achievements with personal insights and creating a platform that is both informative and engaging. Hello! I'm a python developer and data scientist with a passion for building things with code. This site is a mixture of my notes, a portfolio and a record of my hobbies and interests. It might be morphing into a Zettelkasten. It's a personal project and somewhere I can experiment with web and cloud technologies. Most of my work is as a freelance data-scientist. I also do web development and blockchain infrastructure work. More information about my work can be found here.",
+          "content_length": 902,
+          "content_tokens": 174,
+          "embedding": []
+        },
+        {
+          "blog_title": "About",
+          "blog_url": "https://www.johnmathews.is/about",
+          "blog_date": "",
+          "content": "John is a data scientist and full-stack developer with over six years of experience in applying data analytics, machine learning, and web development to various domains and industries. He is the founder of Lettergun, a service that produces realistic handwritten notes, written by robots. He is also a data science consultant at Equal Experts, where he works with large and small organizations to solve complex problems with data-driven solutions. John has a diverse and versatile skill set, ranging from accounting and auditing to natural language processing and blockchain technology. He has worked with startups and corporations, such as Blockport, Bitnation, Shell, and Uber, developing data engineering, analysis, and visualization pipelines, designing and implementing NLP machine learning models and web applications, and writing about blockchain and data analytics on his blog. John holds an engineering PhD and is a qualified accountant (ICAEW) He enjoys delivering value and innovation whilst working with many stakeholders.",
+          "content_length": 1034,
+          "content_tokens": 185,
+          "embedding": []
+        },
+        {
+          "blog_title": "About",
+          "blog_url": "https://www.johnmathews.is/about",
+          "blog_date": "",
+          "content": "He is passionate about being a generalist, learning new things, and sharing his work and interests with others.- If you have questions, comments or find a mistake, you can find me on twitter or email. Thanks for reading! LinkedIn | Github customGPT John Mathews' personal website showcases a blend of technical expertise and personal reflections, creating a unique online presence. The website is currently built using Next.js, a modern web framework built on JavaScript. This represents a shift from its earlier incarnation, which was created using Python and Pelican. John maintains the older version of the blog at a subdomain, indicating his willingness to preserve his digital history and his enjoyment of experimenting with web technologies. The content on the website is cleverly organized to cater to different audiences. John has divided his blog posts into two main categories: technical and non-technical. This division allows visitors to easily navigate to content that aligns with their interests.",
+          "content_length": 1010,
+          "content_tokens": 188,
+          "embedding": []
+        },
+        {
+          "blog_title": "About",
+          "blog_url": "https://www.johnmathews.is/about",
+          "blog_date": "",
+          "content": "If a visitor arrives at the blog through a link to a technical article, the site will then prioritize showing them other technical articles, and vice versa for non-technical content. This user experience is enhanced by the use of web development techniques such as tailwind and jQuery, reflecting John's skills in creating an interactive and user-friendly website. In terms of content, the 'Technical' category likely includes posts related to John's work as a data scientist, python developer, and full-stack developer, where he applies his expertise in data analytics, machine learning, and web development across various domains. The 'Non-technical' category might include more personal reflections, hobbies, and interests, providing a holistic view of John as both a professional and an individual. The blog also features a category labeled 'Everything', which presumably includes all posts irrespective of their technical nature. For a more detailed professional background, the 'About' page on John's website offers a comprehensive look into his career and skill set.",
+          "content_length": 1073,
+          "content_tokens": 199,
+          "embedding": []
+        },
+        {
+          "blog_title": "About",
+          "blog_url": "https://www.johnmathews.is/about",
+          "blog_date": "",
+          "content": "It highlights his experience in data science, web development, and blockchain technology, along with his work with startups and large corporations. John's academic credentials, including a PhD in engineering and a qualification as an accountant (ICAEW), are also mentioned, showcasing his diverse expertise and commitment to lifelong learning and innovation. Overall, John Mathews' website is a testament to his multifaceted interests and abilities, merging his professional achievements with personal insights and creating a platform that is both informative and engaging. Hello! I'm a python developer and data scientist with a passion for building things with code. Zettelkasten data-scientist web development blockchain here John is a data scientist and full-stack developer with over six years of experience in applying data analytics, machine learning, and web development to various domains and industries. He is the founder of Lettergun, a service that produces realistic handwritten notes, written by robots.",
+          "content_length": 1017,
+          "content_tokens": 183,
+          "embedding": []
+        },
+        {
+          "blog_title": "About",
+          "blog_url": "https://www.johnmathews.is/about",
+          "blog_date": "",
+          "content": "He is also a data science consultant at Equal Experts, where he works with large and small organizations to solve complex problems with data-driven solutions. John has a diverse and versatile skill set, ranging from accounting and auditing to natural language processing and blockchain technology. He has worked with startups and corporations, such as Blockport, Bitnation, Shell, and Uber, developing data engineering, analysis, and visualization pipelines, designing and implementing NLP machine learning models and web applications, and writing about blockchain and data analytics on his blog. John holds an engineering PhD and is a qualified accountant (ICAEW) He enjoys delivering value and innovation whilst working with many stakeholders. He is passionate about being a generalist, learning new things, and sharing his work and interests with others.- twitter email LinkedIn Github.",
+          "content_length": 889,
+          "content_tokens": 159,
           "embedding": []
         }
       ]
@@ -93,6 +138,25 @@
           "content": "— @johnmathews Wayfair Bitladon Blockchain integrations for a cryptocurrency broker. Rosetta API PipPip.email scheduled email delivery MoneyBar.nl Personal financial dashboard Shell (Exploration) \"John is a creative and conscientious software engineer, who understands business requirements well and translating those into applications under tight deadlines. Highly recommended.\" NLP, data driven web-apps, mentoring. Python Plot.ly Dash WSL Azure Uber \"John played a big role helping my team get our biggest and most challenging analytics tool across the line. He ramped up quickly, communicated well and was always responsive.\" Sankari Nair, Lead Analytics Manager Developed an analytics tool using Python and Plot.ly Dash. Blockport Design, create and maintain internal data tools for a cryptocurrency exchange. I worked with stakeholders across the business including back-end, founders, customer support, finance, DevOps and growth teams. Python Bokeh Google Cloud Platform PostgreSQL Bux Technical design and execution of a novel cryptographic crowd-funding method. Data engineering and analytics ICAEW University of Natural Resources and Life Sciences here Great Recession \"how banks work\" @johnmathews.",
           "content_length": 1209,
           "content_tokens": 236,
+          "embedding": []
+        }
+      ]
+    },
+    {
+      "title": "Tmux resurrect - restore a particular session",
+      "url": "https://www.johnmathews.is/blog/tmux-restore-session",
+      "date": "November 26, 2023",
+      "content": "Tmux Resurrect Continuum .txt ~/.local/share/tmux/resurrect/ share share share cd ~/.local/share/tmux/resurrect rm last ln -s tmux_resurrect_20230101T120000.txt last prefix ctrl-s prefix ctrl-r",
+      "length": 193,
+      "tokens": 71,
+      "chunks": [
+        {
+          "blog_title": "Tmux resurrect - restore a particular session",
+          "blog_url": "https://www.johnmathews.is/blog/tmux-restore-session",
+          "blog_date": "November 26, 2023",
+          "content": "Tmux Resurrect Continuum .txt ~/.local/share/tmux/resurrect/ share share share cd ~/.local/share/tmux/resurrect rm last ln -s tmux_resurrect_20230101T120000.txt last prefix ctrl-s prefix ctrl-r",
+          "content_length": 193,
+          "content_tokens": 71,
           "embedding": []
         }
       ]
@@ -5404,35 +5468,17 @@
       "title": "Autumn, BIN and $PATH",
       "url": "https://www.johnmathews.is/blog/autumn-bin-and-path",
       "date": "December 01, 2016",
-      "content": "Two small things have been learnt recently: the importance of PATH and the contents of various BIN folders. Autumn 2016 has not gone as planned. Whilst studying for a couple of exams plans were put on hold and hobbies were ceased. Now that life is returning to normal, I have opportunity to post again. (function(){var js = \"window['__CF$cv$params']={r:'80dd21d17e07418a',t:'MTY5NTkxNjEyMi42MDgwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);\";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})(); Bin as in Binary, not Bin as in Trash. The bin folders contain binary files, which are programmes ready to be run. If I run \"echo $PATH\" from the Terminal, I see 9 folders called bin, and its only by convention that they contain binaries. They are just normal folders, which the OS is set to look in when asked to run an application. /Users/John/anaconda3/bin:/Library/Frameworks/Python.framework/Versions/ 3.5/bin:/Users/John/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/ Library/TeX/texbin",
-      "length": 1874,
-      "tokens": 593,
+      "content": "Two small things have been learnt recently: the importance of PATH and the contents of various BIN folders. Autumn 2016 has not gone as planned. Whilst studying for a couple of exams plans were put on hold and hobbies were ceased. Now that life is returning to normal, I have opportunity to post again. Bin as in Binary, not Bin as in Trash. The bin folders contain binary files, which are programmes ready to be run. If I run \"echo $PATH\" from the Terminal, I see 9 folders called bin, and its only by convention that they contain binaries. They are just normal folders, which the OS is set to look in when asked to run an application. /Users/John/anaconda3/bin:/Library/Frameworks/Python.framework/Versions/ 3.5/bin:/Users/John/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/ Library/TeX/texbin",
+      "length": 799,
+      "tokens": 197,
       "chunks": [
         {
           "blog_title": "Autumn, BIN and $PATH",
           "blog_url": "https://www.johnmathews.is/blog/autumn-bin-and-path",
           "blog_date": "December 01, 2016",
-          "content": "Two small things have been learnt recently: the importance of PATH and the contents of various BIN folders. Autumn 2016 has not gone as planned. Whilst studying for a couple of exams plans were put on hold and hobbies were ceased. Now that life is returning to normal, I have opportunity to post again.",
-          "content_length": 302,
-          "content_tokens": 61,
-          "embedding": []
-        },
-        {
-          "blog_title": "Autumn, BIN and $PATH",
-          "blog_url": "https://www.johnmathews.is/blog/autumn-bin-and-path",
-          "blog_date": "December 01, 2016",
-          "content": "(function(){var js = \"window['__CF$cv$params']={r:'80dd21d17e07418a',t:'MTY5NTkxNjEyMi42MDgwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);\";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})(); Bin as in Binary, not Bin as in Trash.",
-          "content_length": 1113,
-          "content_tokens": 407,
-          "embedding": []
-        },
-        {
-          "blog_title": "Autumn, BIN and $PATH",
-          "blog_url": "https://www.johnmathews.is/blog/autumn-bin-and-path",
-          "blog_date": "December 01, 2016",
-          "content": "The bin folders contain binary files, which are programmes ready to be run. If I run \"echo $PATH\" from the Terminal, I see 9 folders called bin, and its only by convention that they contain binaries. They are just normal folders, which the OS is set to look in when asked to run an application. /Users/John/anaconda3/bin:/Library/Frameworks/Python.framework/Versions/ 3.5/bin:/Users/John/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/ Library/TeX/texbin.",
-          "content_length": 458,
-          "content_tokens": 126,
+          "content": "Two small things have been learnt recently: the importance of PATH and the contents of various BIN folders. Autumn 2016 has not gone as planned. Whilst studying for a couple of exams plans were put on hold and hobbies were ceased. Now that life is returning to normal, I have opportunity to post again. Bin as in Binary, not Bin as in Trash. The bin folders contain binary files, which are programmes ready to be run. If I run \"echo $PATH\" from the Terminal, I see 9 folders called bin, and its only by convention that they contain binaries. They are just normal folders, which the OS is set to look in when asked to run an application. /Users/John/anaconda3/bin:/Library/Frameworks/Python.framework/Versions/ 3.5/bin:/Users/John/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/ Library/TeX/texbin",
+          "content_length": 799,
+          "content_tokens": 197,
           "embedding": []
         }
       ]
@@ -5738,6 +5784,25 @@
           "content": "Last year I decided to learn the tools required to work as a data scientist. I was confident I already had the mathematical and analysis skills I needed, but I wasn't familiar with the tools of the trade. Data Science Specialisation The main downside to me is that the courses exclusively use R (which is popular in academia) and I would rather be using Python (which is more popular in Industry). Each course lasts about 3 weeks and deals with a specific aspect of data science, such as statistical inference or machine learning. Key concepts and tools in each subject are explained and developed, and whilst it's not as thorough as a longer course would be, there is more than enough material packed into the lectures, quizzes, assignments and projects to apply to real applications. I've read that the second half of the specialisation is a lot more technical than the first, so I'm looking forward to setting aside some time, working through the assignments and acquiring some useful skills!",
           "content_length": 995,
           "content_tokens": 194,
+          "embedding": []
+        }
+      ]
+    },
+    {
+      "title": "Übersicht widget: Time Since",
+      "url": "https://www.johnmathews.is/blog/time-since",
+      "date": "July 30, 2016",
+      "content": "Übersicht When I started using Übersicht I began playing with the widgets, changing their appearance and their position on the screen. Some of the widgets are too complicated to mess with without specific programming knowledge, but others are surprisingly simple and intuitive. By trial and error, I began to customize widgets to my preferences. One widget I wanted to have but couldn't simply download was a timer to tell me exactly how much time had elapsed since a specific past event. By combining the display attributes of one widget and the calculation method of another, I was able to mash together a foundation for a new widget. I then added some extra features including: Optional text before and after the elapsed time Choice of expanded or abbreviated display styles Flexible formatting to remove and zero amounts \"Time Since\" widgets gallery",
+      "length": 853,
+      "tokens": 160,
+      "chunks": [
+        {
+          "blog_title": "Übersicht widget: Time Since",
+          "blog_url": "https://www.johnmathews.is/blog/time-since",
+          "blog_date": "July 30, 2016",
+          "content": "Übersicht When I started using Übersicht I began playing with the widgets, changing their appearance and their position on the screen. Some of the widgets are too complicated to mess with without specific programming knowledge, but others are surprisingly simple and intuitive. By trial and error, I began to customize widgets to my preferences. One widget I wanted to have but couldn't simply download was a timer to tell me exactly how much time had elapsed since a specific past event. By combining the display attributes of one widget and the calculation method of another, I was able to mash together a foundation for a new widget. I then added some extra features including: Optional text before and after the elapsed time Choice of expanded or abbreviated display styles Flexible formatting to remove and zero amounts \"Time Since\" widgets gallery",
+          "content_length": 853,
+          "content_tokens": 160,
           "embedding": []
         }
       ]
