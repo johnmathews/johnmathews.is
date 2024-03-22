@@ -70,7 +70,7 @@ input:-webkit-autofill:focus {
   @apply font-serif;
 }
 #contentContainer #content code {
-  @apply rounded-lg bg-gray-200 px-2 py-1 text-white dark:bg-gray-500;
+  @apply rounded-lg bg-gray-200 px-2 py-1 text-white dark:bg-gray-500 dark:text-gray-900;
 }
 #contentContainer ol {
   @apply list-decimal dark:marker:text-gray-100;
