@@ -10,12 +10,12 @@ description:
 
 Murphy’s Laws of Combat Operations
 
-1. Friendly fire – isn’t.
-2. Recoilless rifles – aren’t.
+1. Friendly fire – isn't.
+2. Recoilless rifles – aren't.
 3. Suppressive fires – won’t.
 4. You are not Superman; Marines and fighter pilots take note.
 5. A sucking chest wound is Nature’s way of telling you to slow down.
-6. If it’s stupid but it works, it isn’t stupid.
+6. If it’s stupid but it works, it isn't stupid.
 7. Try to look unimportant; the enemy may be low on ammo and not want to waste a bullet on you.
 8. If at first you don’t succeed, call in an airstrike.
 9. If you are forward of your position, your artillery will fall short.
@@ -43,7 +43,7 @@ Murphy’s Laws of Combat Operations
 30. No inspection ready unit has ever passed combat.
 31. If the enemy is within range, so are you.
 32. The only thing more accurate than incoming enemy fire is incoming friendly fire.
-33. Things which must be shipped together as a set, aren’t.
+33. Things which must be shipped together as a set, aren't.
 34. Things that must work together, can’t be carried to the field that way.
 35. Radios will fail as soon as you need fire support. Corollary: Radar tends to fail at night and
     in bad weather, and especially during both.
@@ -56,19 +56,19 @@ Murphy’s Laws of Combat Operations
 41. Professional soldiers are predictable; the world is full of dangerous amateurs.
 42. Military Intelligence is a contradiction.
 43. Fortify your front; you’ll get your rear shot up.
-44. Weather ain’t neutral.
+44. Weather ain't neutral.
 45. If you can’t remember, the Claymore is pointed towards you.
 46. Air defense motto: shoot ’em down; sort ’em out on the ground.
 47. ‘Flies high, it dies; low and slow, it’ll go.
-48. The Cavalry doesn’t always come to the rescue.
+48. The Cavalry doesn't always come to the rescue.
 49. Napalm is an area support weapon.
 50. Mines are equal opportunity weapons.
 51. B-52s are the ultimate close support weapon.
 52. Sniper’s motto: reach out and touch someone.
 53. Killing for peace is like screwing for virginity.
 54. The one item you need is always in short supply.
-55. Interchangeable parts aren’t.
-56. It’s not the one with your name on it; it’s the one addressed “to whom it may concern” you’ve
+55. Interchangeable parts aren't.
+56. It’s not the one with your name on it; it’s the one addressed “to whom it may concern” you've
     got to think about.
 57. When in doubt, empty your magazine.
 58. The side with the simplest uniforms wins.
@@ -111,7 +111,7 @@ Murphy’s Laws of Combat Operations
 87. Beer Math –> 2 beers times 37 men equals 49 cases.
 88. Body count Math –> 3 guerrillas plus 1 probable plus 2 pigs equals 37 enemies killed in action.
 89. The bursting radius of a hand grenade is always one foot greater than your jumping range.
-90. All-weather close air support doesn’t work in bad weather.
+90. All-weather close air support doesn't work in bad weather.
 91. The combat worth of a unit is inversely proportional to the smartness of its outfit and
     appearance.
 92. The crucial round is a dud.
@@ -127,7 +127,7 @@ Murphy’s Laws of Combat Operations
 101. The more stupid the leader is, the more important missions he is ordered to carry out.
 102. The self-importance of a superior is inversely proportional to his position in the hierarchy
      (as is his deviousness and mischievousness).
-103. There is always a way, and it usually doesn’t work.
+103. There is always a way, and it usually doesn't work.
 104. Success occurs when no one is looking, failure occurs when the General is watching.
 105. The enemy never monitors your radio frequency until you broadcast on an unsecured channel.
 106. Whenever you drop your equipment in a fire-fight, your ammo and grenades always fall the
