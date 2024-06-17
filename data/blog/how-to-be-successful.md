@@ -15,7 +15,7 @@ wanting the latter.
 
 Here are 13 thoughts about how to achieve such outlier success. Everything here is easier to do once
 you've already reached a baseline degree of success (through privilege or effort) and want to put in
-the work to turn that into outlier success.[^1] But much of it applies to anyone.
+the work to turn that into outlier success[^1]. But much of it applies to anyone.
 
 ## 1. Compound yourself
 
@@ -330,9 +330,9 @@ convinced their new model was better than the existing model.
 
 Eventually, you will define your success by performing excellent work in areas that are important to
 you. The sooner you can start off in that direction, the further you will be able to go. It is hard
-to be wildly successful at anything you aren’t obsessed with.
+to be wildly successful at anything you aren't obsessed with.
 
-[^1] A comment response I wrote on HN:
+[^1]: A comment response I wrote on HN:
 
 One of the biggest reasons I'm excited about basic income is the amount of human potential it will
 unleash by freeing more people to take risks.
