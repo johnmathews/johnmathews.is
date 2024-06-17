@@ -9,9 +9,9 @@ description:
   I've linked to the currect version on his webiste.
 ---
 
-How To Be Successful
+How To Be Successful, by [Sam Altman](https://blog.samaltman.com/how-to-be-successful)
 
-I’ve observed thousands of founders and thought a lot about what it takes to make a huge amount of
+I've observed thousands of founders and thought a lot about what it takes to make a huge amount of
 money or to create something important. Usually, people start off wanting the former and end up
 wanting the latter.
 
@@ -351,3 +351,23 @@ Thanks to Brian Armstrong, Greg Brockman, Dalton Caldwell, Diane von Furstenberg
 Houston, Vinod Khosla, Jessica Livingston, Jon Levy, Luke Miles (6 drafts!), Michael Moritz, Ali
 Rowghani, Michael Seibel, Peter Thiel, Tracy Young and Shivon Zilis for reviewing drafts of this,
 and thanks especially to Lachy Groom for help writing it.
+
+Oh, and now he's written [another similar post](https://blog.samaltman.com/what-i-wish-someone-had-told-me):
+
+1. Optimism, obsession, self-belief, raw horsepower and personal connections are how things get started.
+1. Cohesive teams, the right combination of calmness and urgency, and unreasonable commitment are how things get finished. Long-term orientation is in short supply; try not to worry about what people think in the short term, which will get easier over time.
+1. It is easier for a team to do a hard thing that really matters than to do an easy thing that doesn’t really matter; audacious ideas motivate people.
+1. Incentives are superpowers; set them carefully.
+1. Concentrate your resources on a small number of high-conviction bets; this is easy to say but evidently hard to do. You can delete more stuff than you think.
+1. Communicate clearly and concisely.
+1. Fight bullshit and bureaucracy every time you see it and get other people to fight it too. Do not let the org chart get in the way of people working productively together.
+1. Outcomes are what count; don’t let good process excuse bad results.
+1. Spend more time recruiting. Take risks on high-potential people with a fast rate of improvement. Look for evidence of getting stuff done in addition to intelligence.
+1. Superstars are even more valuable than they seem, but you have to evaluate people on their net impact on the performance of the organization.
+1. Fast iteration can make up for a lot; it’s usually ok to be wrong if you iterate quickly. Plans should be measured in decades, execution should be measured in weeks.
+1. Don’t fight the business equivalent of the laws of physics.
+1. Inspiration is perishable and life goes by fast. Inaction is a particularly insidious type of risk.
+1. Scale often has surprising emergent properties.
+1. Compounding exponentials are magic. In particular, you really want to build a business that gets a compounding advantage with scale.
+1. Get back up and keep going.
+1. Working with great people is one of the best parts of life.
