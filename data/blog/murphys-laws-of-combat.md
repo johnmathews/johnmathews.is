@@ -1,14 +1,12 @@
 ---
-title: Murphy's Laws of Combat
+title: Murphy's Laws of Combat Operations
 date: 2024-06-17 13:22:59
 category: non-technical.learning
 tags: ['combat']
 description:
   When I was a kid I found a tshirt in an army surplus store. On the back was written about 30
-  so-called laws of combat. This was probably my first example of mental models and rules of thumb.
+  sayings. This was probably my first example of mental models and rules of thumb.
 ---
-
-Murphy’s Laws of Combat Operations
 
 1. Friendly fire – isn't.
 2. Recoilless rifles – aren't.
