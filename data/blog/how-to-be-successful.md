@@ -15,7 +15,7 @@ wanting the latter.
 
 Here are 13 thoughts about how to achieve such outlier success. Everything here is easier to do once
 you've already reached a baseline degree of success (through privilege or effort) and want to put in
-the work to turn that into outlier success[^1]. But much of it applies to anyone.
+the work to turn that into outlier success. But much of it applies to anyone.
 
 ## 1. Compound yourself
 
@@ -332,24 +332,6 @@ Eventually, you will define your success by performing excellent work in areas t
 you. The sooner you can start off in that direction, the further you will be able to go. It is hard
 to be wildly successful at anything you aren't obsessed with.
 
-[^1]: A comment response I wrote on HN:
-
-One of the biggest reasons I'm excited about basic income is the amount of human potential it will
-unleash by freeing more people to take risks.
-
-Until then, if you aren't born lucky, you have to claw your way up for awhile before you can take
-big swings. If you are born in extreme poverty, then this is super difficult :(
-
-It is obviously an incredible shame and waste that opportunity is so unevenly distributed. But I've
-witnessed enough people be born with the deck stacked badly against them and go on to incredible
-success to know it's possible. I am deeply aware of the fact that I personally would not be where I
-am if I weren't born incredibly lucky.
-
-Thanks to Brian Armstrong, Greg Brockman, Dalton Caldwell, Diane von Furstenberg, Maddie Hall, Drew
-Houston, Vinod Khosla, Jessica Livingston, Jon Levy, Luke Miles (6 drafts!), Michael Moritz, Ali
-Rowghani, Michael Seibel, Peter Thiel, Tracy Young and Shivon Zilis for reviewing drafts of this,
-and thanks especially to Lachy Groom for help writing it.
-
 # What I wish someone had told me
 
 Oh, and now he's written
@@ -383,3 +365,8 @@ Oh, and now he's written
    a compounding advantage with scale.
 1. Get back up and keep going.
 1. Working with great people is one of the best parts of life.
+
+Thanks to Brian Armstrong, Greg Brockman, Dalton Caldwell, Diane von Furstenberg, Maddie Hall, Drew
+Houston, Vinod Khosla, Jessica Livingston, Jon Levy, Luke Miles (6 drafts!), Michael Moritz, Ali
+Rowghani, Michael Seibel, Peter Thiel, Tracy Young and Shivon Zilis for reviewing drafts of this,
+and thanks especially to Lachy Groom for help writing it.
