@@ -343,7 +343,7 @@ Oh, and now he's written
    how things get finished. Long-term orientation is in short supply; try not to worry about what
    people think in the short term, which will get easier over time.
 1. It is easier for a team to do a hard thing that really matters than to do an easy thing that
-   doesn’t really matter; audacious ideas motivate people.
+   doesn't really matter; audacious ideas motivate people.
 1. Incentives are superpowers; set them carefully.
 1. Concentrate your resources on a small number of high-conviction bets; this is easy to say but
    evidently hard to do. You can delete more stuff than you think.
