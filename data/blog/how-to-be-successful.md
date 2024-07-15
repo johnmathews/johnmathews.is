@@ -7,7 +7,8 @@ image: # /static/images/.png
 description: This is a post written by Sam Altman in 2019. I found it on an old computer a few days ago.
 ---
 
-How To Be Successful, by [Sam Altman](https://blog.samaltman.com/how-to-be-successful)
+<br></br>
+<b>How To Be Successful, by [Sam Altman](https://blog.samaltman.com/how-to-be-successful)</b>
 
 I've observed thousands of founders and thought a lot about what it takes to make a huge amount of
 money or to create something important. Usually, people start off wanting the former and end up

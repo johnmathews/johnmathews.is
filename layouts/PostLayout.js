@@ -44,7 +44,7 @@ export default function PostLayout({ frontMatter, authorDetails, children }) {
   const description = frontMatter.summary || frontMatter.description
   if (description) {
     PostDescription = (
-      <div id="postSummary" className="font-serif text-2xl">
+      <div id="postSummary" className="font-sans text-lg">
         {' '}
         {description}{' '}
       </div>
