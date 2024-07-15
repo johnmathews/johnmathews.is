@@ -118,7 +118,7 @@ export default function PostLayout({ frontMatter, authorDetails, children }) {
                   style={{ gridTemplateRows: 'auto 1fr' }}
                 >
                   <div className="xl:col-span-3 xl:row-span-2 xl:pb-0">
-                    <div id="content" className="prose-lg max-w-none pb-8 pt-10">
+                    <div id="content" className="prose-xl max-w-none pb-8 pt-10">
                       {PostDescription}
                       {getContent(frontMatter, children)}
                     </div>

@@ -54,7 +54,7 @@ const Card = ({ title, description, imgSrc, href, keyboardShortcut, index }) => 
               </div>
             </div>
             {description && (
-              <p className="prose mb-1 mt-3 max-w-none text-gray-500 dark:text-gray-400">
+              <p className="prose-xl mb-1 mt-3 max-w-none text-gray-500 dark:text-gray-400">
                 {description}
               </p>
             )}
