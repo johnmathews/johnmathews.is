@@ -16,7 +16,7 @@ export default function AuthorLayout({ children, frontMatter }) {
           </h1>
         </div>
         <div className="max-w-none">
-          <div id="pageContent" className="prose-xl pb-8 pt-8 dark:prose-dark">
+          <div id="pageContent" className="prose pb-8 pt-8 dark:prose-dark">
             {children}
           </div>
         </div>
