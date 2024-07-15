@@ -66,9 +66,6 @@ input:-webkit-autofill:focus {
   @apply border-l-4 border-gray-300 dark:border-gray-500;
 }
 
-#contentContainer {
-  @apply font-serif;
-}
 #contentContainer #content code {
   @apply rounded-lg bg-gray-200 px-2 py-1 text-white  dark:bg-gray-500;
 }
@@ -77,10 +74,10 @@ input:-webkit-autofill:focus {
 }
 
 #contentContainer ol {
-  @apply list-decimal dark:marker:text-gray-100;
+  @apply list-decimal font-serif text-xl dark:marker:text-gray-100;
 }
 #contentContainer ul {
-  @apply list-disc  dark:marker:text-gray-100;
+  @apply prose-lg list-disc  dark:marker:text-gray-100;
 }
 
 #contentContainer li {
