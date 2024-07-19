@@ -27,13 +27,13 @@ module.exports = {
     },
     fontFamily: {
       sans: [
-        'helvetica\\ neue',
-        'helvetica',
-        'arial',
-        'geneva',
         'sans-serif',
         'ui-sans-serif',
         'system-ui',
+        'geneva',
+        'helvetica\\ neue',
+        'helvetica',
+        'arial',
         ...defaultTheme.fontFamily.sans,
       ],
       serif: ['cardo', 'georgia', 'serif', 'ui-serif', ...defaultTheme.fontFamily.serif],
@@ -91,6 +91,10 @@ module.exports = {
                 color: `${theme('colors.primary.600')} !important`,
               },
               code: { color: theme('colors.primary.400') },
+            },
+            p: {
+              marginTop: theme('margin.1'),
+              marginBottom: theme('margin.1'),
             },
             h1: {
               fontWeight: '700',

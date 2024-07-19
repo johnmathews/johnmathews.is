@@ -75,7 +75,7 @@ export default function SnippetLayout({ content, frontMatter, title }) {
                     </Link>
                   </div>
                   <div className="markdown  max-h-snippetContent overflow-y-auto ">
-                    <div className="px-4 pb-4 font-serif text-lg  ">
+                    <div className="px-4 pb-4 text-lg  ">
                       {PostDescription}
                       <MDXLayoutRenderer layout="SnippetCardLayout" mdxSource={mdxSource} />
                     </div>

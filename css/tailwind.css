@@ -92,13 +92,13 @@ input:-webkit-autofill:focus {
   @apply text-4xl;
 }
 #content h2 {
-  @apply text-3xl;
+  @apply mb-2 mt-1 text-3xl;
 }
 #content h3 {
-  @apply text-2xl;
+  @apply mb-2 mt-1 text-2xl;
 }
 #content h4 {
-  @apply text-xl;
+  @apply mb-1 mt-1 text-xl;
 }
 
 /* SNIPPETS */
