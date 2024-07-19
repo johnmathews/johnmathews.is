@@ -74,7 +74,7 @@ input:-webkit-autofill:focus {
 }
 
 #contentContainer ol {
-  @apply list-decimal font-serif text-xl dark:marker:text-gray-100;
+  @apply list-decimal text-xl dark:marker:text-gray-100;
 }
 #contentContainer ul {
   @apply prose-lg list-disc  dark:marker:text-gray-100;
