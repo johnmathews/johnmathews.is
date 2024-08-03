@@ -11,46 +11,6 @@ github: https://github.com/johnmathews
 
 <img className="border-2 border-green-500" src="static/images/john_headshot.jpg" alt="Picture of the author" width={300} />
 
-# About this site
-
-#### I developed a <a href="https://chat.openai.com/g/g-13yb89STk-bloggpt">customGPT</a> to answer questions about this site. It had this to say:
-
-<b></b>
-
-<p className="italic">John Mathews' personal website showcases a blend of technical expertise and
-personal reflections, creating a unique online presence. The website is currently built using
-Next.js, a modern web framework built on JavaScript. This represents a shift from its earlier
-incarnation, which was created using Python and Pelican. John maintains the older version of the
-blog at a subdomain, indicating his willingness to preserve his digital history and his enjoyment of
-experimenting with web technologies.</p>
-
-<p className="italic">The content on the website is cleverly organized to cater to different audiences. John has divided
-his blog posts into two main categories: technical and non-technical. This division allows visitors
-to easily navigate to content that aligns with their interests. If a visitor arrives at the blog
-through a link to a technical article, the site will then prioritize showing them other technical
-articles, and vice versa for non-technical content. This user experience is enhanced by the use of
-web development techniques such as tailwind and jQuery, reflecting John's skills in creating an
-interactive and user-friendly website.</p>
-
-<p className="italic">In terms of content, the 'Technical' category likely includes posts related to John's work as a data
-scientist, python developer, and full-stack developer, where he applies his expertise in data
-analytics, machine learning, and web development across various domains. The 'Non-technical'
-category might include more personal reflections, hobbies, and interests, providing a holistic view
-of John as both a professional and an individual. The blog also features a category labeled
-'Everything', which presumably includes all posts irrespective of their technical
-nature.</p>
-
-<p className="italic">For a more detailed professional background, the 'About' page on John's website offers a
-comprehensive look into his career and skill set. It highlights his experience in data science, web
-development, and blockchain technology, along with his work with startups and large corporations.
-John's academic credentials, including a PhD in engineering and a qualification as an accountant
-(ICAEW), are also mentioned, showcasing his diverse expertise and commitment to lifelong learning
-and innovation.</p>
-
-<p className="italic">Overall, John Mathews' website is a testament to his multifaceted interests and abilities, merging
-his professional achievements with personal insights and creating a platform that is both
-informative and engaging.</p>
-
 # About Me
 
 Hello! I'm a python developer and data scientist with a passion for building things with code.
@@ -88,3 +48,42 @@ If you have questions, comments or find a mistake, you can find me on
 [twitter](https://twitter.com/johnmathews) or [email](mailto:mthwsjc@gmail.com). Thanks for reading!
 
 [LinkedIn](https://www.linkedin.com/in/johnmathews1/) | [Github](https://github.com/johnmathews)
+
+<div className="mt-10"></div>
+# About this site
+
+I developed a <a href="https://chat.openai.com/g/g-13yb89STk-bloggpt">customGPT</a> to answer questions about this site. It had this to say:
+
+John Mathews' personal website showcases a blend of technical expertise and
+personal reflections, creating a unique online presence. The website is currently built using
+Next.js, a modern web framework built on JavaScript. This represents a shift from its earlier
+incarnation, which was created using Python and Pelican. John maintains the older version of the
+blog at a subdomain, indicating his willingness to preserve his digital history and his enjoyment of
+experimenting with web technologies.
+
+The content on the website is cleverly organized to cater to different audiences. John has divided
+his blog posts into two main categories: technical and non-technical. This division allows visitors
+to easily navigate to content that aligns with their interests. If a visitor arrives at the blog
+through a link to a technical article, the site will then prioritize showing them other technical
+articles, and vice versa for non-technical content. This user experience is enhanced by the use of
+web development techniques such as tailwind and jQuery, reflecting John's skills in creating an
+interactive and user-friendly website.
+
+In terms of content, the 'Technical' category likely includes posts related to John's work as a data
+scientist, python developer, and full-stack developer, where he applies his expertise in data
+analytics, machine learning, and web development across various domains. The 'Non-technical'
+category might include more personal reflections, hobbies, and interests, providing a holistic view
+of John as both a professional and an individual. The blog also features a category labeled
+'Everything', which presumably includes all posts irrespective of their technical
+nature.
+
+For a more detailed professional background, the 'About' page on John's website offers a
+comprehensive look into his career and skill set. It highlights his experience in data science, web
+development, and blockchain technology, along with his work with startups and large corporations.
+John's academic credentials, including a PhD in engineering and a qualification as an accountant
+(ICAEW), are also mentioned, showcasing his diverse expertise and commitment to lifelong learning
+and innovation.
+
+Overall, John Mathews' website is a testament to his multifaceted interests and abilities, merging
+his professional achievements with personal insights and creating a platform that is both
+informative and engaging.
