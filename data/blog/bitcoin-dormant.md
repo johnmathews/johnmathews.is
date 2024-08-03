@@ -6,7 +6,6 @@ tags: ['bitcoin', 'market', 'investment']
 description:
   Investors are keeping their coins still, with the amount of Bitcoin not budging nearing a new
   all-time high.
-image: /static/images/.png
 ---
 
 A [Decrypt article](https://decrypt.co/121860/dormant-bitcoin-370-billion-all-time-high) reporting
