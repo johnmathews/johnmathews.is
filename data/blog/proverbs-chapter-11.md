@@ -4,6 +4,7 @@ slug: proverbs-chapter-11
 date: '2021-06-01 10:16:41'
 category: Non-technical>Journal
 tags: ['books', 'bible', 'proverbs', 'wisdom']
+draft: True
 ---
 
 <TOCInline toc={props.toc} exclude="Overview" toHeading={2} />
