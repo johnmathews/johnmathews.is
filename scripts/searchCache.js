@@ -69,6 +69,6 @@ fs.writeFile('cache/searchData.json', JSONData, (err) => {
 index
   .replaceAllObjects(getAllPosts(), { autoGenerateObjectIDIfNotExist: false })
   .then(() => {
-    console.log('Algolia index updated!')
+    console.log('✨ Algolia index updated!')
   })
   .catch((e) => console.log(e))
