@@ -26,7 +26,7 @@ export default function Chat() {
   const [showSettings, setShowSettings] = useState<boolean>(false)
   const [mode, setMode] = useState<'search' | 'chat'>('chat')
   const [matchCount, setMatchCount] = useState<number>(5)
-  const [apiKey, setApiKey] = useState<string>(process.env.NEXT_PUBLIC_OPENAI_API_KEY! || '')
+  const [apiKey, setApiKey] = useState<string>('')
 
   const handleSearch = async () => {
     if (!apiKey) {
@@ -58,8 +58,6 @@ export default function Chat() {
     }
 
     const results: BlogChunk[] = await searchResponse.json()
-    console.log('--- debug results: ', results)
-
     setChunks(results)
 
     setLoading(false)

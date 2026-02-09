@@ -93,6 +93,10 @@ summary: string
 layout: string # layout component name (e.g. "PostLayout")
 ```
 
+## Node Version
+
+Managed via `.nvmrc` (currently Node 22). Vercel reads this file for builds. Locally, use `nvm use` or `fnm use` to match.
+
 ## Environment Variables
 
 Required in `.env.local`:
